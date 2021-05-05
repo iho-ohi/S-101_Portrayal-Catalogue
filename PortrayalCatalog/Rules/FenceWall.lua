@@ -6,7 +6,7 @@ function FenceWall(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3 then
+		if feature.visuallyConspicuous == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:9;DisplayPlane:OverRADAR')

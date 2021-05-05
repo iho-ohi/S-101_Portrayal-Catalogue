@@ -24,7 +24,7 @@ function SlopeTopline(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfSlope == 6 and (feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3) then
+		elseif feature.categoryOfSlope == 6 and feature.visuallyConspicuous == 1 then
 			viewingGroup = 22210
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22210;DrawingPriority:12;DisplayPlane:OverRADAR')

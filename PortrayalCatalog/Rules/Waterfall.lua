@@ -14,7 +14,7 @@ function Waterfall(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:32050;DrawingPriority:9;DisplayPlane:UnderRADAR;NullInstruction')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3 then
+		if feature.visuallyConspicuous == 1 then
 			viewingGroup = 32050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:32050;DrawingPriority:9;DisplayPlane:OverRADAR')

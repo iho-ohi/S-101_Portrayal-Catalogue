@@ -8,7 +8,7 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 		if feature.inTheWater then
 			viewingGroup = 12200
 			featurePortrayal:AddInstructions('ViewingGroup:12200')
-		elseif feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3 then
+		elseif feature.visuallyConspicuous == 1 then
 			viewingGroup = 22200
 			featurePortrayal:AddInstructions('ViewingGroup:22220')
 		else
@@ -22,7 +22,11 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:UnderRADAR;Hover:true')
 		end
 
-		featurePortrayal:AddInstructions('PointInstruction:WIMCON11')
+		if feature.visuallyConspicuous == 1 then
+			featurePortrayal:AddInstructions('PointInstruction:WIMCON11')
+		else
+			featurePortrayal:AddInstructions('PointInstruction:WIMCON01')
+		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

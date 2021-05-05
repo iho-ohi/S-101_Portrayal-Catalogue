@@ -15,7 +15,7 @@ function Crane(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:AddInstructions('PointInstruction:CRANES01')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3 then
+		if feature.visuallyConspicuous == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
@@ -29,7 +29,7 @@ function Crane(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3 then
+		if feature.visuallyConspicuous == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')

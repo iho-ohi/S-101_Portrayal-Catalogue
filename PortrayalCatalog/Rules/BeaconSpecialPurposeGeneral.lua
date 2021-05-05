@@ -11,7 +11,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if feature.beaconShape == 6 and (feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3) then
+		if feature.beaconShape == 6 and feature.visuallyConspicuous == 1 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
@@ -133,7 +133,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.beaconShape == 6 and (feature.visuallyConspicuous == 1 or feature.visuallyConspicuous == 3) then
+		if feature.beaconShape == 6 and feature.visuallyConspicuous == 1 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
