@@ -8,6 +8,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	Draw Foul Ground point symbols under RADAR when Radar Overlay context parameter is false
 *	Rework TextInstruction commands by removing viewing group and drawing priority parameters
 *	Use same symbolization for RestrictedAreaRegulatory as for RestrictedAreaNavigational
+*	Don't treat prominent features as visually conspicuous
 * Use multiple viewing groups to implement symbol / text dependencies, see [Change Proposal Form](https://github.com/IHO-S100WG/TSM8/blob/master/6.X-1%20Multiple%20viewing%20groups%20per%20drawing%20instruction/Allow%20multiple%20viewing%20groups%20per%20drawing%20instruction.pdf)
 
 ### 1.1.3 - use with FC 1.0.0 of 2019-04-09
