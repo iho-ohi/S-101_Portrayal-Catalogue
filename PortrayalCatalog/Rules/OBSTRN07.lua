@@ -21,7 +21,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	end
 
-	local hazardSymbol = UDWHAZ05(feature, featurePortrayal, contextParameters, viewingGroup, DEPTH_VALUE)
+	local hazardSymbol = UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE)
 
 	local valueOfSounding = feature.valueOfSounding
 
@@ -33,8 +33,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 			featurePortrayal:AddInstructions('PointInstruction:' .. hazardSymbol)
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011')
-				featurePortrayal:AddInstructions('PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 			end
 		else
 			local sounding = false
@@ -95,8 +94,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 			end
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011')
-				featurePortrayal:AddInstructions('PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
@@ -180,8 +178,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		local qualitySymbol = QUAPNT02(feature, featurePortrayal, contextParameters)
 
 		if qualitySymbol then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011')
-			featurePortrayal:AddInstructions('PointInstruction:' .. qualitySymbol)
+			featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 		end
 	end
 

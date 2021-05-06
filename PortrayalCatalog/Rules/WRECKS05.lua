@@ -23,7 +23,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	end
 
-	local hazardSymbol = UDWHAZ05(feature, featurePortrayal, contextParameters, viewingGroup, DEPTH_VALUE)
+	local hazardSymbol = UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE)
 	local qualitySymbol = QUAPNT02(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
@@ -31,7 +31,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 			featurePortrayal:AddInstructions('PointInstruction:' .. hazardSymbol)
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 			end
 		else
 			-- Continuation A
@@ -49,9 +49,9 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 				end
 			else
 				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',34050;DrawingPriority:12;DisplayPlane:OverRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
 				else
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 				end
 
 				if feature.categoryOfWreck then
@@ -70,7 +70,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 			end
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 			end
 		end
 	else
@@ -135,7 +135,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 
 		if qualitySymbol then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+			featurePortrayal:AddInstructions('ViewingGroup:31011;PointInstruction:' .. qualitySymbol)
 		end
 	end
 

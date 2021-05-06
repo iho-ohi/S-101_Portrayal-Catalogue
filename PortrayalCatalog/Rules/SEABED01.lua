@@ -1,7 +1,7 @@
 -- SEABED01 conditional symbology rules file.
 
 -- Main entry point for CSP.
-function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue, viewingGroup)
+function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue)
 	Debug.StartPerformance('Lua Code - SEABED01')
 
 	local Colour = 'DEPIT'
@@ -46,11 +46,12 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 
 	if (contextParameters.ShallowPattern and Shallow) then
 		-- S-52 10.5.7
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',23010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:23010;DrawingPriority:9;DisplayPlane:UnderRADAR')
 
 		featurePortrayal:AddInstructions('AreaFillReference:DIAMOND1')
 
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',13030;DrawingPriority:3;DisplayPlane:UnderRADAR')
+		-- Restore default viewing and priorities for depth area and dredged area.
+		featurePortrayal:AddInstructions('ViewingGroup:13030;DrawingPriority:3;DisplayPlane:UnderRADAR')
 	end
 
 	if Shallow then

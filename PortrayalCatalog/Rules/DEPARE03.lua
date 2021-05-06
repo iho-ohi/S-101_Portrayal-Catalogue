@@ -14,7 +14,7 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 	local depthRangeMinimumValue = feature.depthRangeMinimumValue or sdMinus1
 	local depthRangeMaximumValue = feature.depthRangeMaximumValue
 	
-	SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue, viewingGroup)
+	SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue)
 
 	if feature.Code == 'DredgedArea' then
 		featurePortrayal:AddInstructions('AreaFillReference:DRGARE01')
@@ -108,9 +108,9 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 			end
 
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',13010;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:13010;DrawingPriority:24;DisplayPlane:OverRADAR')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',13010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:13010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddSpatialReference(curveAssociation)
 			
@@ -127,9 +127,9 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if loc_valdco then
 				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',33021;DrawingPriority:24;DisplayPlane:OverRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:33021;DrawingPriority:24;DisplayPlane:OverRADAR')
 				else
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',33021;DrawingPriority:24;DisplayPlane:UnderRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:33021;DrawingPriority:24;DisplayPlane:UnderRADAR')
 				end
 
 				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5')
