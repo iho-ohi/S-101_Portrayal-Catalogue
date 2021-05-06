@@ -95,12 +95,6 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				end
 			else
-				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',34050;DrawingPriority:12;DisplayPlane:OverRADAR')
-				else
-					featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-				end
-
 				if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then
 					featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
