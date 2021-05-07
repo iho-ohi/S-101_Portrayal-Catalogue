@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2018-11-05T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.4_beta12">
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.4_beta13">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -8282,7 +8282,7 @@
             <language>eng</language>
          </description>
          <type>Boolean</type>
-         <default>false</default>
+         <default>true</default>
       </parameter>
      <parameter id="PlainBoundaries">
        <description>
@@ -8291,7 +8291,7 @@
          <language>eng</language>
        </description>
        <type>Boolean</type>
-       <default>false</default>
+       <default>true</default>
      </parameter>
      <parameter id="SimplifiedPoints">
        <description>
@@ -8309,7 +8309,7 @@
          <language>eng</language>
        </description>
        <type>Boolean</type>
-       <default>true</default>
+       <default>false</default>
      </parameter>
      <parameter id="RadarOverlay">
        <description>
@@ -8318,7 +8318,7 @@
          <language>eng</language>
        </description>
        <type>Boolean</type>
-       <default>true</default>
+       <default>false</default>
      </parameter>
      <parameter id="IgnoreScamin">
        <description>

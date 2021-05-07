@@ -10,7 +10,12 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	Use same symbolization for RestrictedAreaRegulatory as for RestrictedAreaNavigational
 *	Don't treat prominent features as visually conspicuous
 *	Assign the viewing group for wrecks based on results of UDWHAZ05
-* Use multiple viewing groups to implement symbol / text dependencies, see [Change Proposal Form](https://github.com/IHO-S100WG/TSM8/blob/master/6.X-1%20Multiple%20viewing%20groups%20per%20drawing%20instruction/Allow%20multiple%20viewing%20groups%20per%20drawing%20instruction.pdf)
+*	Use multiple viewing groups to implement symbol / text dependencies, see [Change Proposal Form](https://github.com/IHO-S100WG/TSM8/blob/master/6.X-1%20Multiple%20viewing%20groups%20per%20drawing%20instruction/Allow%20multiple%20viewing%20groups%20per%20drawing%20instruction.pdf)
+*	Update context parameter defaults per IEC 61174 ed4 Table 3
+	* Full light lines: off
+	* Shallow water dangers: on
+	* Plain/symbolized boundaries: plain
+	* Radar overlay: off
 
 ### 1.1.3 - use with FC 1.0.0 of 2019-04-09
 *	Draw 360 degree arc around LightAllAround when appropriate
