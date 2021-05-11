@@ -48,12 +48,6 @@ function WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 					featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 				end
 			else
-				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
-				else
-					featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-				end
-
 				if feature.categoryOfWreck then
 					if feature.categoryOfWreck == 1 and feature.waterLevelEffect == 3 then
 						featurePortrayal:AddInstructions('PointInstruction:WRECKS04')
