@@ -11,6 +11,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	Don't treat prominent features as visually conspicuous
 *	Assign the viewing group for wrecks based on results of UDWHAZ05
 *	Use multiple viewing groups to implement symbol / text dependencies, see [Change Proposal Form](https://github.com/IHO-S100WG/TSM8/blob/master/6.X-1%20Multiple%20viewing%20groups%20per%20drawing%20instruction/Allow%20multiple%20viewing%20groups%20per%20drawing%20instruction.pdf)
+*	Don't show VALSOU on curve obstruction hazard symbol
 *	Update context parameter defaults per IEC 61174 ed4 Table 3
 	* Full light lines: off
 	* Shallow water dangers: on

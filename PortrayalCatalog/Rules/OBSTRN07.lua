@@ -125,9 +125,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 
 		if hazardSymbol then
 			featurePortrayal:AddInstructions('LinePlacement:Relative,0.5;PointInstruction:' .. hazardSymbol)
-		end
-
-		if valueOfSounding then
+		elseif valueOfSounding then
 			local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, nil, valueOfSounding)
 
 			for _, symbol in ipairs(symbols) do
