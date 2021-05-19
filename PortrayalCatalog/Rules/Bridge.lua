@@ -79,7 +79,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 21, 24, 12210, 24)
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
@@ -152,7 +152,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			end
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 21, 24, 12210, 24)
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -227,7 +227,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			end
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 21, 24, 12210, 24)
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
