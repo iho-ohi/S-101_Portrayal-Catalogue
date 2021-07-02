@@ -83,7 +83,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+			featurePortrayal:AddInstructions('LineInstruction:FAIRWAY01')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 2 then
 			viewingGroup = 26050
@@ -95,7 +95,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+			featurePortrayal:AddInstructions('LineInstruction:FAIRWAY01')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 3 then
 			viewingGroup = 26050
@@ -107,7 +107,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+			featurePortrayal:AddInstructions('LineInstruction:FAIRWAY01')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 4 then
 			viewingGroup = 26050
@@ -119,7 +119,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+			featurePortrayal:AddInstructions('LineInstruction:FAIRWAY01')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		else
 			viewingGroup = 26050
@@ -128,7 +128,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+			featurePortrayal:AddInstructions('LineInstruction:FAIRWAY01')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	else

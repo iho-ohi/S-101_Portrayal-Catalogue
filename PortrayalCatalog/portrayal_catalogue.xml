@@ -1386,6 +1386,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="EMAREMG2">
+         <description>
+            <name>EMAREMG2</name>
+            <description>Embedded symbol</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMAREMG2.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="EMCBLAR1">
          <description>
             <name>EMCBLAR1</name>
@@ -6017,6 +6027,16 @@
             <language>eng</language>
          </description>
          <fileName>ESSARE01.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="FAIRWAY01">
+         <description>
+            <name>FAIRWAY01</name>
+            <description>boundary of a fairway</description>
+            <language>eng</language>
+         </description>
+         <fileName>FAIRWAY01.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
