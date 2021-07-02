@@ -19,7 +19,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 2 then
@@ -32,7 +32,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 3 then
@@ -45,7 +45,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.orientationValue and feature.trafficFlow == 4 then
@@ -58,7 +58,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		else
@@ -68,7 +68,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
