@@ -2,6 +2,8 @@
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
 ## Changelog
+### 1.1.5 - use with FC 1.0.0 of 2019-04-09
+
 ### 1.1.4 - use with FC 1.0.0 of 2019-04-09
 *	Removed mariners viewing groups and viewing group layers
 *	Correctly handle missing attribute values for attributes with an upper multiplicity of one
