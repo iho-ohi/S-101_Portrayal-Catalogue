@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-17T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.5_beta2">
+<?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-20T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.5_sll1">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -8311,6 +8311,15 @@
        <type>Boolean</type>
        <default>false</default>
      </parameter>
+	 <parameter id="SLLSwitch">
+       <description>
+         <name>Sector Line Length A/B</name>
+         <description>sectorLineLength portrayal options: On=AHO Off=NIWC</description>
+         <language>eng</language>
+       </description>
+       <type>Boolean</type>
+       <default>true</default>
+	 </parameter>
      <parameter id="RadarOverlay">
        <description>
          <name>Radar overlay</name>

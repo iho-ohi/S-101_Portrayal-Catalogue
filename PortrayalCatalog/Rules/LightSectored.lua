@@ -64,28 +64,68 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				-- Sectored light.
 				local sectorLimit1 = flipSector(lightSector.sectorLimit.sectorLimitOne.sectorBearing:ToNumber())
 				local sectorLimit2 = flipSector(lightSector.sectorLimit.sectorLimitTwo.sectorBearing:ToNumber())
-
+				
 				if sectorLimit2 < sectorLimit1 then
 					sectorLimit2 = sectorLimit2 + 360.0
 				end
 
 				-- Draw leg lines
 
-				local leglen
-				local crsLength
-
-				if contextParameters.FullSectors then
-					leglen = nmi2metres(valueOfNominalRange)
-					crsLength = 'GeographicCRS'
+				local leglen1
+				local leglen2
+				local crsLength1
+				local crsLength2
+				
+				if contextParameters.SLLSwitch then
+					-- Norway / AHO proposal for portrayal of sectored lights
+					if contextParameters.FullSectors then
+						leglen1 = nmi2metres(valueOfNominalRange)
+						leglen2 = leglen1
+						crsLength1 = 'GeographicCRS'
+						crsLength2 = 'GeographicCRS'
+					else
+						if lightSector.sectorLimit.sectorLimitOne.sectorLineLength then
+							leglen1 = lightSector.sectorLimit.sectorLimitOne.sectorLineLength
+							crsLength1 = 'GeographicCRS'
+						else
+							leglen1 = 25.0
+							crsLength1 = 'LocalCRS'
+						end
+						if lightSector.sectorLimit.sectorLimitTwo.sectorLineLength then
+							leglen2 = lightSector.sectorLimit.sectorLimitTwo.sectorLineLength
+							crsLength2 = 'GeographicCRS'
+						else
+							leglen2 = 25.0
+							crsLength2 = 'LocalCRS'
+						end
+					end
 				else
-					leglen = 25.0
-					crsLength = 'LocalCRS'
+					-- NIWC proposal for portrayal of sectored lights
+					if contextParameters.FullSectors then
+						if lightSector.sectorLimit.sectorLimitOne.sectorLineLength then
+							leglen1 = lightSector.sectorLimit.sectorLimitOne.sectorLineLength
+						else
+							leglen1 = nmi2metres(valueOfNominalRange)
+						end
+						if lightSector.sectorLimit.sectorLimitTwo.sectorLineLength then
+							leglen2 = lightSector.sectorLimit.sectorLimitTwo.sectorLineLength
+						else
+							leglen2 = nmi2metres(valueOfNominalRange)
+						end
+						crsLength1 = 'GeographicCRS'
+						crsLength2 = 'GeographicCRS'
+					else
+						leglen1 = 25.0
+						leglen2 = 25.0
+						crsLength1 = 'LocalCRS'
+						crsLength2 = 'LocalCRS'
+					end
 				end
 
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit1 .. ',' .. crsLength .. ',' .. leglen)
+				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit1 .. ',' .. crsLength1 .. ',' .. leglen1)
 				featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit2 .. ',' .. crsLength .. ',' .. leglen)
+				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit2 .. ',' .. crsLength2 .. ',' .. leglen2)
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 				-- Draw sector arcs
