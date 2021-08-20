@@ -1,7 +1,14 @@
-# S-101 Portrayal-Catalogue
-IHO S-101 Portrayal Catalogue development, discussion, and review
+# S-101 Portrayal-Catalogue (Sector Line Length Proposal)
+Branch for prototyping / evaluating changes to Light Sector portrayal using the S-101 sectorLineLength attribute. See [Portrayal sub-WG Issue](https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/3)
 
 ## Changelog
+### 1.1.5_sll1
+*	Branched from 1.1.5
+*	Added context parameter to select sector line length portrayal option
+	* 1: Norway
+	* 2: NIWC
+	* otherwise: S-52
+
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
 *	Use correct drawing priority for LightAllAround features
 *	Fix name for viewing groups 32030 and 32050
