@@ -9,7 +9,7 @@ function RestrictedAreaNavigational(feature, featurePortrayal, contextParameters
 	local viewingGroup
 
 	if contains(14, feature.restriction) then
-		featurePortrayal:AddInstructions('AlertReference:ProhAre,108,108')
+		featurePortrayal:AddInstructions('AlertReference:ProhAre,107,107')
 	elseif contains(28, feature.categoryOfRestrictedArea) then
 		featurePortrayal:AddInstructions('AlertReference:ProhAre,114,114')
 	elseif not contains(14, feature.restriction) and not contains(28, feature.categoryOfRestrictedArea) then
