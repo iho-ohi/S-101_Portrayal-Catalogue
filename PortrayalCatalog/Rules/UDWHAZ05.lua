@@ -5,7 +5,7 @@ function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE)
 	Debug.StartPerformance('Lua Code - UDWHAZ05')
 
 	if DEPTH_VALUE <= contextParameters.SafetyContour then
-		if not feature.surroundingDepth or feature.surroundingDepth > contextParameters.SafetyContour then
+		if not feature.surroundingDepth or feature.surroundingDepth >= contextParameters.SafetyContour then
 			-- DANGER = true
 			if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then
 				featurePortrayal:AddInstructions('ViewingGroup:14050;DrawingPriority:24')
@@ -17,7 +17,7 @@ function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE)
 				end
 				return 'ISODGR01'
 			end
-		elseif contextParameters.ShowIsolatedDangersInShallowWaters and feature.surroundingDepth >= scaledDecimalZero and feature.surroundingDepth <= contextParameters.SafetyContour then
+		elseif contextParameters.ShowIsolatedDangersInShallowWaters and feature.surroundingDepth >= scaledDecimalZero and feature.surroundingDepth < contextParameters.SafetyContour then
 			if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then
 				featurePortrayal:AddInstructions('ViewingGroup:24050;DrawingPriority:24')
 			else
