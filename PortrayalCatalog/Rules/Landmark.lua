@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Landmark main entry point.
 function Landmark(feature, featurePortrayal, contextParameters)
@@ -8,7 +9,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -16,7 +17,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(15, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(15, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -24,7 +25,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -32,7 +33,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -40,7 +41,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -52,7 +53,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22220, 18)
 			end
-		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -64,7 +65,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22220, 18)
 			end
-		elseif contains(20, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -72,7 +73,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(20, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -80,7 +81,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(20, feature.categoryOfLandmark) and contains(26, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(26, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -88,7 +89,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL15')
-		elseif contains(20, feature.categoryOfLandmark) and contains(27, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(27, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -96,7 +97,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL15')
-		elseif contains(1, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(1, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -104,7 +105,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CAIRNS11')
-		elseif contains(3, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(3, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -112,7 +113,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CHIMNY11')
-		elseif contains(4, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(4, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -120,7 +121,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DSHAER11')
-		elseif contains(5, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(5, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -128,7 +129,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLGSTF01')
-		elseif contains(6, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(6, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -136,7 +137,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLASTK11')
-		elseif contains(7, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(7, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -144,7 +145,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MSTCON14')
-		elseif contains(8, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(8, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -152,7 +153,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN03')
-		elseif contains(9, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(9, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -160,7 +161,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(10, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(10, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -168,7 +169,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(12, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(12, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -176,7 +177,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(13, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(13, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -184,7 +185,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(15, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(15, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -192,7 +193,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DOMES011')
-		elseif contains(16, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(16, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -200,7 +201,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RASCAN11')
-		elseif contains(17, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -208,7 +209,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:TOWERS03')
-		elseif contains(18, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(18, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -216,7 +217,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:WNDMIL12')
-		elseif contains(20, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -272,7 +273,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL01')
-		elseif feature.visuallyConspicuous == 1 then
+		elseif feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -418,7 +419,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN01')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -426,7 +427,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(15, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(15, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -434,7 +435,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -442,7 +443,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -450,7 +451,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -462,7 +463,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22220, 18)
 			end
-		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -474,7 +475,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;TextAlignVertical:Center;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22220, 18)
 			end
-		elseif contains(20, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -482,7 +483,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(20, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(21, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -490,7 +491,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL13')
-		elseif contains(20, feature.categoryOfLandmark) and contains(26, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(26, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -498,7 +499,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL15')
-		elseif contains(20, feature.categoryOfLandmark) and contains(27, feature['function']) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and contains(27, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -506,7 +507,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL15')
-		elseif contains(1, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(1, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -514,7 +515,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CAIRNS11')
-		elseif contains(3, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(3, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -522,7 +523,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CHIMNY11')
-		elseif contains(4, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(4, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -530,7 +531,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DSHAER11')
-		elseif contains(5, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(5, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -538,7 +539,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLGSTF01')
-		elseif contains(6, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(6, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -546,7 +547,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLASTK11')
-		elseif contains(7, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(7, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -554,7 +555,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MSTCON14')
-		elseif contains(8, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(8, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -562,7 +563,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN03')
-		elseif contains(9, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(9, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -570,7 +571,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(10, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(10, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -578,7 +579,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(12, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(12, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -586,7 +587,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(13, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(13, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -594,7 +595,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:MONUMT12')
-		elseif contains(15, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(15, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -602,7 +603,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DOMES011')
-		elseif contains(16, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(16, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -610,7 +611,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RASCAN11')
-		elseif contains(17, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(17, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -618,7 +619,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:TOWERS03')
-		elseif contains(18, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(18, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -626,7 +627,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:WNDMIL12')
-		elseif contains(20, feature.categoryOfLandmark) and feature.visuallyConspicuous == 1 then
+		elseif contains(20, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -682,7 +683,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BUIREL01')
-		elseif feature.visuallyConspicuous == 1 then
+		elseif feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -828,7 +829,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN01')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -848,7 +849,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visuallyConspicuous == 1 then
+		if contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
@@ -868,7 +869,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.32,'LANDF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.visuallyConspicuous == 1 then
+		elseif feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
@@ -882,7 +883,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visuallyConspicuous == 1 then
+		if contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
@@ -902,7 +903,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.32,'LANDF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.visuallyConspicuous == 1 then
+		elseif feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')

@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Slope topline main entry point.
 function SlopeTopline(feature, featurePortrayal, contextParameters)
@@ -24,7 +25,7 @@ function SlopeTopline(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfSlope == 6 and feature.visuallyConspicuous == 1 then
+		elseif feature.categoryOfSlope == 6 and feature.visualProminence == 1 then
 			viewingGroup = 22210
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22210;DrawingPriority:12;DisplayPlane:OverRADAR')

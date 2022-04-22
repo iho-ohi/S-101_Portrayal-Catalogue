@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Waterfall main entry point.
 function Waterfall(feature, featurePortrayal, contextParameters)
@@ -14,7 +15,7 @@ function Waterfall(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:32050;DrawingPriority:9;DisplayPlane:UnderRADAR;NullInstruction')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 32050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:32050;DrawingPriority:9;DisplayPlane:OverRADAR')

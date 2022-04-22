@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Referenced portrayal rules.
 require 'TOPMAR01'
@@ -11,7 +12,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if feature.beaconShape == 6 and feature.visuallyConspicuous == 1 then
+		if feature.beaconShape == 6 and feature.visualProminence == 1 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
@@ -133,7 +134,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.beaconShape == 6 and feature.visuallyConspicuous == 1 then
+		if feature.beaconShape == 6 and feature.visualProminence == 1 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')

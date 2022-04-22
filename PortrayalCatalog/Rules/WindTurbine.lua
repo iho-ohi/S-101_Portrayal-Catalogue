@@ -1,4 +1,5 @@
 -- WindTurbine portrayal rules file.
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Main entry point for feature type.
 function WindTurbine(feature, featurePortrayal, contextParameters)
@@ -8,7 +9,7 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 		if feature.inTheWater then
 			viewingGroup = 12200
 			featurePortrayal:AddInstructions('ViewingGroup:12200')
-		elseif feature.visuallyConspicuous == 1 then
+		elseif feature.visualProminence == 1 then
 			viewingGroup = 22200
 			featurePortrayal:AddInstructions('ViewingGroup:22220')
 		else
@@ -22,7 +23,7 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:UnderRADAR;Hover:true')
 		end
 
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			featurePortrayal:AddInstructions('PointInstruction:WIMCON11')
 		else
 			featurePortrayal:AddInstructions('PointInstruction:WIMCON01')

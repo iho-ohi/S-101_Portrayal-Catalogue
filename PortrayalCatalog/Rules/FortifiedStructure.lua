@@ -1,12 +1,13 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Fortified structure main entry point.
 function FortifiedStructure(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -24,7 +25,7 @@ function FortifiedStructure(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FORSTC01')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -51,7 +52,7 @@ function FortifiedStructure(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',0.96,'LANDF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
@@ -65,7 +66,7 @@ function FortifiedStructure(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if feature.visuallyConspicuous == 1 then
+		if feature.visualProminence == 1 then
 			viewingGroup = 22220
 			featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
