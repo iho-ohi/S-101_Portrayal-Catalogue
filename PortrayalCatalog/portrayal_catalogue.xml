@@ -8934,13 +8934,13 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="CoastguardStation">
+      <ruleFile id="CoastGuardStation">
          <description>
-            <name>CoastguardStation</name>
-            <description>Rules for feature type CoastguardStation</description>
+            <name>CoastGuardStation</name>
+            <description>Rules for feature type CoastGuardStation</description>
             <language>eng</language>
          </description>
-         <fileName>CoastguardStation.lua</fileName>
+         <fileName>CoastGuardStation.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
