@@ -4,6 +4,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
+*	Attribute visuallyConspicuous -> visualProminence
+*	Feature CoastguardStation -> CoastGuardStation
 
 ---
 Version numbers below correspond to 1.0.0 in the current version numbering scheme
