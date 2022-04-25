@@ -1,12 +1,13 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- Manual update for FC 1.0.1 (categoryOfRecomendedTrack -> basedOnFixedMarks) (2022/4/25)
 
 -- Recommended track main entry point.
 function RecommendedTrack(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 1 then
+		if feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -16,7 +17,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 2 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -26,7 +27,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 3 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -36,7 +37,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 4 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -46,7 +47,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC10')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 1 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -56,7 +57,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 2 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -66,7 +67,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 3 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -76,7 +77,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 4 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')

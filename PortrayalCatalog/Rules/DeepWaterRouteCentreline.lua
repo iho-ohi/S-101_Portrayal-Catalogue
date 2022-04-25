@@ -6,7 +6,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 1 then
+		if feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -16,7 +16,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 2 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -26,7 +26,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 3 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -36,7 +36,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 1 and feature.trafficFlow == 4 then
+		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -46,7 +46,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL06')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 1 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -56,7 +56,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 2 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -66,7 +66,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 3 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -76,7 +76,7 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25010, 18)
-		elseif feature.categoryOfRecommendedTrack == 2 and feature.trafficFlow == 4 then
+		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
