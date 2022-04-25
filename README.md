@@ -18,7 +18,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#27][i27] Feature CoastguardStation -> CoastGuardStation
 *	[#28][i28] Attribute visuallyConspicuous -> visualProminence
 ---
-Version numbers below correspond to 1.0.0 in the current version numbering scheme
+### Version numbers below correspond to 1.0.0 in the current version numbering scheme
+
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
 *	[#14][i14] Use correct drawing priority for LightAllAround features
 *	[#18][i18] Fix name for viewing groups 32030 and 32050
