@@ -3,7 +3,5 @@
 function MarinePollutionRegulationsArea(feature, featurePortrayal, contextParameters)
 
 -- TODO: Implement rule
-	featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') 
-
-	return 21010
+		error('Not Implemented: No symbology defined')
 end
