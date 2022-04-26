@@ -12,6 +12,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
 [i28]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/28
 [i29]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/29
+[i33]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/33
+[i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -19,6 +21,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#27][i27] Feature CoastguardStation -> CoastGuardStation
 *	[#28][i28] Attribute visuallyConspicuous -> visualProminence
 *	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
+*	[#33][i33] Default symbology for areas missing outline
+*	[#34][i34] Token LITGN incorrect name/description
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
