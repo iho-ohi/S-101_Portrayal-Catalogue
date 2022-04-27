@@ -10638,6 +10638,17 @@
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
+      </ruleFile>
+     <ruleFile id="BuoyNewDangerMarking">
+         <description>
+            <name>BuoyNewDangerMarking</name>
+            <description>Rules for feature type BuoyNewDangerMarking</description>
+            <language>eng</language>
+         </description>
+         <fileName>BuoyNewDangerMarking.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
       </ruleFile>      
-   </rules>
+    </rules>
 </portrayalCatalog>
