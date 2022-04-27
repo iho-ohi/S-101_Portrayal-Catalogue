@@ -14,6 +14,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i29]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/29
 [i33]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/33
 [i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
+[i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -23,6 +24,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
 *	[#33][i33] Default symbology for areas missing outline
 *	[#34][i34] Token LITGN incorrect name/description
+* [#41][i41] Buoy New Danger Marking rule added
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

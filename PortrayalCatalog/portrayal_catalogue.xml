@@ -5756,6 +5756,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="BOYSPP45">
+         <description>
+            <name>BOYSPP45</name>
+            <description>new danger marking buoy</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYSPP45.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
    </symbols>
    <styleSheets>
       <styleSheet id="daySvgStyle">
