@@ -23,7 +23,7 @@ function FoulGround(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 		else
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
@@ -31,7 +31,7 @@ function FoulGround(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		error('Not Implemented: No curve symbology defined in S-52 for FoulGround')
@@ -39,13 +39,13 @@ function FoulGround(feature, featurePortrayal, contextParameters)
 		if feature.valueOfSounding then
 			viewingGroup = 34051
 			featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
@@ -53,12 +53,12 @@ function FoulGround(feature, featurePortrayal, contextParameters)
 		if feature.valueOfSounding then
 			viewingGroup = 34051
 			featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
+			featurePortrayal:AddInstructions('PointInstruction:FOULGD02')
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
 		end
 	else

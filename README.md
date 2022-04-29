@@ -16,6 +16,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
 [i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 [i36]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/36
+[i39]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/39
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -27,6 +28,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#34][i34] Token LITGN incorrect name/description
 *	[#41][i41] Buoy New Danger Marking rule added
 *	[#36][i36] Current Non Gravitational (Removed Curve and Surface rule parts)
+*	[#39][i39]Foul Ground point, replace FOULGND1 with FOULGD02
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

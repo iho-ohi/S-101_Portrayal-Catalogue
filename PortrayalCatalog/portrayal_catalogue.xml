@@ -1976,16 +1976,26 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="FOULGND1">
+      <symbol id="FOULGD02">
          <description>
-            <name>FOULGND1</name>
-            <description>foul area of seabed safe for navigation but not for anchoring</description>
+            <name>FOULGD02</name>
+            <description>Foul area of seabed safe for navigation but not for anchoring, boundary</description>
             <language>eng</language>
          </description>
-         <fileName>FOULGND1.svg</fileName>
+         <fileName>FOULGD02.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	  <symbol id="FOULGND1">
+		   <description>
+			   <name>FOULGND1</name>
+			   <description>foul area of seabed safe for navigation but not for anchoring</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>FOULGND1.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	  </symbol>	   
       <symbol id="FRYARE51">
          <description>
             <name>FRYARE51</name>
