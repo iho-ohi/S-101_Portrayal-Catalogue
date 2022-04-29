@@ -28,10 +28,10 @@ function EncodeString(str, fmt)
 end
 
 --
--- Time commands support
+-- Date/Time commands support
 --
 
-function ProcessTimes(feature, featurePortrayal, contextParameters, viewingGroup)
+function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
 	local dateDependent = false
 	local periodicDateRanges = feature['!periodicDateRange']
 
@@ -62,18 +62,20 @@ function ProcessTimes(feature, featurePortrayal, contextParameters, viewingGroup
 
 		dateDependent = true
 	end
+	
+	return dateDependent
+end
 
-	if dateDependent then
-		-- Clear any existing transforms and geometries
-		featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
+function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, viewingGroup)
+	-- Clear any existing transforms and geometries
+	featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
 
-		featurePortrayal:AddInstructions('Hover:true')
+	featurePortrayal:AddInstructions('Hover:true')
 
-		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
-		featurePortrayal:AddInstructions(displayPlane)
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030;DrawingPriority:24;PointInstruction:CHDATD01')
-	end
+	featurePortrayal:AddInstructions(displayPlane)
+	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030;DrawingPriority:24;PointInstruction:CHDATD01')
 end
 
 --

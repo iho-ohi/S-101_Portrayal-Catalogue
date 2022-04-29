@@ -32,6 +32,8 @@ function PortrayalMain(featureIDs)
 		local status, err = pcall(function ()
 			Debug.StartPerformance('Lua Code - Rules processing')
 
+			local dateDependent = ProcessFixedAndPeriodicDates(feature, featurePortrayal)
+
 			local scaleMinimum = feature['!scaleMinimum']
 			local scaleMaximum = feature['!scaleMaximum']
 
@@ -54,9 +56,11 @@ function PortrayalMain(featureIDs)
 				error('No drawing instructions were emitted for feature ' .. feature.ID)
 			end
 
-			ProcessTimes(feature, featurePortrayal, contextParameters, viewingGroup)
-
 			ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
+
+			if dateDependent then
+				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, viewingGroup)
+			end
 
 			Debug.StopPerformance('Lua Code - Rules processing')
 		end)
