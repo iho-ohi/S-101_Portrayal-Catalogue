@@ -9,11 +9,11 @@ function DiscolouredWater(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:testPCB')
+		featurePortrayal:AddInstructions('PointInstruction:DSCWTR01')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:9;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:testPCB')
+		featurePortrayal:AddInstructions('PointInstruction:DSCWTR01')
 		featurePortrayal:AddInstructions('LineInstruction:testPCB')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

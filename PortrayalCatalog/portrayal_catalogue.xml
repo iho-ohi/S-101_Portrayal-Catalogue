@@ -1266,6 +1266,36 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="DSCWTR01">
+         <description>
+            <name>DSCWTR01</name>
+            <description>Discoloured water, small scale, Ver 1</description>
+            <language>eng</language>
+         </description>
+         <fileName>DSCWTR01.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DSCWTR02">
+         <description>
+            <name>DSCWTR02</name>
+            <description>Discoloured water, small scale, Ver 2</description>
+            <language>eng</language>
+         </description>
+         <fileName>DSCWTR02.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DSCWTR03">
+         <description>
+            <name>DSCWTR03</name>
+            <description>Discoloured water, small scale, Ver 3</description>
+            <language>eng</language>
+         </description>
+         <fileName>DSCWTR03.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	   
       <symbol id="DSHAER01">
          <description>
             <name>DSHAER01</name>
@@ -1286,7 +1316,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="DWRTPT51">
+	  <symbol id="DWRTPT51">
          <description>
             <name>DWRTPT51</name>
             <description>part of deep water route</description>
