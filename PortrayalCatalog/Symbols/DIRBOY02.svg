@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="daySVGStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="15.1mm" height="14.24mm" viewBox="-7.5 -7.25 15.1 14.24">
+  <title>DIRBOY02</title>
+  <desc>Direction of buoyage, CEVNI</desc>
+  <metadata>
+    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+      <Description publisher="IHB" creationDate="30-03-2022" source="S52Preslib4.0" format="S100SVG" version="0.1" />
+    </S100SVG>
+  </metadata>
+  <rect class="symbolBox layout" fill="none" x="-7.5" y="6.99" height="14.24" width="15.1" />
+  <rect class="svgBox layout" fill="none" x="-7.5" y="-7.25" height="14.24" width="15.1" />
+  <path d=" M -3.02,0.01 L -6.01,0.01 L 0.03,-6.01 L 6.01,0.01 L 2.99,0.01 L 2.99,2 L -3.02,2 L -3.02,0.01" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <circle cx="-5" cy="-4.75" r="1.5" class="sl f0 sCHMGD" style="stroke-width:0.64" />
+  <circle cx="5.11" cy="-4.75" r="1.49" class="sl f0 sCHMGD" style="stroke-width:0.64" />
+  <path d=" M -3.11,4.02 L -3.38,3.71 L -4.1,3.71 L -4.46,4.13 L -4.46,5.56 L -4.11,5.97 L -3.39,5.97 L -3.1,5.54" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -1.09,3.72 L -2.28,3.72 L -2.28,5.98 L -1,5.98" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -0.36,3.7 L 0.42,5.97 L 1.24,3.7" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M 2.01,5.99 L 2.03,3.72 L 3.44,5.97 L 3.43,3.71" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M 4.4,3.69 L 4.4,5.99" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <path d=" M -2.3,4.8 L -1.1,4.8" class="sl f0 sCHMGD" style="stroke-width:0.32;" />
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.4"/>
+</svg>

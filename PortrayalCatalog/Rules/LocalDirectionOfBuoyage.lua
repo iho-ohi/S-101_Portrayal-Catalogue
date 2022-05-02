@@ -18,8 +18,8 @@ function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 		elseif feature.marksNavigationalSystemOf == 2 then
 			dirboy = 'DIRBOYB1'
 		elseif feature.marksNavigationalSystemOf == 11 then
-			-- S-52 does not define symbol for CEVNI system of marks.
-			dirboy = 'testPCB'
+			-- new symbol for S-101 for CEVNI system of marks.
+			dirboy = 'DIRBOY02'
 		else
 			dirboy = 'DIRBOY01'
 		end
