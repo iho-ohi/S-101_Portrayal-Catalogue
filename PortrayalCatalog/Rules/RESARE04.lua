@@ -15,7 +15,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if contains(restriction, { 1, 2, 3, 4, 5, 6, 13, 16, 17, 23, 24, 25, 26, 27 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES61')
-			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26 }) then
+			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26, 29 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES61')
 			elseif contains(restriction, { 9, 10, 11, 12, 15, 18, 19, 20, 21, 22 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES71')
@@ -39,7 +39,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if contains(restriction, { 3, 4, 5, 6, 13, 16, 17, 23, 24, 25, 26, 27 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ACHRES61')
-			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26 }) then
+			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26, 29 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ACHRES61')
 			elseif contains(restriction, { 9, 10, 11, 12, 15, 18, 19, 20, 21, 22 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ACHRES71')
@@ -63,7 +63,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if contains(restriction, { 13, 16, 17, 23, 24, 25, 26, 27 }) then
 				featurePortrayal:AddInstructions('PointInstruction:FSHRES61')
-			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26 }) then
+			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26, 29 }) then
 				featurePortrayal:AddInstructions('PointInstruction:FSHRES61')
 			elseif contains(restriction, { 9, 10, 11, 12, 15, 18, 19, 20, 21, 22 }) then
 				featurePortrayal:AddInstructions('PointInstruction:FSHRES71')
@@ -118,7 +118,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 		-- Continuation E.  No restriction applies
 
 		if categoryOfRestrictedArea then
-			if contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26 }) then
+			if contains(categoryOfRestrictedArea, { 1, 8, 9, 12, 14, 18, 19, 21, 24, 25, 26, 29 }) then
 				if contains(categoryOfRestrictedArea, { 4, 5, 6, 7, 10, 20, 22, 23 }) then
 					featurePortrayal:AddInstructions('PointInstruction:CTYARE71')
 				else
