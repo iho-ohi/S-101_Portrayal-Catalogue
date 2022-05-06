@@ -20,6 +20,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i40]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/40
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
+[i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -35,6 +36,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#39][i39] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
 *	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 *	[#55][i55] Disengagement Area added according to issue note
+*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
