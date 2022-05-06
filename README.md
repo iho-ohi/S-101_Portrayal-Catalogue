@@ -19,6 +19,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i39]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/39
 [i40]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/40
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
+[i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -33,6 +34,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#39][i39] Foul Ground point, replaced FOULGND1 with FOULGD02
 *	[#39][i39] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
 *	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
+*	[#55][i55] Disengagement Area added according to issue note
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
