@@ -5,52 +5,53 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType ~= PrimitiveType.Surface then
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-
-	local function DepthAccuracy(a, b)
-		local d = feature.depthRangeMinimumValue
-
-		if d then
-			local accuracy = a + (b * d) / SD(100)
-
-			return feature.verticalUncertainty.uncertaintyFixed <= accuracy
-		end
-	end
-
-	-- Determine CATZOC equivalence.  See S-57 Appendix A Chapter 2.
+	
+	--[[
+		See https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
+	
+		Rule Note: Plain and symbolized boundaries use the same symbolization
+	--]]
 
 	local scaleFactor = 0.311 -- Scale 16.04mm symbols to 5mm.
+	local catzoc
 
-	local catzoc = 'U01'
+	--Debug.Break()  
+	
+	featurePortrayal:AddInstructions('ViewingGroup:31010;DrawingPriority:4;DisplayPlane:UnderRADAR')
 
-	if (feature.dataAssessment == 1 or feature.dataAssessment == 2) and feature.horizontalPositionUncertainty.uncertaintyFixed and feature.verticalUncertainty.uncertaintyFixed then
-		catzoc = 'D01'
+	if (feature.zoneOfConfidence[1]) then
+		if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData) then
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 1) then
+				catzoc = 'A11'
+			end
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 2) then
+				catzoc = 'A21'
+			end
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 3) then
+				catzoc = 'B01'
+			end
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 4) then
+				catzoc = 'C01'
+			end
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 5) then
+				catzoc = 'D01'
+			end
+			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 6) then
+				catzoc = 'U01'
+			end
+			-- CATZOC values defined
+			featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc .. '')
+			featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
+			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-		local hpu = feature.horizontalPositionUncertainty.uncertaintyFixed
+		else
+			-- default without CATZOC: "M_QUAL","","AP(NODATA03);LS(DASH,2,CHGRD)","4","S","OTHER","31010" 
 
-		if hpu <= SD(500) and DepthAccuracy(SD(2), SD(5)) then
-			catzoc = 'C01'
-		end
-
-		if hpu <= SD(50) and DepthAccuracy(SD(1), SD(2)) then
-			scaleFactor = 0.294 -- Scale 16.97mm symbols to 5mm.
-			catzoc = 'B01'
-		end
-
-		if feature.fullSeafloorCoverageAchieved and hpu <= SD(20) and DepthAccuracy(SD(1), SD(2)) then
-			scaleFactor = 0.294 -- Scale 16.97mm symbols to 5mm.
-			catzoc = 'A21'
-		end
-
-		if feature.fullSeafloorCoverageAchieved and hpu <= SD(5) and DepthAccuracy(SD(5, 1), SD(1)) then
-			scaleFactor = 0.294 -- Scale 16.97mm symbols to 5mm.
-			catzoc = 'A11'
+		featurePortrayal:AddInstructions('AreaFillReference:NODATA03')
+		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
+		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	end
-
-	featurePortrayal:AddInstructions('ViewingGroup:31010;DrawingPriority:12;DisplayPlane:UnderRADAR')
-	featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
-	featurePortrayal:AddInstructions('LineInstruction:_simple_;AreaFillReference:testPCB')
-	--featurePortrayal:AddInstructions('LineInstruction:_simple_;ScaleFactor:' .. scaleFactor .. ';PointInstruction:DQUAL' .. catzoc .. 'P')
 
 	return 31010
 end

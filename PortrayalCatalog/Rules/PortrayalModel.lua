@@ -205,10 +205,14 @@ function CreateFeaturePortrayal(featureReference)
 		end
 	end
 
+	--
+	-- S-52 PresLib Ed 4.0.3 Part I_Clean.pdf, page 42
+	-- LC – Showline (simple linestyle).
+	--
 	function featurePortrayal:SimpleLineStyle(lineType, width, colour)
 		CheckSelf(self, featurePortrayal.Type)
 		CheckType(lineType, 'string')
-		CheckType(width, 'number')
+		CheckType(width, 'number')		-- S-52 PresLib Ed 4.0.3 Part I_Clean.pdf, page 42 i.e. width 2 == .64 mm
 		CheckType(colour, 'string')
 
 		if lineType == 'solid' then

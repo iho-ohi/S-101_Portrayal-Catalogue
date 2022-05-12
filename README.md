@@ -21,6 +21,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
+[i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -37,6 +38,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 *	[#55][i55] Disengagement Area added according to issue note
 *	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
+*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value.
 ---
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
