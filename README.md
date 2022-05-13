@@ -14,16 +14,17 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i29]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/29
 [i33]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/33
 [i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
-[i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 [i36]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/36
 [i39]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/39
 [i40]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/40
+[i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
+[i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
-[i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
-[i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
+[i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
+[i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -43,6 +44,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
 *	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 *	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
+*	[#67][i67] Update for S-100 v5.0 schemas
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
