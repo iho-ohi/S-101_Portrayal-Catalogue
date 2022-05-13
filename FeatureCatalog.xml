@@ -6,7 +6,7 @@
   <S100FC:name>Electronic Navigational Chart</S100FC:name>
   <S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model.</S100FC:scope>
   <S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
-  <S100FC:versionNumber>1.0.2</S100FC:versionNumber>
+  <S100FC:versionNumber>1.0.2.1</S100FC:versionNumber>
   <S100FC:versionDate>2022-02-28</S100FC:versionDate>
   <S100FC:productId>S-101</S100FC:productId>
   <S100FC:producer>
