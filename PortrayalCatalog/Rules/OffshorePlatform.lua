@@ -20,6 +20,16 @@ function OffshorePlatform(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Prod %s'), 21, 24, 12210, 15)
 		end
+		-- #63 Flare Stack (row 52 main)
+		-- Debug.Break()
+		-- debug feature.flareStack = 1
+
+		if feature.flareStack then
+			--featurePortrayal:AddInstructions('LocalOffset:3.51,-1.25;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,0;TextAlignHorizontal:Start;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddTextInstruction(EncodeString('Fla','%s'), 21, 24, 12210, 15)
+		end
+		-- end #63
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 12210
@@ -35,6 +45,15 @@ function OffshorePlatform(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Prod %s'), 21, 24, 12210, 15)
 		end
+		-- #63 Flare Stack (row 52 main)
+		-- debug feature.flareStack = 1
+
+		if feature.flareStack then
+			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddTextInstruction(EncodeString('Fla','%s'), 21, 24, 12210, 15)
+		end
+		-- end #63
+
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
