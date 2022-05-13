@@ -395,30 +395,30 @@ end
 --
 --
 
-function CreateInformationBinding(informationTypeCode, lowerMultiplicity, upperMultiplicity, roleType, role, association)
-	CheckType(informationTypeCode, 'string')
+function CreateInformationBinding(informationTypeCodes, lowerMultiplicity, upperMultiplicity, roleType, role, association)
+	CheckType(informationTypeCodes, 'array:string')
 	CheckType(lowerMultiplicity, 'number')
 	CheckTypeOrNil(upperMultiplicity, 'number')
 	CheckType(roleType, 'string')
 	CheckTypeOrNil(role, 'string')
 	CheckType(association, 'string')
 
-	return { Type = 'InformationBinding', InformationTypeCode = informationTypeCode, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
+	return { Type = 'InformationBinding', InformationTypeCodes = informationTypeCodes, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
 end
 
 --
 --
 --
 
-function CreateFeatureBinding(featureTypeCode, lowerMultiplicity, upperMultiplicity, roleType, role, association)
-	CheckType(featureTypeCode, 'string')
+function CreateFeatureBinding(featureTypeCodes, lowerMultiplicity, upperMultiplicity, roleType, role, association)
+	CheckType(featureTypeCodes, 'array:string')
 	CheckType(lowerMultiplicity, 'number')
 	CheckTypeOrNil(upperMultiplicity, 'number')
 	CheckType(roleType, 'string')
 	CheckType(role, 'string')
 	CheckType(association, 'string')
 
-	return { Type = 'FeatureBinding', FeatureTypeCode = featureTypeCode, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
+	return { Type = 'FeatureBinding', FeatureTypeCodes = featureTypeCodes, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
 end
 
 --
