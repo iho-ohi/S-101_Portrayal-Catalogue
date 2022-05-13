@@ -42,7 +42,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
 *	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
 *	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
-*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform with Flare Stack
+*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
