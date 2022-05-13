@@ -22,6 +22,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
+[i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -38,8 +39,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 *	[#55][i55] Disengagement Area added according to issue note
 *	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
-*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value.
----
+*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
+*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
+
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09

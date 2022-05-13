@@ -6,7 +6,7 @@ function FerryRoute(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if contains(1, feature.categoryOfFerry) then
+		if contains(1, feature.categoryOfFerry) or contains(5, feature.categoryOfFerry) then
 			viewingGroup = 25030
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25030;DrawingPriority:12;DisplayPlane:OverRADAR')
