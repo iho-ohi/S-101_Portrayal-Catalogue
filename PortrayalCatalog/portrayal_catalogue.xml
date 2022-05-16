@@ -8283,25 +8283,16 @@
    <context>
       <parameter id="SafetyDepth">
          <description>
-            <name>Safety depth</name>
+            <name>SAFETY_DEPTH</name>
             <description>selected safety depth (meters)</description>
             <language>eng</language>
          </description>
          <type>Double</type>
          <default>30</default>
       </parameter>
-      <parameter id="ShallowContour">
-         <description>
-            <name>Shallow contour</name>
-            <description>selected shallow water contour (meters) (optional)</description>
-            <language>eng</language>
-         </description>
-         <type>Double</type>
-         <default>2</default>
-      </parameter>
       <parameter id="SafetyContour">
          <description>
-            <name>Safety contour</name>
+            <name>SAFETY_CONTOUR</name>
             <description>selected safety contour (meters)</description>
             <language>eng</language>
          </description>
@@ -8310,25 +8301,48 @@
       </parameter>
       <parameter id="TwoShades">
          <description>
-            <name>Two shades</name>
+            <name>TWO_SHADES</name>
             <description>show two depth shades only, safe vs unsafe</description>
             <language>eng</language>
          </description>
          <type>Boolean</type>
          <default>true</default>
       </parameter>
-      <parameter id="DeepContour">
+      <parameter id="ShallowContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
          <description>
-            <name>Deep contour</name>
+            <name>SHALLOW_CONTOUR</name>
+            <description>selected shallow water contour (meters) (optional)</description>
+            <language>eng</language>
+         </description>
+         <type>Double</type>
+         <default>2</default>
+		 <validate>
+			<xpath>//ShallowContour &lt;= //SafetyContour</xpath>
+			<errorMessage>
+				<text>Must be &lt;= safety contour value</text>
+				<text language="kor">안전 윤곽 값보다 작거나 같아야 합니다</text>
+			</errorMessage>
+         </validate>
+      </parameter>
+      <parameter id="DeepContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
+         <description>
+            <name>DEEP_CONTOUR</name>
             <description>selected deep water contour (meters) (optional)</description>
             <language>eng</language>
          </description>
          <type>Double</type>
          <default>30</default>
+		 <validate>
+			<xpath>//DeepContour >= //SafetyContour</xpath>
+			<errorMessage>
+				<text>Must be >= safety contour value</text>
+				<text language="kor">안전 윤곽 값보다 크거나 같아야 합니다</text>
+			</errorMessage>
+         </validate>
       </parameter>
       <parameter id="ShallowPattern">
          <description>
-            <name>Shallow pattern</name>
+            <name>SHALLOW_PATTERN</name>
             <description>show the shallow diamond pattern in shallow water</description>
             <language>eng</language>
          </description>
@@ -8337,7 +8351,7 @@
       </parameter>
       <parameter id="ShowIsolatedDangersInShallowWaters">
          <description>
-            <name>Show isolated dangers in shallow waters</name>
+            <name>SHOW_ISOLATED_DANGERS_IN_SHALLOW_WATERS</name>
             <description>show isolated dangers in shallow waters</description>
             <language>eng</language>
          </description>
@@ -8397,6 +8411,12 @@
        </description>
        <type>String</type>
        <default>eng</default>
+	   <validate>
+		<regex>^[a-z]{3}$</regex>
+		<errorMessage>
+			<text>Must be three lower-case characters</text>
+		</errorMessage>
+	   </validate>
      </parameter>
    </context>
    <rules>
