@@ -32,21 +32,22 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	Change version numbering scheme to match FC and DCEG
 *	[#67][i67] Update for S-100 v5.0 schemas
 *	[#68][i68] Add portrayal context parameter validation rules
-*	[#27][i27] Feature CoastguardStation -> CoastGuardStation
-*	[#28][i28] Attribute visuallyConspicuous -> visualProminence
-*	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
-*	[#33][i33] Default symbology for areas missing outline
-*	[#34][i34] Token LITGN incorrect name/description
-*	[#41][i41] Buoy New Danger Marking rule added
-*	[#36][i36] Current Non Gravitational (Removed Curve and Surface rule parts)
-*	[#39][i39] Foul Ground point, replaced FOULGND1 with FOULGD02
-*	[#39][i39] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
-*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
-*	[#55][i55] Disengagement Area added according to issue note
-*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
-*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
-*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
-*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
+*	Lua Rule File Updates
+	*	[#27][i27] Feature CoastguardStation -> CoastGuardStation
+	*	[#28][i28] Attribute visuallyConspicuous -> visualProminence
+	*	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
+	*	[#33][i33] Default symbology for areas missing outline
+	*	[#34][i34] Token LITGN incorrect name/description
+	*	[#41][i41] Buoy New Danger Marking rule added
+	*	[#36][i36] Current Non Gravitational (Removed Curve and Surface rule parts)
+	*	[#39][i39] Foul Ground point, replaced FOULGND1 with FOULGD02
+	*	[#39][i39] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
+	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
+	*	[#55][i55] Disengagement Area added according to issue note
+	*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
+	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
+	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
+	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
