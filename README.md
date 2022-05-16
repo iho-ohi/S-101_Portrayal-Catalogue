@@ -25,11 +25,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
+[i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2.1
 *	Change version numbering scheme to match FC and DCEG
 *	[#67][i67] Update for S-100 v5.0 schemas
+*	[#68][i68] Add portrayal context parameter validation rules
 *	[#27][i27] Feature CoastguardStation -> CoastGuardStation
 *	[#28][i28] Attribute visuallyConspicuous -> visualProminence
 *	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
