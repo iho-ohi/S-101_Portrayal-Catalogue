@@ -48,7 +48,7 @@ function PipelineSubmarineOnLand(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:PIPSOL06')
 		--
 		-- issue #54, Bubble Curtain [Category of Pipe] (row 39 main)
-		==
+		--
 		elseif contains(7, feature.categoryOfPipelinePipe) then
 			viewingGroup = 34070
 			if contextParameters.RadarOverlay then
