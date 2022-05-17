@@ -46,6 +46,18 @@ function PipelineSubmarineOnLand(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:PIPSOL06')
+		--
+		-- issue #54, Bubble Curtain [Category of Pipe] (row 39 main)
+		==
+		elseif contains(7, feature.categoryOfPipelinePipe) then
+			viewingGroup = 34070
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('LineInstruction:PIPSOL06')
+		-- end #54
 		else
 			viewingGroup = 34070
 			if contextParameters.RadarOverlay then

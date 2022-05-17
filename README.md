@@ -26,6 +26,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
+[i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2.1
@@ -48,6 +49,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
+	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
