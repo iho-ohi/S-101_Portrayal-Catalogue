@@ -15,15 +15,17 @@ function DredgedArea(feature, featurePortrayal, contextParameters)
 		DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 		-- Dredged Date (row 47 main) #56
-		featurePortrayal:AddInstructions('LocalOffset:0,-3.51;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
-		local drmv = EncodeString(feature.depthRangeMinimumValue, 'dredged to %5.1f')
+		featurePortrayal:AddInstructions('LocalOffset:0,-3.51;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontSlant:Italics')
+		local drmv = EncodeString(feature.depthRangeMinimumValue, 'dredged to %5.1fm')
 		local date = ''
 
 		-- DEBUG TESTING with fake date
 		--feature.dredgedDate = '20220506'
 
+		--if feature.qualityOfVerticalMeasurement
+		--if feature.qualityOfVerticalMeasurement and contains(feature.qualityOfVerticalMeasurement, 10) then
 		if feature.dredgedDate then 
-			date = EncodeString(feature.dredgedDate, ' [%s]')
+			date = EncodeString(feature.dredgedDate, ' (%s)')
 		end
 		-- combine depth with date
 		local daDate = drmv .. date
