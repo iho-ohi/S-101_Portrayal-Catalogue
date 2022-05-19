@@ -6,7 +6,8 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.categoryOfCable == 6 then
+		-- issue #59 categoryOfCable 7 
+		if feature.categoryOfCable == 6 or feature.categoryOfCable == 7 then
 			viewingGroup = 24010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:OverRADAR')
