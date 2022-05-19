@@ -18,16 +18,18 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i39]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/39
 [i40]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/40
 [i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
+[i44]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/44
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
+[i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
+[i59]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/59
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
-[i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
-[i59]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/59
+[i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2.1
@@ -52,6 +54,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
+	*	[#44][i44], [#70][i70] changes to default symbology
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
