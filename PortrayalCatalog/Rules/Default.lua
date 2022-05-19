@@ -2,7 +2,6 @@
 
 -- Main entry point for feature type.
 function Default(feature, featurePortrayal, contextParameters)
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
 
 	if (feature.PrimitiveType == PrimitiveType.Point or feature.PrimitiveType == PrimitiveType.MultiPoint) then
 		-- Simplified and paper chart points use the same symbolization
