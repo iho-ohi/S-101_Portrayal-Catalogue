@@ -71,7 +71,12 @@ function PortrayalMain(featureIDs)
 			-- Clear any drawing instructions created up to this point.
 			featurePortrayal = featurePortrayalItem:NewFeaturePortrayal()
 
-			Default(feature, featurePortrayal, contextParameters)
+			local dateDependent = ProcessFixedAndPeriodicDates(feature, featurePortrayal)
+			local viewingGroup = Default(feature, featurePortrayal, contextParameters)
+			ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
+			if dateDependent then
+				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, viewingGroup)
+			end
 		end
 
 		Debug.StopPerformance('Lua Code - Dataset processing')

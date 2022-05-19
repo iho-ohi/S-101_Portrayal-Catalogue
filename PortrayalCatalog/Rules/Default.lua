@@ -30,4 +30,5 @@ function Default(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
 		featurePortrayal:AddInstructions('LineInstruction:QUESMRK1')
 	end
+	return 21010
 end
