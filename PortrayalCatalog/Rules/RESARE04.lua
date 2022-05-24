@@ -3,7 +3,7 @@
 -- Main entry point for CSP.
 function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 	Debug.StartPerformance('Lua Code - RESARE04')
-
+	
 	local restriction = feature.restriction
 	local categoryOfRestrictedArea = feature.categoryOfRestrictedArea
 
@@ -19,7 +19,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES61')
 			elseif contains(restriction, { 9, 10, 11, 12, 15, 18, 19, 20, 21, 22 }) then
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES71')
-			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, {4, 5, 6, 7, 10, 20, 22, 23 }) then
+			elseif categoryOfRestrictedArea and contains(categoryOfRestrictedArea, {4, 5, 6, 7, 10, 20, 22, 23, 31 }) then -- Issue #53
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES71')
 			else
 				featurePortrayal:AddInstructions('PointInstruction:ENTRES51')
