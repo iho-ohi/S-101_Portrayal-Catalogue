@@ -32,7 +32,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
 
 ## Changelog
-### 1.0.2 - use with FC 1.0.2.1
+### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
 *	[#67][i67] Update for S-100 v5.0 schemas
 *	[#68][i68] Add portrayal context parameter validation rules
