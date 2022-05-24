@@ -30,6 +30,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
+[i53]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/53
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -55,6 +56,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
 	*	[#44][i44], [#70][i70] changes to default symbology
+	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
