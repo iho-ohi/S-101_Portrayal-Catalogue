@@ -21,6 +21,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i44]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/44
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
+[i53]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/53
 [i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
@@ -30,13 +31,15 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
-[i53]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/53
+[i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
+[i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
 *	[#67][i67] Update for S-100 v5.0 schemas
 *	[#68][i68] Add portrayal context parameter validation rules
+*	[#84][i84] Fix symbolBox for FOULGD02.svg
 *	Lua Rule File Updates
 	*	[#27][i27] Feature CoastguardStation -> CoastGuardStation
 	*	[#28][i28] Attribute visuallyConspicuous -> visualProminence
@@ -57,6 +60,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
 	*	[#44][i44], [#70][i70] changes to default symbology
 	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
+	*	[#70][i70]  Handle date dependency/nautical information for default symbology
+	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
