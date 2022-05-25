@@ -6,7 +6,7 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if feature.categoryOfRadioStation == 10 then
+		if contains(10, feature.categoryOfRadioStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -24,7 +24,7 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:RDOSTA02')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.categoryOfRadioStation == 10 then
+		if contains(10, feature.categoryOfRadioStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
