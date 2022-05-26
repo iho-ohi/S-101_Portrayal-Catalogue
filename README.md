@@ -15,6 +15,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i33]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/33
 [i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
 [i36]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/36
+[i37]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/37
 [i39]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/39
 [i40]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/40
 [i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
@@ -46,20 +47,21 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#29][i29] Attribute categoryOfRecommendedTrack -> basedOnFixedMarks
 	*	[#33][i33] Default symbology for areas missing outline
 	*	[#34][i34] Token LITGN incorrect name/description
-	*	[#41][i41] Buoy New Danger Marking rule added
 	*	[#36][i36] Current Non Gravitational (Removed Curve and Surface rule parts)
+	*	[#34][i37] Deep Water Route
 	*	[#39][i39] Foul Ground point, replaced FOULGND1 with FOULGD02
-	*	[#39][i39] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
+	*	[#40][i40] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
+	*	[#41][i41] Buoy New Danger Marking rule added
+	*	[#44][i44], [#70][i70] changes to default symbology
 	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
+	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
+	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
+	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#55][i55] Disengagement Area added according to issue note
 	*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
-	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
-	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
-	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
-	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
-	*	[#44][i44], [#70][i70] changes to default symbology
-	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
+	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
+	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#70][i70]  Handle date dependency/nautical information for default symbology
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 
