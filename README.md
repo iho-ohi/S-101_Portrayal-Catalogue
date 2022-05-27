@@ -35,6 +35,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
 [i77]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/77
+[i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -66,6 +67,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#70][i70]  Handle date dependency/nautical information for default symbology
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
+	*	[#76][i76]  Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09

@@ -35,22 +35,10 @@ function SlopingGround(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ColorFill:CHGRD')
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfSlope == 5 and feature.radarConspicuous then
-			viewingGroup = 32010
-			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('ColorFill:CHGRD')
-			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
-			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfSlope == 6 then
 			viewingGroup = 32010
 			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHGRD')
-		elseif feature.categoryOfSlope == 7 and feature.radarConspicuous then
-			viewingGroup = 32010
-			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('ColorFill:CHGRD')
-			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
-			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			viewingGroup = 32010
 			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR;NullInstruction')
@@ -80,19 +68,7 @@ function SlopingGround(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ColorFill:CHGRD')
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfSlope == 5 and feature.radarConspicuous then
-			viewingGroup = 32010
-			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('ColorFill:CHGRD')
-			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
-			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfSlope == 6 then
-			viewingGroup = 32010
-			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
-			featurePortrayal:AddInstructions('ColorFill:CHGRD')
-			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
-			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfSlope == 7 and feature.radarConspicuous then
 			viewingGroup = 32010
 			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('ColorFill:CHGRD')
