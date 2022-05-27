@@ -506,6 +506,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYNDM01">
+		   <description>
+			   <name>BOYNDM01</name>
+			   <description>new danger marking buoy</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYNDM01.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="BOYPIL01">
          <description>
             <name>BOYPIL01</name>
@@ -8856,17 +8866,6 @@
             <language>eng</language>
          </description>
          <fileName>BuoyCardinal.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
-      <ruleFile id="BuoyEmergencyWreckMarking">
-         <description>
-            <name>BuoyEmergencyWreckMarking</name>
-            <description>Rules for feature type BuoyEmergencyWreckMarking</description>
-            <language>eng</language>
-         </description>
-         <fileName>BuoyEmergencyWreckMarking.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>

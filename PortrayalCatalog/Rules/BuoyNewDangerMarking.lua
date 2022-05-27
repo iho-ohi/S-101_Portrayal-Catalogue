@@ -13,7 +13,7 @@ function BuoyNewDangerMarking(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:BOYSPP45')
+		featurePortrayal:AddInstructions('PointInstruction:BOYNDM01')
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)

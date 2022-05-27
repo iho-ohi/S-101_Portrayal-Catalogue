@@ -34,6 +34,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
+[i77]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/77
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -51,7 +52,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#34][i37] Deep Water Route
 	*	[#39][i39] Foul Ground point, replaced FOULGND1 with FOULGD02
 	*	[#40][i40] Discoloured Water point, replaced testPCB with DSCWTR01 for points only
-	*	[#41][i41] Buoy New Danger Marking rule added
+	*	[#41][i41] Buoy New Danger Marking rule added 
 	*	[#44][i44], [#70][i70] changes to default symbology
 	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
@@ -64,7 +65,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#70][i70]  Handle date dependency/nautical information for default symbology
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
-
+	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
