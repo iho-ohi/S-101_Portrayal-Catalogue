@@ -32,10 +32,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
+[i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
+[i77]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/77
+[i79]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/79
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
-[i77]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/77
-[i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -65,9 +66,10 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#70][i70]  Handle date dependency/nautical information for default symbology
-	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
-	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
 	*	[#76][i76]  Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
+	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
+	*	[#79][i79]  Allocate portrayal parameters to SY(CHDATD01)
+	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
