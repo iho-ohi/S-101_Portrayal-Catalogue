@@ -7276,6 +7276,13 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+      <viewingGroup id="31032">
+         <description>
+            <name>Date dependent</name>
+            <description>The object is present only during the indicated period</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
       <viewingGroup id="31040">
          <description>
             <name>dataCoverage</name>
@@ -8126,6 +8133,7 @@
          <viewingGroup>31011</viewingGroup>
          <viewingGroup>31030</viewingGroup>
          <viewingGroup>31031</viewingGroup>
+         <viewingGroup>31032</viewingGroup>
          <viewingGroup>31040</viewingGroup>
          <viewingGroup>32000</viewingGroup>
          <viewingGroup>32010</viewingGroup>
