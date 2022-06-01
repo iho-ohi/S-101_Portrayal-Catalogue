@@ -14,6 +14,8 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG01')
+		
+
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 31080
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -34,6 +36,17 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
+
+		-- issue #73
+		
+		if feature.valueOfLocalMagneticAnomaly then	-- complex attribute
+			--Debug.Break()
+			if feature.valueOfLocalMagneticAnomaly.magneticAnomalyValueMaximum then
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
+				featurePortrayal:AddTextInstruction(EncodeString(feature.valueOfLocalMagneticAnomaly.magneticAnomalyValueMaximum, '%3.1f\''), 30, 24, viewingGroup, 12)
+			end
+		end
+		-- end #73
 
 	return viewingGroup
 end
