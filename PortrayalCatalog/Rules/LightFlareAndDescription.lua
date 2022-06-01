@@ -26,6 +26,7 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 
 			for _, af in ipairs(associatedFeatures) do
 				if af ~= feature and contains(af.Code, { 'LightAllAround', 'LightAirObstruction', 'LightFogDetector' }) then
+					--Debug.Break()
 					rotation = 45
 
 					break
@@ -73,5 +74,16 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 	end
 
 	local description = LITDSN02(categoryOfLight, feature.rhythmOfLight, feature.colour, feature.height, feature['!valueOfNominalRange'], feature.status)
-	featurePortrayal:AddTextInstruction(description, 23, 24, viewingGroup, priority)
+	-- issue #52, Call Activated [Signal Generation] (row 40 main)
+	-- dataset 101GB005X01NE.000 will trigger
+	--Debug.Break()
+	--feature.signalGeneration = 5
+
+	if contains(feature.signalGeneration, {3,5,6}) then
+		--Debug.Break()
+		featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, viewingGroup, priority)
+	else
+		featurePortrayal:AddTextInstruction(description, 23, 24, viewingGroup, priority)
+	end
+	-- end issue #52
 end

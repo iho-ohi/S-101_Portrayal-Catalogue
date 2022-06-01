@@ -38,6 +38,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
 [i73]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/73
+[i52]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/52
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -72,6 +73,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#79][i79]  Allocate portrayal parameters to SY(CHDATD01)
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 	*	[#73][i73]  Value of Local Magnetic Anomaly as maximum value text
+	*	[#52][i52]  Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
