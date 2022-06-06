@@ -5,6 +5,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i5]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/5
 [i6]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/6
 [i7]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/7
+[i9]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/9
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i25]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/25
@@ -72,7 +73,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#73][i73]  Value of Local Magnetic Anomaly as maximum value text
 	*	[#76][i76]  Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
 	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
-	*	[#79][i79]  Allocate portrayal parameters to SY(CHDATD01)
+	*	[#79][i79], [#9][i9]  Allocate portrayal parameters to SY(CHDATD01)
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
