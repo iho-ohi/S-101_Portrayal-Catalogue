@@ -81,11 +81,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNSTK02')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		elseif feature.beaconShape == 3 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
@@ -94,11 +94,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNTOW01')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		elseif contains(11, feature.natureOfConstruction) then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
@@ -107,11 +107,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNLTC01')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		elseif feature.beaconShape == 5 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
@@ -120,11 +120,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		elseif feature.beaconShape == 7 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
@@ -133,11 +133,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		else
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
@@ -146,11 +146,11 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
+			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
 			end
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
