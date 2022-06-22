@@ -40,6 +40,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i79]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/79
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
+[i86]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/86
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -75,6 +76,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
 	*	[#79][i79], [#9][i9]  Allocate portrayal parameters to SY(CHDATD01)
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
+	*	[#86][i86]  LocalOffset unintentionally applied
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
