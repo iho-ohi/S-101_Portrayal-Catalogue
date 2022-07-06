@@ -22,6 +22,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 [i44]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/44
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
+[i48]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/48
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
 [i52]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/52
 [i53]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/53
@@ -34,6 +35,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
+[i72]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/72
 [i73]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/73
 [i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
 [i77]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/77
@@ -41,6 +43,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i82]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/82
 [i84]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/84
 [i86]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/86
+[i89]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/89
+[i90]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/90
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -61,6 +65,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#41][i41] Buoy New Danger Marking rule added 
 	*	[#44][i44], [#70][i70] changes to default symbology
 	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
+	*	[#48][i48] Fix display category for UnderwaterAwashRock
 	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
 	*	[#52][i52]  Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
 	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
@@ -71,12 +76,15 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#70][i70]  Handle date dependency/nautical information for default symbology
+	*	[#72][i72]  Fix display category for Obstructions
 	*	[#73][i73]  Value of Local Magnetic Anomaly as maximum value text
 	*	[#76][i76]  Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
 	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
 	*	[#79][i79], [#9][i9]  Allocate portrayal parameters to SY(CHDATD01)
 	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
 	*	[#86][i86]  LocalOffset unintentionally applied
+	*	[#89][i89]  Associate INFORM, text, etc. with override viewing group returned from UDWHAZ05
+	*	[#90][i90]  Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
