@@ -1,4 +1,5 @@
 -- QUAPOS01 conditional symbology rules file.
+-- #90
 
 -- Referenced CSPs.
 require 'QUAPNT02'
@@ -14,7 +15,7 @@ function QUAPOS01(feature, featurePortrayal, contextParameters, viewingGroup)
 		local symbol = QUAPNT02(feature, featurePortrayal, contextParameters)
 
 		if symbol then
-			featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..	',31011;PointInstruction:' .. symbol)
 		end
 	end
 

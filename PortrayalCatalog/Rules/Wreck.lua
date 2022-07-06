@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #89
 
 -- Referenced portrayal rules.
 require 'WRECKS05'
@@ -7,16 +8,6 @@ require 'WRECKS05'
 -- Wreck main entry point.
 function Wreck(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-
-	local valueOfSounding = feature.valueOfSounding or feature.defaultClearanceDepth or scaledDecimalZero
-
-	if not (feature.qualityOfVerticalMeasurement and contains(feature.qualityOfVerticalMeasurement, {1, 6})) then
-		valueOfSounding = scaledDecimalZero
-	end
-
-	if valueOfSounding <= contextParameters.SafetyContour then
-		featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
-	end
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
 		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
@@ -42,7 +33,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
@@ -68,7 +59,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
@@ -84,7 +75,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
@@ -98,7 +89,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

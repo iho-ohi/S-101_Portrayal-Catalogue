@@ -1,5 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #48
+-- #89
 
 -- Referenced portrayal rules.
 require 'OBSTRN07'
@@ -7,16 +9,6 @@ require 'OBSTRN07'
 -- Obstruction main entry point.
 function Obstruction(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-
-	local valueOfSounding = scaledDecimalZero
-
-	if feature.valueOfSounding and feature.qualityOfVerticalMeasurement and contains(feature.qualityOfVerticalMeasurement, {1, 6}) then
-		valueOfSounding = feature.valueOfSounding
-	end
-
-	if valueOfSounding <= contextParameters.SafetyContour then
-		featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
-	end
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
 		if feature.categoryOfObstruction == 8 and feature.valueOfSounding then
@@ -148,7 +140,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		if feature.categoryOfObstruction == 8 then
@@ -194,7 +186,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if feature.categoryOfObstruction == 8 then
@@ -224,7 +216,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if feature.categoryOfObstruction == 8 then
@@ -254,7 +246,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
-			OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

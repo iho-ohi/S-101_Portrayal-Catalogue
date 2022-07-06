@@ -1,5 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #48
+-- #89
 
 -- Referenced portrayal rules.
 require 'OBSTRN07'
@@ -16,7 +18,7 @@ function UnderwaterAwashRock(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
-		OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+		viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
