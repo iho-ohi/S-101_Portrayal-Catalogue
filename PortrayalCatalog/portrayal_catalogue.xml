@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<!-- #51: Virtual AIS Aid to Navigation -->
 <!-- #72: Added DEPVAL02 to rules -->
 
 <?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-17T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
@@ -5695,6 +5696,126 @@
             <language>eng</language>
          </description>
          <fileName>UWTROC04.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON01">
+         <description>
+            <name>VATON01</name>
+            <description>Virtual Aid to Navigation - north cardinal mark</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON01.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON02">
+         <description>
+            <name>VATON02</name>
+            <description>Virtual Aid to Navigation - east cardinal mark</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON02.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON03">
+         <description>
+            <name>VATON03</name>
+            <description>Virtual Aid to Navigation - south cardinal mark</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON03.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON04">
+         <description>
+            <name>VATON04</name>
+            <description>Virtual Aid to Navigation - west cardinal mark</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON04.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON05">
+         <description>
+            <name>VATON05</name>
+            <description>Virtual Aid to Navigation - port lateral IALA A</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON05.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON06">
+         <description>
+            <name>VATON06</name>
+            <description>Virtual Aid to Navigation - starboard lateral IALA A</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON06.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON07">
+         <description>
+            <name>VATON07</name>
+            <description>Virtual Aid to Navigation - port lateral IALA B</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON07.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON08">
+         <description>
+            <name>VATON08</name>
+            <description>Virtual Aid to Navigation - starboard lateral IALA B</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON08.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON09">
+         <description>
+            <name>VATON09</name>
+            <description>Virtual Aid to Navigation - isolated danger</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON09.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON10">
+         <description>
+            <name>VATON10</name>
+            <description>Virtual Aid to Navigation - safe water</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON10.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON11">
+         <description>
+            <name>VATON11</name>
+            <description>Virtual Aid to Navigation - special purpose</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON11.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="VATON12">
+         <description>
+            <name>VATON12</name>
+            <description>Virtual Aid to Navigation - new danger marking</description>
+            <language>eng</language>
+         </description>
+         <fileName>VATON12.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
