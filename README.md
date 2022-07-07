@@ -36,6 +36,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
 [i68]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/68
+[i69]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/69
 [i70]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/70
 [i72]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/72
 [i73]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/73
@@ -79,6 +80,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#59][i59] categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
+	*	[#69][i69] VirtualAISAidToNavigation should generate NavHazard alert
 	*	[#70][i70] Handle date dependency/nautical information for default symbology
 	*	[#72][i72] Fix display category for Obstructions
 	*	[#73][i73] Value of Local Magnetic Anomaly as maximum value text
