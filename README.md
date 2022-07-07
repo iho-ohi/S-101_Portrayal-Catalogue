@@ -24,6 +24,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i48]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/48
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
+[i51]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/51
 [i52]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/52
 [i53]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/53
 [i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
@@ -68,25 +69,26 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 	*	[#48][i48] Fix display category for UnderwaterAwashRock
 	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
-	*	[#52][i52]  Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
-	*	[#53][i53]  Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
-	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
+	*	[#51][i51] Implement Virtual AIS Aid to Navigation
+	*	[#52][i52] Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
+	*	[#53][i53] Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
+	*	[#54][i54] categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#55][i55] Disengagement Area added according to issue note
 	*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
 	*	[#57][i57] UnderwaterAwashRock (UWTROC) missing NavHazard alert
-	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
+	*	[#59][i59] categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
-	*	[#70][i70]  Handle date dependency/nautical information for default symbology
-	*	[#72][i72]  Fix display category for Obstructions
-	*	[#73][i73]  Value of Local Magnetic Anomaly as maximum value text
-	*	[#76][i76]  Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
+	*	[#70][i70] Handle date dependency/nautical information for default symbology
+	*	[#72][i72] Fix display category for Obstructions
+	*	[#73][i73] Value of Local Magnetic Anomaly as maximum value text
+	*	[#76][i76] Sloping Ground, Removed categoryOfSlopingGround= 5 & 7 from list of valid attribute values
 	*	[#41][i41], [#77][i77]  Changed symbol to BOYNDM01, removed old rule from PC.xml
 	*	[#79][i79], [#9][i9]  Allocate portrayal parameters to SY(CHDATD01)
-	*	[#82][i82]  Multiplicity of categoryOfRadioStation changed
-	*	[#86][i86]  LocalOffset unintentionally applied
-	*	[#89][i89]  Associate INFORM, text, etc. with override viewing group returned from UDWHAZ05
-	*	[#90][i90]  Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
+	*	[#82][i82] Multiplicity of categoryOfRadioStation changed
+	*	[#86][i86] LocalOffset unintentionally applied
+	*	[#89][i89] Associate INFORM, text, etc. with override viewing group returned from UDWHAZ05
+	*	[#90][i90] Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
