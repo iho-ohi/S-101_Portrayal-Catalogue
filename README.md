@@ -29,6 +29,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i54]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/54
 [i55]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/55
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
+[i57]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/57
 [i59]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/59
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
@@ -72,6 +73,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#54][i54]  categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#55][i55] Disengagement Area added according to issue note
 	*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
+	*	[#57][i57] UnderwaterAwashRock (UWTROC) missing NavHazard alert
 	*	[#59][i59]  categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
