@@ -79,7 +79,7 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 	--Debug.Break()
 	--feature.signalGeneration = 5
 
-	if contains(feature.signalGeneration, {3,5,6}) then
+	if contains(feature['!signalGeneration'], {3,5,6}) then
 		--Debug.Break()
 		featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, viewingGroup, priority)
 	else
