@@ -49,6 +49,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i86]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/86
 [i89]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/89
 [i90]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/90
+[i91]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/91
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -93,6 +94,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#86][i86] LocalOffset unintentionally applied
 	*	[#89][i89] Associate INFORM, text, etc. with override viewing group returned from UDWHAZ05
 	*	[#90][i90] Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
+	*	[#91][i91] LITDSN02.lua "status" labels not present
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
