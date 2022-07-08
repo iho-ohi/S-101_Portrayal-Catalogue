@@ -33,7 +33,7 @@ local lightCharacteristics =
 	[26] = {[1] = 'VQ', [2] = 'LFl'}, -- very quick-flash plus long-flash
 	[27] = {[1] = 'UQ', [2] = 'LFl'}, -- ultra quick-flash plus long-flash
 	[28] = {[1] = 'Al'},              -- Alternating
-	[29] = {[1] = 'AlF Fl'},           -- fixed and alternating flashing
+	[29] = {[1] = 'AlF Fl'}           -- fixed and alternating flashing
 }
 
 local colours =
@@ -59,7 +59,7 @@ local statuses =
 	[7] = '(temp)',    -- Temporary
 	[8] = '(priv)',    -- Private
 	[11] = '(exting)', -- extinguished
-	[17] = '(U)',      -- un-watched
+	[17] = '(U)'      -- un-watched
 }
 
 -- Main entry point for CSP.
@@ -67,6 +67,7 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 	Debug.StartPerformance('Lua Code - LITDSN02')
 
 	local description = categoryOfLights[categoryOfLight] or ''
+	local statusString = statuses[status] or ''
 
 	if rhythmOfLight then
 		-- Light Characteristic / Signal Group
@@ -124,11 +125,12 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 	end
 
 	-- Status
-
-	local status = statuses[status]
-
-	if status then
-		description = ' ' .. status
+	for i, statusValue in ipairs(status)
+	do
+		if statuses[statusValue]
+		then
+			description = description .. statuses[statusValue]
+		end
 	end
 
 	Debug.StopPerformance('Lua Code - LITDSN02')
