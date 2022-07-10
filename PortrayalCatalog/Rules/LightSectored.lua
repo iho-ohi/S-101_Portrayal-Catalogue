@@ -1,4 +1,5 @@
 -- LightSectored portrayal rules file.
+-- #96
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -104,12 +105,20 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 			elseif lightSector.directionalCharacter then
 				-- Directional light.
-				local orientation = flipSector(lightSector.directionalCharacter.orientation.orientationValue:ToNumber())
+				Debug.Break()
 				local leglen = nmi2metres(valueOfNominalRange)
+				local orientationValue = lightSector.directionalCharacter.orientation.orientationValue
+				local orientation
+				
+				if orientationValue
+				then
+					-- Draw the direction marked by the light (bearing is from seaward)
+					orientation = flipSector(orientationValue:ToNumber())
 
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. orientation .. ',GeographicCRS,' .. leglen)
-				featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
-				featurePortrayal:AddInstructions('LineInstruction:_simple_')
+					featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. orientation .. ',GeographicCRS,' .. leglen)
+					featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
+					featurePortrayal:AddInstructions('LineInstruction:_simple_')
+				end
 
 				local categoryOfLight = feature.categoryOfLight
 
@@ -121,14 +130,21 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 					featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
-				else
+				elseif orientationValue then
 					featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. orientation)
 					featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:' .. sectorLightSymbol)
 					featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
+				else
+					featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:QUESMRK1')
 				end
 
-				featurePortrayal:AddInstructions('LocalOffset:10.53,-3.51;TextAlignVertical:Top;FontSize:10;FontColor:CHBLK;ClearGeometry')
-				featurePortrayal:AddTextInstruction(string.format('%03.0f deg', lightSector.directionalCharacter.orientation.orientationValue:ToNumber()), 23, 24, 27070, 24)
+				featurePortrayal:AddInstructions('LocalOffset:10.53,-3.51;FontSize:10;FontColor:CHBLK;ClearGeometry')
+				
+				if orientationValue
+				then
+					featurePortrayal:AddInstructions('TextAlignVertical:Top')
+					featurePortrayal:AddTextInstruction(string.format('%03.0f deg', orientationValue:ToNumber()), 23, 24, 27070, 24)
+				end
 
 				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
 
