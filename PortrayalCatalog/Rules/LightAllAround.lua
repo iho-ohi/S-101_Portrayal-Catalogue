@@ -1,5 +1,6 @@
 -- LightAllAround portrayal rules file.
 -- #52
+-- #60
 
 -- Referenced CSPs.
 require 'LightFlareAndDescription'
@@ -21,14 +22,17 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 
 	local categoryOfLight = feature.categoryOfLight or {}
 
+	-- majorLight is not valid for aero and non morse code lights
+	local majorLight = feature.majorLight and feature.majorLight == 1 and not contains(categoryOfLight, { 5 }) and not feature.rhythmOfLight and feature.rhythmOfLight.lightCharacteristic and feature.rhythmOfLight.lightCharacteristic == 12
+
 	if contains(categoryOfLight, { 8, 11 }) then
 		-- Flood or spot light
 		featurePortrayal:AddInstructions('PointInstruction:LIGHTS82')
 	elseif contains(categoryOfLight, { 9 }) then
 		-- Strip light
 		featurePortrayal:AddInstructions('PointInstruction:LIGHTS81')
-	elseif valueOfNominalRange >= 10.0 and not contains(categoryOfLight, { 5 }) and feature.rhythmOfLight.lightCharacteristic ~= 12 then
-		-- Non aero and non morse code light visible at ten miles.
+	elseif majorLight then
+		-- Non aero and non morse code light marked as a majorLight
 		local colour = feature.colour
 		local sectorColourToken
 
