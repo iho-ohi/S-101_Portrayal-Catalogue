@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #49
 -- #89
 
 -- Referenced portrayal rules.
@@ -10,7 +11,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
-		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
+		if feature.categoryOfWreck and feature.categoryOfWreck == 3 and feature.valueOfSounding then
 			viewingGroup = 34051
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -18,7 +19,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
-		elseif feature.categoryOfWreck == 3 then
+		elseif feature.categoryOfWreck and feature.categoryOfWreck == 3 then
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -36,7 +37,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
+		if feature.categoryOfWreck and feature.categoryOfWreck == 3 and feature.valueOfSounding then
 			viewingGroup = 34051
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -44,7 +45,7 @@ function Wreck(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FOULGND1')
-		elseif feature.categoryOfWreck == 3 then
+		elseif feature.categoryOfWreck and feature.categoryOfWreck == 3 then
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -62,12 +63,12 @@ function Wreck(feature, featurePortrayal, contextParameters)
 			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
+		if feature.categoryOfWreck and feature.categoryOfWreck == 3 and feature.valueOfSounding then
 			viewingGroup = 34051
 			featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfWreck == 3 then
+		elseif feature.categoryOfWreck and feature.categoryOfWreck == 3 then
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
@@ -78,11 +79,11 @@ function Wreck(feature, featurePortrayal, contextParameters)
 			viewingGroup = WRECKS05(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if feature.categoryOfWreck == 3 and feature.valueOfSounding then
+		if feature.categoryOfWreck and feature.categoryOfWreck == 3 and feature.valueOfSounding then
 			viewingGroup = 34051
 			featurePortrayal:AddInstructions('ViewingGroup:34051;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
-		elseif feature.categoryOfWreck == 3 then
+		elseif feature.categoryOfWreck and feature.categoryOfWreck == 3 then
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
