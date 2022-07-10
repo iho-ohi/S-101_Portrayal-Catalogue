@@ -1,5 +1,24 @@
 -- Radio calling-in point main entry point.
+-- #92
+
 function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
+	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ContactDetails')
+	
+	local communicationChannels = ''
+	if contactDetails and contactDetails.communicationChannel
+	then
+		communicationChannels = 'ch '
+		for i, channel in ipairs(contactDetails.communicationChannel)
+		do
+			if i == 1
+			then
+				communicationChannels = communicationChannels .. channel
+			else
+				communicationChannels = communicationChannels .. ',' .. channel
+			end
+		end
+	end
+	
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
 		if feature.trafficFlow == 1 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -14,9 +33,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -31,9 +50,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -48,9 +67,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -65,9 +84,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		else
 			if contextParameters.RadarOverlay then
@@ -95,9 +114,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -112,9 +131,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -128,9 +147,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -145,9 +164,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		else
 			if contextParameters.RadarOverlay then
@@ -177,9 +196,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -196,9 +215,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -215,9 +234,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
@@ -234,9 +253,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
 			end
-			if feature.communicationChannel[1] then
+			if communicationChannels ~= '' then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(feature.communicationChannel[1], 'ch %s'), 11, 24, 25060, 18)
+				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 25060, 18)
 			end
 		else
 			if contextParameters.RadarOverlay then
