@@ -51,6 +51,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i90]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/90
 [i91]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/91
 [i95]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/95
+[i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -97,6 +98,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#90][i90] Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
 	*	[#91][i91] LITDSN02.lua "status" labels not present
 	*	[#95][i95] RestrictedAreaRegulatory call to RestrictedAreaNavigational fails	
+	*	[#96][i96] LightSectored directional light with unknown orientation calls Default.lua	
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
