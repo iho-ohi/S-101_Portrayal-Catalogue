@@ -23,6 +23,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i44]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/44
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i48]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/48
+[i49]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/49
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
 [i51]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/51
 [i52]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/52
@@ -75,6 +76,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#44][i44], [#70][i70] changes to default symbology
 	*	[#46][i46] New symbol for CEVNI system of marks, 'DIRBOY02'
 	*	[#48][i48] Fix display category for UnderwaterAwashRock
+	*	[#49][i49] Wrecks with missing attribute values should be assigned to 'Base' display category
 	*	[#50][i50] Quality of Bathymetric Data, use S-52 symbology based on CATZOC value
 	*	[#51][i51] Implement Virtual AIS Aid to Navigation
 	*	[#52][i52] Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
