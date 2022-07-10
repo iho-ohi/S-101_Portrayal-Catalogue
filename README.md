@@ -34,6 +34,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i57]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/57
 [i59]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/59
 [i60]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/60
+[i62]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/62
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
 [i67]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/67
@@ -87,6 +88,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#57][i57] UnderwaterAwashRock (UWTROC) missing NavHazard alert
 	*	[#59][i59] _categoryOfCable_ 7 (ferry) added to rule CableSubmarine.lua
 	*	[#60][i60] LightAllAround now uses _majorLight_ to determine when to draw halo
+	*	[#62][i62] Use _flareAngle_ attribute in LightFlareAndDescription.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#69][i69] VirtualAISAidToNavigation should generate NavHazard alert
