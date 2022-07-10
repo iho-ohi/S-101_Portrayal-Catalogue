@@ -1,8 +1,10 @@
 -- VesselTrafficServiceArea portrayal rules file.
+-- #93 task 1: Update to support surfaces instead of points
 
 -- Main entry point for feature type.
 function VesselTrafficServiceArea(feature, featurePortrayal, contextParameters)
-	if feature.PrimitiveType == PrimitiveType.Point then
+	local viewingGroup = 25060
+	if feature.PrimitiveType == PrimitiveType.Surface then
 		featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -14,4 +16,5 @@ function VesselTrafficServiceArea(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
+	return viewingGroup
 end
