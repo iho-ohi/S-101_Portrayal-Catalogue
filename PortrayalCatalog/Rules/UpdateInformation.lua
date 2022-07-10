@@ -2,6 +2,7 @@
 
 -- Main entry point for CSP.
 function UpdateInformation(feature, featurePortrayal, contextParameters)
+	local viewingGroup = 26200
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
@@ -21,4 +22,5 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
+	return viewingGroup
 end
