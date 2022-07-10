@@ -1,4 +1,5 @@
 -- LightFlareAndDescription portrayal rules file.
+-- #62
 
 -- Referenced CSPs.
 require 'LITDSN02'
@@ -19,17 +20,20 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 
 	local rotation = 135
 
-	if contains(colour[1], { 1, 6, 11 }) then
-		-- White, yellow or orange light.  Flare at 45 degrees if there is a colocated non-sectored light.
-		for pointAssociation in feature:GetFlattenedSpatialAssociations() do
-			local associatedFeatures = pointAssociation.AssociatedFeatures
+	if feature.flareAngle
+	then
+		rotation = feature.flareAngle
+	else
+		if contains(colour[1], { 1, 6, 11 }) then
+			-- White, yellow or orange light.  Flare at 45 degrees if there is a colocated non-sectored light.
+			for pointAssociation in feature:GetFlattenedSpatialAssociations() do
+				local associatedFeatures = pointAssociation.AssociatedFeatures
 
-			for _, af in ipairs(associatedFeatures) do
-				if af ~= feature and contains(af.Code, { 'LightAllAround', 'LightAirObstruction', 'LightFogDetector' }) then
-					--Debug.Break()
-					rotation = 45
-
-					break
+				for _, af in ipairs(associatedFeatures) do
+					if af ~= feature and contains(af.Code, { 'LightAllAround', 'LightAirObstruction', 'LightFogDetector' }) then
+						rotation = 45
+						break
+					end
 				end
 			end
 		end
