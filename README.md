@@ -50,6 +50,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i89]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/89
 [i90]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/90
 [i91]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/91
+[i92]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/92
 [i95]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/95
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
 
@@ -77,11 +78,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#51][i51] Implement Virtual AIS Aid to Navigation
 	*	[#52][i52] Call Activated [Signal Generation], FogSignal.lua and LightFlareAndDescription.lua
 	*	[#53][i53] Coral Sanctuary [Category of Restricted Area] added to rule RESARE04.lua
-	*	[#54][i54] categoryOfPipelinePipe 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
+	*	[#54][i54] _categoryOfPipelinePipe_ 7 (bubble curtain) added to rule PipelineSubmarineOnLand.lua
 	*	[#55][i55] Disengagement Area added according to issue note
 	*	[#56][i56] Dredged Area display dredged date, in brackets, after depthRangeMinimumValue
 	*	[#57][i57] UnderwaterAwashRock (UWTROC) missing NavHazard alert
-	*	[#59][i59] categoryOfCable 7 (ferry) added to rule CableSubmarine.lua
+	*	[#59][i59] _categoryOfCable_ 7 (ferry) added to rule CableSubmarine.lua
 	*	[#63][i63] 'Fla' text added to point and surface for OffshorePlatform.lua with Flare Stack
 	*	[#64][i64] categoryOfFerry 5 (High Speed Ferry) added to rule FerryRoute.lua
 	*	[#69][i69] VirtualAISAidToNavigation should generate NavHazard alert
@@ -97,6 +98,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#89][i89] Associate INFORM, text, etc. with override viewing group returned from UDWHAZ05
 	*	[#90][i90] Display of quality symbol returned from QUAPNT02 should toggle with features base viewing group
 	*	[#91][i91] LITDSN02.lua "status" labels not present
+	*	[#92][i92] _communicationChannel_ attribute moved from feature to information type
 	*	[#95][i95] RestrictedAreaRegulatory call to RestrictedAreaNavigational fails	
 	*	[#96][i96] LightSectored directional light with unknown orientation calls Default.lua	
 	
