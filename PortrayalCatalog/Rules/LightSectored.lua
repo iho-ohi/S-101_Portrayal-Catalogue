@@ -1,5 +1,6 @@
 -- LightSectored portrayal rules file.
 -- #96
+-- #100
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
