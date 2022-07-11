@@ -90,8 +90,11 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 				-- Draw sector arcs
-
-				featurePortrayal:AddInstructions('ArcByRadius:0,0,' .. (lightSector.sectorExtension or 0.0) + 20.0 .. ',' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
+				if lightSector.sectorExtension then
+					featurePortrayal:AddInstructions('ArcByRadius:0,0,23,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
+				else
+					featurePortrayal:AddInstructions('ArcByRadius:0,0,20,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
+				end
 				featurePortrayal:AddInstructions('AugmentedPath:LocalCRS,GeographicCRS,LocalCRS')
 
 				if contains(lightSector.lightVisibility, { 7, 6, 3 }) then
@@ -105,7 +108,6 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 			elseif lightSector.directionalCharacter then
 				-- Directional light.
-				Debug.Break()
 				local leglen = nmi2metres(valueOfNominalRange)
 				local orientationValue = lightSector.directionalCharacter.orientation.orientationValue
 				local orientation
