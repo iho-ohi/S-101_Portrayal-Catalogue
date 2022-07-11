@@ -56,6 +56,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i92]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/92
 [i95]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/95
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
+[i100]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/100
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -107,6 +108,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#92][i92] _communicationChannel_ attribute moved from feature to information type
 	*	[#95][i95] RestrictedAreaRegulatory call to RestrictedAreaNavigational fails	
 	*	[#96][i96] LightSectored directional light with unknown orientation calls Default.lua	
+	*	[#100][i100] Type of _sectorExtension_ changed from integer to boolean
 	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
