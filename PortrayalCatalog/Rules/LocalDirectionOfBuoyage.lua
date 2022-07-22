@@ -1,5 +1,7 @@
 -- LocalDirectionOfBuoyage portrayal rules file.
-
+-- 
+-- Issue: PSWG #64, PC #46
+--
 -- UNOFFICIAL:  Rules extracted from S-52 lookup table for M_NSYS.
 
 -- Main entry point for feature type.
@@ -18,8 +20,7 @@ function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 		elseif feature.marksNavigationalSystemOf == 2 then
 			dirboy = 'DIRBOYB1'
 		elseif feature.marksNavigationalSystemOf == 11 then
-			-- new symbol for S-101 for CEVNI system of marks.
-			dirboy = 'DIRBOY02'
+			dirboy = 'DIRBOYA1'
 		else
 			dirboy = 'DIRBOY01'
 		end
@@ -27,7 +28,7 @@ function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue) .. ';PointInstruction:' .. dirboy .. ';Rotation:PortrayalCRS,0')
 
 		if contextParameters.PlainBoundaries then
-			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD') 
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')

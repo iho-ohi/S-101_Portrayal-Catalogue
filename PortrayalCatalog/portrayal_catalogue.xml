@@ -1129,16 +1129,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	  <symbol id="DIRBOY02">
-		 <description>
-		   <name>DIRBOY02</name>
-		   <description>direction of buoyage, CEVNI</description>
-		   <language>eng</language>
-		 </description>
-		 <fileName>DIRBOY02.svg</fileName>
-		 <fileType>Symbol</fileType>
-		 <fileFormat>SVG</fileFormat>
-	  </symbol>	   
       <symbol id="DIRBOYA1">
          <description>
             <name>DIRBOYA1</name>
