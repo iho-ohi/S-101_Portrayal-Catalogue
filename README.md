@@ -111,7 +111,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#95][i95] RestrictedAreaRegulatory call to RestrictedAreaNavigational fails	
 	*	[#96][i96] LightSectored directional light with unknown orientation calls Default.lua	
 	*	[#100][i100] Type of _sectorExtension_ changed from integer to boolean
-	*	[#46][i46] Updated guidance implemented based on PSWG #64 decisions
+	*	[#46][i46] Updated guidance implemented based on PSWG #64 decisions, remove LC(MARSYS51) etc
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

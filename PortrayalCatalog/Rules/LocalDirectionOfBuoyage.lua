@@ -1,6 +1,6 @@
 -- LocalDirectionOfBuoyage portrayal rules file.
 -- 
--- Issue: PSWG #64, PC #46
+-- Issue: PSWG #64 and PC #46
 --
 -- UNOFFICIAL:  Rules extracted from S-52 lookup table for M_NSYS.
 
@@ -34,7 +34,7 @@ function LocalDirectionOfBuoyage(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
 		end
 	else
-		featurePortrayal:AddInstructions('LineInstruction:MARSYS51')
+		featurePortrayal:AddInstructions('ViewingGroup:27040;DrawingPriority:12;DisplayPlane:UnderRADAR;NullInstruction')
 	end
 
 	return 27040
