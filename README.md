@@ -58,7 +58,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
 [i100]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/100
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
-
+[i47]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/47
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -112,6 +112,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#96][i96] LightSectored directional light with unknown orientation calls Default.lua	
 	*	[#100][i100] Type of _sectorExtension_ changed from integer to boolean
 	*	[#46][i46] Updated guidance implemented based on PSWG #64 decisions, remove LC(MARSYS51) etc
+	*	[#47][i47] Remove symbolisation from ALL NavigationalSystemOfMarks Surface boundaries, PSWG #42
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
