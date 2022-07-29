@@ -2,6 +2,7 @@
 
 <!-- #51: Virtual AIS Aid to Navigation -->
 <!-- #72: Added DEPVAL02 to rules -->
+<!-- #30: Added MARPOL viewing group 36060-->
 
 <?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-17T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.0.2">
@@ -7663,6 +7664,14 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+	   <viewingGroup id="36060">
+		   <description>
+			   <name>Marine Pollution Regulations Area (MARPOL)</name>
+			   <description>Other: N - Special areas</description>
+			   <language>eng</language>
+		   </description>
+	   </viewingGroup>
+
 	  <!-- P, Q, R, S - BUOYS & BEACONS, LIGHTS, FOG SIGNALS, RADAR -->
 	  <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
       <viewingGroup id="38000">
