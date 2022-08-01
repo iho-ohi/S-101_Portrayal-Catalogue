@@ -60,6 +60,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
 [i47]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/47
 [i30]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/30
+[i109]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/109
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -115,6 +116,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#46][i46] Updated guidance implemented based on PSWG #64 decisions, remove LC(MARSYS51) etc
 	*	[#47][i47] Remove symbolisation from ALL NavigationalSystemOfMarks Surface boundaries, PSWG #42
 	*	[#30][i30] Marine Pollution Regulations Area as S-52 ADMARE features,  PSWG #74
+	*	[#109][i109] Collision Regulations Limit symbol added but needs viewing group etc. PSWG #41
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

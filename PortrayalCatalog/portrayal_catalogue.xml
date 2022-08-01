@@ -1500,7 +1500,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="EMCTNAR1">
+	   <symbol id="EMCOLREG">
+		   <description>
+			   <name>EMCOLREG</name>
+			   <description>Embedded COLREG limits</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>EMCOLREG.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="EMCTNAR1">
          <description>
             <name>EMCTNAR1</name>
             <description>Embedded symbol</description>
@@ -6094,6 +6104,16 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
+      <lineStyle id="COLREG01">
+         <description>
+            <name>COLREG01</name>
+            <description>Limit of the Collision Regulation</description>
+            <language>eng</language>
+         </description>
+         <fileName>COLREG01.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>	   
       <lineStyle id="CTNARE51">
          <description>
             <name>CTNARE51</name>
