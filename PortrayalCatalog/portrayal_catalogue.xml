@@ -3780,6 +3780,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="Seagrass">
+		   <description>
+			   <name>Seagrass</name>
+			   <description>Seagrass</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>Seagrass.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="SILBUI01">
          <description>
             <name>SILBUI01</name>
@@ -8808,7 +8818,18 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="SLCONS04">
+	   <ruleFile id="Seagrass">
+		   <description>
+			   <name>Seagrass</name>
+			   <description>Seagrass</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>Seagrass.lua</fileName>
+		   <fileType>Rule</fileType>
+		   <fileFormat>LUA</fileFormat>
+		   <ruleType>SubTemplate</ruleType>
+	   </ruleFile>
+	   <ruleFile id="SLCONS04">
          <description>
             <name>SLCONS04</name>
             <description>Custom rules SLCONS04</description>
