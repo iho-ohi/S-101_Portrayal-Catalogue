@@ -5530,7 +5530,27 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="TOWERS01">
+	   <symbol id="TORII01">
+		   <description>
+			   <name>TORII01</name>
+			   <description>Torii</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>TORII01.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="TORII11">
+		   <description>
+			   <name>TORII11</name>
+			   <description>Torii (visually conspicuous)</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>TORII11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="TOWERS01">
          <description>
             <name>TOWERS01</name>
             <description>tower</description>
