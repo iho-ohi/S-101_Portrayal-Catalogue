@@ -63,6 +63,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i109]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/109
 [i104]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/104
 [i101]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/101
+[i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -119,9 +120,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#47][i47] Remove symbolisation from ALL NavigationalSystemOfMarks Surface boundaries, PSWG #42
 	*	[#30][i30] Marine Pollution Regulations Area as S-52 ADMARE features,  PSWG #74
 	*	[#109][i109] Collision Regulations Limit symbol added but needs viewing group etc. PSWG #41
-	*	[#104][i104] added Torii [Category of Landmark = 25], also see PSWG #60
-	*	[#101][i101] added Seagrass new symbology, also see PSWG #47
-	
+	*	[#104][i104] Added Torii [Category of Landmark = 25], also see PSWG #60
+	*	[#101][i101] Added Seagrass new symbology, also see PSWG #47
+	*	[#56][i56] Additional guidance on dredged date see Aug 3, 2022 comments
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
