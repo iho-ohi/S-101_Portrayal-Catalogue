@@ -64,6 +64,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i104]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/104
 [i101]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/101
 [i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
+[i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
+
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -123,6 +125,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#104][i104] Added Torii [Category of Landmark = 25], also see PSWG #60
 	*	[#101][i101] Added Seagrass new symbology, also see PSWG #47
 	*	[#56][i56] Additional guidance on dredged date see Aug 3, 2022 comments
+	*	[#76][i76] Sloping Ground, revert back to portrayal to match S-52 look-up tables, PSWG #35
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
