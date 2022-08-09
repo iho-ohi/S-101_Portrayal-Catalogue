@@ -7162,6 +7162,13 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+      <viewingGroup id="25001">
+         <description>
+            <name>Collision Regulations Limit, demarcation line between inland and international navigation rules</name>
+            <description>Standard: M - Traffic routes</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>	   
       <viewingGroup id="25010">
          <description>
             <name>Leading line, clearing line (NAVLNE), traffic lane (TSSLPT), deep water route (DWRTPT), traffic separation area (TSEZNE), traffic separation line (TSELNE), traffic roundabout (TSSRON), traffic crossing (TSSCRS), precautionary area (PRCARE), traffic separation scheme boundary (TSSBND), deep water route centre line (DWRTCL), two way route part (TWRTPT), inshore traffic zone (ISTZNE)</name>
@@ -8063,7 +8070,7 @@
          <viewingGroup>21020</viewingGroup>
          <viewingGroup>21020</viewingGroup>
       </viewingGroupLayer>
-      <viewingGroupLayer id="3a">
+      <viewingGroupLayer id="3a">            <!-- From S-52: 3.1 Buoys, beacons, structures -->
          <description>
             <name>Buoys, beacons, structures</name>
             <description>Standard Display elements</description>
@@ -8089,7 +8096,7 @@
          <viewingGroup>27210</viewingGroup>
          <viewingGroup>27230</viewingGroup>
       </viewingGroupLayer>
-      <viewingGroupLayer id="3b">
+      <viewingGroupLayer id="3b">           <!-- From S-52: 3.2 Lights -->
          <description>
             <name>Lights</name>
             <description>Standard Display elements</description>
@@ -8155,7 +8162,7 @@
          </description>
          <viewingGroup>26260</viewingGroup>
       </viewingGroupLayer>
-      <viewingGroupLayer id="10">
+      <viewingGroupLayer id="10">      <!-- S-52: 10 Miscellaneous (Standard) and 101 Alert Highlights -->
          <description>
             <name>Miscellaneous (Standard)</name>
             <description>Standard Display elements</description>
@@ -8171,6 +8178,7 @@
          <viewingGroup>24020</viewingGroup>
          <viewingGroup>24050</viewingGroup>
          <viewingGroup>25000</viewingGroup>
+         <viewingGroup>25001</viewingGroup>
          <viewingGroup>26200</viewingGroup>
          <viewingGroup>26210</viewingGroup>
          <viewingGroup>28000</viewingGroup>
@@ -8193,7 +8201,7 @@
 		 <viewingGroup>114</viewingGroup>
 		 <viewingGroup>115</viewingGroup>
       </viewingGroupLayer>
-	  <viewingGroupLayer id="10a">
+	  <viewingGroupLayer id="10a">       
          <description>
             <name>Chart (Standard)</name>
             <description>Miscellaneous chart Standard Display elements</description>
@@ -8209,13 +8217,14 @@
          <viewingGroup>24020</viewingGroup>
          <viewingGroup>24050</viewingGroup>
          <viewingGroup>25000</viewingGroup>
+         <viewingGroup>25001</viewingGroup>
          <viewingGroup>26200</viewingGroup>
          <viewingGroup>26210</viewingGroup>
          <viewingGroup>28000</viewingGroup>
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
       </viewingGroupLayer>
-	  <viewingGroupLayer id="10b">
+	  <viewingGroupLayer id="10b">      <!-- S-101 Alert Highlights -->
 		<description>
             <name>Alert Highlights (Standard)</name>
             <description>Toggles graphical highlighting of detected alerts</description>

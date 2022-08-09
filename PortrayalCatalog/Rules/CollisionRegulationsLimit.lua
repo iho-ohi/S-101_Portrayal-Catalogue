@@ -8,10 +8,9 @@ function CollisionRegulationsLimit(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		-- TODO: needs proper viewing group assignment etc
-		viewingGroup = 36000
+		viewingGroup = 25001
 
-		featurePortrayal:AddInstructions('ViewingGroup:36000;DrawingPriority:6;DisplayPlane:UnderRADAR')
-
+		featurePortrayal:AddInstructions('ViewingGroup:25001;DrawingPriority:4;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('LineInstruction:COLREG01')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

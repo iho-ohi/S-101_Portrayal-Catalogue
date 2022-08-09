@@ -127,6 +127,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#56][i56] Additional guidance on dredged date see Aug 3, 2022 comments
 	*	[#76][i76] Sloping Ground, revert back to portrayal to match S-52 look-up tables, PSWG #35
 	*	[#30][i30] Marine Pollution Regulations Area added to Viewing Group Layer 18 (Miscellaneous),  PSWG #74
+	*	[#109][i109] Updated Collision Regulations Limit viewing group etc. PSWG #41
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
