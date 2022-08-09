@@ -1880,6 +1880,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="EMVTSARE">
+         <description>
+            <name>EMVTSARE</name>
+            <description>Embedded symbol VTS</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMVTSARE.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	   
       <symbol id="ENTRES51">
          <description>
             <name>ENTRES51</name>
@@ -6594,6 +6604,16 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
+      <lineStyle id="VTSARE51">
+         <description>
+            <name>VTSARE51</name>
+            <description>boundary of an area for Vessel Traffic Service Area</description>
+            <language>eng</language>
+         </description>
+         <fileName>VTSARE51.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>   
    </lineStyles>
    <areaFills>
       <areaFill id="testPCB">
