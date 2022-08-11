@@ -1,8 +1,10 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+--
 -- #48
 -- #89
-
+-- #103, PSWG #71
+--
 -- Referenced portrayal rules.
 require 'OBSTRN07'
 
@@ -59,6 +61,14 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
+		elseif feature.categoryOfObstruction == 21 then			-- active submarine volcano
+			viewingGroup = 34050
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -125,6 +135,14 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
+		elseif feature.categoryOfObstruction == 21 then			-- active submarine volcano
+			viewingGroup = 34050
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -170,6 +188,8 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		elseif feature.categoryOfObstruction == 21 then
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -237,6 +257,8 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		elseif feature.categoryOfObstruction == 21 then
+			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -251,6 +273,6 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-
+	
 	return viewingGroup
 end

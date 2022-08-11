@@ -5880,6 +5880,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+     <symbol id="VOLCANO01">
+         <description>
+            <name>VOLCANO01</name>
+            <description>active submarine volcano</description>
+            <language>eng</language>
+         </description>
+         <fileName>VOLCANO01.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	   
       <symbol id="VEGATN04P">
          <description>
             <name>VEGATN04P</name>
