@@ -7269,7 +7269,14 @@
             <language>eng</language>
          </description>
       </viewingGroup>
-      <viewingGroup id="26040">
+	  <viewingGroup id="26020">
+		   <description>
+			   <name>Restricted area (RESARE)</name>
+			   <description>Standard: N - Special areas</description>
+			   <language>eng</language>
+		   </description>
+	   </viewingGroup>
+	   <viewingGroup id="26040">
          <description>
             <name>Submarine transit lane (SUBTLN), military practice area (MIPARE), sea plane landing area (SPLARE), offshore production area (OSPARE)</name>
             <description>Standard: N - Special areas</description>
@@ -8173,8 +8180,9 @@
             <language>eng</language>
          </description>
          <viewingGroup>26000</viewingGroup>
-         <viewingGroup>26010</viewingGroup>
-         <viewingGroup>26040</viewingGroup>
+		 <viewingGroup>26010</viewingGroup>
+		 <viewingGroup>26020</viewingGroup>
+		 <viewingGroup>26040</viewingGroup>
       </viewingGroupLayer>
       <viewingGroupLayer id="6">
          <description>
