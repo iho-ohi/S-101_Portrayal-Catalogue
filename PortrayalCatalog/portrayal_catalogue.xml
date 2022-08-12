@@ -1960,7 +1960,27 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="FLASTK01">
+     <symbol id="FERWHL03">
+         <description>
+            <name>FERWHL03</name>
+            <description>observation wheel and visually conspicuous</description>
+            <language>eng</language>
+         </description>
+         <fileName>FERWHL03.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	   
+     <symbol id="FERWHL04">
+         <description>
+            <name>FERWHL04</name>
+            <description>observation wheel and not visually conspicuous</description>
+            <language>eng</language>
+         </description>
+         <fileName>FERWHL04.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	
+	   <symbol id="FLASTK01">
          <description>
             <name>FLASTK01</name>
             <description>flare stack</description>

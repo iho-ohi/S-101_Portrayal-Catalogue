@@ -67,6 +67,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
 [i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
 [i103]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/103
+[i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -131,6 +132,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#109][i109] Updated Collision Regulations Limit viewing group etc. PSWG #41
 	*	[#117][i117] Vessel Traffic Service Area new symbology.  PSWG #50
 	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 3.  PSWG #71
+	*	[#107][i107] New symbol: Observation Wheel [Category of Landmark],  FERWHL03 and FERWHL04.  PSWG #62
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

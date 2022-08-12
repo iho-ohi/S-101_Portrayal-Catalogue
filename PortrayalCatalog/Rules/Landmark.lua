@@ -3,14 +3,14 @@
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 --
 -- Issues: PSWG #60, PC #104
---
+-- Issues: PSWG #62, PC #107
 
 -- Landmark main entry point.
 function Landmark(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	featurePortrayal:AddInstructions('Hover:true')
-
+		
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
 		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
@@ -638,6 +638,18 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN03')
+		elseif contains(24, feature.categoryOfLandmark) then
+			viewingGroup = 22220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			if feature.visualProminence == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:FERWHL03')
+			else 
+				featurePortrayal:AddInstructions('PointInstruction:FERWHL04')
+			end
 		elseif contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) then
 			viewingGroup = 32220
 			if contextParameters.RadarOverlay then
@@ -949,6 +961,6 @@ function Landmark(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-
+	
 	return viewingGroup 
 end
