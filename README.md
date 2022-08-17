@@ -135,6 +135,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 3.  PSWG #71
 	*	[#107][i107] New symbol: Observation Wheel [Category of Landmark],  FERWHL03 and FERWHL04.  PSWG #62
 	*	[#105][i105] Restricted Area Regulatory break-out and new viewing group 26020.  PSWG #31
+	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 4.  PSWG #71
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
