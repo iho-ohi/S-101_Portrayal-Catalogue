@@ -70,6 +70,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
 [i105]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/105
 [i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
+[i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -138,6 +139,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#105][i105] Restricted Area Regulatory break-out and new viewing group 26020.  PSWG #31
 	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 4.  PSWG #71
 	*	[#113][i113] Moiré Effect [Directional Character] new symbol.  PSWG #52
+	*	[#122][i122] Coast Guard Station {Surface}, central symbol
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
