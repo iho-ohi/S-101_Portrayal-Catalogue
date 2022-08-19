@@ -1,6 +1,7 @@
 -- LightSectored portrayal rules file.
 -- #96
 -- #100
+-- PC #113, PSWG #52
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -153,6 +154,17 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
 				featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24)
+
+				-- PC #113
+				if lightSector.directionalCharacter.moireEffect then
+					if orientationValue then
+						featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. orientation)
+						featurePortrayal:AddInstructions('ClearGeometry;LocalOffset:0,0;PointInstruction:MOIRE01')
+						featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
+					else
+						featurePortrayal:AddInstructions('ClearGeometry;LocalOffset:0,0;PointInstruction:MOIRE01')
+					end
+				end
 			else
 				-- Neither sectorLimit nor directionalCharacter was found.
 				featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:QUESMRK1')

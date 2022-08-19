@@ -2520,6 +2520,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="MOIRE01">
+		   <description>
+			   <name>MOIRE01</name>
+			   <description>LightSectored (Moiré Effect)</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>MOIRE01.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="MONUMT02">
          <description>
             <name>MONUMT02</name>

@@ -69,6 +69,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i103]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/103
 [i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
 [i105]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/105
+[i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -136,6 +137,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#107][i107] New symbol: Observation Wheel [Category of Landmark],  FERWHL03 and FERWHL04.  PSWG #62
 	*	[#105][i105] Restricted Area Regulatory break-out and new viewing group 26020.  PSWG #31
 	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 4.  PSWG #71
+	*	[#113][i113] Moiré Effect [Directional Character] new symbol.  PSWG #52
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
