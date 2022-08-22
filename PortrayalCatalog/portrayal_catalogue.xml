@@ -50,7 +50,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="ACHARE51">
+	   <symbol id="ACHARE03">
+		   <description>
+			   <name>ACHARE03</name>
+			   <description>reported anchorage</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>ACHARE03.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="ACHARE51">
          <description>
             <name>ACHARE51</name>
             <description>anchorage area</description>

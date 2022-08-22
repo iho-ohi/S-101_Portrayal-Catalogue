@@ -18,7 +18,13 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:ACHARE02')
+
+		if contains(15, feature.categoryOfAnchorage) then
+			featurePortrayal:AddInstructions('PointInstruction:ACHARE03')
+		else
+			featurePortrayal:AddInstructions('PointInstruction:ACHARE02')
+		end
+
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:-3.51,-7.02;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 18)
