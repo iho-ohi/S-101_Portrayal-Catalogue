@@ -144,6 +144,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#122][i122] Coast Guard Station {Surface}, central symbol
 	*	[#121][i121] Reported Anchorage [Category of Anchorage] = 15, new symbol. PSWG #72.
 	*	[#114][i114] Tank Farm, Category of Offshore Production Area, new symbol. PSWG #54.
+	*	[#122][i122] Coast Guard Station, fixed drawing priority 7 ---> 21
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

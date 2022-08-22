@@ -1,6 +1,8 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
+-- Issues PC #114, PSWG 54
+
 -- Referenced portrayal rules.
 require 'RESTRN01'
 

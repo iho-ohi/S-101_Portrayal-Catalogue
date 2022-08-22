@@ -11,9 +11,9 @@ function CoastGuardStation(feature, featurePortrayal, contextParameters)
 	viewingGroup = 38030
 
 	if contextParameters.RadarOverlay then
-		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:7;DisplayPlane:OverRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:21;DisplayPlane:OverRADAR')
 	else
-		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:7;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:21;DisplayPlane:UnderRADAR')
 	end
 	
 	if feature.PrimitiveType == PrimitiveType.Point then
@@ -22,7 +22,7 @@ function CoastGuardStation(feature, featurePortrayal, contextParameters)
 
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		--PC #122 
-		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:7;PointInstruction:CGUSTA02')
+		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:21;PointInstruction:CGUSTA02')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
