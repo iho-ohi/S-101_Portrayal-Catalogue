@@ -40,6 +40,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="2022_TNKFRM">
+		   <description>
+			   <name>2022_TNKFRM</name>
+			   <description>Tank Farm, Category of Offshore Production Area</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>2022_TNKFRM.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="ACHARE02">
          <description>
             <name>ACHARE02</name>

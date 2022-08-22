@@ -72,6 +72,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 [i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
+[i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -142,6 +143,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#113][i113] Moiré Effect [Directional Character] new symbol.  PSWG #52
 	*	[#122][i122] Coast Guard Station {Surface}, central symbol
 	*	[#121][i121] Reported Anchorage [Category of Anchorage] = 15, new symbol. PSWG #72.
+	*	[#114][i114] Tank Farm, Category of Offshore Production Area, new symbol. PSWG #54.
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
