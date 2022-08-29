@@ -2760,6 +2760,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="POSGEN05">
+		   <description>
+			   <name>POSGEN05</name>
+			   <description>Position of an elevation or control point, not conspicuous</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>POSGEN05.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="PRCARE12">
          <description>
             <name>PRCARE12</name>

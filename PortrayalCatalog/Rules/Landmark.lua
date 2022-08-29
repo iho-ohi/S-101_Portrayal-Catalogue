@@ -957,6 +957,15 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:TORII01')
+		-- Issues: PSWG #66, PC #108 (NOT AUTO GENERATED), Triangulation Mark
+		elseif contains(22, feature.categoryOfLandmark) and feature.visualProminence ~= 1 then --POSGEN05 
+			viewingGroup = 22220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:POSGEN05')
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
