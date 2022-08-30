@@ -3880,16 +3880,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	   <symbol id="SISTAT02">
-		   <description>
-			   <name>SISTAT02</name>
-			   <description>signal station</description>
-			   <language>eng</language>
-		   </description>
-		   <fileName>SISTAT02.svg</fileName>
-		   <fileType>Symbol</fileType>
-		   <fileFormat>SVG</fileFormat>
-	   </symbol>	   
       <symbol id="2021_SISTAT02_01">
          <description>
             <name>2021_SISTAT02_01</name>
@@ -3900,6 +3890,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="2021_SISTAT03_01">
+		   <description>
+			   <name>2021_SISTAT03_01</name>
+			   <description>signal station</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>2021_SISTAT03_01.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="SMCFAC02">
          <description>
             <name>SMCFAC02</name>

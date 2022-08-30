@@ -75,6 +75,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
 [i108]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/108
 [i111]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/111
+[i112]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/112
+
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -149,6 +151,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#122][i122] Coast Guard Station, fixed drawing priority 7 ---> 21
 	*	[#108][i108] Triangulation Mark [Category of Landmark], New rule and symbol. PSWG #66.
 	*	[#111][i111] Signal Station Traffic, New rule and symbol. PSWG #48.
+	*	[#112][i112] Signal Station Warning, New rule and symbol. Removed symbol SISTA02 from PC. PSWG #49.
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
