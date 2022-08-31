@@ -15,7 +15,7 @@ function OffshoreProductionArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries and feature.categoryOfOffshoreProductionArea == 4 then
 			viewingGroup = 26040
 		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:2022_TNKFRM')
+		featurePortrayal:AddInstructions('PointInstruction:TNKFRM')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
@@ -28,7 +28,7 @@ function OffshoreProductionArea(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface and feature.categoryOfOffshoreProductionArea == 4 then
 		viewingGroup = 26040
 		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:2022_TNKFRM')
+		featurePortrayal:AddInstructions('PointInstruction:TNKFRM')
 		featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 26040

@@ -40,13 +40,13 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	   <symbol id="2022_TNKFRM">
+	   <symbol id="TNKFRM">
 		   <description>
-			   <name>2022_TNKFRM</name>
+			   <name>TNKFRM</name>
 			   <description>Tank Farm, Category of Offshore Production Area</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>2022_TNKFRM.svg</fileName>
+		   <fileName>TNKFRM.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
