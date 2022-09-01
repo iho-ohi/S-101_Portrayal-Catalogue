@@ -76,7 +76,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i108]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/108
 [i111]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/111
 [i112]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/112
-
+[i94]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/94
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -153,6 +153,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#111][i111] Signal Station Traffic, New rule and symbol. PSWG #48.
 	*	[#112][i112] Signal Station Warning, New rule and symbol. Removed symbol SISTA02 from PC. PSWG #49.
 	*	[#114][i114] Tank Farm, Category of Offshore Production Area, change symbol name only. PSWG #54.
+	*	[#94][i94] Implement portrayal rule for Pilotage District with new symbology.  PSWG #57.
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

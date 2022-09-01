@@ -6504,6 +6504,16 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
+     <lineStyle id="PILDSTR1">
+         <description>
+            <name>PILDSTR1</name>
+            <description>boundary of an Pilotage District area</description>
+            <language>eng</language>
+         </description>
+         <fileName>PILDSTR1.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>	   
       <lineStyle id="PIPARE51">
          <description>
             <name>PIPARE51</name>
