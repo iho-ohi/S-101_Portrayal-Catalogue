@@ -5820,6 +5820,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="VATON00">
+		   <description>
+			   <name>VATON00</name>
+			   <description>Virtual Aid to Navigation - Unknown</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>VATON00.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="VATON01">
          <description>
             <name>VATON01</name>

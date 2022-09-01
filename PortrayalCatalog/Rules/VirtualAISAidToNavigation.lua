@@ -18,7 +18,7 @@ function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15')
-			featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
+			featurePortrayal:AddInstructions('PointInstruction:VATON00')
 		else
 			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21010:DrawingPriority:18')
 			if feature.virtualAISAidToNavigationType == 1
