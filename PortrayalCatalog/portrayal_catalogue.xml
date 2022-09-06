@@ -40,16 +40,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	   <symbol id="TNKFRM">
-		   <description>
-			   <name>TNKFRM</name>
-			   <description>Tank Farm, Category of Offshore Production Area</description>
-			   <language>eng</language>
-		   </description>
-		   <fileName>TNKFRM.svg</fileName>
-		   <fileType>Symbol</fileType>
-		   <fileFormat>SVG</fileFormat>
-	   </symbol>
       <symbol id="ACHARE02">
          <description>
             <name>ACHARE02</name>
@@ -3040,7 +3030,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="RETRFL01">
+      <symbol id="RENERG51">
+		   <description>
+			   <name>RENERG51</name>
+			   <description>Renewable Energy farm</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>RENERG51.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="RETRFL01">
          <description>
             <name>RETRFL01</name>
             <description>retro reflector, paper chart</description>
@@ -5289,8 +5289,8 @@
          <fileName>TNKCON02.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
-      </symbol>
-      <symbol id="TNKCON12">
+       </symbol>
+       <symbol id="TNKCON12">
          <description>
             <name>TNKCON12</name>
             <description>conspicuous tank</description>
@@ -5299,8 +5299,18 @@
          <fileName>TNKCON12.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
-      </symbol>
-      <symbol id="TNKFRM01">
+       </symbol>
+	   <symbol id="TNKFRM">
+		   <description>
+			   <name>TNKFRM</name>
+			   <description>Tank Farm, Category of Offshore Production Area</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>TNKFRM.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="TNKFRM01">
          <description>
             <name>TNKFRM01</name>
             <description>tank farm</description>
@@ -6030,7 +6040,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="WNDFRM61">
+	  <symbol id="WNDFRM52">
+		   <description>
+			   <name>WNDFRM52</name>
+			   <description>Wind farm fixed</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>WNDFRM52.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="WNDFRM61">
          <description>
             <name>WNDFRM61</name>
             <description>conspicuous wind generator farm</description>

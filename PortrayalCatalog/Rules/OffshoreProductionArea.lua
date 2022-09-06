@@ -1,40 +1,42 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
--- Issues PC #114, PSWG 54
+-- Issues PC #114, PSWG #63, #55, #67, #67, #54, extensively reworked from converter auto-generated
 
 -- Referenced portrayal rules.
 require 'RESTRN01'
 
 -- Offshore production area main entry point.
 function OffshoreProductionArea(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	
+	local viewingGroup = 26040
+	local symbol = 'CTYARE51'	-- default or Seabed Material Extraction Area == 5
+
+	local COPA = feature.categoryOfOffshoreProductionArea
 
 	featurePortrayal:AddInstructions('AlertReference:ProhAre,106,106')
 
-	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries and feature.categoryOfOffshoreProductionArea == 4 then
-			viewingGroup = 26040
-		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:TNKFRM')
-		featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGD')
+	featurePortrayal:AddInstructions('ViewingGroup:'.. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRADAR')
+
+	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
+		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		viewingGroup = 26040
-		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:CTYARE51')
-		featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGD')
-		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
-	elseif feature.PrimitiveType == PrimitiveType.Surface and feature.categoryOfOffshoreProductionArea == 4 then
-		viewingGroup = 26040
-		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:TNKFRM')
+	else
 		featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
-	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		viewingGroup = 26040
-		featurePortrayal:AddInstructions('ViewingGroup:26040;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:CTYARE51')
-		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
+	end
+
+	-- set the symbol
+	if feature.PrimitiveType == PrimitiveType.Surface then
+		if contains (COPA, {2,3,6}) then		-- Wave, Current, or Solar Farm
+			symbol = 'RENERG51'
+		elseif COPA == 1 then					-- Wind Farm 
+			symbol = 'WNDFRM52'
+		elseif COPA == 4 then 
+			symbol = 'TNKFRM'
+		end
+
+		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
+				
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

@@ -154,6 +154,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#112][i112] Signal Station Warning, New rule and symbol. Removed symbol SISTA02 from PC. PSWG #49.
 	*	[#114][i114] Tank Farm, Category of Offshore Production Area, change symbol name only. PSWG #54.
 	*	[#94][i94] Implement portrayal rule for Pilotage District with new symbology.  PSWG #57.
+	*	[#114][i114] Remaining "farm" symbols updated with new rule logic. PC #114, PSWG #63, #55, #67, #67, #54
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
