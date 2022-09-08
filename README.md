@@ -160,7 +160,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#98][i98] Support Pile curve and surface geometries
 	*	[#125][i125] All symbols should default to "daySVGStyle.css"
 	*	[#110][i110] Implement portrayal of InformationArea, replacing use of "testPCB"
-	*	
+
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
