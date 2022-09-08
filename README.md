@@ -75,6 +75,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
 [i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
+[i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -156,6 +157,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#112][i112] Rename 2021_SISTAT03.svg to SISTAT03.svg. PC #112, PSWG #49
 	*	[#112][i112] Wrong symbol used in SignalStationWarning.lua corrected from SISTAT03 to SISTAW03. PC #112, PSWG #49
 	*	[#98][i98] Support Pile curve and surface geometries
+	*	[#125][i125] All symbols should default to "daySVGStyle.css"
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
