@@ -2300,6 +2300,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="INFARE01">
+         <description>
+            <name>INFARE01</name>
+            <description>Information symbol with pale magenta colour</description>
+            <language>eng</language>
+         </description>
+         <fileName>INFARE01.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="INFARE51">
          <description>
             <name>INFARE51</name>
@@ -6441,6 +6451,16 @@
             <language>eng</language>
          </description>
          <fileName>INDHLT02.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="INFARE51">
+         <description>
+            <name>INFARE51</name>
+            <description>Boundary of an information area</description>
+            <language>eng</language>
+         </description>
+         <fileName>INFARE51.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
