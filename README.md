@@ -68,6 +68,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
 [i108]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/108
 [i109]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/109
+[i110]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/110
 [i111]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/111
 [i112]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/112
 [i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
@@ -158,7 +159,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#112][i112] Wrong symbol used in SignalStationWarning.lua corrected from SISTAT03 to SISTAW03. PC #112, PSWG #49
 	*	[#98][i98] Support Pile curve and surface geometries
 	*	[#125][i125] All symbols should default to "daySVGStyle.css"
-
+	*	[#110][i110] Implement portrayal of InformationArea, replacing use of "testPCB"
+	*	
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
 ### 1.1.5 - use with FC 1.0.0 of 2019-04-09
