@@ -18,11 +18,11 @@ function SignalStationWarning(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
-		featurePortrayal:AddInstructions('PointInstruction:2021_SISTAT03_01')
+		featurePortrayal:AddInstructions('PointInstruction:SISTAW03')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		-- PSWG #48
+		-- PSWG #49
 		viewingGroup = 28020
-		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;PointInstruction:2021_SISTAT03_01')
+		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;PointInstruction:SISTAW03')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

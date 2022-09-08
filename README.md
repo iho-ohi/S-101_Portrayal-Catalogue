@@ -156,6 +156,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#94][i94] Implement portrayal rule for Pilotage District with new symbology.  PSWG #57.
 	*	[#114][i114] Remaining "farm" symbols updated with new rule logic. PC #114, PSWG #63, #55, #67, #67, #54
 	*	[#112][i112] Rename 2021_SISTAT03.svg to SISTAT03.svg. PC #112, PSWG #49
+	*	[#112][i112] Wrong symbol used in SignalStationWarning.lua corrected from SISTAT03 to SISTAW03. PC #112, PSWG #49
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

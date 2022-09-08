@@ -3899,8 +3899,18 @@
 		   <fileName>SISTAT03.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
-	   </symbol>	   
-      <symbol id="SMCFAC02">
+	   </symbol>
+	   <symbol id="SISTAW03">
+		   <description>
+			   <name>SISTAW03</name>
+			   <description>signal station warning</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>SISTAW03.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="SMCFAC02">
          <description>
             <name>SMCFAC02</name>
             <description>yacht harbour, marina</description>
