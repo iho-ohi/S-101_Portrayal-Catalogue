@@ -3890,13 +3890,13 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	   <symbol id="2021_SISTAT03_01">
+	   <symbol id="SISTAT03">
 		   <description>
-			   <name>2021_SISTAT03_01</name>
+			   <name>SISTAT03</name>
 			   <description>signal station</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>2021_SISTAT03_01.svg</fileName>
+		   <fileName>SISTAT03.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>	   
