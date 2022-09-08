@@ -6543,7 +6543,17 @@
          <fileName>PILDSTR1.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
-      </lineStyle>	   
+      </lineStyle>
+      <lineStyle id="PILPNT01">
+         <description>
+            <name>Piles</name>
+            <description>Area or row of piles</description>
+            <language>eng</language>
+         </description>
+         <fileName>PILPNT01.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
       <lineStyle id="PIPARE51">
          <description>
             <name>PIPARE51</name>
