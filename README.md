@@ -13,6 +13,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
 [i28]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/28
 [i29]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/29
+[i30]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/30
 [i33]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/33
 [i34]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/34
 [i36]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/36
@@ -22,6 +23,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i41]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/41
 [i44]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/44
 [i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
+[i47]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/47
 [i48]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/48
 [i49]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/49
 [i50]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
@@ -54,29 +56,25 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i90]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/90
 [i91]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/91
 [i92]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/92
+[i94]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/94
 [i95]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/95
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
+[i98]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/98
 [i100]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/100
-[i46]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/46
-[i47]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/47
-[i30]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/30
-[i109]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/109
-[i104]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/104
 [i101]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/101
-[i56]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/56
-[i76]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/76
-[i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
 [i103]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/103
-[i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
+[i104]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/104
 [i105]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/105
-[i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
-[i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
-[i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
-[i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
+[i107]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/107
 [i108]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/108
+[i109]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/109
 [i111]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/111
 [i112]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/112
-[i94]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/94
+[i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
+[i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
+[i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
+[i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
+[i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -144,7 +142,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#107][i107] New symbol: Observation Wheel [Category of Landmark],  FERWHL03 and FERWHL04.  PSWG #62
 	*	[#105][i105] Restricted Area Regulatory break-out and new viewing group 26020.  PSWG #31
 	*	[#103][i103] Active Submarine Volcano [Category of Obstruction] new point symbol ver 4.  PSWG #71
-	*	[#113][i113] Moiré Effect [Directional Character] new symbol.  PSWG #52
+	*	[#113][i113] MoirÃ© Effect [Directional Character] new symbol.  PSWG #52
 	*	[#122][i122] Coast Guard Station {Surface}, central symbol
 	*	[#121][i121] Reported Anchorage [Category of Anchorage] = 15, new symbol. PSWG #72.
 	*	[#114][i114] Tank Farm, Category of Offshore Production Area, new symbol. PSWG #54.
@@ -157,6 +155,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#114][i114] Remaining "farm" symbols updated with new rule logic. PC #114, PSWG #63, #55, #67, #67, #54
 	*	[#112][i112] Rename 2021_SISTAT03.svg to SISTAT03.svg. PC #112, PSWG #49
 	*	[#112][i112] Wrong symbol used in SignalStationWarning.lua corrected from SISTAT03 to SISTAW03. PC #112, PSWG #49
+	*	[#98][i98] Support Pile curve and surface geometries
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
