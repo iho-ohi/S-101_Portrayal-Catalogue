@@ -1,5 +1,7 @@
 -- DiscolouredWater portrayal rules file.
-
+--
+-- ISSUES: PSWG #61, PC #40
+--
 -- Main entry point for feature type.
 function DiscolouredWater(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
@@ -9,12 +11,16 @@ function DiscolouredWater(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:DSCWTR01')
-	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		-- Plain and symbolized boundaries use the same symbolization
+		featurePortrayal:AddInstructions('PointInstruction:EMDSCWTR')
+	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
+		
 		featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:9;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:DSCWTR01')
-		featurePortrayal:AddInstructions('LineInstruction:testPCB')
+		featurePortrayal:AddInstructions('PointInstruction:DSCWTR51')
+		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
+		featurePortrayal:AddInstructions('LineInstruction:_simple_')
+	elseif feature.PrimitiveType == PrimitiveType.Surface
+			featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('LineInstruction:DSCWTR51')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

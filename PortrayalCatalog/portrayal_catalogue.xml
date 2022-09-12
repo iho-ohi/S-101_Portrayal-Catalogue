@@ -1329,6 +1329,16 @@
          <fileName>DSCWTR03.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
+      </symbol>
+     <symbol id="DSCWTR51">
+         <description>
+            <name>DSCWTR51</name>
+            <description>Central symbol of Discoloured Water area</description>
+            <language>eng</language>
+         </description>
+         <fileName>DSCWTR51.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
       </symbol>	   
       <symbol id="DSHAER01">
          <description>
@@ -6314,7 +6324,17 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
-      <lineStyle id="DWLDEF01">
+	   <lineStyle id="DSCWTR51">
+		   <description>
+			   <name>DSCWTR51</name>
+			   <description>boundary of discoloured water area</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>DSCWTR51.xml</fileName>
+		   <fileType>LineStyle</fileType>
+		   <fileFormat>XML</fileFormat>
+	   </lineStyle>
+	   <lineStyle id="DWLDEF01">
          <description>
             <name>DWLDEF01</name>
             <description>deep water route centreline, direction not defined in the data</description>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?><svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="10.26mm" height="10.26mm" viewBox="-10.42 -10.42 10.58 10.58">
+  <title>DSCWTR51</title>
+  <desc>Discoloured water, center symbol</desc>
+  <metadata>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+      <iho:Description iho:publisher="IHB" iho:creationDate="2022-08-29" iho:source="dKartOffice" iho:format="S100SVG" iho:version="0.1"/>
+    </iho:S100SVG>
+  </metadata>
+  <rect class="symbolBox layout" fill="none" x="-10.1" y="-10.1" height="10.1" width="10.1"/>
+  <rect class="svgBox layout" fill="none" x="-10.1" y="-10.1" height="10.1" width="10.1"/>
+  <path d=" M -5.17,-3.85 L -5.17,-8.5" class="sl f0 sCHGRD" style="stroke-width: 0.96;"/>
+  <circle class="f0 sCHGRD" style="stroke-width: 0.64;" cx="-5.1" cy="-2.05" r="0.32"/>
+  <circle class="f0 sCHGRD" style="stroke-width: 0.64;" cx="-5.13" cy="-5.13" r="4.97"/>
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
+</svg>
