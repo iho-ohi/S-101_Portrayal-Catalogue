@@ -160,6 +160,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#98][i98] Support Pile curve and surface geometries
 	*	[#125][i125] All symbols should default to "daySVGStyle.css"
 	*	[#110][i110] Implement portrayal of InformationArea, replacing use of "testPCB"
+	*	[#111][i111] Symbol decision and name change 2022_SISTAT03.svg to SISTAT03.svg, PSWG #48.
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

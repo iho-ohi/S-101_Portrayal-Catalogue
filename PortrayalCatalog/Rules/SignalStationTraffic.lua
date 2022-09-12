@@ -1,7 +1,8 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 --
--- ISSUE PSWG #48, PC #111
+-- ISSUE PSWG #48, PC #111, 
+-- ISSUE PSWG #48, PC #111, 9/12/22 symbol decision and name change 2022_SISTAT03.svg to SISTAT03.svg
 --
 -- Signal Station Traffic main entry point.
 function SignalStationTraffic(feature, featurePortrayal, contextParameters)
@@ -18,11 +19,11 @@ function SignalStationTraffic(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
-		featurePortrayal:AddInstructions('PointInstruction:2021_SISTAT02_01')
+		featurePortrayal:AddInstructions('PointInstruction:SISTAT03') 
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- PSWG #48
 		viewingGroup = 28020
-		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;PointInstruction:2021_SISTAT02_01')
+		featurePortrayal:AddInstructions('ViewingGroup:28020;DrawingPriority:21;PointInstruction:SISTAT03')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
