@@ -162,6 +162,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#110][i110] Implement portrayal of InformationArea, replacing use of "testPCB"
 	*	[#111][i111] Symbol decision and name change 2022_SISTAT03.svg to SISTAT03.svg, PSWG #48.
 	*	[#40][i40] Discoloured Water updated rule based on decision on SEPT 1, 2022. PSWG #61.
+	*	[#47][i47] Remove symbolisation from ALL NavigationalSystemOfMarks Surfaces, (NULL instruction for Pick Report only), PSWG #42
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
