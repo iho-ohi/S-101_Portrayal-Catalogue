@@ -1570,6 +1570,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+    <symbol id="EMDSCWTR">
+         <description>
+            <name>EMDSCWTR</name>
+            <description>Embedded symbol of Discoloured Water area boundaries</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMDSCWTR.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	   
       <symbol id="EMDWRTC1">
          <description>
             <name>EMDWRTC1</name>

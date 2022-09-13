@@ -4,6 +4,7 @@
 --
 -- Main entry point for feature type.
 function DiscolouredWater(feature, featurePortrayal, contextParameters)
+
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then
@@ -18,7 +19,7 @@ function DiscolouredWater(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('PointInstruction:DSCWTR51')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-	elseif feature.PrimitiveType == PrimitiveType.Surface
+	elseif feature.PrimitiveType == PrimitiveType.Surface then
 			featurePortrayal:AddInstructions('ViewingGroup:26150;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('LineInstruction:DSCWTR51')
 	else
