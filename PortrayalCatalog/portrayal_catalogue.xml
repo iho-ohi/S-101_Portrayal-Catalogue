@@ -1660,6 +1660,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	  <symbol id="EMFOULGD">
+		  <description>
+		       <name>EMFOULGD</name>
+			   <description>Embedded symbol of foul ground curve</description>
+			   <language>eng</language>
+		  </description>
+		  <fileName>EMFOULGD.svg</fileName>
+		  <fileType>Symbol</fileType>
+		  <fileFormat>SVG</fileFormat>
+	  </symbol>
       <symbol id="EMFSHFA1">
          <description>
             <name>EMFSHFA1</name>
@@ -2110,6 +2120,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="FOULGD51">
+		   <description>
+			   <name>FOULGD51</name>
+			   <description>Area of foul ground (safe for navigation but not for anchoring), centre symbol</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>FOULGD51.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
 	  <symbol id="FOULGND1">
 		   <description>
 			   <name>FOULGND1</name>
@@ -6474,7 +6494,17 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
-      <lineStyle id="INDHLT02">
+	   <lineStyle id="FOULGRD1">
+		   <description>
+			   <name>FOULGRD1</name>
+			   <description>Line of Foul Ground safe for navigation but not for anchoring, boundary</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>FOULGRD1.xml</fileName>
+		   <fileType>LineStyle</fileType>
+		   <fileFormat>XML</fileFormat>
+	   </lineStyle>
+	   <lineStyle id="INDHLT02">
          <description>
             <name>INDHLT02</name>
             <description>indication highlight for mariner's use</description>
