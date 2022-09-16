@@ -77,6 +77,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 [i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
+[i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -165,6 +166,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#47][i47] Remove symbolisation from ALL NavigationalSystemOfMarks Surfaces, (NULL instruction for Pick Report only), PSWG #42
 	*	[#46][i46] Rule clean-up based on attributes 'marksNavigationalSystemOf' and 'orientationValue', PSWG #64 and PC #46
 	*	[#39][i39] Foul Ground new symbols and rule updates, PSWG #65, PC #39
+	*	[#124][i124] New symbol and rule update for Anchorage Area with small craft moorings, PSWG #28, PC #124
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

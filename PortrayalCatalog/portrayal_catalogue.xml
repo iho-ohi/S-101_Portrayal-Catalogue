@@ -500,7 +500,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="BOYMOR03">
+	   <symbol id="BOYMOR02">
+		   <description>
+			   <name>BOYMOR02</name>
+			   <description>Mooring buoy area, point symbol</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYMOR02.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYMOR03">
          <description>
             <name>BOYMOR03</name>
             <description>mooring buoy, can shape, paper-chart</description>
@@ -520,6 +530,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYMOR51">
+		   <description>
+			   <name>BOYMOR51</name>
+			   <description>Centred symbol for mooring buoy area</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYMOR51.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
 	   <symbol id="BOYNDM01">
 		   <description>
 			   <name>BOYNDM01</name>
@@ -6594,7 +6614,17 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
-      <lineStyle id="NEWOBJ01">
+	   <lineStyle id="NAVARE52">
+		   <description>
+			   <name>NAVARE52</name>
+			   <description>boundary of a navigation feature anchorage area, small craft mooring</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>NAVARE52.xml</fileName>
+		   <fileType>LineStyle</fileType>
+		   <fileFormat>XML</fileFormat>
+	   </lineStyle>
+	   <lineStyle id="NEWOBJ01">
          <description>
             <name>NEWOBJ01</name>
             <description>new object</description>
