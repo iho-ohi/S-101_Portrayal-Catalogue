@@ -78,6 +78,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 [i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
+[i106]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/106
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -167,6 +168,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#46][i46] Rule clean-up based on attributes 'marksNavigationalSystemOf' and 'orientationValue', PSWG #64 and PC #46
 	*	[#39][i39] Foul Ground new symbols and rule updates, PSWG #65, PC #39
 	*	[#124][i124] New symbol and rule update for Anchorage Area with small craft moorings, PSWG #28, PC #124
+	*	[#106][i106] Crane rule updates, PSWG #75, PC #106
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 

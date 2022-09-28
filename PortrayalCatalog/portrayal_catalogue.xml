@@ -980,7 +980,38 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="CTNARE51">
+	   <symbol id="CRANES03">
+		   <description>
+			   <name>CRANES03</name>
+			   <description>Visually conspicuous point Crane</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>CRANES03.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="CRANES11">
+		   <description>
+			   <name>CRANES11</name>
+			   <description>Crane on a line, the symbol without a circle of the fixed mark position</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>CRANES11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="CRANES13">
+		   <description>
+			   <name>CRANES13</name>
+			   <description>Visually conspicuous Crane on a line, the symbol without a circle of the fixed mark position</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>CRANES13.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+
+	   <symbol id="CTNARE51">
          <description>
             <name>CTNARE51</name>
             <description>caution area, a specific caution note applies</description>
