@@ -8,6 +8,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i9]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/9
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
+[i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
 [i25]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/25
 [i26]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/26
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
@@ -173,6 +174,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#124][i124] New symbol and rule update for Anchorage Area with small craft moorings, PSWG #28, PC #124
 	*	[#106][i106] Crane rule updates, PSWG #75, PC #106
 	*	[#126][i126] DiscolouredWater missing central symbols, PSWG #61, PC #126
+	*	[#20][i20] Sector lights draw leg lines to sector line length when full sectors is off
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
