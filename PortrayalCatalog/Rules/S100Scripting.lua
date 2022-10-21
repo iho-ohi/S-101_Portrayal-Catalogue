@@ -2,6 +2,7 @@
 This file contains the global functions and tables that define the S-100 Lua Scripting Model.
 These functions are intended to be called by the S-100 scripts.
 --]]
+-- #80 - modularize processing of fixed and periodic date ranges
 
 local orig_error = error
 
@@ -31,9 +32,8 @@ end
 -- Date/Time commands support
 --
 
-function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
+function ProcessPeriodicDateRanges(featurePortrayal, periodicDateRanges)
 	local dateDependent = false
-	local periodicDateRanges = feature['!periodicDateRange']
 
 	if periodicDateRanges and #periodicDateRanges > 0 then
 		for _, periodicDateRange in ipairs(periodicDateRanges) do
@@ -46,8 +46,12 @@ function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
 		dateDependent = true
 	end
 
-	local fixedDateRange = feature['!fixedDateRange']
+	return dateDependent
+end
 
+function ProcessFixedDateRange(featurePortrayal, fixedDateRange)
+	local dateDependent = false
+	
 	if fixedDateRange then
 		local dateStart = fixedDateRange.dateStart
 		local dateEnd = fixedDateRange.dateEnd
@@ -64,6 +68,13 @@ function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
 	end
 	
 	return dateDependent
+end
+
+function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
+	local periodicDependent = ProcessPeriodicDateRanges(featurePortrayal, feature['!periodicDateRange'])
+	local fixedDependent = ProcessFixedDateRange(featurePortrayal, feature['!fixedDateRange'])
+	
+	return periodicDependent or fixedDependent
 end
 
 function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, viewingGroup)

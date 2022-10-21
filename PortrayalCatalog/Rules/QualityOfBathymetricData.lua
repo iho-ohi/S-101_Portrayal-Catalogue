@@ -1,4 +1,7 @@
 -- QualityOfBathymetricData portrayal rules file.
+-- #80
+
+require 'S100Scripting'
 
 -- Main entry point for feature type.
 function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
@@ -6,50 +9,46 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 	
-	--[[
-		See https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/50
-	
-		Rule Note: Plain and symbolized boundaries use the same symbolization
-	--]]
+	-- Debug.Break()  
 
-	local scaleFactor = 0.311 -- Scale 16.04mm symbols to 5mm.
 	local catzoc
-
-	--Debug.Break()  
+	local zonesOfConfidence = feature.zoneOfConfidence
 	
 	featurePortrayal:AddInstructions('ViewingGroup:31010;DrawingPriority:4;DisplayPlane:UnderRADAR')
+	
+	local dateDependent = false
+	if zonesOfConfidence and #zonesOfConfidence > 0 then
+		for _, zoneOfConfidence in ipairs(zonesOfConfidence) do
+			dateDependent = ProcessFixedDateRange(featurePortrayal, zoneOfConfidence.fixedDateRange) or dateDependent
+			if zoneOfConfidence.categoryOfZoneOfConfidenceInData then
+				if (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 1) then
+					catzoc = 'A11'
+				elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 2) then
+					catzoc = 'A21'
+				elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 3) then
+					catzoc = 'B01'
+				elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 4) then
+					catzoc = 'C01'
+				elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 5) then
+					catzoc = 'D01'
+				elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 6) then
+					catzoc = 'U01'
+				end
+				-- CATZOC values defined
+				featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc)
+				featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
+				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-	if (feature.zoneOfConfidence[1]) then
-		if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData) then
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 1) then
-				catzoc = 'A11'
+			else
+				-- default without CATZOC: "M_QUAL","","AP(NODATA03);LS(DASH,2,CHGRD)","4","S","OTHER","31010" 
+				featurePortrayal:AddInstructions('AreaFillReference:NODATA03')
+				featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
+				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			end
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 2) then
-				catzoc = 'A21'
+			if dateDependent then
+				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, 31010)
+				featurePortrayal:AddInstructions('ClearTime')
 			end
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 3) then
-				catzoc = 'B01'
-			end
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 4) then
-				catzoc = 'C01'
-			end
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 5) then
-				catzoc = 'D01'
-			end
-			if (feature.zoneOfConfidence[1].categoryOfZoneOfConfidenceInData == 6) then
-				catzoc = 'U01'
-			end
-			-- CATZOC values defined
-			featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc .. '')
-			featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
-			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-
-		else
-			-- default without CATZOC: "M_QUAL","","AP(NODATA03);LS(DASH,2,CHGRD)","4","S","OTHER","31010" 
-
-		featurePortrayal:AddInstructions('AreaFillReference:NODATA03')
-		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
-		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	end
 
