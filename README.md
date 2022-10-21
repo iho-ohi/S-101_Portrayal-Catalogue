@@ -176,7 +176,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#106][i106] Crane rule updates, PSWG #75, PC #106
 	*	[#126][i126] DiscolouredWater missing central symbols, PSWG #61, PC #126
 	*	[#20][i20] Sector lights draw leg lines to sector line length when full sectors is off
-	*	[#23][i23] Change to portrayal of mangroves, PSWG #34, PC #34
+	*	[#23][i23] Change to portrayal of mangroves, PSWG #34, PC #23
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
