@@ -2,6 +2,7 @@
 -- #96
 -- #100
 -- PC #113, PSWG #52
+-- #20
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -72,23 +73,40 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					sectorLimit2 = sectorLimit2 + 360.0
 				end
 
-				-- Draw leg lines
-
-				local leglen
-				local crsLength
+				local length1, length2
+				local crs1, crs2
 
 				if contextParameters.FullSectors then
-					leglen = nmi2metres(valueOfNominalRange)
-					crsLength = 'GeographicCRS'
+					length1 = nmi2metres(valueOfNominalRange)
+					crs1 = 'GeographicCRS'
+					
+					length2 = length1
+					crs2 = crs1
 				else
-					leglen = 25.0
-					crsLength = 'LocalCRS'
+					if lightSector.sectorLimit.sectorLimitOne.sectorLineLength then
+						length1 = lightSector.sectorLimit.sectorLimitOne.sectorLineLength
+						crs1 = 'GeographicCRS'
+					else
+						length1 = 25.0
+						crs1 = 'LocalCRS'
+					end
+					
+					if lightSector.sectorLimit.sectorLimitTwo.sectorLineLength then
+						length2 = lightSector.sectorLimit.sectorLimitTwo.sectorLineLength
+						crs2 = 'GeographicCRS'
+					else
+						length2 = length1
+						crs2 = crs1
+					end
 				end
 
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit1 .. ',' .. crsLength .. ',' .. leglen)
+				-- Draw leg 1
+				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit1 .. ',' .. crs1 .. ',' .. length1)
 				featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
-				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit2 .. ',' .. crsLength .. ',' .. leglen)
+				
+				-- Draw leg 2
+				featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. sectorLimit2 .. ',' .. crs2 .. ',' .. length2)
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 				-- Draw sector arcs
