@@ -82,6 +82,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 [i106]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/106
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
+[i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
 
 ## Changelog
 ### 1.0.2 - use with FC 1.0.2
@@ -175,6 +176,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#106][i106] Crane rule updates, PSWG #75, PC #106
 	*	[#126][i126] DiscolouredWater missing central symbols, PSWG #61, PC #126
 	*	[#20][i20] Sector lights draw leg lines to sector line length when full sectors is off
+	*	[#23][i23] Change to portrayal of mangroves, PSWG #34, PC #34
 
 ### Version numbers below correspond to 1.0.0 in the current version numbering scheme
 
