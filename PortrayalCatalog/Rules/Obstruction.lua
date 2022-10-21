@@ -4,6 +4,7 @@
 -- #48
 -- #89
 -- #103, PSWG #71
+-- #23, PSWG #34
 --
 -- Referenced portrayal rules.
 require 'OBSTRN07'
@@ -53,7 +54,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:ACHARE02')
-		elseif feature.categoryOfObstruction == 10 then
+		elseif feature.categoryOfObstruction == 10 then 
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -61,7 +62,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
-		elseif feature.categoryOfObstruction == 21 then			-- active submarine volcano
+		elseif feature.categoryOfObstruction == 21 then		-- active submarine volcano
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
@@ -69,6 +70,14 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
+		elseif feature.categoryOfObstruction == 23 then		-- mangrove
+			viewingGroup = 34050
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:VEGATN04P')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -143,6 +152,14 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
+		elseif feature.categoryOfObstruction == 23 then			-- mangrove
+			viewingGroup = 34050
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:VEGATN04P')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -233,6 +250,12 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		elseif feature.categoryOfObstruction == 23 then  -- mangrove
+			viewingGroup = 12410
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
+			featurePortrayal:AddInstructions('LineInstruction:_simple_;LinePlacement:Relative,0.5')
+			featurePortrayal:AddInstructions('AreaFillReference:VEGATN04')			
 		else
 			viewingGroup = 34050
 			featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -257,8 +280,14 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfObstruction == 21 then
+		elseif feature.categoryOfObstruction == 21 then	-- volcano
 			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+		elseif feature.categoryOfObstruction == 23 then  -- mangrove
+			viewingGroup = 12410
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
+			featurePortrayal:AddInstructions('LineInstruction:_simple_;LinePlacement:Relative,0.5')
+			featurePortrayal:AddInstructions('AreaFillReference:VEGATN04')			
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
