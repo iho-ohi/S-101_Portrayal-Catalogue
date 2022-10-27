@@ -32,15 +32,15 @@ function DistanceMark(feature, featurePortrayal, contextParameters)
 			if distanceUnitOfMeasurement
 			then
 				if distanceUnitOfMeasurement == 1	then
-					label = 'M'
+					label = 'm'
 				elseif distanceUnitOfMeasurement == 2 then
 					label = 'yd'
 				elseif distanceUnitOfMeasurement == 3 then
 					label = 'km'
 				elseif distanceUnitOfMeasurement == 4 then
-					label = 'StM'
+					label = 'SM'
 				elseif distanceUnitOfMeasurement == 5 then
-					label = 'nm'
+					label = 'M'
 				end
 			end
 			
