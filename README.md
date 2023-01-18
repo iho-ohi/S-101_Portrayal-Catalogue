@@ -86,11 +86,6 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
 
 ## Changelog
-### 1.1.0 - use with FC 1.1.0
-*	Misc changes
-
-*	Lua Rule File Updates
-	*
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
