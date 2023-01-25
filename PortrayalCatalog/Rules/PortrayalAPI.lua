@@ -30,11 +30,27 @@ function PortrayalCreateContextParameter(contextParameterName, parameterType, de
 	CheckType(contextParameterName, 'string')
 	CheckType(parameterType, 'string')
 
-	if parameterType ~= 'boolean' and parameterType ~= 'integer' and parameterType ~= 'real' and parameterType ~= 'text' and parameterType ~= 'date' then
+	-- Case insensitive because the docs show leading capitalization but
+	-- ConvertEncodedValue requires lower, as does S100CD.xsd
+	local cpt = string.lower(parameterType)
+	
+	-- Allow types to be described per 9-13.3.30 ParameterType despite
+	-- 9a-14.1.3 requiring types to be described per S100_CD_AttributeValueType
+	if cpt == 'double' then
+		cpt = 'real'
+	elseif cpt == 'string' then
+		cpt = 'text'
+	end
+	
+	if cpt ~= 'boolean' and
+	   cpt ~= 'integer' and
+	   cpt ~= 'real' and
+	   cpt ~= 'text' and
+	   cpt ~= 'date' then
 		error('Invalid parameter type.')
 	end
 
-	return { Type = 'ContextParameter', Name = contextParameterName, ParameterType = parameterType, DefaultValue = ConvertEncodedValue(parameterType, defaultValue) }
+	return { Type = 'ContextParameter', Name = contextParameterName, ParameterType = cpt, DefaultValue = ConvertEncodedValue(cpt, defaultValue) }
 end
 
 function PortrayalSetContextParameter(contextParameterName, value)
