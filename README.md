@@ -9,6 +9,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
+[i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
 [i25]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/25
 [i26]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/26
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
@@ -83,12 +84,12 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 [i106]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/106
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
-[i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
+[i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
-
+*	[#154][i154] Enhance debugging
 *	Lua Rule File Updates
 	*
 
