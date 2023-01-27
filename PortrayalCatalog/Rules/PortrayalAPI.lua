@@ -47,7 +47,7 @@ function PortrayalCreateContextParameter(contextParameterName, parameterType, de
 	   cpt ~= 'real' and
 	   cpt ~= 'text' and
 	   cpt ~= 'date' then
-		error('Invalid parameter type.')
+		error('Invalid parameter type:' .. cpt)
 	end
 
 	return { Type = 'ContextParameter', Name = contextParameterName, ParameterType = cpt, DefaultValue = ConvertEncodedValue(cpt, defaultValue) }

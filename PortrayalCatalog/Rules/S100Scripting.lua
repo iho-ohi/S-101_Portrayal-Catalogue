@@ -144,7 +144,7 @@ function ConvertEncodedValue(valueType, value)
 	end
 
 	if not contains(valueType, valueTypes) then
-		error('Invalid parameter type.')
+		error('Invalid parameter type:' .. valueType)
 	end
 
 	if valueType == 'boolean' then
