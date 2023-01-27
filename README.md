@@ -84,11 +84,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 [i106]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/106
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
+[i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
+*	[#153][i153] Update PortrayalCreateContextParameter contextParameterType to allow "Double" and "String" and to ignore case
 *	[#154][i154] Enhance debugging
 *	Lua Rule File Updates
 	*
