@@ -2801,16 +2801,26 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="PILBOP02">
+      <symbol id="PILBARE51">
          <description>
-            <name>PILBOP02</name>
-            <description>pilot boarding place</description>
+            <name>PILBARE51</name>
+            <description>pilot boarding place surface</description>
             <language>eng</language>
          </description>
-         <fileName>PILBOP02.svg</fileName>
+         <fileName>PILBARE51.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="PILBOP02">
+		   <description>
+			   <name>PILBOP02</name>
+			   <description>pilot boarding place point</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>PILBOP02.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="PILPNT02">
          <description>
             <name>PILPNT02</name>

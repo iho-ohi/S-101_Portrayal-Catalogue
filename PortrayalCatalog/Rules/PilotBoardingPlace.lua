@@ -1,6 +1,8 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
+-- PSWG #106, PC #143 New Symbology for Pilot Boarding Place surface 
+
 -- Pilot Boarding Place main entry point.
 function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 	local viewingGroup
@@ -21,13 +23,13 @@ function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 28010
 		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:PILBOP02')
+		featurePortrayal:AddInstructions('PointInstruction:PILBARE51')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'TRFCF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 28010
 		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:AddInstructions('PointInstruction:PILBOP02')
+		featurePortrayal:AddInstructions('PointInstruction:PILBARE51')
 		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
