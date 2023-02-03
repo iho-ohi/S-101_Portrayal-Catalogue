@@ -1,11 +1,12 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Radio station main entry point.
 function RadioStation(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(10, feature.categoryOfRadioStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then

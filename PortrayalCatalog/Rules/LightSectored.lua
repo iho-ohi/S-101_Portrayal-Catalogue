@@ -3,6 +3,7 @@
 -- #100
 -- PC #113, PSWG #52
 -- #20
+-- #155
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -76,7 +77,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				local length1, length2
 				local crs1, crs2
 
-				if contextParameters.FullSectors then
+				if contextParameters.FullLightLines then
 					length1 = nmi2metres(valueOfNominalRange)
 					crs1 = 'GeographicCRS'
 					

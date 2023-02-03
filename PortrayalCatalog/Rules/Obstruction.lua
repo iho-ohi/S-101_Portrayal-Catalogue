@@ -5,6 +5,8 @@
 -- #89
 -- #103, PSWG #71
 -- #23, PSWG #34
+-- #155
+
 --
 -- Referenced portrayal rules.
 require 'OBSTRN07'
@@ -13,7 +15,7 @@ require 'OBSTRN07'
 function Obstruction(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfObstruction == 8 and feature.valueOfSounding then
 			viewingGroup = 34051
 			if contextParameters.RadarOverlay then

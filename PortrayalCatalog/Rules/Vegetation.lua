@@ -1,11 +1,12 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Vegetation main entry point.
 function Vegetation(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfVegetation == 7 then
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')

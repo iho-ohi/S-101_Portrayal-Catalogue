@@ -1,5 +1,6 @@
 -- Radio calling-in point main entry point.
 -- #92
+-- #155
 
 function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ContactDetails')
@@ -19,7 +20,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 		end
 	end
 	
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.trafficFlow == 1 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')

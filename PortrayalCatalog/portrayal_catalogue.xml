@@ -2,7 +2,8 @@
 
 <!-- #51: Virtual AIS Aid to Navigation -->
 <!-- #72: Added DEPVAL02 to rules -->
-<!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18-->
+<!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18 -->
+<!-- #155: Update context parameters -->
 
 <?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-17T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.0.2">
@@ -8812,8 +8813,8 @@
    <context>
       <parameter id="SafetyDepth">
          <description>
-            <name>SAFETY_DEPTH</name>
-            <description>selected safety depth (meters)</description>
+            <name>Safety depth</name>
+            <description>Selected safety depth</description>
             <language>eng</language>
          </description>
          <type>Double</type>
@@ -8821,26 +8822,26 @@
       </parameter>
       <parameter id="SafetyContour">
          <description>
-            <name>SAFETY_CONTOUR</name>
-            <description>selected safety contour (meters)</description>
+            <name>Safety contour</name>
+            <description>Selected safety contour</description>
             <language>eng</language>
          </description>
          <type>Double</type>
          <default>30</default>
       </parameter>
-      <parameter id="TwoShades">
+      <parameter id="FourShades">
          <description>
-            <name>TWO_SHADES</name>
-            <description>show two depth shades only, safe vs unsafe</description>
+            <name>Four shades</name>
+            <description>Show depth areas using four colours</description>
             <language>eng</language>
          </description>
          <type>Boolean</type>
-         <default>true</default>
+         <default>false</default>
       </parameter>
       <parameter id="ShallowContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
          <description>
-            <name>SHALLOW_CONTOUR</name>
-            <description>selected shallow water contour (meters) (optional)</description>
+            <name>Shallow contour</name>
+            <description>Selected shallow water contour</description>
             <language>eng</language>
          </description>
          <type>Double</type>
@@ -8855,8 +8856,8 @@
       </parameter>
       <parameter id="DeepContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
          <description>
-            <name>DEEP_CONTOUR</name>
-            <description>selected deep water contour (meters) (optional)</description>
+            <name>Deep contour</name>
+            <description>Selected deep water contour</description>
             <language>eng</language>
          </description>
          <type>Double</type>
@@ -8869,19 +8870,10 @@
 			</errorMessage>
          </validate>
       </parameter>
-      <parameter id="ShallowPattern">
+      <parameter id="ShallowWaterDangers">
          <description>
-            <name>SHALLOW_PATTERN</name>
-            <description>show the shallow diamond pattern in shallow water</description>
-            <language>eng</language>
-         </description>
-         <type>Boolean</type>
-         <default>false</default>
-      </parameter>
-      <parameter id="ShowIsolatedDangersInShallowWaters">
-         <description>
-            <name>SHOW_ISOLATED_DANGERS_IN_SHALLOW_WATERS</name>
-            <description>show isolated dangers in shallow waters</description>
+            <name>Shallow water dangers</name>
+            <description>Show isolated dangers in shallow waters</description>
             <language>eng</language>
          </description>
          <type>Boolean</type>
@@ -8890,25 +8882,25 @@
      <parameter id="PlainBoundaries">
        <description>
          <name>Plain boundaries</name>
-         <description>simplify portrayal of lines</description>
+         <description>Line symbol style</description>
          <language>eng</language>
        </description>
        <type>Boolean</type>
        <default>true</default>
      </parameter>
-     <parameter id="SimplifiedPoints">
+     <parameter id="SimplifiedSymbols">
        <description>
-         <name>Simplified points</name>
-         <description>simplify portrayal of point symbols</description>
+         <name>Simplified symbols</name>
+         <description>Point symbol style</description>
          <language>eng</language>
        </description>
        <type>Boolean</type>
        <default>false</default>
      </parameter>
-     <parameter id="FullSectors">
+     <parameter id="FullLightLines">
        <description>
-         <name>Full sectors</name>
-         <description>show full light sectors</description>
+         <name>Full light lines</name>
+         <description>Show full length light sector lines</description>
          <language>eng</language>
        </description>
        <type>Boolean</type>
@@ -8917,7 +8909,7 @@
      <parameter id="RadarOverlay">
        <description>
          <name>Radar overlay</name>
-         <description>Tells the portrayal whether a RADAR sweep is displayed or not</description>
+         <description>Should be enabled whenever the RADAR sweep is displayed</description>
          <language>eng</language>
        </description>
        <type>Boolean</type>
@@ -8925,8 +8917,8 @@
      </parameter>
      <parameter id="IgnoreScamin">
        <description>
-         <name>Ignore scamin</name>
-         <description>Ignore the scaleMinimum attribute</description>
+         <name>Ignore scale minimum</name>
+         <description>Features remain visible regardless of display scale</description>
          <language>eng</language>
        </description>
        <type>Boolean</type>
@@ -8935,7 +8927,7 @@
      <parameter id="NationalLanguage">
        <description>
          <name>National language</name>
-         <description>Selects which language to use for text (ISO 639-3)</description>
+         <description>3-letter language code. Selects preferred language for chart text.</description>
          <language>eng</language>
        </description>
        <type>String</type>

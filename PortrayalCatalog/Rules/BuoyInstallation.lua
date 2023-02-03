@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Buoy Installation main entry point.
 function BuoyInstallation(feature, featurePortrayal, contextParameters)
@@ -7,7 +8,7 @@ function BuoyInstallation(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')

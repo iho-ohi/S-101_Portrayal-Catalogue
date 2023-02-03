@@ -1,11 +1,12 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Current - non-gravitational main entry point.
 function CurrentNonGravitational(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.orientation and feature.orientation.orientationValue and feature.speed and feature.speed.speedMaximum then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then

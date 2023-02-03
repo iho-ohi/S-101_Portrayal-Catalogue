@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Referenced portrayal rules.
 require 'TOPMAR01'
@@ -10,7 +11,7 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfCardinalMark == 4 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then

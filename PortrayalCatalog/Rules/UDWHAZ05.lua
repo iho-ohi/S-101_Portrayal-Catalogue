@@ -1,6 +1,7 @@
 -- UDWHAZ05 conditional symbology rules file.
 -- #57
 -- #89
+-- #155
 
 -- Main entry point for CSP.
 function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, originalViewingGroup)
@@ -24,7 +25,7 @@ function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, ori
 				Debug.StopPerformance('Lua Code - UDWHAZ05')
 				return 'ISODGR01', viewingGroup
 			end
-		elseif contextParameters.ShowIsolatedDangersInShallowWaters and feature.surroundingDepth >= scaledDecimalZero and feature.surroundingDepth < contextParameters.SafetyContour then
+		elseif contextParameters.ShallowWaterDangers and feature.surroundingDepth >= scaledDecimalZero and feature.surroundingDepth < contextParameters.SafetyContour then
 			if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then
 				viewingGroup = 24050
 				featurePortrayal:AddInstructions('ViewingGroup:24050;DrawingPriority:24')

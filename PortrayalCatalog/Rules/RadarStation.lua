@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #92
+-- #155
 
 -- Radar station main entry point.
 function RadarStation(feature, featurePortrayal, contextParameters)
@@ -20,7 +21,7 @@ function RadarStation(feature, featurePortrayal, contextParameters)
 		end
 	end
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(2, feature.categoryOfRadarStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then

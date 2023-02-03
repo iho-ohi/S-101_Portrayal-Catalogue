@@ -1,10 +1,11 @@
 -- BuoyEmergencyWreckMarking portrayal rules file.
+-- #155
 
 -- Main entry point for feature type.
 function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.buoyShape == 4 then
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')

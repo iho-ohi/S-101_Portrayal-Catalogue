@@ -1,12 +1,13 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
+-- #155
 
 -- Building main entry point.
 function Building(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(33, feature['function']) and feature.visualProminence == 1 and feature.featureName[1] and feature.featureName[1].name then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then

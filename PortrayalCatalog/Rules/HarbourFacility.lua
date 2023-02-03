@@ -1,11 +1,12 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Harbour facility main entry point.
 function HarbourFacility(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(1, feature.categoryOfHarbourFacility) then
 			viewingGroup = 32410
 			if contextParameters.RadarOverlay then

@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Mooring/Warping facility main entry point.
 function MooringWarpingFacility(feature, featurePortrayal, contextParameters)
@@ -7,7 +8,7 @@ function MooringWarpingFacility(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfMooringWarpingFacility == 1 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then

@@ -1,11 +1,12 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Tidal stream - flood/ebb main entry point.
 function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then

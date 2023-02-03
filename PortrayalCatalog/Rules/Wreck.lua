@@ -2,6 +2,7 @@
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #49
 -- #89
+-- #155
 
 -- Referenced portrayal rules.
 require 'WRECKS05'
@@ -10,7 +11,7 @@ require 'WRECKS05'
 function Wreck(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.categoryOfWreck and feature.categoryOfWreck == 3 and feature.valueOfSounding then
 			viewingGroup = 34051
 			if contextParameters.RadarOverlay then

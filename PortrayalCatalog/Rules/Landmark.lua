@@ -4,6 +4,7 @@
 --
 -- Issues: PSWG #60, PC #104
 -- Issues: PSWG #62, PC #107
+-- #155
 
 -- Landmark main entry point.
 function Landmark(feature, featurePortrayal, contextParameters)
@@ -11,7 +12,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('Hover:true')
 		
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then

@@ -1,4 +1,5 @@
 -- SEABED01 conditional symbology rules file.
+-- #155: Update context parameters
 
 -- Main entry point for CSP.
 function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue)
@@ -7,7 +8,8 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 	local Colour = 'DEPIT'
 	local Shallow = true
 
-	if (contextParameters.TwoShades) then
+	if (not contextParameters.FourShades) then
+		-- Two shades: DEPVS / DEPDW
 		if (depthRangeMinimumValue >= scaledDecimalZero and (not depthRangeMaximumValue or depthRangeMaximumValue > scaledDecimalZero)) then
 			Colour = 'DEPVS'
 		end
@@ -17,6 +19,7 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 			Shallow = false
 		end
 	else
+		-- Four shades: DEPVS / DEPMS / DEPMD / DEPDW
 		if (depthRangeMinimumValue >= scaledDecimalZero and (not depthRangeMaximumValue or depthRangeMaximumValue > scaledDecimalZero)) then
 			Colour = 'DEPVS'
 		end
@@ -44,7 +47,7 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 
 	featurePortrayal:AddInstructions('ColorFill:' .. Colour)
 
-	if (contextParameters.ShallowPattern and Shallow) then
+	if Shallow then
 		-- S-52 10.5.7
 		featurePortrayal:AddInstructions('ViewingGroup:23010;DrawingPriority:9;DisplayPlane:UnderRADAR')
 

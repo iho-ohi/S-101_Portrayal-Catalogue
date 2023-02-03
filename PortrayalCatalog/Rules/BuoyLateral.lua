@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #155
 
 -- Referenced portrayal rules.
 require 'TOPMAR01'
@@ -10,7 +11,7 @@ function BuoyLateral(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedPoints then
+	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.buoyShape == 1 and feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 then
 			viewingGroup = 27010
 			if contextParameters.RadarOverlay then
