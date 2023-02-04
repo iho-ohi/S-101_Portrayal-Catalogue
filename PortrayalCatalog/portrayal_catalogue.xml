@@ -681,7 +681,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="BRTHNO01">
+      <symbol id="BRTHDNG1">
+		 <description>
+			   <name>BRTHDNG1</name>
+			   <description>berth for dangerous or hazardous</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BRTHDNG1.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BRTHNO01">
          <description>
             <name>BRTHNO01</name>
             <description>berth number symbol</description>
