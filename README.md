@@ -89,6 +89,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
+[i159]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/159
+[i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
 [i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 
 ## Changelog
@@ -97,6 +99,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#153][i153] Update PortrayalCreateContextParameter contextParameterType to allow "Double" and "String" and to ignore case
 *	[#154][i154] Enhance debugging
 *	[#155][i155] Update context parameters
+*	[#159][i159] Remove processing instruction
+*	[#160][i160] Update version number
 *	[#138][i138] Modified metadata for Incorrect drawing of some Area patterns [PSWG #92] #138
 
 *	Lua Rule File Updates
