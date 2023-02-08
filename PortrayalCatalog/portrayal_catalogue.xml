@@ -2645,7 +2645,7 @@
 	   <symbol id="MOIRE01">
 		   <description>
 			   <name>MOIRE01</name>
-			   <description>LightSectored (Moir� Effect)</description>
+			   <description>LightSectored (Moiré Effect)</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>MOIRE01.svg</fileName>
@@ -8860,7 +8860,7 @@
 			<xpath>//ShallowContour &lt;= //SafetyContour</xpath>
 			<errorMessage>
 				<text>Must be &lt;= safety contour value</text>
-				<text language="kor">안전 윤곽 값보다 작거나 같아야 합니다</text>
+				<text language="kor">ì•ˆì „ ìœ¤ê³½ ê°’ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤</text>
 			</errorMessage>
          </validate>
       </parameter>
@@ -8876,7 +8876,7 @@
 			<xpath>//DeepContour >= //SafetyContour</xpath>
 			<errorMessage>
 				<text>Must be >= safety contour value</text>
-				<text language="kor">안전 윤곽 값보다 크거나 같아야 합니다</text>
+				<text language="kor">ì•ˆì „ ìœ¤ê³½ ê°’ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤</text>
 			</errorMessage>
          </validate>
       </parameter>
