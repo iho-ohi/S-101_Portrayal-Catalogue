@@ -89,6 +89,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
+[i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -96,6 +97,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#153][i153] Update PortrayalCreateContextParameter contextParameterType to allow "Double" and "String" and to ignore case
 *	[#154][i154] Enhance debugging
 *	[#155][i155] Update context parameters
+*	[#138][i138] Modified metadata for Incorrect drawing of some Area patterns [PSWG #92] #138
+
 *	Lua Rule File Updates
 	*	[#143][i143] New Symbology for Pilot Boarding Place surface [PSWG#106] 
 	*	[#137][i137] Pilotage District Symbology [PSWG #105]
