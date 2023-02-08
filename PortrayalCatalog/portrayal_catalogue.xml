@@ -1351,7 +1351,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="DRGARE01P">
+	   <symbol id="DRFSTA02">
+		   <description>
+			   <name>DRFSTA02</name>
+			   <description>DGPS reference station</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>DRFSTA02.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="DRGARE01P">
          <description>
             <name>DRGARE01P</name>
             <description>dredged area</description>
