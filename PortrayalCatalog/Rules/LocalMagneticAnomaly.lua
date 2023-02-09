@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
+-- PC Issue #73, PSWG #102
 -- Local magnetic anomaly main entry point.
 function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	local viewingGroup
@@ -37,21 +38,22 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 
-		-- issue #73 PC, #102 PSWG
+	-- issue #73 PC, #102 PSWG
+	-- DEBUG TESTING SUPPORT
 
 	-- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly 
 	-- valueOf multiplicity is 1:2
 	--local valueOfLocalMagneticAnomaly = {'1', nil} -- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly  
 	local valueOfLocalMagneticAnomaly = {}
 	
-	-- DEBUG TESTING SUPPORT
+
 	--Debug.Break()
 	--valueOfLocalMagneticAnomaly[1] = {magneticAnomalyValue = 175, referenceDirection = 5} --RefDir 5 = East, 13 = West 
 	--valueOfLocalMagneticAnomaly[2] = {magneticAnomalyValue = 145, referenceDirection = unknownValue} --RefDir 5 = East, 13 = West 
 
 	local magCount = #valueOfLocalMagneticAnomaly
 	
-	featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
+	featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHMGF')
 
 	if magCount == 1 then
 		if valueOfLocalMagneticAnomaly[1].magneticAnomalyValue ~= nil then
