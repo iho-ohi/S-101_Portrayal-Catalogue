@@ -5,8 +5,7 @@
 <!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18 -->
 <!-- #155: Update context parameters -->
 
-<?pcbinfo name="S-101" fieldOfApplication="Marine Navigation" scope="Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model." versionDate="2021-08-17T00:00:00+0000" user="IHO Testbed" organization="International Hydrographic Organization"?>
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.0.2">
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.0">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -1352,7 +1351,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="DRGARE01P">
+	   <symbol id="DRFSTA02">
+		   <description>
+			   <name>DRFSTA02</name>
+			   <description>DGPS reference station</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>DRFSTA02.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="DRGARE01P">
          <description>
             <name>DRGARE01P</name>
             <description>dredged area</description>

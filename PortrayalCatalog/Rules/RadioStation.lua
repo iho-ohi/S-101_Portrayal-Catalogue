@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
+-- #133, [PSWG #111]
 
 -- Radio station main entry point.
 function RadioStation(feature, featurePortrayal, contextParameters)
@@ -14,7 +15,7 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:DRFSTA01')
+			featurePortrayal:AddInstructions('PointInstruction:DRFSTA02')
 		else
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
@@ -32,7 +33,7 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:DRFSTA01')
+			featurePortrayal:AddInstructions('PointInstruction:DRFSTA02')
 		else
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
