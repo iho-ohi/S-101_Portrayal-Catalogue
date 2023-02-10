@@ -85,6 +85,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
 [i137]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/137
+[i139]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/139
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
@@ -104,11 +105,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#159][i159] Remove processing instruction
 *	[#160][i160] Update version number
 *	[#138][i138] Modified metadata for Incorrect drawing of some Area patterns [PSWG #92] #138
-
-*	Lua Rule File Updates
+*	Lua Rule File / Symbol Updates
 	*	[#143][i143] New Symbology for Pilot Boarding Place surface [PSWG#106] 
 	*	[#137][i137] Pilotage District Symbology [PSWG #105]
 	*	[#133][i133] Update DGPS reference station symbol to DRFSTA02 [PSWG #111] #133
+	*	[#139][i139] Update EMLOWACnn.svg symbols (reduce line thickness)
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
