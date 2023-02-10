@@ -84,17 +84,17 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
 [i124]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/124
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
+[i133]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/133
 [i137]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/137
+[i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 [i139]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/139
+[i140]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/140
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
 [i159]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/159
 [i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
-[i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
-[i133]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/133
-[i73]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/73
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -110,6 +110,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#137][i137] Pilotage District Symbology [PSWG #105]
 	*	[#133][i133] Update DGPS reference station symbol to DRFSTA02 [PSWG #111] #133
 	*	[#139][i139] Update EMLOWACnn.svg symbols (reduce line thickness)
+	*	[#140][i140] Update Deep water route line styles (eliminate leading space)
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
