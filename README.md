@@ -6,6 +6,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i6]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/6
 [i7]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/7
 [i9]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/9
+[i10]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/10
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
@@ -111,6 +112,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#133][i133] Update DGPS reference station symbol to DRFSTA02 [PSWG #111] #133
 	*	[#139][i139] Update EMLOWACnn.svg symbols (reduce line thickness)
 	*	[#140][i140] Update Deep water route line styles (eliminate leading space)
+	*	[#10][i10] Change sector extension from 3mm to 5mm
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
