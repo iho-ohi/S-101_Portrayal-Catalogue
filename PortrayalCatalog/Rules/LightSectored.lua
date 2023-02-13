@@ -4,6 +4,7 @@
 -- PC #113, PSWG #52
 -- #20
 -- #155
+-- #10
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -112,7 +113,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 
 				-- Draw sector arcs
 				if lightSector.sectorExtension then
-					featurePortrayal:AddInstructions('ArcByRadius:0,0,23,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
+					featurePortrayal:AddInstructions('ArcByRadius:0,0,25,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
 				else
 					featurePortrayal:AddInstructions('ArcByRadius:0,0,20,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
 				end
