@@ -96,6 +96,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
 [i159]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/159
 [i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
+[i162]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/162
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -113,6 +114,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#139][i139] Update EMLOWACnn.svg symbols (reduce line thickness)
 	*	[#140][i140] Update Deep water route line styles (eliminate leading space)
 	*	[#10][i10] Change sector extension from 3mm to 5mm
+	*	[#162][i162] BuoyNewDangerMarking -> BuoyEmergencyWreckMarking
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
