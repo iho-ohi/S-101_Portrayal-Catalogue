@@ -273,6 +273,46 @@ function GetFeatureName(feature, contextParameters)
 	return defaultName
 end
 
+--
+-- Temporary workaround for no geometry features like ArchipelagicSeaLane, PSWG #80
+-- Implement text instruction for when featureName is set to 'display', i.e. True
+--
+function GetFeatureNameNoGeometry(featureName, contextParameters)
+	local defaultName
+
+	--Debug.Break()
+
+	for _, fN in ipairs(featureName) do
+		local displayName = fN.displayName
+
+		if displayName == 'True' then
+			displayName = true
+		else 
+			displayName = false
+		end
+
+		if fN.language == nil then
+			defaultName = fN.name
+		else
+			defaultName = defaultName or fN.name
+		end
+
+		if not displayName then
+			defaultName = nil
+		end
+
+		if fN.language == contextParameters.NationalLanguage then
+			if not displayName then
+				return nil
+			else
+				return fN.name
+			end
+		end
+	end
+	-- check for return ~= nil, therefor display it
+	return defaultName
+end
+
 function GetInformationText(information, contextParameters)
 	local defaultText
 
