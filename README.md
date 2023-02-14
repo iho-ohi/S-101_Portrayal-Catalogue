@@ -98,6 +98,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
 [i162]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/162
 [i163]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/163
+[i164]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/164
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -117,6 +118,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#140][i140] Update Deep water route line styles (eliminate leading space)
 	*	[#10][i10] Change sector extension from 3mm to 5mm
 	*	[#162][i162] BuoyNewDangerMarking -> BuoyEmergencyWreckMarking
+	*	[#164][i164] DredgedArea TextInstruction display priority 24 -> 3
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 

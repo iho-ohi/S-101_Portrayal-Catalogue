@@ -38,7 +38,7 @@ function DredgedArea(feature, featurePortrayal, contextParameters)
 
 		-- combine depth with date
 		local daDate = drmv .. date
-		featurePortrayal:AddTextInstruction(EncodeString(daDate, '%s'), 11, 24, 13030, 24)
+		featurePortrayal:AddTextInstruction(EncodeString(daDate, '%s'), 11, 24, 13030, 3)
 		-- end Dredged Date (row 47 main) #56
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
