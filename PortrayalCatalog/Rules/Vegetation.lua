@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
+-- PSWG #109, PC #131 
 
 -- Vegetation main entry point.
 function Vegetation(feature, featurePortrayal, contextParameters)
@@ -15,6 +16,10 @@ function Vegetation(feature, featurePortrayal, contextParameters)
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('PointInstruction:TREPNT05')
+		elseif feature.categoryOfVegetation == 11 then
+			viewingGroup = 32030
+			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('PointInstruction:MARSHE01')
 		else
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
@@ -29,6 +34,10 @@ function Vegetation(feature, featurePortrayal, contextParameters)
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('PointInstruction:TREPNT05')
+		elseif feature.categoryOfVegetation == 11 then
+			viewingGroup = 32030
+			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('PointInstruction:MARSHE01')
 		else
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRADAR')
