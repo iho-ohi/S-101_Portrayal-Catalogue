@@ -103,6 +103,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i165]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/165
 [i166]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/166
 [i168]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/168
+[i169]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/169
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -126,7 +127,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#131][i131] Enable the symbolisation of Reeds - [PSWG #109] 
 	*	[#165][i165] Crane: throw error on curve geometry
 	*	[#166][i166] FoulGround: throw error on curve geometry
-	*	[#168][i168] Active submarine volcano: throw error on curve or surface geometry
+	*	[#168][i168] Active submarine volcano must have point geometry
+	*	[#169][i169] Restricted anchorage must have point geometry
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
 ### 1.0.2 - use with FC 1.0.2
