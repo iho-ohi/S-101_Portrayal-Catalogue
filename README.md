@@ -101,6 +101,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i163]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/163
 [i164]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/164
 [i165]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/165
+[i166]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/166
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -123,7 +124,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#164][i164] DredgedArea TextInstruction display priority 24 -> 3
 	*	[#131][i131] Enable the symbolisation of Reeds - [PSWG #109] 
 	*	[#165][i165] Crane: throw error on curve geometry
-
+	*	[#166][i166] FoulGround: throw error on curve geometry
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
 ### 1.0.2 - use with FC 1.0.2
