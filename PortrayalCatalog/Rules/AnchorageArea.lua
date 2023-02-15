@@ -2,6 +2,7 @@
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 --
 -- ISSUES: {PSWG #72, PC #121}, {PSWG #28, PC #124}
+-- #169
 --
 -- Referenced portrayal rules.
 require 'RESTRN01'
@@ -48,6 +49,8 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			end
 
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
+		elseif COA == 15 then -- #169 reported anchorage must have point geometry
+			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
@@ -74,6 +77,8 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			end
 
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
+		elseif COA == 15 then -- #169 reported anchorage must have point geometry
+			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
