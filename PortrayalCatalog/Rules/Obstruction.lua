@@ -6,6 +6,7 @@
 -- #103, PSWG #71
 -- #23, PSWG #34
 -- #155
+-- #168
 
 --
 -- Referenced portrayal rules.
@@ -208,7 +209,9 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfObstruction == 21 then
-			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			--#168
+			--viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			error('Curve is not a valid geometry for active submarine volcano')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
@@ -252,6 +255,9 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		elseif feature.categoryOfObstruction == 21 then
+			--#168
+			error('Surface is not a valid geometry for active submarine volcano')
 		elseif feature.categoryOfObstruction == 23 then  -- mangrove
 			viewingGroup = 12410
 			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
@@ -283,7 +289,9 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfObstruction == 21 then	-- volcano
-			viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			--#168
+			--viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
+			error('Surface is not a valid geometry for active submarine volcano')
 		elseif feature.categoryOfObstruction == 23 then  -- mangrove
 			viewingGroup = 12410
 			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRADAR')
