@@ -5,6 +5,7 @@
 -- #20
 -- #155
 -- #10
+-- #171
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -86,7 +87,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					crs2 = crs1
 				else
 					if lightSector.sectorLimit.sectorLimitOne.sectorLineLength then
-						length1 = lightSector.sectorLimit.sectorLimitOne.sectorLineLength
+						length1 = nmi2metres(lightSector.sectorLimit.sectorLimitOne.sectorLineLength)
 						crs1 = 'GeographicCRS'
 					else
 						length1 = 25.0
@@ -94,7 +95,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					end
 					
 					if lightSector.sectorLimit.sectorLimitTwo.sectorLineLength then
-						length2 = lightSector.sectorLimit.sectorLimitTwo.sectorLineLength
+						length2 = nmi2metres(lightSector.sectorLimit.sectorLimitTwo.sectorLineLength)
 						crs2 = 'GeographicCRS'
 					else
 						length2 = length1

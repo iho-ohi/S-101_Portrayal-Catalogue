@@ -3,6 +3,7 @@
 -- dKart improvment: Determine S-101 portrayal for Crane curve feature and visual conspicuous.
 --
 -- Issues: PSWG #75, PC #106
+-- #165
 --
 -- Crane main entry point.
 function Crane(feature, featurePortrayal, contextParameters)
@@ -31,12 +32,12 @@ function Crane(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		featurePortrayal:SimpleLineStyle('solid',0.64, colour)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-	elseif feature.PrimitiveType == PrimitiveType.Curve then
+	--elseif feature.PrimitiveType == PrimitiveType.Curve then
 		-- dKart improvment: Determine S-101 portrayal for Crane curve feature.
-		featurePortrayal:AddInstructions('ViewingGroup:'.. viewingGroup ..';DrawingPriority:12;DisplayPlane:UnderRADAR')
-		featurePortrayal:SimpleLineStyle('solid',0.64,'LANDF')
-		featurePortrayal:AddInstructions('LineInstruction:_simple_;LinePlacement:Relative,0.5')
-		featurePortrayal:AddInstructions('PointInstruction:CRANES1' .. symbol)
+		--featurePortrayal:AddInstructions('ViewingGroup:'.. viewingGroup ..';DrawingPriority:12;DisplayPlane:UnderRADAR')
+		--featurePortrayal:SimpleLineStyle('solid',0.64,'LANDF')
+		--featurePortrayal:AddInstructions('LineInstruction:_simple_;LinePlacement:Relative,0.5')
+		--featurePortrayal:AddInstructions('PointInstruction:CRANES1' .. symbol)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

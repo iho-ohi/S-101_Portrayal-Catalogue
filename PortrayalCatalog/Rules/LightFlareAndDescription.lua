@@ -1,5 +1,6 @@
 -- LightFlareAndDescription portrayal rules file.
 -- #62
+-- #170
 
 -- Referenced CSPs.
 require 'LITDSN02'
@@ -20,9 +21,9 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 
 	local rotation = 135
 
-	if feature.flareAngle
+	if feature.flareBearing
 	then
-		rotation = feature.flareAngle
+		rotation = feature.flareBearing
 	else
 		if contains(colour[1], { 1, 6, 11 }) then
 			-- White, yellow or orange light.  Flare at 45 degrees if there is a colocated non-sectored light.
