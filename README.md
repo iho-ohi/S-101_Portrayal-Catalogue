@@ -100,6 +100,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i163]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/163
 [i164]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/164
 [i131]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/131
+[i97]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/97
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -123,6 +124,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#131][i131] Enable the symbolisation of Reeds - [PSWG #109] 
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
+	*	[#97][i97] Work in progress: Physical AIS Aid to Navigation [PSWG #70] 
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG

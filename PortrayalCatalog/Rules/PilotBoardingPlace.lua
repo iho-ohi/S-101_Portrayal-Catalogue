@@ -3,9 +3,13 @@
 
 -- PSWG #106, PC #143 New Symbology for Pilot Boarding Place surface 
 
+require 'PhysicalAISAidToNavigation'
+
 -- Pilot Boarding Place main entry point.
 function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = PhysicalAISAidToNavigation(feature, featurePortrayal, contextParameters)
+
+	--[[
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
@@ -34,6 +38,6 @@ function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-
+	--]]
 	return viewingGroup
 end

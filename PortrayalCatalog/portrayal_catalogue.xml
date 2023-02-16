@@ -131,6 +131,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="AISPHY05">
+		   <description>
+			   <name>AISPHY05</name>
+			   <description>Physical AIS Aid To Navigation</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>AISPHY05.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="BCNCAR01">
          <description>
             <name>BCNCAR01</name>
