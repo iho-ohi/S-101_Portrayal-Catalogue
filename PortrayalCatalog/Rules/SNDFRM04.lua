@@ -17,15 +17,17 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	local symbolPrefix
 	local colour
 	local fontSize
-
+	local lowAccuracySymbolRing
 
 	if depthValue <= contextParameters.SafetyDepth then
 		colour = 'SNDG2' -- Sounding shallow
 		symbolPrefix = 'SOUNDS'
+		lowAccuracySymbolRing = 'C3'
 		--fontSize = contextParameters._Testing_SoundingsAsText_SizeUnsafe
 	else
 		colour = 'SNDG1' -- Sounding deep
 		symbolPrefix = 'SOUNDG'
+		lowAccuracySymbolRing = 'C2'
 		--fontSize = contextParameters._Testing_SoundingsAsText_SizeSafe
 	end
 
@@ -34,13 +36,13 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	end
 
 	if feature.Code == 'DepthNoBottomFound' or contains(feature.qualityOfVerticalMeasurement, { 3, 4, 5, 8, 9 }) or contains(feature.status, { 18 }) then
-		addSymbol(symbolPrefix..'C3')
+		addSymbol(symbolPrefix.. lowAccuracySymbolRing)
 	else
 		local spatialQuality = feature:GetSpatialAssociation():GetInformationAssociation(unpack(sqParams))
 		local qualityOfPosition = spatialQuality and spatialQuality.qualityOfHorizontalMeasurement
 
 		if qualityOfPosition and qualityOfPosition ~= 1 and qualityOfPosition ~= 10 and qualityOfPosition ~= 11 then
-			addSymbol(symbolPrefix..'C3')
+			addSymbol(symbolPrefix.. lowAccuracySymbolRing)
 		end
 	end
 	

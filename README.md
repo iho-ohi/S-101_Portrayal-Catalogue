@@ -137,6 +137,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#170][i170] flareAngle renamed to flareBearing
 	*	[#171][i171] sectorLineLength units changed from meters to nautical miles
 	*	[#141][i141] Amend incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
+	*	[#141][i141] Corrected prior fix: incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#97][i97] Work in progress: Physical AIS Aid to Navigation [PSWG #70] 
