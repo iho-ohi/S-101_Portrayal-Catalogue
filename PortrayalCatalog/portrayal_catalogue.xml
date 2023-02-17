@@ -5,6 +5,7 @@
 <!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18 -->
 <!-- #155: Update context parameters -->
 <!-- #162: Rename BuoyNewDangerMarking to BuoyEmergencyWreckMarking -->
+<!-- #172: Rename TrafficSeparationZone to SeparationZoneOrLine, remove TrafficSeparationLine -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.0">
    <alertCatalog id="alertCatalog">
@@ -10839,6 +10840,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="SeparationZoneOrLine">
+         <description>
+            <name>SeparationZoneOrLine</name>
+            <description>Rules for feature type SeparationZoneOrLine</description>
+            <language>eng</language>
+         </description>
+         <fileName>SeparationZoneOrLine.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="ShorelineConstruction">
          <description>
             <name>ShorelineConstruction</name>
@@ -11070,17 +11082,6 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="TrafficSeparationLine">
-         <description>
-            <name>TrafficSeparationLine</name>
-            <description>Rules for feature type TrafficSeparationLine</description>
-            <language>eng</language>
-         </description>
-         <fileName>TrafficSeparationLine.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
       <ruleFile id="TrafficSeparationScheme">
          <description>
             <name>TrafficSeparationScheme</name>
@@ -11132,17 +11133,6 @@
             <language>eng</language>
          </description>
          <fileName>TrafficSeparationSchemeRoundabout.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
-      <ruleFile id="TrafficSeparationZone">
-         <description>
-            <name>TrafficSeparationZone</name>
-            <description>Rules for feature type TrafficSeparationZone</description>
-            <language>eng</language>
-         </description>
-         <fileName>TrafficSeparationZone.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
