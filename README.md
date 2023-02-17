@@ -64,6 +64,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i94]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/94
 [i95]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/95
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
+[i97]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/97
 [i98]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/98
 [i100]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/100
 [i101]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/101
@@ -91,6 +92,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 [i139]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/139
 [i140]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/140
+[i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
@@ -106,9 +108,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i169]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/169
 [i170]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/170
 [i171]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/171
-[i131]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/131
-[i97]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/97
-[i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
+[i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -138,6 +138,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#171][i171] sectorLineLength units changed from meters to nautical miles
 	*	[#141][i141] Amend incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
 	*	[#141][i141] Corrected prior fix: incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
+	*	[#141][i141] Implement SeparationZoneOrLine
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#97][i97] Work in progress: Physical AIS Aid to Navigation [PSWG #70] 
