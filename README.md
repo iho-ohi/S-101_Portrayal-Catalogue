@@ -108,6 +108,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i171]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/171
 [i131]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/131
 [i97]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/97
+[i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -135,7 +136,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#169][i169] Restricted anchorage must have point geometry
 	*	[#170][i170] flareAngle renamed to flareBearing
 	*	[#171][i171] sectorLineLength units changed from meters to nautical miles
-
+	*	[#141][i141] Amend incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#97][i97] Work in progress: Physical AIS Aid to Navigation [PSWG #70] 

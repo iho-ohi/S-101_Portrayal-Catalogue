@@ -1,5 +1,7 @@
 -- SNDFRM04 conditional symbology rules file.
 
+-- PSWG #118, PC #141
+
 -- Main entry point for CSP.
 function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, depthValue)
 	Debug.StartPerformance('Lua Code - SNDFRM04')
@@ -16,6 +18,7 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	local colour
 	local fontSize
 
+
 	if depthValue <= contextParameters.SafetyDepth then
 		colour = 'SNDG2' -- Sounding shallow
 		symbolPrefix = 'SOUNDS'
@@ -31,13 +34,13 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	end
 
 	if feature.Code == 'DepthNoBottomFound' or contains(feature.qualityOfVerticalMeasurement, { 3, 4, 5, 8, 9 }) or contains(feature.status, { 18 }) then
-		addSymbol(symbolPrefix..'C2')
+		addSymbol(symbolPrefix..'C3')
 	else
 		local spatialQuality = feature:GetSpatialAssociation():GetInformationAssociation(unpack(sqParams))
 		local qualityOfPosition = spatialQuality and spatialQuality.qualityOfHorizontalMeasurement
 
 		if qualityOfPosition and qualityOfPosition ~= 1 and qualityOfPosition ~= 10 and qualityOfPosition ~= 11 then
-			addSymbol(symbolPrefix..'C2')
+			addSymbol(symbolPrefix..'C3')
 		end
 	end
 	

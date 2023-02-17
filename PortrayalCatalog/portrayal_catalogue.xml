@@ -5342,6 +5342,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="SOUNDSC3">
+		   <description>
+			   <name>SOUNDSC3</name>
+			   <description>sounding of low accuracy, black</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>SOUNDSC3.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="SPRING02">
          <description>
             <name>SPRING02</name>
