@@ -7751,7 +7751,14 @@
             <language>eng</language>
          </description>
       </viewingGroup>
-	  <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
+	   <viewingGroup id="27240">
+		   <description>
+			   <name>Physical and Virtual AIS Aids to Navigation</name>
+			   <description>Standard: P, Q, R, S BUOYS and BEACONS, LIGHTS, FOG SIGNALS, RADAR</description>
+			   <language>eng</language>
+		   </description>
+	   </viewingGroup>
+	   <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
       <viewingGroup id="28000">
          <description>
             <name>Services</name>

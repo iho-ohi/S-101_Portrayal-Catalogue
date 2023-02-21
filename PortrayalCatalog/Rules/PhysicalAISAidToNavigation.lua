@@ -6,7 +6,7 @@
 function PhysicalAISAidToNavigation(feature, featurePortrayal, contextParameters)
 	--error('Not Implemented: No symbology defined in S-52 for PhysicalAISAidToNavigation')
 
-	local viewingGroup = 27000
+	local viewingGroup = 27240
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then

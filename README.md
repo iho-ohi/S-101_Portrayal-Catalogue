@@ -139,9 +139,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#141][i141] Amend incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
 	*	[#141][i141] Corrected prior fix: incorrect S-52 color for symbol SOUNDSC2 -> SOUNDSC3 [PSWG #118], #141
 	*	[#172][i172] Implement SeparationZoneOrLine
+	*	[#97][i97] Completed: Physical AIS Aid to Navigation [PSWG #70], VG = 27240 (as per S-98)
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
-	*	[#97][i97] Work in progress: Physical AIS Aid to Navigation [PSWG #70] 
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
