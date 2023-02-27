@@ -7,8 +7,12 @@ function LockBasin(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
-		viewingGroup = 12420
-		featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+		viewingGroup = 22010
+		if contextParameters.RadarOverlay then
+			featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:9;DisplayPlane:OverRADAR')
+		else
+			featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		end
 		featurePortrayal:AddInstructions('ColorFill:DEPVS')
 		featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
