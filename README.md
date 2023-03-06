@@ -110,6 +110,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i171]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/171
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
+[i145]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/145
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -142,6 +143,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#172][i172] Implement SeparationZoneOrLine
 	*	[#97][i97] Completed: Physical AIS Aid to Navigation [PSWG #70], VG = 27240 (as per S-98)
 	*	[#173][i173] Dock Area and Lock Basin - Define Display parameters [PSWG #121]
+	*	[#145][i145] "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
