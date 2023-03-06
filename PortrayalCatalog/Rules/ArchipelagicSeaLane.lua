@@ -7,7 +7,7 @@ function ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 26260 
 
 	--Debug.Break()
-	local featureName = {}  -- replace with: featureName = feature.featureName;
+	local featureName = feature.featureName  -- DEBUG use: featureName = {} with next line  -- replace with: featureName = feature.featureName;
 	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Test Sea Lane'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then

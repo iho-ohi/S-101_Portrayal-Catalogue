@@ -8,7 +8,7 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 
 	local viewingGroup = 27220
 
-	local featureName = {}  -- replace with: featureName = feature.featureName;
+	local featureName = feature.featureName  -- DEBUG use: featureName = {} with next line  -- replace with: featureName = feature.featureName;
 	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Range System'}
 
 	if feature.PrimitiveType == PrimitiveType.Surface then

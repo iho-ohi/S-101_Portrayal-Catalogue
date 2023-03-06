@@ -144,6 +144,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#97][i97] Completed: Physical AIS Aid to Navigation [PSWG #70], VG = 27240 (as per S-98)
 	*	[#173][i173] Dock Area and Lock Basin - Define Display parameters [PSWG #121]
 	*	[#145][i145] "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
+	*	[#145][i145] Removed debug for "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
