@@ -274,7 +274,7 @@ function GetFeatureName(feature, contextParameters)
 end
 
 --
--- Temporary workaround for no geometry features like ArchipelagicSeaLane, PSWG #80
+-- Temporary workaround for no geometry features like IslandGroup or ArchipelagicSeaLane, PSWG #80
 -- Implement text instruction for when featureName is set to 'display', i.e. True
 --
 function GetFeatureNameNoGeometry(featureName, contextParameters)

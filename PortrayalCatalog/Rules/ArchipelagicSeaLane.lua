@@ -8,7 +8,7 @@ function ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
 
 	--Debug.Break()
 	local featureName = {}  -- replace with: featureName = feature.featureName;
-	featureName[1] = {displayName = 'True', language = 'eng', name = 'Test Sea Lane'}
+	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Test Sea Lane'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization, text only

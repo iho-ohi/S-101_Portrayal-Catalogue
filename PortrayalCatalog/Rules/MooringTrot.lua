@@ -9,7 +9,7 @@ function MooringTrot(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 24010
 
 	local featureName = {}  -- replace with: featureName = feature.featureName;
-	featureName[1] = {displayName = 'True', language = 'eng', name = 'Mooring Trot'}
+	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Mooring Trot'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then

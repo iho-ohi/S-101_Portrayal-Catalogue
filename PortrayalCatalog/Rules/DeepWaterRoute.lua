@@ -7,7 +7,7 @@ function DeepWaterRoute(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 25010
 
 	local featureName = {}  -- replace with: featureName = feature.featureName;
-	featureName[1] = {displayName = 'True', language = 'eng', name = 'Deep Water Route'}
+	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Deep Water Route'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization, text only

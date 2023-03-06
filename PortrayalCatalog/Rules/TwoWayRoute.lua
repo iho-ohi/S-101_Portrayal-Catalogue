@@ -9,7 +9,7 @@ function TwoWayRoute(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 25010
 
 	local featureName = {}  -- replace with: featureName = feature.featureName;
-	featureName[1] = {displayName = 'True', language = 'eng', name = 'Two Way Route'}
+	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Two Way Route'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then

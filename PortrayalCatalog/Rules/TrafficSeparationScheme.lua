@@ -9,7 +9,7 @@ function TrafficSeparationScheme(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 25010
 
 	local featureName = {}  -- replace with: featureName = feature.featureName;
-	featureName[1] = {displayName = 'True', language = 'eng', name = 'Traffic Separation Scheme'}
+	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Traffic Separation Scheme'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then
