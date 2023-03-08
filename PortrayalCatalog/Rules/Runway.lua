@@ -9,9 +9,9 @@ function Runway(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 32240
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:OverRADAR')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
 		if feature.categoryOfRunway and feature.categoryOfRunway == 1 then
 			featurePortrayal:AddInstructions('PointInstruction:AIRARE02')
