@@ -5,7 +5,7 @@
 -- Airport/airfield main entry point.
 function AirportAirfield(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-	local categoryOfAirportAirfield = 3 --feature.categoryOfAirportAirfield
+	local categoryOfAirportAirfield = feature.categoryOfAirportAirfield
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
