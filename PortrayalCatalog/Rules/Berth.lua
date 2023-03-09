@@ -5,7 +5,7 @@
 function Berth(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	local categoryOfCargo -- = 7  -- replace with updated FC with: categoryOfCargo = Feature.categoryOfCargo
+	local categoryOfCargo = Feature.categoryOfCargo -- = 7  -- replace with updated FC with: categoryOfCargo = Feature.categoryOfCargo
 
 	local symbol = 'BRTHNO01'	-- default for categoryOfCargo != 7
 

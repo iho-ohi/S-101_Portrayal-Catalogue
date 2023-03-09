@@ -112,6 +112,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
+[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -147,6 +148,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#145][i145] "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 	*	[#145][i145] Removed debug for "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 	*	[#176][i176] Runway feature of type Point [attribute categoryOfRunway=1 (Aeroplane Runway)] - Map to AIRARE02
+	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112] 
+
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
 ### 1.0.2 - use with FC 1.0.2
