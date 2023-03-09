@@ -88,11 +88,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
 [i131]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/131
 [i133]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/133
+[i134]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/134
 [i137]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/137
 [i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 [i139]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/139
 [i140]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/140
 [i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
+[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
 [i145]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/145
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
@@ -112,7 +114,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
-[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
+
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -148,7 +150,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#145][i145] "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 	*	[#145][i145] Removed debug for "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
 	*	[#176][i176] Runway feature of type Point [attribute categoryOfRunway=1 (Aeroplane Runway)] - Map to AIRARE02
-	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112] 
+	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112]
+	*	[#134][i134] Update portrayal of Heliports / Helipads
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
