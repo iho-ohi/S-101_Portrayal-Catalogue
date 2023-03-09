@@ -6,6 +6,7 @@
 <!-- #155: Update context parameters -->
 <!-- #162: Rename BuoyNewDangerMarking to BuoyEmergencyWreckMarking -->
 <!-- #172: Rename TrafficSeparationZone to SeparationZoneOrLine, remove TrafficSeparationLine -->
+<!-- #134: Add Helipad -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.0">
    <alertCatalog id="alertCatalog">
@@ -2360,6 +2361,16 @@
             <language>eng</language>
          </description>
          <fileName>GATCON04.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="HELIPD02">
+         <description>
+            <name>HELIPD02</name>
+            <description>Symbol for helipad as a point</description>
+            <language>eng</language>
+         </description>
+         <fileName>HELIPD02.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>

@@ -1,10 +1,13 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #176
+-- #134
 
 -- Runway main entry point.
 function Runway(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-
+	local categoryOfRunway = feature.categoryOfRunway
+	
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 32240
@@ -13,8 +16,10 @@ function Runway(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
-		if feature.categoryOfRunway and feature.categoryOfRunway == 1 then
+		if categoryOfRunway == 1 then
 			featurePortrayal:AddInstructions('PointInstruction:AIRARE02')
+		elseif categoryOfRunway == 2 then
+			featurePortrayal:AddInstructions('PointInstruction:HELIPD02')
 		else
 			featurePortrayal:AddInstructions('NullInstruction')
 		end
