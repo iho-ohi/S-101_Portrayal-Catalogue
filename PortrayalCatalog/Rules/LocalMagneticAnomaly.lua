@@ -2,6 +2,7 @@
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- PC Issue #73, PSWG #102
+
 -- Local magnetic anomaly main entry point.
 function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	local viewingGroup
@@ -44,12 +45,15 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	-- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly 
 	-- valueOf multiplicity is 1:2
 	--local valueOfLocalMagneticAnomaly = {'1', nil} -- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly  
-	local valueOfLocalMagneticAnomaly = {}
+		
+	--local valueOfLocalMagneticAnomaly = {}
 	
-
 	--Debug.Break()
 	--valueOfLocalMagneticAnomaly[1] = {magneticAnomalyValue = 175, referenceDirection = 5} --RefDir 5 = East, 13 = West 
 	--valueOfLocalMagneticAnomaly[2] = {magneticAnomalyValue = 145, referenceDirection = unknownValue} --RefDir 5 = East, 13 = West 
+	-- END 	-- DEBUG TESTING SUPPORT
+
+	local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly   -- DEBUG as {}
 
 	local magCount = #valueOfLocalMagneticAnomaly
 	
