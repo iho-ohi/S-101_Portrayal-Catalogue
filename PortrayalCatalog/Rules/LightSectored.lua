@@ -32,8 +32,12 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:UnderRADAR;Hover:true')
 	end
 
+	local informationFound = false
+
 	for isc, sectorCharacteristic in ipairs(feature.sectorCharacteristics) do
 		for ils, lightSector in ipairs(sectorCharacteristic.lightSector) do
+			informationFound = informationFound or lightSector.sectorInformation
+
 			local valueOfNominalRange = 9.0
 
 			if lightSector.valueOfNominalRange then
@@ -191,6 +195,14 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:QUESMRK1')
 			end
 		end
+	end
+
+	if informationFound then
+		featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
+
+		featurePortrayal:AddInstructions('Hover:true')
+
+		featurePortrayal:AddInstructions('ViewingGroup:27070,31030;DrawingPriority:24;PointInstruction:INFORM01')
 	end
 
 	return 27070

@@ -111,6 +111,14 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 					end
 				end
 			end
+
+			if container['!shapeInformation'] then
+				vg31030 = true
+			end
+
+			if container['!topmark'] and container.topmark.shapeInformation then
+				vg31030 = true
+			end
 		end
 
 		return vg31030, vg31031
