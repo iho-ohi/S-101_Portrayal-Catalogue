@@ -1,11 +1,13 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
+-- issue  #142, [PSWG #112]
+
 -- Berth main entry point.
 function Berth(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	local categoryOfCargo = Feature.categoryOfCargo -- = 7  -- replace with updated FC with: categoryOfCargo = Feature.categoryOfCargo
+	local categoryOfCargo = feature.categoryOfCargo -- = 7  -- replace with updated FC with: categoryOfCargo = feature.categoryOfCargo
 
 	local symbol = 'BRTHNO01'	-- default for categoryOfCargo != 7
 
