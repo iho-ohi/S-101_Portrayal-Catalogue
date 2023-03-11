@@ -1,4 +1,5 @@
 -- DEPARE03 conditional symbology rules file.
+-- #119
 
 -- Referenced CSPs.
 require 'RESCSP03'
@@ -127,9 +128,9 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if loc_valdco then
 				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:33021;DrawingPriority:24;DisplayPlane:OverRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:33021,contourLabel;DrawingPriority:24;DisplayPlane:OverRADAR')
 				else
-					featurePortrayal:AddInstructions('ViewingGroup:33021;DrawingPriority:24;DisplayPlane:UnderRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:33021,contourLabel;DrawingPriority:24;DisplayPlane:UnderRADAR')
 				end
 
 				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5')
