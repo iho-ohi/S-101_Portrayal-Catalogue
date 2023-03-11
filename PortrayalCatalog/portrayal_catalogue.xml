@@ -8368,6 +8368,13 @@
           <language>eng</language>
         </description>
       </viewingGroup>
+      <viewingGroup id="unknown">
+        <description>
+          <name>Unknown</name>
+          <description>to turn on the display of objects which are not recognized by the portrayal catalogue</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
    <!--********** END Viewing groups for Independent Mariner Selectors **********-->    
    </viewingGroups>
    <foundationMode>
@@ -8780,6 +8787,14 @@
          <language>eng</language>
        </description>
        <viewingGroup>shallowPattern</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="unknownSelector">
+       <description>
+         <name>Unknown</name>
+         <description>to turn on the display of objects which are not recognized by the portrayal catalogue</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>unknown</viewingGroup>
      </viewingGroupLayer>
      <!-- TEXT LAYER GROUPS (not part of a display mode / IMO display category) -->
      <viewingGroupLayer id="101">
