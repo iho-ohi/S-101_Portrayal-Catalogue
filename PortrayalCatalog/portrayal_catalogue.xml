@@ -8371,7 +8371,7 @@
       <viewingGroup id="highlightDateDependent">
         <description>
           <name>Highlight date dependent</name>
-         <description>Indication of date dependent objects - toggles the display of symbol CHDATD01</description>
+         <description>Highlights date dependent features</description>
           <language>eng</language>
         </description>
       </viewingGroup>
@@ -8399,7 +8399,14 @@
       <viewingGroup id="unknown">
         <description>
           <name>Unknown</name>
-          <description>to turn on the display of objects which are not recognized by the portrayal catalogue</description>
+          <description>to turn on the display of features which are not recognized by the portrayal catalogue</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="updateReview">
+        <description>
+          <name>Update review</name>
+          <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
           <language>eng</language>
         </description>
       </viewingGroup>
@@ -8818,8 +8825,8 @@
      </viewingGroupLayer>
      <viewingGroupLayer id="highlights">
        <description>
-         <name>Highlighting symbols</name>
-         <description>Toggles the display of highlight symbols ('i' and 'd')</description>
+         <name>Feature highlights</name>
+         <description>Toggles feature highlights</description>
          <language>eng</language>
        </description>
        <viewingGroup>highlightDateDependent</viewingGroup>
@@ -8829,7 +8836,7 @@
      <viewingGroupLayer id="highlightDateDependentSelector">
        <description>
          <name>Highlight date dependent</name>
-         <description>Indication of date dependent objects - toggles the display of symbol CHDATD01</description>
+         <description>Highlights date dependent features</description>
          <language>eng</language>
        </description>
        <viewingGroup>highlightDateDependent</viewingGroup>
@@ -8861,12 +8868,37 @@
      <viewingGroupLayer id="unknownSelector">
        <description>
          <name>Unknown</name>
-         <description>to turn on the display of objects which are not recognized by the portrayal catalogue</description>
+         <description>to turn on the display of features which are not recognized by the portrayal catalogue</description>
          <language>eng</language>
        </description>
        <viewingGroup>unknown</viewingGroup>
      </viewingGroupLayer>
+     <viewingGroupLayer id="updateReviewSelector">
+       <description>
+         <name>Update review</name>
+         <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>updateReview</viewingGroup>
+     </viewingGroupLayer>
      <!-- TEXT LAYER GROUPS (not part of a display mode / IMO display category) -->
+     <viewingGroupLayer id="100">
+       <description>
+         <name>Chart text</name>
+         <description>Chart text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>11</viewingGroup>
+       <viewingGroup>21</viewingGroup>
+       <viewingGroup>23</viewingGroup>
+       <viewingGroup>24</viewingGroup>
+       <viewingGroup>25</viewingGroup>
+       <viewingGroup>26</viewingGroup>
+       <viewingGroup>27</viewingGroup>
+       <viewingGroup>28</viewingGroup>
+       <viewingGroup>29</viewingGroup>
+       <viewingGroup>30</viewingGroup>
+     </viewingGroupLayer>
      <viewingGroupLayer id="101">
        <description>
          <name>Important Text</name>
