@@ -1,5 +1,6 @@
 -- QualityOfBathymetricData portrayal rules file.
 -- #80
+-- #119
 
 require 'S100Scripting'
 
@@ -14,7 +15,7 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	local catzoc
 	local zonesOfConfidence = feature.zoneOfConfidence
 	
-	featurePortrayal:AddInstructions('ViewingGroup:31010;DrawingPriority:4;DisplayPlane:UnderRADAR')
+	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:4;DisplayPlane:UnderRADAR')
 	
 	local dateDependent = false
 	if zonesOfConfidence and #zonesOfConfidence > 0 then
@@ -46,11 +47,11 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			end
 			if dateDependent then
-				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, 31010)
+				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, '31010,accuracy')
 				featurePortrayal:AddInstructions('ClearTime')
 			end
 		end
 	end
 
-	return 31010
+	return '31010,accuracy'
 end

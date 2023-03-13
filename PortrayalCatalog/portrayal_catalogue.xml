@@ -8354,6 +8354,13 @@
    <!--********** END Alert Catalog Viewing Groups **********--> 
    
    <!--********** Viewing groups for Independent Mariner Selectors **********-->
+      <viewingGroup id="accuracy">
+        <description>
+          <name>Accuracy</name>
+          <description>zoneOfConfidence and low accuracy symbols</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
       <viewingGroup id="contourLabel">
         <description>
           <name>Contour label</name>
@@ -8793,6 +8800,14 @@
       </viewingGroupLayer>
      <!-- END OTHER LAYER GROUPS -->
 	 <!-- Independent mariner selectors -->
+     <viewingGroupLayer id="accuracySelector">
+       <description>
+         <name>Accuracy</name>
+         <description>zoneOfConfidence and low accuracy symbols</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>accuracy</viewingGroup>
+     </viewingGroupLayer>
      <viewingGroupLayer id="contourLabelSelector">
        <description>
          <name>Contour label</name>

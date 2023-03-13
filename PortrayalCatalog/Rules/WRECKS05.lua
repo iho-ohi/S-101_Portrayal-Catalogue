@@ -2,6 +2,7 @@
 -- #72
 -- #89
 -- #90
+-- #119
 
 -- Referenced CSPs.
 require 'DEPVAL02'
@@ -44,7 +45,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 			featurePortrayal:AddInstructions('PointInstruction:' .. hazardSymbol)
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011,accuracy;PointInstruction:' .. qualitySymbol)
 			end
 		else
 			-- Continuation A
@@ -77,7 +78,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 			end
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011,accuracy;PointInstruction:' .. qualitySymbol)
 			end
 		end
 	else
@@ -142,7 +143,7 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 		end
 
 		if qualitySymbol then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011,accuracy;PointInstruction:' .. qualitySymbol)
 		end
 	end
 
