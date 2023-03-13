@@ -87,7 +87,7 @@ function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, vi
 	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
 	featurePortrayal:AddInstructions(displayPlane)
-	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31032;DrawingPriority:24;PointInstruction:CHDATD01')
+	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31032,highlightDateDependent;DrawingPriority:24;PointInstruction:CHDATD01')
 end
 
 --
