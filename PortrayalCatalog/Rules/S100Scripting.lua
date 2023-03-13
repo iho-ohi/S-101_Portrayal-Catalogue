@@ -122,7 +122,7 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		if vg31030 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030,highlightInfo;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 
 		if vg31031 then

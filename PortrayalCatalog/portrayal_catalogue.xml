@@ -8361,6 +8361,13 @@
           <language>eng</language>
         </description>
       </viewingGroup>
+      <viewingGroup id="highlightInfo">
+        <description>
+          <name>Highlight info</name>
+          <description>Additional information</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
       <viewingGroup id="shallowPattern">
         <description>
           <name>Shallow pattern</name>
@@ -8779,6 +8786,14 @@
          <language>eng</language>
        </description>
        <viewingGroup>contourLabel</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlightInfoSelector">
+       <description>
+         <name>Highlight info</name>
+         <description>Additional information</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightInfo</viewingGroup>
      </viewingGroupLayer>
      <viewingGroupLayer id="shallowPatternSelector">
        <description>
