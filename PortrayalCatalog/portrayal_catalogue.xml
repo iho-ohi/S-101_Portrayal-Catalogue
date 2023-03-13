@@ -8361,6 +8361,13 @@
           <language>eng</language>
         </description>
       </viewingGroup>
+      <viewingGroup id="highlightDateDependent">
+        <description>
+          <name>Highlight date dependent</name>
+         <description>Indication of date dependent objects - toggles the display of symbol CHDATD01</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
       <viewingGroup id="highlightDocument">
         <description>
           <name>Highlight document</name>
@@ -8794,10 +8801,28 @@
        </description>
        <viewingGroup>contourLabel</viewingGroup>
      </viewingGroupLayer>
+     <viewingGroupLayer id="highlights">
+       <description>
+         <name>Highlighting symbols</name>
+         <description>Toggles the display of highlight symbols ('i' and 'd')</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightDateDependent</viewingGroup>
+       <viewingGroup>highlightDocument</viewingGroup>
+       <viewingGroup>highlightInfo</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlightDateDependentSelector">
+       <description>
+         <name>Highlight date dependent</name>
+         <description>Indication of date dependent objects - toggles the display of symbol CHDATD01</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightDateDependent</viewingGroup>
+     </viewingGroupLayer>
      <viewingGroupLayer id="highlightDocumentSelector">
        <description>
          <name>Highlight document</name>
-         <description>Additional documents</description>
+         <description>Additional documents - highlights features associated with text or picture files</description>
          <language>eng</language>
        </description>
        <viewingGroup>highlightDocument</viewingGroup>
@@ -8805,7 +8830,7 @@
      <viewingGroupLayer id="highlightInfoSelector">
        <description>
          <name>Highlight info</name>
-         <description>Additional information</description>
+         <description>Additional information - highlights features which have amplifying text</description>
          <language>eng</language>
        </description>
        <viewingGroup>highlightInfo</viewingGroup>
