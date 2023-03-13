@@ -81,6 +81,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
 [i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
 [i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
+[i119]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/119
 [i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 [i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
@@ -102,6 +103,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
 [i159]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/159
 [i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
+[i161]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/161
 [i162]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/162
 [i163]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/163
 [i164]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/164
@@ -114,7 +116,6 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
-[i161]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/161
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -152,6 +153,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#176][i176] Runway feature of type Point [attribute categoryOfRunway=1 (Aeroplane Runway)] - Map to AIRARE02
 	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112]
 	*	[#134][i134] Update portrayal of Heliports / Helipads
+	*	[#119][i119] Independent mariner selections
 
 	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#161][i161] Work in progress: Sloping Ground & Slope Topline #108, [PSWG #108]
