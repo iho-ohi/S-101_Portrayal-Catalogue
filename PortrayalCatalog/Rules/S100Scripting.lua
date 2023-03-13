@@ -3,6 +3,7 @@ This file contains the global functions and tables that define the S-100 Lua Scr
 These functions are intended to be called by the S-100 scripts.
 --]]
 -- #80 - modularize processing of fixed and periodic date ranges
+-- #119
 
 local orig_error = error
 
@@ -127,7 +128,7 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		if vg31031 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31031;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31031,highlightDocument;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 	end
 end
