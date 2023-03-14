@@ -1,6 +1,7 @@
 -- QualityOfBathymetricData portrayal rules file.
 -- #80
 -- #119
+-- #178
 
 require 'S100Scripting'
 
@@ -16,6 +17,9 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	local zonesOfConfidence = feature.zoneOfConfidence
 	
 	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:4;DisplayPlane:UnderRADAR')
+
+	local DRVAL1 = feature.depthRangeMinimumValue
+	local DRVAL2 = feature.depthRangeMaximumValue
 	
 	local dateDependent = false
 	if zonesOfConfidence and #zonesOfConfidence > 0 then
