@@ -154,8 +154,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112]
 	*	[#134][i134] Update portrayal of Heliports / Helipads
 	*	[#119][i119] Independent mariner selections
+	*	[#73][i73]  Value of Local Magnetic Anomaly #73 [PSWG #102] 
 
-	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#161][i161] Work in progress: Sloping Ground & Slope Topline #108, [PSWG #108]
 
 ### 1.0.2 - use with FC 1.0.2
