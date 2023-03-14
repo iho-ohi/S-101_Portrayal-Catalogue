@@ -116,6 +116,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
+[i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 
 ## Changelog
@@ -158,6 +159,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#119][i119] Independent mariner selections
 	*	[#73][i73]  Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#161][i161] Sloping Ground & Slope Topline #108, [PSWG #108]
+	*	[#178][i178] QoBD should evaluate depth range
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
