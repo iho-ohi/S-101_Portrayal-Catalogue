@@ -8,6 +8,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i9]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/9
 [i10]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/10
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
+[i16]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/16
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
 [i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
@@ -160,6 +161,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#73][i73]  Value of Local Magnetic Anomaly #73 [PSWG #102] 
 	*	[#161][i161] Sloping Ground & Slope Topline #108, [PSWG #108]
 	*	[#178][i178] QoBD should evaluate depth range
+	*	[#16][i16] symbols: viewBox mismatch
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
