@@ -116,6 +116,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
+[i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -127,6 +128,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#160][i160] Update version number
 *	[#138][i138] Modified metadata for Incorrect drawing of some Area patterns [PSWG #92] #138
 *	[#163][i163] Update FC to 1.1.0
+*	[#179][i179] Update PC display modes to match registered values
 *	Lua Rule File / Symbol Updates
 	*	[#143][i143] New Symbology for Pilot Boarding Place surface [PSWG#106] 
 	*	[#137][i137] Pilotage District Symbology [PSWG #105]
