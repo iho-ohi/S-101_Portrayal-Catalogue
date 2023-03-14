@@ -155,8 +155,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#134][i134] Update portrayal of Heliports / Helipads
 	*	[#119][i119] Independent mariner selections
 	*	[#73][i73]  Value of Local Magnetic Anomaly #73 [PSWG #102] 
-
-	*	[#161][i161] Work in progress: Sloping Ground & Slope Topline #108, [PSWG #108]
+	*	[#161][i161] Sloping Ground & Slope Topline #108, [PSWG #108]
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
