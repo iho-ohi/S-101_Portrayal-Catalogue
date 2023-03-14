@@ -8958,7 +8958,7 @@
    <displayModes>
       <displayMode id="1">
          <description>
-            <name>Base</name>
+            <name>Display Base</name>
             <description>Always on display</description>
             <language>eng</language>
          </description>
@@ -8966,7 +8966,7 @@
       </displayMode>
       <displayMode id="2">
          <description>
-            <name>Standard</name>
+            <name>Standard Display</name>
             <description>ECDIS default display</description>
             <language>eng</language>
          </description>
@@ -8987,8 +8987,8 @@
       </displayMode>
       <displayMode id="3">
          <description>
-            <name>Other</name>
-            <description>Displays all features in the SENC</description>
+            <name>Other Information</name>
+            <description>All other objects in the SENC</description>
             <language>eng</language>
          </description>
          <viewingGroupLayer>1</viewingGroupLayer>
