@@ -8,21 +8,14 @@ function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point
 	then
 		featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
-
-		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
-		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
-		end
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21020:DrawingPriority:18')
 
 		if feature.virtualAISAidToNavigationType == nil or
 		   feature.virtualAISAidToNavigationType < 1 or
 		   feature.virtualAISAidToNavigationType > 12
 		then
-			featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15')
 			featurePortrayal:AddInstructions('PointInstruction:VATON00')
 		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21010:DrawingPriority:18')
 			if feature.virtualAISAidToNavigationType == 1
 			then
 				featurePortrayal:AddInstructions('PointInstruction:VATON01')

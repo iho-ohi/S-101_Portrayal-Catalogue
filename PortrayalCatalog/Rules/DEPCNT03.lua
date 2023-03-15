@@ -1,4 +1,5 @@
 -- DEPCNT03 conditional symbology rules file.
+-- #119
 
 -- Referenced CSPs.
 require 'SAFCON01'
@@ -77,7 +78,7 @@ function DEPCNT03(feature, featurePortrayal, contextParameters, viewingGroup)
 	end
 
 	local function GenerateLabels()
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',33022')
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',33022,contourLabel')
 
 		featurePortrayal:AddInstructions('LinePlacement:Relative,0.5')
 		local instructions = SAFCON01(contextParameters, feature.valueOfDepthContour or scaledDecimalZero)

@@ -1,8 +1,9 @@
 -- UpdateInformation conditional symbology rules file.
+-- #119
 
 -- Main entry point for CSP.
 function UpdateInformation(feature, featurePortrayal, contextParameters)
-	local viewingGroup = 26200
+	local viewingGroup = updateReview
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
@@ -10,13 +11,13 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
 		end
 
-		featurePortrayal:AddInstructions('ViewingGroup:26200;DrawingPriority:12;PointInstruction:testPCB')
+		featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:12;PointInstruction:testPCB')
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		featurePortrayal:AddInstructions('ViewingGroup:26200;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('ViewingGroup:26200;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	else

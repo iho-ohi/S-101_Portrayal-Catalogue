@@ -6,6 +6,9 @@
 <!-- #155: Update context parameters -->
 <!-- #162: Rename BuoyNewDangerMarking to BuoyEmergencyWreckMarking -->
 <!-- #172: Rename TrafficSeparationZone to SeparationZoneOrLine, remove TrafficSeparationLine -->
+<!-- #134: Add Helipad -->
+<!-- #119: Independent Mariner Selections -->
+<!-- #24: added FLGSTF02 symbol -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.0">
    <alertCatalog id="alertCatalog">
@@ -2143,6 +2146,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="FLGSTF02">
+         <description>
+            <name>FLGSTF02</name>
+            <description>conspicuous flagstaff, flagpole</description>
+            <language>eng</language>
+         </description>
+         <fileName>FLGSTF02.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="FLTHAZ02">
          <description>
             <name>FLTHAZ02</name>
@@ -2360,6 +2373,16 @@
             <language>eng</language>
          </description>
          <fileName>GATCON04.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="HELIPD02">
+         <description>
+            <name>HELIPD02</name>
+            <description>Symbol for helipad as a point</description>
+            <language>eng</language>
+         </description>
+         <fileName>HELIPD02.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -8340,6 +8363,65 @@
       </viewingGroup>
       
    <!--********** END Alert Catalog Viewing Groups **********--> 
+   
+   <!--********** Viewing groups for Independent Mariner Selectors **********-->
+      <viewingGroup id="accuracy">
+        <description>
+          <name>Accuracy</name>
+          <description>zoneOfConfidence and low accuracy symbols</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="contourLabel">
+        <description>
+          <name>Contour label</name>
+          <description>to turn on the display of contour labels (incl. label of safety contour)</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="highlightDateDependent">
+        <description>
+          <name>Highlight date dependent</name>
+         <description>Highlights date dependent features</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="highlightDocument">
+        <description>
+          <name>Highlight document</name>
+          <description>Additional documents</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="highlightInfo">
+        <description>
+          <name>Highlight info</name>
+          <description>Additional information</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="shallowPattern">
+        <description>
+          <name>Shallow pattern</name>
+          <description>Shallow Water Pattern</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="unknown">
+        <description>
+          <name>Unknown</name>
+          <description>to turn on the display of features which are not recognized by the portrayal catalogue</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="updateReview">
+        <description>
+          <name>Update review</name>
+          <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+   <!--********** END Viewing groups for Independent Mariner Selectors **********-->    
    </viewingGroups>
    <foundationMode>
          <!-- A, B - CHART FURNITURE -->
@@ -8735,7 +8817,99 @@
          <viewingGroup>38210</viewingGroup>
       </viewingGroupLayer>
      <!-- END OTHER LAYER GROUPS -->
+	 <!-- Independent mariner selectors -->
+     <viewingGroupLayer id="accuracySelector">
+       <description>
+         <name>Accuracy</name>
+         <description>zoneOfConfidence and low accuracy symbols</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>accuracy</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="contourLabelSelector">
+       <description>
+         <name>Contour label</name>
+         <description>to turn on the display of contour labels (incl. label of safety contour)</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>contourLabel</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlights">
+       <description>
+         <name>Feature highlights</name>
+         <description>Toggles feature highlights</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightDateDependent</viewingGroup>
+       <viewingGroup>highlightDocument</viewingGroup>
+       <viewingGroup>highlightInfo</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlightDateDependentSelector">
+       <description>
+         <name>Highlight date dependent</name>
+         <description>Highlights date dependent features</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightDateDependent</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlightDocumentSelector">
+       <description>
+         <name>Highlight document</name>
+         <description>Additional documents - highlights features associated with text or picture files</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightDocument</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="highlightInfoSelector">
+       <description>
+         <name>Highlight info</name>
+         <description>Additional information - highlights features which have amplifying text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>highlightInfo</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="shallowPatternSelector">
+       <description>
+         <name>Shallow pattern</name>
+         <description>Shallow Water Pattern</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>shallowPattern</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="unknownSelector">
+       <description>
+         <name>Unknown</name>
+         <description>to turn on the display of features which are not recognized by the portrayal catalogue</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>unknown</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="updateReviewSelector">
+       <description>
+         <name>Update review</name>
+         <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>updateReview</viewingGroup>
+     </viewingGroupLayer>
      <!-- TEXT LAYER GROUPS (not part of a display mode / IMO display category) -->
+     <viewingGroupLayer id="100">
+       <description>
+         <name>Chart text</name>
+         <description>Chart text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>11</viewingGroup>
+       <viewingGroup>21</viewingGroup>
+       <viewingGroup>23</viewingGroup>
+       <viewingGroup>24</viewingGroup>
+       <viewingGroup>25</viewingGroup>
+       <viewingGroup>26</viewingGroup>
+       <viewingGroup>27</viewingGroup>
+       <viewingGroup>28</viewingGroup>
+       <viewingGroup>29</viewingGroup>
+       <viewingGroup>30</viewingGroup>
+     </viewingGroupLayer>
      <viewingGroupLayer id="101">
        <description>
          <name>Important Text</name>
@@ -8795,7 +8969,7 @@
    <displayModes>
       <displayMode id="1">
          <description>
-            <name>Base</name>
+            <name>Display Base</name>
             <description>Always on display</description>
             <language>eng</language>
          </description>
@@ -8803,7 +8977,7 @@
       </displayMode>
       <displayMode id="2">
          <description>
-            <name>Standard</name>
+            <name>Standard Display</name>
             <description>ECDIS default display</description>
             <language>eng</language>
          </description>
@@ -8824,8 +8998,8 @@
       </displayMode>
       <displayMode id="3">
          <description>
-            <name>Other</name>
-            <description>Displays all features in the SENC</description>
+            <name>Other Information</name>
+            <description>All other objects in the SENC</description>
             <language>eng</language>
          </description>
          <viewingGroupLayer>1</viewingGroupLayer>

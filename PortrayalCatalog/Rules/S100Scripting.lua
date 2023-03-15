@@ -3,6 +3,7 @@ This file contains the global functions and tables that define the S-100 Lua Scr
 These functions are intended to be called by the S-100 scripts.
 --]]
 -- #80 - modularize processing of fixed and periodic date ranges
+-- #119
 
 local orig_error = error
 
@@ -86,7 +87,7 @@ function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, vi
 	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
 	featurePortrayal:AddInstructions(displayPlane)
-	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31032;DrawingPriority:24;PointInstruction:CHDATD01')
+	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31032,highlightDateDependent;DrawingPriority:24;PointInstruction:CHDATD01')
 end
 
 --
@@ -141,12 +142,12 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		if vg31030 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030,highlightInfo;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 
 		if vg31031 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31031;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31031,highlightDocument;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 	end
 end

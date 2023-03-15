@@ -8,9 +8,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i9]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/9
 [i10]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/10
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
+[i16]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/16
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
 [i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
+[i24]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/24
 [i25]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/25
 [i26]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/26
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
@@ -81,6 +83,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i113]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/113
 [i114]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/114
 [i117]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/117
+[i119]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/119
 [i121]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/121
 [i122]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/122
 [i125]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/125
@@ -88,17 +91,21 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i126]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/126
 [i131]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/131
 [i133]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/133
+[i134]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/134
 [i137]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/137
 [i138]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/138
 [i139]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/139
 [i140]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/140
 [i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
+[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
+[i145]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/145
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
 [i155]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/155
 [i159]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/159
 [i160]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/160
+[i161]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/161
 [i162]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/162
 [i163]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/163
 [i164]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/164
@@ -110,6 +117,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i171]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/171
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
+[i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
+[i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
+[i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -121,6 +131,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 *	[#160][i160] Update version number
 *	[#138][i138] Modified metadata for Incorrect drawing of some Area patterns [PSWG #92] #138
 *	[#163][i163] Update FC to 1.1.0
+*	[#179][i179] Update PC display modes to match registered values
 *	Lua Rule File / Symbol Updates
 	*	[#143][i143] New Symbology for Pilot Boarding Place surface [PSWG#106] 
 	*	[#137][i137] Pilotage District Symbology [PSWG #105]
@@ -142,8 +153,17 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#172][i172] Implement SeparationZoneOrLine
 	*	[#97][i97] Completed: Physical AIS Aid to Navigation [PSWG #70], VG = 27240 (as per S-98)
 	*	[#173][i173] Dock Area and Lock Basin - Define Display parameters [PSWG #121]
-
-	*	[#73][i73] Work in progress: Value of Local Magnetic Anomaly #73 [PSWG #102] 
+	*	[#145][i145] "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
+	*	[#145][i145] Removed debug for "No Geometry" features work-around for PC #145 thru PC #152, [PSWG #80 thru #87]
+	*	[#176][i176] Runway feature of type Point [attribute categoryOfRunway=1 (Aeroplane Runway)] - Map to AIRARE02
+	*	[#142][i142] Symbol Berth features with categoryOfCargo = 7 [PSWG #112]
+	*	[#134][i134] Update portrayal of Heliports / Helipads
+	*	[#119][i119] Independent mariner selections
+	*	[#73][i73]  Value of Local Magnetic Anomaly #73 [PSWG #102] 
+	*	[#161][i161] Sloping Ground & Slope Topline #108, [PSWG #108]
+	*	[#178][i178] QoBD should evaluate depth range
+	*	[#16][i16] symbols: viewBox mismatch
+	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG

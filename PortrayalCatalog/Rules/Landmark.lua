@@ -5,6 +5,7 @@
 -- Issues: PSWG #60, PC #104
 -- Issues: PSWG #62, PC #107
 -- #155
+-- #24: use FLGSTF02 for conspicuous flagstaff
 
 -- Landmark main entry point.
 function Landmark(feature, featurePortrayal, contextParameters)
@@ -132,7 +133,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:FLGSTF01')
+			featurePortrayal:AddInstructions('PointInstruction:FLGSTF02')
 		elseif contains(6, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
@@ -542,7 +543,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:FLGSTF01')
+			featurePortrayal:AddInstructions('PointInstruction:FLGSTF02')
 		elseif contains(6, feature.categoryOfLandmark) and feature.visualProminence == 1 then
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then

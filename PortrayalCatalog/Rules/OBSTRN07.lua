@@ -2,6 +2,7 @@
 -- #72
 -- #89
 -- #90
+-- #119
 
 -- Referenced CSPs.
 require 'DEPVAL02'
@@ -40,7 +41,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 			featurePortrayal:AddInstructions('PointInstruction:' .. hazardSymbol)
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..	',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..	',31011,accuracy;PointInstruction:' .. qualitySymbol)
 			end
 		else
 			local sounding = false
@@ -101,7 +102,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 			end
 
 			if qualitySymbol then
-				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+				featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011,accuracy;PointInstruction:' .. qualitySymbol)
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
@@ -183,7 +184,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 		local qualitySymbol = QUAPNT02(feature, featurePortrayal, contextParameters)
 
 		if qualitySymbol then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011;PointInstruction:' .. qualitySymbol)
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31011,accuracy;PointInstruction:' .. qualitySymbol)
 		end
 	end
 

@@ -1,5 +1,6 @@
 -- SEABED01 conditional symbology rules file.
 -- #155: Update context parameters
+-- #119: Independent Mariner Selections
 
 -- Main entry point for CSP.
 function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimumValue, depthRangeMaximumValue)
@@ -49,7 +50,7 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 
 	if Shallow then
 		-- S-52 10.5.7
-		featurePortrayal:AddInstructions('ViewingGroup:23010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:23010,shallowPattern;DrawingPriority:9;DisplayPlane:UnderRADAR')
 
 		featurePortrayal:AddInstructions('AreaFillReference:DIAMOND1')
 
