@@ -12,7 +12,7 @@ function FairwaySystem(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 26050
 
 	local featureName = feature.featureName  -- DEBUG use: featureName = {} with next line  -- replace with: featureName = feature.featureName;
-	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Fairway System'}
+	-- MS Debug featureName[1] = {displayName = true, language = 'eng', name = 'Fairway System'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization, text only

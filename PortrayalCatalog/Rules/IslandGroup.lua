@@ -10,7 +10,7 @@ function IslandGroup(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 21060
 
 	local featureName = feature.featureName  -- DEBUG use: featureName = {} with next line  -- replace with: featureName = feature.featureName;
-	-- MS Debug featureName[1] = {displayName = 'True', language = 'eng', name = 'Island Group'}
+	-- MS Debug featureName[1] = {displayName = true, language = 'eng', name = 'Island Group'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization, text only
