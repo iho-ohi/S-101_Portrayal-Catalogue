@@ -122,6 +122,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
 [i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
+[i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
 
 ## Changelog
 ### 1.1.0 - use with FC 1.1.0
@@ -168,6 +169,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
 	*	[#61][i61] update GetFeatureName per https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104#issuecomment-1469246446
 	*	[#174][i174] INFORM01 symbol should be displayed when feature itself contains information
+	*	[#181][i181] WRECKS05.lua raises an error in some conditions
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG

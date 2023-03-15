@@ -24,8 +24,8 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 			-- non-dangerous wreck
 			DEPTH_VALUE = CreateScaledDecimal(201, 1)
 			if SEABED_DEPTH then
-				LEAST_DEPTH = SEABED_DEPTH - 66.0
-				if LEAST_DEPTH >= 20.1 then
+				LEAST_DEPTH = SEABED_DEPTH - CreateScaledDecimal(66)
+				if LEAST_DEPTH >= CreateScaledDecimal(201, 1) then
 					DEPTH_VALUE = LEAST_DEPTH
 				end
 			end
