@@ -262,7 +262,7 @@ function GetInformationText(information, contextParameters)
 	local defaultText
 
 	for _, text in ipairs(information.information) do
-		if text.text and text.text != '' and (text.language == nil or text.language == 'eng' or text.language == '') then
+		if text.text and text.text ~= '' and (text.language == nil or text.language == 'eng' or text.language == '') then
 			return text.text
 		end
 	
