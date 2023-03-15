@@ -257,19 +257,16 @@ function GetFeatureName(feature, contextParameters)
 	return nil
 end
 
+-- Updated per #61 - temporarily remove NationalLanguage context parameter
 function GetInformationText(information, contextParameters)
 	local defaultText
 
 	for _, text in ipairs(information.information) do
-		if text.language == nil then
-			defaultText = text.text
-		else
-			defaultText = defaultText or text.text
-		end
-
-		if text.language == contextParameters.NationalLanguage then
+		if text.language == nil or text.language == 'eng' or text.language == '' then
 			return text.text
 		end
+	
+		defaultText = defaultText or text.text
 	end
 
 	return defaultText
