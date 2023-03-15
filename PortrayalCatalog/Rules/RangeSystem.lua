@@ -1,6 +1,7 @@
 -- Main entry point for feature type.
 
 -- Issue #147, PSWG #85
+-- #61
 
 function RangeSystem(feature, featurePortrayal, contextParameters)
 	
@@ -23,7 +24,7 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 
 		--if feature.featureName[1] and feature.featureName[1].name then
 		if featureName[1] and featureName[1].name then
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureNameNoGeometry(featureName, contextParameters), '%s'), 21, 24, viewingGroup, 12)
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 12)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

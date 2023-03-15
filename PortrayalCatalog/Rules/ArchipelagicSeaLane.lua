@@ -1,6 +1,7 @@
 -- ArchipelagicSeaLane main entry point.
 --
 -- Issue #152, PSWG #80
+-- #61
 --
 function ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
 	
@@ -19,7 +20,7 @@ function ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
 
 			--Reference featurePortrayal:AddTextInstruction(text, textViewingGroup, textPriority, viewingGroup, priority)
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureNameNoGeometry(featureName, contextParameters), '%s'), 21, 24, viewingGroup, 15)
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 15)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

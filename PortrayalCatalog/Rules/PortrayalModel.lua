@@ -2,6 +2,7 @@
 This file contains the global functions that define the Lua Portrayal Model classes.
 These functions are intended to be called by the portrayal rules.
 --]]
+-- #61
 
 local CreateContextParameters, CreateFeaturePortrayalItemArray, CreateFeaturePortrayal, CreateDrawingInstructions
 local GetMergedDisplayParameters
@@ -241,76 +242,19 @@ function CreateDrawingInstructions()
 	return drawingInstructions;
 end
 
+-- Updated per #61
+-- TODO: add national language support
+-- see https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104
+-- and https://github.com/iho-ohi/S-101-Documentation-and-FC/issues/60
 function GetFeatureName(feature, contextParameters)
-	local defaultName
 
 	for _, featureName in ipairs(feature.featureName) do
-		local displayName = featureName.displayName
-
-		if displayName == nil then
-			displayName = true
-		end
-
-		if featureName.language == nil then
-			defaultName = featureName.name
-		else
-			defaultName = defaultName or featureName.name
-		end
-
-		if not displayName then
-			defaultName = nil
-		end
-
-		if featureName.language == contextParameters.NationalLanguage then
-			if not displayName then
-				return nil
-			else
-				return featureName.name
-			end
+		if featureName.displayName ~= false then
+			return featureName.name
 		end
 	end
 
-	return defaultName
-end
-
---
--- Temporary workaround for no geometry features like IslandGroup or ArchipelagicSeaLane, PSWG #80
--- Implement text instruction for when featureName is set to 'display', i.e. True
---
-function GetFeatureNameNoGeometry(featureName, contextParameters)
-	local defaultName
-
-	--Debug.Break()
-
-	for _, fN in ipairs(featureName) do
-		local displayName = fN.displayName
-
-		if displayName == 'True' then
-			displayName = true
-		else 
-			displayName = false
-		end
-
-		if fN.language == nil then
-			defaultName = fN.name
-		else
-			defaultName = defaultName or fN.name
-		end
-
-		if not displayName then
-			defaultName = nil
-		end
-
-		if fN.language == contextParameters.NationalLanguage then
-			if not displayName then
-				return nil
-			else
-				return fN.name
-			end
-		end
-	end
-	-- check for return ~= nil, therefor display it
-	return defaultName
+	return nil
 end
 
 function GetInformationText(information, contextParameters)
