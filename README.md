@@ -167,7 +167,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#16][i16] symbols: viewBox mismatch
 	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
 	*	[#61][i61] update GetFeatureName per https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104#issuecomment-1469246446
-	*	[#174][i74] INFORM01 symbol should be displayed when feature itself contains information
+	*	[#174][i174] INFORM01 symbol should be displayed when feature itself contains information
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
