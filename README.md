@@ -12,6 +12,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
 [i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
+[i24]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/24
 [i25]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/25
 [i26]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/26
 [i27]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/27
@@ -162,6 +163,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#161][i161] Sloping Ground & Slope Topline #108, [PSWG #108]
 	*	[#178][i178] QoBD should evaluate depth range
 	*	[#16][i16] symbols: viewBox mismatch
+	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
