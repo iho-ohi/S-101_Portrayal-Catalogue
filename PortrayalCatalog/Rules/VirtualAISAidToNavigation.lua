@@ -8,7 +8,7 @@ function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point
 	then
 		featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
-		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21020:DrawingPriority:18')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR;ViewingGroup:21020;DrawingPriority:18')
 
 		if feature.virtualAISAidToNavigationType == nil or
 		   feature.virtualAISAidToNavigationType < 1 or
