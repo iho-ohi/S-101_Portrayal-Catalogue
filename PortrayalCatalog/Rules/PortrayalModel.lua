@@ -249,7 +249,7 @@ end
 function GetFeatureName(feature, contextParameters)
 
 	for _, featureName in ipairs(feature.featureName) do
-		if featureName.displayName ~= false then
+		if featureName.displayName == nil or featureName.displayName == true and featureName.name and featureName.name ~= '' then
 			return featureName.name
 		end
 	end
@@ -262,7 +262,7 @@ function GetInformationText(information, contextParameters)
 	local defaultText
 
 	for _, text in ipairs(information.information) do
-		if text.language == nil or text.language == 'eng' or text.language == '' then
+		if text.text and text.text != '' and (text.language == nil or text.language == 'eng' or text.language == '') then
 			return text.text
 		end
 	
