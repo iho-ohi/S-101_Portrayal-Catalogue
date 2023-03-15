@@ -118,6 +118,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i171]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/171
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
+[i174]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/174
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
 [i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
@@ -166,6 +167,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#16][i16] symbols: viewBox mismatch
 	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
 	*	[#61][i61] update GetFeatureName per https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104#issuecomment-1469246446
+	*	[#174][i74] INFORM01 symbol should be displayed when feature itself contains information
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
