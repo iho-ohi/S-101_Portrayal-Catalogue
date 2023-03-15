@@ -95,29 +95,48 @@ end
 --
 
 function ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
-	local nauticalInformation = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation')
+	local function GetViewingGroups(container, vg31030, vg31031)
+		if container then
+			if container['!pictorialRepresentation'] then
+				vg31031 = true
+			end
 
-	if nauticalInformation then
+			if container['!information'] then
+				for _, information in ipairs(container.information) do
+					if information.text then
+						vg31030 = true
+					end
+
+					if information.fileReference then
+						vg31031 = true
+					end
+				end
+			end
+
+			if container['!shapeInformation'] then
+				vg31030 = true
+			end
+
+			if container['!topmark'] and container.topmark.shapeInformation then
+				vg31030 = true
+			end
+		end
+
+		return vg31030, vg31031
+	end
+
+	local vg31030, vg31031
+
+	vg31030, vg31031 = GetViewingGroups(feature, vg31030, vg31031)
+	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation'), vg31030, vg31031)
+	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NonStandardWorkingDay'), vg31030, vg31031)
+	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ServiceHours'), vg31030, vg31031)
+
+	if vg31030 or vg31031 then
 		-- Clear any existing transforms and geometries
 		featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
 
 		featurePortrayal:AddInstructions('Hover:true')
-
-		local vg31030, vg31031
-
-		if nauticalInformation.pictorialRepresentation then
-			vg31031 = true
-		end
-
-		for _, information in ipairs(nauticalInformation.information) do
-			if information.text then
-				vg31030 = true
-			end
-
-			if information.fileReference then
-				vg31031 = true
-			end
-		end
 
 		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
