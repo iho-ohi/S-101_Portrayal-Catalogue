@@ -1,6 +1,7 @@
 -- FairwaySystem main entry point.
 
 -- Issue #150, PSWG #82
+-- #61
 
 function FairwaySystem(feature, featurePortrayal, contextParameters)
 	-- TODO: Feature has no geometry and is an aggregation of other features.
@@ -20,7 +21,7 @@ function FairwaySystem(feature, featurePortrayal, contextParameters)
 		--if feature.featureName[1] and feature.featureName[1].name then
 		if featureName[1] and featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureNameNoGeometry(featureName, contextParameters), '%s'), 26, 24, viewingGroup, 12)
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 26, 24, viewingGroup, 12)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

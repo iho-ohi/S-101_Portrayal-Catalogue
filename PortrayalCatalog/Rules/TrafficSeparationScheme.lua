@@ -1,6 +1,7 @@
 -- Main entry point for feature type.
 
 -- Issue #146, PSWG #86
+-- #61
 
 function TrafficSeparationScheme(feature, featurePortrayal, contextParameters)
 	
@@ -21,7 +22,7 @@ function TrafficSeparationScheme(feature, featurePortrayal, contextParameters)
 		--if feature.featureName[1] and feature.featureName[1].name then
 		if featureName[1] and featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureNameNoGeometry(featureName, contextParameters), '%s'), 21, 24, viewingGroup, 24)
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 24)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

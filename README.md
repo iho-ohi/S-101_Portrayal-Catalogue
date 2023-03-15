@@ -41,6 +41,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i57]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/57
 [i59]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/59
 [i60]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/60
+[i61]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/61
 [i62]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/62
 [i63]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/63
 [i64]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/64
@@ -164,6 +165,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	*	[#178][i178] QoBD should evaluate depth range
 	*	[#16][i16] symbols: viewBox mismatch
 	*	[#24][i24] use new symbol for conspicuous flagstaff (FLGSTF02)
+	*	[#61][i61] update GetFeatureName per https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104#issuecomment-1469246446
 
 ### 1.0.2 - use with FC 1.0.2
 *	Change version numbering scheme to match FC and DCEG
