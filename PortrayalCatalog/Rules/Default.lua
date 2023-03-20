@@ -22,7 +22,7 @@ function Default(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:21010,unknown;DrawingPriority:15')
 		featurePortrayal:AddInstructions('LineInstruction:QUESMRK1')
 	elseif (feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries) then
-		featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:21010,unknown;DrawingPriority:15;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
