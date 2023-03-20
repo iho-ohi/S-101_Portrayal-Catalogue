@@ -125,6 +125,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
 
 ## Changelog
+### 1.1.1 - use with FC 1.1.0
+
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
 *	[#153][i153] Update PortrayalCreateContextParameter contextParameterType to allow "Double" and "String" and to ignore case
