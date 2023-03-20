@@ -123,9 +123,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 [i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
+[i182]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/182
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
+* [#182][i182] Ensure all unknown objects turn off with "Unknown" independent selection
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
