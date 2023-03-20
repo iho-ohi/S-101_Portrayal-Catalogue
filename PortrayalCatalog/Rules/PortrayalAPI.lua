@@ -127,7 +127,7 @@ local function LookupAttributeValue(container, attributeCode, HostGetSimpleAttri
 
 	--Debug.Break()
 
-	if not containerTypeInfo.AttributeBindings[attributeCode] then
+	if containerTypeInfo == nil or not containerTypeInfo.AttributeBindings[attributeCode] then
 		if nilIfMissing then
 			return nil
 		else

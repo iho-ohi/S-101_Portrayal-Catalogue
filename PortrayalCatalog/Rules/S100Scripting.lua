@@ -593,7 +593,9 @@ function GetFeatureTypeInfo(code)
 	local typeInfo = GetTypeInfo()
 
 	if not typeInfo.FeatureTypeInfos[code] then
-		error('Invalid feature code')
+		-- Try to process codes which don't exist in the FC
+		-- error('Invalid feature code')
+		return nil
 	end
 
 	if not typeInfo.FeatureTypeInfos[code].TypeInfo then
