@@ -124,7 +124,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 [i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
 [i182]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/182
-[i183: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/183
+[i183]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/183
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
