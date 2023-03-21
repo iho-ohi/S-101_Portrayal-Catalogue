@@ -3,15 +3,15 @@
 --
 -- ISSUES: {PSWG #72, PC #121}, {PSWG #28, PC #124}
 -- #169
---
+-- #184
+
 -- Referenced portrayal rules.
 require 'RESTRN01'
-require 'ArchipelagicSeaLane'
 
 -- Anchorage area main entry point.
 function AnchorageArea(feature, featurePortrayal, contextParameters)
-	local viewingGroup = ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
-	--[[
+	local viewingGroup
+	
 	local COA = feature.categoryOfAnchorage
 
 	featurePortrayal:AddInstructions('AlertReference:ProhAre,112,112')
@@ -97,6 +97,6 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-	--]]
+	
 	return viewingGroup
 end
