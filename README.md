@@ -125,11 +125,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
 [i182]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/182
 [i183]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/183
+[i184]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/184
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
 * [#182][i182] Ensure all unknown objects turn off with "Unknown" independent selection
 * [#183][i183] Try to process codes which don't exist in the FC
+* [#184][i184] Lost presentation of Anchorage Area
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
