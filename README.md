@@ -127,6 +127,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i183]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/183
 [i184]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/184
 [i185]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/185
+[i186]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/186
 [i187]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/187
 [i188]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/188
 [i189]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/189
@@ -148,6 +149,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#194][i194] Features with undefined portrayal are not visible
 * [#187][i187] Inconsistent types of variables during the drawing of Distance Mark
 * [#191][i191] Issues with Landmark categoryOfLandmark = 22 (Triangulation Mark), 24 (Observation Wheel), and 25 (Torii)
+* [#186][i186] Inconsistent colours of dash line and embedded symbol for NAVARE52 linestyle (added EMAREGR2.svg)
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
