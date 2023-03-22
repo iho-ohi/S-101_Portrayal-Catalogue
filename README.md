@@ -131,6 +131,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i188]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/188
 [i189]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/189
 [i190]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/190
+[i191]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/191
 [i192]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/192
 [i194]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/194
 
@@ -146,6 +147,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#192][i192] `UpdateInformation` is portrayed as unknown object
 * [#194][i194] Features with undefined portrayal are not visible
 * [#187][i187] Inconsistent types of variables during the drawing of Distance Mark
+* [#191][i191] Issues with Landmark categoryOfLandmark = 22 (Triangulation Mark), 24 (Observation Wheel), and 25 (Torii)
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
