@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #65
+-- #187
 
 -- Distance mark main entry point.
 function DistanceMark(feature, featurePortrayal, contextParameters)
@@ -47,7 +48,7 @@ function DistanceMark(feature, featurePortrayal, contextParameters)
 			local waterwayDistance = feature.measuredDistanceValue.waterwayDistance
 			if waterwayDistance
 			then
-				label = label .. waterwayDistance
+				label = label .. tostring(waterwayDistance)
 			end
 			
 			if noStructure then
