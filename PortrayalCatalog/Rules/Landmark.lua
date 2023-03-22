@@ -2,10 +2,12 @@
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 --
--- Issues: PSWG #60, PC #104
--- Issues: PSWG #62, PC #107
+-- Issues: PSWG #60, PC #104 Torii
+-- Issues: PSWG #62, PC #107 Observation wheel
+-- Issues: PSWG #66, PC #108 Triangulation Mark
 -- #155
 -- #24: use FLGSTF02 for conspicuous flagstaff
+-- #191
 
 -- Landmark main entry point.
 function Landmark(feature, featurePortrayal, contextParameters)
@@ -230,6 +232,24 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN03')
+		elseif contains(24, feature.categoryOfLandmark) and feature.visualProminence == 1 then
+			-- Issues: PSWG #62, PC #107 (NOT AUTO GENERATED), Observation wheel
+			viewingGroup = 22220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:FERWHL03')
+		elseif contains(25, feature.categoryOfLandmark) and feature.visualProminence == 1 then
+			-- Issues: PSWG #60, PC #104 (NOT AUTO GENERATED)
+			viewingGroup = 22220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:TORII11')
 		elseif contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) then
 			viewingGroup = 32220
 			if contextParameters.RadarOverlay then
@@ -414,6 +434,33 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN01')
+		elseif contains(22, feature.categoryOfLandmark) then
+			-- Issues: PSWG #66, PC #108 (NOT AUTO GENERATED), Triangulation Mark
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:POSGEN05')
+		elseif contains(24, feature.categoryOfLandmark) then
+			-- Issues: PSWG #62, PC #107 (NOT AUTO GENERATED), Observation wheel
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:FERWHL04')
+		elseif contains(25, feature.categoryOfLandmark) then
+			-- Issues: PSWG #60, PC #104 (NOT AUTO GENERATED)
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:TORII01')
 		else
 			viewingGroup = 32220
 			if contextParameters.RadarOverlay then
@@ -640,18 +687,24 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN03')
-		elseif contains(24, feature.categoryOfLandmark) then
+		elseif contains(24, feature.categoryOfLandmark) and feature.visualProminence == 1 then
+			-- Issues: PSWG #62, PC #107 (NOT AUTO GENERATED), Observation wheel
 			viewingGroup = 22220
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
-			if feature.visualProminence == 1 then
-				featurePortrayal:AddInstructions('PointInstruction:FERWHL03')
-			else 
-				featurePortrayal:AddInstructions('PointInstruction:FERWHL04')
+			featurePortrayal:AddInstructions('PointInstruction:FERWHL03')
+		elseif contains(25, feature.categoryOfLandmark) and feature.visualProminence == 1 then
+			-- Issues: PSWG #60, PC #104 (NOT AUTO GENERATED)
+			viewingGroup = 22220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
+			featurePortrayal:AddInstructions('PointInstruction:TORII11')
 		elseif contains(15, feature.categoryOfLandmark) and contains(20, feature['function']) then
 			viewingGroup = 32220
 			if contextParameters.RadarOverlay then
@@ -836,6 +889,33 @@ function Landmark(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:POSGEN01')
+		elseif contains(22, feature.categoryOfLandmark) then
+			-- Issues: PSWG #66, PC #108 (NOT AUTO GENERATED), Triangulation Mark
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:POSGEN05')
+		elseif contains(24, feature.categoryOfLandmark) then
+			-- Issues: PSWG #62, PC #107 (NOT AUTO GENERATED), Observation wheel
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:FERWHL04')
+		elseif contains(25, feature.categoryOfLandmark) then
+			-- Issues: PSWG #60, PC #104 (NOT AUTO GENERATED)
+			viewingGroup = 32220
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:OverRADAR')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:32220;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:TORII01')
 		else
 			viewingGroup = 32220
 			if contextParameters.RadarOverlay then
@@ -932,42 +1012,6 @@ function Landmark(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')
 			featurePortrayal:SimpleLineStyle('solid',0.32,'LANDF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		end
-	elseif feature.PrimitiveType == PrimitiveType.Point then
-		-- Issues: PSWG #60, PC #104 (NOT AUTO GENERATED)
-		if contains(25, feature.categoryOfLandmark) and feature.visualProminence ~= 1 then --TORII01
-			viewingGroup = 22220
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:TORII01')
-		elseif contains(25, feature.categoryOfLandmark) and feature.visualProminence == 1 then --TORII11		
-				viewingGroup = 22220
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:TORII11')
-		elseif contains(25, feature.categoryOfLandmark) then --TORII01 for any other case
-			viewingGroup = 22220
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:TORII01')
-		-- Issues: PSWG #66, PC #108 (NOT AUTO GENERATED), Triangulation Mark
-		elseif contains(22, feature.categoryOfLandmark) and feature.visualProminence ~= 1 then --POSGEN05 
-			viewingGroup = 22220
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:22220;DrawingPriority:18;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:POSGEN05')
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
