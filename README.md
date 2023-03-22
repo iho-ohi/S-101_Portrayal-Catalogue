@@ -127,6 +127,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i183]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/183
 [i184]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/184
 [i185]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/185
+[i187]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/187
 [i188]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/188
 [i189]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/189
 [i190]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/190
@@ -144,6 +145,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#190][i190] `LightSectored` with `sectorLineLength` portray as unknown objects
 * [#192][i192] `UpdateInformation` is portrayed as unknown object
 * [#194][i194] Features with undefined portrayal are not visible
+* [#187][i187] Inconsistent types of variables during the drawing of Distance Mark
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
