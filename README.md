@@ -148,8 +148,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#192][i192] `UpdateInformation` is portrayed as unknown object
 * [#194][i194] Features with undefined portrayal are not visible
 * [#187][i187] Inconsistent types of variables during the drawing of Distance Mark
-* [#191][i191] Issues with Landmark categoryOfLandmark = 22 (Triangulation Mark), 24 (Observation Wheel), and 25 (Torii)
-* [#186][i186] Inconsistent colours of dash line and embedded symbol for NAVARE52 linestyle (added EMAREGR2.svg)
+* [#191][i191] Issues with `Landmark` `categoryOfLandmark` = `22` (Triangulation Mark), `24` (Observation Wheel), and `25` (Torii)
+* [#186][i186] Inconsistent colours of dash line and embedded symbol for `NAVARE52` linestyle (added EMAREGR2.svg)
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
