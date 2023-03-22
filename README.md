@@ -128,6 +128,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i184]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/184
 [i185]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/185
 [i188]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/188
+[i189]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/189
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -136,6 +137,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#184][i184] Lost presentation of Anchorage Area
 * [#185][i185] Incorrect reference to css file in DRFSTA02.SVG
 * [#188][i188] `INFORM01` added to `LightSectored` with no `sectorInformation`
+* [#189][i189] Some light descriptions are not visible
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
