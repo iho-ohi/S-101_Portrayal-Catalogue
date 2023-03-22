@@ -1,5 +1,6 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
+-- #194
 
 -- Pontoon main entry point.
 function Pontoon(feature, featurePortrayal, contextParameters)
@@ -26,6 +27,11 @@ function Pontoon(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		--TODO: Determine S-101 portrayal for Pontoon point feature.
 		viewingGroup = 21010
+		if contextParameters.RadarOverlay then
+			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+		else
+			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+		end
 		featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;PointInstruction:testPCB')
 		Debug.Trace('Warning: S-52 does not define portrayal for Pontoon point features.')
 	else
