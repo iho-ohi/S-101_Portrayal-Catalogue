@@ -6,6 +6,8 @@
 -- #155
 -- #10
 -- #171
+-- #174
+-- #188
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -36,7 +38,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 
 	for isc, sectorCharacteristic in ipairs(feature.sectorCharacteristics) do
 		for ils, lightSector in ipairs(sectorCharacteristic.lightSector) do
-			informationFound = informationFound or lightSector.sectorInformation
+			informationFound = informationFound or (lightSector.sectorInformation and #lightSector.sectorInformation ~= 0)
 
 			local valueOfNominalRange = 9.0
 
