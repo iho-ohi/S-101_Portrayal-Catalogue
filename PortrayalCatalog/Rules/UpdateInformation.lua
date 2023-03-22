@@ -1,9 +1,10 @@
 -- UpdateInformation conditional symbology rules file.
 -- #119
+-- #192
 
 -- Main entry point for CSP.
 function UpdateInformation(feature, featurePortrayal, contextParameters)
-	local viewingGroup = updateReview
+	local viewingGroup = "updateReview"
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
