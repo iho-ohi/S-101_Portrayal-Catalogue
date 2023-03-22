@@ -1547,6 +1547,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="EMAREGR2">
+         <description>
+            <name>EMAREGR2</name>
+            <description>Embedded symbol</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMAREGR2.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="EMAREMG1">
          <description>
             <name>EMAREMG1</name>
