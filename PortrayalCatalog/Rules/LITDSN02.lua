@@ -1,4 +1,5 @@
 -- LITDSN02 conditional symbology rules file.
+-- #189
 
 local categoryOfLights =
 {
@@ -135,5 +136,5 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 
 	Debug.StopPerformance('Lua Code - LITDSN02')
 
-	return description
+	return EncodeString(description)
 end
