@@ -134,8 +134,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i190]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/190
 [i191]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/191
 [i192]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/192
-[i194]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/194
 [i193]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/193
+[i194]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/194
+[i196]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/196
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -152,6 +153,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#191][i191] Issues with `Landmark` `categoryOfLandmark` = `22` (Triangulation Mark), `24` (Observation Wheel), and `25` (Torii)
 * [#186][i186] Inconsistent colours of dash line and embedded symbol for `NAVARE52` linestyle (added EMAREGR2.svg)
 * [#193][i193] Check for "noGeometry" in all No Geometry features, return null instruction
+* [#196][i196] Viewing Groups 26010 and 26020 have identical names
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
