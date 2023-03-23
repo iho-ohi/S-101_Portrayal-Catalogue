@@ -12,6 +12,7 @@
 <!-- #61: (temporarily) removed NationalLanguage context parameter -->
 <!-- #196: update viewing group name for 26010 and 26020 -->
 <!-- #197: Undefined parameter TwoShades for ShallowContour and DeepContour -->
+<!-- #199: Remove language independent text -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
@@ -9095,7 +9096,6 @@
 			<xpath>//ShallowContour &lt;= //SafetyContour</xpath>
 			<errorMessage>
 				<text>Must be &lt;= safety contour value</text>
-				<text language="kor">ì•ˆì „ ìœ¤ê³½ ê°’ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤</text>
 			</errorMessage>
          </validate>
       </parameter>
@@ -9111,7 +9111,6 @@
 			<xpath>//DeepContour >= //SafetyContour</xpath>
 			<errorMessage>
 				<text>Must be >= safety contour value</text>
-				<text language="kor">ì•ˆì „ ìœ¤ê³½ ê°’ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤</text>
 			</errorMessage>
          </validate>
       </parameter>
