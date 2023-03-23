@@ -2,6 +2,7 @@
 
 -- Issue #147, PSWG #85
 -- #61
+-- #193
 
 function RangeSystem(feature, featurePortrayal, contextParameters)
 	
@@ -9,23 +10,25 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 
 	local viewingGroup = 27220
 
-	local featureName = feature.featureName  -- DEBUG use: featureName = {} with next line  -- replace with: featureName = feature.featureName;
-	-- MS Debug featureName[1] = {displayName = true, language = 'eng', name = 'Range System'}
-
-	if feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
-	elseif feature.PrimitiveType == PrimitiveType.Curve then
-	 	featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
-	end 
+	-- MS Debug: feature.featureName[1] = {displayName = true, language = 'eng', name = 'Range System'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface or feature.PrimitiveType == PrimitiveType.Curve then
+		
+		Debug.Break()
+
 		-- Plain and symbolized boundaries use the same symbolization, text only
 		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..';DrawingPriority:15;DisplayPlane:UnderRADAR')
 
-		--if feature.featureName[1] and feature.featureName[1].name then
-		if featureName[1] and featureName[1].name then
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 12)
+		if feature.featureName[1] and feature.featureName[1].name then
+			if feature.PrimitiveType == PrimitiveType.Surface then
+				featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			elseif feature.PrimitiveType == PrimitiveType.Curve then
+	 			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+			end 
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 15)
 		end
+	elseif feature.PrimitiveType == PrimitiveType.None then
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') 
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
