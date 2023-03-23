@@ -138,6 +138,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i194]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/194
 [i196]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/196
 [i197]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/197
+[i199]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/199
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -156,6 +157,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#193][i193] Check for "noGeometry" in all No Geometry features, return null instruction
 * [#196][i196] Viewing Groups 26010 and 26020 have identical names
 * [#197][i197] Undefined parameter `TwoShades` for `ShallowContour` and `DeepContour`
+* [#199][i199] Remove language independent text
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
