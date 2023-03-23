@@ -11,6 +11,7 @@
 <!-- #24: added FLGSTF02 symbol -->
 <!-- #61: (temporarily) removed NationalLanguage context parameter -->
 <!-- #196: update viewing group name for 26010 and 26020 -->
+<!-- #197: Undefined parameter TwoShades for ShallowContour and DeepContour -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
@@ -9082,7 +9083,7 @@
          <type>Boolean</type>
          <default>false</default>
       </parameter>
-      <parameter id="ShallowContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
+      <parameter id="ShallowContour" enable="//FourShades[1]='true' or //FourShades[1]='1'">
          <description>
             <name>Shallow contour</name>
             <description>Selected shallow water contour</description>
@@ -9098,7 +9099,7 @@
 			</errorMessage>
          </validate>
       </parameter>
-      <parameter id="DeepContour" enable="//TwoShades[1]='false' or //TwoShades[1]='0'">
+      <parameter id="DeepContour" enable="//FourShades[1]='true' or //FourShades[1]='1'">
          <description>
             <name>Deep contour</name>
             <description>Selected deep water contour</description>
