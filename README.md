@@ -142,6 +142,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i195]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/195
 [i198]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/198
 [i200]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/200
+[i202]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/202
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -163,7 +164,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#199][i199] Remove language independent text
 * [#195][i195] Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references 
 * [#198][i198] Viewing Group 27220 missing for "Range System"
-* [#200][i200] Viewing Group 27240 is not included in any Viewing Group Layer, added to 3 
+* [#200][i200] Viewing Group 27240 is not included in any Viewing Group Layer, added to 3
+* [#202][i202] Symbol validation errors due to missing namespace prefix
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
