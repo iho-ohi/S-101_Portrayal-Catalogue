@@ -145,6 +145,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i201]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/201
 [i202]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/202
 [i205]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/205
+[i206]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/206
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -170,6 +171,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#202][i202] Symbol validation errors due to missing namespace prefix
 * [#201][i201] Line style PILDSTR1.xml fails validation
 * [#205][i205] Symbol validation errors due to incorrect namespace
+* [#206][i206] categoryOfAnchorage has multiple values,use contains()
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes

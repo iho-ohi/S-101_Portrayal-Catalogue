@@ -4,6 +4,7 @@
 -- ISSUES: {PSWG #72, PC #121}, {PSWG #28, PC #124}
 -- #169
 -- #184
+-- #206
 
 -- Referenced portrayal rules.
 require 'RESTRN01'
@@ -25,9 +26,9 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:UnderRADAR')
 		end
 
-		if COA == 8 then		-- 8 - Small Craft Mooring Area #28
+		if contains(8, COA) then		-- 8 - Small Craft Mooring Area #28
 			featurePortrayal:AddInstructions('PointInstruction:BOYMOR02')
-		elseif COA == 15 then	-- 15 - Reported Anchorage PSWG #72
+		elseif contains (15, COA) then	-- 15 - Reported Anchorage PSWG #72
 			featurePortrayal:AddInstructions('PointInstruction:ACHARE03')
 		else
 			featurePortrayal:AddInstructions('PointInstruction:ACHARE02')
@@ -38,7 +39,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 18)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if COA == 8 then
+		if contains(8, COA) then
 			viewingGroup = 26220
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('PointInstruction:BOYMOR51')
@@ -51,7 +52,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			end
 
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
-		elseif COA == 15 then -- #169 reported anchorage must have point geometry
+		elseif contains(15, COA) then -- #169 reported anchorage must have point geometry
 			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
@@ -67,7 +68,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if COA == 8 then
+		if contains(8, COA) then
 			viewingGroup = 26220
 			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('PointInstruction:BOYMOR51')
@@ -79,7 +80,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			end
 
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
-		elseif COA == 15 then -- #169 reported anchorage must have point geometry
+		elseif contains(15, COA) then -- #169 reported anchorage must have point geometry
 			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
