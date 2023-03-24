@@ -13,6 +13,7 @@
 <!-- #196: update viewing group name for 26010 and 26020 -->
 <!-- #197: Undefined parameter TwoShades for ShallowContour and DeepContour -->
 <!-- #199: Remove language independent text -->
+<!-- #198: Viewing Group 27220 missing for "Range System" -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
@@ -4070,17 +4071,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="2021_SISTAT02_01">
-         <description>
-            <name>2021_SISTAT02_01</name>
-            <description>signal station</description>
-            <language>eng</language>
-         </description>
-         <fileName>2021_SISTAT02_01.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
-	   <symbol id="SISTAT03">
+      <symbol id="SISTAT03">
 		   <description>
 			   <name>SISTAT03</name>
 			   <description>signal station traffic</description>
@@ -7781,6 +7772,13 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+      <viewingGroup id="27220">
+         <description>
+            <name>range system (C_AGGR)</name>
+            <description>Standard: P, Q, R, S - Buoys and Beacons, Lights, Fog signals, RADAR</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
       <viewingGroup id="27230">
          <description>
             <name>radar reflector (RADRFL)</name>
@@ -8537,7 +8535,8 @@
          <viewingGroup>27080</viewingGroup>
          <viewingGroup>27200</viewingGroup>
          <viewingGroup>27210</viewingGroup>
-         <viewingGroup>27230</viewingGroup>
+	     <viewingGroup>27220</viewingGroup>
+		 <viewingGroup>27230</viewingGroup>
          <viewingGroup>21020</viewingGroup>
          <viewingGroup>21020</viewingGroup>
          <viewingGroup>21020</viewingGroup>
