@@ -14,6 +14,7 @@
 <!-- #197: Undefined parameter TwoShades for ShallowContour and DeepContour -->
 <!-- #199: Remove language independent text -->
 <!-- #198: Viewing Group 27220 missing for "Range System" -->
+<!-- #195: Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references  -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
