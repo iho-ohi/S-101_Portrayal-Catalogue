@@ -4,7 +4,7 @@
   <title>DSCWTR03</title>
   <desc>Discoloured water, small scale</desc>
   <metadata>
-    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
       <Description publisher="IHB" creationDate="30-03-2022" source="S52Preslib4.0" format="S100SVG" version="0.1" />
     </S100SVG>
   </metadata>

@@ -4,7 +4,7 @@
   <title>MARSHE01</title>
   <desc>Symbol for a marsh point feature</desc>
   <metadata>
-    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
       <Description publisher="IHB" creationDate="2022-11-27" source="S52Preslib4.0" format="S100SVG" version="0.1" />
     </S100SVG>
   </metadata>
