@@ -139,6 +139,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i196]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/196
 [i197]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/197
 [i199]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/199
+[i195]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/195
+[i198]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/198
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -158,6 +160,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#196][i196] Viewing Groups 26010 and 26020 have identical names
 * [#197][i197] Undefined parameter `TwoShades` for `ShallowContour` and `DeepContour`
 * [#199][i199] Remove language independent text
+* [#195][i195] Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references 
+* [#198][i198] Viewing Group 27220 missing for "Range System"
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
