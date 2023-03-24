@@ -15,6 +15,8 @@
 <!-- #199: Remove language independent text -->
 <!-- #198: Viewing Group 27220 missing for "Range System" -->
 <!-- #195: Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references  -->
+<!-- #200: Viewing Group 27240 is not included in any Viewing Group Layer, added to 3 -->
+
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
@@ -8538,10 +8540,7 @@
          <viewingGroup>27210</viewingGroup>
 	     <viewingGroup>27220</viewingGroup>
 		 <viewingGroup>27230</viewingGroup>
-         <viewingGroup>21020</viewingGroup>
-         <viewingGroup>21020</viewingGroup>
-         <viewingGroup>21020</viewingGroup>
-         <viewingGroup>21020</viewingGroup>
+         <viewingGroup>27240</viewingGroup>
       </viewingGroupLayer>
       <viewingGroupLayer id="3a">            <!-- From S-52: 3.1 Buoys, beacons, structures -->
          <description>
