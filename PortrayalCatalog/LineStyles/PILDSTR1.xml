@@ -23,8 +23,7 @@
       <start>32</start>
       <length>6</length>
    </dash>
-   <symbol reference="PILBOP02">
+   <symbol reference="PILBOP02" scaleFactor="0.8">
       <position>12</position>
-	  <scaleFactor>0.8</scaleFactor>
    </symbol>
 </lineStyle>
