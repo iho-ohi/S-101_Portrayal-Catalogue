@@ -172,7 +172,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#202][i202] Symbol validation errors due to missing namespace prefix
 * [#201][i201] Line style PILDSTR1.xml fails validation
 * [#205][i205] Symbol validation errors due to incorrect namespace
-* [#206][i206] categoryOfAnchorage has multiple values,use contains()
+* [#206][i206] `categoryOfAnchorage` has multiple values, use contains()
 * [#207][i207] INFORM01 added to feature with no additional information
 
 ### 1.1.0 - use with FC 1.1.0
