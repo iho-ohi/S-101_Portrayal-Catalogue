@@ -4,6 +4,7 @@ These functions are intended to be called by the S-100 scripts.
 --]]
 -- #80 - modularize processing of fixed and periodic date ranges
 -- #119
+-- #207
 
 local orig_error = error
 
@@ -113,11 +114,11 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 				end
 			end
 
-			if container['!shapeInformation'] then
+			if container['!shapeInformation'] and next(container.shapeInformation) then
 				vg31030 = true
 			end
 
-			if container['!topmark'] and container.topmark.shapeInformation then
+			if container['!topmark'] and container.topmark.shapeInformation and next(container.topmark.shapeInformation) then
 				vg31030 = true
 			end
 		end
