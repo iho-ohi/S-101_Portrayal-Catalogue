@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="daySVGStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="7.5mm" height="9.5mm" viewBox="-3.75 -8.0 7.5 9.5">
   <title>FERWHL03</title>
   <desc>Observation wheel</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
       <Description publisher="IHB" creationDate="29-03-2022" source="S52Preslib4.0" format="S100SVG" version="0.1" />
     </iho:S100SVG>
   </metadata>

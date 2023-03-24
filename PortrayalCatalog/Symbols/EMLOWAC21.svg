@@ -3,7 +3,7 @@
   <title>EMLOWAC21</title>
   <desc>embedded symbol for coastline or shoreline construction of low accuracy in position</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
       <iho:Description iho:publisher="IHB" iho:creationDate="2015-03-16" iho:source="new" iho:format="S100SVG" iho:version="0.1"/>
     </iho:S100SVG>
   </metadata>

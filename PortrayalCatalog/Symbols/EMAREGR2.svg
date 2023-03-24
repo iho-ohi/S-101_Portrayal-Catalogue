@@ -3,7 +3,7 @@
   <title>EMAREGR2</title>
   <desc>Embedded symbol</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
       <iho:Description iho:publisher="IHO" iho:creationDate="2023-03-22" iho:source="https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/186" iho:format="S100SVG" iho:version="1.0"/>
     </iho:S100SVG>
   </metadata>
