@@ -144,6 +144,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i200]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/200
 [i201]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/201
 [i202]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/202
+[i205]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/205
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -168,6 +169,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#200][i200] Viewing Group 27240 is not included in any Viewing Group Layer, added to 3
 * [#202][i202] Symbol validation errors due to missing namespace prefix
 * [#201][i201] Line style PILDSTR1.xml fails validation
+* [#205][i205] Symbol validation errors due to incorrect namespace
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
