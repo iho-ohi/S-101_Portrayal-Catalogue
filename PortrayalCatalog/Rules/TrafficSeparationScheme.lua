@@ -8,7 +8,7 @@ function TrafficSeparationScheme(feature, featurePortrayal, contextParameters)
 	
 	--featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') -- TODO: Find aggregates and emit instructions.
 
-	local viewingGroup = 25010
+	local viewingGroup = 21060
 
 	-- MS Debug: feature.featureName[1] = {displayName = true, language = 'eng', name = 'Traffic Separation Scheme'}
 	

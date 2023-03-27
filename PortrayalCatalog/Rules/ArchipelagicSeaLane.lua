@@ -6,7 +6,7 @@
 
 function ArchipelagicSeaLane(feature, featurePortrayal, contextParameters)
 	
-	local viewingGroup = 26260 
+	local viewingGroup = 21060 
 
 	-- MS Debug feature.featureName[1] = {displayName = true, language = 'eng', name = 'Test Sea Lane'}
 

@@ -6,7 +6,7 @@
 
 function DeepWaterRoute(feature, featurePortrayal, contextParameters)
 
-	local viewingGroup = 25010
+	local viewingGroup = 21060
 
 	-- MS Debug  feature.featureName[1] = {displayName = true, language = 'eng', name = 'Deep Water Route'}
 

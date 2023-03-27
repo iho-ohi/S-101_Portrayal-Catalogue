@@ -8,13 +8,11 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 	
 	--=featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') -- TODO: Find aggregates and emit instructions.
 
-	local viewingGroup = 27220
+	local viewingGroup = 21060
 
 	-- MS Debug: feature.featureName[1] = {displayName = true, language = 'eng', name = 'Range System'}
 
 	 if feature.PrimitiveType == PrimitiveType.Surface or feature.PrimitiveType == PrimitiveType.Curve then
-		
-		Debug.Break()
 
 		-- Plain and symbolized boundaries use the same symbolization, text only
 		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..';DrawingPriority:15;DisplayPlane:UnderRADAR')

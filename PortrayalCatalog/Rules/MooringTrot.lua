@@ -8,7 +8,7 @@ function MooringTrot(feature, featurePortrayal, contextParameters)
 	
 	--featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') 
 
-	local viewingGroup = 24010
+	local viewingGroup = 21060
 
 	-- MS Debug  feature.featureName[1] = {displayName = true, language = 'eng', name = 'Mooring Trot'}
 

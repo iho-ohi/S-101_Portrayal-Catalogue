@@ -8,7 +8,7 @@ function TwoWayRoute(feature, featurePortrayal, contextParameters)
 
 	--featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR;NullInstruction')
 
-	local viewingGroup = 25010
+	local viewingGroup = 21060
 
 	-- MS Debug feature.featureName[1] = {displayName = true, language = 'eng', name = 'Two Way Route'}
 

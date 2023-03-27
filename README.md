@@ -147,6 +147,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i205]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/205
 [i206]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/206
 [i207]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/207
+[i193]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/193
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -174,6 +175,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#205][i205] Symbol validation errors due to incorrect namespace
 * [#206][i206] `categoryOfAnchorage` has multiple values, use contains()
 * [#207][i207] `INFORM01` symbol added to feature with no additional information
+* [#193][i193] Check for "noGeometry" in all No Geometry features and moved to Viewing Group: 21060 Place-holder for geographic names  
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
