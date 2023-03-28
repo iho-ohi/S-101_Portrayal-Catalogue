@@ -4,6 +4,7 @@
 --
 -- Issues: PSWG #75, PC #106
 -- #165
+-- #210
 --
 -- Crane main entry point.
 function Crane(feature, featurePortrayal, contextParameters)
@@ -30,7 +31,7 @@ function Crane(feature, featurePortrayal, contextParameters)
 		-- PlainBoundaries and Patterns border use the same symbolization
 		featurePortrayal:AddInstructions('ViewingGroup:'.. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
-		featurePortrayal:SimpleLineStyle('solid',0.64, colour)
+		featurePortrayal:SimpleLineStyle('solid',0.32, colour)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	--elseif feature.PrimitiveType == PrimitiveType.Curve then
 		-- dKart improvment: Determine S-101 portrayal for Crane curve feature.
