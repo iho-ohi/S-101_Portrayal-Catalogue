@@ -16,7 +16,7 @@
 <!-- #198: Viewing Group 27220 missing for "Range System" -->
 <!-- #195: Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references  -->
 <!-- #200: Viewing Group 27240 is not included in any Viewing Group Layer, added to 3 -->
-
+<!-- #213: Case inconsistency between filename and catalog entry for SEAGRASS.svg -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.1b">
    <alertCatalog id="alertCatalog">
@@ -4044,13 +4044,13 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	   <symbol id="Seagrass">
+	   <symbol id="SEAGRASS">
 		   <description>
-			   <name>Seagrass</name>
+			   <name>SEAGRASS</name>
 			   <description>Seagrass</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>Seagrass.svg</fileName>
+		   <fileName>SEAGRASS.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>	   
