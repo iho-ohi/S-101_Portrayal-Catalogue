@@ -136,21 +136,21 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i192]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/192
 [i193]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/193
 [i194]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/194
+[i195]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/195
 [i196]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/196
 [i197]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/197
-[i199]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/199
-[i195]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/195
 [i198]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/198
+[i199]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/199
 [i200]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/200
 [i201]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/201
 [i202]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/202
 [i205]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/205
 [i206]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/206
 [i207]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/207
-[i193]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/193
+[i208]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/208
+[i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 [i210]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/210
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
-[i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -180,9 +180,10 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#207][i207] `INFORM01` symbol added to feature with no additional information
 * [#193][i193] Check for "noGeometry" in all No Geometry features and moved to Viewing Group: 21060 Place-holder for geographic names  
 * [#207][i207] `INFORM01` symbol added to feature with no additional information
-* [#210][i210] Crane type surface has 0.64 lineweight for boundary opposed to 0.32 in S-52
-* [#213][i213] Case inconsistency between filename and catalog entry for SEAGRASS.svg
+* [#210][i210] `Crane` type surface has 0.64 lineweight for boundary opposed to 0.32 in S-52
+* [#213][i213] Case inconsistency between filename and catalog entry for `SEAGRASS.svg`
 * [#209][i209] Conveyor.lua has duplicate conditions, removed duplicates
+* [#208][i208] `HELIPD02` has incorrect priority when used as centered area symbol
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
