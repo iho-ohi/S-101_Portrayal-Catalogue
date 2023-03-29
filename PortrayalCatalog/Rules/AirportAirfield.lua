@@ -1,6 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #134
+-- #208
 
 -- Airport/airfield main entry point.
 function AirportAirfield(feature, featurePortrayal, contextParameters)
@@ -23,11 +24,11 @@ function AirportAirfield(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 32240
-		featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:6;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32240;DisplayPlane:UnderRADAR')
 		if categoryOfAirportAirfield == 3 or categoryOfAirportAirfield == 4 then
-			featurePortrayal:AddInstructions('PointInstruction:HELIPD02')
+			featurePortrayal:AddInstructions('DrawingPriority:12;PointInstruction:HELIPD02')
 		else
-			featurePortrayal:AddInstructions('AreaFillReference:AIRARE02')
+			featurePortrayal:AddInstructions('DrawingPriority:6;AreaFillReference:AIRARE02')
 		end
 		featurePortrayal:SimpleLineStyle('solid',0.32,'LANDF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
