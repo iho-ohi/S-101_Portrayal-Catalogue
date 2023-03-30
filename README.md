@@ -151,6 +151,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 [i210]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/210
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
+[i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -183,6 +184,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#210][i210] `Crane` type surface has 0.64 lineweight for boundary opposed to 0.32 in S-52
 * [#213][i213] Case inconsistency between filename and catalog entry for `SEAGRASS.svg`
 * [#209][i209] Conveyor.lua has duplicate conditions, removed duplicates
+* [#217][i217] Remove `DISMAR03.svg` and `DISMAR04.svg`
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
