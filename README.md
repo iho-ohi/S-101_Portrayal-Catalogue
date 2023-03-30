@@ -183,7 +183,6 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#210][i210] `Crane` type surface has 0.64 lineweight for boundary opposed to 0.32 in S-52
 * [#213][i213] Case inconsistency between filename and catalog entry for `SEAGRASS.svg`
 * [#209][i209] Conveyor.lua has duplicate conditions, removed duplicates
-* [#208][i208] `HELIPD02` has incorrect priority when used as centered area symbol
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
