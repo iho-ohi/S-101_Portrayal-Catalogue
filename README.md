@@ -156,7 +156,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
-* [#216][i216] Safety contour alert highlight now uses viewing group `53010`
+* [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
 * [#182][i182] Ensure all unknown objects turn off with `Unknown` independent selection
 * [#183][i183] Try to process codes which don't exist in the FC
 * [#184][i184] Lost presentation of Anchorage Area
