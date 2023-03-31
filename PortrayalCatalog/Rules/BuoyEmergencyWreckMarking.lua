@@ -5,7 +5,7 @@
 function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
   local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
   
   if feature.PrimitiveType == PrimitiveType.Point then
 		viewingGroup = 27010

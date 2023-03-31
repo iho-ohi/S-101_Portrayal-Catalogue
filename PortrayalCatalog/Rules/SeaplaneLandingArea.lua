@@ -8,7 +8,7 @@ require 'RESTRN01'
 function SeaplaneLandingArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,110,110')
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53021,53021')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization

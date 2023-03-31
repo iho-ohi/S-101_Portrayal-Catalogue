@@ -9,7 +9,7 @@ require 'TOPMAR01'
 function LightFloat(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		viewingGroup = 27010

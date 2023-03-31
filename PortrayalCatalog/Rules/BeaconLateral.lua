@@ -10,7 +10,7 @@ require 'TOPMAR01'
 function BeaconLateral(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 and feature.beaconShape == 1 then

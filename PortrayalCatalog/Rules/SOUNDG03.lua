@@ -15,7 +15,7 @@ function SOUNDG03(feature, featurePortrayal, contextParameters, viewingGroup)
 		Debug.StartPerformance('Lua Code - SOUNDG03')
 
 		if point.ScaledZ <= contextParameters.SafetyContour then
-			featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+			featurePortrayal:AddInstructions('AlertReference:NavHazard')
 		end
 
 		featurePortrayal:AddInstructions('AugmentedPoint:GeographicCRS,' .. point.X .. ',' .. point.Y)

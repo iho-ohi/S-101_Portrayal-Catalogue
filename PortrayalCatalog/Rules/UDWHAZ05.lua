@@ -9,7 +9,7 @@ function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, ori
 
 	local viewingGroup = originalViewingGroup
 	if DEPTH_VALUE <= contextParameters.SafetyContour then
-		featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 		if not feature.surroundingDepth or feature.surroundingDepth >= contextParameters.SafetyContour then
 			-- DANGER = true
 			if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then

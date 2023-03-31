@@ -8,7 +8,7 @@ require 'RESTRN01'
 function MarineFarmCulture(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,113,113')
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53024,53024')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization

@@ -6,7 +6,7 @@
 function Pile(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization

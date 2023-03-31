@@ -9,7 +9,7 @@ require 'TOPMAR01'
 function BuoySpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if contains(19, feature.categoryOfSpecialPurposeMark) and feature.buoyShape == 1 then

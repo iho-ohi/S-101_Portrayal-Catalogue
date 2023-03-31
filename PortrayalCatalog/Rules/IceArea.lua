@@ -5,7 +5,7 @@
 function IceArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization

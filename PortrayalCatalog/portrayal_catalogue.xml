@@ -8254,106 +8254,106 @@
      <!--********** Alert Catalog Viewing Groups **********-->
       <viewingGroup id="53010">
         <description>
-          <name>Danger Highlight</name>
+          <name>Safety Contour Highlight</name>
           <description>Used to turn on or off the graphical highlighting of alerts triggered by the safety contour.</description>
           <language>eng</language>
         </description>
       </viewingGroup>
-      <viewingGroup id="102">
+      <viewingGroup id="53011">
         <description>
-          <name>Traffic Seperation Zone Highlight</name>
+          <name>Navigational Hazards Highlight</name>
+          <description>Used to turn on or off the graphical highlighting of alerts triggered by navigational hazards</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53012">
+        <description>
+          <name>Traffic Separation Zone Highlight</name>
           <description>Alert highlight: Traffic Seperation Zone</description>
           <language>eng</language>
         </description>
       </viewingGroup>
-      <viewingGroup id="103">
+      <viewingGroup id="53013">
         <description>
           <name>Inshore Traffic Zone Highlight</name>
           <description>Alert highlight: Inshore Traffic Zone</description>
           <language>eng</language>
         </description>
       </viewingGroup>
-      <viewingGroup id="104">
+      <viewingGroup id="53014">
         <description>
           <name>Restricted Area Highlight</name>
           <description>Alert highlight: Restricted Area</description>
           <language>eng</language>
         </description>
       </viewingGroup>
-            <viewingGroup id="105">
-        <description>
-          <name>Caution Area Highlight</name>
-          <description>Alert highlight: Caution area</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="106">
-        <description>
-          <name>Offshore Production Area Highlight</name>
-          <description>Alert highlight: Offshore production area</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="107">
+      <viewingGroup id="53015">
         <description>
           <name>Areas to be Avoided Highlight</name>
           <description>Alert highlight: Areas to be avoided</description>
           <language>eng</language>
         </description>
       </viewingGroup>      
-      <viewingGroup id="108">
-        <description>
-          <name>User Defined Areas to be Avoided Highlight</name>
-          <description>Alert highlight: User defined areas to be avoided</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>      
-      <viewingGroup id="109">
-        <description>
-          <name>Military Practice Area Highlight</name>
-          <description>Alert highlight: Military practice area</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="110">
-        <description>
-          <name>Seaplane Landing Area Highlight</name>
-          <description>Alert highlight: Seaplane landing area</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="111">
-        <description>
-          <name>Submarine Transit Lane Highlight</name>
-          <description>Alert highlight: Submarine transit lane</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="112">
-        <description>
-          <name>Anchorage Area Highlight</name>
-          <description>Alert highlight: Anchorage area</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="113">
-        <description>
-          <name>Marine Farm/Aquaculture Highlight</name>
-          <description>Alert highlight: Marine farm/aquaculture</description>
-          <language>eng</language>
-        </description>
-      </viewingGroup>
-      <viewingGroup id="114">
+      <viewingGroup id="53016">
         <description>
           <name>PSSA (Particularly Sensitive Sea Area) Highlight</name>
           <description>Alert highlight: PSSA (Particularly Sensitive Sea Area)</description>
           <language>eng</language>
         </description>
       </viewingGroup>
-      <viewingGroup id="115">
+      <viewingGroup id="53017">
         <description>
-          <name>Navigational Hazards Highlight</name>
-          <description>Used to turn on or off the graphical highlighting of alerts triggered by navigational hazards</description>
+          <name>Caution Area Highlight</name>
+          <description>Alert highlight: Caution area</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53018">
+        <description>
+          <name>Offshore Production Area Highlight</name>
+          <description>Alert highlight: Offshore production area</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53019">
+        <description>
+          <name>User Defined Areas to be Avoided Highlight</name>
+          <description>Alert highlight: User defined areas to be avoided</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>      
+      <viewingGroup id="53020">
+        <description>
+          <name>Military Practice Area Highlight</name>
+          <description>Alert highlight: Military practice area</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53021">
+        <description>
+          <name>Seaplane Landing Area Highlight</name>
+          <description>Alert highlight: Seaplane landing area</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53022">
+        <description>
+          <name>Submarine Transit Lane Highlight</name>
+          <description>Alert highlight: Submarine transit lane</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53023">
+        <description>
+          <name>Anchorage Area Highlight</name>
+          <description>Alert highlight: Anchorage area</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="53024">
+        <description>
+          <name>Marine Farm/Aquaculture Highlight</name>
+          <description>Alert highlight: Marine farm/aquaculture</description>
           <language>eng</language>
         </description>
       </viewingGroup>
@@ -8640,20 +8640,20 @@
          <viewingGroup>28020</viewingGroup>
 		 <!-- Alert Highlights -->
 		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>102</viewingGroup>
-		 <viewingGroup>103</viewingGroup>
-		 <viewingGroup>104</viewingGroup>
-		 <viewingGroup>105</viewingGroup>
-		 <viewingGroup>106</viewingGroup>
-		 <viewingGroup>107</viewingGroup>
-		 <viewingGroup>108</viewingGroup>
-		 <viewingGroup>109</viewingGroup>
-		 <viewingGroup>110</viewingGroup>
-		 <viewingGroup>111</viewingGroup>
-		 <viewingGroup>112</viewingGroup>
-		 <viewingGroup>113</viewingGroup>
-		 <viewingGroup>114</viewingGroup>
-		 <viewingGroup>115</viewingGroup>
+		 <viewingGroup>53011</viewingGroup>
+		 <viewingGroup>53012</viewingGroup>
+		 <viewingGroup>53013</viewingGroup>
+		 <viewingGroup>53014</viewingGroup>
+		 <viewingGroup>53015</viewingGroup>
+		 <viewingGroup>53016</viewingGroup>
+		 <viewingGroup>53017</viewingGroup>
+		 <viewingGroup>53018</viewingGroup>
+		 <viewingGroup>53019</viewingGroup>
+		 <viewingGroup>53020</viewingGroup>
+		 <viewingGroup>53021</viewingGroup>
+		 <viewingGroup>53022</viewingGroup>
+		 <viewingGroup>53023</viewingGroup>
+		 <viewingGroup>53024</viewingGroup>
       </viewingGroupLayer>
 	  <viewingGroupLayer id="10a">       
          <description>
@@ -8686,21 +8686,20 @@
 		</description>
 		 <!-- Alert Highlights -->
 		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>102</viewingGroup>
-		 <viewingGroup>103</viewingGroup>
-		 <viewingGroup>104</viewingGroup>
-		 <viewingGroup>105</viewingGroup>
-		 <viewingGroup>106</viewingGroup>
-		 <viewingGroup>107</viewingGroup>
-		 <viewingGroup>108</viewingGroup>
-		 <viewingGroup>109</viewingGroup>
-		 <viewingGroup>110</viewingGroup>
-		 <viewingGroup>111</viewingGroup>
-		 <viewingGroup>112</viewingGroup>
-		 <viewingGroup>113</viewingGroup>
-		 <viewingGroup>114</viewingGroup>
-		 <viewingGroup>115</viewingGroup>
-		 <!-- TODO: Implement 56000-56999 once a way to specify ranges is provided -->
+		 <viewingGroup>53011</viewingGroup>
+		 <viewingGroup>53012</viewingGroup>
+		 <viewingGroup>53013</viewingGroup>
+		 <viewingGroup>53014</viewingGroup>
+		 <viewingGroup>53015</viewingGroup>
+		 <viewingGroup>53016</viewingGroup>
+		 <viewingGroup>53017</viewingGroup>
+		 <viewingGroup>53018</viewingGroup>
+		 <viewingGroup>53019</viewingGroup>
+		 <viewingGroup>53020</viewingGroup>
+		 <viewingGroup>53021</viewingGroup>
+		 <viewingGroup>53022</viewingGroup>
+		 <viewingGroup>53023</viewingGroup>
+		 <viewingGroup>53024</viewingGroup>
 	  </viewingGroupLayer>
 	  <!-- ********************************************************************************* -->
 	  <!-- END STANDARD LAYER GROUPS -->

@@ -7,7 +7,7 @@
 function Conveyor(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if feature.categoryOfConveyor == 1 and feature.radarConspicuous == true then

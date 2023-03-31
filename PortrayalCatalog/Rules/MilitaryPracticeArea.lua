@@ -8,7 +8,7 @@ require 'RESTRN01'
 function MilitaryPracticeArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,109,109')
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53020,53020')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization

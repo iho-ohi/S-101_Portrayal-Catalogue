@@ -15,7 +15,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 	
 	local COA = feature.categoryOfAnchorage
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,112,112')
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53023,53023')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization

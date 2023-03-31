@@ -15,7 +15,7 @@ function SeparationZoneOrLine(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- S-52 PresLib 4.0.3 Part 1 clause 10.5.10 TSEZNE AREA
-		featurePortrayal:AddInstructions('AlertReference:ProhAre,102,102')
+		featurePortrayal:AddInstructions('AlertReference:ProhAre,53012,53012')
 
 		-- Plain and symbolized boundaries use the same symbolization
 		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR')

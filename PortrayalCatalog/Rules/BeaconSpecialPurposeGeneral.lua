@@ -10,7 +10,7 @@ require 'TOPMAR01'
 function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.beaconShape == 6 and feature.visualProminence == 1 then

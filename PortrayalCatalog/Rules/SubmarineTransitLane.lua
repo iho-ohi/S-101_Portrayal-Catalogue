@@ -8,7 +8,7 @@ require 'RESTRN01'
 function SubmarineTransitLane(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:ProhAre,111,111')
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53022,53022')
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 26040

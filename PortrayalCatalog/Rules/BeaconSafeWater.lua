@@ -9,7 +9,7 @@ require 'TOPMAR01'
 function BeaconSafeWater(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.beaconShape == 1 then
