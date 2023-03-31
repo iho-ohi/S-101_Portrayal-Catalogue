@@ -151,10 +151,12 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 [i210]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/210
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
+[i216]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/216
 [i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
+* [#216][i216] Safety contour alert highlight now uses viewing group `53010`
 * [#182][i182] Ensure all unknown objects turn off with `Unknown` independent selection
 * [#183][i183] Try to process codes which don't exist in the FC
 * [#184][i184] Lost presentation of Anchorage Area
