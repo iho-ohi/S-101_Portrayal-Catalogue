@@ -153,6 +153,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
 [i216]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/216
 [i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
+[i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -187,6 +188,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#213][i213] Case inconsistency between filename and catalog entry for `SEAGRASS.svg`
 * [#209][i209] Conveyor.lua has duplicate conditions, removed duplicates
 * [#217][i217] Remove `DISMAR03.svg` and `DISMAR04.svg`
+* [#218][i218] Removal of alerts from `RestrictedAreaRegulatory` is not yet approved
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
