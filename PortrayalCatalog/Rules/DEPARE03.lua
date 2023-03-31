@@ -105,7 +105,7 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 		if loc_safety or unsafe and safe then
 			if unsafe then
-				featurePortrayal:AddInstructions('AlertReference:SafetyContour,101,101')
+				featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 			end
 
 			if contextParameters.RadarOverlay then

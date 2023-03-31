@@ -6,7 +6,7 @@
 function Pontoon(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	featurePortrayal:AddInstructions('AlertReference:SafetyContour,101,101')
+	featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 12410

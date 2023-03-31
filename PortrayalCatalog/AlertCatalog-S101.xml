@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- S-101 ALERT CATALOGUE -->
-<alertCatalog version="0.1">
+<alertCatalog version="1.0">
 
     <messages>
 		<!-- Begin messages triggered by an alert for display in alert management or route plan -->
@@ -92,7 +92,7 @@
                 <description>Used to turn on or off the graphical highlighting of alerts triggered by the safety contour.</description>
                 <language>eng</language>
             </description>
-			<viewingGroup ref="101"/>
+			<viewingGroup ref="53010"/>
 		</highlight>
 		<!-- TODO: Determine if optional attribute should be true. IEC 61174 does not indicate disabling highlight is optional. -->
 		<highlight id="ProhAreHighlight" msg="ProhAreHighlightOffMsg">

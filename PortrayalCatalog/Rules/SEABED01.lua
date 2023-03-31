@@ -43,7 +43,7 @@ function SEABED01(feature, featurePortrayal, contextParameters, depthRangeMinimu
 	--Debug.Trace('SEABED01: Colour = ' .. Colour .. ' SafetyContour = ' .. contextParameters.SafetyContour .. ' depthRangeMinimumValue = ' .. depthRangeMinimumValue .. ' depthRangeMaximumValue = ' .. depthRangeMaximumValue)
 
 	if Shallow then
-		featurePortrayal:AddInstructions('AlertReference:SafetyContour,101,101')
+		featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 	end
 
 	featurePortrayal:AddInstructions('ColorFill:' .. Colour)

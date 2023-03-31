@@ -8252,9 +8252,9 @@
 	  <!--********** END OTHER DISPLAY ELEMENTS **********-->
 
      <!--********** Alert Catalog Viewing Groups **********-->
-      <viewingGroup id="101">
+      <viewingGroup id="53010">
         <description>
-          <name>Safety Contour Highlight</name>
+          <name>Danger Highlight</name>
           <description>Used to turn on or off the graphical highlighting of alerts triggered by the safety contour.</description>
           <language>eng</language>
         </description>
@@ -8639,7 +8639,7 @@
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
 		 <!-- Alert Highlights -->
-		 <viewingGroup>101</viewingGroup>
+		 <viewingGroup>53010</viewingGroup>
 		 <viewingGroup>102</viewingGroup>
 		 <viewingGroup>103</viewingGroup>
 		 <viewingGroup>104</viewingGroup>
@@ -8685,7 +8685,7 @@
             <language>eng</language>
 		</description>
 		 <!-- Alert Highlights -->
-		 <viewingGroup>101</viewingGroup>
+		 <viewingGroup>53010</viewingGroup>
 		 <viewingGroup>102</viewingGroup>
 		 <viewingGroup>103</viewingGroup>
 		 <viewingGroup>104</viewingGroup>
