@@ -8,15 +8,13 @@ require 'RESARE04'
 function RestrictedAreaRegulatory(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 26020
 
-	--[[  removed by direction of PSWG issue #31
-
 	if contains(14, feature.restriction) then
-		featurePortrayal:AddInstructions('AlertReference:ProhAre,107,107')
+		featurePortrayal:AddInstructions('AlertReference:ProhAre,53015,53015')
 	elseif contains(28, feature.categoryOfRestrictedArea) then
-		featurePortrayal:AddInstructions('AlertReference:ProhAre,114,114')
+		featurePortrayal:AddInstructions('AlertReference:ProhAre,53016,53016')
 	elseif not contains(14, feature.restriction) and not contains(28, feature.categoryOfRestrictedArea) then
-		featurePortrayal:AddInstructions('AlertReference:ProhAre,104,104')
-	end ]]
+		featurePortrayal:AddInstructions('AlertReference:ProhAre,53014,53014')
+	end
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if contains(27, feature.categoryOfRestrictedArea) then
