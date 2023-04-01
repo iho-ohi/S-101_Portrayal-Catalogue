@@ -5,7 +5,7 @@
   <desc>Centred symbol for mooring buoy area</desc>
   <metadata>
     <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
-      <Description publisher="IHO" creationDate="2014-06-09" source="S52Preslib4.0" format="S100SVG" version="0.1" />
+      <iho:Description iho:publisher="IHO" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1" />
     </iho:S100SVG>
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-5.98" y="-5.98" height="11.99" width="11.99" />
