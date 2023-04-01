@@ -154,6 +154,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i216]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/216
 [i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
 [i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
+[i219]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/219
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -189,6 +190,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#209][i209] Conveyor.lua has duplicate conditions, removed duplicates
 * [#217][i217] Remove `DISMAR03.svg` and `DISMAR04.svg`
 * [#218][i218] Removal of alerts from `RestrictedAreaRegulatory` is not yet approved
+* [#219][i219] Remove national language text from the alert catalog
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
