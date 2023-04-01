@@ -156,6 +156,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
 [i219]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/219
 [i220]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/220
+[i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -193,6 +194,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#218][i218] Removal of alerts from `RestrictedAreaRegulatory` is not yet approved
 * [#219][i219] Remove national language text from the alert catalog
 * [#220][i220] Set `SafetyContour` alert priority in route planning mode to `Alarm`
+* [#222][i222] Many symbols missing namespace prefix on `Description` element and metadata attributes
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
