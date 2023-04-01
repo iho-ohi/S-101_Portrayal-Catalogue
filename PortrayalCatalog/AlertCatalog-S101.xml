@@ -145,7 +145,7 @@
                 <priority>Alarm</priority>
             </routeMonitor>
             <routePlan msg="CrossingSafetyContourMsg" highlight="SafetyContourHighlight">
-                <priority>Indication</priority>
+                <priority>Alarm</priority>
             </routePlan>
         </alert>
         <alert id="ProhAre">
