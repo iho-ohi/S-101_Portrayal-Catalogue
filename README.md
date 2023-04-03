@@ -158,6 +158,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i220]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/220
 [i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
+[i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -197,6 +198,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#220][i220] Set `SafetyContour` alert priority in route planning mode to `Alarm`
 * [#222][i222] Many symbols missing namespace prefix on `Description` element and metadata attributes
 * [#223][i223] Symbols with invalid `creationDate` attribute
+* [#221][i221] Removed SISTAT02.svg from PC, no rules reference it
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
