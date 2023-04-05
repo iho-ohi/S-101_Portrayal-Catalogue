@@ -159,6 +159,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
 [i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
+[i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 
 ## Changelog
 ### 1.1.1 - use with FC 1.1.0
@@ -199,6 +200,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * [#222][i222] Many symbols missing namespace prefix on `Description` element and metadata attributes
 * [#223][i223] Symbols with invalid `creationDate` attribute
 * [#221][i221] Removed SISTAT02.svg from PC, no rules reference it
+* [#215][i215] Update version number prior to release 1.1.1b to 1.1.1
 
 ### 1.1.0 - use with FC 1.1.0
 *	Misc changes
