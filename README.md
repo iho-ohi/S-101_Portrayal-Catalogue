@@ -160,8 +160,16 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
 [i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 [i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
+[i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
 
 ## Changelog
+### 1.1.2 - Developmental use towards 1.2.0
+*	Misc changes
+* [#224][i224]  Update main version number to 1.1.2 developmental use towards 1.2.0
+
+*	Lua Rule File / Symbol Updates
+
+
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
 * [#182][i182] Ensure all unknown objects turn off with `Unknown` independent selection
