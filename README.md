@@ -161,14 +161,14 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 [i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
+[i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 
 ## Changelog
 ### 1.1.2 - Developmental use towards 1.2.0
-*	Misc changes
-* [#224][i224]  Update main version number to 1.1.2 developmental use towards 1.2.0
-
-*	Lua Rule File / Symbol Updates
-
+* Misc changes
+	* [#224][i224]  Update main version number to 1.1.2 developmental use towards 1.2.0
+* Lua Rule File / Symbol Updates
+	* [#226][i226] LightSectored with partially obscured sector will not portray arc with a dash
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
