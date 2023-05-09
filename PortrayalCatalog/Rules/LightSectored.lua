@@ -9,6 +9,7 @@
 -- #174
 -- #188
 -- #190
+-- #226
 
 local function nmi2metres(nmi)
 	return nmi * 1852.0
@@ -127,7 +128,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 				featurePortrayal:AddInstructions('AugmentedPath:LocalCRS,GeographicCRS,LocalCRS')
 
-				if contains(lightSector.lightVisibility, { 7, 6, 3 }) then
+				if contains(lightSector.lightVisibility, { 7, 8, 3 }) then
 					featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK') -- Redundant?
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				else
