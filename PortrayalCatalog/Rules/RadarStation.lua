@@ -7,17 +7,13 @@
 function RadarStation(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 	local communicationChannels = ''
-	if contactDetails and contactDetails.communicationChannel
-	then
-		communicationChannels = 'ch '
-		for i, channel in ipairs(contactDetails.communicationChannel)
-		do
-			if i == 1
-			then
-				communicationChannels = communicationChannels .. channel
-			else
-				communicationChannels = communicationChannels .. ',' .. channel
-			end
+	for i, channel in ipairs(feature.communicationChannel)
+	do
+		if i == 1
+		then
+			communicationChannels = 'ch ' .. channel
+		else
+			communicationChannels = communicationChannels .. ', ' .. channel
 		end
 	end
 
