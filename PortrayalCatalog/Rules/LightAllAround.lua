@@ -23,7 +23,9 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 	local categoryOfLight = feature.categoryOfLight or {}
 
 	-- majorLight is not valid for aero and non morse code lights
-	local majorLight = feature.majorLight and feature.majorLight == 1 and not contains(categoryOfLight, { 5 }) and not feature.rhythmOfLight and feature.rhythmOfLight.lightCharacteristic and feature.rhythmOfLight.lightCharacteristic == 12
+	local notAeroLight = not contains(categoryOfLight, { 5 })
+	local notMorseCodeLight = feature.rhythmOfLight == nil or feature.rhythmOfLight.lightCharacteristic ~= 12
+	local majorLight = feature.majorLight and notAeroLight and notMorseCodeLight
 
 	if contains(categoryOfLight, { 8, 11 }) then
 		-- Flood or spot light
