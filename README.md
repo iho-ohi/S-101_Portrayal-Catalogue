@@ -166,6 +166,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
+[i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 
 ## Changelog
 ### 1.1.2 - Developmental use towards 1.2.0
@@ -177,6 +178,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#233][i233] Support labeling contours deeper than 99m
 	* [#227][i227] `DockArea` and `LockBasin` should always draw under RADAR
 	* [#231][i231] `RadarStation` with `categoryOfRadarStation` = `2` is not showing communication channels
+	* [#243][i243] Fix check for `majorLight` on `LightAllAround`
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
