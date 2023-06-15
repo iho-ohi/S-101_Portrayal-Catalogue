@@ -124,7 +124,9 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 				featurePortrayal:SimpleLineStyle('dot',0.64,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			else
-				featurePortrayal:SimpleLineStyle('dash',0.64,'CHBLK')
+				-- #245 changed color from CHBLK to CHGRD for consistency with surface symbolization. ENCWG notified
+				-- about inconsistency in S-52 PL 4.0.3 OBSTRN07 CSP.
+				featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			end
 
@@ -152,7 +154,8 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 				featurePortrayal:SimpleLineStyle('dot',0.64,'CHBLK')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			else
-				featurePortrayal:SimpleLineStyle('dash',0.64,'CHBLK')
+				-- #245 changed color from CHBLK to CHGRD to match S-52
+				featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			end
 
@@ -168,11 +171,13 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			elseif contains(feature.waterLevelEffect, {1, 2}) then
 				featurePortrayal:AddInstructions('ColorFill:CHBRN')
-				featurePortrayal:SimpleLineStyle('solid',0.64,'CHBLK')
+				-- #245 changed color from CHBLK to CSTLN to match S-52
+				featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			elseif feature.waterLevelEffect == 4 then
 				featurePortrayal:AddInstructions('ColorFill:DEPIT')
-				featurePortrayal:SimpleLineStyle('dash',0.64,'CHBLK')
+				-- #245 changed color from CHBLK to CSTLN to match S-52
+				featurePortrayal:SimpleLineStyle('dash',0.64,'CSTLN')
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			else
 				featurePortrayal:AddInstructions('ColorFill:DEPVS')
