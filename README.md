@@ -183,6 +183,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#243][i243] Fix check for `majorLight` on `LightAllAround`
 	* [#245][i245] `OBSTRN07.lua` should change line color based on `SafetyDepth`
 	* [#240][i240] `SLCONS04.lua` incorrect evaluation of `condition` attribute
+	* [#50][i50] `CATZOC` drawing priority should be `12`
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
