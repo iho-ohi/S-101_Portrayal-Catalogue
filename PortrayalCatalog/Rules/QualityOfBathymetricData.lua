@@ -16,7 +16,7 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	local catzoc
 	local zonesOfConfidence = feature.zoneOfConfidence
 	
-	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:4;DisplayPlane:UnderRADAR')
+	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:12;DisplayPlane:UnderRADAR')
 
 	local DRVAL1 = feature.depthRangeMinimumValue
 	local DRVAL2 = feature.depthRangeMaximumValue
