@@ -169,6 +169,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
+[i249]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/249
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -184,6 +185,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#245][i245] `OBSTRN07.lua` should change line color based on `SafetyDepth`
 	* [#240][i240] `SLCONS04.lua` incorrect evaluation of `condition` attribute
 	* [#50][i50] `CATZOC` drawing priority should be `12`
+ 	* [#249][i249] Error when `valueOfLocalMagneticAnomaly` is unknown
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
