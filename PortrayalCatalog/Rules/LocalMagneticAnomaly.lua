@@ -78,8 +78,6 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHMGF')
 				featurePortrayal:AddTextInstruction("Local Magnetic Anomaly", 30, 24, viewingGroup, 12)
 			end
-		else
-			error('Invalid primitive type or mariner settings passed to portrayal')
 		end
 	elseif magCount == 2 then
 		if valueOfLocalMagneticAnomaly[1].magneticAnomalyValue ~= nil and valueOfLocalMagneticAnomaly[2].magneticAnomalyValue ~= nil then
