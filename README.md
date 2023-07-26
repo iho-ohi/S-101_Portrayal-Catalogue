@@ -172,6 +172,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i249]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/249
 [i251]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/251
 [i252]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/252
+[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -190,6 +191,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
  	* [#249][i249] Error when `valueOfLocalMagneticAnomaly` is unknown
   	* [#251][i251] Adjust `SAFCON90`
   	* [#252][i252] Adjust `SAFCON71` and `SAFCON91`
+	* [#142][i142] Fix bug, reopened and added contains(7, categoryOfCargo)
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)

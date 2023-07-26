@@ -11,7 +11,7 @@ function Berth(feature, featurePortrayal, contextParameters)
 
 	local symbol = 'BRTHNO01'	-- default for categoryOfCargo != 7
 
-	if categoryOfCargo == 7 then
+	if contains(7, categoryOfCargo) then
 		symbol = 'BRTHDNG1'
 	end
 		
