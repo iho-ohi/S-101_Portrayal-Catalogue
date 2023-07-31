@@ -192,6 +192,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#251][i251] Adjust `SAFCON90`
   	* [#252][i252] Adjust `SAFCON71` and `SAFCON91`
 	* [#142][i142] Fix bug, reopened and added contains(7, categoryOfCargo)
+	* [#213][i213] Within rule file, case inconsistency between reference and catalog entry for `SEAGRASS.svg`
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
