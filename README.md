@@ -174,6 +174,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i252]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/252
 [i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i254]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/254
+[i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -195,6 +196,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#142][i142] Fix bug, reopened and added contains(7, categoryOfCargo)
 	* [#213][i213] Within rule file, case inconsistency between reference and catalog entry for `SEAGRASS.svg`
 	* [#254][i254] valueOfLocalMagneticAnomaly multiple value string fix
+ 	* [#255][i255] `LightSectored` portrayal results in `?`
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
