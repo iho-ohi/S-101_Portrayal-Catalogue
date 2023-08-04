@@ -2,6 +2,7 @@
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- PC Issue #73, PSWG #102
+-- PC issue #254
 
 -- Local magnetic anomaly main entry point.
 function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
@@ -40,18 +41,6 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	end
 
 	-- issue #73 PC, #102 PSWG
-	-- DEBUG TESTING SUPPORT
-
-	-- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly 
-	-- valueOf multiplicity is 1:2
-	--local valueOfLocalMagneticAnomaly = {'1', nil} -- replace with local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly  
-		
-	--local valueOfLocalMagneticAnomaly = {}
-	
-	--Debug.Break()
-	--valueOfLocalMagneticAnomaly[1] = {magneticAnomalyValue = 175, referenceDirection = 5} --RefDir 5 = East, 13 = West 
-	--valueOfLocalMagneticAnomaly[2] = {magneticAnomalyValue = 145, referenceDirection = unknownValue} --RefDir 5 = East, 13 = West 
-	-- END 	-- DEBUG TESTING SUPPORT
 
 	local valueOfLocalMagneticAnomaly = feature.valueOfLocalMagneticAnomaly   -- DEBUG as {}
 
@@ -85,6 +74,7 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 			local txtStr
 			local dir1 = ''
 			local dir2 = ''
+			
 			if valueOfLocalMagneticAnomaly[1].magneticAnomalyValue ~= unknownValue and valueOfLocalMagneticAnomaly[2].magneticAnomalyValue ~= unknownValue then
 				if (valueOfLocalMagneticAnomaly[1].referenceDirection ~= unknownValue and valueOfLocalMagneticAnomaly[2].referenceDirection ~= unknownValue) and
 					(valueOfLocalMagneticAnomaly[1].referenceDirection ~= nil and valueOfLocalMagneticAnomaly[2].referenceDirection ~= nil) then
@@ -93,11 +83,15 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 					if valueOfLocalMagneticAnomaly[1].referenceDirection == 13 then dir1 = 'W' end
 					if valueOfLocalMagneticAnomaly[2].referenceDirection == 13 then dir2 = 'W' end
 
-						txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2)
+						txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue:ToNumber(), dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue:ToNumber(), dir2)
 						featurePortrayal:AddTextInstruction(txtStr, 30, 24, viewingGroup, 12)
+						--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'),30, 24, ViewingGroup, 12)
+
 				else
-					txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2)
+					txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue:ToNumber(), dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue:ToNumber(), dir2)
 					featurePortrayal:AddTextInstruction(txtStr, 30, 24, viewingGroup, 12)
+					--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'),30, 24, ViewingGroup, 12)
+
 				end
 			elseif valueOfLocalMagneticAnomaly[1].magneticAnomalyValue == unknownValue or valueOfLocalMagneticAnomaly[2].magneticAnomalyValue == unknownValue then
 				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHMGF')
