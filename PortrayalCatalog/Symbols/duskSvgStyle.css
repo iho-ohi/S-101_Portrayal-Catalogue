@@ -8,6 +8,10 @@ svg {
 .pivotPoint {stroke:red;stroke-width:0.64;}  /* show the pivot/anchor point, 0,0 */
 .sl {stroke-linecap:round;stroke-linejoin:round} /* default line style elements */
 .f0 {fill:none}  /* no fill */
+.sUNHQD {stroke:#59524d}
+.fUNHQD {fill:#59524d}
+.sUNHQL {stroke:#59524d}
+.fUNHQL {fill:#59524d}
 .sNODTA {stroke:#404D53}
 .fNODTA {fill:#404D53}
 .sCURSR {stroke:#86491E}

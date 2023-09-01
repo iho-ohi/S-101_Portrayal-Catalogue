@@ -8,6 +8,10 @@
 .pivotPoint {stroke:red;stroke-width:0.64;}  /* show the pivot/anchor point, 0,0 */
 .sl {stroke-linecap:round;stroke-linejoin:round} /* default line style elements */
 .f0 {fill:none}  /* no fill */
+.sUNHQD {stroke:#cc9f80}
+.fUNHQD {fill:#cc9f80}
+.sUNHQL {stroke:#E6AA80}
+.fUNHQL {fill:#E6AA80}
 .sNODTA {stroke:#93AEBB}
 .fNODTA {fill:#93AEBB}
 .sCURSR {stroke:#E38039}

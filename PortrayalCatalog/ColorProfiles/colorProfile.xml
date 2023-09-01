@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="s100ColorProfile.xsd">
     <colors>
-        <color token="NODTA" name="grey">
+		<color token="UNHQD" name="light_grey">
+			<description>QoBD Dots Color</description>
+		</color>
+			<color token="UNHQL" name="orange">
+			<description>QoBD Lines Color</description>
+		</color>
+		<color token="NODTA" name="grey">
             <description>No data color</description>
         </color>
         <color token="CURSR" name="orange">
@@ -204,12 +210,40 @@
         </color>
     </colors>
   <palette name="Day" css="daySvgStyle.css">
-    <item token="NODTA">
+	<item token="UNHQD">
       <cie>
         <xyL>
-          <x>0.28</x>
-          <y>0.31</y>
-          <L>40</L>
+          <x>0.39</x>
+          <y>0.37</y>
+          <L>39.19</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>204</red>
+        <green>159</green>
+        <blue>128</blue>
+      </srgb>
+    </item>
+	<item token="UNHQL">
+      <cie>
+        <xyL>
+          <x>0.40</x>
+          <y>0.38</y>
+          <L>47.13</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>230</red>
+        <green>170</green>
+        <blue>128</blue>
+      </srgb>
+    </item>
+	<item token="NODTA">
+      <cie>
+        <xyL>
+          <x>7.53</x>
+          <y>4.54</y>
+          <L>58.62</L>
         </xyL>
       </cie>
       <srgb>
@@ -1144,7 +1178,35 @@
     </item>
   </palette>
   <palette name="Dusk" css="duskSvgStyle.css">
-    <item token="NODTA">
+	<item token="UNHQD">
+      <cie>
+        <xyL>
+          <x>0.33</x>
+          <y>0.34</y>
+          <L>8.69</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>89</red>
+        <green>82</green>
+        <blue>77</blue>
+      </srgb>
+    </item>
+	<item token="UNHQL">
+      <cie>
+        <xyL>
+          <x>0.37</x>
+          <y>0.35</y>
+          <L>62</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>249</red>
+        <green>195</green>
+        <blue>178</blue>
+      </srgb>
+    </item>
+	<item token="NODTA">
       <cie>
         <xyL>
           <x>0.28</x>
@@ -2084,7 +2146,35 @@
     </item>
   </palette>
   <palette name="Night" css="nightSvgStyle.css">
-    <item token="NODTA">
+	<item token="UNHQD">
+      <cie>
+        <xyL>
+          <x>0.28</x>
+          <y>0.31</y>
+          <L>40</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>147</red>
+        <green>174</green>
+        <blue>187</blue>
+      </srgb>
+    </item>
+	<item token="UNHQL">
+      <cie>
+        <xyL>
+          <x>0.37</x>
+          <y>0.35</y>
+          <L>62</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>249</red>
+        <green>195</green>
+        <blue>178</blue>
+      </srgb>
+    </item>
+	<item token="NODTA">
       <cie>
         <xyL>
           <x>0.28</x>

@@ -41,8 +41,13 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 					elseif (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 6) then
 						catzoc = 'U01'
 					end
+					
 					-- CATZOC values defined
-					featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc)
+					if (contextParameters.QBoDMode == 1) then
+						featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc .. 'DOTS')
+					else
+						featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc)
+					end
 					featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 

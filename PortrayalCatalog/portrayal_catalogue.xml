@@ -21,7 +21,7 @@
 <!-- #215: Update version number prior to release 1.1.1b to 1.1.1 -->
 <!-- #224: Update main version number to 1.1.2 developmental use towards 1.2.0 -->
 
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.2-DRAFT">
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.2-QoBD">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -1297,6 +1297,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="DQUALA11PDOTS">
+         <description>
+            <name>DQUALA11P</name>
+            <description>pattern of symbols for a chart of 5m accuracy with full seafloor coverage</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALA11P_DOTS.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="DQUALA21P">
          <description>
             <name>DQUALA21P</name>
@@ -1304,6 +1314,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALA21P.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DQUALA21PDOTS">
+         <description>
+            <name>DQUALA21P</name>
+            <description>pattern of symbols for a chart with 20m accuracy with full seafloor coverage</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALA21P_DOTS.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -1317,6 +1337,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="DQUALB01PDOTS">
+         <description>
+            <name>DQUALB01P</name>
+            <description>pattern of symbols for a chart with 50m accuracy from standard survey based on lines of continuous soundings</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALB01P_DOTS.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="DQUALC01P">
          <description>
             <name>DQUALC01P</name>
@@ -1324,6 +1354,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALC01P.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DQUALC01PDOTS">
+         <description>
+            <name>DQUALC01P</name>
+            <description>pattern of symbols for a low accuracy or incomplete chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALC01P_DOTS.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -1337,6 +1377,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="DQUALD01PDOTS">
+         <description>
+            <name>DQUALD01P</name>
+            <description>pattern of symbols for an unreliable chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALD01P_DOTS.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="DQUALU01P">
          <description>
             <name>DQUALU01P</name>
@@ -1344,6 +1394,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALU01P.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DQUALU01PDOTS">
+         <description>
+            <name>DQUALU01P</name>
+            <description>pattern of symbols for a chart with quality not assessed</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALU01P_DOTS.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -7313,6 +7373,16 @@
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
+      <areaFill id="DQUALA11DOTS">
+         <description>
+            <name>DQUALA11</name>
+            <description>pattern of symbols for a chart of 5m accuracy with full seafloor coverage</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALA11_DOTS.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
       <areaFill id="DQUALA21">
          <description>
             <name>DQUALA21</name>
@@ -7320,6 +7390,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALA21.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
+      <areaFill id="DQUALA21DOTS">
+         <description>
+            <name>DQUALA21</name>
+            <description>pattern of symbols for a chart with 20m accuracy with full seafloor coverage</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALA21_DOTS.xml</fileName>
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
@@ -7333,6 +7413,16 @@
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
+      <areaFill id="DQUALB01DOTS">
+         <description>
+            <name>DQUALB01</name>
+            <description>pattern of symbols for a chart with 50m accuracy from standard survey based on lines of continuous soundings</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALB01_DOTS.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
       <areaFill id="DQUALC01">
          <description>
             <name>DQUALC01</name>
@@ -7340,6 +7430,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALC01.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
+      <areaFill id="DQUALC01DOTS">
+         <description>
+            <name>DQUALC01</name>
+            <description>pattern of symbols for a low accuracy or incomplete chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALC01_DOTS.xml</fileName>
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
@@ -7353,6 +7453,16 @@
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
+      <areaFill id="DQUALD01DOTS">
+         <description>
+            <name>DQUALD01</name>
+            <description>pattern of symbols for an unreliable chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALD01_DOTS.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
       <areaFill id="DQUALU01">
          <description>
             <name>DQUALU01</name>
@@ -7360,6 +7470,16 @@
             <language>eng</language>
          </description>
          <fileName>DQUALU01.xml</fileName>
+         <fileType>AreaFill</fileType>
+         <fileFormat>XML</fileFormat>
+      </areaFill>
+      <areaFill id="DQUALU01DOTS">
+         <description>
+            <name>DQUALU01</name>
+            <description>pattern of symbols for a chart with quality not assessed</description>
+            <language>eng</language>
+         </description>
+         <fileName>DQUALU01_DOTS.xml</fileName>
          <fileType>AreaFill</fileType>
          <fileFormat>XML</fileFormat>
       </areaFill>
@@ -9431,6 +9551,23 @@
        <type>Boolean</type>
        <default>false</default>
      </parameter>
+	 <parameter id="QBoDMode">
+		<description>
+			 <name>QoBD Appearance</name>
+			 <description>Visualization mode for QoBD CATZOC pattern</description>
+			 <language>eng</language>
+		</description>
+       <type>Integer</type>
+       <default>0</default>
+	   <constrain>
+	       <enumeration value="0">
+		       <label>Diamonds</label>
+		   </enumeration>
+	       <enumeration value="1">
+		       <label>Dots</label>
+		   </enumeration>
+	   </constrain>
+	 </parameter>
      <parameter id="RadarOverlay">
        <description>
          <name>Radar overlay</name>
