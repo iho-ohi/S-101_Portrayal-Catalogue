@@ -4,11 +4,10 @@
 
 -- Land region main entry point.
 function LandRegion(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = 21060
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
-		viewingGroup = 21060
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:12;DisplayPlane:OverRADAR')
 		else
@@ -21,15 +20,12 @@ function LandRegion(feature, featurePortrayal, contextParameters)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if contains(2, feature.categoryOfLandRegion) then
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('AreaFillReference:MARSHES1')
 		elseif contains(12, feature.categoryOfLandRegion) then
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('AreaFillReference:MARSHES1')
 		else
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
@@ -40,15 +36,12 @@ function LandRegion(feature, featurePortrayal, contextParameters)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if contains(2, feature.categoryOfLandRegion) then
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('AreaFillReference:MARSHES1')
 		elseif contains(12, feature.categoryOfLandRegion) then
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			featurePortrayal:AddInstructions('AreaFillReference:MARSHES1')
 		else
-			viewingGroup = 21060
 			featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
@@ -58,15 +51,14 @@ function LandRegion(feature, featurePortrayal, contextParameters)
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		--TODO: Determine S-101 portrayal for LandRegion curve feature.
-		viewingGroup = 21010
-		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+		-- #235: implement LandRegion curve portrayal
+		featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		if feature.featureName[1] and feature.featureName[1].name then
+			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 21060, 9)
 		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('NullInstruction')
 		end
-		featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;PointInstruction:testPCB')
-		Debug.Trace('Warning: S-52 does not define portrayal for LandRegion curve features.')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
