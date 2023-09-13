@@ -177,6 +177,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i254]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/254
 [i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
+[i256]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/256
 [i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
 
 ## Changelog
@@ -203,6 +204,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#214][i214] `LocalMagneticAnomaly` change label color, label vg, and text offset.
   	* [#235][i235] Implement portrayal of `LandRegion` with curve geometry, `RescueStation` with surface geometry.
   	* [#260][i260] `CoastGuardStation` outputs duplicate drawing instructions
+  	* [#256][i256] Ensure `inTheWater` is handled for all applicable feature types
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
