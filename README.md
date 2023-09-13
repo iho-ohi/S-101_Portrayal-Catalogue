@@ -151,6 +151,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 [i210]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/210
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
+[i214]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/214
+[i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 [i216]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/216
 [i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
 [i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
@@ -159,13 +161,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
 [i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
-[i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 [i227]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/227
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
+[i235]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/235
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
@@ -197,6 +199,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#213][i213] Within rule file, case inconsistency between reference and catalog entry for `SEAGRASS.svg`
 	* [#254][i254] valueOfLocalMagneticAnomaly multiple value string fix
  	* [#255][i255] `LightSectored` portrayal results in `?`
+  	* [#214][i214] `LocalMagneticAnomaly` change label color, label vg, and text offset.
+  	* [#235][i235] Implement portrayal of `LandRegion` with curve geometry.
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
