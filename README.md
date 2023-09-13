@@ -200,7 +200,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#254][i254] valueOfLocalMagneticAnomaly multiple value string fix
  	* [#255][i255] `LightSectored` portrayal results in `?`
   	* [#214][i214] `LocalMagneticAnomaly` change label color, label vg, and text offset.
-  	* [#235][i235] Implement portrayal of `LandRegion` with curve geometry.
+  	* [#235][i235] Implement portrayal of `LandRegion` with curve geometry, `RescueStation` with surface geometry.
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
