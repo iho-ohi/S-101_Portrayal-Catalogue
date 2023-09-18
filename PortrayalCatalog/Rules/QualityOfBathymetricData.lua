@@ -43,8 +43,10 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 					end
 					
 					-- CATZOC values defined
-					if (contextParameters.QBoDMode == 1) then
+					if contextParameters.QBoDMode == 1 then
 						featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc .. 'DOTS')
+					elseif contextParameters.QBoDMode == 2 then
+						featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc .. 'LINES')
 					else
 						featurePortrayal:AddInstructions('AreaFillReference:DQUAL' .. catzoc)
 					end

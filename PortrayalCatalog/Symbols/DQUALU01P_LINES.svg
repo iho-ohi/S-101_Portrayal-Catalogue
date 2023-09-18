@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="10mm" height="10mm" viewBox="-5 -5 10 10">
+  <title>DQUALU01P</title>
+  <desc>QoBD U (Lines) - chart with quality not assessed</desc>
+  <metadata>
+    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
+      <Description publisher="IHB" creationDate="2015-03-04" source="S52Preslib4.0" format="S100SVG" version="0.1"/>
+    </S100SVG>
+  </metadata>
+  <rect class="symbolBox layout" fill="none" x="-5" y="-5" height="10" width="10"/>
+  <rect class="svgBox layout" fill="none" x="-5" y="-5" height="10" width="10"/>
+  <path d=" M 2.82,-2.82 L 3.46,-2 L 3.86,-1.02 L 4,0 L 3.86,1.02 L 3.46,2 L 2.82,2.82 L -2.82,2.82 L -3.46,2 L -3.86,1 L -4,0 L -3.86,-1 L -3.46,-2 L -2.82,-2.82 L 2.82,-2.82" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.4;"/>
+  <path d=" M -0.86,-1.13 L -0.85,0.78 L -0.75,1.07 L -0.54,1.27 L -0.23,1.42 L 0.11,1.44 L 0.34,1.34 L 0.63,1.16 L 0.81,0.99 L 0.91,0.75 L 0.91,-1.13" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.4;"/>
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
+</svg>

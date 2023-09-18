@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="16mm" height="16mm" viewBox="-8 -8 16 16">
+  <title>DQUALD01P</title>
+  <desc>QoBD 5 (Dots) - unreliable chart</desc>
+  <metadata>
+    <S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
+      <Description publisher="IHB" creationDate="2015-03-04" source="S52Preslib4.0" format="S100SVG" version="0.1"/>
+    </S100SVG>
+  </metadata>
+  <rect class="symbolBox layout" fill="none" x="-8" y="-8" height="16" width="16"/>
+  <rect class="svgBox layout" fill="none" x="-8" y="-8" height="16" width="16"/> 
+  <path d=" M -8, 1.25 L 1.25,-8" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -8, -1.25 L -1.25,-8" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -1.25, 8 L 8, -1.25" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M 1.25, 8 L 8, 1.25" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -1.25, -8 L 8, 1.25" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M 1.25, -8 L 8, -1.25" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -8, 1.25 L -1.25, 8" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -8, -1.25 L 1.25, 8" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>    
+  <path d=" M -5.25, 5.25 L -2.75 2.75 " class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M 2.75, -2.75 L 5.25 -5.25" class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -1, 1 L 1 -1 " class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M -7, 7 L -8 8 " class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <path d=" M 7, -7 L 8 -8 " class="sl f0 sUNHQL" style="stroke-width: 0.32; stroke-opacity: 0.25;"/>
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
+  
+</svg>
