@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="s100ColorProfile.xsd">
     <colors>
-		<color token="UNHQD" name="light_grey">
+		<color token="UNHQD" name="beige">
 			<description>QoBD Dots Color</description>
 		</color>
-			<color token="UNHQL" name="orange">
+			<color token="UNHQL" name="granite grey">
 			<description>QoBD Lines Color</description>
 		</color>
 		<color token="NODTA" name="grey">
@@ -227,14 +227,14 @@
 	<item token="UNHQL">
       <cie>
         <xyL>
-          <x>0.40</x>
-          <y>0.38</y>
-          <L>47.13</L>
+          <x>0.31</x>
+          <y>0.33</y>
+          <L>21.59</L>
         </xyL>
       </cie>
       <srgb>
-        <red>230</red>
-        <green>170</green>
+        <red>128</red>
+        <green>128</green>
         <blue>128</blue>
       </srgb>
     </item>
@@ -1181,29 +1181,29 @@
 	<item token="UNHQD">
       <cie>
         <xyL>
-          <x>0.33</x>
-          <y>0.34</y>
-          <L>8.69</L>
+          <x>0.35</x>
+          <y>0.35</y>
+          <L>9.57</L>
         </xyL>
       </cie>
       <srgb>
-        <red>89</red>
-        <green>82</green>
+        <red>97</red>
+        <green>85</green>
         <blue>77</blue>
       </srgb>
     </item>
 	<item token="UNHQL">
       <cie>
         <xyL>
-          <x>0.37</x>
-          <y>0.35</y>
-          <L>62</L>
+          <x>0.31</x>
+          <y>0.33</y>
+          <L>11.95</L>
         </xyL>
       </cie>
       <srgb>
-        <red>249</red>
-        <green>195</green>
-        <blue>178</blue>
+        <red>97</red>
+        <green>97</green>
+        <blue>97</blue>
       </srgb>
     </item>
 	<item token="NODTA">
@@ -2149,29 +2149,29 @@
 	<item token="UNHQD">
       <cie>
         <xyL>
-          <x>0.28</x>
-          <y>0.31</y>
-          <L>40</L>
+          <x>0.35</x>
+          <y>0.35</y>
+          <L>1.95</L>
         </xyL>
       </cie>
       <srgb>
-        <red>147</red>
-        <green>174</green>
-        <blue>187</blue>
+        <red>43</red>
+        <green>37</green>
+        <blue>33</blue>
       </srgb>
     </item>
 	<item token="UNHQL">
       <cie>
         <xyL>
-          <x>0.37</x>
-          <y>0.35</y>
-          <L>62</L>
+          <x>0.31</x>
+          <y>0.33</y>
+          <L>2.96</L>
         </xyL>
       </cie>
       <srgb>
-        <red>249</red>
-        <green>195</green>
-        <blue>178</blue>
+        <red>48</red>
+        <green>48</green>
+        <blue>48</blue>
       </srgb>
     </item>
 	<item token="NODTA">
