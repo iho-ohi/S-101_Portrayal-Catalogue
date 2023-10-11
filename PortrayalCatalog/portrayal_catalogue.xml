@@ -1847,16 +1847,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="EMNEWOB1">
-         <description>
-            <name>EMNEWOB1</name>
-            <description>new object</description>
-            <language>eng</language>
-         </description>
-         <fileName>EMNEWOB1.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
       <symbol id="EMNOHO01">
          <description>
             <name>EMNOHO01</name>
@@ -2764,16 +2754,6 @@
             <language>eng</language>
          </description>
          <fileName>MSTCON14.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
-      <symbol id="NEWOBJ01">
-         <description>
-            <name>NEWOBJ01</name>
-            <description>new object</description>
-            <language>eng</language>
-         </description>
-         <fileName>NEWOBJ01.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -7031,16 +7011,6 @@
 		   <fileType>LineStyle</fileType>
 		   <fileFormat>XML</fileFormat>
 	   </lineStyle>
-	   <lineStyle id="NEWOBJ01">
-         <description>
-            <name>NEWOBJ01</name>
-            <description>new object</description>
-            <language>eng</language>
-         </description>
-         <fileName>NEWOBJ01.xml</fileName>
-         <fileType>LineStyle</fileType>
-         <fileFormat>XML</fileFormat>
-      </lineStyle>
       <lineStyle id="NONHODAT">
          <description>
             <name>NONHODAT</name>
