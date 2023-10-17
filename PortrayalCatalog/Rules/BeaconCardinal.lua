@@ -7,7 +7,7 @@ function BeaconCardinal(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
+	if feature.PrimitiveType== PrimitiveType.Point then
 		if feature.beaconShape == 3 and feature.colour[1] == 2 and feature.colour[2] == 6 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then

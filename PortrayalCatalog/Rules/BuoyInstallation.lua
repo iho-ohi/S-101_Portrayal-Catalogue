@@ -7,7 +7,7 @@ function BuoyInstallation(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
+	if feature.PrimitiveType== PrimitiveType.Point then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')

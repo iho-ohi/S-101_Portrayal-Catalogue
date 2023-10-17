@@ -7,7 +7,7 @@ function BuoySafeWater(feature, featurePortrayal, contextParameters)
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
+	if feature.PrimitiveType== PrimitiveType.Point then
 		if feature.buoyShape == 3 and feature.colour[1] == 1 and feature.colour[2] == 3 then
 			viewingGroup = 27010
 			if contextParameters.RadarOverlay then

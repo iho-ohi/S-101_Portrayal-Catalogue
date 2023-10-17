@@ -7,7 +7,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard,115,115;Hover:true')
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
+	if feature.PrimitiveType== PrimitiveType.Point then
 		if feature.beaconShape == 6 and feature.visualProminence == 1 then
 			viewingGroup = 27020
 			if contextParameters.RadarOverlay then
