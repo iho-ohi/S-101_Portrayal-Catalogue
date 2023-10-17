@@ -14,7 +14,14 @@ function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:BOYNDM01')
+
+		if feature.buoyShape == 4 then
+			featurePortrayal:AddInstructions('PointInstruction:BOYPIL60')
+		elseif feature.buoyShape == 5 then
+			featurePortrayal:AddInstructions('PointInstruction:BOYSPR60')
+		else
+			featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
+		end
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)

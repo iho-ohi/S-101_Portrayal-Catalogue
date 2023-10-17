@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <!-- #51: Virtual AIS Aid to Navigation -->
 <!-- #72: Added DEPVAL02 to rules -->
@@ -1080,6 +1080,16 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
+	   <symbol id="BOYPIL60">
+		   <description>
+			   <name>BOYPIL60</name>
+			   <description>Pillar buoy – emergency wreck mark - paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL60.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
 	   <symbol id="BOYSAW12">
          <description>
             <name>BOYSAW12</name>
@@ -1307,6 +1317,16 @@
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR60">
+		   <description>
+			   <name>BOYSPR60</name>
+			   <description>Spar buoy – emergency wreck mark – paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR60.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
@@ -3344,7 +3364,7 @@
 	   <symbol id="MOIRE01">
 		   <description>
 			   <name>MOIRE01</name>
-			   <description>LightSectored (Moiré Effect)</description>
+			   <description>LightSectored (MoirÃ© Effect)</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>MOIRE01.svg</fileName>
