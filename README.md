@@ -181,6 +181,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
 [i267]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/267
 [i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
+[i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -209,6 +210,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#256][i256] Ensure `inTheWater` is handled for all applicable feature types
   	* [#267][i267] Remove `NEWOBJ` symbols and linestyle
   	* [#269][i269] `DockArea` has incorrect priority and viewing group
+  	* [#271][i271] `TOPMAR01.lua` renamed to `TOPMAR02.lua` because it implements the matching S-52 CSP
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
