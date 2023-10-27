@@ -4,7 +4,7 @@
 -- #155
 
 -- Referenced portrayal rules.
-require 'TOPMAR01'
+require 'TOPMAR02'
 
 -- Beacon Special Purpose/General main entry point.
 function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
@@ -143,7 +143,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CAIRNS11')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -156,7 +156,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:NOTBRD11')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -169,7 +169,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -182,7 +182,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNSTK02')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -195,7 +195,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNTOW01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -208,7 +208,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNLTC01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -221,7 +221,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -234,7 +234,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CAIRNS01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -247,7 +247,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
@@ -260,7 +260,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)

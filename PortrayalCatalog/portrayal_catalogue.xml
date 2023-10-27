@@ -9675,13 +9675,13 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="TOPMAR01">
+      <ruleFile id="TOPMAR02">
          <description>
-            <name>TOPMAR01</name>
-            <description>Custom rules TOPMAR01</description>
+            <name>TOPMAR02</name>
+            <description>Custom rules TOPMAR02</description>
             <language>eng</language>
          </description>
-         <fileName>TOPMAR01.lua</fileName>
+         <fileName>TOPMAR02.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>

@@ -3,7 +3,7 @@
 -- #155
 
 -- Referenced portrayal rules.
-require 'TOPMAR01'
+require 'TOPMAR02'
 
 -- Buoy Cardinal main entry point.
 function BuoyCardinal(feature, featurePortrayal, contextParameters)
@@ -82,7 +82,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYCON01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -95,7 +95,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYCAN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -108,7 +108,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYSPH01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -121,7 +121,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYPIL01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -134,7 +134,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -147,7 +147,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYBAR01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -160,7 +160,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYSUP01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-7.02,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -173,7 +173,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
@@ -186,7 +186,7 @@ function BuoyCardinal(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
