@@ -156,7 +156,17 @@
 		   <fileName>AISPHY05.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
-	   </symbol>	   
+	   </symbol>	
+	   <symbol id="ANCBDNG2">
+		   <description>
+			   <name>ANCBDNG2</name>
+			   <description>Anchorage berth for dangerous cargo</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>ANCBDNG2.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>		   
       <symbol id="BCNCAR01">
          <description>
             <name>BCNCAR01</name>
