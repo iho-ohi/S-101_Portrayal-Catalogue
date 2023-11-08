@@ -1,9 +1,10 @@
 -- VirtualAISAidToNavigation portrayal rules file.
 -- #51 
+-- #270
 
 -- Main entry point for feature type.
 function VirtualAISAidToNavigation(feature, featurePortrayal, contextParameters)
-	local viewingGroup = 21010
+	local viewingGroup = 27240
 	
 	if feature.PrimitiveType == PrimitiveType.Point
 	then
