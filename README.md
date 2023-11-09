@@ -168,6 +168,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
 [i235]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/235
+[i236]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/236
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
@@ -179,12 +180,12 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
 [i256]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/256
 [i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
+[i262]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/262
 [i267]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/267
-[i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
-[i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
-[i236]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/236
-[i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 [i268]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/268
+[i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
+[i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
+[i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -217,6 +218,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#236][i236] AnchorBerth categoryOfCargo = 7 (dangerous or hazardous cargo) new symbol ANCBDNG2 [PSWG #116]
   	* [#270][i270] VirtualAISAidToNavigation is using viewing group 21010 ---> changed to 27240
  	* [#268][i268] viewing group 28010 to add pilotage district [PSWG #147]
+  	* [#262][i262] Precision of numeric values on dredged areas
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
