@@ -181,6 +181,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i256]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/256
 [i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
 [i262]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/262
+[i264]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/264
 [i267]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/267
 [i268]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/268
 [i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
@@ -219,6 +220,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#270][i270] VirtualAISAidToNavigation is using viewing group 21010 ---> changed to 27240
  	* [#268][i268] viewing group 28010 to add pilotage district [PSWG #147]
   	* [#262][i262] Precision of numeric values on dredged areas
+  	* [#264][i264] Fix case of symbol file CSS references
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
