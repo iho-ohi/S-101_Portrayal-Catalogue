@@ -34,7 +34,7 @@ end
 -- Date/Time commands support
 --
 
-function ProcessPeriodicDateRanges(featurePortrayal, periodicDateRanges)
+function ProcessPeriodicDateRanges(feature, featurePortrayal, periodicDateRanges)
 	local dateDependent = false
 
 	if periodicDateRanges and #periodicDateRanges > 0 then
@@ -42,7 +42,12 @@ function ProcessPeriodicDateRanges(featurePortrayal, periodicDateRanges)
 			local dateStart = periodicDateRange.dateStart
 			local dateEnd = periodicDateRange.dateEnd
 
-			featurePortrayal:AddInstructions('Date:' .. dateStart .. ',' .. dateEnd .. ';TimeValid:closedInterval')
+			-- #263 Deal with incomplete periodicDateRange
+			if dateStart and dateEnd then
+				featurePortrayal:AddInstructions('Date:' .. dateStart .. ',' .. dateEnd .. ';TimeValid:closedInterval')
+			else
+				Debug.Trace('Warning: ' .. feature.ID .. ' has incomplete periodicDateRange.')
+			end
 		end
 
 		dateDependent = true
@@ -73,7 +78,7 @@ function ProcessFixedDateRange(featurePortrayal, fixedDateRange)
 end
 
 function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
-	local periodicDependent = ProcessPeriodicDateRanges(featurePortrayal, feature['!periodicDateRange'])
+	local periodicDependent = ProcessPeriodicDateRanges(feature, featurePortrayal, feature['!periodicDateRange'])
 	local fixedDependent = ProcessFixedDateRange(featurePortrayal, feature['!fixedDateRange'])
 	
 	return periodicDependent or fixedDependent
