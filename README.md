@@ -172,11 +172,16 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i249]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/249
 [i251]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/251
 [i252]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/252
-[i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i254]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/254
 [i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
+[i275]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/275
 
 ## Changelog
+### 1.2.0 - use with FC 1.2.0
+* Misc changes
+	* [#275][i275]  Update FC to 1.2.0 draft of 10-28-2023
+ * Lua Rule File / Symbol Updates
+
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
 	* [#224][i224]  Update main version number to 1.1.2; intended for developmental use towards 1.2.0
