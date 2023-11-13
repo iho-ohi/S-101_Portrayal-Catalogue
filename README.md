@@ -188,6 +188,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
 [i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 [i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
+[i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 
 ## Changelog
 ### 1.1.2 - use with FC 1.1.0
@@ -223,6 +224,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#262][i262] Precision of numeric values on dredged areas
   	* [#264][i264] Fix case of symbol file CSS references
   	* [#263][i263] Deal with incomplete `periodicDateRange`
+	* [#225][i225] Update version number prior to release 1.1.2-DRAFT to 1.1.2
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
