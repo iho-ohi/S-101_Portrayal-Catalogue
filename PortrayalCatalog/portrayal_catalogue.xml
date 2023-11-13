@@ -21,8 +21,11 @@
 <!-- #215: Update version number prior to release 1.1.1b to 1.1.1 -->
 <!-- #224: Update main version number to 1.1.2 developmental use towards 1.2.0 -->
 <!-- #158: Remove viewing group 21010 from VGL 3 and 3.1, use in IMS "Unknown" -->
+<!-- #268: Change name of viewing group 28010 to add pilotage district, [PSWG #147] -->
+<!-- #225: Update version number prior to release 1.1.2-DRAFT to 1.1.2 -->
+<!-- #274: Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0. -->
 
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.1.2-DRAFT">
+<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-DRAFT">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -156,7 +159,17 @@
 		   <fileName>AISPHY05.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
-	   </symbol>	   
+	   </symbol>	
+	   <symbol id="ANCBDNG2">
+		   <description>
+			   <name>ANCBDNG2</name>
+			   <description>Anchorage berth for dangerous cargo</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>ANCBDNG2.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>		   
       <symbol id="BCNCAR01">
          <description>
             <name>BCNCAR01</name>
@@ -8060,7 +8073,7 @@
       </viewingGroup>
       <viewingGroup id="28010">
          <description>
-            <name>pilot boarding point (PILBOP)</name>
+            <name>pilot boarding point (PILBOP), pilotage district</name>
             <description>Standard: T, U - Services and Small craft facilities</description>
             <language>eng</language>
          </description>

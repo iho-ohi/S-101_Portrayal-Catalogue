@@ -168,6 +168,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
 [i235]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/235
+[i236]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/236
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
@@ -179,11 +180,24 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
 [i256]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/256
 [i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
+[i262]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/262
+[i263]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/263
+[i264]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/264
 [i267]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/267
+[i268]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/268
 [i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
+[i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 [i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
+[i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
+[i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
+
 
 ## Changelog
+### 1.2.0 - use with FC 1.2.0
+* Misc changes
+	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
+* Lua Rule File / Symbol Updates
+
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
 	* [#224][i224]  Update main version number to 1.1.2; intended for developmental use towards 1.2.0
@@ -211,6 +225,13 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#267][i267] Remove `NEWOBJ` symbols and linestyle
   	* [#269][i269] `DockArea` has incorrect priority and viewing group
   	* [#271][i271] `TOPMAR01.lua` renamed to `TOPMAR02.lua` because it implements the matching S-52 CSP
+  	* [#236][i236] AnchorBerth categoryOfCargo = 7 (dangerous or hazardous cargo) new symbol ANCBDNG2 [PSWG #116]
+  	* [#270][i270] VirtualAISAidToNavigation is using viewing group 21010 ---> changed to 27240
+ 	* [#268][i268] viewing group 28010 to add pilotage district [PSWG #147]
+  	* [#262][i262] Precision of numeric values on dredged areas
+  	* [#264][i264] Fix case of symbol file CSS references
+  	* [#263][i263] Deal with incomplete `periodicDateRange`
+	* [#225][i225] Update version number prior to release 1.1.2-DRAFT to 1.1.2
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
