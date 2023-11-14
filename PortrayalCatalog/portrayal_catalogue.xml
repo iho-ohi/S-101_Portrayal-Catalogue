@@ -580,13 +580,13 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
-	   <symbol id="BOYNDM01">
+	   <symbol id="BOYNDM02">
 		   <description>
-			   <name>BOYNDM01</name>
-			   <description>new danger marking buoy</description>
+			   <name>BOYNDM02</name>
+			   <description>emergency wreck marking buoy, simplified</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>BOYNDM01.svg</fileName>
+		   <fileName>BOYNDM02.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>	   
