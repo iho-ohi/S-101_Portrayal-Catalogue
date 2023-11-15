@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <!-- #51: Virtual AIS Aid to Navigation -->
 <!-- #72: Added DEPVAL02 to rules -->
@@ -24,6 +24,7 @@
 <!-- #268: Change name of viewing group 28010 to add pilotage district, [PSWG #147] -->
 <!-- #225: Update version number prior to release 1.1.2-DRAFT to 1.1.2 -->
 <!-- #274: Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0. -->
+<!-- #238: PC updated with color filled paper chart symbols for buoys and beacons. TODO: rule files -->
 
 <portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-DRAFT">
    <alertCatalog id="alertCatalog">
@@ -240,6 +241,126 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="BCNGEN10">
+         <description>
+            <name>BCNGEN10</name>
+            <description>beacon in general,lateral-r,paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BCNGEN10.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="BCNGEN11">
+         <description>
+            <name>BCNGEN11</name>
+            <description>beacon in general,lateral-g,paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BCNGEN11.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="BCNGEN12">
+         <description>
+            <name>BCNGEN12</name>
+            <description>beacon in general,lateral-y,paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BCNGEN12.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+	   <symbol id="BCNGEN13">
+		   <description>
+			   <name>BCNGEN13</name>
+			   <description>beacon in general,black,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN13.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN22">
+		   <description>
+			   <name>BCNGEN22</name>
+			   <description>beacon in general,cardinal-by,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN22.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN23">
+		   <description>
+			   <name>BCNGEN23</name>
+			   <description>beacon in general,cardinal-byb,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN23.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN24">
+		   <description>
+			   <name>BCNGEN24</name>
+			   <description>beacon in general,cardinal-yb,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN24.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN25">
+		   <description>
+			   <name>BCNGEN25</name>
+			   <description>beacon in general,cardinal-yby,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN25.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN30">
+		   <description>
+			   <name>BCNGEN30</name>
+			   <description>beacon in general,lateral-rgr,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN30.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN31">
+		   <description>
+			   <name>BCNGEN31</name>
+			   <description>beacon in general,lateral-grg,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN31.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN40">
+		   <description>
+			   <name>BCNGEN40</name>
+			   <description>beacon in general,isolated danger-brb,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN40.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNGEN50">
+		   <description>
+			   <name>BCNGEN50</name>
+			   <description>beacon in general,safe water-rw,paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNGEN50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="BCNISD21">
          <description>
             <name>BCNISD21</name>
@@ -360,6 +481,126 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BCNTOW10">
+		   <description>
+			   <name>BCNTOW10</name>
+			   <description>beacon tower, lateral-r, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW10.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW11">
+		   <description>
+			   <name>BCNTOW11</name>
+			   <description>beacon tower, lateral-g, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW12">
+		   <description>
+			   <name>BCNTOW12</name>
+			   <description>beacon tower, special purpose-y, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW13">
+		   <description>
+			   <name>BCNTOW13</name>
+			   <description>beacon tower, general-b, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW13.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW22">
+		   <description>
+			   <name>BCNTOW22</name>
+			   <description>beacon tower, cardinal-by, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW22.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW23">
+		   <description>
+			   <name>BCNTOW23</name>
+			   <description>beacon tower, cardinal-byb, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW23.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW24">
+		   <description>
+			   <name>BCNTOW24</name>
+			   <description>beacon tower, cardinal-yb, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW24.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW25">
+		   <description>
+			   <name>BCNTOW25</name>
+			   <description>beacon tower, cardinal-yby, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW25.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW30">
+		   <description>
+			   <name>BCNTOW30</name>
+			   <description>beacon tower, lateral-rgr, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW30.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW31">
+		   <description>
+			   <name>BCNTOW31</name>
+			   <description>beacon tower, lateral-grg, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW31.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW40">
+		   <description>
+			   <name>BCNTOW40</name>
+			   <description>beacon tower, isolated danger-brb, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW40.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BCNTOW50">
+		   <description>
+			   <name>BCNTOW50</name>
+			   <description>beacon tower, safe water-rw, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BCNTOW50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>	   
       <symbol id="BLKADJ01">
          <description>
             <name>BLKADJ01</name>
@@ -380,6 +621,36 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYBAR10">
+		   <description>
+			   <name>BOYBAR10</name>
+			   <description>barrel buoy - red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYBAR10.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYBAR11">
+		   <description>
+			   <name>BOYBAR11</name>
+			   <description>barrel buoy green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYBAR11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYBAR12">
+		   <description>
+			   <name>BOYBAR12</name>
+			   <description>barrel buoy yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYBAR12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>		   
       <symbol id="BOYCAN01">
          <description>
             <name>BOYCAN01</name>
@@ -390,6 +661,56 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYCAN10">
+		   <description>
+			   <name>BOYCAN10</name>
+			   <description>can buoy, red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYCAN10.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYCAN11">
+		   <description>
+			   <name>BOYCAN11</name>
+			   <description>can buoy green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYCAN11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYCAN12">
+		   <description>
+			   <name>BOYCAN12</name>
+			   <description>can buoy yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYCAN12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYCAN30">
+		   <description>
+			   <name>BOYCAN30</name>
+			   <description>can buoy lateral rgr, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYCAN30.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYCAN31">
+		   <description>
+			   <name>BOYCAN31</name>
+			   <description>can buoy, lateral grg, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYCAN31.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>		   
       <symbol id="BOYCAR01">
          <description>
             <name>BOYCAR01</name>
@@ -580,13 +901,13 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
-	   <symbol id="BOYNDM01">
+	   <symbol id="BOYNDM02">
 		   <description>
-			   <name>BOYNDM01</name>
-			   <description>new danger marking buoy</description>
+			   <name>BOYNDM02</name>
+			   <description>emergency wreck marking buoy, simplified</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>BOYNDM01.svg</fileName>
+		   <fileName>BOYNDM02.svg</fileName>
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>	   
@@ -600,6 +921,136 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="BOYPIL10">
+         <description>
+            <name>BOYPIL10</name>
+            <description>pillar buoy, lateral red, paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYPIL10.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+     </symbol>	   
+     <symbol id="BOYPIL10">
+         <description>
+            <name>BOYPIL10</name>
+            <description>pillar buoy, lateral red, paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYPIL10.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+	   <symbol id="BOYPIL11">
+		   <description>
+			   <name>BOYPIL11</name>
+			   <description>pillar buoy, lateral green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL12">
+		   <description>
+			   <name>BOYPIL12</name>
+			   <description>pillar buoy, special purpose, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL22">
+		   <description>
+			   <name>BOYPIL22</name>
+			   <description>pillar buoy, cardinal, black, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL22.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL23">
+		   <description>
+			   <name>BOYPIL23</name>
+			   <description>pillar buoy, cardinal, black, yellow, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL23.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL24">
+		   <description>
+			   <name>BOYPIL24</name>
+			   <description>pillar buoy, cardinal, yellow, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL24.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL25">
+		   <description>
+			   <name>BOYPIL25</name>
+			   <description>pillar buoy, cardinal, yellow, black, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL25.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL30">
+		   <description>
+			   <name>BOYPIL30</name>
+			   <description>pillar buoy, lateral, red, green, red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL30.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL31">
+		   <description>
+			   <name>BOYPIL31</name>
+			   <description>pillar buoy, lateral, green, red, green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL31.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL40">
+		   <description>
+			   <name>BOYPIL40</name>
+			   <description>pillar buoy, isolated danger, black, red, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL40.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL50">
+		   <description>
+			   <name>BOYPIL50</name>
+			   <description>pillar buoy, safe water, red, white, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYPIL60">
+		   <description>
+			   <name>BOYPIL60</name>
+			   <description>Pillar buoy - emergency wreck mark - paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYPIL60.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>			   
       <symbol id="BOYSAW12">
          <description>
             <name>BOYSAW12</name>
@@ -620,6 +1071,46 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYSPH10">
+		   <description>
+			   <name>BOYSPH10</name>
+			   <description>spherical buoy, lateral, red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPH10.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPH11">
+		   <description>
+			   <name>BOYSPH11</name>
+			   <description>spherical buoy, lateral, green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPH11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPH12">
+		   <description>
+			   <name>BOYSPH12</name>
+			   <description>spherical buoy, special purpose, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPH12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPH50">
+		   <description>
+			   <name>BOYSPH50</name>
+			   <description>spherical buoy, safe water, red, white, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPH50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="BOYSPP11">
          <description>
             <name>BOYSPP11</name>
@@ -680,6 +1171,126 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+	   <symbol id="BOYSPR10">
+		   <description>
+			   <name>BOYSPR10</name>
+			   <description>spar buoy, lateral, red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR10.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR11">
+		   <description>
+			   <name>BOYSPR11</name>
+			   <description>spar buoy, lateral, green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR11.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR12">
+		   <description>
+			   <name>BOYSPR12</name>
+			   <description>spar buoy, special purpose, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR12.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR22">
+		   <description>
+			   <name>BOYSPR22</name>
+			   <description>spar buoy, cardinal, black, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR22.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR23">
+		   <description>
+			   <name>BOYSPR23</name>
+			   <description>spar buoy, cardinal, black, yellow, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR23.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR24">
+		   <description>
+			   <name>BOYSPR24</name>
+			   <description>spar buoy, cardinal, yellow, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR24.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR25">
+		   <description>
+			   <name>BOYSPR25</name>
+			   <description>spar buoy, cardinal, yellow, black, yellow, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR25.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR30">
+		   <description>
+			   <name>BOYSPR30</name>
+			   <description>spar buoy, lateral, red, green, red, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR30.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR31">
+		   <description>
+			   <name>BOYSPR31</name>
+			   <description>spar buoy, lateral, green, red, green, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR31.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR40">
+		   <description>
+			   <name>BOYSPR40</name>
+			   <description>spar buoy, isolated danger, black, red, black, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR40.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR50">
+		   <description>
+			   <name>BOYSPR50</name>
+			   <description>spar buoy, safe water, red, white, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR50.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+	   <symbol id="BOYSPR60">
+		   <description>
+			   <name>BOYSPR60</name>
+			   <description>Spar buoy - emergency wreck mark - paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPR60.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>		   
       <symbol id="BOYSUP01">
          <description>
             <name>BOYSUP01</name>
@@ -1861,7 +2472,17 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="EMNOHO01">
+      <symbol id="EMNEWOB1">
+         <description>
+            <name>EMNEWOB1</name>
+            <description>new object</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMNEWOB1.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	
+		<symbol id="EMNOHO01">
          <description>
             <name>EMNOHO01</name>
             <description>Embedded diagnal for non HO boundary</description>
@@ -2704,7 +3325,7 @@
 	   <symbol id="MOIRE01">
 		   <description>
 			   <name>MOIRE01</name>
-			   <description>LightSectored (Moiré Effect)</description>
+			   <description>LightSectored (MoirÃ© Effect)</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>MOIRE01.svg</fileName>
