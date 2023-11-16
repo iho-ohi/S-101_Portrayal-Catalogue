@@ -191,6 +191,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
 [i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
+[i238]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/238
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -198,7 +199,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
-
+	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
