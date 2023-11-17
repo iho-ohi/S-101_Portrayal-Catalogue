@@ -201,7 +201,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
- 	* [#277][i277] Topmarks using viewing group of structure rather than 27050
+ 	* [#277][i277] Topmarks should use viewing group 27050
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
