@@ -169,6 +169,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
 [i235]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/235
 [i236]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/236
+[i238]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/238
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
@@ -191,7 +192,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
 [i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
-[i238]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/238
+[i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -200,6 +201,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
+ 	* [#277][i277] Topmarks using viewing group of structure rather than 27050
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
