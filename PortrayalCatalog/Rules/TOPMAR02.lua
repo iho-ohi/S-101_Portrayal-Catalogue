@@ -85,7 +85,9 @@ function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, is
 			topmarkSymbol = rigidTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF1'
 		end
 
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',27050')
 		featurePortrayal:AddInstructions('PointInstruction:' .. topmarkSymbol)
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup)
 	end
 
 	Debug.StopPerformance('Lua Code - TOPMAR02')
