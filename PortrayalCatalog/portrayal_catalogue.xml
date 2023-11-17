@@ -761,6 +761,36 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="BOYCON10">
+         <description>
+            <name>BOYCON10</name>
+            <description>conical buoy, red, paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYCON10.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	  
+      <symbol id="BOYCON11">
+         <description>
+            <name>BOYCON11</name>
+            <description>conical buoy green, paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYCON11.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	  
+      <symbol id="BOYCON12">
+         <description>
+            <name>BOYCON12</name>
+            <description>conical buoy, yellow, paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYCON12.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	  	   
       <symbol id="BOYDEF03">
          <description>
             <name>BOYDEF03</name>
