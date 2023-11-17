@@ -791,6 +791,26 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>	  	   
+      <symbol id="BOYCON30">
+         <description>
+            <name>BOYCON30</name>
+            <description>conical buoy - lateral red,green,red - paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYCON30.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	  	   
+      <symbol id="BOYCON31">
+         <description>
+            <name>BOYCON31</name>
+            <description>conical buoy - lateral green,red,green - paper-chart</description>
+            <language>eng</language>
+         </description>
+         <fileName>BOYCON30.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>	  	   
       <symbol id="BOYDEF03">
          <description>
             <name>BOYDEF03</name>
