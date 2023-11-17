@@ -4,281 +4,85 @@
 -- #238 [PSWG #117]
 
 -- Referenced portrayal rules.
--- require 'TOPMAR02'  -- not needed #238 [PSWG #117]
+require 'TOPMAR02'
 
 -- Buoy Cardinal main entry point.
 function BuoyCardinal(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = 27010
+	local textViewingGroup = 21
+	local priority = 24
+	local textPriority = 24
+	local displayPlane = 'UnderRADAR'
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
+	if contextParameters.RadarOverlay then
+		displayPlane = 'OverRADAR'
+	end
+	
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
-		if feature.categoryOfCardinalMark == 4 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+	if feature.PrimitiveType == PrimitiveType.Point then
+		if contextParameters.SimplifiedSymbols then
+			if feature.categoryOfCardinalMark == 4 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR04')
+			elseif feature.categoryOfCardinalMark == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR03')
+			elseif feature.categoryOfCardinalMark == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR02')
+			elseif feature.categoryOfCardinalMark == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR01')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('PointInstruction:BOYDEF03')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCAR04')
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.categoryOfCardinalMark == 3 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCAR03')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.categoryOfCardinalMark == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCAR02')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.categoryOfCardinalMark == 1 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCAR01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			textOffsetX = -3.51
+			-- Black,Yellow,Black
+			if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL23')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR23')
+			-- Yellow,Black,Yellow
+			elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL25')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR25')
+			-- Black,Yellow
+			elseif feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL22')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR22')
+			-- Yellow,Black
+			elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL24')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR24')
+			elseif feature.buoyShape == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCON01')
+			elseif feature.buoyShape == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAN01')
+			elseif feature.buoyShape == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPH01')
+			elseif feature.buoyShape == 4 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL01')
+			elseif feature.buoyShape == 5 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
+			elseif feature.buoyShape == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYBAR01')
+			elseif feature.buoyShape == 7 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSUP01')
+				localOffsetX = -7.02
+			elseif feature.buoyShape == 8 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYDEF03')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		end
-	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYPIL22')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYPIL23')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYPIL24')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYPIL25')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR22')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR23')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR24')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR25')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 1 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCON01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 2 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYCAN01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 3 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPH01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 4 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYPIL01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 5 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 6 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYBAR01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 7 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSUP01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-7.02,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		elseif feature.buoyShape == 8 then
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
-			end
-		else
-			viewingGroup = 27010
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
 			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
+				featurePortrayal:AddInstructions('LocalOffset:' .. textOffsetX .. ',3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		end
 	else
