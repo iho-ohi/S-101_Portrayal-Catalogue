@@ -194,6 +194,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
 [i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
 [i278]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/278
+[i279]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/279
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -204,6 +205,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
  	* [#277][i277] Topmarks should use viewing group 27050
   	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
+  	* [#279][i279] Remove color fill from `DockArea`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
