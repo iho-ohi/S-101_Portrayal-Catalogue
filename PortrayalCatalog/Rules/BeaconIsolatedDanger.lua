@@ -24,7 +24,7 @@ function BeaconIsolatedDanger(feature, featurePortrayal, contextParameters)
 		if contextParameters.SimplifiedSymbols then
 			featurePortrayal:AddInstructions('PointInstruction:BCNISD21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
@@ -52,7 +52,7 @@ function BeaconIsolatedDanger(feature, featurePortrayal, contextParameters)
 			end
 			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,' .. textOffsetY .. ';TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,' .. textOffsetY .. ';TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		end

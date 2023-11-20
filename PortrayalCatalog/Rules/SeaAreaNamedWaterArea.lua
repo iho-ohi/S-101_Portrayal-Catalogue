@@ -10,7 +10,7 @@ function SeaAreaNamedWaterArea(feature, featurePortrayal, contextParameters)
 		viewingGroup = 21060
 		featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 21060, 9)
 		else
 			featurePortrayal:AddInstructions('NullInstruction')
@@ -20,7 +20,7 @@ function SeaAreaNamedWaterArea(feature, featurePortrayal, contextParameters)
 		viewingGroup = 21060
 		featurePortrayal:AddInstructions('ViewingGroup:21060;DrawingPriority:9;DisplayPlane:UnderRADAR')
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 21060, 9)
 		else
 			featurePortrayal:AddInstructions('NullInstruction')

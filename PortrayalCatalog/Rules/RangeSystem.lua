@@ -21,7 +21,7 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 			if feature.PrimitiveType == PrimitiveType.Surface then
 				featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
 			elseif feature.PrimitiveType == PrimitiveType.Curve then
-	 			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+	 			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 			end 
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 15)
 		end

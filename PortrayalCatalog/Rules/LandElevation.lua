@@ -14,7 +14,7 @@ function LandElevation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:POSGEN04')
-		featurePortrayal:AddInstructions('LocalOffset:3.51,0;TextAlignVertical:Center;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:3.51,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(feature.elevation, '%3.0f m'), 28, 24, 32010, 12)
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 32010

@@ -14,7 +14,7 @@ function RadarLine(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:SimpleLineStyle('dash',0.64,'TRFCD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25040, 18)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

@@ -17,7 +17,7 @@ function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:AddInstructions('PointInstruction:PILBOP02')
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Plt %s'), 21, 24, 28010, 18)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then

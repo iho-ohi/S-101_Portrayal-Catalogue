@@ -21,7 +21,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.categoryOfConveyor == 2 and feature.radarConspicuous == true then
@@ -35,7 +35,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.categoryOfConveyor == 1 then
@@ -48,7 +48,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.categoryOfConveyor == 2 then
@@ -61,7 +61,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.radarConspicuous == true then
@@ -75,7 +75,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		else
@@ -88,7 +88,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		end
@@ -102,7 +102,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
@@ -115,7 +115,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
@@ -131,7 +131,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
@@ -144,7 +144,7 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')

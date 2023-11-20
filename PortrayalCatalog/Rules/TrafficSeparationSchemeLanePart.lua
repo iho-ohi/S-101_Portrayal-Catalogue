@@ -41,7 +41,7 @@ function TrafficSeparationSchemeLanePart(feature, featurePortrayal, contextParam
 				local text = GetInformationText(information, contextParameters)
 
 				if text then
-					featurePortrayal:AddInstructions('LocalOffset:0,7.02;TextAlignHorizontal:Center;FontSize:10')
+					featurePortrayal:AddInstructions('LocalOffset:0,7.02;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 					featurePortrayal:AddTextInstruction(EncodeString(text), 24, 24, 25010, 18)
 				end
 			end

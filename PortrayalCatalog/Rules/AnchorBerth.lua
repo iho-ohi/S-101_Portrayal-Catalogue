@@ -25,7 +25,7 @@ function AnchorBerth(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 26220, 15)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
@@ -34,7 +34,7 @@ function AnchorBerth(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 26220, 15)
 		end
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGF')

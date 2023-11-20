@@ -19,7 +19,7 @@ function FogSignal(feature, featurePortrayal, contextParameters)
 		-- see dataset 1012J005X0001.000 for example
 		-- debug feature.signalGeneration = 5
 		if contains(feature.signalGeneration, {3,5,6}) then
-		featurePortrayal:AddInstructions('LocalOffset:-14,-5;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:-14,-5;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction('(man)', 23, 24, viewingGroup, 18)
 	end
 	-- end issue #52

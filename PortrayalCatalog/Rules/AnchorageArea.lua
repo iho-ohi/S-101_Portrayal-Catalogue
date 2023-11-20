@@ -35,7 +35,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 		end
 
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:-3.51,-7.02;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:-3.51,-7.02;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 18)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
@@ -47,7 +47,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 9)
 			end
 
@@ -62,7 +62,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,-7.02;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,-7.02;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 9)
 			end
 			RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
@@ -75,7 +75,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE52')
 
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 9)
 			end
 
@@ -89,7 +89,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:ACHARE51')
 
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26220, 9)
 			end
 

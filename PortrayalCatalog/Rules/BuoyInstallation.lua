@@ -22,7 +22,7 @@ function BuoyInstallation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:BOYINB01')
 		end
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, viewingGroup, 24)
 		end
 	else

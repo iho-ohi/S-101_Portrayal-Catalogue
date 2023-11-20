@@ -24,7 +24,7 @@ function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
 		if contextParameters.SimplifiedSymbols then
 			featurePortrayal:AddInstructions('PointInstruction:BOYISD12')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
@@ -56,7 +56,7 @@ function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
 			end
 			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:' .. textOffsetX .. ',3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:' .. textOffsetX .. ',3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		end

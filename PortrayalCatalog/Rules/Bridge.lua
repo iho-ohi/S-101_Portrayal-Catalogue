@@ -78,7 +78,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 		end
@@ -151,7 +151,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')
@@ -226,7 +226,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
 			end
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 12210, 24)
 			end
 			featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')

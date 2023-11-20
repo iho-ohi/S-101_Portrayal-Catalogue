@@ -15,7 +15,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
@@ -25,7 +25,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
@@ -35,7 +35,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
@@ -45,7 +45,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC10')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
@@ -55,7 +55,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
@@ -65,7 +65,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
@@ -75,7 +75,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
@@ -85,7 +85,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC09')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.trafficFlow == 1 then
 			viewingGroup = 25020
@@ -95,7 +95,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.trafficFlow == 2 then
 			viewingGroup = 25020
@@ -105,7 +105,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.trafficFlow == 3 then
 			viewingGroup = 25020
@@ -115,7 +115,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		elseif feature.trafficFlow == 4 then
 			viewingGroup = 25020
@@ -125,7 +125,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC09')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		else
 			viewingGroup = 25020
@@ -135,7 +135,7 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECDEF02')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientationValue, '%03.0f deg'), 11, 24, 25020, 18)
 		end
 	else

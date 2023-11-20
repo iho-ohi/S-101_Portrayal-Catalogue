@@ -27,7 +27,7 @@ function RadarStation(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RDOSTA02')
 			if communicationChannels ~= '' then
-				featurePortrayal:AddInstructions('LocalOffset:0,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:0,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 38010, 15)
 			end
 		else
@@ -49,7 +49,7 @@ function RadarStation(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RDOSTA02')
 			if communicationChannels ~= '' then
-				featurePortrayal:AddInstructions('LocalOffset:0,0;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:0,0;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(communicationChannels), 11, 24, 38010, 15)
 			end
 		else
