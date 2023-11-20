@@ -27,12 +27,12 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
-		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
-		featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
