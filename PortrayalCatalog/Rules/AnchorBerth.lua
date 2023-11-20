@@ -7,8 +7,6 @@
 function AnchorBerth(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	Debug.Break()
-
 	local symbol = 'ACHBRT07'	-- default for categoryOfCargo != 7
 
 	if contains(7, feature.categoryOfCargo) then
