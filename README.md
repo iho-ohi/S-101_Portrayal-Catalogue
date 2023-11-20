@@ -158,10 +158,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
 [i219]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/219
 [i220]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/220
+[i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 [i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
-[i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
+[i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 [i227]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/227
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
@@ -189,7 +190,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
 [i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 [i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
-[i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
+[i272]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/272
 [i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
 [i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
 [i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
@@ -206,6 +207,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
  	* [#277][i277] Topmarks should use viewing group 27050
   	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
   	* [#279][i279] Remove color fill from `DockArea`
+  	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
