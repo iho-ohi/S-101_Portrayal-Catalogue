@@ -196,6 +196,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
 [i278]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/278
 [i279]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/279
+[i280]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/280
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -208,6 +209,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
   	* [#279][i279] Remove color fill from `DockArea`
   	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
+  	* [#280][i280] `TextInstruction` requires a `FontColor` text style command
+
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
