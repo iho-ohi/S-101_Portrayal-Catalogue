@@ -18,7 +18,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR01')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 20 then
@@ -30,7 +30,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR01')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 21 then
@@ -42,7 +42,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR01')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 24 then
@@ -54,7 +54,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYTRI01')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 25 then
@@ -66,7 +66,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYTRI05')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		else
@@ -78,7 +78,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR01')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		end
@@ -92,7 +92,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 20 then
@@ -104,7 +104,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 21 then
@@ -116,7 +116,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 24 then
@@ -128,7 +128,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYTRI21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		elseif feature.topmarkDaymarkShape == 25 then
@@ -140,7 +140,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYTRI25')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		else
@@ -152,7 +152,7 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DAYSQR21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27025, 21)
 			end
 		end

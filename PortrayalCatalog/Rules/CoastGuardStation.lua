@@ -3,6 +3,7 @@
 -- Manually updated for FC 1.0.2 (2022/4/22)
 --
 -- Issues: PC #122
+-- #260
 
 -- Coastguard station main entry point.
 function CoastGuardStation(feature, featurePortrayal, contextParameters)
@@ -21,8 +22,8 @@ function CoastGuardStation(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('PointInstruction:CGUSTA02')
 
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		--PC #122 
-		featurePortrayal:AddInstructions('ViewingGroup:38030;DrawingPriority:21;PointInstruction:CGUSTA02')
+		--PC #122, #260
+		featurePortrayal:AddInstructions('PointInstruction:CGUSTA02')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

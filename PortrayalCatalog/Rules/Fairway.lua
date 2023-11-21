@@ -16,7 +16,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
@@ -29,7 +29,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
@@ -42,7 +42,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
@@ -55,7 +55,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY52')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
@@ -65,7 +65,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			viewingGroup = 26050
 			featurePortrayal:AddInstructions('ViewingGroup:26050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
@@ -80,7 +80,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
@@ -92,7 +92,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
@@ -104,7 +104,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
@@ -116,7 +116,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:FAIRWY52')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
@@ -125,7 +125,7 @@ function Fairway(feature, featurePortrayal, contextParameters)
 			viewingGroup = 26050
 			featurePortrayal:AddInstructions('ViewingGroup:26050;DrawingPriority:12;DisplayPlane:UnderRADAR')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10')
+				featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 26050, 12)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:NAVARE51')

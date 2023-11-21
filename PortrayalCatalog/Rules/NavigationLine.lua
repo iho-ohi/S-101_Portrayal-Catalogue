@@ -15,7 +15,7 @@ function NavigationLine(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientation.orientationValue, '%03.0f deg'), 11, 24, 25010, 12)
 		elseif feature.categoryOfNavigationLine == 2 then
 			viewingGroup = 25010
@@ -26,7 +26,7 @@ function NavigationLine(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.orientation.orientationValue, '%03.0f deg'), 11, 24, 25010, 12)
 		else
 			viewingGroup = 25010

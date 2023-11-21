@@ -3,14 +3,14 @@
 
 -- PC Issue #73, PSWG #102
 -- PC issue #254
+-- PC issue #214
 
 -- Local magnetic anomaly main entry point.
 function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = 31080
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
-		viewingGroup = 31080
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:OverRADAR')
 		else
@@ -20,22 +20,19 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 		
 
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		viewingGroup = 31080
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG01')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		viewingGroup = 31080
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
-		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
+		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		viewingGroup = 31080
 		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
-		featurePortrayal:AddInstructions('LineInstruction:NAVARE51')
+		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
@@ -46,26 +43,31 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 
 	local magCount = #valueOfLocalMagneticAnomaly
 	
-	featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHMGF')
+	if feature.PrimitiveType == PrimitiveType.Surface then
+		-- LOCMAG51 has a large offset, offset label to match
+		featurePortrayal:AddInstructions('LocalOffset:3.51,-22.64;FontSize:10;FontColor:CHBLK')
+	else
+		featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
+	end
 
 	if magCount == 1 then
 		if valueOfLocalMagneticAnomaly[1].magneticAnomalyValue ~= nil then
 			if valueOfLocalMagneticAnomaly[1].magneticAnomalyValue ~= unknownValue then
 				if valueOfLocalMagneticAnomaly[1].referenceDirection ~= nil then
 					if valueOfLocalMagneticAnomaly[1].referenceDirection == 5 then
-						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(%.0f°E)'), 30, 24, viewingGroup, 12)
+						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(%.0f°E)'), 27, 24, viewingGroup, 12)
 					elseif  valueOfLocalMagneticAnomaly[1].referenceDirection == 13 then -- West
-						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(%.0f°W)'), 30, 24, viewingGroup, 12)
+						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(%.0f°W)'), 27, 24, viewingGroup, 12)
 					elseif valueOfLocalMagneticAnomaly[1].referenceDirection == unknownValue then
-						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(±%.0f°)'), 30, 24, viewingGroup, 12)
+						featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(±%.0f°)'), 27, 24, viewingGroup, 12)
 					end
 				else
-					featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(±%.0f°)'), 30, 24, viewingGroup, 12)
+					featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, '(±%.0f°)'), 27, 24, viewingGroup, 12)
 				end
 			else
-				-- depict text "Local Magnetic Anomaly" - Colour (CHMGF to match LOCMAG51)
-				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHMGF')
-				featurePortrayal:AddTextInstruction("Local Magnetic Anomaly", 30, 24, viewingGroup, 12)
+				-- depict text "Local Magnetic Anomaly"
+				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction("Local Magnetic Anomaly", 27, 24, viewingGroup, 12)
 			end
 		end
 	elseif magCount == 2 then
@@ -84,18 +86,18 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 					if valueOfLocalMagneticAnomaly[2].referenceDirection == 13 then dir2 = 'W' end
 
 						txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue:ToNumber(), dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue:ToNumber(), dir2)
-						featurePortrayal:AddTextInstruction(txtStr, 30, 24, viewingGroup, 12)
-						--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'),30, 24, ViewingGroup, 12)
+						featurePortrayal:AddTextInstruction(txtStr, 27, 24, viewingGroup, 12)
+						--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'), 27, 24, ViewingGroup, 12)
 
 				else
 					txtStr = string.format('(%.0f°%s/%.0f°%s)',valueOfLocalMagneticAnomaly[1].magneticAnomalyValue:ToNumber(), dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue:ToNumber(), dir2)
-					featurePortrayal:AddTextInstruction(txtStr, 30, 24, viewingGroup, 12)
-					--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'),30, 24, ViewingGroup, 12)
+					featurePortrayal:AddTextInstruction(txtStr, 27, 24, viewingGroup, 12)
+					--featurePortrayal:AddTextInstruction(EncodeString(valueOfLocalMagneticAnomaly[1].magneticAnomalyValue, dir1, valueOfLocalMagneticAnomaly[2].magneticAnomalyValue, dir2, '(%.0f°%s/%.0f°%s)'), 27, 24, ViewingGroup, 12)
 
 				end
 			elseif valueOfLocalMagneticAnomaly[1].magneticAnomalyValue == unknownValue or valueOfLocalMagneticAnomaly[2].magneticAnomalyValue == unknownValue then
-				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHMGF')
-				featurePortrayal:AddTextInstruction("Local Magnetic Anomaly", 30, 24, viewingGroup, 12)
+				featurePortrayal:AddInstructions('TextAlignVertical:Center;FontWeight:Light;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction("Local Magnetic Anomaly", 27, 24, viewingGroup, 12)
 			end
 		else
 			error('Invalid primitive type or mariner settings passed to portrayal')

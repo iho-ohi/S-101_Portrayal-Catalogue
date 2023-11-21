@@ -1,4 +1,4 @@
--- TOPMAR01 conditional symbology rules file.
+-- TOPMAR02 conditional symbology rules file.
 
 local floatingTopmarks =
 {
@@ -75,8 +75,8 @@ local rigidTopmarks =
 }
 
 -- Main entry point for CSP.
-function TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, isFloating)
-	Debug.StartPerformance('Lua Code - TOPMAR01')
+function TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, isFloating)
+	Debug.StartPerformance('Lua Code - TOPMAR02')
 
 	if feature.topmark then
 		if isFloating then
@@ -85,8 +85,10 @@ function TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, is
 			topmarkSymbol = rigidTopmarks[feature.topmark.topmarkDaymarkShape] or 'TMARDEF1'
 		end
 
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',27050')
 		featurePortrayal:AddInstructions('PointInstruction:' .. topmarkSymbol)
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup)
 	end
 
-	Debug.StopPerformance('Lua Code - TOPMAR01')
+	Debug.StopPerformance('Lua Code - TOPMAR02')
 end

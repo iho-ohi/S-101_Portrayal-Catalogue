@@ -17,7 +17,7 @@ function DredgedArea(feature, featurePortrayal, contextParameters)
 		DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 		-- Dredged Date (row 47 main) #56
-		featurePortrayal:AddInstructions('LocalOffset:0,-3.51;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontSlant:Italics')
+		featurePortrayal:AddInstructions('LocalOffset:0,-3.51;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontSlant:Italics;FontColor:CHBLK')
 
 		local drmv = ''
 		local date = ''
@@ -29,7 +29,8 @@ function DredgedArea(feature, featurePortrayal, contextParameters)
 		-- END DEBUG
 
 		if feature.depthRangeMinimumValue ~= nil then
-			drmv = EncodeString(feature.depthRangeMinimumValue, 'dredged to %0.1fm')
+			-- #262 precision of numeric values
+			drmv = EncodeString(feature.depthRangeMinimumValue, 'dredged to %gm')
 			
 			if feature.dredgedDate then 
 				date = EncodeString(feature.dredgedDate, ' (%s)')

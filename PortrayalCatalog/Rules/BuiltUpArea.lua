@@ -15,7 +15,7 @@ function BuiltUpArea(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:AddInstructions('PointInstruction:BUAARE02')
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,0;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,0;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22240, 9)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
@@ -24,7 +24,7 @@ function BuiltUpArea(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ViewingGroup:22240;DrawingPriority:9;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22240, 9)
 		end
 		featurePortrayal:SimpleLineStyle('solid',0.32,'LANDF')

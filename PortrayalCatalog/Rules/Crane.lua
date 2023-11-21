@@ -5,7 +5,8 @@
 -- Issues: PSWG #75, PC #106
 -- #165
 -- #210
---
+-- #256
+
 -- Crane main entry point.
 function Crane(feature, featurePortrayal, contextParameters)
 
@@ -17,6 +18,11 @@ function Crane(feature, featurePortrayal, contextParameters)
 		viewingGroup = 22220
 		symbol = '3'
 		colour = 'CHBLK'
+	end
+	
+	-- #256
+	if feature.inTheWater then
+		viewingGroup = 12200
 	end
 
 	if feature.PrimitiveType == PrimitiveType.Point then

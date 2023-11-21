@@ -17,7 +17,7 @@ function CurrentNonGravitational(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 15)
 		elseif feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
@@ -49,7 +49,7 @@ function CurrentNonGravitational(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 15)
 		elseif feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060

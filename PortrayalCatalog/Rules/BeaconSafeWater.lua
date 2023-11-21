@@ -1,180 +1,81 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
+-- #238 [PSWG #117]
 
 -- Referenced portrayal rules.
-require 'TOPMAR01'
+require 'TOPMAR02'
 
 -- Beacon Safe Water main entry point.
 function BeaconSafeWater(feature, featurePortrayal, contextParameters)
-	local viewingGroup
+	local viewingGroup = 27020
+	local textViewingGroup = 21
+	local priority = 24
+	local textPriority = 24
+	local displayPlane = 'UnderRADAR'
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
+	if contextParameters.RadarOverlay then
+		displayPlane = 'OverRADAR'
+	end
+	
+	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)
 
-	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
-		if feature.beaconShape == 1 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
+	if feature.PrimitiveType == PrimitiveType.Point then
+		if contextParameters.SimplifiedSymbols then
+			if feature.beaconShape == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
+			elseif feature.beaconShape == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
+			elseif feature.beaconShape == 7 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
+			elseif feature.beaconShape == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
+			elseif contains(11, feature.natureOfConstruction) then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
+			elseif feature.beaconShape == 5 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 2 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 7 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 3 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif contains(11, feature.natureOfConstruction) then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 5 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
+			local textOffsetY = 3.51
+			if feature.beaconShape == 3 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNTOW50')
+			elseif feature.beaconShape == 3 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNTOW50')
+			elseif feature.beaconShape == 5 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN50')
+			elseif feature.beaconShape == 5 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN50')
+			elseif feature.beaconShape == 7 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN50')
+			elseif feature.beaconShape == 7 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN50')
+			elseif feature.beaconShape == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNSTK02')
+			elseif feature.beaconShape == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNTOW01')
+				textOffsetY = 7.02
+			elseif feature.beaconShape == 4 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNLTC01')
+				textOffsetY = 7.02
+			elseif feature.beaconShape == 5 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
+				textOffsetY = 7.02
+			elseif feature.beaconShape == 7 then
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
+				textOffsetY = 7.02
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, false)
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		end
-	elseif feature.PrimitiveType == PrimitiveType.Point then
-		if feature.beaconShape == 1 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNSTK02')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 3 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNTOW01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif contains(11, feature.natureOfConstruction) then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNLTC01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 5 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		elseif feature.beaconShape == 7 then
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,7.02;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
-			end
-		else
-			viewingGroup = 27020
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:OverRADAR')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:27020;DrawingPriority:24;DisplayPlane:UnderRADAR')
-			end
-			featurePortrayal:AddInstructions('PointInstruction:BCNGEN03')
-			TOPMAR01(feature, featurePortrayal, contextParameters, viewingGroup, false)
-			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10')
-				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), 21, 24, 27020, 24)
+				featurePortrayal:AddInstructions('LocalOffset:-3.51,' .. textOffsetY .. ';TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'bn %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		end
 	else

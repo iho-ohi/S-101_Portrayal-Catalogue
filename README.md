@@ -151,21 +151,26 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i209]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/209
 [i210]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/210
 [i213]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/213
+[i214]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/214
+[i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 [i216]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/216
 [i217]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/217
 [i218]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/218
 [i219]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/219
 [i220]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/220
+[i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
 [i222]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/222
 [i223]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/223
-[i221]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/221
-[i215]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/215
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
+[i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 [i227]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/227
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
+[i235]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/235
+[i236]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/236
+[i238]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/238
 [i240]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/240
 [i243]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/243
 [i245]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/245
@@ -174,13 +179,38 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i252]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/252
 [i254]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/254
 [i255]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/255
-[i275]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/275
+[i256]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/256
+[i260]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/260
+[i262]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/262
+[i263]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/263
+[i264]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/264
+[i267]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/267
+[i268]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/268
+[i269]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/269
+[i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
+[i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
+[i272]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/272
+[i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
+[i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
+[i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
+[i278]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/278
+[i279]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/279
+[i280]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/280
+[i281]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/281
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
 * Misc changes
-	* [#275][i275]  Update FC to 1.2.0 draft of 10-28-2023
- * Lua Rule File / Symbol Updates
+	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
+* Lua Rule File / Symbol Updates
+	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
+	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
+ 	* [#277][i277] Topmarks should use viewing group 27050
+  	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
+  	* [#279][i279] Remove color fill from `DockArea`
+  	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
+  	* [#280][i280] `TextInstruction` requires a `FontColor` text style command
+  	* [#281][i281] `AnchorBerth` has active Debug.Break() statement
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
@@ -202,6 +232,20 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#213][i213] Within rule file, case inconsistency between reference and catalog entry for `SEAGRASS.svg`
 	* [#254][i254] valueOfLocalMagneticAnomaly multiple value string fix
  	* [#255][i255] `LightSectored` portrayal results in `?`
+  	* [#214][i214] `LocalMagneticAnomaly` change label color, label vg, and text offset.
+  	* [#235][i235] Implement portrayal of `LandRegion` with curve geometry, `RescueStation` with surface geometry.
+  	* [#260][i260] `CoastGuardStation` outputs duplicate drawing instructions
+  	* [#256][i256] Ensure `inTheWater` is handled for all applicable feature types
+  	* [#267][i267] Remove `NEWOBJ` symbols and linestyle
+  	* [#269][i269] `DockArea` has incorrect priority and viewing group
+  	* [#271][i271] `TOPMAR01.lua` renamed to `TOPMAR02.lua` because it implements the matching S-52 CSP
+  	* [#236][i236] AnchorBerth categoryOfCargo = 7 (dangerous or hazardous cargo) new symbol ANCBDNG2 [PSWG #116]
+  	* [#270][i270] VirtualAISAidToNavigation is using viewing group 21010 ---> changed to 27240
+ 	* [#268][i268] viewing group 28010 to add pilotage district [PSWG #147]
+  	* [#262][i262] Precision of numeric values on dredged areas
+  	* [#264][i264] Fix case of symbol file CSS references
+  	* [#263][i263] Deal with incomplete `periodicDateRange`
+	* [#225][i225] Update version number prior to release 1.1.2-DRAFT to 1.1.2
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)

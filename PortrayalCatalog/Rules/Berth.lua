@@ -25,7 +25,7 @@ function Berth(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:UnderRADAR')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol) 
-		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 32440, 15)
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 32440
@@ -37,14 +37,14 @@ function Berth(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
-		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 32440, 15)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 32440
 		featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:9;DisplayPlane:UnderRADAR')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
-		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10')
+		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 32440, 9)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
