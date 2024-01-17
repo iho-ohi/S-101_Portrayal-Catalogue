@@ -199,6 +199,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i280]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/280
 [i281]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/281
 
+
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
 * Misc changes
@@ -212,6 +213,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
   	* [#280][i280] `TextInstruction` requires a `FontColor` text style command
   	* [#281][i281] `AnchorBerth` has active Debug.Break() statement
+  	* [#276][i276] Re-opened for additional fix: Emergency wreck marking buoy (EWMB) [PSWG #117]
+
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes

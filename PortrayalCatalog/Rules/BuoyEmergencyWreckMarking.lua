@@ -5,6 +5,7 @@
 
 function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
   local viewingGroup
+  local symbol = 'BOYGEN03'
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')
   
@@ -15,7 +16,17 @@ function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 		end
-		featurePortrayal:AddInstructions('PointInstruction:BOYNDM02')
+
+		if feature.buoyShape == 3 then
+			symbol = 'BOYSPH60'
+		elseif feature.buoyShape == 4 then
+			symbol = 'BOYPIL60'
+		elseif feature.buoyShape == 5 then
+			symbol = 'BOYSPR60'
+		end
+
+		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
+
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), 21, 24, 27010, 24)
