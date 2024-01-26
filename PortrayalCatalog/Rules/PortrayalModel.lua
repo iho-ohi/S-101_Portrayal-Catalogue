@@ -208,7 +208,7 @@ function CreateFeaturePortrayal(featureReference)
 
 	--
 	-- S-52 PresLib Ed 4.0.3 Part I_Clean.pdf, page 42
-	-- LC – Showline (simple linestyle).
+	-- LC ï¿½ Showline (simple linestyle).
 	--
 	function featurePortrayal:SimpleLineStyle(lineType, width, colour)
 		CheckSelf(self, featurePortrayal.Type)
@@ -242,19 +242,31 @@ function CreateDrawingInstructions()
 	return drawingInstructions;
 end
 
--- Updated per #61
--- TODO: add national language support
--- see https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104
--- and https://github.com/iho-ohi/S-101-Documentation-and-FC/issues/60
-function GetFeatureName(feature, contextParameters)
 
-	for _, featureName in ipairs(feature.featureName) do
-		if featureName.displayName == nil or featureName.displayName == true and featureName.name and featureName.name ~= '' then
+-- Re-introduced supporting PSWG #104, PC #144
+function GetFeatureName(feature, contextParameters)
+	for cnt, featureName in ipairs(feature.featureName) do
+
+		if featureName.nameUsage == 3 then  -- no chart display
+			return nil
+		end
+		
+		-- default name display which should be first valid name entry
+		if featureName.nameUsage == 1 and featureName.name and featureName.name ~= '' then
+			return featureName.name
+		end
+		
+		if featureName.nameUsage == 2 and contextParameters.NationalLanguage == featureName.language and featureName.name and featureName.name ~= '' then
+			return featureName.name
+		end
+		-- default if no nameUsage is encoded
+		if featureName.name and featureName.name ~= '' then
 			return featureName.name
 		end
 	end
-
+	
 	return nil
+
 end
 
 -- Updated per #61 - temporarily remove NationalLanguage context parameter
