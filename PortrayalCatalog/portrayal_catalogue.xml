@@ -26,7 +26,7 @@
 <!-- #274: Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0. -->
 <!-- #238: PC updated with color filled paper chart symbols for buoys and beacons. TODO: rule files -->
 
-<portrayalCatalog xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-DRAFT">
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.1" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-DRAFT">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>
@@ -12428,4 +12428,4 @@
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
     </rules>
-</portrayalCatalog>
+</pc:portrayalCatalog>
