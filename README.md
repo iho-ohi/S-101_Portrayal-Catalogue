@@ -100,6 +100,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i141]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/141
 [i142]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/142
 [i143]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/143
+[i144]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/144
 [i145]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/145
 [i153]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/153
 [i154]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/154
@@ -205,7 +206,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i289]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/289
 [i290]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/290
 [i291]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/291
-[i144]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/144
+[i292]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/292
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -229,6 +230,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#281][i281] `AnchorBerth` has active Debug.Break() statement
   	* [#276][i276] Re-opened for additional fix: Emergency wreck marking buoy (EWMB) [PSWG #117]
   	* [#144][i144] Display parameters for 'New Text' [PSWG #104]
+  	* [#292][i292] Rename buoy and beacon features
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
