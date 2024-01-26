@@ -208,6 +208,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i291]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/291
 [i292]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/292
 [i293]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/293
+[i294]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/294
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -233,6 +234,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#144][i144] Display parameters for 'New Text' [PSWG #104]
   	* [#292][i292] Rename buoy and beacon features
   	* [#293][i293] Add new feature `Dolphin`
+  	* [#294][i294] Add new feature `Bollard`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
