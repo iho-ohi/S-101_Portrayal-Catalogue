@@ -165,6 +165,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 [i227]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/227
+[i229]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/229
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
 [i233]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/233
@@ -199,12 +200,15 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i280]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/280
 [i281]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/281
 [i282]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/282
+[i287]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/287
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
 * Misc changes
 	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
  	* [#282][i282]  Update FC to 1.2.0 from IHO GI registry.
+  	* [#229][i229]  Update alert catalog to S-100 5.1 schema
+  	* [#287][i287]  Update AreaFills to S-100 5.1 schema
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
