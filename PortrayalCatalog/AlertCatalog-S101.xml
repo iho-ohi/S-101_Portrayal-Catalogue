@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- S-101 ALERT CATALOGUE -->
-<alertCatalog version="1.0">
+<ac:alertCatalog xmlns:ac="http://www.iho.int/S100AlertCatalog/5.1" version="1.1">
 
     <messages>
 		<!-- Begin messages triggered by an alert for display in alert management or route plan -->
@@ -79,7 +79,7 @@
     </messages>
 	
 	<highlights>
-		<highlight id="SafetyContourHighlight" optional="true" msg="SafetyContourHighlightOffMsg">
+		<highlight id="SafetyContourHighlight" style="AlarmHighlight" optional="true" msg="SafetyContourHighlightOffMsg">
             <description>
                 <name>Safety Contour Highlight</name>
                 <description>Used to turn on or off the graphical highlighting of alerts triggered by the safety contour.</description>
@@ -87,7 +87,7 @@
             </description>
 			<viewingGroup ref="53010"/>
 		</highlight>
-		<highlight id="NavHazardsHighlight" optional="true" msg="NavHazardsHighlightOffMsg">
+		<highlight id="NavHazardsHighlight" style="CautionHighlight" optional="true" msg="NavHazardsHighlightOffMsg">
             <description>
                 <name>Nav Hazards Highlight</name>
                 <description>Used to turn on or off the graphical highlighting of alerts triggered by navigational hazards.</description>
@@ -96,7 +96,7 @@
 			<viewingGroup ref="53011"/>
 		</highlight>
 		<!-- TODO: Determine if optional attribute should be true. IEC 61174 does not indicate disabling highlight is optional. -->
-		<highlight id="ProhAreHighlight" msg="ProhAreHighlightOffMsg">
+		<highlight id="ProhAreHighlight" style="CautionHighlight" msg="ProhAreHighlightOffMsg">
             <description>
                 <name>Proh Are Highlight</name>
                 <description>Used to turn on or off the graphical highlighting of alerts triggered by prohibited areas or areas with special conditions.</description>
@@ -145,7 +145,7 @@
                 <priority>Alarm</priority>
             </routeMonitor>
             <routePlan msg="CrossingSafetyContourMsg" highlight="SafetyContourHighlight">
-                <priority>Alarm</priority>
+                <priority>Indication</priority>
             </routePlan>
         </alert>
         <alert id="ProhAre">
@@ -182,4 +182,4 @@
             </routePlan>
 		</alert>
     </alerts>
-</alertCatalog>
+</ac:alertCatalog>
