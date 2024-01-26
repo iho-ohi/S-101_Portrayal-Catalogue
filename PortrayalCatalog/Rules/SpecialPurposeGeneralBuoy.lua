@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Buoy Special Purpose/General main entry point.
-function BuoySpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
+function SpecialPurposeGeneralBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24

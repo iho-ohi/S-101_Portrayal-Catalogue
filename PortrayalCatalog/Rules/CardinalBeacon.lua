@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Beacon Cardinal main entry point.
-function BeaconCardinal(feature, featurePortrayal, contextParameters)
+function CardinalBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24

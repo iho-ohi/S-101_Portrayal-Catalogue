@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Beacon Safe Water main entry point.
-function BeaconSafeWater(feature, featurePortrayal, contextParameters)
+function SafeWaterBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24

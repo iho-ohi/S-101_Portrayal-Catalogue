@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Beacon Isolated Danger main entry point.
-function BeaconIsolatedDanger(feature, featurePortrayal, contextParameters)
+function IsolatedDangerBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24

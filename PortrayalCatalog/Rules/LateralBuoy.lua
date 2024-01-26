@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Buoy Lateral main entry point.
-function BuoyLateral(feature, featurePortrayal, contextParameters)
+function LateralBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24

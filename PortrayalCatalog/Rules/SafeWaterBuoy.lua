@@ -7,7 +7,7 @@
 require 'TOPMAR02'
 
 -- Buoy Safe Water main entry point.
-function BuoySafeWater(feature, featurePortrayal, contextParameters)
+function SafeWaterBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24

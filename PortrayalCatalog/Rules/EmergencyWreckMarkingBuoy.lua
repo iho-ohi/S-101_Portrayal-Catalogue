@@ -3,7 +3,7 @@
 -- #162
 -- #276, [PSWG #117]
 
-function BuoyEmergencyWreckMarking(feature, featurePortrayal, contextParameters)
+function EmergencyWreckMarkingBuoy(feature, featurePortrayal, contextParameters)
   local viewingGroup
   local symbol = 'BOYGEN03'
 

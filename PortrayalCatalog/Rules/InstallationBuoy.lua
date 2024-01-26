@@ -5,7 +5,7 @@
 
 
 -- Buoy Installation main entry point.
-function BuoyInstallation(feature, featurePortrayal, contextParameters)
+function InstallationBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 
 	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true')

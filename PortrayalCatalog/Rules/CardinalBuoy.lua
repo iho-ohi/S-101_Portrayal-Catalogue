@@ -4,10 +4,10 @@
 -- #238 [PSWG #117]
 
 -- Referenced portrayal rules.
--- require 'TOPMAR02'  -- not needed #238 [PSWG #117]
+require 'TOPMAR02'
 
--- Buoy Isolated Danger main entry point.
-function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
+-- Buoy Cardinal main entry point.
+function CardinalBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24
@@ -22,18 +22,43 @@ function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.SimplifiedSymbols then
-			featurePortrayal:AddInstructions('PointInstruction:BOYISD12')
+			if feature.categoryOfCardinalMark == 4 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR04')
+			elseif feature.categoryOfCardinalMark == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR03')
+			elseif feature.categoryOfCardinalMark == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR02')
+			elseif feature.categoryOfCardinalMark == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYCAR01')
+			else
+				featurePortrayal:AddInstructions('PointInstruction:BOYDEF03')
+			end
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
 			textOffsetX = -3.51
-			-- Black,Red,Black
-			if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 3 and feature.colour[3] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYPIL40')
-			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 3 and feature.colour[3] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYSPR40')
+			-- Black,Yellow,Black
+			if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL23')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 and feature.colour[3] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR23')
+			-- Yellow,Black,Yellow
+			elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL25')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 and feature.colour[3] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR25')
+			-- Black,Yellow
+			elseif feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL22')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 6 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR22')
+			-- Yellow,Black
+			elseif feature.buoyShape == 4 and feature.colour[1] == 6 and feature.colour[2] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL24')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 6 and feature.colour[2] == 2 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR24')
 			elseif feature.buoyShape == 1 then
 				featurePortrayal:AddInstructions('PointInstruction:BOYCON01')
 			elseif feature.buoyShape == 2 then
@@ -48,7 +73,7 @@ function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BOYBAR01')
 			elseif feature.buoyShape == 7 then
 				featurePortrayal:AddInstructions('PointInstruction:BOYSUP01')
-				textOffsetX = -7.02
+				localOffsetX = -7.02
 			elseif feature.buoyShape == 8 then
 				featurePortrayal:AddInstructions('PointInstruction:BOYSPR01')
 			else

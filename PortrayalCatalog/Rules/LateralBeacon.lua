@@ -8,7 +8,7 @@
 require 'TOPMAR02'
 
 -- Beacon Lateral main entry point.
-function BeaconLateral(feature, featurePortrayal, contextParameters)
+function LateralBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24

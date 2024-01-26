@@ -4,7 +4,7 @@
 <!-- #72: Added DEPVAL02 to rules -->
 <!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18 -->
 <!-- #155: Update context parameters -->
-<!-- #162: Rename BuoyNewDangerMarking to BuoyEmergencyWreckMarking -->
+<!-- #162: Rename BuoyNewDangerMarking to EmergencyWreckMarkingBuoy -->
 <!-- #172: Rename TrafficSeparationZone to SeparationZoneOrLine, remove TrafficSeparationLine -->
 <!-- #134: Add Helipad -->
 <!-- #119: Independent Mariner Selections -->
@@ -10460,57 +10460,57 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BeaconCardinal">
+      <ruleFile id="CardinalBeacon">
          <description>
-            <name>BeaconCardinal</name>
-            <description>Rules for feature type BeaconCardinal</description>
+            <name>CardinalBeacon</name>
+            <description>Rules for feature type CardinalBeacon</description>
             <language>eng</language>
          </description>
-         <fileName>BeaconCardinal.lua</fileName>
+         <fileName>CardinalBeacon.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BeaconIsolatedDanger">
+      <ruleFile id="IsolatedDangerBeacon">
          <description>
-            <name>BeaconIsolatedDanger</name>
-            <description>Rules for feature type BeaconIsolatedDanger</description>
+            <name>IsolatedDangerBeacon</name>
+            <description>Rules for feature type IsolatedDangerBeacon</description>
             <language>eng</language>
          </description>
-         <fileName>BeaconIsolatedDanger.lua</fileName>
+         <fileName>IsolatedDangerBeacon.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BeaconLateral">
+      <ruleFile id="LateralBeacon">
          <description>
-            <name>BeaconLateral</name>
-            <description>Rules for feature type BeaconLateral</description>
+            <name>LateralBeacon</name>
+            <description>Rules for feature type LateralBeacon</description>
             <language>eng</language>
          </description>
-         <fileName>BeaconLateral.lua</fileName>
+         <fileName>LateralBeacon.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BeaconSafeWater">
+      <ruleFile id="SafeWaterBeacon">
          <description>
-            <name>BeaconSafeWater</name>
-            <description>Rules for feature type BeaconSafeWater</description>
+            <name>SafeWaterBeacon</name>
+            <description>Rules for feature type SafeWaterBeacon</description>
             <language>eng</language>
          </description>
-         <fileName>BeaconSafeWater.lua</fileName>
+         <fileName>SafeWaterBeacon.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BeaconSpecialPurposeGeneral">
+      <ruleFile id="SpecialPurposeGeneralBeacon">
          <description>
-            <name>BeaconSpecialPurposeGeneral</name>
-            <description>Rules for feature type BeaconSpecialPurposeGeneral</description>
+            <name>SpecialPurposeGeneralBeacon</name>
+            <description>Rules for feature type SpecialPurposeGeneralBeacon</description>
             <language>eng</language>
          </description>
-         <fileName>BeaconSpecialPurposeGeneral.lua</fileName>
+         <fileName>SpecialPurposeGeneralBeacon.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
@@ -10559,79 +10559,79 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BuoyCardinal">
+      <ruleFile id="CardinalBuoy">
          <description>
-            <name>BuoyCardinal</name>
-            <description>Rules for feature type BuoyCardinal</description>
+            <name>CardinalBuoy</name>
+            <description>Rules for feature type CardinalBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoyCardinal.lua</fileName>
+         <fileName>CardinalBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BuoyInstallation">
+      <ruleFile id="InstallationBuoy">
          <description>
-            <name>BuoyInstallation</name>
-            <description>Rules for feature type BuoyInstallation</description>
+            <name>InstallationBuoy</name>
+            <description>Rules for feature type InstallationBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoyInstallation.lua</fileName>
+         <fileName>InstallationBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BuoyIsolatedDanger">
+      <ruleFile id="IsolatedDangerBuoy">
          <description>
-            <name>BuoyIsolatedDanger</name>
-            <description>Rules for feature type BuoyIsolatedDanger</description>
+            <name>IsolatedDangerBuoy</name>
+            <description>Rules for feature type IsolatedDangerBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoyIsolatedDanger.lua</fileName>
+         <fileName>IsolatedDangerBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BuoyLateral">
+      <ruleFile id="LateralBuoy">
          <description>
-            <name>BuoyLateral</name>
-            <description>Rules for feature type BuoyLateral</description>
+            <name>LateralBuoy</name>
+            <description>Rules for feature type LateralBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoyLateral.lua</fileName>
+         <fileName>LateralBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-	  <ruleFile id="BuoyEmergencyWreckMarking">
+	  <ruleFile id="EmergencyWreckMarkingBuoy">
 		   <description>
-			   <name>BuoyEmergencyWreckMarking</name>
-			   <description>Rules for feature type BuoyEmergencyWreckMarking</description>
+			   <name>EmergencyWreckMarkingBuoy</name>
+			   <description>Rules for feature type EmergencyWreckMarkingBuoy</description>
 			   <language>eng</language>
 		   </description>
-		   <fileName>BuoyEmergencyWreckMarking.lua</fileName>
+		   <fileName>EmergencyWreckMarkingBuoy.lua</fileName>
 		   <fileType>Rule</fileType>
 		   <fileFormat>LUA</fileFormat>
 		   <ruleType>SubTemplate</ruleType>
 	   </ruleFile>
-	   <ruleFile id="BuoySafeWater">
+	   <ruleFile id="SafeWaterBuoy">
          <description>
-            <name>BuoySafeWater</name>
-            <description>Rules for feature type BuoySafeWater</description>
+            <name>SafeWaterBuoy</name>
+            <description>Rules for feature type SafeWaterBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoySafeWater.lua</fileName>
+         <fileName>SafeWaterBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="BuoySpecialPurposeGeneral">
+      <ruleFile id="SpecialPurposeGeneralBuoy">
          <description>
-            <name>BuoySpecialPurposeGeneral</name>
-            <description>Rules for feature type BuoySpecialPurposeGeneral</description>
+            <name>SpecialPurposeGeneralBuoy</name>
+            <description>Rules for feature type SpecialPurposeGeneralBuoy</description>
             <language>eng</language>
          </description>
-         <fileName>BuoySpecialPurposeGeneral.lua</fileName>
+         <fileName>SpecialPurposeGeneralBuoy.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>

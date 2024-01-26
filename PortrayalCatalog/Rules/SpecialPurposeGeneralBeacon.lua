@@ -8,7 +8,7 @@
 require 'TOPMAR02'
 
 -- Beacon Special Purpose/General main entry point.
-function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
+function SpecialPurposeGeneralBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24
