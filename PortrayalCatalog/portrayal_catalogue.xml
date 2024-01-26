@@ -981,16 +981,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
      </symbol>	   
-     <symbol id="BOYPIL10">
-         <description>
-            <name>BOYPIL10</name>
-            <description>pillar buoy, lateral red, paper-chart</description>
-            <language>eng</language>
-         </description>
-         <fileName>BOYPIL10.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
 	   <symbol id="BOYPIL11">
 		   <description>
 			   <name>BOYPIL11</name>
