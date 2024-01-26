@@ -10955,6 +10955,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="Dolphin">
+         <description>
+            <name>Dolphin</name>
+            <description>Rules for feature type Dolphin</description>
+            <language>eng</language>
+         </description>
+         <fileName>Dolphin.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="DredgedArea">
          <description>
             <name>DredgedArea</name>
