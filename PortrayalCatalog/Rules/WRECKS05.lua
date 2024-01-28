@@ -15,26 +15,8 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 	Debug.StartPerformance('Lua Code - WRECKS05')
 
 	local DEPTH_VALUE = feature.valueOfSounding or feature.defaultClearanceDepth
-
-	if not DEPTH_VALUE then
-		local LEAST_DEPTH, SEABED_DEPTH = DEPVAL02(feature)
-		if LEAST_DEPTH then
-			DEPTH_VALUE = LEAST_DEPTH
-		elseif feature.categoryOfWreck == 1 then
-			-- non-dangerous wreck
-			DEPTH_VALUE = CreateScaledDecimal(201, 1)
-			if SEABED_DEPTH then
-				LEAST_DEPTH = SEABED_DEPTH - CreateScaledDecimal(66)
-				if LEAST_DEPTH >= CreateScaledDecimal(201, 1) then
-					DEPTH_VALUE = LEAST_DEPTH
-				end
-			end
-		elseif feature.waterLevelEffect == 3 or feature.waterLevelEffect == 5 then
-			-- always under water/submerged OR awash
-			DEPTH_VALUE = scaledDecimalZero
-		else
-			DEPTH_VALUE = CreateScaledDecimal(-150, 1)
-		end
+	if DEPTH_VALUE == nil then
+		error('Neither valueOfSounding or defaultClearanceDepth have a value')
 	end
 
 	local hazardSymbol, viewingGroup = UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, originalViewingGroup)

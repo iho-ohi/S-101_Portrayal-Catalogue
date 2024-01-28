@@ -15,18 +15,8 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 	Debug.StartPerformance('Lua Code - OBSTRN07')
 
 	local DEPTH_VALUE = feature.valueOfSounding or feature.defaultClearanceDepth
-
-	if not DEPTH_VALUE then
-		local LEAST_DEPTH, SEABED_DEPTH = DEPVAL02(feature)
-		if LEAST_DEPTH then
-			DEPTH_VALUE = LEAST_DEPTH
-		elseif feature['!categoryOfObstruction'] == 6 or feature.waterLevelEffect == 3 then
-			DEPTH_VALUE = CreateScaledDecimal(1, 2)
-		elseif feature.waterLevelEffect == 5 then
-			DEPTH_VALUE = scaledDecimalZero
-		else
-			DEPTH_VALUE = CreateScaledDecimal(-150, 1)
-		end
+	if DEPTH_VALUE == nil then
+		error('Neither valueOfSounding or defaultClearanceDepth have a value')
 	end
 
 	local hazardSymbol, viewingGroup = UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, originalViewingGroup)
