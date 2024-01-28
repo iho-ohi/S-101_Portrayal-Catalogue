@@ -216,6 +216,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 * Misc changes
 	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
  	* [#282][i282]  Update FC to 1.2.0 from IHO GI registry.
+  		* Local change: Fix multiplicity of `Dolphin` attribute binding to `categoryOfDolphin`
   	* [#229][i229]  Update alert catalog to S-100 5.1 schema
   	* [#287][i287]  Update AreaFills to S-100 5.1 schema
   	* [#288][i288]  Update ColorProfiles to S-100 5.1 schema
