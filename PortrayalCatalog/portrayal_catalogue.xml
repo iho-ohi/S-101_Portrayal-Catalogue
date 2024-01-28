@@ -8537,18 +8537,11 @@
       </viewingGroup>
       <viewingGroup id="26010">
          <description>
-            <name>Restricted area, Navigational (RESARE)</name>
+            <name>Restricted area (RESARE)</name>
             <description>Standard: N - Special areas</description>
             <language>eng</language>
          </description>
       </viewingGroup>
-	  <viewingGroup id="26020">
-		   <description>
-			   <name>Restricted area, Regulatory (RESARE)</name>
-			   <description>Standard: N - Special areas</description>
-			   <language>eng</language>
-		   </description>
-	   </viewingGroup>
 	   <viewingGroup id="26040">
          <description>
             <name>Submarine transit lane (SUBTLN), military practice area (MIPARE), sea plane landing area (SPLARE), offshore production area (OSPARE)</name>
@@ -9516,7 +9509,6 @@
          </description>
          <viewingGroup>26000</viewingGroup>
 		 <viewingGroup>26010</viewingGroup>
-		 <viewingGroup>26020</viewingGroup>
 		 <viewingGroup>26040</viewingGroup>
       </viewingGroupLayer>
       <viewingGroupLayer id="6">
@@ -11890,24 +11882,13 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="RestrictedAreaNavigational">
+      <ruleFile id="RestrictedArea">
          <description>
-            <name>RestrictedAreaNavigational</name>
-            <description>Rules for feature type RestrictedAreaNavigational</description>
+            <name>RestrictedArea</name>
+            <description>Rules for feature type RestrictedArea</description>
             <language>eng</language>
          </description>
-         <fileName>RestrictedAreaNavigational.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
-      <ruleFile id="RestrictedAreaRegulatory">
-         <description>
-            <name>RestrictedAreaRegulatory</name>
-            <description>Rules for feature type RestrictedAreaRegulatory</description>
-            <language>eng</language>
-         </description>
-         <fileName>RestrictedAreaRegulatory.lua</fileName>
+         <fileName>RestrictedArea.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
