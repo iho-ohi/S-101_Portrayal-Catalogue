@@ -215,6 +215,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i298]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/298
 [i299]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/299
 [i300]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/300
+[i301]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/301
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -248,6 +249,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#298][i298] Add new feature `Helipad`
   	* [#299][i299] Add new feature `MooringArea`
   	* [#300][i300] Remove calculation of default clearance depth: one of `valueOfSounding` or `defaultClearanceDepth` must have a value
+  	* [#299][i299] `sectorExtension` renamed to `sectorArcExtension`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
