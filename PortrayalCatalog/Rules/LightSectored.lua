@@ -123,7 +123,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 				-- Draw sector arcs
-				if lightSector.sectorExtension then
+				if lightSector.sectorArcExtension then
 					featurePortrayal:AddInstructions('ArcByRadius:0,0,25,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
 				else
 					featurePortrayal:AddInstructions('ArcByRadius:0,0,20,' .. sectorLimit1 .. ',' .. sectorLimit2 - sectorLimit1)
