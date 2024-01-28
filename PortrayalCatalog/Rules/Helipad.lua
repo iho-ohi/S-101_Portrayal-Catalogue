@@ -1,9 +1,4 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
--- #134
-
--- Airport/airfield main entry point.
-function AirportAirfield(feature, featurePortrayal, contextParameters)
+function Helipad(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Point then
