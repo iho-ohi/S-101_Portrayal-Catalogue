@@ -11208,6 +11208,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="Helipad">
+         <description>
+            <name>Helipad</name>
+            <description>Rules for feature type Helipad</description>
+            <language>eng</language>
+         </description>
+         <fileName>Helipad.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="Hulk">
          <description>
             <name>Hulk</name>
