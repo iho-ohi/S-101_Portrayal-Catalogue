@@ -11505,17 +11505,6 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="MooringWarpingFacility">
-         <description>
-            <name>MooringWarpingFacility</name>
-            <description>Rules for feature type MooringWarpingFacility</description>
-            <language>eng</language>
-         </description>
-         <fileName>MooringWarpingFacility.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
       <ruleFile id="NavigationalSystemOfMarks">
          <description>
             <name>NavigationalSystemOfMarks</name>
