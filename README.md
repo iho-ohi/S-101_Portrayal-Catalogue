@@ -209,6 +209,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i292]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/292
 [i293]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/293
 [i294]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/294
+[i295]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/295
 [i296]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/296
 
 ## Changelog
@@ -238,6 +239,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#293][i293] Add new feature `Dolphin`
   	* [#294][i294] Add new feature `Bollard`
   	* [#296][i296] Add new feature `MooringBuoy`
+  	* [#295][i295] Remove feature `MooringWarpingFacility`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
