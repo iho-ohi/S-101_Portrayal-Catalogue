@@ -211,6 +211,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i294]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/294
 [i295]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/295
 [i296]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/296
+[i297]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/297
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -240,6 +241,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#294][i294] Add new feature `Bollard`
   	* [#296][i296] Add new feature `MooringBuoy`
   	* [#295][i295] Remove feature `MooringWarpingFacility`
+  	* [#297][i297] `Runway` with point geomeetry is invalid
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
