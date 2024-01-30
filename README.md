@@ -287,6 +287,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#264][i264] Fix case of symbol file CSS references
   	* [#263][i263] Deal with incomplete `periodicDateRange`
 	* [#225][i225] Update version number prior to release 1.1.2-DRAFT to 1.1.2
+	* [#214][i214] `LocalMagneticAnomaly` updated to DCEG 1.2.0, removal of +/-
 
 ### 1.1.1 - use with FC 1.1.0
 * [#216][i216] Use mariners viewing groups for alert highlights (`53010` - `53024`)
