@@ -217,6 +217,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i300]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/300
 [i301]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/301
 [i302]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/302
+[i307]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/307
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -254,6 +255,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#302][i302] `RestrictedArea` replaces `RestrictedAreaRegulatory` and `RestrictedAreaNavigational`
 	* [#214][i214] `LocalMagneticAnomaly` updated to DCEG 1.2.0, removal of +/-
 	* [#144][i144] Display parameters for 'New Text' [PSWG #104], fixed bug in alternate name processing
+	* [#307][i307] Removed value 6 (swept by wire-drag), replace with 18 (mechanically swept) SNDFRM04.lua
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
