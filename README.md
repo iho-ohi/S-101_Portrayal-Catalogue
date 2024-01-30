@@ -253,7 +253,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#301][i301] `sectorExtension` renamed to `sectorArcExtension`
   	* [#302][i302] `RestrictedArea` replaces `RestrictedAreaRegulatory` and `RestrictedAreaNavigational`
 	* [#214][i214] `LocalMagneticAnomaly` updated to DCEG 1.2.0, removal of +/-
-	
+	* [#144][i144] Display parameters for 'New Text' [PSWG #104], fixed bug in alternate name processing
+
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
 	* [#224][i224]  Update main version number to 1.1.2; intended for developmental use towards 1.2.0

@@ -245,26 +245,31 @@ end
 
 -- Re-introduced supporting PSWG #104, PC #144
 function GetFeatureName(feature, contextParameters)
+
 	for cnt, featureName in ipairs(feature.featureName) do
 
-		if featureName.nameUsage == 3 then  -- no chart display
+		-- No chart display, only for Pick Report
+		if featureName.nameUsage == 3 then  
 			return nil
 		end
 		
-		-- default name display which should be first valid name entry
-		if featureName.nameUsage == 1 and featureName.name and featureName.name ~= '' then
+		-- Default name display 
+		if featureName.nameUsage == 1 and contextParameters.NationalLanguage == featureName.language and featureName.name and featureName.name ~= '' then
 			return featureName.name
 		end
 		
+		-- Alternate name display 
 		if featureName.nameUsage == 2 and contextParameters.NationalLanguage == featureName.language and featureName.name and featureName.name ~= '' then
 			return featureName.name
 		end
-		-- default if no nameUsage is encoded
+	end
+	-- No nameUsage defined, return default, i.e. first entry
+	for cnt, featureName in ipairs(feature.featureName) do
 		if featureName.name and featureName.name ~= '' then
 			return featureName.name
-		end
-	end
-	
+		end	
+	end	
+
 	return nil
 
 end
