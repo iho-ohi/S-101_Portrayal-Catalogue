@@ -133,7 +133,7 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 					featurePortrayal:AddInstructions('ViewingGroup:33021,contourLabel;DrawingPriority:24;DisplayPlane:UnderRADAR')
 				end
 
-				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5')
+				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5,,true')
 
 				local instructions = SAFCON01(contextParameters, loc_valdco)
 
