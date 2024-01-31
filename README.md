@@ -166,6 +166,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i225]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/225
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
 [i227]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/227
+[i228]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/228
 [i229]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/229
 [i231]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/231
 [i232]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/232
@@ -259,7 +260,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#144][i144] Display parameters for 'New Text' [PSWG #104], fixed bug in alternate name processing
 	* [#307][i307] Removed value 6 (swept by wire-drag), replace with 18 (mechanically swept) SNDFRM04.lua
 	* [#305][i305] Add curve primitive: Administration, Continental Shelf, Territorial Sea Areas, Contiguous Zone,Exclusive Economic Zone
-	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04) 
+	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04)
+	* [#228][i228] Show contour labels centered on visible portion(s) of depth contour
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
