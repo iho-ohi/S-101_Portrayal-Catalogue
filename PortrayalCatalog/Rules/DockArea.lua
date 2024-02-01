@@ -7,8 +7,7 @@ function DockArea(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 22010
-		-- #279: Amend DockArea to remove color fill
-		featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:9;DisplayPlane:UnderRADAR;ColorFill:DEPVS')
 		-- #269: Dock area outline has incorrect priority and viewing group
 		if feature.condition then
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
