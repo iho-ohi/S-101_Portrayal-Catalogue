@@ -18,9 +18,13 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	
 	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:12;DisplayPlane:UnderRADAR')
 
-	local DRVAL1 = feature.depthRangeMinimumValue
-	local DRVAL2 = feature.depthRangeMaximumValue
-	local intersects = (DRVAL1 == nil or DRVAL1 < contextParameters.SafetyContour) and (DRVAL2 == nil or contextParameters.SafetyContour <= DRVAL2)
+	-- QoBD has gaps of 0.1m between bottom of upper QoBD and top of lower QoBD. Ensure safety contour doesn't fall
+	-- within a gap by restricting its precision.
+	local safetyContour = math.ceil(contextParameters.SafetyContour:ToNumber() * 10) / 10
+	local DRVAL1 = feature.depthRangeMinimumValue and feature.depthRangeMinimumValue:ToNumber()
+	local DRVAL2 = feature.depthRangeMaximumValue and feature.depthRangeMaximumValue:ToNumber()
+	
+	local intersects = (DRVAL1 == nil or DRVAL1 <= safetyContour) and (DRVAL2 == nil or safetyContour <= DRVAL2)
 	
 	local dateDependent = false
 	if zonesOfConfidence and #zonesOfConfidence > 0 then
