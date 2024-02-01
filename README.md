@@ -202,6 +202,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i280]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/280
 [i281]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/281
 [i282]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/282
+[i285]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/285
 [i287]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/287
 [i288]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/288
 [i289]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/289
@@ -263,7 +264,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#305][i305] Add curve primitive: Administration, Continental Shelf, Territorial Sea Areas, Contiguous Zone,Exclusive Economic Zone
 	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04)
 	* [#228][i228] Show contour labels centered on visible portion(s) of depth contour
-	* [#306][i306] Bridge re-modelled 
+	* [#306][i306] Bridge re-modelled
+ 	* [#285][i285] Updated `QoBD` evaluation of depth range
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
