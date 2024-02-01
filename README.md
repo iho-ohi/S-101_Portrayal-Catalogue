@@ -221,6 +221,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i307]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/307
 [i305]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/305
 [i304]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/304
+[i306]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/306
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -262,6 +263,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#305][i305] Add curve primitive: Administration, Continental Shelf, Territorial Sea Areas, Contiguous Zone,Exclusive Economic Zone
 	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04)
 	* [#228][i228] Show contour labels centered on visible portion(s) of depth contour
+	* [#306][i306] Bridge re-modelled 
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
