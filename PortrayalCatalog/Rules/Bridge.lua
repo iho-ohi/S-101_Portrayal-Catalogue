@@ -22,7 +22,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
-		elseif
+		else
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
@@ -31,7 +31,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
-		elseif
+		else
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
@@ -40,7 +40,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
-		elseif
+		else
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end		
