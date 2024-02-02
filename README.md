@@ -224,6 +224,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i304]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/304
 [i306]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/306
 [i312]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/312
+[i313]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/313
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -268,6 +269,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#306][i306] Bridge re-modelled
  	* [#285][i285] Updated `QoBD` evaluation of depth range
 	* [#312][i312] Fix syntax error Bridge re-modelled lua file.
+ 	* [#313][i313] Curve geometry is invalid for `Obstruction` with `categoryOfObstruction` = `mangrove`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
