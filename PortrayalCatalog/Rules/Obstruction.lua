@@ -212,6 +212,9 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			--#168
 			--viewingGroup = OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
 			error('Curve is not a valid geometry for active submarine volcano')
+		elseif feature.categoryOfObstruction == 23 then
+			--#313
+			error('Curve is not a valid geometry for mangrove')
 		elseif feature.waterLevelEffect == 7 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
