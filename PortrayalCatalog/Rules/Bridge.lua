@@ -1,7 +1,7 @@
 -- Converter Version: 0.99
 -- Feature Catalogue Version: 1.0.0 (2019/4/9)
 --
--- #306
+-- #306, #312
 --
 -- Bridge main entry point.
 function Bridge(feature, featurePortrayal, contextParameters)
@@ -18,7 +18,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 	-- if over navigable water: "opening bridge" is mandatory
 	-- If "opening bridge" = True: category of opening bridge
 	if feature.PrimitiveType == PrimitiveType.Curve then
-		if feature.OpeningBridge == true then
+		if feature.openingBridge == true then
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
@@ -27,7 +27,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		if feature.OpeningBridge == true then
+		if feature.openingBridge == true then
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
@@ -36,7 +36,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		if feature.OpeningBridge == true then
+		if feature.openingBridge == true then
 			featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:BRIDGE01')
