@@ -69,6 +69,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i96]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/96
 [i97]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/97
 [i98]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/98
+[i99]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/99
 [i100]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/100
 [i101]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/101
 [i103]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/103
@@ -270,6 +271,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
  	* [#285][i285] Updated `QoBD` evaluation of depth range
 	* [#312][i312] Fix syntax error Bridge re-modelled lua file.
  	* [#313][i313] Curve geometry is invalid for `Obstruction` with `categoryOfObstruction` = `mangrove`
+  	* [#99][i99] Initial implementation of `UpdateInformation` portrayal; `updateType`=`move` is only partially implemented due to lack of test data
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
