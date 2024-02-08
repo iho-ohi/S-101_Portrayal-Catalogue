@@ -226,6 +226,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i306]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/306
 [i312]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/312
 [i313]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/313
+[i318]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/318
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -272,6 +273,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#312][i312] Fix syntax error Bridge re-modelled lua file.
  	* [#313][i313] Curve geometry is invalid for `Obstruction` with `categoryOfObstruction` = `mangrove`
   	* [#99][i99] Initial implementation of `UpdateInformation` portrayal; `updateType`=`move` is only partially implemented due to lack of test data
+  	* [#318][i318] Use drawing priority of 30 for `UpdateInformation`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
