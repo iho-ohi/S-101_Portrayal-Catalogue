@@ -8,7 +8,7 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 	local updateType = feature.updateType
 	
 	-- Place feature on top of everything except text
-	featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:23')
+	featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:30')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
