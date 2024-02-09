@@ -8,6 +8,11 @@ require 'QUAPOS01'
 function LandArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
+	-- DEBUG tessting #175
+	--feature.featureName[1] = {nameUsage = nil, language = 'fre', name = 'FRE_LAN'}
+	--feature.featureName[2] = {nameUsage = 1, language = 'eng', name = 'ENG_LAN'}
+	--feature.featureName[3] = {nameUsage = nil, language = 'ger', name = 'GER_LAN'}
+
 	featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 
 	if feature.PrimitiveType == PrimitiveType.Point then

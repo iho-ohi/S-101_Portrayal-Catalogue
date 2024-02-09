@@ -246,7 +246,7 @@ end
 -- Re-introduced supporting PSWG #104, PC #144
 function GetFeatureName(feature, contextParameters)
 
-	for cnt, featureName in ipairs(feature.featureName) do
+		for cnt, featureName in ipairs(feature.featureName) do
 
 		-- No chart display, only for Pick Report
 		if featureName.nameUsage == 3 then  
@@ -263,11 +263,13 @@ function GetFeatureName(feature, contextParameters)
 			return featureName.name
 		end
 	end
-	-- No nameUsage defined, return default, i.e. first entry
+	-- at this point, return english as default unless no nameUsage is defined for all entires
 	for cnt, featureName in ipairs(feature.featureName) do
-		if featureName.name and featureName.name ~= '' then
-			return featureName.name
-		end	
+		if featureName.nameUsage ~= nil then
+			if featureName.name and featureName.name ~= '' and featureName.language == 'eng' then
+				return featureName.name
+			end	
+		end
 	end	
 
 	return nil
