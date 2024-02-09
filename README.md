@@ -228,6 +228,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i313]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/313
 [i318]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/318
 [i309]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/309
+[i319]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/319
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -276,6 +277,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#99][i99] Initial implementation of `UpdateInformation` portrayal; `updateType`=`move` is only partially implemented due to lack of test data
   	* [#318][i318] Use drawing priority of 30 for `UpdateInformation`
   	* [#309][i309] New feature MooringArea, VG as MORFAC
+	* [#319][i319] Updated symbol BOYSPP35
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
