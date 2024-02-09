@@ -93,7 +93,7 @@ function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, vi
 	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
 	featurePortrayal:AddInstructions(displayPlane)
-	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31032,highlightDateDependent;DrawingPriority:24;PointInstruction:CHDATD01')
+	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90022,highlightDateDependent;DrawingPriority:24;PointInstruction:CHDATD01')
 end
 
 --
@@ -101,44 +101,44 @@ end
 --
 
 function ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
-	local function GetViewingGroups(container, vg31030, vg31031)
+	local function GetViewingGroups(container, vg90020, vg90021)
 		if container then
 			if container['!pictorialRepresentation'] then
-				vg31031 = true
+				vg90021 = true
 			end
 
 			if container['!information'] then
 				for _, information in ipairs(container.information) do
 					if information.text then
-						vg31030 = true
+						vg90020 = true
 					end
 
 					if information.fileReference then
-						vg31031 = true
+						vg90021 = true
 					end
 				end
 			end
 
 			if container['!shapeInformation'] and next(container.shapeInformation) then
-				vg31030 = true
+				vg90020 = true
 			end
 
 			if container['!topmark'] and container.topmark.shapeInformation and next(container.topmark.shapeInformation) then
-				vg31030 = true
+				vg90020 = true
 			end
 		end
 
-		return vg31030, vg31031
+		return vg90020, vg90021
 	end
 
-	local vg31030, vg31031
+	local vg90020, vg90021
 
-	vg31030, vg31031 = GetViewingGroups(feature, vg31030, vg31031)
-	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation'), vg31030, vg31031)
-	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NonStandardWorkingDay'), vg31030, vg31031)
-	vg31030, vg31031 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ServiceHours'), vg31030, vg31031)
+	vg90020, vg90021 = GetViewingGroups(feature, vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation'), vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NonStandardWorkingDay'), vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ServiceHours'), vg90020, vg90021)
 
-	if vg31030 or vg31031 then
+	if vg90020 or vg90021 then
 		-- Clear any existing transforms and geometries
 		featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
 
@@ -146,14 +146,14 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
-		if vg31030 then
+		if vg90020 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31030,highlightInfo;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90020,highlightInfo;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 
-		if vg31031 then
+		if vg90021 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',31031,highlightDocument;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90021,highlightDocument;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 	end
 end

@@ -4,11 +4,11 @@
 
 -- Main entry point for CSP.
 function UpdateInformation(feature, featurePortrayal, contextParameters)
-	local viewingGroup = "updateReview"
+	local viewingGroup = 90040
 	local updateType = feature.updateType
 	
 	-- Place feature on top of everything except text
-	featurePortrayal:AddInstructions('ViewingGroup:updateReview;DrawingPriority:30')
+	featurePortrayal:AddInstructions('ViewingGroup:90040;DrawingPriority:30')
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then

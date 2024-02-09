@@ -128,9 +128,9 @@ function DEPARE03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 			if loc_valdco then
 				if contextParameters.RadarOverlay then
-					featurePortrayal:AddInstructions('ViewingGroup:33021,contourLabel;DrawingPriority:24;DisplayPlane:OverRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:90030;DrawingPriority:24;DisplayPlane:OverRADAR')
 				else
-					featurePortrayal:AddInstructions('ViewingGroup:33021,contourLabel;DrawingPriority:24;DisplayPlane:UnderRADAR')
+					featurePortrayal:AddInstructions('ViewingGroup:90030;DrawingPriority:24;DisplayPlane:UnderRADAR')
 				end
 
 				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5,,true')

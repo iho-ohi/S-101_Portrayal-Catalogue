@@ -16,7 +16,7 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	local catzoc
 	local zonesOfConfidence = feature.zoneOfConfidence
 	
-	featurePortrayal:AddInstructions('ViewingGroup:31010,accuracy;DrawingPriority:12;DisplayPlane:UnderRADAR')
+	featurePortrayal:AddInstructions('ViewingGroup:90010;DrawingPriority:12;DisplayPlane:UnderRADAR')
 
 	-- QoBD has gaps of 0.1m between bottom of upper QoBD and top of lower QoBD. Ensure safety contour doesn't fall
 	-- within a gap by restricting its precision.
@@ -51,7 +51,7 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 				else
-					-- default without CATZOC: "M_QUAL","","AP(NODATA03);LS(DASH,2,CHGRD)","4","S","OTHER","31010" 
+					-- default without CATZOC: "M_QUAL","","AP(NODATA03);LS(DASH,2,CHGRD)","4","S","OTHER","90010" 
 					featurePortrayal:AddInstructions('AreaFillReference:NODATA03')
 					featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRD')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -60,11 +60,11 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('NullInstruction')
 			end
 			if dateDependent then
-				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, '31010,accuracy')
+				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, 90010)
 				featurePortrayal:AddInstructions('ClearTime')
 			end
 		end
 	end
 
-	return '31010,accuracy'
+	return 90010
 end

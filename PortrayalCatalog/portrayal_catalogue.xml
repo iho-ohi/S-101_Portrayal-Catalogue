@@ -8434,13 +8434,6 @@
             <language>eng</language>
          </description>
       </viewingGroup>
-      <viewingGroup id="23010">
-         <description>
-            <name>Area of depth less than the safety contour (DIAMOND1 pattern)</name>
-            <description>Standard: H, I - Depths, Currents, etc.</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
       <viewingGroup id="23030">
          <description>
             <name>Swept area (SWPARE)</name>
@@ -8761,14 +8754,7 @@
       </viewingGroup>
       <viewingGroup id="31010">
          <description>
-            <name>accuracy of data (M_ACCY), survey reliability (M_SREL), quality of data (M_QUAL)</name>
-            <description>Other: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="31011">
-         <description>
-            <name>symbol LOWACC01, identifying low accuracy data, applied to the spatial object of point and area wrecks, rocks and obstructions and to point land areas</name>
+            <name>Quality of survey, quality of non-bathymetric data, sounding datum, vertical datum</name>
             <description>Other: A, B - Information about the chart display</description>
             <language>eng</language>
          </description>
@@ -8777,27 +8763,6 @@
          <description>
             <name>information area or nautical publication (M_NPUB)</name>
             <description>Other: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="31030">
-         <description>
-            <name>Additional Information INFORM, NINFOM</name>
-            <description>Other: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="31031">
-         <description>
-            <name>Additional Documents NTXTDS, TXTDSC, PICREP</name>
-            <description>Other: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="31032">
-         <description>
-            <name>Date dependent</name>
-            <description>The object is present only during the indicated period</description>
             <language>eng</language>
          </description>
       </viewingGroup>
@@ -8925,20 +8890,6 @@
       <viewingGroup id="33020">
          <description>
             <name>depth contours (DEPCNT) other than the safety contour</name>
-            <description>Other: H, I - Depths, Currents, etc.</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="33021">
-         <description>
-            <name>label for the safety contour</name>
-            <description>Other: H, I - Depths, Currents, etc.</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
-      <viewingGroup id="33022">
-         <description>
-            <name>label for contours other than the safety contour</name>
             <description>Other: H, I - Depths, Currents, etc.</description>
             <language>eng</language>
          </description>
@@ -9302,49 +9253,63 @@
    <!--********** END Alert Catalog Viewing Groups **********--> 
    
    <!--********** Viewing groups for Independent Mariner Selectors **********-->
-      <viewingGroup id="accuracy">
-        <description>
-          <name>Accuracy</name>
-          <description>zoneOfConfidence and low accuracy symbols</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90000">
+         <description>
+            <name>Area of depth less than the safety contour (DIAMOND1 pattern)</name>
+            <description>Shallow water pattern</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="contourLabel">
-        <description>
-          <name>Contour label</name>
-          <description>to turn on the display of contour labels (incl. label of safety contour)</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90010">
+         <description>
+            <name>accuracy of data (M_ACCY), survey reliability (M_SREL), quality of data (M_QUAL)</name>
+            <description>Other: A, B - Information about the chart display</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="highlightDateDependent">
-        <description>
-          <name>Highlight date dependent</name>
-         <description>Highlights date dependent features</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90011">
+         <description>
+            <name>symbol LOWACC01, identifying low accuracy data, applied to the spatial object of point and area wrecks, rocks and obstructions and to point land areas</name>
+            <description>Other: A, B - Information about the chart display</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="highlightDocument">
-        <description>
-          <name>Highlight document</name>
-          <description>Additional documents</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90020">
+         <description>
+            <name>Additional Information INFORM, NINFOM</name>
+            <description>Other: A, B - Information about the chart display</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="highlightInfo">
-        <description>
-          <name>Highlight info</name>
-          <description>Additional information</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90021">
+         <description>
+            <name>Additional Documents NTXTDS, TXTDSC, PICREP</name>
+            <description>Other: A, B - Information about the chart display</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="shallowPattern">
-        <description>
-          <name>Shallow pattern</name>
-          <description>Shallow Water Pattern</description>
-          <language>eng</language>
-        </description>
+      <viewingGroup id="90022">
+         <description>
+            <name>Date dependent</name>
+            <description>The object is present only during the indicated period</description>
+            <language>eng</language>
+         </description>
       </viewingGroup>
-      <viewingGroup id="updateReview">
+      <viewingGroup id="90030">
+         <description>
+            <name>label for the safety contour</name>
+            <description>Other: H, I - Depths, Currents, etc.</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
+      <viewingGroup id="90031">
+         <description>
+            <name>label for contours other than the safety contour</name>
+            <description>Other: H, I - Depths, Currents, etc.</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
+      <viewingGroup id="90040">
         <description>
           <name>Update review</name>
           <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
@@ -9558,7 +9523,6 @@
          <viewingGroup>21060</viewingGroup>
          <viewingGroup>22000</viewingGroup>
          <viewingGroup>23000</viewingGroup>
-         <viewingGroup>23010</viewingGroup>
          <viewingGroup>24000</viewingGroup>
          <viewingGroup>24010</viewingGroup>
          <viewingGroup>24020</viewingGroup>
@@ -9598,7 +9562,6 @@
          <viewingGroup>21060</viewingGroup>
          <viewingGroup>22000</viewingGroup>
          <viewingGroup>23000</viewingGroup>
-         <viewingGroup>23010</viewingGroup>
          <viewingGroup>24000</viewingGroup>
          <viewingGroup>24010</viewingGroup>
          <viewingGroup>24020</viewingGroup>
@@ -9707,10 +9670,6 @@
          <viewingGroup>31000</viewingGroup>
          <viewingGroup>31010</viewingGroup>
 		 <viewingGroup>31020</viewingGroup>
-         <viewingGroup>31011</viewingGroup>
-         <viewingGroup>31030</viewingGroup>
-         <viewingGroup>31031</viewingGroup>
-         <viewingGroup>31032</viewingGroup>
          <viewingGroup>31040</viewingGroup>
          <viewingGroup>32000</viewingGroup>
          <viewingGroup>32010</viewingGroup>
@@ -9726,8 +9685,6 @@
          <viewingGroup>32410</viewingGroup>
          <viewingGroup>32440</viewingGroup>
          <viewingGroup>33000</viewingGroup>
-         <viewingGroup>33021</viewingGroup>
-         <viewingGroup>33022</viewingGroup>
          <viewingGroup>34000</viewingGroup>
          <viewingGroup>35000</viewingGroup>
          <viewingGroup>36000</viewingGroup>
@@ -9744,71 +9701,73 @@
       </viewingGroupLayer>
      <!-- END OTHER LAYER GROUPS -->
 	 <!-- Independent mariner selectors -->
-     <viewingGroupLayer id="accuracySelector">
-       <description>
-         <name>Accuracy</name>
-         <description>zoneOfConfidence and low accuracy symbols</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>accuracy</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="contourLabelSelector">
-       <description>
-         <name>Contour label</name>
-         <description>to turn on the display of contour labels (incl. label of safety contour)</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>contourLabel</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="highlights">
-       <description>
-         <name>Feature highlights</name>
-         <description>Toggles feature highlights</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>highlightDateDependent</viewingGroup>
-       <viewingGroup>highlightDocument</viewingGroup>
-       <viewingGroup>highlightInfo</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="highlightDateDependentSelector">
-       <description>
-         <name>Highlight date dependent</name>
-         <description>Highlights date dependent features</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>highlightDateDependent</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="highlightDocumentSelector">
-       <description>
-         <name>Highlight document</name>
-         <description>Additional documents - highlights features associated with text or picture files</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>highlightDocument</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="highlightInfoSelector">
-       <description>
-         <name>Highlight info</name>
-         <description>Additional information - highlights features which have amplifying text</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>highlightInfo</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="shallowPatternSelector">
+     <viewingGroupLayer id="900">
        <description>
          <name>Shallow pattern</name>
          <description>Shallow Water Pattern</description>
          <language>eng</language>
        </description>
-       <viewingGroup>shallowPattern</viewingGroup>
+       <viewingGroup>90000</viewingGroup>
      </viewingGroupLayer>
-     <viewingGroupLayer id="updateReviewSelector">
+     <viewingGroupLayer id="910">
+       <description>
+         <name>Accuracy</name>
+         <description>zoneOfConfidence and low accuracy symbols</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90010</viewingGroup>
+       <viewingGroup>90011</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="920">
+       <description>
+         <name>Feature highlights</name>
+         <description>Toggles feature highlights</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90020</viewingGroup>
+       <viewingGroup>90021</viewingGroup>
+       <viewingGroup>90022</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="920a">
+       <description>
+         <name>Highlight info</name>
+         <description>Additional information - highlights features which have amplifying text</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90020</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="920b">
+       <description>
+         <name>Highlight document</name>
+         <description>Additional documents - highlights features associated with text or picture files</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90021</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="920c">
+       <description>
+         <name>Highlight date dependent</name>
+         <description>Highlights date dependent features</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90022</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="930">
+       <description>
+         <name>Contour label</name>
+         <description>to turn on the display of contour labels (incl. label of safety contour)</description>
+         <language>eng</language>
+       </description>
+       <viewingGroup>90030</viewingGroup>
+       <viewingGroup>90031</viewingGroup>
+     </viewingGroupLayer>
+     <viewingGroupLayer id="940">
        <description>
          <name>Update review</name>
          <description>Review of Updates - This function turns on colour highlighting for the objects which have undergone modification in the process of the latest accepted correction</description>
          <language>eng</language>
        </description>
-       <viewingGroup>updateReview</viewingGroup>
+       <viewingGroup>90040</viewingGroup>
      </viewingGroupLayer>
      <!-- TEXT LAYER GROUPS (not part of a display mode / IMO display category) -->
      <viewingGroupLayer id="100">

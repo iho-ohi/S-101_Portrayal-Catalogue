@@ -208,7 +208,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 
 		featurePortrayal:AddInstructions('Hover:true')
 
-		featurePortrayal:AddInstructions('ViewingGroup:27070,31030;DrawingPriority:24;PointInstruction:INFORM01')
+		featurePortrayal:AddInstructions('ViewingGroup:27070,90020;DrawingPriority:24;PointInstruction:INFORM01')
 	end
 
 	return 27070
