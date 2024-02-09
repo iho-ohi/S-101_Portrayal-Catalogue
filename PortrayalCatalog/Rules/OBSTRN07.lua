@@ -16,6 +16,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 
 	local DEPTH_VALUE = feature.valueOfSounding or feature.defaultClearanceDepth
 	if DEPTH_VALUE == nil then
+		Debug.StopPerformance('Lua Code - OBSTRN07')
 		error('Neither valueOfSounding or defaultClearanceDepth have a value')
 	end
 
