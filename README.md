@@ -230,6 +230,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i309]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/309
 [i319]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/319
 [i320]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/320
+[i322]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/322
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -280,6 +281,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#318][i318] Use drawing priority of 30 for `UpdateInformation`
   	* [#309][i309] New feature MooringArea, VG as MORFAC
 	* [#319][i319] Updated symbol BOYSPP35
+ 	* [#322][i322] Fix issue with performance counters in OBSTRN07.lua
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
