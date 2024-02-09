@@ -9554,6 +9554,7 @@
             <language>eng</language>
          </description>
          <viewingGroup>21000</viewingGroup>
+         <viewingGroup>21010</viewingGroup>
          <viewingGroup>21060</viewingGroup>
          <viewingGroup>22000</viewingGroup>
          <viewingGroup>23000</viewingGroup>
@@ -9593,6 +9594,7 @@
             <language>eng</language>
          </description>
          <viewingGroup>21000</viewingGroup>
+         <viewingGroup>21010</viewingGroup>
          <viewingGroup>21060</viewingGroup>
          <viewingGroup>22000</viewingGroup>
          <viewingGroup>23000</viewingGroup>
@@ -9799,14 +9801,6 @@
          <language>eng</language>
        </description>
        <viewingGroup>shallowPattern</viewingGroup>
-     </viewingGroupLayer>
-     <viewingGroupLayer id="unknownSelector">
-       <description>
-         <name>Unknown</name>
-         <description>to turn on the display of features which are not recognized by the portrayal catalogue</description>
-         <language>eng</language>
-       </description>
-       <viewingGroup>21010</viewingGroup>
      </viewingGroupLayer>
      <viewingGroupLayer id="updateReviewSelector">
        <description>
