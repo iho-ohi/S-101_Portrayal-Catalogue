@@ -233,6 +233,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i321]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/321
 [i322]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/322
 [i323]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/323
+[i324]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/324
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -285,7 +286,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#319][i319] Updated symbol BOYSPP35
  	* [#322][i322] Fix issue with performance counters in OBSTRN07.lua
   	* [#321][i321] Implement IMS changes (VG -> 90k's, VGL -> 900's)
-  	* [#323][i323] Bridge with no geometry shouldn't generate an alert
+  	* [#323][i323] `Bridge` with no geometry shouldn't generate an alert
+  	* [#324][i324] `PhysicalAISAidToNavigation` should generate NavHazard alert
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
