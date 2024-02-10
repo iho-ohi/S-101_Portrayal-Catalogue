@@ -289,7 +289,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#321][i321] Implement IMS changes (VG -> 90k's, VGL -> 900's)
   	* [#323][i323] `Bridge` with no geometry shouldn't generate an alert
   	* [#324][i324] `PhysicalAISAidToNavigation` should generate NavHazard alert
-  	* [#325][i325] Point geometry not allowed for SpanOpening and SpanFixed
+  	* [#325][i325] Point geometry not allowed for `SpanOpening` and `SpanFixed`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
