@@ -7,7 +7,9 @@
 function Bridge(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 12210
 
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
+	if feature.PrimitiveType ~= PrimitiveType.None then
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
+	end
 
 	if contextParameters.RadarOverlay then
 		featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
