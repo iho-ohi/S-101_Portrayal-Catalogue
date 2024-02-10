@@ -5,15 +5,7 @@
 function SpanOpening(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
-	if feature.PrimitiveType == PrimitiveType.Point then
-		-- Simplified and paper chart points use the same symbolization
-		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
-		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
-		end
-		featurePortrayal:AddInstructions('NullInstruction')
-	elseif feature.PrimitiveType == PrimitiveType.Curve then
+	if feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
 		else
