@@ -235,6 +235,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i323]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/323
 [i324]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/324
 [i325]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/325
+[i326]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/326
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -290,6 +291,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#323][i323] `Bridge` with no geometry shouldn't generate an alert
   	* [#324][i324] `PhysicalAISAidToNavigation` should generate NavHazard alert
   	* [#325][i325] Point geometry not allowed for `SpanOpening` and `SpanFixed`
+  	* [#326][i326] Mooring cable should generate NavHazard alert
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
