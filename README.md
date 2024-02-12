@@ -238,6 +238,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i325]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/325
 [i326]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/326
 [i327]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/327
+[i330]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/330
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -296,6 +297,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#326][i326] Mooring cable should generate NavHazard alert
   	* [#327][i327] Update alert catalog to provide alert priorities per MSC.530(106)
   	* [#311][i311] Adjust text placement for `SpanFixed`, `SpanOpening`, `CableOverhead`
+  	* [#330][i330] `Bridge` should evaluate `featureName`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
