@@ -56,6 +56,14 @@ function Bridge(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
+	
+	if feature.PrimitiveType ~= PrimitiveType.None and feature.featureName[1] and feature.featureName[1].name then
+		-- Note: S-52 only shows OBJNAM when CATBRG is not 2-8. It uses an offset of 3.51,0.
+		-- In S-101 the label is shown when available, and is offset further from the object.
+		-- May need additional refinement to prevent the label from overwriting the clearance value(s).
+		featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
+		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, 12210, 24)
+	end
 
 	return viewingGroup
 end
