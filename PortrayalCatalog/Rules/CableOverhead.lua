@@ -19,7 +19,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.radarConspicuous and feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
@@ -33,7 +33,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -47,7 +47,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -61,7 +61,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.radarConspicuous then
@@ -94,7 +94,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 12210, 24)
 			end
 		elseif feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -107,7 +107,7 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 			end
 		else

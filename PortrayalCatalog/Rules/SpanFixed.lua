@@ -1,7 +1,4 @@
--- Main entry point for feature type.
-
--- UNOFFICIAL:  Rules extracted from S-52 lookup table for BRIDGE.
-
+-- from S-57 BRIDGE, CATBRG=1 (fixed bridge)
 function SpanFixed(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('AlertReference:NavHazard')
 
@@ -14,9 +11,8 @@ function SpanFixed(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-		-- This if statement is here since the ESRI converter doesn't always emit the mandatory attribute verticalClearanceFixed.verticalClearanceValue.
 		if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-			featurePortrayal:AddInstructions('LinePlacement:Relative,0.5;FontSize:10;FontColor:CHBLK')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
@@ -28,9 +24,8 @@ function SpanFixed(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-		-- This if statement is here since the ESRI converter doesn't always emit the mandatory attribute verticalClearanceFixed.verticalClearanceValue.
 		if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,0;LinePlacement:Relative,0.5;FontSize:10;FontColor:CHBLK')
+			featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
 		end
 	else
