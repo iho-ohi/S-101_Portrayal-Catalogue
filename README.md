@@ -224,6 +224,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i305]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/305
 [i304]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/304
 [i306]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/306
+[i311]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/311
 [i312]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/312
 [i313]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/313
 [i318]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/318
@@ -294,6 +295,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#325][i325] Point geometry not allowed for `SpanOpening` and `SpanFixed`
   	* [#326][i326] Mooring cable should generate NavHazard alert
   	* [#327][i327] Update alert catalog to provide alert priorities per MSC.530(106)
+  	* [#311][i311] Adjust text placement for `SpanFixed`, `SpanOpening`, `CableOverhead`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
