@@ -95,7 +95,6 @@
             </description>
 			<viewingGroup ref="53011"/>
 		</highlight>
-		<!-- TODO: Determine if optional attribute should be true. IEC 61174 does not indicate disabling highlight is optional. -->
 		<highlight id="ProhAreHighlight" style="CautionHighlight" msg="ProhAreHighlightOffMsg">
             <description>
                 <name>Proh Are Highlight</name>
@@ -138,12 +137,14 @@
         <alert id="SafetyContour">
             <description>
                 <name>Safety contour</name>
-                <description>IEC 61174:2015 4.10.2.1, 4.10.3 (232/A11.3.4, 232/A11.4.3)</description>
+                <description>Alert for the safety contour. See MSC.530(106)/A11.3.4, A11.4.3</description>
                 <language>eng</language>
             </description>
+			<!-- MSC.530(106)/A11.4.3 -->
             <routeMonitor msg="CrossingSafetyContourMsg" highlight="SafetyContourHighlight">
                 <priority>Alarm</priority>
             </routeMonitor>
+			<!-- MSC.530(106)/A11.3.4 -->
             <routePlan msg="CrossingSafetyContourMsg" highlight="SafetyContourHighlight">
                 <priority>Indication</priority>
             </routePlan>
@@ -151,17 +152,18 @@
         <alert id="ProhAre">
             <description>
                 <name>Prohibited areas</name>
-                <description>Alert for prohibited areas or geographic areas for which special conditions exist. See IEC 61174:2015 4.10.2.1, 4.10.3 (MSC.232/A11.3.5, MSC.232/A11.4.4)</description>
+                <description>Alert for prohibited areas or geographic areas for which special conditions exist. See MSC.530(106)/A11.3.5, A11.4.4</description>
                 <language>eng</language>
             </description>
+			<!-- MSC.530(106)/A11.4.4 -->
             <routeMonitor msg="CrossingProhAreMsg" highlight="ProhAreHighlight">
-				<!-- TODO: IEC 61174 specifies Warning or Caution everywhere except Annex C, which specifies Warning or Indication. -->
 				<priorities label="ProhArePriorityLbl">
 					<priority default="true">Caution</priority>
 					<priority>Warning</priority>
 					<priority>Indication</priority>
 				</priorities>
             </routeMonitor>
+			<!-- MSC.530(106)/A11.3.5 -->
             <routePlan msg="CrossingProhAreMsg" highlight="ProhAreHighlight">
                 <priority>Indication</priority>
             </routePlan>
@@ -169,9 +171,10 @@
 		<alert id="NavHazard">
 			<description>
                 <name>Navigation hazards</name>
-                <description>Alert for passing close to a danger (e.g. obstruction, wreck, rock) or an aid to navigation. See IEC 61174:2015 4.10.2.1, 4.10.3 (MSC.232/A11.3.5, MSC.232/A11.4.6)</description>
+                <description>Alert for passing close to a danger (e.g. obstruction, wreck, rock) or an aid to navigation. See MSC.530(106)/A11.3.5, A11.4.6</description>
                 <language>eng</language>
             </description>
+			<!-- MSC.530(106)/A11.4.6 -->
             <routeMonitor msg="CrossingNavHazardsMsg" highlight="NavHazardsHighlight">
 				<priorities label="NavHazardsPriorityLbl">
 					<priority default="true">Warning</priority>
@@ -179,6 +182,7 @@
 					<priority>Indication</priority>
 				</priorities>
             </routeMonitor>
+			<!-- MSC.530(106)/A11.3.5 -->
             <routePlan msg="CrossingNavHazardsMsg" highlight="NavHazardsHighlight">
                 <priority>Indication</priority>
             </routePlan>
