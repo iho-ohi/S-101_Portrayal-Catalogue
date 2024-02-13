@@ -240,6 +240,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i327]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/327
 [i330]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/330
 [i332]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/332
+[i333]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/333
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.0
@@ -300,6 +301,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#311][i311] Adjust text placement for `SpanFixed`, `SpanOpening`, `CableOverhead`
   	* [#330][i330] `Bridge` should evaluate `featureName`
   	* [#332][i332] Remove highlight* viewing groups (no longer used by IMS)
+  	* [#333][i333] `Landmark` is not emitting FontColor command
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
