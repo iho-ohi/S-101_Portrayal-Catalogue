@@ -93,7 +93,7 @@ function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, vi
 	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
 
 	featurePortrayal:AddInstructions(displayPlane)
-	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90022,highlightDateDependent;DrawingPriority:24;PointInstruction:CHDATD01')
+	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90022;DrawingPriority:24;PointInstruction:CHDATD01')
 end
 
 --
@@ -148,12 +148,12 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		if vg90020 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90020,highlightInfo;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90020;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 
 		if vg90021 then
 			featurePortrayal:AddInstructions(displayPlane)
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90021,highlightDocument;DrawingPriority:24;PointInstruction:INFORM01')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90021;DrawingPriority:24;PointInstruction:INFORM01')
 		end
 	end
 end
