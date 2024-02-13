@@ -244,7 +244,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i333]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/333
 
 ## Changelog
-### 1.2.0 - use with FC 1.2.0
+### 1.2.0 - use with FC 1.2.x
 * Misc changes
 	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
  	* [#282][i282]  Update FC to 1.2.0 from IHO GI registry.
