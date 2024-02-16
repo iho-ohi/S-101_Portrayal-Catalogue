@@ -121,6 +121,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i172]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/172
 [i173]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/173
 [i174]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/174
+[i175]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/175
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
 [i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
@@ -307,6 +308,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#332][i332] Remove highlight* viewing groups (no longer used by IMS)
   	* [#333][i333] `Landmark` is not emitting FontColor command
   	* [#334][i334] Complete implementation of `featureName`
+  	* [#175][i175] Ensure correct handling of `featureName` attribute `nameUsage`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
