@@ -148,6 +148,7 @@ function CreateFeaturePortrayalItemArray()
 
 		function featurePortrayalItem:NewFeaturePortrayal()
 			self.featurePortrayal = CreateFeaturePortrayal(self.Feature.ID)
+			feature.featurePortrayal = self.featurePortrayal
 
 			return self.featurePortrayal
 		end
@@ -171,6 +172,7 @@ function CreateFeaturePortrayal(featureReference)
 		Type = 'FeaturePortrayal',
 		FeatureReference = featureReference,
 		DrawingInstructions = CreateDrawingInstructions(),
+		GetFeatureNameCalled = false,
 	}
 
 	function featurePortrayal:AddInstructions(instructions)
@@ -186,13 +188,15 @@ function CreateFeaturePortrayal(featureReference)
 		CheckType(textViewingGroup, 'number')
 		CheckType(textPriority, 'number')
 		CheckType(viewingGroup, 'number')
-		CheckType(priority, 'number')
+		CheckTypeOrNil(priority, 'number')
 
-		--self.DrawingInstructions:Add('Parent:' .. EncodeDEFString(featurePortrayal.FeatureReference))
-		self.DrawingInstructions:Add('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority)
-		self.DrawingInstructions:Add('TextInstruction:' .. text)
-		--self.DrawingInstructions:Add('Parent:')
-		self.DrawingInstructions:Add('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority)
+		-- Add the instructions to draw the text
+		self.DrawingInstructions:Add('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
+		-- Reset the state in case the caller generates further non-text drawing instructions
+		self.DrawingInstructions:Add('ViewingGroup:' .. viewingGroup)
+		if priority then
+			self.DrawingInstructions:Add('DrawingPriority:' .. priority)
+		end
 	end
 
 	function featurePortrayal:AddSpatialReference(spatialAssociation)
@@ -229,6 +233,72 @@ function CreateFeaturePortrayal(featureReference)
 		self.DrawingInstructions:Add()
 	end
 
+	--
+	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected national language. If no match is found,
+	-- returns the first entry marked as the default (nameUsage == 1). If no default is present, returns the first English name. Otherwise
+	-- returns nil.
+	function featurePortrayal:GetFeatureName(feature, contextParameters)
+		CheckSelf(self, featurePortrayal.Type)
+		CheckType(feature, 'Feature')
+		CheckType(contextParameters, 'array:ContextParameter')
+
+		self.GetFeatureNameCalled = true
+		
+		-- TextPlacement can override feature name
+		local textAssociation = feature:GetFeatureAssociations('TextAssociation')
+		if textAssociation then
+			for _, tp in ipairs(textAssociation) do
+				-- Multiplicity is 0..1
+				if tp.text then
+					return tp.text
+				end
+			end
+		end
+
+		local englishSelected = not contextParameters.NationalLanguage or contextParameters.NationalLanguage == 'eng' or contextParameters.NationalLanguage == ''
+		local defaultName			-- an entry with nameUsage == 1
+		local englishName			-- the first English name
+		local nationalName			-- the first entry which matched the selected national language
+		for cnt, featureName in ipairs(feature.featureName) do
+		
+			-- ensure a name is present
+			if featureName.name and featureName.name ~= '' then
+
+				-- don't process if only intended for pick report
+				if not featureName.nameUsage or featureName.nameUsage ~= 3 then
+				
+					local isEnglishName = not featureName.language or featureName.language == 'eng'
+					local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage) or (englishSelected and isEnglishName)
+
+					-- check for default values which are used if we can't otherwise find a match...
+					if featureName.nameUsage then
+						if featureName.nameUsage == 1 then
+							-- only one entry is permitted to have nameUsage set to one
+							defaultName = featureName.name
+						elseif featureName.nameUsage == 2 then
+							-- use the entry intended for chart display which matched the selected lanaguage
+							if languageMatches then
+								return featureName.name
+							end
+						end
+					end
+
+					if not englishName and isEnglishName then
+						englishName = featureName.name
+					end
+
+					if not nationalName and languageMatches then
+						nationalName = featureName.name
+					end
+					
+				end
+			end
+			
+		end
+		
+		return nationalName or defaultName or englishName
+	end
+	
 	return featurePortrayal
 end
 
@@ -240,40 +310,6 @@ function CreateDrawingInstructions()
 	end
 
 	return drawingInstructions;
-end
-
-
--- Re-introduced supporting PSWG #104, PC #144
-function GetFeatureName(feature, contextParameters)
-
-		for cnt, featureName in ipairs(feature.featureName) do
-
-		-- No chart display, only for Pick Report
-		if featureName.nameUsage == 3 then  
-			return nil
-		end
-		
-		-- Default name display 
-		if featureName.nameUsage == 1 and contextParameters.NationalLanguage == featureName.language and featureName.name and featureName.name ~= '' then
-			return featureName.name
-		end
-		
-		-- Alternate name display 
-		if featureName.nameUsage == 2 and contextParameters.NationalLanguage == featureName.language and featureName.name and featureName.name ~= '' then
-			return featureName.name
-		end
-	end
-	-- at this point, return english as default unless no nameUsage is defined for all entires
-	for cnt, featureName in ipairs(feature.featureName) do
-		if featureName.nameUsage ~= nil then
-			if featureName.name and featureName.name ~= '' and featureName.language == 'eng' then
-				return featureName.name
-			end	
-		end
-	end	
-
-	return nil
-
 end
 
 -- Updated per #61 - temporarily remove NationalLanguage context parameter
@@ -289,4 +325,22 @@ function GetInformationText(information, contextParameters)
 	end
 
 	return defaultText
+end
+
+function GetFeatureName(feature, contextParameters)
+	return feature.featurePortrayal:GetFeatureName(feature, contextParameters)
+end
+
+--
+-- The caller should not assume any drawing instructions are emitted; the state
+-- of the text style commands may or may not be altered after this call.
+--
+-- textStyleInstructions example: 'LocalOffset:0,0;FontColor:CHBLK'
+function PortrayFeatureName(feature, featurePortrayal, contextParameters, textViewingGroup, textPriority, viewingGroup, priority, textStyleInstructions)
+	local name = featurePortrayal:GetFeatureName(feature, contextParameters)
+	if name then
+		local textStyle = textStyleInstructions or 'FontColor:CHBLK'
+		featurePortrayal:AddInstructions(textStyle)
+		featurePortrayal:AddTextInstruction(EncodeString(name, '%s'), textViewingGroup, textPriority, viewingGroup, priority)
+	end
 end

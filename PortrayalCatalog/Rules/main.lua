@@ -23,8 +23,6 @@ function PortrayalMain(featureIDs)
 
 		local feature = featurePortrayalItem.Feature
 
-		--Debug.Break()
-
 		local featurePortrayal = featurePortrayalItem:NewFeaturePortrayal()
 
 		contextParameters._observed = {}
@@ -49,11 +47,18 @@ function PortrayalMain(featureIDs)
 			local viewingGroup = _G[feature.Code](feature, featurePortrayal, contextParameters)
 
 			if not viewingGroup then
-				error('Viewing group not returned')
+				error('Viewing group not returned for feature ' .. feature.ID)
 			end
 
 			if #featurePortrayal.DrawingInstructions == 0 then
 				error('No drawing instructions were emitted for feature ' .. feature.ID)
+			end
+
+			-- Ensure featureName is processed for those features whose rules don't process it directly.
+			if not featurePortrayal.GetFeatureNameCalled then
+				if feature['!featureName'] and #feature.featureName > 0 and feature.featureName[1].name then
+					PortrayFeatureName(feature, featurePortrayal, contextParameters, 21, 24, viewingGroup, nil, 'TextAlignHorizontal:Center;TextAlignVertical:Top;LocalOffset:0,-3.51;FontColor:CHBLK')
+				end
 			end
 
 			ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
@@ -86,8 +91,6 @@ function PortrayalMain(featureIDs)
 		featurePortrayalItem.ObservedContextParameters = contextParameters._observed
 		featurePortrayalItem.InUseContextParameters = contextParameters._asTable
 
-		--Debug.Break()
-
 		local observed = ObservedContextParametersAsString(featurePortrayalItem)
 
 		local drawingInstructions = table.concat(featurePortrayal.DrawingInstructions, ';')
@@ -96,8 +99,6 @@ function PortrayalMain(featureIDs)
 
 		return HostPortrayalEmit(featurePortrayal.FeatureReference, drawingInstructions, observed)
 	end
-
-	--Debug.Break()
 
 	if featureIDs then
 		for _,  featureID in ipairs(featureIDs) do
