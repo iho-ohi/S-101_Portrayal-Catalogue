@@ -131,7 +131,6 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('AugmentedPath:LocalCRS,GeographicCRS,LocalCRS')
 
 				if contains(lightSector.lightVisibility, { 7, 8, 3 }) then
-					featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK') -- Redundant?
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				else
 					featurePortrayal:SimpleLineStyle('solid',1.28,'OUTLW')
@@ -139,6 +138,9 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				end
+				
+				featurePortrayal:AddInstructions('ClearGeometry')
+				
 			elseif lightSector.directionalCharacter then
 				-- Directional light.
 				local leglen = nmi2metres(valueOfNominalRange)
@@ -153,6 +155,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. orientation .. ',GeographicCRS,' .. leglen)
 					featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
+					featurePortrayal:AddInstructions('ClearGeometry')
 				end
 
 				local categoryOfLight = feature.categoryOfLight
@@ -165,15 +168,16 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 					featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
+					featurePortrayal:AddInstructions('ClearGeometry')
 				elseif orientationValue then
 					featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. orientation)
-					featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:' .. sectorLightSymbol)
+					featurePortrayal:AddInstructions('PointInstruction:' .. sectorLightSymbol)
 					featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 				else
-					featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:QUESMRK1')
+					featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
 				end
 
-				featurePortrayal:AddInstructions('LocalOffset:10.53,-3.51;FontSize:10;FontColor:CHBLK;ClearGeometry')
+				featurePortrayal:AddInstructions('LocalOffset:10.53,-3.51;FontColor:CHBLK')
 				
 				if orientationValue
 				then
@@ -185,29 +189,26 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
 				featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24)
-
+				
 				-- PC #113
 				if lightSector.directionalCharacter.moireEffect then
 					if orientationValue then
 						featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. orientation)
-						featurePortrayal:AddInstructions('ClearGeometry;LocalOffset:0,0;PointInstruction:MOIRE01')
+						featurePortrayal:AddInstructions('LocalOffset:0,0;PointInstruction:MOIRE01')
 						featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 					else
-						featurePortrayal:AddInstructions('ClearGeometry;LocalOffset:0,0;PointInstruction:MOIRE01')
+						featurePortrayal:AddInstructions('LocalOffset:0,0;PointInstruction:MOIRE01')
 					end
 				end
 			else
 				-- Neither sectorLimit nor directionalCharacter was found.
-				featurePortrayal:AddInstructions('ClearGeometry;PointInstruction:QUESMRK1')
+				featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
 			end
 		end
 	end
 
 	if informationFound then
-		featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
-
-		featurePortrayal:AddInstructions('Hover:true')
-
+		featurePortrayal:AddInstructions('LocalOffset:0,0')
 		featurePortrayal:AddInstructions('ViewingGroup:27070,90020;DrawingPriority:24;PointInstruction:INFORM01')
 	end
 

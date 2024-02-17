@@ -49,6 +49,7 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 				--featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				--i, other = next(associatedFeatures, i)
 			--end
+			--featurePortrayal:AddInstructions('ClearGeometry')
 		else
 			-- undefined updateType
 			error('UpdateInformation feature with undefined updateType')

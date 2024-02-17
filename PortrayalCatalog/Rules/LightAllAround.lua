@@ -62,7 +62,7 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-		featurePortrayal:AddInstructions('ClearGeometry;Rotation:PortrayalCRS,0;FontSize:10;FontColor:CHBLK')
+		featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
 		featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignHorizontal:Start;TextAlignVertical:Center')
 
 		local description = LITDSN02(categoryOfLight, feature.rhythmOfLight, feature.colour, feature.height, feature['!valueOfNominalRange'], feature.status)

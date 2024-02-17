@@ -24,6 +24,7 @@ function DepthNoBottomFound(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 			end
 		end
+		featurePortrayal:AddInstructions('ClearGeometry')
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
 			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:OverRADAR')
@@ -39,6 +40,7 @@ function DepthNoBottomFound(feature, featurePortrayal, contextParameters)
 		for j, symbol in ipairs(symbols) do
 			featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		end
+		featurePortrayal:AddInstructions('ClearGeometry')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
