@@ -68,9 +68,9 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 		local description = LITDSN02(categoryOfLight, feature.rhythmOfLight, feature.colour, feature.height, feature['!valueOfNominalRange'], feature.status)
 		if contains(feature.signalGeneration, {5,6})
 		then
-			featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, 27070, 21)
+			featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, 27070, 21, true)
 		else
-			featurePortrayal:AddTextInstruction(description, 23, 24, 27070, 21)
+			featurePortrayal:AddTextInstruction(description, 23, 24, 27070, 21, true)
 		end
 	else
 		LightFlareAndDescription(feature, featurePortrayal, contextParameters, feature.categoryOfLight[1], 27070, 21)

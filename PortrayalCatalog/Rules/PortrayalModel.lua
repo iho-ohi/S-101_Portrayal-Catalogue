@@ -4,6 +4,8 @@ These functions are intended to be called by the portrayal rules.
 --]]
 -- #61
 
+require 'PortrayalAPI'
+
 local CreateContextParameters, CreateFeaturePortrayalItemArray, CreateFeaturePortrayal, CreateDrawingInstructions
 local GetMergedDisplayParameters
 
@@ -146,11 +148,13 @@ function CreateFeaturePortrayalItemArray()
 
 		local featurePortrayalItem = { Type = 'FeaturePortrayalItem', Feature = feature, ObservedContextParameters = {} }
 
-		function featurePortrayalItem:NewFeaturePortrayal()
-			self.featurePortrayal = CreateFeaturePortrayal(self.Feature.ID)
-			feature.featurePortrayal = self.featurePortrayal
+		feature.LuaFeaturePortrayalItem = featurePortrayalItem
 
-			return self.featurePortrayal
+		function featurePortrayalItem:NewFeaturePortrayal()
+			self.LuaFeaturePortrayal = CreateFeaturePortrayal(self.Feature)
+			feature.featurePortrayal = self.LuaFeaturePortrayal
+
+			return self.LuaFeaturePortrayal
 		end
 
 		self[#self + 1] = featurePortrayalItem
@@ -164,13 +168,14 @@ function InstructionSpatialReference(spatialAssociation)
 	return spatialAssociation.SpatialID .. ',' .. spatialAssociation.Orientation.Name
 end
 
-function CreateFeaturePortrayal(featureReference)
-	CheckType(featureReference, 'string')
+function CreateFeaturePortrayal(feature)
+	CheckType(feature, 'Feature')
 
 	local featurePortrayal =
 	{
 		Type = 'FeaturePortrayal',
-		FeatureReference = featureReference,
+		Feature = feature,
+		FeatureReference = feature.ID,
 		DrawingInstructions = CreateDrawingInstructions(),
 		GetFeatureNameCalled = false,
 	}
@@ -182,20 +187,91 @@ function CreateFeaturePortrayal(featureReference)
 		self.DrawingInstructions:Add(instructions)
 	end
 
-	function featurePortrayal:AddTextInstruction(text, textViewingGroup, textPriority, viewingGroup, priority)
+	function featurePortrayal:AddTextInstruction(text, textViewingGroup, textPriority, viewingGroup, priority, isLightDescription)
 		CheckSelf(self, featurePortrayal.Type)
 		CheckType(text, 'string')
 		CheckType(textViewingGroup, 'number')
 		CheckType(textPriority, 'number')
 		CheckType(viewingGroup, 'number')
 		CheckTypeOrNil(priority, 'number')
+		
+		local placementFeature = self.Feature
+		
+		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
+		if textAssociation and #textAssociation > 0 then
+			-- 0: place feature name override
+			-- 1: place feature name
+			-- 2: place light description
+			local placementType = textAssociation[1].textType or 0
+			local isLightPlacement = placementType == 2
+			if (isLightDescription and isLightPlacement) or (not isLightDescription and not isLightPlacement) then
+			
+				-- Make the TextPlacement feature the target of our drawing instructions
+				placementFeature = textAssociation[1]
+				placementFeature.featurePortrayal = placementFeature.LuaFeaturePortrayalItem:NewFeaturePortrayal()
+				
+				-- Add scaleMinimum if present
+				local scaleMinimum = feature['!scaleMinimum']
+				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
+					placementFeature.featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
+				end
 
+				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
+				local length = placementFeature.textOffsetDistance or 0
+				if length ~= 0 then
+					local direction = placementFeature.textOffsetBearing or 0
+					placementFeature.featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length)
+				end
+				
+				-- Center the text on the point
+				placementFeature.featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+
+				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
+				local fontStyle = {
+					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
+					['FontColor:'] = 'FontColor:CHBLK',	-- transparency = 0
+					['FontBackgroundColor:'] = nil,		-- token="", transparency=1
+					['FontSize:'] = nil,				-- 10
+					['FontProportion:'] = nil,			-- "Proportional"
+					['FontWeight:'] = nil,				-- "Medium"
+					['FontSlant:'] = nil,				-- "Upright"
+					['FontSerifs:'] = nil,				-- false
+					['FontUnderline:'] = nil,			-- false
+					['FontStrikethrough:'] = nil,		-- false
+					['FontUpperline:'] = nil,			-- false
+					['FontReference:'] = nil,			-- ""
+					['TextVerticalOffset:'] = nil		-- 0
+				}
+				for _, v in ipairs(self.DrawingInstructions) do
+					for instruction in string.gmatch(v, "([^;]+)") do
+						for k, _ in pairs(fontStyle) do
+							if string.find(instruction, k, 1, true) ~= nil then
+								k = v
+							end
+						end
+					end
+				end
+				
+				-- Add the style to the TextPlacement feature
+				for k, v in pairs(fontStyle) do
+					if v ~= nil then
+						placementFeature.featurePortrayal:AddInstructions(v)
+					end
+				end
+				-- Done copying text style
+			end
+		end
+		
 		-- Add the instructions to draw the text
-		self.DrawingInstructions:Add('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
-		-- Reset the state in case the caller generates further non-text drawing instructions
-		self.DrawingInstructions:Add('ViewingGroup:' .. viewingGroup)
-		if priority then
-			self.DrawingInstructions:Add('DrawingPriority:' .. priority)
+		placementFeature.featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
+		if placementFeature == self.Feature then
+			-- Reset the state in case the caller generates further non-text drawing instructions
+			self:AddInstructions('ViewingGroup:' .. viewingGroup)
+			if priority then
+				self:AddInstructions('DrawingPriority:' .. priority)
+			end
+		else
+			HostPortrayalEmit(placementFeature.featurePortrayal.FeatureReference, table.concat(placementFeature.featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature.LuaFeaturePortrayalItem))
 		end
 	end
 
@@ -246,15 +322,14 @@ function CreateFeaturePortrayal(featureReference)
 		
 		-- TextPlacement can override feature name
 		local textAssociation = feature:GetFeatureAssociations('TextAssociation')
-		if textAssociation then
-			for _, tp in ipairs(textAssociation) do
-				-- Multiplicity is 0..1
-				if tp.text then
-					return tp.text
-				end
-			end
+		if textAssociation and #textAssociation > 0 and textAssociation[1].text then
+			return textAssociation[1].text
 		end
-
+		
+		if not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name then
+			return nil
+		end
+		
 		local englishSelected = not contextParameters.NationalLanguage or contextParameters.NationalLanguage == 'eng' or contextParameters.NationalLanguage == ''
 		local defaultName			-- an entry with nameUsage == 1
 		local englishName			-- the first English name

@@ -19,10 +19,11 @@ function PortrayalMain(featureIDs)
 	-- higher priority edges suppress lower priority edges.
 
 	function ProcessFeaturePortrayalItem(featurePortrayalItem)
-		Debug.StartPerformance('Lua Code - Dataset processing')
 
 		local feature = featurePortrayalItem.Feature
 
+		Debug.StartPerformance('Lua Code - Dataset processing')
+		
 		local featurePortrayal = featurePortrayalItem:NewFeaturePortrayal()
 
 		contextParameters._observed = {}
@@ -56,9 +57,7 @@ function PortrayalMain(featureIDs)
 
 			-- Ensure featureName is processed for those features whose rules don't process it directly.
 			if not featurePortrayal.GetFeatureNameCalled then
-				if feature['!featureName'] and #feature.featureName > 0 and feature.featureName[1].name then
-					PortrayFeatureName(feature, featurePortrayal, contextParameters, 21, 24, viewingGroup, nil, 'TextAlignHorizontal:Center;TextAlignVertical:Top;LocalOffset:0,-3.51;FontColor:CHBLK')
-				end
+				PortrayFeatureName(feature, featurePortrayal, contextParameters, 21, 24, viewingGroup, nil, 'TextAlignHorizontal:Center;TextAlignVertical:Top;LocalOffset:0,-3.51;FontColor:CHBLK')
 			end
 
 			ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
@@ -99,17 +98,24 @@ function PortrayalMain(featureIDs)
 
 		return HostPortrayalEmit(featurePortrayal.FeatureReference, drawingInstructions, observed)
 	end
-
+	
 	if featureIDs then
 		for _,  featureID in ipairs(featureIDs) do
-			if not ProcessFeaturePortrayalItem(featurePortrayalItems[featureID]) then
-				return false
+			local item = featurePortrayalItems[featureID]
+			-- TextPlacement gets processed when the feature it's associated with is processed
+			if item.Feature.Code ~= 'TextPlacement' then
+				if not ProcessFeaturePortrayalItem(item) then
+					return false
+				end
 			end
 		end
 	else
 		for _,  featurePortrayalItem in ipairs(featurePortrayalItems) do
-			if not ProcessFeaturePortrayalItem(featurePortrayalItem) then
-				return false
+			-- TextPlacement gets processed when the feature it's associated with is processed
+			if featurePortrayalItem.Feature.Code ~= 'TextPlacement' then
+				if not ProcessFeaturePortrayalItem(featurePortrayalItem) then
+					return false
+				end
 			end
 		end
 	end
