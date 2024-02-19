@@ -246,6 +246,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i333]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/333
 [i334]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/334
 [i335]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/335
+[i337]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/337
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
 
 ## Changelog
@@ -263,7 +264,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#291][i291]  Remove duplicate catalog entry for `BOYPIL10`
   	* [#320][i320]  Remove IMS for `Unknown`; add VG `21010` to VGL 10 and 10a. "?" symbol is now part of `Standard` display
   	* [#329][i329]  Update references in the alert catalog from MSC.232(82) to MSC.530(106)
-  	* [#338][i338]  Prevent potential naming issue in PortrayalModel 
+  	* [#338][i338]  Prevent potential naming issue in PortrayalModel
+  	* [#337][i337]  Remove viewing groups which don't have features assigned
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
