@@ -1,6 +1,7 @@
 # S-101 Portrayal-Catalogue
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
+[i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
 [i4]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/4
 [i5]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/5
 [i6]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/6
@@ -311,6 +312,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#334][i334] Complete implementation of `featureName`
   	* [#175][i175] Ensure correct handling of `featureName` attribute `nameUsage`
   	* [#335][i335] `DepthNoBottomFound` should not support geometry of type point, only pointSet is permitted
+  	* [#3][i3] Add support for `TextPlacement`
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
