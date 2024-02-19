@@ -8189,13 +8189,8 @@
 	  <!-- CHART INFORMATION - DISPLAY BASE -->
 	  <!-- 10000-10999 Reserved for chart information -->
 	  <!-- A, B - CHART FURNITURE -->
-      <viewingGroup id="11000">
-         <description>
-            <name>Information about the chart display</name>
-            <description>Base: A, B - Chart Furniture</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+
+	  <!-- 11000's: Information about the chart display -->
       <viewingGroup id="11010">
          <description>
             <name>cursor [symbol  SY(CURSRA01)]</name>
@@ -8232,14 +8227,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- C, D, E, F - TOPOGRAPHY AND INFRASTRUCTURE -->
-      <viewingGroup id="12000">
-         <description>
-            <name>Land area</name>
-            <description>Base: C, D, E, F - Topography and Infrastructure</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 12000's: Land area -->
       <viewingGroup id="12010">
          <description>
             <name>land area (LANDARE)</name>
@@ -8282,14 +8272,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- H, I - HYDROGRAPHY -->
-      <viewingGroup id="13000">
-         <description>
-            <name>Safety Contour</name>
-            <description>Base: H, I - Hydrography</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 13000's: Safety contour -->
       <viewingGroup id="13010">
          <description>
             <name>safety contour (from conditional symbology procedure DEPCNT03)</name>
@@ -8305,14 +8290,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- J, K, L - SUBSEA FEATURES -->
-      <viewingGroup id="14000">
-         <description>
-            <name>Dangers under water</name>
-            <description>Base: J, K, L - Subsea Features</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 14000's: Dangers under water -->
       <viewingGroup id="14010">
          <description>
             <name>isolated underwater dangers in water deeper than the displayed safety contour  (rocks, wrecks, obstructions, mooring cables from conditional symbology procedure)</name>
@@ -8347,14 +8327,9 @@
 
 	  <!--********** STANDARD DISPLAY ELEMENTS **********-->
 	  <!-- CHART INFORMATION - STANDARD DISPLAY -->
+
 	  <!-- A, B - INFORMATION ABOUT THE CHART DISPLAY -->
-      <viewingGroup id="21000">
-         <description>
-            <name>Information about the chart display</name>
-            <description>Standard: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 21000's: Information about the Chart Display -->
       <viewingGroup id="21010">
          <description>
             <name>Unknown object (magenta question mark)</name>
@@ -8383,14 +8358,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- C, D, E, F - NATURAL & MAN MADE FEATURES, PORT FEATURES -->
-      <viewingGroup id="22000">
-         <description>
-            <name>Major Coastal Features</name>
-            <description>Standard: C, D, E, F - Natural and man made features, Port features</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 22000's: Major Coastal Features -->
       <viewingGroup id="22010">
          <description>
             <name>Lake (LAKARE), sloping ground (SLOGRD), slope top (SLOTOP), dyke (DYKCON), causeway (CAUSWY), dam (DAMCON)</name>
@@ -8426,14 +8396,10 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- H, I - DEPTHS, CURRENTS, etc. -->
-      <viewingGroup id="23000">
-         <description>
-            <name>Depths</name>
-            <description>Standard: H, I - Depths, Currents, etc.</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 23000's: Depths -->
+	  <!-- note: 23010 (DIAMON01 pattern on areas of depth less than the safety contour) is now an Independent Mariner Selector (90000). Viewing group 23010 is unused by S-101 -->
       <viewingGroup id="23030">
          <description>
             <name>Swept area (SWPARE)</name>
@@ -8441,14 +8407,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- J, K, L - SEABED, OBSTRUCTIONS, PIPELINES -->
-      <viewingGroup id="24000">
-         <description>
-            <name>Seabed dangers</name>
-            <description>Standard: J, K, L - Seabed, Obstructions, Pipelines</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 24000's: Seabed dangers -->
       <viewingGroup id="24010">
          <description>
             <name>Mooring cables (MORFAC, CATMOR6), (CBLSUB, CATCBL6), tunnel on Seabed (TUNNEL, BURDEP=0), sandwaves (SNDWAV)</name>
@@ -8470,14 +8431,9 @@
          <language>eng</language>
        </description>
      </viewingGroup>
+
      <!-- M - TRAFFIC ROUTES -->
-      <viewingGroup id="25000">
-         <description>
-            <name>Routes and Tracks</name>
-            <description>Standard: M - Traffic routes</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	 <!-- 25000's: Routes and Tracks -->
       <viewingGroup id="25001">
          <description>
             <name>Collision Regulations Limit, demarcation line between inland and international navigation rules</name>
@@ -8520,14 +8476,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- N - SPECIAL AREAS -->
-      <viewingGroup id="26000">
-         <description>
-            <name>Restricted and Cautionary Areas</name>
-            <description>Standard: N - Special areas</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 26000's: Restricted and Cautionary Areas -->
       <viewingGroup id="26010">
          <description>
             <name>Restricted area (RESARE)</name>
@@ -8598,14 +8549,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- P, Q, R, S - BUOYS & BEACONS, LIGHTS, FOG SIGNALS, RADAR -->
-      <viewingGroup id="27000">
-         <description>
-            <name>Buoys, Beacons, Topmarks, Lights, Fog Signals</name>
-            <description>Standard: P, Q, R, S - Buoys and Beacons, Lights, Fog signals, RADAR</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 27000's: Buoys, Beacons, Topmarks, Lights, Fog Signals -->
       <viewingGroup id="27010">
          <description>
             <name>Buoy (BOYxxx), light float (LITFLT), mooring buoy (MORFAC, CATMOR7)</name>
@@ -8711,14 +8657,9 @@
 			   <language>eng</language>
 		   </description>
 	   </viewingGroup>
+
 	   <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
-      <viewingGroup id="28000">
-         <description>
-            <name>Services</name>
-            <description>Standard: T, U - Services and Small craft facilities</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	   <!-- 28000's: Services -->
       <viewingGroup id="28010">
          <description>
             <name>pilot boarding point (PILBOP), pilotage district</name>
@@ -8745,13 +8686,7 @@
 	  
 	  <!-- OTHER CHART INFORMATION -->
 	  <!-- A, B - INFORMATION ABOUT THE CHART DISPLAY -->
-      <viewingGroup id="31000">
-         <description>
-            <name>Information about the Chart Display</name>
-            <description>Other: A, B - Information about the chart display</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 31000's: Information about the Chart Display -->
       <viewingGroup id="31010">
          <description>
             <name>Quality of survey, quality of non-bathymetric data, sounding datum, vertical datum</name>
@@ -8780,14 +8715,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- C, D, E, F - NATURAL & MAN MADE FEATURES, PORT FEATURES -->
-      <viewingGroup id="32000">
-         <description>
-            <name>Natural Features</name>
-            <description>Other: C, D, E, F - Natural and man made features, Port features</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 32000's: Natural Features -->
       <viewingGroup id="32010">
          <description>
             <name>dunes , hills (SLOGRD), ridge, clifftop (SLOTOP), contours and elevation (LNDELV)</name>
@@ -8872,14 +8802,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- H, I - DEPTHS, CURRENTS, etc. -->
-      <viewingGroup id="33000">
-         <description>
-            <name>Depths, Currents, Tide rips, etc.</name>
-            <description>Other: H, I - Depths, Currents, etc.</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 33000's: Depths, Currents, Tide rips, etc. -->
       <viewingGroup id="33010">
          <description>
             <name>Soundings (SOUNDG)</name>
@@ -8915,14 +8840,9 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- J, K, L - SEABED, OBSTRUCTIONS, PIPELINES -->
-      <viewingGroup id="34000">
-         <description>
-            <name>Seabed Information: rocks, wrecks and obstructions, pipes and cables</name>
-            <description>Other: J, K, L - Seabed, Obstructions, Pipelines</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 34000's: Seabed Information: rocks, wrecks & obstructions, pipes & cables -->
       <viewingGroup id="34010">
          <description>
             <name>nature of seabed (SBDARE)</name>
@@ -8965,22 +8885,12 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+
 	  <!-- M - TRAFFIC ROUTES -->
-      <viewingGroup id="35000">
-         <description>
-            <name>Routes</name>
-            <description>Other: M - Traffic Routes</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 35000's: Routes -->
+
 	  <!-- N - SPECIAL AREAS -->
-      <viewingGroup id="36000">
-         <description>
-            <name>Administrative Areas, (by cursor enquiry)</name>
-            <description>Other: N - Special areas</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 36000's: Administrative Areas, (by cursor enquiry) -->
       <viewingGroup id="36010">
          <description>
             <name>continental shelf (COSARE)</name>
@@ -9018,14 +8928,10 @@
 	   </viewingGroup>
 
 	  <!-- P, Q, R, S - BUOYS & BEACONS, LIGHTS, FOG SIGNALS, RADAR -->
+	  <!-- 37000's: na -->
+	  
 	  <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
-      <viewingGroup id="38000">
-         <description>
-            <name>Services</name>
-            <description>Other: T, U - Services and Small craft facilities</description>
-            <language>eng</language>
-         </description>
-      </viewingGroup>
+	  <!-- 38000's: Services -->
       <viewingGroup id="38010">
          <description>
             <name>radar station (RADSTA), radio station (RDOSTA)</name>
@@ -9055,7 +8961,17 @@
          </description>
       </viewingGroup>
 	  
+	  <!-- END OTHER CHART INFORMATION -->
+	  
+	  <!-- OTHER MARINERS' INFORMATION -->
+	  <!-- See S-98 Annex C / IMO SN_Circ243 -->
+	  <!-- END OTHER MARINERS' INFORMATION -->
+	
+	  <!--********** END OTHER DISPLAY ELEMENTS **********-->
+
       <!-- TEXT GROUPS -->
+	  <!-- Note: These act like Independent Mariner Selectors; they are independent of the selected display mode -->
+	  
 	  <!-- 00-10 reserved for future assignment by IHO -->
       <viewingGroup id="11">
         <description>
@@ -9134,16 +9050,12 @@
 	  <!-- 50-69 is defined in MARINERS TEXT -->
 	  <!-- 70-79 is defined in MANUFACTURERS TEXT -->
 	  <!-- 80-99 Future Requirements -->
-      <!-- END TEXT GROUPS -->
-	  <!-- END OTHER CHART INFORMATION -->
 	  
-	  <!-- OTHER MARINERS' INFORMATION -->
-	  <!-- See S-98 Annex C / IMO SN_Circ243 -->
-	  <!-- END OTHER MARINERS' INFORMATION -->
-	
-	  <!--********** END OTHER DISPLAY ELEMENTS **********-->
+      <!-- END TEXT GROUPS -->
 
      <!--********** Alert Catalog Viewing Groups **********-->
+	 <!-- Danger highlight and Indication highlights -->
+	 
       <viewingGroup id="53010">
         <description>
           <name>Safety Contour Highlight</name>
@@ -9252,10 +9164,11 @@
       
    <!--********** END Alert Catalog Viewing Groups **********--> 
    
-   <!--********** Viewing groups for Independent Mariner Selectors **********-->
+   <!--********** Independent Mariner Selectors **********-->
+   <!-- These operate independently of the selected display mode -->
       <viewingGroup id="90000">
          <description>
-            <name>Area of depth less than the safety contour (DIAMOND1 pattern)</name>
+            <name>Area of depth less than the safety contour (DIAMON1 pattern)</name>
             <description>Shallow water pattern</description>
             <language>eng</language>
          </description>
@@ -9320,14 +9233,12 @@
    </viewingGroups>
    <foundationMode>
          <!-- A, B - CHART FURNITURE -->
-         <viewingGroup>11000</viewingGroup>
          <viewingGroup>11010</viewingGroup>
          <viewingGroup>11030</viewingGroup>
          <viewingGroup>11040</viewingGroup>
          <viewingGroup>11050</viewingGroup>
          <viewingGroup>11060</viewingGroup>
          <!-- C, D, E, F - TOPOGRAPHY AND INFRASTRUCTURE -->
-         <viewingGroup>12000</viewingGroup>
          <viewingGroup>12010</viewingGroup>
          <viewingGroup>12200</viewingGroup>
          <viewingGroup>12210</viewingGroup>
@@ -9335,11 +9246,9 @@
          <viewingGroup>12410</viewingGroup>
          <viewingGroup>12420</viewingGroup>
          <!-- H, I - HYDROGRAPHY -->
-         <viewingGroup>13000</viewingGroup>
          <viewingGroup>13010</viewingGroup>
          <viewingGroup>13030</viewingGroup>
          <!-- J, K, L - SUBSEA FEATURES -->
-         <viewingGroup>14000</viewingGroup>
          <viewingGroup>14010</viewingGroup>
 		 <viewingGroup>14050</viewingGroup>
          <!-- M - TRACKS AND ROUTES -->
@@ -9356,14 +9265,12 @@
             <language>eng</language>
          </description>
          <!-- A, B - CHART FURNITURE -->
-         <viewingGroup>11000</viewingGroup>
          <viewingGroup>11010</viewingGroup>
          <viewingGroup>11030</viewingGroup>
          <viewingGroup>11040</viewingGroup>
          <viewingGroup>11050</viewingGroup>
          <viewingGroup>11060</viewingGroup>
          <!-- C, D, E, F - TOPOGRAPHY AND INFRASTRUCTURE -->
-         <viewingGroup>12000</viewingGroup>
          <viewingGroup>12010</viewingGroup>
          <viewingGroup>12200</viewingGroup>
          <viewingGroup>12210</viewingGroup>
@@ -9371,11 +9278,9 @@
          <viewingGroup>12410</viewingGroup>
          <viewingGroup>12420</viewingGroup>
          <!-- H, I - HYDROGRAPHY -->
-         <viewingGroup>13000</viewingGroup>
          <viewingGroup>13010</viewingGroup>
          <viewingGroup>13030</viewingGroup>
          <!-- J, K, L - SUBSEA FEATURES -->
-         <viewingGroup>14000</viewingGroup>
          <viewingGroup>14010</viewingGroup>
 		 <viewingGroup>14050</viewingGroup>
          <!-- M - TRACKS AND ROUTES -->
@@ -9404,7 +9309,6 @@
          <viewingGroup>22210</viewingGroup>
          <viewingGroup>22220</viewingGroup>
          <viewingGroup>22240</viewingGroup>
-         <viewingGroup>27000</viewingGroup>
          <viewingGroup>27010</viewingGroup>
          <viewingGroup>27011</viewingGroup>
          <viewingGroup>27020</viewingGroup>
@@ -9432,7 +9336,6 @@
          <viewingGroup>22210</viewingGroup>
          <viewingGroup>22220</viewingGroup>
          <viewingGroup>22240</viewingGroup>
-         <viewingGroup>27000</viewingGroup>
          <viewingGroup>27010</viewingGroup>
          <viewingGroup>27011</viewingGroup>
          <viewingGroup>27020</viewingGroup>
@@ -9472,7 +9375,6 @@
             <description>Standard Display elements</description>
             <language>eng</language>
          </description>
-         <viewingGroup>26000</viewingGroup>
 		 <viewingGroup>26010</viewingGroup>
 		 <viewingGroup>26040</viewingGroup>
       </viewingGroupLayer>
@@ -9518,20 +9420,14 @@
             <description>Standard Display elements</description>
             <language>eng</language>
          </description>
-         <viewingGroup>21000</viewingGroup>
          <viewingGroup>21010</viewingGroup>
          <viewingGroup>21060</viewingGroup>
-         <viewingGroup>22000</viewingGroup>
-         <viewingGroup>23000</viewingGroup>
-         <viewingGroup>24000</viewingGroup>
          <viewingGroup>24010</viewingGroup>
          <viewingGroup>24020</viewingGroup>
          <viewingGroup>24050</viewingGroup>
-         <viewingGroup>25000</viewingGroup>
          <viewingGroup>25001</viewingGroup>
          <viewingGroup>26200</viewingGroup>
          <viewingGroup>26210</viewingGroup>
-         <viewingGroup>28000</viewingGroup>
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
 		 <!-- Alert Highlights -->
@@ -9557,20 +9453,14 @@
             <description>Miscellaneous chart Standard Display elements</description>
             <language>eng</language>
          </description>
-         <viewingGroup>21000</viewingGroup>
          <viewingGroup>21010</viewingGroup>
          <viewingGroup>21060</viewingGroup>
-         <viewingGroup>22000</viewingGroup>
-         <viewingGroup>23000</viewingGroup>
-         <viewingGroup>24000</viewingGroup>
          <viewingGroup>24010</viewingGroup>
          <viewingGroup>24020</viewingGroup>
          <viewingGroup>24050</viewingGroup>
-         <viewingGroup>25000</viewingGroup>
          <viewingGroup>25001</viewingGroup>
          <viewingGroup>26200</viewingGroup>
          <viewingGroup>26210</viewingGroup>
-         <viewingGroup>28000</viewingGroup>
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
       </viewingGroupLayer>
@@ -9667,11 +9557,9 @@
             <description>Other Display elements</description>
             <language>eng</language>
          </description>
-         <viewingGroup>31000</viewingGroup>
          <viewingGroup>31010</viewingGroup>
 		 <viewingGroup>31020</viewingGroup>
          <viewingGroup>31040</viewingGroup>
-         <viewingGroup>32000</viewingGroup>
          <viewingGroup>32010</viewingGroup>
          <viewingGroup>32030</viewingGroup>
          <viewingGroup>32050</viewingGroup>
@@ -9684,16 +9572,11 @@
          <viewingGroup>32400</viewingGroup>
          <viewingGroup>32410</viewingGroup>
          <viewingGroup>32440</viewingGroup>
-         <viewingGroup>33000</viewingGroup>
-         <viewingGroup>34000</viewingGroup>
-         <viewingGroup>35000</viewingGroup>
-         <viewingGroup>36000</viewingGroup>
          <viewingGroup>36010</viewingGroup>
          <viewingGroup>36020</viewingGroup>
          <viewingGroup>36040</viewingGroup>
          <viewingGroup>36050</viewingGroup>
          <viewingGroup>36060</viewingGroup>		  
-         <viewingGroup>38000</viewingGroup>
          <viewingGroup>38010</viewingGroup>
          <viewingGroup>38030</viewingGroup>
          <viewingGroup>38200</viewingGroup>
@@ -9769,6 +9652,8 @@
        </description>
        <viewingGroup>90040</viewingGroup>
      </viewingGroupLayer>
+	 <!-- END Independent mariner selectors -->
+	 
      <!-- TEXT LAYER GROUPS (not part of a display mode / IMO display category) -->
      <viewingGroupLayer id="100">
        <description>
