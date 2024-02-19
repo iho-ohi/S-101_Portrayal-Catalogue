@@ -497,6 +497,7 @@ function CreateFeature(featureID, featureCode)
 		return feature
 	end
 	
+	-- Note: Potential namespace collision with attribute names. Consider renaming with leading underscore.
 	feature = { Type = 'Feature', ID = featureID, Code = featureCode, InformationAssociations = {}, FeatureAssociations = {} }
 
 	featureCache[featureID] = feature

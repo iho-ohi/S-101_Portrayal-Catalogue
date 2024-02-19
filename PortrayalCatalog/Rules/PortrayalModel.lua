@@ -148,13 +148,16 @@ function CreateFeaturePortrayalItemArray()
 
 		local featurePortrayalItem = { Type = 'FeaturePortrayalItem', Feature = feature, ObservedContextParameters = {} }
 
-		feature.LuaFeaturePortrayalItem = featurePortrayalItem
+		-- Note: variables created in a feature should start with an underscore to prevent name collisions with S-100 attribute names
+		feature._featurePortrayalItem = featurePortrayalItem
 
 		function featurePortrayalItem:NewFeaturePortrayal()
-			self.LuaFeaturePortrayal = CreateFeaturePortrayal(self.Feature)
-			feature.featurePortrayal = self.LuaFeaturePortrayal
+			-- Note:
+			--   The naming pattern for S100_FC_Item is "[A-Za-z][A-Za-z0-9_]*" (upper or lower case letter followed by zero or more letters, numbers, or underscores).
+			--   When adding information to the feature class, use variable names that won't cause name collisions with attribute codes.
+			self.Feature._featurePortrayal = CreateFeaturePortrayal(self.Feature)
 
-			return self.LuaFeaturePortrayal
+			return self.Feature._featurePortrayal
 		end
 
 		self[#self + 1] = featurePortrayalItem
@@ -208,23 +211,23 @@ function CreateFeaturePortrayal(feature)
 			
 				-- Make the TextPlacement feature the target of our drawing instructions
 				placementFeature = textAssociation[1]
-				placementFeature.featurePortrayal = placementFeature.LuaFeaturePortrayalItem:NewFeaturePortrayal()
+				placementFeature._featurePortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
 				
 				-- Add scaleMinimum if present
 				local scaleMinimum = feature['!scaleMinimum']
 				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
-					placementFeature.featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
+					placementFeature._featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
 				end
 
 				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
 				local length = placementFeature.textOffsetDistance or 0
 				if length ~= 0 then
 					local direction = placementFeature.textOffsetBearing or 0
-					placementFeature.featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length)
+					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length)
 				end
 				
 				-- Center the text on the point
-				placementFeature.featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+				placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
 
 				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
 				local fontStyle = {
@@ -255,7 +258,7 @@ function CreateFeaturePortrayal(feature)
 				-- Add the style to the TextPlacement feature
 				for k, v in pairs(fontStyle) do
 					if v ~= nil then
-						placementFeature.featurePortrayal:AddInstructions(v)
+						placementFeature._featurePortrayal:AddInstructions(v)
 					end
 				end
 				-- Done copying text style
@@ -263,7 +266,7 @@ function CreateFeaturePortrayal(feature)
 		end
 		
 		-- Add the instructions to draw the text
-		placementFeature.featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
+		placementFeature._featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
 		if placementFeature == self.Feature then
 			-- Reset the state in case the caller generates further non-text drawing instructions
 			self:AddInstructions('ViewingGroup:' .. viewingGroup)
@@ -271,7 +274,7 @@ function CreateFeaturePortrayal(feature)
 				self:AddInstructions('DrawingPriority:' .. priority)
 			end
 		else
-			HostPortrayalEmit(placementFeature.featurePortrayal.FeatureReference, table.concat(placementFeature.featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature.LuaFeaturePortrayalItem))
+			HostPortrayalEmit(placementFeature._featurePortrayal.FeatureReference, table.concat(placementFeature._featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature._featurePortrayalItem))
 		end
 	end
 
@@ -403,7 +406,7 @@ function GetInformationText(information, contextParameters)
 end
 
 function GetFeatureName(feature, contextParameters)
-	return feature.featurePortrayal:GetFeatureName(feature, contextParameters)
+	return feature._featurePortrayal:GetFeatureName(feature, contextParameters)
 end
 
 --
