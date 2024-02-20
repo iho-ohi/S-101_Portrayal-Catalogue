@@ -9037,6 +9037,13 @@
       </viewingGroup>
 	  <!-- 31 National Language Text implemented via context parameter -->
 	  <!-- 32-49 Reserved for IHO -->
+      <viewingGroup id="32">
+        <description>
+          <name>Text: Auxiliary names</name>
+          <description>Names providing supplementary information.</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
 	  <!-- 50-69 is defined in MARINERS TEXT -->
 	  <!-- 70-79 is defined in MANUFACTURERS TEXT -->
 	  <!-- 80-99 Future Requirements -->
@@ -9661,6 +9668,7 @@
        <viewingGroup>28</viewingGroup>
        <viewingGroup>29</viewingGroup>
        <viewingGroup>30</viewingGroup>
+       <viewingGroup>32</viewingGroup>
      </viewingGroupLayer>
      <viewingGroupLayer id="101">
        <description>
@@ -9685,6 +9693,7 @@
        <viewingGroup>28</viewingGroup>
        <viewingGroup>29</viewingGroup>
        <viewingGroup>30</viewingGroup>
+       <viewingGroup>32</viewingGroup>
      </viewingGroupLayer>
      <viewingGroupLayer id="102a">
        <description>
@@ -9715,6 +9724,7 @@
        <viewingGroup>27</viewingGroup>
        <viewingGroup>28</viewingGroup>
        <viewingGroup>30</viewingGroup>
+       <viewingGroup>32</viewingGroup>
      </viewingGroupLayer>
      <!-- END TEXT LAYER GROUPS -->
    </viewingGroupLayers>

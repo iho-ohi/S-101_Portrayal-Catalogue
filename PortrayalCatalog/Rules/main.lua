@@ -57,7 +57,7 @@ function PortrayalMain(featureIDs)
 
 			-- Ensure featureName is processed for those features whose rules don't process it directly.
 			if not featurePortrayal.GetFeatureNameCalled then
-				PortrayFeatureName(feature, featurePortrayal, contextParameters, 21, 24, viewingGroup, nil, 'TextAlignHorizontal:Center;TextAlignVertical:Top;LocalOffset:0,-3.51;FontColor:CHBLK')
+				PortrayFeatureName(feature, featurePortrayal, contextParameters, 32, 24, viewingGroup, nil, 'TextAlignHorizontal:Center;TextAlignVertical:Top;LocalOffset:0,-3.51;FontColor:CHBLK')
 			end
 
 			ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
