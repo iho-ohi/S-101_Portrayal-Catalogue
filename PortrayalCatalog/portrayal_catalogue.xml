@@ -27,7 +27,7 @@
 <!-- #238: PC updated with color filled paper chart symbols for buoys and beacons. TODO: rule files -->
 <!-- #144: featureName processing for version 1.2.0 -->
 
-<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.1" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-DRAFT">
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.1" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-PR">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>

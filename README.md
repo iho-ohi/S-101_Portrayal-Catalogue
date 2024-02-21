@@ -252,6 +252,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i337]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/337
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
+[i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.x
@@ -271,6 +272,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#338][i338]  Prevent potential naming issue in PortrayalModel
   	* [#337][i337]  Remove viewing groups which don't have features assigned
   	* [#266][i266]  BOYLAT34 incorrect viewbox, OBE removed from catalog symbol no longer used
+	* [#341][i341]  PC Peer Review Release 1.2.0-PR
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
