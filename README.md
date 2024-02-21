@@ -251,6 +251,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i336]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/336
 [i337]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/337
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
+[i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 
 ## Changelog
 ### 1.2.0 - use with FC 1.2.x
@@ -323,6 +324,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#3][i3] Add support for `TextPlacement`
   	* [#336][i336] Use new viewing group `32 - Auxiliary names` when new labels are added via `featureName.name`
   	* [#303][i303] Add support for `textRotation` attribute of the `TextPlacement` feature
+  	* [#17][i17] Updated all SAFCON5X symbol view-boxes and pivot-points 
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
