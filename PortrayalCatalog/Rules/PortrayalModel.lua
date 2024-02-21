@@ -221,13 +221,17 @@ function CreateFeaturePortrayal(feature)
 
 				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
 				local length = placementFeature.textOffsetDistance or 0
+				local direction = placementFeature.textOffsetBearing or 0
 				if length ~= 0 then
-					local direction = placementFeature.textOffsetBearing or 0
-					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length)
+					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
 				end
 				
-				-- Center the text on the point
-				placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+				if placementFeature.textRotation then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
+				else
+					-- Center the text on the point
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+				end
 
 				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
 				local fontStyle = {
