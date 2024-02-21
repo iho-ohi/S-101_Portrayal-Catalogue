@@ -223,6 +223,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i300]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/300
 [i301]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/301
 [i302]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/302
+[i303]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/303
 [i307]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/307
 [i305]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/305
 [i304]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/304
@@ -321,6 +322,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#335][i335] `DepthNoBottomFound` should not support geometry of type point, only pointSet is permitted
   	* [#3][i3] Add support for `TextPlacement`
   	* [#336][i336] Use new viewing group `32 - Auxiliary names` when new labels are added via `featureName.name`
+  	* [#303][i303] Add support for `textRotation` attribute of the `TextPlacement` feature
 
 ### 1.1.2 - use with FC 1.1.0
 * Misc changes
