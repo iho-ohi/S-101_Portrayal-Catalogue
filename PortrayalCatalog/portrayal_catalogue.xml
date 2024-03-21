@@ -1,33 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<!-- #51: Virtual AIS Aid to Navigation -->
-<!-- #72: Added DEPVAL02 to rules -->
-<!-- #30: Added MARPOL viewing group 36060, and Viewing Group Layer 18 -->
-<!-- #155: Update context parameters -->
-<!-- #162: Rename BuoyNewDangerMarking to EmergencyWreckMarkingBuoy -->
-<!-- #172: Rename TrafficSeparationZone to SeparationZoneOrLine, remove TrafficSeparationLine -->
-<!-- #134: Add Helipad -->
-<!-- #119: Independent Mariner Selections -->
-<!-- #24: added FLGSTF02 symbol -->
-<!-- #61: (temporarily) removed NationalLanguage context parameter -->
-<!-- #196: update viewing group name for 26010 and 26020 -->
-<!-- #197: Undefined parameter TwoShades for ShallowContour and DeepContour -->
-<!-- #199: Remove language independent text -->
-<!-- #198: Viewing Group 27220 missing for "Range System" -->
-<!-- #195: Incorrect portrayal of Signal Station Traffic, removed 2021_SISTAT02_01.svg references  -->
-<!-- #200: Viewing Group 27240 is not included in any Viewing Group Layer, added to 3 -->
-<!-- #213: Case inconsistency between filename and catalog entry for SEAGRASS.svg -->
-<!-- #217: remove DISMAR03.svg and DISMAR04.svg -->
-<!-- #215: Update version number prior to release 1.1.1b to 1.1.1 -->
-<!-- #224: Update main version number to 1.1.2 developmental use towards 1.2.0 -->
-<!-- #158: Remove viewing group 21010 from VGL 3 and 3.1, use in IMS "Unknown" -->
-<!-- #268: Change name of viewing group 28010 to add pilotage district, [PSWG #147] -->
-<!-- #225: Update version number prior to release 1.1.2-DRAFT to 1.1.2 -->
-<!-- #274: Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0. -->
-<!-- #238: PC updated with color filled paper chart symbols for buoys and beacons. TODO: rule files -->
-<!-- #144: featureName processing for version 1.2.0 -->
+<!-- NOTE: See GitHub issues for complete change information -->
 
-<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.1" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.0-PR">
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.1" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-101" version="1.2.3">
    <alertCatalog id="alertCatalog">
       <description>
          <name>Alert Catalog</name>

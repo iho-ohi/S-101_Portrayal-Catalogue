@@ -253,26 +253,27 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
-
+[i273]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/273
 ## Changelog
-### 1.2.0 - use with FC 1.2.x
+### 1.2.3 - use with FC 1.2.3
 * Misc changes
-	* [#274][i274]  Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
- 	* [#282][i282]  Update FC to 1.2.0 from IHO GI registry.
+	* [#274][i274] Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
+ 	* [#282][i282] Update FC to 1.2.0 from IHO GI registry.
  	    * Local change: Fix multiplicity of `Dolphin` attribute binding to `categoryOfDolphin`
  	    * Local change: Updated to FC 1.2.2 by incorporating changes provided from JP (fixes various issues with associations)
-  	* [#229][i229]  Update alert catalog to S-100 5.1 schema
-  	* [#287][i287]  Update AreaFills to S-100 5.1 schema
-  	* [#288][i288]  Update ColorProfiles to S-100 5.1 schema
-  	* [#289][i289]  Update LineStyles to S-100 5.1 schema
-  	* [#290][i290]  Update portrayal_catalogue.xml to S-100 5.1 schema
-  	* [#291][i291]  Remove duplicate catalog entry for `BOYPIL10`
-  	* [#320][i320]  Remove IMS for `Unknown`; add VG `21010` to VGL 10 and 10a. "?" symbol is now part of `Standard` display
-  	* [#329][i329]  Update references in the alert catalog from MSC.232(82) to MSC.530(106)
-  	* [#338][i338]  Prevent potential naming issue in PortrayalModel
-  	* [#337][i337]  Remove viewing groups which don't have features assigned
-  	* [#266][i266]  BOYLAT34 incorrect viewbox, OBE removed from catalog symbol no longer used
-	* [#341][i341]  PC Peer Review Release 1.2.0-PR
+  	* [#229][i229] Update alert catalog to S-100 5.1 schema
+  	* [#287][i287] Update AreaFills to S-100 5.1 schema
+  	* [#288][i288] Update ColorProfiles to S-100 5.1 schema
+  	* [#289][i289] Update LineStyles to S-100 5.1 schema
+  	* [#290][i290] Update portrayal_catalogue.xml to S-100 5.1 schema
+  	* [#291][i291] Remove duplicate catalog entry for `BOYPIL10`
+  	* [#320][i320] Remove IMS for `Unknown`; add VG `21010` to VGL 10 and 10a. "?" symbol is now part of `Standard` display
+  	* [#329][i329] Update references in the alert catalog from MSC.232(82) to MSC.530(106)
+  	* [#338][i338] Prevent potential naming issue in PortrayalModel
+  	* [#337][i337] Remove viewing groups which don't have features assigned
+  	* [#266][i266] BOYLAT34 incorrect viewbox, OBE removed from catalog symbol no longer used
+	* [#341][i341] PC Peer Review Release 1.2.0-PR
+	* [#273][i273] Update version prior to release as 1.2.3
 * Lua Rule File / Symbol Updates
 	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
 	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
