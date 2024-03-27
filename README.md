@@ -10,6 +10,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i10]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/10
 [i14]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/14
 [i16]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/16
+[i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 [i18]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/18
 [i20]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/20
 [i23]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/23
@@ -198,6 +199,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 [i271]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/271
 [i272]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/272
+[i273]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/273
 [i274]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/274
 [i276]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/276
 [i277]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/277
@@ -251,16 +253,16 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i336]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/336
 [i337]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/337
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
-[i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
-[i273]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/273
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
+[i349]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/349
+
 ## Changelog
 ### 1.3.X - use with FC 1.3.X
 * Misc changes
 	* [#346][i346] Update version prior to release 1.3.X, initial version
-
 * Lua Rule File / Symbol Updates
+	* [#349][i349] Fix metadata validation issues in multiple symbols
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
