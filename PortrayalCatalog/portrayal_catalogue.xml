@@ -2478,17 +2478,7 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="EMNEWOB1">
-         <description>
-            <name>EMNEWOB1</name>
-            <description>new object</description>
-            <language>eng</language>
-         </description>
-         <fileName>EMNEWOB1.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>	
-		<symbol id="EMNOHO01">
+      <symbol id="EMNOHO01">
          <description>
             <name>EMNOHO01</name>
             <description>Embedded diagnal for non HO boundary</description>
