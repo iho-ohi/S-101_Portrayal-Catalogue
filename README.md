@@ -256,6 +256,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 [i349]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/349
+[i350]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/350
 
 ## Changelog
 ### 1.3.X - use with FC 1.3.X
@@ -263,6 +264,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#346][i346] Update version prior to release 1.3.X, initial version
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
+ 	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
