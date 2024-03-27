@@ -3,8 +3,8 @@
   <title>BOYPIL60</title>
   <desc>pillar buoy, emergency wreck mark, paper-chart</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata">
-      <iho:Description iho:publisher="IHB" iho:creationDate="2023-03-17" iho:source="IALA/7Cs" iho:format="S100SVG" iho:version="0.1"/>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
+      <iho:Description iho:publisher="IHO" iho:creationDate="2023-03-17" iho:source="IALA/7Cs" iho:format="S100SVG" iho:version="0.1"/>
     </iho:S100SVG>
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-3.07" y="-4.32" height="4.91" width="5.97"/>
