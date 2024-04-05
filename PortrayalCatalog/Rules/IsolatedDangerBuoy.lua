@@ -28,7 +28,8 @@ function IsolatedDangerBuoy(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
-			textOffsetX = -3.51
+			local textOffsetX = -3.51
+			
 			-- Black,Red,Black
 			if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 3 and feature.colour[3] == 2 then
 				featurePortrayal:AddInstructions('PointInstruction:BOYPIL40')
@@ -54,7 +55,9 @@ function IsolatedDangerBuoy(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('PointInstruction:BOYGEN03')
 			end
+			
 			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)
+			
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:' .. textOffsetX .. ',3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
