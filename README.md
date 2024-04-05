@@ -258,6 +258,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i347]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/347
 [i349]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/349
 [i350]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/350
+[i354]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/354
 
 ## Changelog
 ### 1.3.X - use with FC 1.3.X
@@ -267,6 +268,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#349][i349] Fix metadata validation issues in multiple symbols
  	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
   	* [#347][i347] `DiscolouredWater` doesn't trigger indication
+  	* [#354][i354] Incorrect text offset in `CardinalBuoy` when `buoyShape` is `Superbuoy (7)`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
