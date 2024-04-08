@@ -1117,6 +1117,16 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
+	   <symbol id="BOYSPH60">
+		   <description>
+			   <name>BOYSPH60</name>
+			   <description>spherical buoy, emergency wreck mark, paper-chart</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>BOYSPH60.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="BOYSPP11">
          <description>
             <name>BOYSPP11</name>
