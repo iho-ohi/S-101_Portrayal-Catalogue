@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Deep Water Route Centreline main entry point.
 function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)

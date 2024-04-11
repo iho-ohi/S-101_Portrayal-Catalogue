@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 --
 -- ISSUES: {PSWG #72, PC #121}, {PSWG #28, PC #124}
 -- #169

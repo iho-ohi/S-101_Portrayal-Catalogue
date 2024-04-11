@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 
 -- Fence/Wall main entry point.

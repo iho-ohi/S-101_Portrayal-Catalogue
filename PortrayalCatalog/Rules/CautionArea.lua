@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Caution Area main entry point.
 function CautionArea(feature, featurePortrayal, contextParameters)

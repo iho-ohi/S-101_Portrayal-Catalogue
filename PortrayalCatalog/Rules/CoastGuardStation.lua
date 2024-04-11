@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- Manually updated for FC 1.0.2 (2022/4/22)
 --
 -- Issues: PC #122

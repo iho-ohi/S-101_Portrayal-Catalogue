@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- Manual update for FC 1.0.1 (categoryOfRecomendedTrack -> basedOnFixedMarks) (2022/4/25)
 
 -- Recommended Route Centreline main entry point.

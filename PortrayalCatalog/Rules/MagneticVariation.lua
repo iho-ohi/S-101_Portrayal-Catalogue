@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Magnetic variation main entry point.
 function MagneticVariation(feature, featurePortrayal, contextParameters)
