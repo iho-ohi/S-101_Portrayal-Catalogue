@@ -262,12 +262,15 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
+[i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 
 ## Changelog
+
 ### 1.3.X - use with FC 1.3.X
 * Misc changes
 	* [#346][i346] Update version prior to release 1.3.X, initial version
 	* [#348][i348] SVG <fileName> duplication, BOYCON30.svg ---> BOYCON31.svg
+	* [#345][i345] Remove svg from CSS files
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
  	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
