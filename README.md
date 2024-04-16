@@ -261,6 +261,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i354]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/354
 [i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
+[i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
 
 ## Changelog
 ### 1.3.X - use with FC 1.3.X
@@ -273,6 +274,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#354][i354] Incorrect text offset in `CardinalBuoy` when `buoyShape` is `Superbuoy (7)`
 	* [#340][i340] Remove converter comments from rule files
 	* [#356][i356] BeaconLateral bug, updated to beaconShape == 4	
+	* [#348][i348] SVG <fileName> duplication, BOYCON30.svg ---> BOYCON31.svg
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
