@@ -1,5 +1,6 @@
 -- #155
 -- #238 [PSWG #117]
+-- #356 [PSWG #153]
 
 -- Referenced portrayal rules.
 require 'TOPMAR02'
@@ -28,7 +29,7 @@ function SafeWaterBeacon(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BCNSAW21')
 			elseif feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
-			elseif contains(11, feature.natureOfConstruction) then
+			elseif feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
 			elseif feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSAW13')
