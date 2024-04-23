@@ -263,6 +263,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
 [i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
+[i316]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/316
 
 ## Changelog
 
@@ -278,6 +279,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#354][i354] Incorrect text offset in `CardinalBuoy` when `buoyShape` is `Superbuoy (7)`
 	* [#340][i340] Remove converter comments from rule files
 	* [#356][i356] BeaconLateral bug, updated to beaconShape == 4	
+	* [#316][i316] Incorporate new EWMB 'Paper Chart' symbols [PSWG #158]	
 
 
 ### 1.2.3 - use with FC 1.2.3
