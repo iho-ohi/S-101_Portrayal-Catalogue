@@ -264,6 +264,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
 [i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 [i316]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/316
+[i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
 
 ## Changelog
 
@@ -280,7 +281,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#340][i340] Remove converter comments from rule files
 	* [#356][i356] BeaconLateral bug, updated to beaconShape == 4	
 	* [#316][i316] Incorporate new EWMB 'Paper Chart' symbols [PSWG #158]	
-
+	* [#344][i344] MooringArea problems bug fix
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
