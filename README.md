@@ -265,6 +265,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 [i316]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/316
 [i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
+[i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 
 ## Changelog
 
@@ -282,6 +283,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#356][i356] BeaconLateral bug, updated to beaconShape == 4	
 	* [#316][i316] Incorporate new EWMB 'Paper Chart' symbols [PSWG #158]	
 	* [#344][i344] MooringArea problems bug fix
+	* [#367][i367] No date dependent symbol on "no geometry" features [PSWG #161, Row 30]
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes

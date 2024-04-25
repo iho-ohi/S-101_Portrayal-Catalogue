@@ -5,6 +5,7 @@ These functions are intended to be called by the S-100 scripts.
 -- #80 - modularize processing of fixed and periodic date ranges
 -- #119
 -- #207
+-- #367
 
 local orig_error = error
 
@@ -85,6 +86,11 @@ function ProcessFixedAndPeriodicDates(feature, featurePortrayal)
 end
 
 function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, viewingGroup)
+	
+	-- #367, Do not add symbol to feature with no geometry	
+	if feature.PrimitiveType == PrimitiveType.None then
+		return
+	end
 	-- Clear any existing transforms and geometries
 	featurePortrayal:AddInstructions('LocalOffset:0,0;LinePlacement:Relative,0.5;AreaPlacement:VisibleParts;AreaCRS:GlobalGeometry;Rotation:PortrayalCRS,0;ScaleFactor:1;ClearGeometry')
 
