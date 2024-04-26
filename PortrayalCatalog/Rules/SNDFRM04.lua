@@ -32,7 +32,9 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 		--fontSize = contextParameters._Testing_SoundingsAsText_SizeSafe
 	end
 
+	-- TODO: if attribute is not present, check value from intersecting meta-feature QualityOfSurvey
 	if contains(feature.techniqueOfVerticalMeasurement, { 4, 18 }) then
+		-- add swept sounding symbol
 		addSymbol(symbolPrefix..'B1')
 	end
 
