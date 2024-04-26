@@ -7108,6 +7108,26 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="WATFAL01">
+         <description>
+            <name>WATFAL01</name>
+            <description>Waterfall (conspicuous)</description>
+            <language>eng</language>
+         </description>
+         <fileName>WATFAL01.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="WATFAL02">
+         <description>
+            <name>WATFAL02</name>
+            <description>Waterfall (non-conspicuous)</description>
+            <language>eng</language>
+         </description>
+         <fileName>WATFAL02.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="WATTUR02">
          <description>
             <name>WATTUR02</name>
