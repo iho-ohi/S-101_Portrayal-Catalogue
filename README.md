@@ -264,6 +264,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i349]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/349
 [i350]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/350
 [i351]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/351
+[i352]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/352
 [i354]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/354
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
@@ -286,6 +287,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#344][i344] MooringArea problems bug fix
 	* [#367][i367] No date dependent symbol on "no geometry" features [PSWG #161, Row 30]
  	* [#351][i351] Ensure all symbols reference a valid default stylesheet
+  	* [#352][i352] Ensure all symbols have an entry in portrayal_catalogue.xml
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
