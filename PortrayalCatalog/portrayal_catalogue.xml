@@ -8358,7 +8358,7 @@
 	  <!-- 22000's: Major Coastal Features -->
       <viewingGroup id="22010">
          <description>
-            <name>Lake (LAKARE), sloping ground (SLOGRD), slope top (SLOTOP), dyke (DYKCON), causeway (CAUSWY), dam (DAMCON)</name>
+            <name>Lake, sloping ground, slope top, dyke, causeway, dam, dock area</name>
             <description>Standard: C, D, E, F - Natural and man made features, Port features</description>
             <language>eng</language>
          </description>
