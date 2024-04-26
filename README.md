@@ -230,11 +230,12 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i305]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/305
 [i304]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/304
 [i306]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/306
+[i309]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/309
 [i311]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/311
 [i312]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/312
 [i313]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/313
+[i316]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/316
 [i318]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/318
-[i309]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/309
 [i319]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/319
 [i320]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/320
 [i321]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/321
@@ -253,18 +254,18 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i336]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/336
 [i337]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/337
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
+[i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
+[i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
+[i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 [i347]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/347
+[i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
 [i349]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/349
 [i350]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/350
+[i351]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/351
 [i354]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/354
-[i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
-[i348]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/348
-[i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
-[i316]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/316
-[i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 
 ## Changelog
@@ -284,6 +285,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 	* [#316][i316] Incorporate new EWMB 'Paper Chart' symbols [PSWG #158]	
 	* [#344][i344] MooringArea problems bug fix
 	* [#367][i367] No date dependent symbol on "no geometry" features [PSWG #161, Row 30]
+ 	* [#351][i351] Ensure all symbols reference a valid default stylesheet
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
