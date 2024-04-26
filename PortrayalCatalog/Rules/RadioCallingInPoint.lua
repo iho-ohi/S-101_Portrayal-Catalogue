@@ -3,7 +3,7 @@
 -- #155
 
 function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
-	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ContactDetails')
+	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', 'theInformation', 'ContactDetails')
 	
 	local communicationChannels = ''
 	if contactDetails and contactDetails.communicationChannel

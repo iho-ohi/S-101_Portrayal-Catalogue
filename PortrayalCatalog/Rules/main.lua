@@ -151,4 +151,4 @@ nilMarker = {}
 
 scaminInfinite = 2147483647
 
-sqParams = {'SpatialAssociation', 'defines', 'SpatialQuality'}
+sqParams = {'SpatialAssociation', 'theQualityInformation', 'SpatialQuality'}

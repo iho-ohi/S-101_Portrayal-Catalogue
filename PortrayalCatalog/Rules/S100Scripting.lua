@@ -140,9 +140,9 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 	local vg90020, vg90021
 
 	vg90020, vg90021 = GetViewingGroups(feature, vg90020, vg90021)
-	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation'), vg90020, vg90021)
-	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NonStandardWorkingDay'), vg90020, vg90021)
-	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ServiceHours'), vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'theInformation', 'NauticalInformation'), vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'theInformation', 'NonStandardWorkingDay'), vg90020, vg90021)
+	vg90020, vg90021 = GetViewingGroups(feature:GetInformationAssociation('AdditionalInformation', 'theInformation', 'ServiceHours'), vg90020, vg90021)
 
 	if vg90020 or vg90021 then
 		-- Clear any existing transforms and geometries
