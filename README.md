@@ -295,7 +295,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#352][i352] Ensure all symbols have an entry in portrayal_catalogue.xml
   	* [#355][i355] New symbology for Waterfall features of type Point
   	* [#371][i371] Update association role codes for FC 1.3
-  	* [#368][i368] Added attribute "communication channel"
+  	* [#368][i368] Portray attribute "communicationChannel" for `RadarStation` and `RadioCallingInPoint`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
