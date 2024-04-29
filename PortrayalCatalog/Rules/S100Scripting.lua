@@ -693,6 +693,15 @@ function contains(value, array)
 	return false
 end
 
+-- table.concat with a nil check
+function safeConcat(t, s)
+	if t == nil then
+		return ''
+	end
+	
+	return table.concat(t, s)
+end
+
 --
 -- Debugging hooks back into host
 --
