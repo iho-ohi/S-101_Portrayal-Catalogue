@@ -269,6 +269,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i354]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/354
 [i355]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/355
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
+[i358]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/358
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
@@ -296,6 +297,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#355][i355] New symbology for Waterfall features of type Point
   	* [#371][i371] Update association role codes for FC 1.3
   	* [#368][i368] Portray attribute "communicationChannel" for `RadarStation` and `RadioCallingInPoint`
+  	* [#358][i358] Use 50% translucent fill for `IceArea`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
