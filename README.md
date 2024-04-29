@@ -270,6 +270,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i355]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/355
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
+[i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
 
 ## Changelog
@@ -294,6 +295,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#352][i352] Ensure all symbols have an entry in portrayal_catalogue.xml
   	* [#355][i355] New symbology for Waterfall features of type Point
   	* [#371][i371] Update association role codes for FC 1.3
+  	* [#368][i368] Added attribute "communication channel"
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
