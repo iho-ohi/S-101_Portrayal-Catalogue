@@ -1,6 +1,17 @@
 -- from S-57 BRIDGE, CATBRG=2 (opening bridge)
 function SpanOpening(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('AlertReference:NavHazard')
+	
+	local clearanceOpen = ''
+	if feature.verticalClearanceOpen then
+		if feature.verticalClearanceOpen.verticalClearanceUnlimited then
+			clearanceOpen = "clr op ∞"
+		else
+			if feature.verticalClearanceOpen.verticalClearanceValue then
+				clearanceOpen = EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f')
+			end
+		end
+	end
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
@@ -17,9 +28,9 @@ function SpanOpening(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceClosed.verticalClearanceValue, 'clr cl %4.1f'), 11, 24, 12210, 24)
 		end
 
-		if feature.verticalClearanceOpen and feature.verticalClearanceOpen.verticalClearanceValue then
+		if clearanceOpen ~= '' then
 			featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f'), 11, 24, 12210, 24)
+			featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, 12210, 24)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then
@@ -36,9 +47,9 @@ function SpanOpening(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceClosed.verticalClearanceValue, 'clr cl %4.1f'), 11, 24, 12210, 24)
 		end
 
-		if feature.verticalClearanceOpen and feature.verticalClearanceOpen.verticalClearanceValue then
+		if clearanceOpen ~= '' then
 			featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f'), 11, 24, 12210, 24)
+			featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, 12210, 24)
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
