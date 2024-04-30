@@ -274,6 +274,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
 [i373]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/373
+[i374]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/374
 
 ## Changelog
 
@@ -300,6 +301,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#368][i368] Portray attribute "communicationChannel" for `RadarStation` and `RadioCallingInPoint`
   	* [#358][i358] Use 50% translucent fill for `IceArea`
   	* [#373][i373] Remove LineStyle `PILDSTR1`
+  	* [#374][i374] `SpanOpening` should show `clr op ∞` when `verticalClearanceUnlimited` is `true`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
