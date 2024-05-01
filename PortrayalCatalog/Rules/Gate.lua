@@ -131,6 +131,22 @@ function Gate(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
+	
+	local clearanceOpen = ''
+	if feature.verticalClearanceOpen then
+		if feature.verticalClearanceOpen.verticalClearanceUnlimited then
+			clearanceOpen = 'clr op ∞'
+		else
+			if feature.verticalClearanceOpen.verticalClearanceValue then
+				clearanceOpen = EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f')
+			end
+		end
+	end
+
+	if clearanceOpen ~= '' then
+		featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
+		featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, viewingGroup, 24)
+	end
 
 	return viewingGroup
 end
