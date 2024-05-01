@@ -247,6 +247,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i327]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/327
 [i329]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/329
 [i330]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/330
+[i331]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/331
 [i332]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/332
 [i333]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/333
 [i334]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/334
@@ -306,6 +307,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#374][i374] `SpanOpening` should show `clr op ∞` when `verticalClearanceUnlimited` is `true`
   	* [#375][i375] `QoBD` shows multiple date dependent symbols
   	* [#359][i359] Add thin orange line to `UpdateInformation` delete of curve or surface
+  	* [#331][i331] Show thin dashed orange line for `UpdateInformation` with `updateType`=`4 (move)` and curve geometry
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
