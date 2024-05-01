@@ -577,16 +577,6 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>	   
-	   <symbol id="BCNTOW60">
-		   <description>
-			   <name>BCNTOW60</name>
-			   <description>beacon tower, emergency wreck mark, paper-chart</description>
-			   <language>eng</language>
-		   </description>
-		   <fileName>BCNTOW60.svg</fileName>
-		   <fileType>Symbol</fileType>
-		   <fileFormat>SVG</fileFormat>
-	   </symbol>	   
       <symbol id="BLKADJ01">
          <description>
             <name>BLKADJ01</name>
@@ -1177,16 +1167,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-	  <symbol id="BOYSPP45">
-		   <description>
-			   <name>BOYSPP45</name>
-			   <description>new danger marking buoy</description>
-			   <language>eng</language>
-		   </description>
-		   <fileName>BOYSPP45.svg</fileName>
-		   <fileType>Symbol</fileType>
-		   <fileFormat>SVG</fileFormat>
-	  </symbol>	   
       <symbol id="BOYSPR01">
          <description>
             <name>BOYSPR01</name>

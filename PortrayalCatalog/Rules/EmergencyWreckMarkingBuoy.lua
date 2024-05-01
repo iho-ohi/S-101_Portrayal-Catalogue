@@ -16,16 +16,24 @@ function EmergencyWreckMarkingBuoy(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
 		end
-
-		if feature.buoyShape == 3 then
-			symbol = 'BOYSPH60'
-		elseif feature.buoyShape == 4 then
-			symbol = 'BOYPIL60'
-		elseif feature.buoyShape == 5 then
-			symbol = 'BOYSPR60'
+		
+		if contextParameters.SimplifiedSymbols then
+			symbol = 'BOYNDM02'
+		else
+			if feature.buoyShape == 3 then
+				symbol = 'BOYSPH60'
+			elseif feature.buoyShape == 4 then
+				symbol = 'BOYPIL60'
+			elseif feature.buoyShape == 5 then
+				symbol = 'BOYSPR60'
+			end
 		end
 
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
+		
+		if not contextParameters.SimplifiedSymbols then
+			TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)		
+		end
 
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
