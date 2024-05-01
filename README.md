@@ -275,6 +275,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
+[i372]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/372
 [i373]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/373
 [i374]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/374
 [i375]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/375
@@ -308,6 +309,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#375][i375] `QoBD` shows multiple date dependent symbols
   	* [#359][i359] Add thin orange line to `UpdateInformation` delete of curve or surface
   	* [#331][i331] Show thin dashed orange line for `UpdateInformation` with `updateType`=`4 (move)` and curve geometry
+  	* [#372][i372] Implement portrayal of Incompletely Surveyed Area
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
