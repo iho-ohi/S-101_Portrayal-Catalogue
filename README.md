@@ -270,6 +270,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i355]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/355
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i358]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/358
+[i359]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/359
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
@@ -304,6 +305,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#373][i373] Remove LineStyle `PILDSTR1`
   	* [#374][i374] `SpanOpening` should show `clr op ∞` when `verticalClearanceUnlimited` is `true`
   	* [#375][i375] `QoBD` shows multiple date dependent symbols
+  	* [#359][i359] Add thin orange line to `UpdateInformation` delete of curve or surface
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
