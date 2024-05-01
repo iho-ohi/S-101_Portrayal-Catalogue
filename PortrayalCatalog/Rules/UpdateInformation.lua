@@ -27,29 +27,8 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			-- modify
 			featurePortrayal:AddInstructions('PointInstruction:CHRVDEL1;PointInstruction:CHRVID01')
 		elseif updateType == 4 then
-			-- move (spatial on this feature marks old location, associated feature spatial is new location)
-			featurePortrayal:AddInstructions('PointInstruction:CHRVDEL1')
-
-			--local associatedFeatures = feature:GetFeatureAssociations('UpdatedInformation')
-			--local pt2 = feature.Point.Spatial
-
-			--local i, other = next(associatedFeatures)
-			--while i do
-				--local spatial = other.Spatial
-				
-				--if (other.Spatial.SpatialType ~= SpatialType.Point)
-					--error('UpdateInformation: unsupported portrayal; spatial type changed during move')
-					
-				--local pt1 = other.Point.Spatial
-				--featurePortrayal:AddInstructions('AugmentedPoint:GeographicCRS,' .. pt1.X .. ',' .. pt1.Y)
-				--featurePortrayal:AddInstructions('PointInstruction:CHRVID01')
-				--featurePortrayal:AddInstructions('Polyline:' .. pt1.X .. ',' .. pt1.Y .. ',' .. pt2.X .. ',' .. pt2.Y)
-				--featurePortrayal:AddInstructions('AugmentedPath:GeographicCRS,GeographicCRS,GeographicCRS')
-				--featurePortrayal:SimpleLineStyle('dot',0.64,'CHCOR')
-				--featurePortrayal:AddInstructions('LineInstruction:_simple_')
-				--i, other = next(associatedFeatures, i)
-			--end
-			--featurePortrayal:AddInstructions('ClearGeometry')
+			-- move
+			error('Point geometry is invalid for UpdateInformation with updateType=4')
 		else
 			-- undefined updateType
 			error('UpdateInformation feature with undefined updateType')
@@ -68,7 +47,8 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:CHRVID02')
 		elseif updateType == 4 then
 			-- move
-			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:CHRVDEL2')
+			featurePortrayal:SimpleLineStyle('dash',0.32,'CHCOR')
+			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:_simple_')
 		else
 			-- undefined updateType
 			error('UpdateInformation feature with undefined updateType')
@@ -89,13 +69,12 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('PointInstruction:CHRVDEL1')
 		elseif updateType == 4 then
 			-- move
-			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:CHRVDEL2')
-			featurePortrayal:AddInstructions('PointInstruction:CHRVDEL1')
+			error('Surface geometry is invalid for UpdateInformation with updateType=4')
 		else
 			-- undefined updateType
 			error('UpdateInformation feature with undefined updateType')
 		end
-	else
+	elseif feature.PrimitiveType ~= PrimitiveType.None then
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 	return viewingGroup
