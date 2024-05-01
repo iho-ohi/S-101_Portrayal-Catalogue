@@ -29,8 +29,10 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 	local dateDependent = false
 	if zonesOfConfidence and #zonesOfConfidence > 0 then
 		for _, zoneOfConfidence in ipairs(zonesOfConfidence) do
-			dateDependent = ProcessFixedDateRange(featurePortrayal, zoneOfConfidence.fixedDateRange) or dateDependent
 			if intersects then
+
+				dateDependent = ProcessFixedDateRange(featurePortrayal, zoneOfConfidence.fixedDateRange) or dateDependent
+
 				if zoneOfConfidence.categoryOfZoneOfConfidenceInData then
 					if (zoneOfConfidence.categoryOfZoneOfConfidenceInData == 1) then
 						catzoc = 'A11'
@@ -59,10 +61,10 @@ function QualityOfBathymetricData(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('NullInstruction')
 			end
-			if dateDependent then
-				AddDateDependentSymbol(feature, featurePortrayal, contextParameters, 90010)
-				featurePortrayal:AddInstructions('ClearTime')
-			end
+		end
+		if dateDependent then
+			AddDateDependentSymbol(feature, featurePortrayal, contextParameters, 90010)
+			featurePortrayal:AddInstructions('ClearTime')
 		end
 	end
 
