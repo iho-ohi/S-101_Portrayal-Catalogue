@@ -132,27 +132,25 @@ function Gate(feature, featurePortrayal, contextParameters)
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 	
-	-- Horizontal clearance label
-	if feature.horizontalClearanceOpen and feature.horizontalClearanceOpen.horizontalClearanceValue then
-		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontColor:CHBLK')
-		featurePortrayal:AddTextInstruction(EncodeString(feature.horizontalClearanceOpen.horizontalClearanceValue, '| clr %4.1f |'), 11, 24, viewingGroup, 24)
-	end
-	
 	-- Vertical clearance label
-	local clearanceOpen = ''
 	if feature.verticalClearanceOpen then
+		local clearanceOpen = ''
 		if feature.verticalClearanceOpen.verticalClearanceUnlimited then
-			clearanceOpen = 'clr ∞'
-		else
-			if feature.verticalClearanceOpen.verticalClearanceValue then
-				clearanceOpen = EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr %4.1f')
-			end
+			clearanceOpen = 'clr op ∞'
+		elseif feature.verticalClearanceOpen.verticalClearanceValue then
+			clearanceOpen = EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f')
+		end
+		if clearanceOpen ~= '' then
+			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontColor:CHBLK')
+			featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, viewingGroup, 24)
 		end
 	end
-	if clearanceOpen ~= '' then
-		featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
-		featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, viewingGroup, 24)
-	end
 
+	-- Horizontal clearance label (pending PSWG discussion)
+	--if feature.horizontalClearanceOpen and feature.horizontalClearanceOpen.horizontalClearanceValue then
+		--featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
+		--featurePortrayal:AddTextInstruction(EncodeString(feature.horizontalClearanceOpen.horizontalClearanceValue, 'H-clr op %4.1f'), 11, 24, viewingGroup, 24)
+	--end
+	
 	return viewingGroup
 end
