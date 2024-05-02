@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- S-101 ALERT CATALOGUE -->
-<ac:alertCatalog xmlns:ac="http://www.iho.int/S100AlertCatalog/5.1" version="1.1">
+<ac:alertCatalog xmlns:ac="http://www.iho.int/S100AlertCatalog/5.2" version="1.2">
 
     <messages>
 		<!-- Begin messages triggered by an alert for display in alert management or route plan -->
