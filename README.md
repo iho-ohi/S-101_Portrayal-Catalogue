@@ -284,6 +284,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i375]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/375
 [i377]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/377
 [i378]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/378
+[i379]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/379
 
 ## Changelog
 
@@ -319,7 +320,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#177][i177] Remove CSS inline styling from all symbols
   	* [#204][i204] Update symbols for S-100 5.2 SVG schema
   	* [#377][i377] Update area fills for S-100 5.2 schema
-  	* [#378][i378] Update line styles to use S-100 5.2 schema
+  	* [#378][i378] Update line styles for S-100 5.2 schema
+  	* [#379][i379] Update alert catalog for S-100 5.2 schema
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
