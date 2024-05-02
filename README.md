@@ -86,6 +86,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i358]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/358
 [i359]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/359
+[i361]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/361
 [i366]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/366
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
@@ -139,6 +140,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#378][i378] Update line styles for S-100 5.2 schema
   	* [#379][i379] Update alert catalog for S-100 5.2 schema
   	* [#380][i380] Update portrayal_catalogue.xml for S-100 5.2 schema
+  	* [#361][i361] Use `flareBearing` attribute in lieu of S-52 rule for colocated lights
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
