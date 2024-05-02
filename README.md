@@ -150,6 +150,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i200]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/200
 [i201]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/201
 [i202]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/202
+[i204]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/204
 [i205]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/205
 [i206]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/206
 [i207]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/207
@@ -314,6 +315,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#372][i372] Implement portrayal of Incompletely Surveyed Area
   	* [#366][i366] Show vertical clearance on `Gate`
   	* [#177][i177] Remove CSS inline styling from all symbols
+  	* [#204][i204] Update symbol namespaces for S-100 5.2 SVG schema
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
