@@ -11,12 +11,12 @@
   <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
   <rect class="symbolBox layout" fill="none" x="-2.47" y="1.58" height="6.9" width="4.87" />
   <rect class="svgBox layout" fill="none" x="-2.47" y="-5.32" height="6.9" width="4.87" />
-  <path d=" M 0.91,-4.31 L -0.1,0 L 0.37,0 L 1.39,-4.31 L 0.92,-4.32" class="fCHYLW" style="stroke-width:0.64;fill-opacity:1.0;" />
-  <path d=" M -0.12,0.01 L -0.58,0 L 0.44,-4.31 L 0.91,-4.3 L -0.09,0.01" class="fRESBL" style="stroke-width:0.64;fill-opacity:1.0;" />
-  <circle cx="-0.06" cy="0.02" r="0.05" class="fCHYLW" style="stroke-width:0.64;fill-opacity:1.0;" />
-  <circle cx="-0.07" cy="0.05" r="0.05" class="fRESBL" style="stroke-width:0;fill-opacity:1.0;" />
-  <path d=" M -1.47,0 L 1.38,0" class="sl f0 sCHBLK" style="stroke-width:0.64;" />
-  <path d=" M -0.6,0 L 0.43,-4.32 L 1.4,-4.32 L 0.5,-0.41 L 0.42,-0.01 L 0.3,0 L 0.17,0 L 0.02,0.01 L -0.1,0 L -0.3,0.01 L -0.38,0 L -0.6,0" class="sl f0 sCHBLK" style="stroke-width:0.64;" />
-  <circle cx="0" cy="0" r="0.58" class="fCHWHT" style="stroke-width:0.64;fill-opacity:1.0;" />
-  <circle cx="0" cy="0" r="0.58" class="sl f0 sCHBLK" style="stroke-width:0.64;" />
+  <path d=" M 0.91,-4.31 L -0.1,0 L 0.37,0 L 1.39,-4.31 L 0.92,-4.32" class="fCHYLW" stroke-width="0.64" fill-opacity="1.0"  />
+  <path d=" M -0.12,0.01 L -0.58,0 L 0.44,-4.31 L 0.91,-4.3 L -0.09,0.01" class="fRESBL" stroke-width="0.64" fill-opacity="1.0"  />
+  <circle cx="-0.06" cy="0.02" r="0.05" class="fCHYLW" stroke-width="0.64" fill-opacity="1.0"  />
+  <circle cx="-0.07" cy="0.05" r="0.05" class="fRESBL" stroke-width="0" fill-opacity="1.0"  />
+  <path d=" M -1.47,0 L 1.38,0" class="sl f0 sCHBLK" stroke-width="0.64"  />
+  <path d=" M -0.6,0 L 0.43,-4.32 L 1.4,-4.32 L 0.5,-0.41 L 0.42,-0.01 L 0.3,0 L 0.17,0 L 0.02,0.01 L -0.1,0 L -0.3,0.01 L -0.38,0 L -0.6,0" class="sl f0 sCHBLK" stroke-width="0.64"  />
+  <circle cx="0" cy="0" r="0.58" class="fCHWHT" stroke-width="0.64" fill-opacity="1.0"  />
+  <circle cx="0" cy="0" r="0.58" class="sl f0 sCHBLK" stroke-width="0.64"  />
 </svg>

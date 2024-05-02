@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="daySvgStyle.css" type="text/css"?><svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.68mm" height="10.69mm" viewBox="-2.34 -5.35 4.68 10.69">
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.68mm" height="10.69mm" viewBox="-2.34 -5.35 4.68 10.69">
   <title>RDOCAL03</title>
   <desc>radio calling-in point for traffic in both directions</desc>
   <metadata>
@@ -9,8 +10,8 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-2.18" y="-5.19" height="10.37" width="4.36"/>
   <rect class="svgBox layout" fill="none" x="-2.18" y="-5.19" height="10.37" width="4.36"/>
-  <circle class="f0 sTRFCD" style="stroke-width: 0.32;" cx="0" cy="0" r="2.18"/>
-  <path d=" M -1.7,-1.61 L 0.02,-5.19 L 1.73,-1.61" class="sl f0 sTRFCD" style="stroke-width: 0.32;"/>
-  <path d=" M 1.7,1.64 L -0.08,5.18 L -1.7,1.61" class="sl f0 sTRFCD" style="stroke-width: 0.32;"/>
+  <circle class="f0 sTRFCD" stroke-width="0.32"  cx="0" cy="0" r="2.18"/>
+  <path d=" M -1.7,-1.61 L 0.02,-5.19 L 1.73,-1.61" class="sl f0 sTRFCD" stroke-width="0.32" />
+  <path d=" M 1.7,1.64 L -0.08,5.18 L -1.7,1.61" class="sl f0 sTRFCD" stroke-width="0.32" />
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>

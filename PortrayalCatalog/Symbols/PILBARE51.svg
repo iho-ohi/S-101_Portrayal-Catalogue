@@ -10,7 +10,7 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-5.5" y="-5.5" height="11" width="11" />
   <rect class="svgBox layout" fill="none" x="-5.5" y="-5.5" height="11" width="11" />
-  <circle cx="0.01" cy="0" r="4.96" class="sl f0 sCHMGF" style="stroke-width:0.64" />
-  <path d=" M 0,-4.9 L 2,0 L 0,4.9 L -2,0 L 0,-4.9" class="sl f0 sCHMGF" style="stroke-width:0.64;" />
+  <circle cx="0.01" cy="0" r="4.96" class="sl f0 sCHMGF" stroke-width="0.64"  />
+  <path d=" M 0,-4.9 L 2,0 L 0,4.9 L -2,0 L 0,-4.9" class="sl f0 sCHMGF" stroke-width="0.64"  />
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.4"/>
 </svg>

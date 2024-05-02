@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="daySvgStyle.css" type="text/css"?><svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.38mm" height="4.38mm" viewBox="-2.19 -2.19 4.38 4.38">
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.38mm" height="4.38mm" viewBox="-2.19 -2.19 4.38 4.38">
   <title>BOYSAW12</title>
   <desc>safe water buoy, simplified</desc>
   <metadata>
@@ -10,7 +11,7 @@
   <rect class="symbolBox layout" fill="none" x="-2.03" y="-2.03" height="4.06" width="4.06"/>
   <rect class="svgBox layout" fill="none" x="-2.03" y="-2.03" height="4.06" width="4.06"/>
   <circle class="fCHRED" cx="0" cy="0" r="2"/>
-  <circle class="f0 sOUTLW" style="stroke-width: 0.32;" cx="0" cy="0" r="2.03"/>
+  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="0" r="2.03"/>
   <circle class="fOUTLW" cx="0" cy="0" r="0.15"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>

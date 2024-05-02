@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="daySvgStyle.css" type="text/css"?><svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="3.64mm" height="4.64mm" viewBox="-1.82 -4.32 3.64 4.64">
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="3.64mm" height="4.64mm" viewBox="-1.82 -4.32 3.64 4.64">
   <title>NOTBRD11</title>
   <desc>conspicuous notice board</desc>
   <metadata>
@@ -9,8 +10,8 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-1.5" y="-4" height="4" width="3"/>
   <rect class="svgBox layout" fill="none" x="-1.5" y="-4" height="4" width="3"/>
-  <path d=" M -1,0 L 1,0" class="sl f0 sCHBLK" style="stroke-width: 0.64;"/>
-  <path d=" M 0,0 L 0,-2" class="sl f0 sCHBLK" style="stroke-width: 0.64;"/>
-  <path d=" M -1.5,-2 L 1.5,-2 L 1.5,-4 L -1.5,-4 L -1.5,-2" class="sl f0 sCHBLK" style="stroke-width: 0.64;"/>
+  <path d=" M -1,0 L 1,0" class="sl f0 sCHBLK" stroke-width="0.64" />
+  <path d=" M 0,0 L 0,-2" class="sl f0 sCHBLK" stroke-width="0.64" />
+  <path d=" M -1.5,-2 L 1.5,-2 L 1.5,-4 L -1.5,-4 L -1.5,-2" class="sl f0 sCHBLK" stroke-width="0.64" />
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>

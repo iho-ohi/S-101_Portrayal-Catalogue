@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="daySvgStyle.css" type="text/css"?><svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.64mm" height="4.64mm" viewBox="-2.32 -2.32 4.64 4.64">
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" style="shape-rendering:geometricPrecision; fill-rule:evenodd;" width="4.64mm" height="4.64mm" viewBox="-2.32 -2.32 4.64 4.64">
   <title>OFSPLF01</title>
   <desc>offshore platform</desc>
   <metadata>
@@ -10,6 +11,6 @@
   <rect class="symbolBox layout" fill="none" x="-2" y="-2" height="4" width="4"/>
   <rect class="svgBox layout" fill="none" x="-2" y="-2" height="4" width="4"/>
   <circle class="fCHBLK" cx="0" cy="0" r="0.5"/>
-  <path d=" M -2,-2 L 2,-2 L 2,2 L -2,2 L -2,-2" class="sl f0 sCHBLK" style="stroke-width: 0.64;"/>
+  <path d=" M -2,-2 L 2,-2 L 2,2 L -2,2 L -2,-2" class="sl f0 sCHBLK" stroke-width="0.64" />
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>
