@@ -125,6 +125,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i174]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/174
 [i175]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/175
 [i176]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/176
+[i177]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/177
 [i178]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/178
 [i179]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/179
 [i181]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/181
@@ -312,6 +313,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#331][i331] Show thin dashed orange line for `UpdateInformation` with `updateType`=`4 (move)` and curve geometry
   	* [#372][i372] Implement portrayal of Incompletely Surveyed Area
   	* [#366][i366] Show vertical clearance on `Gate`
+  	* [#177][i177] Remove CSS inline styling from all symbols
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
