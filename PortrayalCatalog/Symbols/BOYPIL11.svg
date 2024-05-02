@@ -4,7 +4,7 @@
   <title>BOYPIL11</title>
   <desc>pillar buoy, lateral green, paper-chart</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2023-01-23" iho:source="7Cs" iho:format="S100SVG" iho:version="0.1"/>
     </iho:S100SVG>
   </metadata>

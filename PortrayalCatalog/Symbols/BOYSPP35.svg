@@ -4,7 +4,7 @@
   <title>BOYSPP35</title>
   <desc>special purpose ice buoy or spar or pillar shaped buoy, simplified</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHO" iho:creationDate="2024-02-08" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="1.0"/>
     </iho:S100SVG>
   </metadata>

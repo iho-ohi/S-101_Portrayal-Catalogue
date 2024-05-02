@@ -4,7 +4,7 @@
   <title>BCNGEN03</title>
   <desc>default symbol for beacon, paper-chart</desc>
   <metadata>
-    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.0">
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2023-02-12" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.2"/>
     </iho:S100SVG>
   </metadata>
