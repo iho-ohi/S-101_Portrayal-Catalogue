@@ -272,6 +272,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i358]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/358
 [i359]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/359
+[i366]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/366
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
 [i371]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/371
@@ -310,6 +311,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
   	* [#359][i359] Add thin orange line to `UpdateInformation` delete of curve or surface
   	* [#331][i331] Show thin dashed orange line for `UpdateInformation` with `updateType`=`4 (move)` and curve geometry
   	* [#372][i372] Implement portrayal of Incompletely Surveyed Area
+  	* [#366][i366] Show vertical clearance on `Gate`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
