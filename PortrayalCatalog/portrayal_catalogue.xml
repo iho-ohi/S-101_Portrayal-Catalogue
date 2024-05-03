@@ -11948,6 +11948,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="StructureOverNavigableWater">
+         <description>
+            <name>StructureOverNavigableWater</name>
+            <description>Rules for feature type StructureOverNavigableWater</description>
+            <language>eng</language>
+         </description>
+         <fileName>StructureOverNavigableWater.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="SubmarinePipelineArea">
          <description>
             <name>SubmarinePipelineArea</name>
