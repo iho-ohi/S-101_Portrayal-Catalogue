@@ -100,6 +100,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i379]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/379
 [i380]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/380
 [i381]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/381
+[i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -141,6 +142,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#379][i379] Update alert catalog for S-100 5.2 schema
   	* [#380][i380] Update portrayal_catalogue.xml for S-100 5.2 schema
   	* [#361][i361] Use `flareBearing` attribute in lieu of S-52 rule for colocated lights
+  	* [#383][i383] Reduce line weight for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
