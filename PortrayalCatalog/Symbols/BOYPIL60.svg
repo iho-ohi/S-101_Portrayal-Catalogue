@@ -8,16 +8,16 @@
       <iho:Description iho:publisher="IHO" iho:creationDate="2024-03-28" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="1.0" />
     </iho:S100SVG>
   </metadata>
-  <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
   <rect class="symbolBox layout" fill="none" x="-4.07" y="1.58" height="6.9" width="7.97" />
   <rect class="svgBox layout" fill="none" x="-4.07" y="-5.32" height="6.9" width="7.97" />
-  <path d=" M -0.01,-0.01 L 2.31,-0.01 L 1.39,-1.96 L 1.39,-4.3 L 0.92,-4.3 L 0.01,-0.02" class="fCHYLW" stroke-width="0.64" fill-opacity="1.0"  />
-  <path d=" M -0.09,0.01 L -2.36,-0.02 L -0.21,-2.32 L 0.43,-4.3 L 0.92,-4.29 L 0.01,0.01" class="fRESBL" stroke-width="0.64" fill-opacity="1.0"  />
-  <circle cx="0.04" cy="0.04" r="0.05" class="fCHYLW" stroke-width="0.64" fill-opacity="1.0"  />
-  <circle cx="0.05" cy="0.04" r="0.05" class="fRESBL" stroke-width="0.64" fill-opacity="1.0"  />
-  <circle cx="0" cy="0" r="0.58" class="fCHWHT" stroke-width="0.64" fill-opacity="1.0"  />
-  <circle cx="0" cy="0" r="0.58" class="sl f0 sCHBLK" stroke-width="0.64"  />
-  <path d=" M -2.41,0 L -0.22,-2.33 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.33,0" class="sl f0 sCHBLK" stroke-width="0.64"  />
-  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sCHBLK" stroke-width="0.64"  />
-  <path d=" M 0.6,0 L 2.9,0" class="sl f0 sCHBLK" stroke-width="0.64"  />
+  <path d=" M -0.01,-0.01 L 2.31,-0.01 L 1.39,-1.96 L 1.39,-4.3 L 0.92,-4.3 L 0.01,-0.02" class="fCHYLW" />
+  <path d=" M -0.09,0.01 L -2.36,-0.02 L -0.21,-2.32 L 0.43,-4.3 L 0.92,-4.29 L 0.01,0.01" class="fRESBL" />
+  <circle cx="0.04" cy="0.04" r="0.05" class="fCHYLW" />
+  <circle cx="0.05" cy="0.04" r="0.05" class="fRESBL" />
+  <circle cx="0" cy="0" r="0.58" class="fDEPDW" />
+  <circle cx="0" cy="0" r="0.58" class="sl f0 sCHBLK" stroke-width="0.32"  />
+  <path d=" M -2.41,0 L -0.22,-2.33 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.33,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M 0.6,0 L 2.9,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
 </svg>
