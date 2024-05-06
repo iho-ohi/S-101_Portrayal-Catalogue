@@ -15,9 +15,9 @@
   <circle cx="0.04" cy="0.04" r="0.05" class="fCHYLW" />
   <circle cx="0.05" cy="0.04" r="0.05" class="fRESBL" />
   <circle cx="0" cy="0" r="0.58" class="fDEPDW" />
-  <circle cx="0" cy="0" r="0.58" class="sl f0 sCHBLK" stroke-width="0.32"  />
-  <path d=" M -2.41,0 L -0.22,-2.33 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.33,0" class="sl f0 sCHBLK" stroke-width="0.32" />
-  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sCHBLK" stroke-width="0.32" />
-  <path d=" M 0.6,0 L 2.9,0" class="sl f0 sCHBLK" stroke-width="0.32" />
-  <circle class="pivotPoint layout" fill="none" cx="0.00" cy="0.00" r="0.4" />
+  <circle cx="0" cy="0" r="0.58" class="sl f0 sOUTLW" stroke-width="0.32"  />
+  <path d=" M -2.41,0 L -0.22,-2.33 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.33,0" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <path d=" M 0.6,0 L 2.9,0" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2"/>
 </svg>
