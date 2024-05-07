@@ -103,6 +103,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i381]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/381
 [i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
+[i365]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/365
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -147,6 +148,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#383][i383] Reduce line weight for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60`
   	* [#384][i384] Fix outline color for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60` to support dusk and night palettes
   	* [#360][i360] Implement portrayal for `StructureOverNavigableWater`
+  	* [#365][i365] “system” attribute in the water, [PSWG #161, Row 21]
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes

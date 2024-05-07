@@ -10,6 +10,7 @@ function Building(feature, featurePortrayal, contextParameters)
 	if feature.inTheWater then
 		-- Dangers above water
 		viewingGroup = 12200
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 	elseif feature.visualProminence == 1 then
 		-- Visually conspicuous object
 		viewingGroup = 22220
