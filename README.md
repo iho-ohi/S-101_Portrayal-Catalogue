@@ -86,6 +86,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i356]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/356
 [i358]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/358
 [i359]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/359
+[i360]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/360
 [i361]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/361
 [i366]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/366
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
@@ -145,6 +146,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#361][i361] Use `flareBearing` attribute in lieu of S-52 rule for colocated lights
   	* [#383][i383] Reduce line weight for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60`
   	* [#384][i384] Fix outline color for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60` to support dusk and night palettes
+  	* [#360][i360] Implement portrayal for `StructureOverNavigableWater`
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
