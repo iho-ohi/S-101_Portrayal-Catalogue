@@ -88,6 +88,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i359]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/359
 [i360]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/360
 [i361]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/361
+[i365]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/365
 [i366]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/366
 [i367]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/367
 [i368]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/368
@@ -103,7 +104,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i381]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/381
 [i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
-[i365]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/365
+[i387]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/387
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -149,6 +150,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#384][i384] Fix outline color for `BOYPIL60`, `BOYSPH50`, `BOYSPH60` and `BOYSPR60` to support dusk and night palettes
   	* [#360][i360] Implement portrayal for `StructureOverNavigableWater`
   	* [#365][i365] “system” attribute in the water, [PSWG #161, Row 21]
+  	* [#387][i387] `BOYPIL60` has extraneous circles
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
