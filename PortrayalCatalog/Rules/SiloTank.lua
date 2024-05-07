@@ -13,6 +13,8 @@ function SiloTank(feature, featurePortrayal, contextParameters)
 	-- #256
 	if feature.inTheWater then
 		viewingGroup = 12200
+		-- #365
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 	end
 	
 	if feature.PrimitiveType == PrimitiveType.Point then
