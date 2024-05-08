@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
 -- #238 [PSWG #117]
 
@@ -7,7 +5,7 @@
 require 'TOPMAR02'
 
 -- Buoy Lateral main entry point.
-function BuoyLateral(feature, featurePortrayal, contextParameters)
+function LateralBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24

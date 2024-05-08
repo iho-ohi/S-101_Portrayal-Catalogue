@@ -5,6 +5,8 @@
 -- Main entry point for feature type.
 function DiscolouredWater(feature, featurePortrayal, contextParameters)
 
+	featurePortrayal:AddInstructions('AlertReference:ProhAre,53017,53017')
+	
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then

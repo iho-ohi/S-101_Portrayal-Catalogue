@@ -1,14 +1,13 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 -- #155
 -- #238 [PSWG #117]
+-- #356 [PSWG #153]
 
 -- Referenced portrayal rules.
 require 'TOPMAR02'
 
 -- Beacon Special Purpose/General main entry point.
-function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameters)
+function SpecialPurposeGeneralBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24
@@ -33,7 +32,7 @@ function BeaconSpecialPurposeGeneral(feature, featurePortrayal, contextParameter
 				featurePortrayal:AddInstructions('PointInstruction:BCNSPP21')
 			elseif feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSPP13')
-			elseif contains(11, feature.natureOfConstruction) then
+			elseif feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSPP13')
 			elseif feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNSPP13')

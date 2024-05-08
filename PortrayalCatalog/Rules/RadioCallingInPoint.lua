@@ -3,21 +3,16 @@
 -- #155
 
 function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
-	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'ContactDetails')
+	local contactDetails = feature:GetInformationAssociation('AdditionalInformation', '', 'ContactDetails')
 	
 	local communicationChannels = ''
-	if contactDetails and contactDetails.communicationChannel
-	then
-		communicationChannels = 'ch '
-		for i, channel in ipairs(contactDetails.communicationChannel)
-		do
-			if i == 1
-			then
-				communicationChannels = communicationChannels .. channel
-			else
-				communicationChannels = communicationChannels .. ',' .. channel
-			end
-		end
+	if contactDetails then
+		communicationChannels = safeConcat(contactDetails.communicationChannel, ",") .. safeConcat(feature.communicationChannel, ",")
+	else
+		communicationChannels = safeConcat(feature.communicationChannel, ",")
+	end
+	if communicationChannels ~= '' then
+		communicationChannels = 'ch ' .. communicationChannels
 	end
 	
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then

@@ -1,13 +1,11 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
 -- #238 [PSWG #117]
 
 -- Referenced portrayal rules.
--- require 'TOPMAR02'  -- not needed #238 [PSWG #117]
+require 'TOPMAR02'
 
--- Buoy Isolated Danger main entry point.
-function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
+-- Buoy Safe Water main entry point.
+function SafeWaterBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 	local textViewingGroup = 21
 	local priority = 24
@@ -22,22 +20,25 @@ function BuoyIsolatedDanger(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.SimplifiedSymbols then
-			featurePortrayal:AddInstructions('PointInstruction:BOYISD12')
+			featurePortrayal:AddInstructions('PointInstruction:BOYSAW12')
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:-3.51,3.51;TextAlignHorizontal:End;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'by %s'), textViewingGroup, textPriority, viewingGroup, priority)
 			end
 		else
-			textOffsetX = -3.51
-			-- Black,Red,Black
-			if feature.buoyShape == 4 and feature.colour[1] == 2 and feature.colour[2] == 3 and feature.colour[3] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYPIL40')
-			elseif feature.buoyShape == 5 and feature.colour[1] == 2 and feature.colour[2] == 3 and feature.colour[3] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYSPR40')
-			elseif feature.buoyShape == 1 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYCON01')
-			elseif feature.buoyShape == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BOYCAN01')
+			local textOffsetX = -3.51
+			if feature.buoyShape == 3 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPH50')
+			elseif feature.buoyShape == 3 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPH50')
+			elseif feature.buoyShape == 4 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL50')
+			elseif feature.buoyShape == 4 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYPIL50')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 1 and feature.colour[2] == 3 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR50')
+			elseif feature.buoyShape == 5 and feature.colour[1] == 3 and feature.colour[2] == 1 then
+				featurePortrayal:AddInstructions('PointInstruction:BOYSPR50')
 			elseif feature.buoyShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BOYSPH01')
 			elseif feature.buoyShape == 4 then

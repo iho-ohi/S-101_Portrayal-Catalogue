@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Issue #161, PSWG #108, significant changes from conveted S-52
 

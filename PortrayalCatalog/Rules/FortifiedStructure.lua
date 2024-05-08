@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 -- #155
 -- #256
@@ -15,6 +13,8 @@ function FortifiedStructure(feature, featurePortrayal, contextParameters)
 	-- #256
 	if feature.inTheWater then
 		viewingGroup = 12200
+		-- #365
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 	end
 	
 	if feature.PrimitiveType == PrimitiveType.Point or feature.PrimitiveType == PrimitiveType.Curve then

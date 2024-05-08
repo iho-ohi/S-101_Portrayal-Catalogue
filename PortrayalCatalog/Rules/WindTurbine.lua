@@ -9,6 +9,8 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 		if feature.inTheWater then
 			viewingGroup = 12200
 			featurePortrayal:AddInstructions('ViewingGroup:12200')
+			-- #365
+			featurePortrayal:AddInstructions('AlertReference:NavHazard')
 		elseif feature.visualProminence == 1 then
 			viewingGroup = 22200
 			featurePortrayal:AddInstructions('ViewingGroup:22220')

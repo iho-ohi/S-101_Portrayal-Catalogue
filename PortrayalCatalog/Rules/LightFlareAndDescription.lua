@@ -24,20 +24,21 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 	if feature.flareBearing
 	then
 		rotation = feature.flareBearing
-	else
-		if contains(colour[1], { 1, 6, 11 }) then
-			-- White, yellow or orange light.  Flare at 45 degrees if there is a colocated non-sectored light.
-			for pointAssociation in feature:GetFlattenedSpatialAssociations() do
-				local associatedFeatures = pointAssociation.AssociatedFeatures
-
-				for _, af in ipairs(associatedFeatures) do
-					if af ~= feature and contains(af.Code, { 'LightAllAround', 'LightAirObstruction', 'LightFogDetector' }) then
-						rotation = 45
-						break
-					end
-				end
-			end
-		end
+	--- S-52 CSP removed by #361.
+	--else
+	--	if contains(colour[1], { 1, 6, 11 }) then
+	--		-- White, yellow or orange light.  Flare at 45 degrees if there is a colocated non-sectored light.
+	--		for pointAssociation in feature:GetFlattenedSpatialAssociations() do
+	--			local associatedFeatures = pointAssociation.AssociatedFeatures
+	--
+	--			for _, af in ipairs(associatedFeatures) do
+	--				if af ~= feature and contains(af.Code, { 'LightAllAround', 'LightAirObstruction', 'LightFogDetector' }) then
+	--					rotation = 45
+	--					break
+	--				end
+	--			end
+	--		end
+	--	end
 	end
 
 	local symbol = 'LITDEF11'
@@ -70,7 +71,7 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 	featurePortrayal:AddInstructions('Rotation:PortrayalCRS,' .. rotation)
 	featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 
-	featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0;FontSize:10;FontColor:CHBLK')
+	featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0;FontColor:CHBLK')
 
 	if rotation == 45 then
 		featurePortrayal:AddInstructions('LocalOffset:7.02,3.51;TextAlignHorizontal:Start;TextAlignVertical:Bottom')
@@ -86,9 +87,9 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 
 	if contains(feature['!signalGeneration'], {3,5,6}) then
 		--Debug.Break()
-		featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, viewingGroup, priority)
+		featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, viewingGroup, priority, true)
 	else
-		featurePortrayal:AddTextInstruction(description, 23, 24, viewingGroup, priority)
+		featurePortrayal:AddTextInstruction(description, 23, 24, viewingGroup, priority, true)
 	end
 	-- end issue #52
 end

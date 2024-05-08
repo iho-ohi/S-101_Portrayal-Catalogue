@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 --
 -- ISSUE PSWG #48, PC #111, 
 -- ISSUE PSWG #48, PC #111, 9/12/22 symbol decision and name change 2022_SISTAT03.svg to SISTAT03.svg

@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Navigation line main entry point.
 function NavigationLine(feature, featurePortrayal, contextParameters)

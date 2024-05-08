@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- #155
 -- #238 [PSWG #117]
 
@@ -7,7 +5,7 @@
 require 'TOPMAR02'
 
 -- Beacon Cardinal main entry point.
-function BeaconCardinal(feature, featurePortrayal, contextParameters)
+function CardinalBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24

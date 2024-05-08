@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Pylon/bridge support main entry point.
 function PylonBridgeSupport(feature, featurePortrayal, contextParameters)

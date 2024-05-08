@@ -1,14 +1,13 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 -- #155
 -- #238 [PSWG #117]
+-- #356 [PSWG #153]
 
 -- Referenced portrayal rules.
 require 'TOPMAR02'
 
 -- Beacon Lateral main entry point.
-function BeaconLateral(feature, featurePortrayal, contextParameters)
+function LateralBeacon(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27020
 	local textViewingGroup = 21
 	local priority = 24
@@ -37,13 +36,13 @@ function BeaconLateral(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT22')
 			elseif feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 and feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
-			elseif feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 and contains(11, feature.natureOfConstruction) then
+			elseif feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 and feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
 			elseif feature.colour[1] == 3 and feature.colour[2] == 4 and feature.colour[3] == 3 and feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
 			elseif feature.colour[1] == 4 and feature.colour[2] == 3 and feature.colour[3] == 4 and feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')
-			elseif feature.colour[1] == 4 and feature.colour[2] == 3 and feature.colour[3] == 4 and contains(11, feature.natureOfConstruction) then
+			elseif feature.colour[1] == 4 and feature.colour[2] == 3 and feature.colour[3] == 4 and feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')
 			elseif feature.colour[1] == 4 and feature.colour[2] == 3 and feature.colour[3] == 4 and feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')
@@ -65,13 +64,13 @@ function BeaconLateral(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT22')
 			elseif feature.colour[1] == 3 and feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
-			elseif feature.colour[1] == 3 and contains(11, feature.natureOfConstruction) then
+			elseif feature.colour[1] == 3 and feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
 			elseif feature.colour[1] == 3 and feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT15')
 			elseif feature.colour[1] == 4 and feature.beaconShape == 3 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')
-			elseif feature.colour[1] == 4 and contains(11, feature.natureOfConstruction) then
+			elseif feature.colour[1] == 4 and feature.beaconShape == 4 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')
 			elseif feature.colour[1] == 4 and feature.beaconShape == 5 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNLAT16')

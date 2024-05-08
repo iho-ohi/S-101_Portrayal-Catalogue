@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Issues PC #114, PSWG #63, #55, #67, #67, #54, extensively reworked from converter auto-generated
 

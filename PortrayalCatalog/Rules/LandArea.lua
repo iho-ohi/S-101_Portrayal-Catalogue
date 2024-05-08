@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Referenced portrayal rules.
 require 'QUAPOS01'
@@ -7,6 +5,11 @@ require 'QUAPOS01'
 -- Land area main entry point.
 function LandArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
+
+	-- DEBUG tessting #175
+	--feature.featureName[1] = {nameUsage = nil, language = 'fre', name = 'FRE_LAN'}
+	--feature.featureName[2] = {nameUsage = 1, language = 'eng', name = 'ENG_LAN'}
+	--feature.featureName[3] = {nameUsage = nil, language = 'ger', name = 'GER_LAN'}
 
 	featurePortrayal:AddInstructions('AlertReference:SafetyContour')
 

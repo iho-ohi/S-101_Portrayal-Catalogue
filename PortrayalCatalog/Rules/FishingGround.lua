@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Fishing ground main entry point.
 function FishingGround(feature, featurePortrayal, contextParameters)

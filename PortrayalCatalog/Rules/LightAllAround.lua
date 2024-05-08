@@ -62,15 +62,15 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 		featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
-		featurePortrayal:AddInstructions('ClearGeometry;Rotation:PortrayalCRS,0;FontSize:10;FontColor:CHBLK')
+		featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
 		featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignHorizontal:Start;TextAlignVertical:Center')
 
 		local description = LITDSN02(categoryOfLight, feature.rhythmOfLight, feature.colour, feature.height, feature['!valueOfNominalRange'], feature.status)
 		if contains(feature.signalGeneration, {5,6})
 		then
-			featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, 27070, 21)
+			featurePortrayal:AddTextInstruction(description .. '(man)', 23, 24, 27070, 21, true)
 		else
-			featurePortrayal:AddTextInstruction(description, 23, 24, 27070, 21)
+			featurePortrayal:AddTextInstruction(description, 23, 24, 27070, 21, true)
 		end
 	else
 		LightFlareAndDescription(feature, featurePortrayal, contextParameters, feature.categoryOfLight[1], 27070, 21)

@@ -4,6 +4,8 @@ These functions are intended to be called by the portrayal rules.
 --]]
 -- #61
 
+require 'PortrayalAPI'
+
 local CreateContextParameters, CreateFeaturePortrayalItemArray, CreateFeaturePortrayal, CreateDrawingInstructions
 local GetMergedDisplayParameters
 
@@ -146,10 +148,16 @@ function CreateFeaturePortrayalItemArray()
 
 		local featurePortrayalItem = { Type = 'FeaturePortrayalItem', Feature = feature, ObservedContextParameters = {} }
 
-		function featurePortrayalItem:NewFeaturePortrayal()
-			self.featurePortrayal = CreateFeaturePortrayal(self.Feature.ID)
+		-- Note: variables created in a feature should start with an underscore to prevent name collisions with S-100 attribute names
+		feature._featurePortrayalItem = featurePortrayalItem
 
-			return self.featurePortrayal
+		function featurePortrayalItem:NewFeaturePortrayal()
+			-- Note:
+			--   The naming pattern for S100_FC_Item is "[A-Za-z][A-Za-z0-9_]*" (upper or lower case letter followed by zero or more letters, numbers, or underscores).
+			--   When adding information to the feature class, use variable names that won't cause name collisions with attribute codes.
+			self.Feature._featurePortrayal = CreateFeaturePortrayal(self.Feature)
+
+			return self.Feature._featurePortrayal
 		end
 
 		self[#self + 1] = featurePortrayalItem
@@ -163,14 +171,16 @@ function InstructionSpatialReference(spatialAssociation)
 	return spatialAssociation.SpatialID .. ',' .. spatialAssociation.Orientation.Name
 end
 
-function CreateFeaturePortrayal(featureReference)
-	CheckType(featureReference, 'string')
+function CreateFeaturePortrayal(feature)
+	CheckType(feature, 'Feature')
 
 	local featurePortrayal =
 	{
 		Type = 'FeaturePortrayal',
-		FeatureReference = featureReference,
+		Feature = feature,
+		FeatureReference = feature.ID,
 		DrawingInstructions = CreateDrawingInstructions(),
+		GetFeatureNameCalled = false,
 	}
 
 	function featurePortrayal:AddInstructions(instructions)
@@ -180,19 +190,96 @@ function CreateFeaturePortrayal(featureReference)
 		self.DrawingInstructions:Add(instructions)
 	end
 
-	function featurePortrayal:AddTextInstruction(text, textViewingGroup, textPriority, viewingGroup, priority)
+	function featurePortrayal:AddTextInstruction(text, textViewingGroup, textPriority, viewingGroup, priority, isLightDescription)
 		CheckSelf(self, featurePortrayal.Type)
 		CheckType(text, 'string')
 		CheckType(textViewingGroup, 'number')
 		CheckType(textPriority, 'number')
 		CheckType(viewingGroup, 'number')
-		CheckType(priority, 'number')
+		CheckTypeOrNil(priority, 'number')
+		
+		local placementFeature = self.Feature
+		
+		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
+		if textAssociation and #textAssociation > 0 then
+			-- 0: place feature name override
+			-- 1: place feature name
+			-- 2: place light description
+			local placementType = textAssociation[1].textType or 0
+			local isLightPlacement = placementType == 2
+			if (isLightDescription and isLightPlacement) or (not isLightDescription and not isLightPlacement) then
+			
+				-- Make the TextPlacement feature the target of our drawing instructions
+				placementFeature = textAssociation[1]
+				placementFeature._featurePortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+				
+				-- Add scaleMinimum if present
+				local scaleMinimum = feature['!scaleMinimum']
+				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
+					placementFeature._featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
+				end
 
-		--self.DrawingInstructions:Add('Parent:' .. EncodeDEFString(featurePortrayal.FeatureReference))
-		self.DrawingInstructions:Add('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority)
-		self.DrawingInstructions:Add('TextInstruction:' .. text)
-		--self.DrawingInstructions:Add('Parent:')
-		self.DrawingInstructions:Add('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority)
+				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
+				local length = placementFeature.textOffsetDistance or 0
+				local direction = placementFeature.textOffsetBearing or 0
+				if length ~= 0 then
+					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
+				end
+				
+				if placementFeature.textRotation then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
+				else
+					-- Center the text on the point
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+				end
+
+				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
+				local fontStyle = {
+					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
+					['FontColor:'] = 'FontColor:CHBLK',	-- transparency = 0
+					['FontBackgroundColor:'] = nil,		-- token="", transparency=1
+					['FontSize:'] = nil,				-- 10
+					['FontProportion:'] = nil,			-- "Proportional"
+					['FontWeight:'] = nil,				-- "Medium"
+					['FontSlant:'] = nil,				-- "Upright"
+					['FontSerifs:'] = nil,				-- false
+					['FontUnderline:'] = nil,			-- false
+					['FontStrikethrough:'] = nil,		-- false
+					['FontUpperline:'] = nil,			-- false
+					['FontReference:'] = nil,			-- ""
+					['TextVerticalOffset:'] = nil		-- 0
+				}
+				for _, v in ipairs(self.DrawingInstructions) do
+					for instruction in string.gmatch(v, "([^;]+)") do
+						for k, _ in pairs(fontStyle) do
+							if string.find(instruction, k, 1, true) ~= nil then
+								k = v
+							end
+						end
+					end
+				end
+				
+				-- Add the style to the TextPlacement feature
+				for k, v in pairs(fontStyle) do
+					if v ~= nil then
+						placementFeature._featurePortrayal:AddInstructions(v)
+					end
+				end
+				-- Done copying text style
+			end
+		end
+		
+		-- Add the instructions to draw the text
+		placementFeature._featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
+		if placementFeature == self.Feature then
+			-- Reset the state in case the caller generates further non-text drawing instructions
+			self:AddInstructions('ViewingGroup:' .. viewingGroup)
+			if priority then
+				self:AddInstructions('DrawingPriority:' .. priority)
+			end
+		else
+			HostPortrayalEmit(placementFeature._featurePortrayal.FeatureReference, table.concat(placementFeature._featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature._featurePortrayalItem))
+		end
 	end
 
 	function featurePortrayal:AddSpatialReference(spatialAssociation)
@@ -208,7 +295,7 @@ function CreateFeaturePortrayal(featureReference)
 
 	--
 	-- S-52 PresLib Ed 4.0.3 Part I_Clean.pdf, page 42
-	-- LC – Showline (simple linestyle).
+	-- LC ï¿½ Showline (simple linestyle).
 	--
 	function featurePortrayal:SimpleLineStyle(lineType, width, colour)
 		CheckSelf(self, featurePortrayal.Type)
@@ -229,6 +316,71 @@ function CreateFeaturePortrayal(featureReference)
 		self.DrawingInstructions:Add()
 	end
 
+	--
+	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected national language. If no match is found,
+	-- returns the first entry marked as the default (nameUsage == 1). If no default is present, returns the first English name. Otherwise
+	-- returns nil.
+	function featurePortrayal:GetFeatureName(feature, contextParameters)
+		CheckSelf(self, featurePortrayal.Type)
+		CheckType(feature, 'Feature')
+		CheckType(contextParameters, 'array:ContextParameter')
+
+		self.GetFeatureNameCalled = true
+		
+		-- TextPlacement can override feature name
+		local textAssociation = feature:GetFeatureAssociations('TextAssociation')
+		if textAssociation and #textAssociation > 0 and textAssociation[1].text then
+			return textAssociation[1].text
+		end
+		
+		if not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name then
+			return nil
+		end
+		
+		local englishSelected = not contextParameters.NationalLanguage or contextParameters.NationalLanguage == 'eng' or contextParameters.NationalLanguage == ''
+		local defaultName			-- an entry with nameUsage == 1
+		local englishName			-- the first English name
+		local nationalName			-- the first entry which matched the selected national language
+		for cnt, featureName in ipairs(feature.featureName) do
+		
+			-- ensure a name is present
+			if featureName.name and featureName.name ~= '' then
+
+				-- don't process if only intended for pick report
+				if not featureName.nameUsage or featureName.nameUsage ~= 3 then
+				
+					local isEnglishName = not featureName.language or featureName.language == 'eng'
+					local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage) or (englishSelected and isEnglishName)
+
+					-- check for default values which are used if we can't otherwise find a match...
+					if featureName.nameUsage then
+						if featureName.nameUsage == 1 then
+							-- only one entry is permitted to have nameUsage set to one
+							defaultName = featureName.name
+						elseif featureName.nameUsage == 2 then
+							-- use the entry intended for chart display which matched the selected lanaguage
+							if languageMatches then
+								return featureName.name
+							end
+						end
+					end
+
+					if not englishName and isEnglishName then
+						englishName = featureName.name
+					end
+
+					if not nationalName and languageMatches then
+						nationalName = featureName.name
+					end
+					
+				end
+			end
+			
+		end
+		
+		return nationalName or defaultName or englishName
+	end
+	
 	return featurePortrayal
 end
 
@@ -240,21 +392,6 @@ function CreateDrawingInstructions()
 	end
 
 	return drawingInstructions;
-end
-
--- Updated per #61
--- TODO: add national language support
--- see https://github.com/S-101-Portrayal-subWG/Working-Documents/issues/104
--- and https://github.com/iho-ohi/S-101-Documentation-and-FC/issues/60
-function GetFeatureName(feature, contextParameters)
-
-	for _, featureName in ipairs(feature.featureName) do
-		if featureName.displayName == nil or featureName.displayName == true and featureName.name and featureName.name ~= '' then
-			return featureName.name
-		end
-	end
-
-	return nil
 end
 
 -- Updated per #61 - temporarily remove NationalLanguage context parameter
@@ -270,4 +407,22 @@ function GetInformationText(information, contextParameters)
 	end
 
 	return defaultText
+end
+
+function GetFeatureName(feature, contextParameters)
+	return feature._featurePortrayal:GetFeatureName(feature, contextParameters)
+end
+
+--
+-- The caller should not assume any drawing instructions are emitted; the state
+-- of the text style commands may or may not be altered after this call.
+--
+-- textStyleInstructions example: 'LocalOffset:0,0;FontColor:CHBLK'
+function PortrayFeatureName(feature, featurePortrayal, contextParameters, textViewingGroup, textPriority, viewingGroup, priority, textStyleInstructions)
+	local name = featurePortrayal:GetFeatureName(feature, contextParameters)
+	if name then
+		local textStyle = textStyleInstructions or 'FontColor:CHBLK'
+		featurePortrayal:AddInstructions(textStyle)
+		featurePortrayal:AddTextInstruction(EncodeString(name, '%s'), textViewingGroup, textPriority, viewingGroup, priority)
+	end
 end

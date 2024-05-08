@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 
 -- Cable Submarine main entry point.
 function CableSubmarine(feature, featurePortrayal, contextParameters)
@@ -13,6 +11,10 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:OverRADAR')
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			end
+			if feature.categoryOfCable == 6 then
+				-- mooring cable should generate alert since S-52 alerts on all MORFAC
+				featurePortrayal:AddInstructions('AlertReference:NavHazard')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')

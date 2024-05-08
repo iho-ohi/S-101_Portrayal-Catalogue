@@ -1,5 +1,3 @@
--- Converter Version: 0.99
--- Feature Catalogue Version: 1.0.0 (2019/4/9)
 -- FC 1.0.1: manually changed visuallyConspicuous to visualProminence
 -- #155
 -- #256
@@ -12,6 +10,7 @@ function Building(feature, featurePortrayal, contextParameters)
 	if feature.inTheWater then
 		-- Dangers above water
 		viewingGroup = 12200
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 	elseif feature.visualProminence == 1 then
 		-- Visually conspicuous object
 		viewingGroup = 22220
