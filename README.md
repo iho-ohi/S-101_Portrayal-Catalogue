@@ -71,6 +71,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
 [i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
+[i342]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/342
 [i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
 [i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
@@ -117,6 +118,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#345][i345] Remove svg from CSS files
  	* [#353][i353] Update description of viewing group `22010` to include `DockArea`
   	* [#381][i381] Remove older changes from README
+  	* [#342][i342] Update branch catzoc-alternate-portrayals
   	* [#346][i346] Prepare for 1.3.0-PR (Peer Review)
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
