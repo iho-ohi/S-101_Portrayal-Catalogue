@@ -105,6 +105,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
 [i387]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/387
+[i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -116,6 +117,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#345][i345] Remove svg from CSS files
  	* [#353][i353] Update description of viewing group `22010` to include `DockArea`
   	* [#381][i381] Remove older changes from README
+  	* [#346][i346] Prepare for 1.3.0-PR (Peer Review)
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
  	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
