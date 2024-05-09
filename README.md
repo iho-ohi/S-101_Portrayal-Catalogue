@@ -107,6 +107,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
 [i387]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/387
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
+[i386]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/386
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -155,6 +156,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#360][i360] Implement portrayal for `StructureOverNavigableWater`
   	* [#365][i365] “system” attribute in the water, [PSWG #161, Row 21]
   	* [#387][i387] `BOYPIL60` has extraneous circles
+ 	* [#386][i386] Problems with MooringArea
 
 ### 1.2.3 - use with FC 1.2.3
 * Misc changes
