@@ -109,11 +109,18 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 [i386]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/386
 [i388]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/388
+[i391]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/391
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 1.3.X - use with FC 1.3.X
+### 1.4.X - use with FC 1.4.X
+* Misc changes
+	* [#391][i391] Update main version number to 1.4.0-DRAFT developmental use towards
+
+* Lua Rule File / Symbol Updates
+
+### 1.3.0 - use with FC 1.3.0
 * Misc changes
 	* [#346][i346] Update version prior to release 1.3.X, initial version
 	* [#348][i348] SVG <fileName> duplication, BOYCON30.svg ---> BOYCON31.svg
@@ -160,76 +167,3 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#386][i386] Problems with MooringArea
 	* [#388][i388] Update version from 1.3.0-PR to final release 1.3.0 after peer review
 
-### 1.2.3 - use with FC 1.2.3
-* Misc changes
-	* [#274][i274] Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
- 	* [#282][i282] Update FC to 1.2.0 from IHO GI registry.
- 	    * Local change: Fix multiplicity of `Dolphin` attribute binding to `categoryOfDolphin`
- 	    * Local change: Updated to FC 1.2.2 by incorporating changes provided from JP (fixes various issues with associations)
-  	* [#229][i229] Update alert catalog to S-100 5.1 schema
-  	* [#287][i287] Update AreaFills to S-100 5.1 schema
-  	* [#288][i288] Update ColorProfiles to S-100 5.1 schema
-  	* [#289][i289] Update LineStyles to S-100 5.1 schema
-  	* [#290][i290] Update portrayal_catalogue.xml to S-100 5.1 schema
-  	* [#291][i291] Remove duplicate catalog entry for `BOYPIL10`
-  	* [#320][i320] Remove IMS for `Unknown`; add VG `21010` to VGL 10 and 10a. "?" symbol is now part of `Standard` display
-  	* [#329][i329] Update references in the alert catalog from MSC.232(82) to MSC.530(106)
-  	* [#338][i338] Prevent potential naming issue in PortrayalModel
-  	* [#337][i337] Remove viewing groups which don't have features assigned
-  	* [#266][i266] BOYLAT34 incorrect viewbox, OBE removed from catalog symbol no longer used
-	* [#341][i341] PC Peer Review Release 1.2.0-PR
-	* [#273][i273] Update version prior to release as 1.2.3
-* Lua Rule File / Symbol Updates
-	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
-	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
- 	* [#277][i277] Topmarks should use viewing group 27050
-  	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
-  	* [#279][i279] Remove color fill from `DockArea`
-  	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
-  	* [#280][i280] `TextInstruction` requires a `FontColor` text style command
-  	* [#281][i281] `AnchorBerth` has active Debug.Break() statement
-  	* [#276][i276] Re-opened for additional fix: Emergency wreck marking buoy (EWMB) [PSWG #117]
-  	* [#144][i144] Display parameters for 'New Text' [PSWG #104]
-  	* [#292][i292] Rename buoy and beacon features
-  	* [#293][i293] Add new feature `Dolphin`
-  	* [#294][i294] Add new feature `Bollard`
-  	* [#296][i296] Add new feature `MooringBuoy`
-  	* [#295][i295] Remove feature `MooringWarpingFacility`
-  	* [#297][i297] `Runway` with point geomeetry is invalid
-  	* [#298][i298] Add new feature `Helipad`
-  	* [#299][i299] Add new feature `MooringArea`
-  	* [#300][i300] Remove calculation of default clearance depth: one of `valueOfSounding` or `defaultClearanceDepth` must have a value
-  	* [#301][i301] `sectorExtension` renamed to `sectorArcExtension`
-  	* [#302][i302] `RestrictedArea` replaces `RestrictedAreaRegulatory` and `RestrictedAreaNavigational`
-	* [#214][i214] `LocalMagneticAnomaly` updated to DCEG 1.2.0, removal of +/-
-	* [#144][i144] Display parameters for 'New Text' [PSWG #104], fixed bug in alternate name processing
-	* [#307][i307] Removed value 6 (swept by wire-drag), replace with 18 (mechanically swept) SNDFRM04.lua
-	* [#305][i305] Add curve primitive: Administration, Continental Shelf, Territorial Sea Areas, Contiguous Zone,Exclusive Economic Zone
-	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04)
-	* [#228][i228] Show contour labels centered on visible portion(s) of depth contour
-	* [#306][i306] Bridge re-modelled
- 	* [#285][i285] Updated `QoBD` evaluation of depth range
-	* [#312][i312] Fix syntax error Bridge re-modelled lua file.
- 	* [#313][i313] Curve geometry is invalid for `Obstruction` with `categoryOfObstruction` = `mangrove`
-  	* [#99][i99] Initial implementation of `UpdateInformation` portrayal; `updateType`=`move` is only partially implemented due to lack of test data
-  	* [#318][i318] Use drawing priority of 30 for `UpdateInformation`
-  	* [#309][i309] New feature MooringArea, VG as MORFAC
-	* [#319][i319] Updated symbol BOYSPP35
- 	* [#322][i322] Fix issue with performance counters in OBSTRN07.lua
-  	* [#321][i321] Implement IMS changes (VG -> 90k's, VGL -> 900's)
-  	* [#323][i323] `Bridge` with no geometry shouldn't generate an alert
-  	* [#324][i324] `PhysicalAISAidToNavigation` should generate NavHazard alert
-  	* [#325][i325] Point geometry not allowed for `SpanOpening` and `SpanFixed`
-  	* [#326][i326] Mooring cable should generate NavHazard alert
-  	* [#327][i327] Update alert catalog to provide alert priorities per MSC.530(106)
-  	* [#311][i311] Adjust text placement for `SpanFixed`, `SpanOpening`, `CableOverhead`
-  	* [#330][i330] `Bridge` should evaluate `featureName`
-  	* [#332][i332] Remove highlight* viewing groups (no longer used by IMS)
-  	* [#333][i333] `Landmark` is not emitting FontColor command
-  	* [#334][i334] Complete implementation of `featureName`
-  	* [#175][i175] Ensure correct handling of `featureName` attribute `nameUsage`
-  	* [#335][i335] `DepthNoBottomFound` should not support geometry of type point, only pointSet is permitted
-  	* [#3][i3] Add support for `TextPlacement`
-  	* [#336][i336] Use new viewing group `32 - Auxiliary names` when new labels are added via `featureName.name`
-  	* [#303][i303] Add support for `textRotation` attribute of the `TextPlacement` feature
-  	* [#17][i17] Updated all SAFCON5X symbol view-boxes and pivot-points 
