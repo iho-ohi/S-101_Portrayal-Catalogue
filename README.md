@@ -6,6 +6,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i99]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/99
 [i144]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/144
 [i175]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/175
+[i177]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/177
+[i204]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/204
 [i214]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/214
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
@@ -116,7 +118,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 
 ### 1.4.X - use with FC 1.4.X
 * Misc changes
-	* [#391][i391] Update main version number to 1.4.0-DRAFT developmental use towards
+	* [#391][i391] Update main version number to 1.4.0-DRAFT
 
 * Lua Rule File / Symbol Updates
 
