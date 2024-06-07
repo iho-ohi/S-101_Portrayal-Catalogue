@@ -131,6 +131,8 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#381][i381] Remove older changes from README
   	* [#342][i342] Update branch catzoc-alternate-portrayals
   	* [#346][i346] Prepare for 1.3.0-PR (Peer Review)
+	* [#388][i388] Update version from 1.3.0-PR to final release 1.3.0 after peer review
+
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
  	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
@@ -167,5 +169,3 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#365][i365] “system” attribute in the water, [PSWG #161, Row 21]
   	* [#387][i387] `BOYPIL60` has extraneous circles
  	* [#386][i386] Problems with MooringArea
-	* [#388][i388] Update version from 1.3.0-PR to final release 1.3.0 after peer review
-
