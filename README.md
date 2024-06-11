@@ -105,6 +105,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i379]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/379
 [i380]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/380
 [i381]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/381
+[i382]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/382
 [i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
 [i387]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/387
@@ -121,6 +122,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#391][i391] Update main version number to 1.4.0-DRAFT
 
 * Lua Rule File / Symbol Updates
+	* [#382][i382] Landmark featureName placement differs for simplified/traditional
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
