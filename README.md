@@ -112,6 +112,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 [i386]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/386
 [i388]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/388
+[i390]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/390
 [i391]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/391
 
 ## Recent changes
@@ -120,6 +121,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 ### 1.4.X - use with FC 1.4.X
 * Misc changes
 	* [#391][i391] Update main version number to 1.4.0-DRAFT
+ 	* [#390][i390] Remove "dock (DOCARE)" from name of viewing group `12420`
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
