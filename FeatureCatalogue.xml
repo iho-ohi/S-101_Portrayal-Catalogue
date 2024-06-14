@@ -3,8 +3,8 @@
 	<S100FC:name>Electronic Navigational Chart</S100FC:name>
 	<S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters.</S100FC:scope>
 	<S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
-	<S100FC:versionNumber>1.3.0</S100FC:versionNumber>
-	<S100FC:versionDate>2024-04-15</S100FC:versionDate>
+	<S100FC:versionNumber>1.3.1</S100FC:versionNumber>
+	<S100FC:versionDate>2024-05-14</S100FC:versionDate>
 	<S100FC:productId>S-101</S100FC:productId>
 	<S100FC:producer>
 		<S100CI:role>pointOfContact</S100CI:role>
@@ -8524,7 +8524,7 @@
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Maximum Permitted Vessel Length</S100FC:name>
-			<S100FC:definition>The maximum draught of a vessel permitted in a channel or dock, at a berth, or at an anchorage or mooring.</S100FC:definition>
+			<S100FC:definition>The maximum length of a vessel permitted in a channel or dock, at a berth, or at an anchorage or mooring.</S100FC:definition>
 			<S100FC:code>maximumPermittedVesselLength</S100FC:code>
 			<S100FC:valueType>real</S100FC:valueType>
 			<S100FC:uom>
@@ -8551,7 +8551,7 @@
 				<S100FC:sourceIdentifier>855</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
-			<S100FC:valueType>real</S100FC:valueType>
+			<S100FC:valueType>integer</S100FC:valueType>
 			<S100FC:uom>
 				<S100Base:name>metre</S100Base:name>
 				<S100Base:symbol>m</S100Base:symbol>
@@ -8566,7 +8566,7 @@
 				<S100FC:sourceIdentifier>856</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
-			<S100FC:valueType>real</S100FC:valueType>
+			<S100FC:valueType>integer</S100FC:valueType>
 			<S100FC:uom>
 				<S100Base:name>metre</S100Base:name>
 				<S100Base:symbol>m</S100Base:symbol>
@@ -11187,7 +11187,7 @@
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Rectangle (Horizontal)</S100FC:label>
-					<S100FC:definition>Where the two longer opposite sides are standing horizontally. A rectangle is a plane figure with four right angles and four straight sides, opposite sides being parallel and equal in length. A horizontal rectangle is where the two longer opposite sides are standing horizontally.</S100FC:definition>
+					<S100FC:definition>A horizontal rectangle is where the two longer opposite sides are standing horizontally.</S100FC:definition>
 					<S100FC:code>20</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>1143</S100FC:sourceIdentifier>
@@ -11196,7 +11196,7 @@
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Rectangle (Vertical)</S100FC:label>
-					<S100FC:definition>A rectangle is a plane figure with four right angles and four straight sides, opposite sides being parallel and equal in length. A vertical rectangle is where the two longer opposite sides are standing vertically.</S100FC:definition>
+					<S100FC:definition>A vertical rectangle is where the two longer opposite sides are standing vertically.</S100FC:definition>
 					<S100FC:code>21</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>1144</S100FC:sourceIdentifier>
@@ -35809,21 +35809,6 @@
 				<S100FC:featureType ref="LightAllAround" />
 				<S100FC:featureType ref="LightSectored" />
 				<S100FC:featureType ref="Daymark" />
-			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="association">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="true" infinite="true" />
-				</S100FC:multiplicity>
-				<S100FC:association ref="StructureEquipment" />
-				<S100FC:role ref="theEquipment" />
-				<S100FC:featureType ref="FogSignal" />
-				<S100FC:featureType ref="LightAirObstruction" />
-				<S100FC:featureType ref="LightAllAround" />
-				<S100FC:featureType ref="LightFogDetector" />
-				<S100FC:featureType ref="LightSectored" />
-				<S100FC:featureType ref="RadarTransponderBeacon" />
-				<S100FC:featureType ref="Retroreflector" />
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="aggregation">
 				<S100FC:multiplicity>
