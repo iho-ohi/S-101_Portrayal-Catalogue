@@ -211,7 +211,9 @@ function CreateFeaturePortrayal(feature)
 			
 				-- Make the TextPlacement feature the target of our drawing instructions
 				placementFeature = textAssociation[1]
-				placementFeature._featurePortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+				if not rawget(placementFeature, '_featurePortrayal') then
+					placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+				end
 				
 				-- Add scaleMinimum if present
 				local scaleMinimum = feature['!scaleMinimum']
@@ -248,7 +250,8 @@ function CreateFeaturePortrayal(feature)
 					['FontStrikethrough:'] = "nil",		-- false
 					['FontUpperline:'] = "nil",			-- false
 					['FontReference:'] = "nil",			-- ""
-					['TextVerticalOffset:'] = "nil"		-- 0
+					['TextVerticalOffset:'] = "nil",	-- 0
+					['LocalOffset:'] = "nil"
 				}
 				-- Store / Copy relevant time intervals
 				local timeState = {}
