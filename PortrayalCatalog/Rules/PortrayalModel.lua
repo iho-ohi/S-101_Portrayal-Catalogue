@@ -233,39 +233,64 @@ function CreateFeaturePortrayal(feature)
 					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
 				end
 
-				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
-				local fontStyle = {
+				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
+				local targetCommands =
+				{
 					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
 					['FontColor:'] = 'FontColor:CHBLK',	-- transparency = 0
-					['FontBackgroundColor:'] = nil,		-- token="", transparency=1
-					['FontSize:'] = nil,				-- 10
-					['FontProportion:'] = nil,			-- "Proportional"
-					['FontWeight:'] = nil,				-- "Medium"
-					['FontSlant:'] = nil,				-- "Upright"
-					['FontSerifs:'] = nil,				-- false
-					['FontUnderline:'] = nil,			-- false
-					['FontStrikethrough:'] = nil,		-- false
-					['FontUpperline:'] = nil,			-- false
-					['FontReference:'] = nil,			-- ""
-					['TextVerticalOffset:'] = nil		-- 0
+					['FontBackgroundColor:'] = "nil",	-- token="", transparency=1
+					['FontSize:'] = "nil",				-- 10
+					['FontProportion:'] = "nil",		-- "Proportional"
+					['FontWeight:'] = "nil",			-- "Medium"
+					['FontSlant:'] = "nil",				-- "Upright"
+					['FontSerifs:'] = "nil",			-- false
+					['FontUnderline:'] = "nil",			-- false
+					['FontStrikethrough:'] = "nil",		-- false
+					['FontUpperline:'] = "nil",			-- false
+					['FontReference:'] = "nil",			-- ""
+					['TextVerticalOffset:'] = "nil"		-- 0
+				}
+				-- Store / Copy relevant time intervals
+				local timeState = {}
+				local timeCommands =
+				{
+					['Date:'] = "nil",
+					['Time:'] = "nil",
+					['DateTime:'] = "nil",
+					['TimeValid:'] = "nil"
 				}
 				for _, v in ipairs(self.DrawingInstructions) do
 					for instruction in string.gmatch(v, "([^;]+)") do
-						for k, _ in pairs(fontStyle) do
+						if string.find(instruction, 'ClearTime', 1, true) ~= nil then
+							-- ClearTime clears all accumulated time intervals
+							timeState = {}
+						end
+						for k, _ in pairs(targetCommands) do
 							if string.find(instruction, k, 1, true) ~= nil then
-								k = v
+								-- Overwrite with current state
+								targetCommands[k] = instruction
+							end
+						end
+						for k, _ in pairs(timeCommands) do
+							if string.find(instruction, k, 1, true) ~= nil then
+								-- Accumulate state
+								table.insert(timeState, instruction)
 							end
 						end
 					end
 				end
 				
-				-- Add the style to the TextPlacement feature
-				for k, v in pairs(fontStyle) do
-					if v ~= nil then
+				-- Add the copied drawing instructions to the TextPlacement feature
+				for k, v in pairs(targetCommands) do
+					if v ~= "nil" then
 						placementFeature._featurePortrayal:AddInstructions(v)
 					end
 				end
-				-- Done copying text style
+				-- Add the accumulated time intervals to the TextPlacement feature
+				for k, v in ipairs(timeState) do
+					placementFeature._featurePortrayal:AddInstructions(v)
+				end
+				-- Done copying drawing instructions
 			end
 		end
 		
