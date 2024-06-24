@@ -213,6 +213,10 @@ function CreateFeaturePortrayal(feature)
 				placementFeature = textAssociation[1]
 				if not rawget(placementFeature, '_featurePortrayal') then
 					placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+					placementFeature._yOffset = 0
+				else
+					placementFeature._yOffset = placementFeature._yOffset - 3.51
+					placementFeature._featurePortrayal:AddInstructions('LocalOffset:0,' .. placementFeature._yOffset)
 				end
 				
 				-- Add scaleMinimum if present
@@ -230,9 +234,25 @@ function CreateFeaturePortrayal(feature)
 				
 				if placementFeature.textRotation then
 					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
-				else
+				elseif length == 0 then
 					-- Center the text on the point
 					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+				elseif direction >=   5 and direction <  85 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
+				elseif direction >=  85 and direction <  95 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
+				elseif direction >=  95 and direction < 175 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
+				elseif direction >= 175 and direction < 185 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
+				elseif direction >= 185 and direction < 265 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
+				elseif direction >= 175 and direction < 275 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
+				elseif direction >= 175 and direction < 355 then
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
+				else
+					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
 				end
 
 				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
@@ -251,7 +271,6 @@ function CreateFeaturePortrayal(feature)
 					['FontUpperline:'] = "nil",			-- false
 					['FontReference:'] = "nil",			-- ""
 					['TextVerticalOffset:'] = "nil",	-- 0
-					['LocalOffset:'] = "nil"
 				}
 				-- Store / Copy relevant time intervals
 				local timeState = {}
