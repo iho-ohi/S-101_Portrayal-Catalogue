@@ -117,6 +117,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i393]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/393
 [i394]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/394
 [i395]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/395
+[i396]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/396
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -131,6 +132,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
  	* [#394][i394] `TextPlacement` is not copying all relevant drawing instructions
   	* [#395][i395] Enhance `TextPlacement` to support output of multiple strings
+  	* [#396][i396] Update alignment of `TextPlacement` per S-101PT13-07.8
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
