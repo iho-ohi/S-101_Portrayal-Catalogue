@@ -135,6 +135,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#395][i395] Enhance `TextPlacement` to support output of multiple strings
   	* [#396][i396] Update alignment of `TextPlacement` per S-101PT13-07.8
   	* [#399][i399] Add comment to TextPlacement.lua noting implementation location
+  	* [#361][i361] `flareBearing` is not required; reinstate S-52 flare bearing logic
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
