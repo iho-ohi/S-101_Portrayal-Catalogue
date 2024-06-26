@@ -22,16 +22,6 @@ function FloatingDock(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-	elseif feature.PrimitiveType == PrimitiveType.Point then
-		--TODO: Determine S-101 portrayal for FloatingDock point feature.
-		viewingGroup = 21010
-		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
-		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
-		end
-		featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;PointInstruction:testPCB')
-		Debug.Trace('Warning: S-52 does not define portrayal for FloatingDock point features.')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
