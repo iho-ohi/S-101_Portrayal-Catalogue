@@ -119,6 +119,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i395]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/395
 [i396]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/396
 [i399]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/399
+[i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -136,6 +137,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#396][i396] Update alignment of `TextPlacement` per S-101PT13-07.8
   	* [#399][i399] Add comment to TextPlacement.lua noting implementation location
   	* [#361][i361] `flareBearing` is not required; reinstate S-52 flare bearing logic
+  	* [#401][i401] Removed point as allowable geometry for `Pontoon`
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
