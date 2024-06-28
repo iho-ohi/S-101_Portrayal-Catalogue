@@ -123,6 +123,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i399]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/399
 [i400]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/400
 [i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
+[i404]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/404
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -133,6 +134,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#390][i390] Remove "dock (DOCARE)" from name of viewing group `12420`
   	* [#393][i393] Update FC to 1.3.1
   	* [#157][i157] Update contents for utf-8 encoding
+  	* [#404][i404] Remove `testPCB`
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
