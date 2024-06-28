@@ -27,16 +27,6 @@
       </colorProfile>
    </colorProfiles>
    <symbols>
-      <symbol id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
       <symbol id="ACHARE02">
          <description>
             <name>ACHARE02</name>
@@ -7272,16 +7262,6 @@
       </styleSheet>
    </styleSheets>
    <lineStyles>
-      <lineStyle id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.xml</fileName>
-         <fileType>LineStyle</fileType>
-         <fileFormat>XML</fileFormat>
-      </lineStyle>
       <lineStyle id="ACHARE51">
          <description>
             <name>ACHARE51</name>
@@ -7894,16 +7874,6 @@
       </lineStyle>   
    </lineStyles>
    <areaFills>
-      <areaFill id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.xml</fileName>
-         <fileType>AreaFill</fileType>
-         <fileFormat>XML</fileFormat>
-      </areaFill>
       <areaFill id="AIRARE02">
          <description>
             <name>AIRARE02</name>
