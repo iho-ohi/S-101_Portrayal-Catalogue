@@ -1888,6 +1888,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="DISMAR07">
+         <description>
+            <name>DISMAR07</name>
+            <description>distance mark - physically installed</description>
+            <language>eng</language>
+         </description>
+         <fileName>DISMAR07.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="DNGHILIT">
          <description>
             <name>DNGHILIT</name>

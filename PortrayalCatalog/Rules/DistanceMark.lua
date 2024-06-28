@@ -17,7 +17,12 @@ function DistanceMark(feature, featurePortrayal, contextParameters)
 		local noStructure = next(structures) == nil
 		if noStructure then
 			-- no StructureEquipment relationship, add a symbol
-			featurePortrayal:AddInstructions('PointInstruction:DISMAR06')
+			if feature.distanceMarkVisible then
+				featurePortrayal:AddInstructions('PointInstruction:DISMAR07')
+				textColor = 'CHBLK'
+			else
+				featurePortrayal:AddInstructions('PointInstruction:DISMAR06')
+			end
 		else
 			-- TODO: assign viewing group from structure so that text turns off with symbol?
 			textColor = 'CHBLK'
