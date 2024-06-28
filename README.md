@@ -115,6 +115,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i388]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/388
 [i390]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/390
 [i391]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/391
+[i392]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/392
 [i393]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/393
 [i394]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/394
 [i395]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/395
@@ -142,6 +143,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#361][i361] `flareBearing` is not required; reinstate S-52 flare bearing logic
   	* [#400][i400] Removed point as allowable geometry for `FloatingDock`
   	* [#401][i401] Removed point as allowable geometry for `Pontoon`
+  	* [#392][i392] `DistanceMark` portrays using symbol `DISMAR07` when visible with no structure
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
