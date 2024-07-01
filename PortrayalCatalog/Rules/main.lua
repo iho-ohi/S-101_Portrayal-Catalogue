@@ -99,6 +99,8 @@ function PortrayalMain(featureIDs)
 		return HostPortrayalEmit(featurePortrayal.FeatureReference, drawingInstructions, observed)
 	end
 	
+	local textPlacementFeatures = {}
+	
 	if featureIDs then
 		for _,  featureID in ipairs(featureIDs) do
 			local item = featurePortrayalItems[featureID]
@@ -107,6 +109,8 @@ function PortrayalMain(featureIDs)
 				if not ProcessFeaturePortrayalItem(item) then
 					return false
 				end
+			else
+				table.insert(textPlacementFeatures, item.Feature)
 			end
 		end
 	else
@@ -116,7 +120,20 @@ function PortrayalMain(featureIDs)
 				if not ProcessFeaturePortrayalItem(featurePortrayalItem) then
 					return false
 				end
+			else
+				table.insert(textPlacementFeatures, featurePortrayalItem.Feature)
 			end
+		end
+	end
+	
+	-- Emit TextPlacement features
+	for _, feature in ipairs(textPlacementFeatures) do
+		local portrayal = rawget(feature, '_featurePortrayal')
+		if portrayal and portrayal.DrawingInstructions then
+			local item = rawget(feature, '_featurePortrayalItem')
+			HostPortrayalEmit(portrayal.FeatureReference, table.concat(portrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(item))
+		else
+			Debug.Trace('Warning: TextPlacement ID=' .. feature.ID .. ' has no drawing instructions.')
 		end
 	end
 

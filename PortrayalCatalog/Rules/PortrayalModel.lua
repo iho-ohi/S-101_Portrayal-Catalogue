@@ -201,22 +201,50 @@ function CreateFeaturePortrayal(feature)
 		local placementFeature = self.Feature
 		
 		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
+		if not textAssociation or #textAssociation < 1 then
+			-- Look for structure -> light -> TextPlacement
+			local equipment = self.Feature:GetFeatureAssociations('StructureEquipment', 'theEquipment')
+			if equipment then
+				for _, feature in ipairs(equipment) do
+					local t = feature:GetFeatureAssociations('TextAssociation')
+					if t and #t > 0 then
+						-- only use it to position our name if it isn't positioning the feature name on the equipment
+						if (not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name) and contains(1, t[1].textType) then
+							textAssociation = t
+							break
+						end
+					end
+				end
+			end
+		end
 		if textAssociation and #textAssociation > 0 then
 			-- 0: place feature name override
 			-- 1: place feature name
 			-- 2: place light description
-			local placementType = textAssociation[1].textType or 0
-			local isLightPlacement = placementType == 2
-			if (isLightDescription and isLightPlacement) or (not isLightDescription and not isLightPlacement) then
+			local placementType = textAssociation[1].textType or {}
+			local isNameOverride = textAssociation[1].text and not isLightDescription
+			local isNamePlacement = contains(1, placementType) and not isLightDescription
+			local isLightPlacement = contains(2, placementType) and isLightDescription
+			if isNameOverride or isLightPlacement or isNamePlacement then
 			
 				-- Make the TextPlacement feature the target of our drawing instructions
 				placementFeature = textAssociation[1]
-				if not rawget(placementFeature, '_featurePortrayal') then
+				local newPortrayal = not rawget(placementFeature, '_featurePortrayal')
+				local textOffset = 0	-- for multiple labels
+				
+				if newPortrayal then
 					placementFeature._featurePortrayalItem:NewFeaturePortrayal()
-					placementFeature._yOffset = 0
-				else
-					placementFeature._yOffset = placementFeature._yOffset - 3.51
-					placementFeature._featurePortrayal:AddInstructions('LocalOffset:0,' .. placementFeature._yOffset)
+				end
+				
+				if isLightPlacement then
+					if rawget(placementFeature, '_textOffset') then
+						-- new line for existing light description
+						textOffset = placementFeature._textOffset + 3.51
+					elseif isLightPlacement and #placementType > 1 then
+						-- place below feature name
+						textOffset = 3.51
+					end
+					placementFeature._textOffset = textOffset
 				end
 				
 				-- Add scaleMinimum if present
@@ -234,26 +262,30 @@ function CreateFeaturePortrayal(feature)
 				
 				if placementFeature.textRotation then
 					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
-				elseif length == 0 then
-					-- Center the text on the point
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
-				elseif direction >=   5 and direction <  85 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
-				elseif direction >=  85 and direction <  95 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
-				elseif direction >=  95 and direction < 175 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
-				elseif direction >= 175 and direction < 185 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
-				elseif direction >= 185 and direction < 265 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
-				elseif direction >= 175 and direction < 275 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
-				elseif direction >= 175 and direction < 355 then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
 				else
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
+					if length == 0 then
+						-- Center the text on the point
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+					elseif direction >=   5 and direction <  85 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
+					elseif direction >=  85 and direction <  95 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
+					elseif direction >=  95 and direction < 175 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
+					elseif direction >= 175 and direction < 185 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
+					elseif direction >= 185 and direction < 265 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
+					elseif direction >= 175 and direction < 275 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
+					elseif direction >= 175 and direction < 355 then
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
+					else
+						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
+					end
 				end
+
+				placementFeature._featurePortrayal:AddInstructions('TextVerticalOffset:' .. -textOffset)
 
 				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
 				local targetCommands =
@@ -313,6 +345,13 @@ function CreateFeaturePortrayal(feature)
 					placementFeature._featurePortrayal:AddInstructions(v)
 				end
 				-- Done copying drawing instructions
+
+				-- Add observed context parameters
+				-- Force addition of NationalLanguage
+				local nationalLanguage = portrayalContext.ContextParameters.NationalLanguage
+				-- TODO: merge the observed parameters with any existing
+				placementFeature._featurePortrayalItem.ObservedContextParameters = portrayalContext.ContextParameters._observed
+				placementFeature._featurePortrayalItem.InUseContextParameters = portrayalContext.ContextParameters._asTable
 			end
 		end
 		
@@ -324,8 +363,6 @@ function CreateFeaturePortrayal(feature)
 			if priority then
 				self:AddInstructions('DrawingPriority:' .. priority)
 			end
-		else
-			HostPortrayalEmit(placementFeature._featurePortrayal.FeatureReference, table.concat(placementFeature._featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature._featurePortrayalItem))
 		end
 	end
 
