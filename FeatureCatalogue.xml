@@ -3,8 +3,8 @@
 	<S100FC:name>Electronic Navigational Chart</S100FC:name>
 	<S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters.</S100FC:scope>
 	<S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
-	<S100FC:versionNumber>1.3.1</S100FC:versionNumber>
-	<S100FC:versionDate>2024-05-14</S100FC:versionDate>
+	<S100FC:versionNumber>1.3.1-NIWC</S100FC:versionNumber>
+	<S100FC:versionDate>2024-07-01</S100FC:versionDate>
 	<S100FC:productId>S-101</S100FC:productId>
 	<S100FC:producer>
 		<S100CI:role>pointOfContact</S100CI:role>
@@ -43103,7 +43103,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
 					<S100FC:value>1</S100FC:value>
