@@ -285,9 +285,12 @@ function CreateFeaturePortrayal(feature)
 					end
 				end
 
-				placementFeature._featurePortrayal:AddInstructions('TextVerticalOffset:' .. -textOffset)
+				if (textOffset ~= 0) then
+					textOffset = -textOffset
+				end
+				placementFeature._featurePortrayal:AddInstructions('TextVerticalOffset:' .. textOffset)
 
-				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
+				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal, TextAlignVertical, and TextVerticalOffset are intentionally not copied)
 				local targetCommands =
 				{
 					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
@@ -303,6 +306,7 @@ function CreateFeaturePortrayal(feature)
 					['FontUpperline:'] = "nil",			-- false
 					['FontReference:'] = "nil",			-- ""
 					['TextVerticalOffset:'] = "nil",	-- 0
+					['Hover:'] = "false",				-- false
 				}
 				-- Store / Copy relevant time intervals
 				local timeState = {}
