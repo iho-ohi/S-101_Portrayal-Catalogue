@@ -125,6 +125,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
 [i404]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/404
 [i405]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/405
+[i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -137,6 +138,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#157][i157] Update contents for utf-8 encoding
   	* [#404][i404] Remove `testPCB`
   	* [#405][i405] Update FC to 1.4.0 dated 2024-07-03
+  	* [#410][i410] Remove alert catalog references to non-existent icons
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
