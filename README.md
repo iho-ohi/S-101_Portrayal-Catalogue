@@ -127,6 +127,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i405]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/405
 [i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
 [i411]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/411
+[i412]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/412
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -152,6 +153,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#401][i401] Removed point as allowable geometry for `Pontoon`
   	* [#392][i392] `DistanceMark` portrays using symbol `DISMAR07` when visible with no structure
   	* [#411][i411] Fix typo in `CreateAttributeConstraints`
+  	* [#412][i412] Add compatibility checks for Lua versions other than 5.1
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
