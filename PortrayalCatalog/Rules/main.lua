@@ -203,3 +203,6 @@ setmetatable(t1, m1)
 setmetatable(t2, m2)
 m1.__eq = function(p1, p2) return true end
 EqMetaMethodGuarantee = not (t1 == t2)
+if not EqMetaMethodGuarantee then
+	Debug.Trace('Warning: Non-standard Lua processor detected.')
+end
