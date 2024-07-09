@@ -128,6 +128,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
 [i411]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/411
 [i412]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/412
+[i413]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/413
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -154,6 +155,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#392][i392] `DistanceMark` portrays using symbol `DISMAR07` when visible with no structure
   	* [#411][i411] Fix typo in `CreateAttributeConstraints`
   	* [#412][i412] Add compatibility checks for Lua versions other than 5.1
+  	* [#413][i413] `SeaAreaNamedWaterArea` should always output NullInstruction
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
