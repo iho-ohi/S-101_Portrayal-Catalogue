@@ -10,9 +10,8 @@ function SeaAreaNamedWaterArea(feature, featurePortrayal, contextParameters)
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 21060, 9)
-		else
-			featurePortrayal:AddInstructions('NullInstruction')
 		end
+		featurePortrayal:AddInstructions('NullInstruction')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 21060
@@ -20,9 +19,8 @@ function SeaAreaNamedWaterArea(feature, featurePortrayal, contextParameters)
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 21060, 9)
-		else
-			featurePortrayal:AddInstructions('NullInstruction')
 		end
+		featurePortrayal:AddInstructions('NullInstruction')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
