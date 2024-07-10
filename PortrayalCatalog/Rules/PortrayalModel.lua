@@ -432,8 +432,7 @@ function CreateFeaturePortrayal(feature)
 
 	--
 	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected national language. If no match is found,
-	-- returns the first entry marked as the default (nameUsage == 1). If no default is present, returns the first English name. Otherwise
-	-- returns nil.
+	-- returns the first entry marked as the default (nameUsage == 1). Otherwise returns nil.
 	function featurePortrayal:GetFeatureName(feature, contextParameters)
 		CheckSelf(self, featurePortrayal.Type)
 		CheckType(feature, 'Feature')
@@ -451,48 +450,28 @@ function CreateFeaturePortrayal(feature)
 			return nil
 		end
 		
-		local englishSelected = not contextParameters.NationalLanguage or contextParameters.NationalLanguage == 'eng' or contextParameters.NationalLanguage == ''
 		local defaultName			-- an entry with nameUsage == 1
-		local englishName			-- the first English name
-		local nationalName			-- the first entry which matched the selected national language
 		for cnt, featureName in ipairs(feature.featureName) do
-		
-			-- ensure a name is present
-			if featureName.name and featureName.name ~= '' then
 
-				-- don't process if only intended for pick report
-				if not featureName.nameUsage or featureName.nameUsage ~= 3 then
-				
-					local isEnglishName = not featureName.language or featureName.language == 'eng'
-					local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage) or (englishSelected and isEnglishName)
+			-- ensure a name is present and it's intended for chart display
+			if featureName.name and featureName.nameUsage then
+				local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage)
 
-					-- check for default values which are used if we can't otherwise find a match...
-					if featureName.nameUsage then
-						if featureName.nameUsage == 1 then
-							-- only one entry is permitted to have nameUsage set to one
-							defaultName = featureName.name
-						elseif featureName.nameUsage == 2 then
-							-- use the entry intended for chart display which matched the selected lanaguage
-							if languageMatches then
-								return featureName.name
-							end
-						end
+				-- check for default values which are used if we can't otherwise find a match...
+				if featureName.nameUsage == 1 then
+					if languageMatches then
+						return featureName.name
 					end
-
-					if not englishName and isEnglishName then
-						englishName = featureName.name
-					end
-
-					if not nationalName and languageMatches then
-						nationalName = featureName.name
-					end
-					
+					-- only one entry is permitted to have nameUsage set to one
+					defaultName = featureName.name
+				elseif featureName.nameUsage == 2 and languageMatches then
+					-- use the entry intended for chart display which matched the selected lanaguage
+					return featureName.name
 				end
 			end
-			
 		end
 		
-		return nationalName or defaultName or englishName
+		return defaultName
 	end
 	
 	return featurePortrayal
