@@ -133,6 +133,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i412]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/412
 [i413]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/413
 [i414]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/414
+[i415]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/415
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -147,6 +148,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#405][i405] Update FC to 1.4.0 dated 2024-07-03
   	* [#410][i410] Remove alert catalog references to non-existent icons
   	* [#414][i414] Remove the alert viewing group layer and implement alert viewing groups as independent selectors
+  	* [#415][i415] Message provided for disabling graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
