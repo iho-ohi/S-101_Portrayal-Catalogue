@@ -101,6 +101,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i373]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/373
 [i374]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/374
 [i375]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/375
+[i376]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/376
 [i377]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/377
 [i378]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/378
 [i379]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/379
@@ -156,6 +157,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#411][i411] Fix typo in `CreateAttributeConstraints`
   	* [#412][i412] Add compatibility checks for Lua versions other than 5.1
   	* [#413][i413] `SeaAreaNamedWaterArea` should always output NullInstruction
+  	* [#376][i376] Add light description on sector lights
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
