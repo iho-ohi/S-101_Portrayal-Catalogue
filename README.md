@@ -135,6 +135,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i413]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/413
 [i414]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/414
 [i415]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/415
+[i416]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/416
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -168,6 +169,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#397][i397] Enhance `TextPlacement` to support placing feature characteristics
   	* [#398][i398] Support combined `TextPlacement` per S-101PT13-07.8
   	* [#409][i409] `no chart display (3)` is no longer valid for `nameUsage`
+  	* [#416][i416] Implement `scaleMinimum` for `TextPlacement`
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
