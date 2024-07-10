@@ -39,8 +39,9 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 	end
 
 	local informationFound = false
-
 	for isc, sectorCharacteristic in ipairs(feature.sectorCharacteristics) do
+		
+		local descriptionInfo = {}
 		for ils, lightSector in ipairs(sectorCharacteristic.lightSector) do
 			informationFound = informationFound or (lightSector.sectorInformation and #lightSector.sectorInformation ~= 0)
 
@@ -54,6 +55,8 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 			local sectorColourToken
 			local sectorLightSymbol
 
+			descriptionInfo[ils] = { valueOfNominalRange, colour, lightSector.valueOfNominalRange }
+			
 			if colour[1] == 1 and colour[2] == 3 then -- white and red
 				sectorColourToken = 'LITRD'
 				sectorLightSymbol = 'LIGHTS11'
@@ -186,7 +189,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 
 				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
-
+				
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
 				featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24, true)
 				
@@ -204,6 +207,38 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				-- Neither sectorLimit nor directionalCharacter was found.
 				featurePortrayal:AddInstructions('PointInstruction:QUESMRK1')
 			end
+		end
+		
+		if #descriptionInfo > 0 then
+			table.sort(descriptionInfo, function(a,b) return a[1] > b[1] end)
+			
+			local numRanges = 1
+			local prevRange = descriptionInfo[1][1]
+			local colorsAdded = {}	-- don't repeat colors if they have different ranges
+			local sectorColors = {}	-- ordered by range (max range if a given color has multiple ranges)
+			for i, entry in ipairs(descriptionInfo) do
+				if entry[1] ~= prevRange then
+					prevRange = entry[1]
+					numRanges = numRanges + 1
+				end
+				for j, color in ipairs(entry[2]) do
+					if not colorsAdded[color] then
+						colorsAdded[color] = true
+						sectorColors[#sectorColors+1] = color
+					end
+				end
+			end
+			
+			-- Add light description
+			local vnr = descriptionInfo[1][3]
+			local vnr2 = descriptionInfo[#descriptionInfo][3]
+			local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, sectorColors, feature.height, vnr, feature.status, vnr2, numRanges)	
+			featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
+			featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignHorizontal:Start;TextAlignVertical:Center')
+			if isc > 1 then
+				featurePortrayal:AddInstructions('TextVerticalOffset:' .. (isc - 1) * -3.51)
+			end
+			featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24, true)
 		end
 	end
 
