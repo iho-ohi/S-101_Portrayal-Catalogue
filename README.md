@@ -121,6 +121,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i394]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/394
 [i395]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/395
 [i396]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/396
+[i397]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/397
+[i398]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/398
 [i399]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/399
 [i400]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/400
 [i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
@@ -158,6 +160,8 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#412][i412] Add compatibility checks for Lua versions other than 5.1
   	* [#413][i413] `SeaAreaNamedWaterArea` should always output NullInstruction
   	* [#376][i376] Add light description on sector lights
+  	* [#397][i397] Enhance `TextPlacement` to support placing feature characteristics
+  	* [#398][i398] Support combined `TextPlacement` per S-101PT13-07.8
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
