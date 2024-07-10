@@ -206,7 +206,7 @@ function CreateFeaturePortrayal(feature)
 		
 		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
 		if not textAssociation or #textAssociation < 1 then
-			-- Look for structure -> light -> TextPlacement
+			-- Look for structure -> equipment -> TextPlacement
 			local equipment = self.Feature:GetFeatureAssociations('StructureEquipment', 'theEquipment')
 			if equipment then
 				for _, feature in ipairs(equipment) do
@@ -271,10 +271,19 @@ function CreateFeaturePortrayal(feature)
 					targetTable = placementFeature._lightCharacteristics
 				end
 				
-				-- Add scaleMinimum if present
-				local scaleMinimum = feature['!scaleMinimum']
-				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
-					drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
+				if not portrayalContext.ContextParameters.IgnoreScamin then
+					-- Add scaleMinimum if present
+					local scaleMinimum = textPlacementFeature['!scaleMinimum']
+					if scaleMinimum then
+						-- Prefer value from text placement; it's guaranteed to turn off sooner
+						drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
+					else
+						scaleMinimum = self.Feature['!scaleMinimum']
+						if scaleMinimum then
+							-- Use value from source feature
+							drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
+						end
+					end
 				end
 
 				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
