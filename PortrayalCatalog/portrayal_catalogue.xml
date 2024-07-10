@@ -9382,22 +9382,6 @@
          <viewingGroup>26210</viewingGroup>
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
-		 <!-- Alert Highlights -->
-		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>53011</viewingGroup>
-		 <viewingGroup>53012</viewingGroup>
-		 <viewingGroup>53013</viewingGroup>
-		 <viewingGroup>53014</viewingGroup>
-		 <viewingGroup>53015</viewingGroup>
-		 <viewingGroup>53016</viewingGroup>
-		 <viewingGroup>53017</viewingGroup>
-		 <viewingGroup>53018</viewingGroup>
-		 <viewingGroup>53019</viewingGroup>
-		 <viewingGroup>53020</viewingGroup>
-		 <viewingGroup>53021</viewingGroup>
-		 <viewingGroup>53022</viewingGroup>
-		 <viewingGroup>53023</viewingGroup>
-		 <viewingGroup>53024</viewingGroup>
       </viewingGroupLayer>
 	  <viewingGroupLayer id="10a">       
          <description>
@@ -9416,29 +9400,6 @@
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
       </viewingGroupLayer>
-	  <viewingGroupLayer id="10b">      <!-- S-101 Alert Highlights -->
-		<description>
-            <name>Alert Highlights (Standard)</name>
-            <description>Toggles graphical highlighting of detected alerts</description>
-            <language>eng</language>
-		</description>
-		 <!-- Alert Highlights -->
-		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>53011</viewingGroup>
-		 <viewingGroup>53012</viewingGroup>
-		 <viewingGroup>53013</viewingGroup>
-		 <viewingGroup>53014</viewingGroup>
-		 <viewingGroup>53015</viewingGroup>
-		 <viewingGroup>53016</viewingGroup>
-		 <viewingGroup>53017</viewingGroup>
-		 <viewingGroup>53018</viewingGroup>
-		 <viewingGroup>53019</viewingGroup>
-		 <viewingGroup>53020</viewingGroup>
-		 <viewingGroup>53021</viewingGroup>
-		 <viewingGroup>53022</viewingGroup>
-		 <viewingGroup>53023</viewingGroup>
-		 <viewingGroup>53024</viewingGroup>
-	  </viewingGroupLayer>
 	  <!-- ********************************************************************************* -->
 	  <!-- END STANDARD LAYER GROUPS -->
 	  <!-- OTHER LAYER GROUPS -->
@@ -9711,7 +9672,6 @@
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
          <viewingGroupLayer>10a</viewingGroupLayer>
-         <viewingGroupLayer>10b</viewingGroupLayer>
       </displayMode>
       <displayMode id="3">
          <description>
@@ -9732,7 +9692,6 @@
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
          <viewingGroupLayer>10a</viewingGroupLayer>
-         <viewingGroupLayer>10b</viewingGroupLayer>
          <viewingGroupLayer>11</viewingGroupLayer>
          <viewingGroupLayer>12</viewingGroupLayer>
          <viewingGroupLayer>13</viewingGroupLayer>
