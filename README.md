@@ -128,6 +128,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
 [i404]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/404
 [i405]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/405
+[i409]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/409
 [i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
 [i411]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/411
 [i412]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/412
@@ -166,6 +167,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#376][i376] Add light description on sector lights
   	* [#397][i397] Enhance `TextPlacement` to support placing feature characteristics
   	* [#398][i398] Support combined `TextPlacement` per S-101PT13-07.8
+  	* [#409][i409] `no chart display (3)` is no longer valid for `nameUsage`
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
