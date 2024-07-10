@@ -127,13 +127,17 @@ function PortrayalMain(featureIDs)
 	end
 	
 	-- Emit TextPlacement features
+	require('TextPlacement')
 	for _, feature in ipairs(textPlacementFeatures) do
-		local portrayal = rawget(feature, '_featurePortrayal')
-		if portrayal and portrayal.DrawingInstructions then
-			local item = rawget(feature, '_featurePortrayalItem')
-			HostPortrayalEmit(portrayal.FeatureReference, table.concat(portrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(item))
-		else
-			Debug.Trace('Warning: TextPlacement ID=' .. feature.ID .. ' has no drawing instructions.')
+		local featurePortrayal = rawget(feature, '_featurePortrayal')
+		if featurePortrayal then
+			TextPlacement(feature, featurePortrayal, contextParameters)	
+			if featurePortrayal.DrawingInstructions then
+				local item = rawget(feature, '_featurePortrayalItem')
+				HostPortrayalEmit(featurePortrayal.FeatureReference, table.concat(featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(item))
+			else
+				Debug.Trace('Warning: TextPlacement ID=' .. feature.ID .. ' has no drawing instructions.')
+			end
 		end
 	end
 

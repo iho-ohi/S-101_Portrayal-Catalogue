@@ -105,7 +105,7 @@ function CreateContextParameters()
 			
 				contextParameters._observed[k] = true
 
-				--Debug.Trace('Portrayal paramter "' .. k .. '" observed.')
+				--Debug.Trace('Portrayal parameter "' .. k .. '" observed.')
 
 				return r;
 			end
@@ -113,7 +113,7 @@ function CreateContextParameters()
 		
 		__newindex = function (t, k, v)
 			if contextParameters[k] == nil then
-				error('Attempt to set invalid portrayal paramter "' .. tostring(k) .. '"', 2)
+				error('Attempt to set invalid portrayal parameter "' .. tostring(k) .. '"', 2)
 			end
 			
 			contextParameters[k] = v
@@ -121,14 +121,14 @@ function CreateContextParameters()
 			if type(v) == 'boolean' then
 				-- Cannot concatenate booleans
 				if v then
-					Debug.Trace('Setting portrayal paramter: ' .. k .. ' = true')
+					Debug.Trace('Setting portrayal parameter: ' .. k .. ' = true')
 				else
-					Debug.Trace('Setting portrayal paramter: ' .. k .. ' = false')
+					Debug.Trace('Setting portrayal parameter: ' .. k .. ' = false')
 				end
 			elseif type(v) ~= 'table' then
-				Debug.Trace('Setting portrayal paramter: ' .. k .. ' = ' .. v .. '')
+				Debug.Trace('Setting portrayal parameter: ' .. k .. ' = ' .. v .. '')
 			elseif v.Type == 'ScaledDecimal' then
-				Debug.Trace('Setting portrayal paramter: ' .. k .. ' = ' .. v:ToNumber() .. '')
+				Debug.Trace('Setting portrayal parameter: ' .. k .. ' = ' .. v:ToNumber() .. '')
 			end
 		end
 	}
@@ -198,6 +198,10 @@ function CreateFeaturePortrayal(feature)
 		CheckType(viewingGroup, 'number')
 		CheckTypeOrNil(priority, 'number')
 		
+		local function GetDrawingInstructions(text, textViewingGroup, textPriority)
+			return 'ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text
+		end
+		
 		local placementFeature = self.Feature
 		
 		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
@@ -217,78 +221,95 @@ function CreateFeaturePortrayal(feature)
 				end
 			end
 		end
+		
 		if textAssociation and #textAssociation > 0 then
-			-- 0: place feature name override
+		
+			local textPlacementFeature = textAssociation[1]
+			if not rawget(textPlacementFeature, '_initialized') then
+				textPlacementFeature._initialized = true
+				textPlacementFeature._processedFeatureName = false
+				textPlacementFeature._processedLightName = false
+			end
+
 			-- 1: place feature name
-			-- 2: place light description
-			local placementType = textAssociation[1].textType or {}
-			local isNameOverride = textAssociation[1].text and not isLightDescription
-			local isNamePlacement = contains(1, placementType) and not isLightDescription
-			local isLightPlacement = contains(2, placementType) and isLightDescription
-			if isNameOverride or isLightPlacement or isNamePlacement then
+			-- 2: place feature and/or light description
+			local placementType = textPlacementFeature.textType or {}
 			
+			local newPortrayal = not rawget(textPlacementFeature, '_featurePortrayal')
+			local hasFeatureName = rawget(textPlacementFeature, '_processedFeatureName')
+
+			local isName = not isLightDescription and not hasFeatureName and self.GetFeatureNameCalled
+			if isName then
+				textPlacementFeature._processedFeatureName = true
+			end
+			
+			local isNameOverride = textAssociation[1].text and isName
+			local isNamePlacement = contains(1, placementType) and isName
+			local isCharacterPlacement = contains(2, placementType) and not isLightDescription and not isName
+			local isLightPlacement = contains(2, placementType) and isLightDescription
+			
+			if isNameOverride or isLightPlacement or isNamePlacement or isCharacterPlacement then
+			
+				local drawingInstructions = CreateDrawingInstructions()
+				
 				-- Make the TextPlacement feature the target of our drawing instructions
-				placementFeature = textAssociation[1]
-				local newPortrayal = not rawget(placementFeature, '_featurePortrayal')
-				local textOffset = 0	-- for multiple labels
+				placementFeature = textPlacementFeature
 				
 				if newPortrayal then
 					placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+					placementFeature._name = {}
+					placementFeature._featureCharacteristics = {}
+					placementFeature._lightCharacteristics = {}
 				end
 				
-				if isLightPlacement then
-					if rawget(placementFeature, '_textOffset') then
-						-- new line for existing light description
-						textOffset = placementFeature._textOffset + 3.51
-					elseif isLightPlacement and #placementType > 1 then
-						-- place below feature name
-						textOffset = 3.51
-					end
-					placementFeature._textOffset = textOffset
+				local targetTable
+				if isNameOverride or isNamePlacement then
+					targetTable = placementFeature._name
+				elseif isCharacterPlacement then
+					targetTable = placementFeature._featureCharacteristics
+				elseif isLightPlacement then
+					targetTable = placementFeature._lightCharacteristics
 				end
 				
 				-- Add scaleMinimum if present
 				local scaleMinimum = feature['!scaleMinimum']
 				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
-					placementFeature._featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
+					drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
 				end
 
 				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
 				local length = placementFeature.textOffsetDistance or 0
 				local direction = placementFeature.textOffsetBearing or 0
 				if length ~= 0 then
-					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
+					drawingInstructions:Add('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
 				end
 				
 				if placementFeature.textRotation then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
+					drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
 				else
 					if length == 0 then
 						-- Center the text on the point
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Center')
 					elseif direction >=   5 and direction <  85 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
+						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
 					elseif direction >=  85 and direction <  95 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
+						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Center')
 					elseif direction >=  95 and direction < 175 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
+						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Top')
 					elseif direction >= 175 and direction < 185 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
+						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Top')
 					elseif direction >= 185 and direction < 265 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
+						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Top')
 					elseif direction >= 175 and direction < 275 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
+						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Center')
 					elseif direction >= 175 and direction < 355 then
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
+						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Bottom')
 					else
-						placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
+						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
 					end
 				end
 
-				if (textOffset ~= 0) then
-					textOffset = -textOffset
-				end
-				placementFeature._featurePortrayal:AddInstructions('TextVerticalOffset:' .. textOffset)
+				--drawingInstructions:Add('TextVerticalOffset:' .. textOffset)
 
 				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal, TextAlignVertical, and TextVerticalOffset are intentionally not copied)
 				local targetCommands =
@@ -306,7 +327,7 @@ function CreateFeaturePortrayal(feature)
 					['FontUpperline:'] = "nil",			-- false
 					['FontReference:'] = "nil",			-- ""
 					['TextVerticalOffset:'] = "nil",	-- 0
-					['Hover:'] = "false",				-- false
+					['Hover:'] = "nil",					-- false
 				}
 				-- Store / Copy relevant time intervals
 				local timeState = {}
@@ -341,12 +362,12 @@ function CreateFeaturePortrayal(feature)
 				-- Add the copied drawing instructions to the TextPlacement feature
 				for k, v in pairs(targetCommands) do
 					if v ~= "nil" then
-						placementFeature._featurePortrayal:AddInstructions(v)
+						drawingInstructions:Add(v)
 					end
 				end
 				-- Add the accumulated time intervals to the TextPlacement feature
 				for k, v in ipairs(timeState) do
-					placementFeature._featurePortrayal:AddInstructions(v)
+					drawingInstructions:Add(v)
 				end
 				-- Done copying drawing instructions
 
@@ -356,12 +377,17 @@ function CreateFeaturePortrayal(feature)
 				-- TODO: merge the observed parameters with any existing
 				placementFeature._featurePortrayalItem.ObservedContextParameters = portrayalContext.ContextParameters._observed
 				placementFeature._featurePortrayalItem.InUseContextParameters = portrayalContext.ContextParameters._asTable
+				
+				-- Save the drawing instructions with the text
+				drawingInstructions:Add(GetDrawingInstructions(text, textViewingGroup, textPriority))
+				table.insert(targetTable, { text, drawingInstructions })
 			end
 		end
 		
-		-- Add the instructions to draw the text
-		placementFeature._featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
 		if placementFeature == self.Feature then
+			-- Add the instructions to draw the text
+			placementFeature._featurePortrayal:AddInstructions(GetDrawingInstructions(text, textViewingGroup, textPriority))
+			
 			-- Reset the state in case the caller generates further non-text drawing instructions
 			self:AddInstructions('ViewingGroup:' .. viewingGroup)
 			if priority then
