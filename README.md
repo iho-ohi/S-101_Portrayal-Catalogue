@@ -148,7 +148,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#405][i405] Update FC to 1.4.0 dated 2024-07-03
   	* [#410][i410] Remove alert catalog references to non-existent icons
   	* [#414][i414] Remove the alert viewing group layer and implement alert viewing groups as independent selectors
-  	* [#415][i415] Message provided for disabling graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
+  	* [#415][i415] Message associated with disablement of graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
