@@ -235,7 +235,7 @@ function CreateFeaturePortrayal(feature)
 			-- 2: place feature and/or light description
 			local placementType = textPlacementFeature.textType or {}
 			
-			local newPortrayal = not rawget(textPlacementFeature, '_featurePortrayal')
+			local isNewPortrayal = not rawget(textPlacementFeature, '_featurePortrayal')
 			local hasFeatureName = rawget(textPlacementFeature, '_processedFeatureName')
 
 			local isName = not isLightDescription and not hasFeatureName and self.GetFeatureNameCalled
@@ -255,11 +255,43 @@ function CreateFeaturePortrayal(feature)
 				-- Make the TextPlacement feature the target of our drawing instructions
 				placementFeature = textPlacementFeature
 				
-				if newPortrayal then
-					placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+				if isNewPortrayal then
+					local newPortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
 					placementFeature._name = {}
 					placementFeature._featureCharacteristics = {}
 					placementFeature._lightCharacteristics = {}
+
+					-- Add the instructions to offset the text relative to the location of the TextPlacement feature
+					local length = placementFeature.textOffsetDistance or 0
+					local direction = placementFeature.textOffsetBearing or 0
+					if length ~= 0 then
+						newPortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
+					end
+					
+					if placementFeature.textRotation then
+						newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
+					else
+						if length == 0 then
+							-- Center the text on the point
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+						elseif direction >=   5 and direction <  85 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
+						elseif direction >=  85 and direction <  95 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
+						elseif direction >=  95 and direction < 175 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
+						elseif direction >= 175 and direction < 185 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
+						elseif direction >= 185 and direction < 265 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
+						elseif direction >= 175 and direction < 275 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
+						elseif direction >= 175 and direction < 355 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
+						else
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
+						end
+					end
 				end
 				
 				local targetTable
@@ -286,40 +318,6 @@ function CreateFeaturePortrayal(feature)
 					end
 				end
 
-				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
-				local length = placementFeature.textOffsetDistance or 0
-				local direction = placementFeature.textOffsetBearing or 0
-				if length ~= 0 then
-					drawingInstructions:Add('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
-				end
-				
-				if placementFeature.textRotation then
-					drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
-				else
-					if length == 0 then
-						-- Center the text on the point
-						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Center')
-					elseif direction >=   5 and direction <  85 then
-						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
-					elseif direction >=  85 and direction <  95 then
-						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Center')
-					elseif direction >=  95 and direction < 175 then
-						drawingInstructions:Add('TextAlignHorizontal:Start;TextAlignVertical:Top')
-					elseif direction >= 175 and direction < 185 then
-						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Top')
-					elseif direction >= 185 and direction < 265 then
-						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Top')
-					elseif direction >= 175 and direction < 275 then
-						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Center')
-					elseif direction >= 175 and direction < 355 then
-						drawingInstructions:Add('TextAlignHorizontal:End;TextAlignVertical:Bottom')
-					else
-						drawingInstructions:Add('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
-					end
-				end
-
-				--drawingInstructions:Add('TextVerticalOffset:' .. textOffset)
-
 				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal, TextAlignVertical, and TextVerticalOffset are intentionally not copied)
 				local targetCommands =
 				{
@@ -335,7 +333,6 @@ function CreateFeaturePortrayal(feature)
 					['FontStrikethrough:'] = "nil",		-- false
 					['FontUpperline:'] = "nil",			-- false
 					['FontReference:'] = "nil",			-- ""
-					['TextVerticalOffset:'] = "nil",	-- 0
 					['Hover:'] = "nil",					-- false
 				}
 				-- Store / Copy relevant time intervals
