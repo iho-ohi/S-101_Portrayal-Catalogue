@@ -198,6 +198,10 @@ function CreateFeaturePortrayal(feature)
 		CheckType(viewingGroup, 'number')
 		CheckTypeOrNil(priority, 'number')
 		
+		if not text or text == '' then
+			return
+		end
+		
 		local function GetDrawingInstructions(text, textViewingGroup, textPriority)
 			return 'ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text
 		end
