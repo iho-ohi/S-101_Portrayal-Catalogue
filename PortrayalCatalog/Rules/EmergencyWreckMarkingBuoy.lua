@@ -3,6 +3,8 @@
 -- #162
 -- #276, [PSWG #117]
 
+require 'TOPMAR02'
+
 function EmergencyWreckMarkingBuoy(feature, featurePortrayal, contextParameters)
   local viewingGroup
   local symbol = 'BOYGEN03'
