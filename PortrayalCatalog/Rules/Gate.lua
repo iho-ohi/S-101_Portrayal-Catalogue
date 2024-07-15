@@ -1,4 +1,4 @@
--- #155
+require 'S101AttributeSupport'
 
 -- Gate main entry point.
 function Gate(feature, featurePortrayal, contextParameters)
@@ -131,26 +131,25 @@ function Gate(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-	
-	-- Vertical clearance label
-	if feature.verticalClearanceOpen then
-		local clearanceOpen = ''
-		if feature.verticalClearanceOpen.verticalClearanceUnlimited then
-			clearanceOpen = 'clr op ∞'
-		elseif feature.verticalClearanceOpen.verticalClearanceValue then
-			clearanceOpen = EncodeString(feature.verticalClearanceOpen.verticalClearanceValue, 'clr op %4.1f')
+
+	local featureName = GetFeatureName(feature, contextParameters)
+	if featureName or HasHorizontalClearance(feature) then
+		-- Center annotationas in or on the feature
+		local yOffset = 0
+		if feature.PrimitiveType == PrimitiveType.Point then
+			-- Center annotations underneath the symbol
+			featurePortrayal:AddInstructions('TextAlignVertical:Top')
+			yOffset = -3.51
+		else
+			featurePortrayal:AddInstructions('TextAlignVertical:Center')
 		end
-		if clearanceOpen ~= '' then
-			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(clearanceOpen, 11, 24, viewingGroup, 24)
+		featurePortrayal:AddInstructions('LocalOffset:0,' .. yOffset .. ';TextAlignHorizontal:Center;FontColor:CHBLK')
+		if featureName then
+			featurePortrayal:AddTextInstruction(EncodeString(featureName), 26, 24, viewingGroup, 9)
+			yOffset = yOffset - 3.51
 		end
+		PortrayClearances(feature, featurePortrayal, contextParameters, viewingGroup, 0, yOffset)
 	end
 
-	-- Horizontal clearance label (pending PSWG discussion)
-	--if feature.horizontalClearanceOpen and feature.horizontalClearanceOpen.horizontalClearanceValue then
-		--featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;FontColor:CHBLK')
-		--featurePortrayal:AddTextInstruction(EncodeString(feature.horizontalClearanceOpen.horizontalClearanceValue, 'H-clr op %4.1f'), 11, 24, viewingGroup, 24)
-	--end
-	
 	return viewingGroup
 end

@@ -9896,6 +9896,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="S101AttributeSupport">
+         <description>
+            <name>S101AttributeSupport</name>
+            <description>Support routines to ensure consistent processing of S-101 attributes</description>
+            <language>eng</language>
+         </description>
+         <fileName>S101AttributeSupport.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="Default">
          <description>
             <name>Default</name>

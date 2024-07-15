@@ -1,3 +1,4 @@
+require 'S101AttributeSupport'
 
 -- Dock area main entry point.
 function DockArea(feature, featurePortrayal, contextParameters)
@@ -13,12 +14,20 @@ function DockArea(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 		end
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		if feature.featureName[1] and feature.featureName[1].name then
-			featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontSize:10;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, 22010, 9)
-		end
+		
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
+	end
+	
+	local featureName = GetFeatureName(feature, contextParameters)
+	if featureName or HasHorizontalClearance(feature) then
+		featurePortrayal:AddInstructions('LocalOffset:0,0;TextAlignHorizontal:Center;TextAlignVertical:Center;FontColor:CHBLK')
+		if featureName then
+			featurePortrayal:AddTextInstruction(EncodeString(featureName), 26, 24, viewingGroup, 9)
+			PortrayClearances(feature, featurePortrayal, contextParameters, viewingGroup, 0, -3.51)
+		else
+			PortrayClearances(feature, featurePortrayal, contextParameters, viewingGroup, 0, 0)
+		end
 	end
 
 	return viewingGroup
