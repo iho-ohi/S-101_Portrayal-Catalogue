@@ -136,6 +136,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i414]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/414
 [i415]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/415
 [i416]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/416
+[i417]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/417
 [i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
 
 ## Recent changes
@@ -172,6 +173,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#409][i409] `no chart display (3)` is no longer valid for `nameUsage`
   	* [#416][i416] Implement `scaleMinimum` for `TextPlacement`
   	* [#418][i418] TOPMAR02 undefined for `EmergencyWreckMarkingBuoy` and `IsolatedDangerBuoy`
+  	* [#417][i417] Depict horizontal clearance values
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
