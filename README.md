@@ -114,6 +114,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
 [i386]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/386
 [i388]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/388
+[i389]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/389
 [i390]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/390
 [i391]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/391
 [i392]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/392
@@ -138,6 +139,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i416]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/416
 [i417]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/417
 [i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
+[i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -153,6 +155,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#410][i410] Remove alert catalog references to non-existent icons
   	* [#414][i414] Remove the alert viewing group layer and implement alert viewing groups as independent selectors
   	* [#415][i415] Message associated with disablement of graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
+  	* [#419][i419] Change name of viewing group `21020` from "Generic object (NEWOBJ01)" to "Chart 1 feature, virtual AIS aid to navigation"
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
@@ -174,6 +177,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#416][i416] Implement `scaleMinimum` for `TextPlacement`
   	* [#418][i418] TOPMAR02 undefined for `EmergencyWreckMarkingBuoy` and `IsolatedDangerBuoy`
   	* [#417][i417] Depict horizontal clearance values
+  	* [#389][i389] Added `Chart1Feature`
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
