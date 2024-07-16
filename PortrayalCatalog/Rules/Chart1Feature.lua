@@ -15,9 +15,11 @@ function Chart1Feature(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center;FontColor:CHBLK')
 	end	
 
-	if feature.drawingInstruction then			
-		-- may modify the default text parameters set above
-		featurePortrayal:AddInstructions(feature.drawingInstruction)
+	if feature.drawingInstruction then
+		for _,instructions in ipairs(feature.drawingInstruction) do
+			-- may modify the default text parameters set above
+			featurePortrayal:AddInstructions(instructions)
+		end
 	end
 
 	if featureName then
