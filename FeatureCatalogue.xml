@@ -44168,13 +44168,6 @@
 			</S100FC:definitionReference>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attribute ref="text" />
-			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
@@ -44196,7 +44189,7 @@
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
+					<S100Base:lower>1</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
@@ -44381,8 +44374,8 @@
 			<S100FC:code>Chart1Feature</S100FC:code>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="drawingInstruction" />
 			</S100FC:attributeBinding>
