@@ -140,6 +140,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i417]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/417
 [i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
 [i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
+[i420]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/420
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -156,6 +157,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#414][i414] Remove the alert viewing group layer and implement alert viewing groups as independent selectors
   	* [#415][i415] Message associated with disablement of graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
   	* [#419][i419] Change name of viewing group `21020` from "Generic object (NEWOBJ01)" to "Chart 1 feature, virtual AIS aid to navigation"
+  	* [#420][i420] Update FC to reflect changes expected in 1.4.1
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
