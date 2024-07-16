@@ -9918,6 +9918,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="Chart1Feature">
+         <description>
+            <name>Chart1Feature</name>
+            <description>Portrayal rules for features specific to Chart 1</description>
+            <language>eng</language>
+         </description>
+         <fileName>Chart1Feature.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="DEPARE03">
          <description>
             <name>DEPARE03</name>
