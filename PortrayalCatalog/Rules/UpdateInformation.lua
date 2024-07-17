@@ -74,7 +74,12 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			-- undefined updateType
 			error('UpdateInformation feature with undefined updateType')
 		end
-	elseif feature.PrimitiveType ~= PrimitiveType.None then
+	elseif feature.PrimitiveType == PrimitiveType.None then
+		if updateType ~= 3 and updateType ~= 4 then
+			error('Invalid primitive type or mariner settings passed to portrayal')
+		end
+	else
+		--  MultiPoint geometry is not valid for UpdateInformation
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 	return viewingGroup
