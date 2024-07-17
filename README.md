@@ -129,6 +129,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
 [i404]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/404
 [i405]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/405
+[i406]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/406
 [i409]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/409
 [i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
 [i411]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/411
@@ -180,6 +181,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#418][i418] TOPMAR02 undefined for `EmergencyWreckMarkingBuoy` and `IsolatedDangerBuoy`
   	* [#417][i417] Depict horizontal clearance values
   	* [#389][i389] Added `Chart1Feature`
+  	* [#406][i406] Enhanced error checks for `UpdateInformation`
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
