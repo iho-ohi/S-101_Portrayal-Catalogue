@@ -2,6 +2,7 @@
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
+[i8]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/8
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 [i99]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/99
 [i144]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/144
@@ -160,6 +161,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#415][i415] Message associated with disablement of graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
   	* [#419][i419] Change name of viewing group `21020` from "Generic object (NEWOBJ01)" to "Chart 1 feature, virtual AIS aid to navigation"
   	* [#420][i420] Update FC to reflect changes expected in 1.4.1
+  	* [#8][i8] Update catalog and rules with (expected) xmlID's from portrayal registry
 
 * Lua Rule File / Symbol Updates
 	* [#382][i382] Landmark featureName placement differs for simplified/traditional
