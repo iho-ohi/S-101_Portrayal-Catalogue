@@ -10,9 +10,9 @@ function InstallationBuoy(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		if contextParameters.SimplifiedSymbols then
 			featurePortrayal:AddInstructions('PointInstruction:BOYMOR11')

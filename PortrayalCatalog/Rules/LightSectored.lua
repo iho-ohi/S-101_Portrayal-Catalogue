@@ -33,9 +33,9 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 	end
 
 	if contextParameters.RadarOverlay then
-		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:OverRADAR;Hover:true')
+		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:OverRadar;Hover:true')
 	else
-		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:UnderRADAR;Hover:true')
+		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:UnderRadar;Hover:true')
 	end
 
 	local informationFound = false

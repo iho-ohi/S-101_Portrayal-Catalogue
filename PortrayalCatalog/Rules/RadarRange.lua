@@ -6,7 +6,7 @@ function RadarRange(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 25040
-		featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	else

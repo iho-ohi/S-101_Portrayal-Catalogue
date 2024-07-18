@@ -7,18 +7,18 @@ function WeedKelp(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 34020
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:WEDKLP03')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 34020
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:34020;DrawingPriority:9;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:WEDKLP03')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRF')

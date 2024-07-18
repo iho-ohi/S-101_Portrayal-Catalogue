@@ -8,33 +8,33 @@ function Gate(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfGate == 2 then
 			viewingGroup = 22010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		elseif feature.categoryOfGate == 3 then
 			viewingGroup = 32440
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		elseif feature.categoryOfGate == 4 then
 			viewingGroup = 32440
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON03')
 		else
 			viewingGroup = 22010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		end
@@ -42,33 +42,33 @@ function Gate(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfGate == 2 then
 			viewingGroup = 22010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		elseif feature.categoryOfGate == 3 then
 			viewingGroup = 32440
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		elseif feature.categoryOfGate == 4 then
 			viewingGroup = 32440
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON03')
 		else
 			viewingGroup = 22010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:22010;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:GATCON04')
 		end
@@ -76,18 +76,18 @@ function Gate(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfGate == 2 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfGate == 3 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -95,9 +95,9 @@ function Gate(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfGate == 4 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -105,18 +105,18 @@ function Gate(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfGate == 5 then
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			viewingGroup = 12410
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -124,7 +124,7 @@ function Gate(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 12410
-		featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		featurePortrayal:SimpleLineStyle('solid',0.64,'CSTLN')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

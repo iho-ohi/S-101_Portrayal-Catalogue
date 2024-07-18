@@ -12,7 +12,7 @@
 function Landmark(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 32220
 	local drawingPriority = 12
-	local displayPlane = 'UnderRADAR'
+	local displayPlane = 'UnderRadar'
 	
 	if feature.visualProminence == 1 then
 		viewingGroup = 22220
@@ -30,7 +30,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 	
 	if feature.PrimitiveType == PrimitiveType.Point or feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
-			displayPlane = 'OverRADAR'
+			displayPlane = 'OverRadar'
 		end
 	end
 

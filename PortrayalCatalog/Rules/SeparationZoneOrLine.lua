@@ -5,9 +5,9 @@ function SeparationZoneOrLine(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('solid',1.92,'TRFCF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -16,7 +16,7 @@ function SeparationZoneOrLine(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('AlertReference:ProhAre,53012,53012')
 
 		-- Plain and symbolized boundaries use the same symbolization
-		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('ColorFill:TRFCF,0.75')
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

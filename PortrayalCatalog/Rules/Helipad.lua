@@ -5,9 +5,9 @@ function Helipad(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 32240
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:UnderRadar')
 		end
 	    featurePortrayal:AddInstructions('PointInstruction:HELIPD02')
 	else

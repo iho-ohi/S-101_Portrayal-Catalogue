@@ -9645,7 +9645,7 @@
      <!-- END TEXT LAYER GROUPS -->
    </viewingGroupLayers>
    <displayModes>
-      <displayMode id="1">
+      <displayMode id="DisplayBase">
          <description>
             <name>Display Base</name>
             <description>Always on display</description>
@@ -9653,7 +9653,7 @@
          </description>
 		 <viewingGroupLayer>1</viewingGroupLayer>
       </displayMode>
-      <displayMode id="2">
+      <displayMode id="StandardDisplay">
          <description>
             <name>Standard Display</name>
             <description>ECDIS default display</description>
@@ -9673,7 +9673,7 @@
          <viewingGroupLayer>10</viewingGroupLayer>
          <viewingGroupLayer>10a</viewingGroupLayer>
       </displayMode>
-      <displayMode id="3">
+      <displayMode id="OtherInformation">
          <description>
             <name>Other Information</name>
             <description>All other objects in the SENC</description>
@@ -9703,14 +9703,14 @@
       </displayMode>
    </displayModes>
    <displayPlanes>
-      <displayPlane id="OverRADAR" order="1">
+      <displayPlane id="OverRadar" order="1">
          <description>
             <name>Over radar</name>
             <description>Content displayed on top of Radar image</description>
             <language>eng</language>
          </description>
       </displayPlane>
-      <displayPlane id="UnderRADAR" order="-1">
+      <displayPlane id="UnderRadar" order="-1">
          <description>
             <name>Under radar</name>
             <description>Content displayed underneath Radar image</description>
@@ -9821,7 +9821,7 @@
        <type>Boolean</type>
        <default>false</default>
      </parameter>
-     <parameter id="IgnoreScamin">
+     <parameter id="IgnoreScaleMinimum">
        <description>
          <name>Ignore scale minimum</name>
          <description>Features remain visible regardless of display scale</description>

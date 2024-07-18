@@ -12,9 +12,9 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		end
 		
 		if updateType == 1 then
@@ -34,7 +34,7 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			error('UpdateInformation feature with undefined updateType')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		if updateType == 1 then
 			-- insert
 			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:CHRVID02')
@@ -54,7 +54,7 @@ function UpdateInformation(feature, featurePortrayal, contextParameters)
 			error('UpdateInformation feature with undefined updateType')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		if updateType == 1 then
 			-- insert
 			featurePortrayal:AddInstructions('LineInstructionUnsuppressed:CHRVID02;PointInstruction:CHRVID01')

@@ -19,9 +19,9 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 26220
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 
 		if contains (15, COA) then	-- 15 - Reported Anchorage PSWG #72
@@ -39,7 +39,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('PointInstruction:ACHARE51')
 			featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -55,7 +55,7 @@ function AnchorageArea(feature, featurePortrayal, contextParameters)
 			error('Surface is not a valid geometry for reported anchorages')
 		else
 			viewingGroup = 26220
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('PointInstruction:ACHARE51')
 			featurePortrayal:AddInstructions('LineInstruction:ACHARE51')
 

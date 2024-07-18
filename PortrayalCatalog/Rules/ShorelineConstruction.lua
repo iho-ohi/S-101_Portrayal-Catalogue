@@ -12,24 +12,24 @@ function ShorelineConstruction(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 12410
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:MORFAC03')
 		SLCONS04(feature, featurePortrayal, contextParameters, viewingGroup)
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 12410
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:UnderRadar')
 		end
 		SLCONS04(feature, featurePortrayal, contextParameters, viewingGroup)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 12410
-		featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:21;DisplayPlane:UnderRadar')
 		SLCONS04(feature, featurePortrayal, contextParameters, viewingGroup)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

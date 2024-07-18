@@ -17,7 +17,7 @@ function RestrictedArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries have same portrayal
 		viewingGroup = 26010
-		featurePortrayal:AddInstructions('ViewingGroup:26010;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26010;DrawingPriority:15;DisplayPlane:UnderRadar')
 		if contains(27, feature.categoryOfRestrictedArea) then
 			featurePortrayal:AddInstructions('PointInstruction:ESSARE01')
 			featurePortrayal:AddInstructions('LineInstruction:ESSARE01')

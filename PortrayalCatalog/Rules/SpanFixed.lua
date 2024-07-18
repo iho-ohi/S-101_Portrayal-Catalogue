@@ -6,18 +6,18 @@ function SpanFixed(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('solid',1.6,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('solid',1.28,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

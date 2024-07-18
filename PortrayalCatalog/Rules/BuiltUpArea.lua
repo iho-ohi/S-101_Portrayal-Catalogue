@@ -15,9 +15,9 @@ function BuiltUpArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:BUAARE02')
 		if feature.featureName[1] and feature.featureName[1].name then
@@ -27,7 +27,7 @@ function BuiltUpArea(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:9;DisplayPlane:UnderRadar')
 			
 		if InTheWater == false then
 			featurePortrayal:AddInstructions('ColorFill:CHBRN')

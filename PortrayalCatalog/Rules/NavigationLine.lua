@@ -7,9 +7,9 @@ function NavigationLine(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfNavigationLine == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -18,9 +18,9 @@ function NavigationLine(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfNavigationLine == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -29,9 +29,9 @@ function NavigationLine(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')

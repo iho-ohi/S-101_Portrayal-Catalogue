@@ -7,22 +7,22 @@ function Canal(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 12420
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if feature.condition then
 			viewingGroup = 12420
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('ColorFill:DEPVS')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			viewingGroup = 12420
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('ColorFill:DEPVS')
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -30,13 +30,13 @@ function Canal(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if feature.condition then
 			viewingGroup = 12420
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('ColorFill:DEPVS')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		else
 			viewingGroup = 12420
-			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12420;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('ColorFill:DEPVS')
 			featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')

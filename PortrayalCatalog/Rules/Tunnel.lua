@@ -7,16 +7,16 @@ function Tunnel(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 32250
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 32250
-		featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32250;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	else

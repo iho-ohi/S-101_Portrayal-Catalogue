@@ -7,9 +7,9 @@ function RadarTransponderBeacon(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 27210
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27210;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27210;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27210;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27210;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:RTPBCN02')
 	else

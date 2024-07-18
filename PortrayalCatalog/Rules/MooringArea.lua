@@ -37,9 +37,9 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:18;DisplayPlane:OverRadar')
 		end
 
 		featurePortrayal:AddInstructions('PointInstruction:BOYMOR02')
@@ -52,7 +52,7 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 		AddVisitorTankerName(feature, '0,-2')
 
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:BOYMOR51')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -66,7 +66,7 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 
 		AddVisitorTankerName(feature, '0,-6')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:BOYMOR51')
 		featurePortrayal:AddInstructions('LineInstruction:NAVARE52')
 

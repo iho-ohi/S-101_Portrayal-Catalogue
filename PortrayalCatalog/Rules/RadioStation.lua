@@ -9,17 +9,17 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 		if contains(10, feature.categoryOfRadioStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DRFSTA02')
 		else
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RDOSTA02')
 		end
@@ -27,17 +27,17 @@ function RadioStation(feature, featurePortrayal, contextParameters)
 		if contains(10, feature.categoryOfRadioStation) then
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:DRFSTA02')
 		else
 			viewingGroup = 38010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RDOSTA02')
 		end

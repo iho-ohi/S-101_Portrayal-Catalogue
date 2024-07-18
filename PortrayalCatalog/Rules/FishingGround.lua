@@ -6,7 +6,7 @@ function FishingGround(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 26210
-		featurePortrayal:AddInstructions('ViewingGroup:26210;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26210;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:FSHGRD01')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

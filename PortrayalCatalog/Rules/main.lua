@@ -36,7 +36,7 @@ function PortrayalMain(featureIDs)
 			local scaleMinimum = feature['!scaleMinimum']
 			local scaleMaximum = feature['!scaleMaximum']
 
-			if scaleMinimum and not contextParameters.IgnoreScamin then
+			if scaleMinimum and not contextParameters.IgnoreScaleMinimum then
 				featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
 			end
 

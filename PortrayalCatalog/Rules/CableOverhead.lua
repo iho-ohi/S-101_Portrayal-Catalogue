@@ -9,9 +9,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		if feature.radarConspicuous and feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -23,9 +23,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous and feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -37,9 +37,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -51,9 +51,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -65,9 +65,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -75,9 +75,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -85,9 +85,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -98,9 +98,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		elseif feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -111,9 +111,9 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')

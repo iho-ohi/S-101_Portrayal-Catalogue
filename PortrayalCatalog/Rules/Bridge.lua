@@ -10,9 +10,9 @@ function Bridge(feature, featurePortrayal, contextParameters)
 	end
 
 	if contextParameters.RadarOverlay then
-		featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 	else
-		featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 	end
 
 	-- if over navigable water: "opening bridge" is mandatory
@@ -47,9 +47,9 @@ function Bridge(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.None then
 		viewingGroup = 12210
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR;NullInstruction')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar;NullInstruction')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR;NullInstruction')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar;NullInstruction')
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

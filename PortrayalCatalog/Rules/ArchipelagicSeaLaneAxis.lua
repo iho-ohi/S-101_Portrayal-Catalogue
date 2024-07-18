@@ -5,7 +5,7 @@ function ArchipelagicSeaLaneAxis(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 26260
-		featurePortrayal:AddInstructions('ViewingGroup:26260;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26260;DrawingPriority:15;DisplayPlane:UnderRadar')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHMGF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	else

@@ -7,7 +7,7 @@ function Chart1Feature(feature, featurePortrayal, contextParameters)
 
 	local viewingGroup = 21020
 	
-	featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+	featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 
 	local featureName = EncodeString(GetFeatureName(feature, contextParameters))
 	if featureName then

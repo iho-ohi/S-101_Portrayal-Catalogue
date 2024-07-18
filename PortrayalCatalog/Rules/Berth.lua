@@ -18,9 +18,9 @@ function Berth(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 32440
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol) 
 		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
@@ -28,9 +28,9 @@ function Berth(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 32440
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -40,7 +40,7 @@ function Berth(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 32440
-		featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32440;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
 		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 29, 24, 32440, 9)

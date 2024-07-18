@@ -8,9 +8,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
@@ -20,9 +20,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
@@ -32,9 +32,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
@@ -44,9 +44,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CURDEF01')
 		end
@@ -54,9 +54,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
@@ -66,9 +66,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
@@ -78,9 +78,9 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
@@ -90,16 +90,16 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:CURDEF01')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -107,7 +107,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -115,7 +115,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -123,7 +123,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		else
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('PointInstruction:CURDEF01')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -131,7 +131,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if feature.categoryOfTidalStream == 1 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:FLDSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -139,7 +139,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		elseif feature.categoryOfTidalStream == 2 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:EBBSTR01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -147,7 +147,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		elseif feature.categoryOfTidalStream == 3 and feature.orientation and feature.orientation.orientationValue then
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientation.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:CURENT01')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
@@ -155,7 +155,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
 		else
 			viewingGroup = 33060
-			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:6;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('PointInstruction:CURDEF01')
 			featurePortrayal:AddInstructions('LineInstruction:TIDINF51')
 		end

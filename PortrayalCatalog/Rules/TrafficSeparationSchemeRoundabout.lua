@@ -8,12 +8,12 @@ function TrafficSeparationSchemeRoundabout(feature, featurePortrayal, contextPar
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 25010
-		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:TSSRON51')
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 25010
-		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('AreaFillReference:TSSJCT02')
 		featurePortrayal:AddInstructions('PointInstruction:TSSRON51')
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)

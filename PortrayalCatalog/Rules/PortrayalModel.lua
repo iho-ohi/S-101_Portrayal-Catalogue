@@ -307,7 +307,7 @@ function CreateFeaturePortrayal(feature)
 					targetTable = placementFeature._lightCharacteristics
 				end
 				
-				if not portrayalContext.ContextParameters.IgnoreScamin then
+				if not portrayalContext.ContextParameters.IgnoreScaleMinimum then
 					-- Add scaleMinimum if present
 					local scaleMinimum = textPlacementFeature['!scaleMinimum']
 					if scaleMinimum then
@@ -325,7 +325,7 @@ function CreateFeaturePortrayal(feature)
 				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal, TextAlignVertical, and TextVerticalOffset are intentionally not copied)
 				local targetCommands =
 				{
-					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
+					['DisplayPlane:'] = 'DisplayPlane:UnderRadar',
 					['FontColor:'] = 'FontColor:CHBLK',	-- transparency = 0
 					['FontBackgroundColor:'] = "nil",	-- token="", transparency=1
 					['FontSize:'] = "nil",				-- 10

@@ -19,12 +19,12 @@ function FortifiedStructure(feature, featurePortrayal, contextParameters)
 	
 	if feature.PrimitiveType == PrimitiveType.Point or feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRadar')
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:12;DisplayPlane:UnderRadar')
 	end
 	
 	-- Paper chart and simplified symbols are the same

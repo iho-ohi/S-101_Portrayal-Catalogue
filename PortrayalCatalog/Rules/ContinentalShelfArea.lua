@@ -6,7 +6,7 @@ function ContinentalShelfArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface or feature.PrimitiveType == PrimitiveType.Curve then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 36010
-		featurePortrayal:AddInstructions('ViewingGroup:36010;DrawingPriority:6;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:36010;DrawingPriority:6;DisplayPlane:UnderRadar')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'CHGRF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	else

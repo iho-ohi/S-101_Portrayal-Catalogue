@@ -6,9 +6,9 @@ function StructureOverNavigableWater(feature, featurePortrayal, contextParameter
 
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('ColorFill:CHGRF,0.5')
 		featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')

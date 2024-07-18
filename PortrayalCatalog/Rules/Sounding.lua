@@ -10,9 +10,9 @@ function Sounding(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 33010
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 		SOUNDG03(feature, featurePortrayal, contextParameters, viewingGroup)
 	else

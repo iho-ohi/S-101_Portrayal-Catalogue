@@ -9,9 +9,9 @@ function PhysicalAISAidToNavigation(feature, featurePortrayal, contextParameters
 
 	if feature.PrimitiveType == PrimitiveType.Point then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:24;Hover:true;PointInstruction:AISPHY05')
 	else
