@@ -10,14 +10,14 @@ function InshoreTrafficZone(feature, featurePortrayal, contextParameters)
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 25010
-		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:15;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:ITZARE51')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 25010
-		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:15;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:ITZARE51')
 		featurePortrayal:AddInstructions('LineInstruction:RESARE51')
 		RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)

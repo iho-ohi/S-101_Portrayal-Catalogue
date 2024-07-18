@@ -8,9 +8,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		if feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -18,9 +18,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -28,9 +28,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC12')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -38,9 +38,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC10')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -48,9 +48,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -58,9 +58,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -68,9 +68,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -78,9 +78,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC09')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -88,9 +88,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -98,9 +98,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -108,9 +108,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC11')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -118,9 +118,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECTRC09')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -128,9 +128,9 @@ function RecommendedTrack(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RECDEF02')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')

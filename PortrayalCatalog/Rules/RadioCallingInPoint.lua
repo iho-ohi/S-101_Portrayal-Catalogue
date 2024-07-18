@@ -18,9 +18,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		if feature.trafficFlow == 1 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -35,9 +35,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -52,9 +52,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -69,9 +69,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
@@ -86,9 +86,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		else
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RCLDEF01')
 			if feature.featureName[1] and feature.featureName[1].name then
@@ -99,9 +99,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		if feature.trafficFlow == 1 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -116,9 +116,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -133,9 +133,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
@@ -149,9 +149,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
@@ -166,9 +166,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		else
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RCLDEF01')
 			if feature.featureName[1] and feature.featureName[1].name then
@@ -179,9 +179,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
 		if feature.trafficFlow == 1 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -198,9 +198,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 2 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -217,9 +217,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 3 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -236,9 +236,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		elseif feature.trafficFlow == 4 and feature.orientationValue[1] then
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -255,9 +255,9 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 		else
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')

@@ -2,7 +2,7 @@
 -- #238 [PSWG #117]
 
 -- Referenced portrayal rules.
--- require 'TOPMAR02'  -- not needed #238 [PSWG #117]
+require 'TOPMAR02'
 
 -- Buoy Isolated Danger main entry point.
 function IsolatedDangerBuoy(feature, featurePortrayal, contextParameters)
@@ -10,10 +10,10 @@ function IsolatedDangerBuoy(feature, featurePortrayal, contextParameters)
 	local textViewingGroup = 21
 	local priority = 24
 	local textPriority = 24
-	local displayPlane = 'UnderRADAR'
+	local displayPlane = 'UnderRadar'
 
 	if contextParameters.RadarOverlay then
-		displayPlane = 'OverRADAR'
+		displayPlane = 'OverRadar'
 	end
 	
 	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)

@@ -6,7 +6,7 @@
 
 function RangeSystem(feature, featurePortrayal, contextParameters)
 	
-	--=featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') -- TODO: Find aggregates and emit instructions.
+	--=featurePortrayal:AddInstructions('ViewingGroup:21010;DrawingPriority:15;DisplayPlane:UnderRadar;NullInstruction') -- TODO: Find aggregates and emit instructions.
 
 	local viewingGroup = 21060
 
@@ -15,7 +15,7 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 	 if feature.PrimitiveType == PrimitiveType.Surface or feature.PrimitiveType == PrimitiveType.Curve then
 
 		-- Plain and symbolized boundaries use the same symbolization, text only
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..';DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup ..';DrawingPriority:15;DisplayPlane:UnderRadar')
 
 		if feature.featureName[1] and feature.featureName[1].name then
 			if feature.PrimitiveType == PrimitiveType.Surface then
@@ -26,7 +26,7 @@ function RangeSystem(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, viewingGroup, 15)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.None then
-		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:15;DisplayPlane:UnderRADAR;NullInstruction') 
+		featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ';DrawingPriority:15;DisplayPlane:UnderRadar;NullInstruction') 
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end

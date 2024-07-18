@@ -9,9 +9,9 @@ function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 28010
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:PILBOP02')
 		if feature.featureName[1] and feature.featureName[1].name then
@@ -20,13 +20,13 @@ function PilotBoardingPlace(feature, featurePortrayal, contextParameters)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		viewingGroup = 28010
-		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:PILBARE51')
 		featurePortrayal:SimpleLineStyle('dash',0.64,'TRFCF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		viewingGroup = 28010
-		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:28010;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:PILBARE51')
 		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
 	else

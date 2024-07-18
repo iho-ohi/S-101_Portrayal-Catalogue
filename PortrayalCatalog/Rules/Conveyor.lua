@@ -11,9 +11,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfConveyor == 1 and feature.radarConspicuous == true then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -25,9 +25,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfConveyor == 2 and feature.radarConspicuous == true then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -39,9 +39,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfConveyor == 1 then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -52,9 +52,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfConveyor == 2 then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('solid',0.96,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -65,9 +65,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		elseif feature.radarConspicuous == true then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -79,9 +79,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -94,9 +94,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		if feature.radarConspicuous then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -108,9 +108,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')
@@ -123,9 +123,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		if feature.radarConspicuous then
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -137,9 +137,9 @@ function Conveyor(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 12210
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')

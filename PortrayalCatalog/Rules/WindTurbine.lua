@@ -20,9 +20,9 @@ function WindTurbine(feature, featurePortrayal, contextParameters)
 		end
 
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:OverRADAR;Hover:true')
+			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:OverRadar;Hover:true')
 		else
-			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:UnderRADAR;Hover:true')
+			featurePortrayal:AddInstructions('DrawingPriority:18;DisplayPlane:UnderRadar;Hover:true')
 		end
 
 		if feature.visualProminence == 1 then

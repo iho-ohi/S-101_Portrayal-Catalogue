@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <!-- NOTE: See GitHub issues for complete change information -->
 
@@ -27,16 +27,6 @@
       </colorProfile>
    </colorProfiles>
    <symbols>
-      <symbol id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
       <symbol id="ACHARE02">
          <description>
             <name>ACHARE02</name>
@@ -1885,6 +1875,16 @@
             <language>eng</language>
          </description>
          <fileName>DISMAR06.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+      <symbol id="DISMAR07">
+         <description>
+            <name>DISMAR07</name>
+            <description>distance mark - physically installed</description>
+            <language>eng</language>
+         </description>
+         <fileName>DISMAR07.svg</fileName>
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
@@ -7382,16 +7382,6 @@
       </styleSheet>
    </styleSheets>
    <lineStyles>
-      <lineStyle id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.xml</fileName>
-         <fileType>LineStyle</fileType>
-         <fileFormat>XML</fileFormat>
-      </lineStyle>
       <lineStyle id="ACHARE51">
          <description>
             <name>ACHARE51</name>
@@ -8004,16 +7994,6 @@
       </lineStyle>   
    </lineStyles>
    <areaFills>
-      <areaFill id="testPCB">
-         <description>
-            <name>testPCB</name>
-            <description>new or adjusted feature objects not covered in S-52</description>
-            <language>eng</language>
-         </description>
-         <fileName>testPCB.xml</fileName>
-         <fileType>AreaFill</fileType>
-         <fileFormat>XML</fileFormat>
-      </areaFill>
       <areaFill id="AIRARE02">
          <description>
             <name>AIRARE02</name>
@@ -8472,7 +8452,7 @@
       </viewingGroup>
       <viewingGroup id="12420">
          <description>
-            <name>dock (DOCARE), lock (LOKBSN), canal (CANALS), river (RIVERS)</name>
+            <name>lock (LOKBSN), canal (CANALS), river (RIVERS)</name>
             <description>Base: C, D, E, F - Topography and Infrastructure</description>
             <language>eng</language>
          </description>
@@ -8544,7 +8524,7 @@
       </viewingGroup>
       <viewingGroup id="21020">
          <description>
-            <name>Generic object (NEWOBJ01)</name>
+            <name>Chart 1 feature, virtual AIS aid to navigation</name>
             <description>Standard: A, B - Information about the chart display</description>
             <language>eng</language>
          </description>
@@ -9642,22 +9622,6 @@
          <viewingGroup>26210</viewingGroup>
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
-		 <!-- Alert Highlights -->
-		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>53011</viewingGroup>
-		 <viewingGroup>53012</viewingGroup>
-		 <viewingGroup>53013</viewingGroup>
-		 <viewingGroup>53014</viewingGroup>
-		 <viewingGroup>53015</viewingGroup>
-		 <viewingGroup>53016</viewingGroup>
-		 <viewingGroup>53017</viewingGroup>
-		 <viewingGroup>53018</viewingGroup>
-		 <viewingGroup>53019</viewingGroup>
-		 <viewingGroup>53020</viewingGroup>
-		 <viewingGroup>53021</viewingGroup>
-		 <viewingGroup>53022</viewingGroup>
-		 <viewingGroup>53023</viewingGroup>
-		 <viewingGroup>53024</viewingGroup>
       </viewingGroupLayer>
 	  <viewingGroupLayer id="10a">       
          <description>
@@ -9676,29 +9640,6 @@
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
       </viewingGroupLayer>
-	  <viewingGroupLayer id="10b">      <!-- S-101 Alert Highlights -->
-		<description>
-            <name>Alert Highlights (Standard)</name>
-            <description>Toggles graphical highlighting of detected alerts</description>
-            <language>eng</language>
-		</description>
-		 <!-- Alert Highlights -->
-		 <viewingGroup>53010</viewingGroup>
-		 <viewingGroup>53011</viewingGroup>
-		 <viewingGroup>53012</viewingGroup>
-		 <viewingGroup>53013</viewingGroup>
-		 <viewingGroup>53014</viewingGroup>
-		 <viewingGroup>53015</viewingGroup>
-		 <viewingGroup>53016</viewingGroup>
-		 <viewingGroup>53017</viewingGroup>
-		 <viewingGroup>53018</viewingGroup>
-		 <viewingGroup>53019</viewingGroup>
-		 <viewingGroup>53020</viewingGroup>
-		 <viewingGroup>53021</viewingGroup>
-		 <viewingGroup>53022</viewingGroup>
-		 <viewingGroup>53023</viewingGroup>
-		 <viewingGroup>53024</viewingGroup>
-	  </viewingGroupLayer>
 	  <!-- ********************************************************************************* -->
 	  <!-- END STANDARD LAYER GROUPS -->
 	  <!-- OTHER LAYER GROUPS -->
@@ -9944,7 +9885,7 @@
      <!-- END TEXT LAYER GROUPS -->
    </viewingGroupLayers>
    <displayModes>
-      <displayMode id="1">
+      <displayMode id="DisplayBase">
          <description>
             <name>Display Base</name>
             <description>Always on display</description>
@@ -9952,7 +9893,7 @@
          </description>
 		 <viewingGroupLayer>1</viewingGroupLayer>
       </displayMode>
-      <displayMode id="2">
+      <displayMode id="StandardDisplay">
          <description>
             <name>Standard Display</name>
             <description>ECDIS default display</description>
@@ -9971,9 +9912,8 @@
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
          <viewingGroupLayer>10a</viewingGroupLayer>
-         <viewingGroupLayer>10b</viewingGroupLayer>
       </displayMode>
-      <displayMode id="3">
+      <displayMode id="OtherInformation">
          <description>
             <name>Other Information</name>
             <description>All other objects in the SENC</description>
@@ -9992,7 +9932,6 @@
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
          <viewingGroupLayer>10a</viewingGroupLayer>
-         <viewingGroupLayer>10b</viewingGroupLayer>
          <viewingGroupLayer>11</viewingGroupLayer>
          <viewingGroupLayer>12</viewingGroupLayer>
          <viewingGroupLayer>13</viewingGroupLayer>
@@ -10004,14 +9943,14 @@
       </displayMode>
    </displayModes>
    <displayPlanes>
-      <displayPlane id="OverRADAR" order="1">
+      <displayPlane id="OverRadar" order="1">
          <description>
             <name>Over radar</name>
             <description>Content displayed on top of Radar image</description>
             <language>eng</language>
          </description>
       </displayPlane>
-      <displayPlane id="UnderRADAR" order="-1">
+      <displayPlane id="UnderRadar" order="-1">
          <description>
             <name>Under radar</name>
             <description>Content displayed underneath Radar image</description>
@@ -10142,7 +10081,7 @@
        <type>Boolean</type>
        <default>false</default>
      </parameter>
-     <parameter id="IgnoreScamin">
+     <parameter id="IgnoreScaleMinimum">
        <description>
          <name>Ignore scale minimum</name>
          <description>Features remain visible regardless of display scale</description>
@@ -10217,6 +10156,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="S101AttributeSupport">
+         <description>
+            <name>S101AttributeSupport</name>
+            <description>Support routines to ensure consistent processing of S-101 attributes</description>
+            <language>eng</language>
+         </description>
+         <fileName>S101AttributeSupport.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="Default">
          <description>
             <name>Default</name>
@@ -10224,6 +10174,17 @@
             <language>eng</language>
          </description>
          <fileName>Default.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
+      <ruleFile id="Chart1Feature">
+         <description>
+            <name>Chart1Feature</name>
+            <description>Portrayal rules for features specific to Chart 1</description>
+            <language>eng</language>
+         </description>
+         <fileName>Chart1Feature.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>

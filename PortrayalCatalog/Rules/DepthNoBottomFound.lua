@@ -9,9 +9,9 @@ require 'SNDFRM04'
 function DepthNoBottomFound(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.MultiPoint then
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:33010;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 		local points = feature.MultiPoint.Points
 

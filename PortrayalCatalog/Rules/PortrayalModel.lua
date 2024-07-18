@@ -105,7 +105,7 @@ function CreateContextParameters()
 			
 				contextParameters._observed[k] = true
 
-				--Debug.Trace('Portrayal paramter "' .. k .. '" observed.')
+				--Debug.Trace('Portrayal parameter "' .. k .. '" observed.')
 
 				return r;
 			end
@@ -113,7 +113,7 @@ function CreateContextParameters()
 		
 		__newindex = function (t, k, v)
 			if contextParameters[k] == nil then
-				error('Attempt to set invalid portrayal paramter "' .. tostring(k) .. '"', 2)
+				error('Attempt to set invalid portrayal parameter "' .. tostring(k) .. '"', 2)
 			end
 			
 			contextParameters[k] = v
@@ -121,14 +121,14 @@ function CreateContextParameters()
 			if type(v) == 'boolean' then
 				-- Cannot concatenate booleans
 				if v then
-					Debug.Trace('Setting portrayal paramter: ' .. k .. ' = true')
+					Debug.Trace('Setting portrayal parameter: ' .. k .. ' = true')
 				else
-					Debug.Trace('Setting portrayal paramter: ' .. k .. ' = false')
+					Debug.Trace('Setting portrayal parameter: ' .. k .. ' = false')
 				end
 			elseif type(v) ~= 'table' then
-				Debug.Trace('Setting portrayal paramter: ' .. k .. ' = ' .. v .. '')
+				Debug.Trace('Setting portrayal parameter: ' .. k .. ' = ' .. v .. '')
 			elseif v.Type == 'ScaledDecimal' then
-				Debug.Trace('Setting portrayal paramter: ' .. k .. ' = ' .. v:ToNumber() .. '')
+				Debug.Trace('Setting portrayal parameter: ' .. k .. ' = ' .. v:ToNumber() .. '')
 			end
 		end
 	}
@@ -198,87 +198,211 @@ function CreateFeaturePortrayal(feature)
 		CheckType(viewingGroup, 'number')
 		CheckTypeOrNil(priority, 'number')
 		
+		if not text or text == '' then
+			return
+		end
+		
+		local function GetDrawingInstructions(text, textViewingGroup, textPriority)
+			return 'ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text
+		end
+		
 		local placementFeature = self.Feature
 		
 		local textAssociation = self.Feature:GetFeatureAssociations('TextAssociation')
+		if not textAssociation or #textAssociation < 1 then
+			-- Look for structure -> equipment -> TextPlacement
+			local equipment = self.Feature:GetFeatureAssociations('StructureEquipment', 'theEquipment')
+			if equipment then
+				for _, feature in ipairs(equipment) do
+					local t = feature:GetFeatureAssociations('TextAssociation')
+					if t and #t > 0 then
+						-- only use it to position our name if it isn't positioning the feature name on the equipment
+						if (not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name) and contains(1, t[1].textType) then
+							textAssociation = t
+							break
+						end
+					end
+				end
+			end
+		end
+		
 		if textAssociation and #textAssociation > 0 then
-			-- 0: place feature name override
+		
+			local textPlacementFeature = textAssociation[1]
+			if not rawget(textPlacementFeature, '_initialized') then
+				textPlacementFeature._initialized = true
+				textPlacementFeature._processedFeatureName = false
+				textPlacementFeature._processedLightName = false
+			end
+
 			-- 1: place feature name
-			-- 2: place light description
-			local placementType = textAssociation[1].textType or 0
-			local isLightPlacement = placementType == 2
-			if (isLightDescription and isLightPlacement) or (not isLightDescription and not isLightPlacement) then
+			-- 2: place feature and/or light description
+			local placementType = textPlacementFeature.textType or {}
 			
+			local isNewPortrayal = not rawget(textPlacementFeature, '_featurePortrayal')
+			local hasFeatureName = rawget(textPlacementFeature, '_processedFeatureName')
+
+			local isName = not isLightDescription and not hasFeatureName and self.GetFeatureNameCalled
+			if isName then
+				textPlacementFeature._processedFeatureName = true
+			end
+			
+			local isNameOverride = isName
+			local isNamePlacement = contains(1, placementType) and isName
+			local isCharacterPlacement = contains(2, placementType) and not isLightDescription and not isName
+			local isLightPlacement = contains(2, placementType) and isLightDescription
+			
+			if isNameOverride or isLightPlacement or isNamePlacement or isCharacterPlacement then
+			
+				local drawingInstructions = CreateDrawingInstructions()
+				
 				-- Make the TextPlacement feature the target of our drawing instructions
-				placementFeature = textAssociation[1]
-				placementFeature._featurePortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+				placementFeature = textPlacementFeature
 				
-				-- Add scaleMinimum if present
-				local scaleMinimum = feature['!scaleMinimum']
-				if scaleMinimum and not portrayalContext.ContextParameters.IgnoreScamin then
-					placementFeature._featurePortrayal:AddInstructions('ScaleMinimum:' .. scaleMinimum)
+				if isNewPortrayal then
+					local newPortrayal = placementFeature._featurePortrayalItem:NewFeaturePortrayal()
+					placementFeature._name = {}
+					placementFeature._featureCharacteristics = {}
+					placementFeature._lightCharacteristics = {}
+
+					-- Add the instructions to offset the text relative to the location of the TextPlacement feature
+					local length = placementFeature.textOffsetDistance or 0
+					local direction = placementFeature.textOffsetBearing or 0
+					if length ~= 0 then
+						newPortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
+					end
+					
+					if placementFeature.textRotation then
+						newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
+					else
+						if length == 0 then
+							-- Center the text on the point
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
+						elseif direction >=   5 and direction <  85 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Bottom')
+						elseif direction >=  85 and direction <  95 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center')
+						elseif direction >=  95 and direction < 175 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Top')
+						elseif direction >= 175 and direction < 185 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
+						elseif direction >= 185 and direction < 265 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
+						elseif direction >= 175 and direction < 275 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
+						elseif direction >= 175 and direction < 355 then
+							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
+						else
+							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')
+						end
+					end
+				end
+				
+				local targetTable
+				if isNameOverride or isNamePlacement then
+					targetTable = placementFeature._name
+				elseif isCharacterPlacement then
+					targetTable = placementFeature._featureCharacteristics
+				elseif isLightPlacement then
+					targetTable = placementFeature._lightCharacteristics
+				end
+				
+				if not portrayalContext.ContextParameters.IgnoreScaleMinimum then
+					-- Add scaleMinimum if present
+					local scaleMinimum = textPlacementFeature['!scaleMinimum']
+					if scaleMinimum then
+						-- Prefer value from text placement; it's guaranteed to turn off sooner
+						drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
+					else
+						scaleMinimum = self.Feature['!scaleMinimum']
+						if scaleMinimum then
+							-- Use value from source feature
+							drawingInstructions:Add('ScaleMinimum:' .. scaleMinimum)
+						end
+					end
 				end
 
-				-- Add the instructions to offset the text relative to the location of the TextPlacement feature
-				local length = placementFeature.textOffsetDistance or 0
-				local direction = placementFeature.textOffsetBearing or 0
-				if length ~= 0 then
-					placementFeature._featurePortrayal:AddInstructions('AugmentedRay:GeographicCRS,' .. direction .. ',PortrayalCRS,' .. length .. ';LinePlacement:Relative,1')
-				end
-				
-				if placementFeature.textRotation then
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Start;TextAlignVertical:Center;Rotation:GeographicCRS,' .. direction)
-				else
-					-- Center the text on the point
-					placementFeature._featurePortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Center')
-				end
-
-				-- Copy current text style to target feature (TextAlignHorizontal and TextAlignVertical are intentionally not copied)
-				local fontStyle = {
-					['DisplayPlane:'] = 'DisplayPlane:UnderRADAR',
+				-- Copy relevant drawing instructions to the target feature (TextAlignHorizontal, TextAlignVertical, and TextVerticalOffset are intentionally not copied)
+				local targetCommands =
+				{
+					['DisplayPlane:'] = 'DisplayPlane:UnderRadar',
 					['FontColor:'] = 'FontColor:CHBLK',	-- transparency = 0
-					['FontBackgroundColor:'] = nil,		-- token="", transparency=1
-					['FontSize:'] = nil,				-- 10
-					['FontProportion:'] = nil,			-- "Proportional"
-					['FontWeight:'] = nil,				-- "Medium"
-					['FontSlant:'] = nil,				-- "Upright"
-					['FontSerifs:'] = nil,				-- false
-					['FontUnderline:'] = nil,			-- false
-					['FontStrikethrough:'] = nil,		-- false
-					['FontUpperline:'] = nil,			-- false
-					['FontReference:'] = nil,			-- ""
-					['TextVerticalOffset:'] = nil		-- 0
+					['FontBackgroundColor:'] = "nil",	-- token="", transparency=1
+					['FontSize:'] = "nil",				-- 10
+					['FontProportion:'] = "nil",		-- "Proportional"
+					['FontWeight:'] = "nil",			-- "Medium"
+					['FontSlant:'] = "nil",				-- "Upright"
+					['FontSerifs:'] = "nil",			-- false
+					['FontUnderline:'] = "nil",			-- false
+					['FontStrikethrough:'] = "nil",		-- false
+					['FontUpperline:'] = "nil",			-- false
+					['FontReference:'] = "nil",			-- ""
+					['Hover:'] = "nil",					-- false
+				}
+				-- Store / Copy relevant time intervals
+				local timeState = {}
+				local timeCommands =
+				{
+					['Date:'] = "nil",
+					['Time:'] = "nil",
+					['DateTime:'] = "nil",
+					['TimeValid:'] = "nil"
 				}
 				for _, v in ipairs(self.DrawingInstructions) do
 					for instruction in string.gmatch(v, "([^;]+)") do
-						for k, _ in pairs(fontStyle) do
+						if string.find(instruction, 'ClearTime', 1, true) ~= nil then
+							-- ClearTime clears all accumulated time intervals
+							timeState = {}
+						end
+						for k, _ in pairs(targetCommands) do
 							if string.find(instruction, k, 1, true) ~= nil then
-								k = v
+								-- Overwrite with current state
+								targetCommands[k] = instruction
+							end
+						end
+						for k, _ in pairs(timeCommands) do
+							if string.find(instruction, k, 1, true) ~= nil then
+								-- Accumulate state
+								table.insert(timeState, instruction)
 							end
 						end
 					end
 				end
 				
-				-- Add the style to the TextPlacement feature
-				for k, v in pairs(fontStyle) do
-					if v ~= nil then
-						placementFeature._featurePortrayal:AddInstructions(v)
+				-- Add the copied drawing instructions to the TextPlacement feature
+				for k, v in pairs(targetCommands) do
+					if v ~= "nil" then
+						drawingInstructions:Add(v)
 					end
 				end
-				-- Done copying text style
+				-- Add the accumulated time intervals to the TextPlacement feature
+				for k, v in ipairs(timeState) do
+					drawingInstructions:Add(v)
+				end
+				-- Done copying drawing instructions
+
+				-- Add observed context parameters
+				-- Force addition of NationalLanguage
+				local nationalLanguage = portrayalContext.ContextParameters.NationalLanguage
+				-- TODO: merge the observed parameters with any existing
+				placementFeature._featurePortrayalItem.ObservedContextParameters = portrayalContext.ContextParameters._observed
+				placementFeature._featurePortrayalItem.InUseContextParameters = portrayalContext.ContextParameters._asTable
+				
+				-- Save the drawing instructions with the text
+				drawingInstructions:Add(GetDrawingInstructions(text, textViewingGroup, textPriority))
+				table.insert(targetTable, { text, drawingInstructions })
 			end
 		end
 		
-		-- Add the instructions to draw the text
-		placementFeature._featurePortrayal:AddInstructions('ViewingGroup:' .. textViewingGroup .. ',' .. viewingGroup .. ';DrawingPriority:' .. textPriority .. ';TextInstruction:' .. text)
 		if placementFeature == self.Feature then
+			-- Add the instructions to draw the text
+			placementFeature._featurePortrayal:AddInstructions(GetDrawingInstructions(text, textViewingGroup, textPriority))
+			
 			-- Reset the state in case the caller generates further non-text drawing instructions
 			self:AddInstructions('ViewingGroup:' .. viewingGroup)
 			if priority then
 				self:AddInstructions('DrawingPriority:' .. priority)
 			end
-		else
-			HostPortrayalEmit(placementFeature._featurePortrayal.FeatureReference, table.concat(placementFeature._featurePortrayal.DrawingInstructions, ';'), ObservedContextParametersAsString(placementFeature._featurePortrayalItem))
 		end
 	end
 
@@ -318,8 +442,7 @@ function CreateFeaturePortrayal(feature)
 
 	--
 	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected national language. If no match is found,
-	-- returns the first entry marked as the default (nameUsage == 1). If no default is present, returns the first English name. Otherwise
-	-- returns nil.
+	-- returns the first entry marked as the default (nameUsage == 1). Otherwise returns nil.
 	function featurePortrayal:GetFeatureName(feature, contextParameters)
 		CheckSelf(self, featurePortrayal.Type)
 		CheckType(feature, 'Feature')
@@ -327,58 +450,39 @@ function CreateFeaturePortrayal(feature)
 
 		self.GetFeatureNameCalled = true
 		
+		-- text attribute was removed as of the 1.4.1 FC
 		-- TextPlacement can override feature name
-		local textAssociation = feature:GetFeatureAssociations('TextAssociation')
-		if textAssociation and #textAssociation > 0 and textAssociation[1].text then
-			return textAssociation[1].text
-		end
+		--local textAssociation = feature:GetFeatureAssociations('TextAssociation')
+		--if textAssociation and #textAssociation > 0 and textAssociation[1].text then
+			--return textAssociation[1].text
+		--end
 		
 		if not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name then
 			return nil
 		end
 		
-		local englishSelected = not contextParameters.NationalLanguage or contextParameters.NationalLanguage == 'eng' or contextParameters.NationalLanguage == ''
 		local defaultName			-- an entry with nameUsage == 1
-		local englishName			-- the first English name
-		local nationalName			-- the first entry which matched the selected national language
 		for cnt, featureName in ipairs(feature.featureName) do
-		
-			-- ensure a name is present
-			if featureName.name and featureName.name ~= '' then
 
-				-- don't process if only intended for pick report
-				if not featureName.nameUsage or featureName.nameUsage ~= 3 then
-				
-					local isEnglishName = not featureName.language or featureName.language == 'eng'
-					local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage) or (englishSelected and isEnglishName)
+			-- ensure a name is present and it's intended for chart display
+			if featureName.name and featureName.nameUsage then
+				local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage)
 
-					-- check for default values which are used if we can't otherwise find a match...
-					if featureName.nameUsage then
-						if featureName.nameUsage == 1 then
-							-- only one entry is permitted to have nameUsage set to one
-							defaultName = featureName.name
-						elseif featureName.nameUsage == 2 then
-							-- use the entry intended for chart display which matched the selected lanaguage
-							if languageMatches then
-								return featureName.name
-							end
-						end
+				-- check for default values which are used if we can't otherwise find a match...
+				if featureName.nameUsage == 1 then
+					if languageMatches then
+						return featureName.name
 					end
-
-					if not englishName and isEnglishName then
-						englishName = featureName.name
-					end
-
-					if not nationalName and languageMatches then
-						nationalName = featureName.name
-					end
-					
+					-- only one entry is permitted to have nameUsage set to one
+					defaultName = featureName.name
+				elseif featureName.nameUsage == 2 and languageMatches then
+					-- use the entry intended for chart display which matched the selected lanaguage
+					return featureName.name
 				end
 			end
-			
 		end
 		
-		return nationalName or defaultName or englishName
+		return defaultName
 	end
 	
 	return featurePortrayal
@@ -394,16 +498,26 @@ function CreateDrawingInstructions()
 	return drawingInstructions;
 end
 
--- Updated per #61 - temporarily remove NationalLanguage context parameter
 function GetInformationText(information, contextParameters)
 	local defaultText
 
 	for _, text in ipairs(information.information) do
-		if text.text and text.text ~= '' and (text.language == nil or text.language == 'eng' or text.language == '') then
-			return text.text
+		if text.text and text.text ~= '' then
+			if text.language then
+				if text.language == contextParameters.NationalLanguage then
+					-- return the national language text
+					defaultText = text.text
+					break
+				end
+				if text.language == 'eng' or text.language == '' then
+					-- default to english text
+					defaultText = defaultText or text.text
+				end
+			else
+				-- no language specified, assume eng
+				defaultText = defaultText or text.text
+			end
 		end
-	
-		defaultText = defaultText or text.text
 	end
 
 	return defaultText

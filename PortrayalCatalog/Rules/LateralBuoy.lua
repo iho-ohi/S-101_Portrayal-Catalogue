@@ -10,10 +10,10 @@ function LateralBuoy(feature, featurePortrayal, contextParameters)
 	local textViewingGroup = 21
 	local priority = 24
 	local textPriority = 24
-	local displayPlane = 'UnderRADAR'
+	local displayPlane = 'UnderRadar'
 
 	if contextParameters.RadarOverlay then
-		displayPlane = 'OverRADAR'
+		displayPlane = 'OverRadar'
 	end
 	
 	featurePortrayal:AddInstructions('AlertReference:NavHazard;Hover:true;ViewingGroup:' .. viewingGroup .. ';DrawingPriority:' .. priority .. ';DisplayPlane:' .. displayPlane)

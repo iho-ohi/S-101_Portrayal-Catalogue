@@ -10,25 +10,25 @@ function LocalMagneticAnomaly(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG01')
 		
 
 	elseif feature.PrimitiveType == PrimitiveType.Curve then
-		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG01')
 	elseif feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
-		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
-		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:31080;DrawingPriority:12;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:LOCMAG51')
 		featurePortrayal:AddInstructions('LineInstruction:CTYARE51')
 	else

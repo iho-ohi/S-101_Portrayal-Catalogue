@@ -2,10 +2,14 @@
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
+[i8]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/8
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
 [i99]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/99
 [i144]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/144
+[i157]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/157
 [i175]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/175
+[i177]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/177
+[i204]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/204
 [i214]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/214
 [i224]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/224
 [i226]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/226
@@ -71,6 +75,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i338]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/338
 [i340]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/340
 [i341]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/341
+[i342]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/342
 [i344]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/344
 [i345]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/345
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
@@ -97,27 +102,102 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i373]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/373
 [i374]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/374
 [i375]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/375
+[i376]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/376
 [i377]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/377
 [i378]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/378
 [i379]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/379
 [i380]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/380
 [i381]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/381
+[i382]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/382
 [i383]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/383
 [i384]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/384
 [i387]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/387
 [i346]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/346
+[i386]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/386
+[i388]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/388
+[i389]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/389
+[i390]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/390
+[i391]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/391
+[i392]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/392
+[i393]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/393
+[i394]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/394
+[i395]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/395
+[i396]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/396
+[i397]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/397
+[i398]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/398
+[i399]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/399
+[i400]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/400
+[i401]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/401
+[i404]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/404
+[i405]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/405
+[i406]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/406
+[i409]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/409
+[i410]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/410
+[i411]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/411
+[i412]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/412
+[i413]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/413
+[i414]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/414
+[i415]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/415
+[i416]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/416
+[i417]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/417
+[i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
+[i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
+[i420]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/420
+[i423]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/423
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 1.3.X - use with FC 1.3.X
+### 1.4.X - use with FC 1.4.X
+* Misc changes
+	* [#391][i391] Update main version number to 1.4.0-DRAFT
+ 	* [#390][i390] Remove "dock (DOCARE)" from name of viewing group `12420`
+  	* [#393][i393] Update FC to 1.3.1
+  	* [#157][i157] Update contents for utf-8 encoding
+  	* [#404][i404] Remove `testPCB`
+  	* [#405][i405] Update FC to 1.4.0 dated 2024-07-03
+  	* [#410][i410] Remove alert catalog references to non-existent icons
+  	* [#414][i414] Remove the alert viewing group layer and implement alert viewing groups as independent selectors
+  	* [#415][i415] Message associated with disablement of graphical highlight of ProhAre alerts changed to "Indication of some prohibited areas or areas with special conditions is Off"
+  	* [#419][i419] Change name of viewing group `21020` from "Generic object (NEWOBJ01)" to "Chart 1 feature, virtual AIS aid to navigation"
+  	* [#420][i420] Update FC to reflect changes expected in 1.4.1
+  	* [#8][i8] Update catalog and rules with (expected) xmlID's from portrayal registry
+
+* Lua Rule File / Symbol Updates
+	* [#382][i382] Landmark featureName placement differs for simplified/traditional
+ 	* [#394][i394] `TextPlacement` is not copying all relevant drawing instructions
+  	* [#395][i395] Enhance `TextPlacement` to support output of multiple strings
+  	* [#396][i396] Update alignment of `TextPlacement` per S-101PT13-07.8
+  	* [#399][i399] Add comment to TextPlacement.lua noting implementation location
+  	* [#361][i361] `flareBearing` is not required; reinstate S-52 flare bearing logic
+  	* [#400][i400] Removed point as allowable geometry for `FloatingDock`
+  	* [#401][i401] Removed point as allowable geometry for `Pontoon`
+  	* [#392][i392] `DistanceMark` portrays using symbol `DISMAR07` when visible with no structure
+  	* [#411][i411] Fix typo in `CreateAttributeConstraints`
+  	* [#412][i412] Add compatibility checks for Lua versions other than 5.1
+  	* [#413][i413] `SeaAreaNamedWaterArea` should always output NullInstruction
+  	* [#376][i376] Add light description on sector lights
+  	* [#397][i397] Enhance `TextPlacement` to support placing feature characteristics
+  	* [#398][i398] Support combined `TextPlacement` per S-101PT13-07.8
+  	* [#409][i409] `no chart display (3)` is no longer valid for `nameUsage`
+  	* [#416][i416] Implement `scaleMinimum` for `TextPlacement`
+  	* [#418][i418] TOPMAR02 undefined for `EmergencyWreckMarkingBuoy` and `IsolatedDangerBuoy`
+  	* [#417][i417] Depict horizontal clearance values
+  	* [#389][i389] Added `Chart1Feature`
+  	* [#406][i406] Enhanced error checks for `UpdateInformation`
+  	* [#423][i423] TrafficSeparationSchemeLanePart only displays english text
+
+### 1.3.0 - use with FC 1.3.0
 * Misc changes
 	* [#346][i346] Update version prior to release 1.3.X, initial version
 	* [#348][i348] SVG <fileName> duplication, BOYCON30.svg ---> BOYCON31.svg
 	* [#345][i345] Remove svg from CSS files
  	* [#353][i353] Update description of viewing group `22010` to include `DockArea`
   	* [#381][i381] Remove older changes from README
+  	* [#342][i342] Update branch catzoc-alternate-portrayals
   	* [#346][i346] Prepare for 1.3.0-PR (Peer Review)
+	* [#388][i388] Update version from 1.3.0-PR to final release 1.3.0 after peer review
+
 * Lua Rule File / Symbol Updates
 	* [#349][i349] Fix metadata validation issues in multiple symbols
  	* [#350][i350] Remove catalog entry for unused symbol EMNEWOB1.svg
@@ -153,77 +233,4 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#360][i360] Implement portrayal for `StructureOverNavigableWater`
   	* [#365][i365] “system” attribute in the water, [PSWG #161, Row 21]
   	* [#387][i387] `BOYPIL60` has extraneous circles
-
-### 1.2.3 - use with FC 1.2.3
-* Misc changes
-	* [#274][i274] Update main version number to 1.2.0-DRAFT developmental use towards 1.2.0. For use with S-101 FC v1.2.0.
- 	* [#282][i282] Update FC to 1.2.0 from IHO GI registry.
- 	    * Local change: Fix multiplicity of `Dolphin` attribute binding to `categoryOfDolphin`
- 	    * Local change: Updated to FC 1.2.2 by incorporating changes provided from JP (fixes various issues with associations)
-  	* [#229][i229] Update alert catalog to S-100 5.1 schema
-  	* [#287][i287] Update AreaFills to S-100 5.1 schema
-  	* [#288][i288] Update ColorProfiles to S-100 5.1 schema
-  	* [#289][i289] Update LineStyles to S-100 5.1 schema
-  	* [#290][i290] Update portrayal_catalogue.xml to S-100 5.1 schema
-  	* [#291][i291] Remove duplicate catalog entry for `BOYPIL10`
-  	* [#320][i320] Remove IMS for `Unknown`; add VG `21010` to VGL 10 and 10a. "?" symbol is now part of `Standard` display
-  	* [#329][i329] Update references in the alert catalog from MSC.232(82) to MSC.530(106)
-  	* [#338][i338] Prevent potential naming issue in PortrayalModel
-  	* [#337][i337] Remove viewing groups which don't have features assigned
-  	* [#266][i266] BOYLAT34 incorrect viewbox, OBE removed from catalog symbol no longer used
-	* [#341][i341] PC Peer Review Release 1.2.0-PR
-	* [#273][i273] Update version prior to release as 1.2.3
-* Lua Rule File / Symbol Updates
-	* [#276][i276] New symbol for emergency wreck marking buoy (EWMB) [PSWG #117]
-	* [#238][i238] Introduce color filled paper chart symbols for buoys and beacons [PSWG #117]
- 	* [#277][i277] Topmarks should use viewing group 27050
-  	* [#278][i278] Missing catalog entries for `BOYCON30` and `BOYCON31`
-  	* [#279][i279] Remove color fill from `DockArea`
-  	* [#272][i272] Amend colors for `LocalMagneticAnomaly`
-  	* [#280][i280] `TextInstruction` requires a `FontColor` text style command
-  	* [#281][i281] `AnchorBerth` has active Debug.Break() statement
-  	* [#276][i276] Re-opened for additional fix: Emergency wreck marking buoy (EWMB) [PSWG #117]
-  	* [#144][i144] Display parameters for 'New Text' [PSWG #104]
-  	* [#292][i292] Rename buoy and beacon features
-  	* [#293][i293] Add new feature `Dolphin`
-  	* [#294][i294] Add new feature `Bollard`
-  	* [#296][i296] Add new feature `MooringBuoy`
-  	* [#295][i295] Remove feature `MooringWarpingFacility`
-  	* [#297][i297] `Runway` with point geomeetry is invalid
-  	* [#298][i298] Add new feature `Helipad`
-  	* [#299][i299] Add new feature `MooringArea`
-  	* [#300][i300] Remove calculation of default clearance depth: one of `valueOfSounding` or `defaultClearanceDepth` must have a value
-  	* [#301][i301] `sectorExtension` renamed to `sectorArcExtension`
-  	* [#302][i302] `RestrictedArea` replaces `RestrictedAreaRegulatory` and `RestrictedAreaNavigational`
-	* [#214][i214] `LocalMagneticAnomaly` updated to DCEG 1.2.0, removal of +/-
-	* [#144][i144] Display parameters for 'New Text' [PSWG #104], fixed bug in alternate name processing
-	* [#307][i307] Removed value 6 (swept by wire-drag), replace with 18 (mechanically swept) SNDFRM04.lua
-	* [#305][i305] Add curve primitive: Administration, Continental Shelf, Territorial Sea Areas, Contiguous Zone,Exclusive Economic Zone
-	* [#304][i304] New attribute power-driven vessels prohibited (Gap analysis 19OCT23 Row 37 related, RESARE04)
-	* [#228][i228] Show contour labels centered on visible portion(s) of depth contour
-	* [#306][i306] Bridge re-modelled
- 	* [#285][i285] Updated `QoBD` evaluation of depth range
-	* [#312][i312] Fix syntax error Bridge re-modelled lua file.
- 	* [#313][i313] Curve geometry is invalid for `Obstruction` with `categoryOfObstruction` = `mangrove`
-  	* [#99][i99] Initial implementation of `UpdateInformation` portrayal; `updateType`=`move` is only partially implemented due to lack of test data
-  	* [#318][i318] Use drawing priority of 30 for `UpdateInformation`
-  	* [#309][i309] New feature MooringArea, VG as MORFAC
-	* [#319][i319] Updated symbol BOYSPP35
- 	* [#322][i322] Fix issue with performance counters in OBSTRN07.lua
-  	* [#321][i321] Implement IMS changes (VG -> 90k's, VGL -> 900's)
-  	* [#323][i323] `Bridge` with no geometry shouldn't generate an alert
-  	* [#324][i324] `PhysicalAISAidToNavigation` should generate NavHazard alert
-  	* [#325][i325] Point geometry not allowed for `SpanOpening` and `SpanFixed`
-  	* [#326][i326] Mooring cable should generate NavHazard alert
-  	* [#327][i327] Update alert catalog to provide alert priorities per MSC.530(106)
-  	* [#311][i311] Adjust text placement for `SpanFixed`, `SpanOpening`, `CableOverhead`
-  	* [#330][i330] `Bridge` should evaluate `featureName`
-  	* [#332][i332] Remove highlight* viewing groups (no longer used by IMS)
-  	* [#333][i333] `Landmark` is not emitting FontColor command
-  	* [#334][i334] Complete implementation of `featureName`
-  	* [#175][i175] Ensure correct handling of `featureName` attribute `nameUsage`
-  	* [#335][i335] `DepthNoBottomFound` should not support geometry of type point, only pointSet is permitted
-  	* [#3][i3] Add support for `TextPlacement`
-  	* [#336][i336] Use new viewing group `32 - Auxiliary names` when new labels are added via `featureName.name`
-  	* [#303][i303] Add support for `textRotation` attribute of the `TextPlacement` feature
-  	* [#17][i17] Updated all SAFCON5X symbol view-boxes and pivot-points 
+ 	* [#386][i386] Problems with MooringArea

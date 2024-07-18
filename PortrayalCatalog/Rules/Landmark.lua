@@ -12,7 +12,7 @@
 function Landmark(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 32220
 	local drawingPriority = 12
-	local displayPlane = 'UnderRADAR'
+	local displayPlane = 'UnderRadar'
 	
 	if feature.visualProminence == 1 then
 		viewingGroup = 22220
@@ -30,7 +30,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 	
 	if feature.PrimitiveType == PrimitiveType.Point or feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
-			displayPlane = 'OverRADAR'
+			displayPlane = 'OverRadar'
 		end
 	end
 
@@ -180,7 +180,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) and feature.visualProminence == 1 then
 			featurePortrayal:AddInstructions('PointInstruction:TOWERS15')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;TextAlignVertical:Center;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;TextAlignVertical:Center;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, viewingGroup, drawingPriority)
 			end
 		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) and feature.visualProminence == 1 then
@@ -242,7 +242,7 @@ function Landmark(feature, featurePortrayal, contextParameters)
 		elseif contains(17, feature.categoryOfLandmark) and contains(31, feature['function']) then
 			featurePortrayal:AddInstructions('PointInstruction:TOWERS05')
 			if feature.featureName[1] and feature.featureName[1].name then
-				featurePortrayal:AddInstructions('LocalOffset:3.51,-3.51;TextAlignVertical:Center;FontColor:CHBLK')
+				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;TextAlignVertical:Center;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters)), 26, 24, viewingGroup, drawingPriority)
 			end
 		elseif contains(17, feature.categoryOfLandmark) and contains(33, feature['function']) then

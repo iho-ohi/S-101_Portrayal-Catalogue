@@ -96,7 +96,7 @@ function AddDateDependentSymbol(feature, featurePortrayal, contextParameters, vi
 
 	featurePortrayal:AddInstructions('Hover:true')
 
-	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+	local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRadar' or 'DisplayPlane:UnderRadar'
 
 	featurePortrayal:AddInstructions(displayPlane)
 	featurePortrayal:AddInstructions('ViewingGroup:' .. viewingGroup .. ',90022;DrawingPriority:24;PointInstruction:CHDATD01')
@@ -150,7 +150,7 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 
 		featurePortrayal:AddInstructions('Hover:true')
 
-		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRadar' or 'DisplayPlane:UnderRadar'
 
 		if vg90020 then
 			featurePortrayal:AddInstructions(displayPlane)
@@ -237,7 +237,22 @@ local function ScaledDecimalToNumber(scaledDecimal)
 	return value
 end
 
-function ScaledDecimalCompare(scaledDecimal1, scaledDecimal2)
+local function ScaledDecimalCompare_EqMetaMethodGuarantee(scaledDecimal1, scaledDecimal2)
+	CheckType(scaledDecimal1, 'ScaledDecimal')
+	CheckType(scaledDecimal2, 'ScaledDecimal')
+
+	local sd1 = { Value = scaledDecimal1.Value, Scale = scaledDecimal1.Scale }
+	local sd2 = { Value = scaledDecimal2.Value, Scale = scaledDecimal2.Scale }
+
+	NormalizeScaledDecimals(sd1, sd2)
+
+	return sd1.Value - sd2.Value
+end
+
+local function ScaledDecimalCompare_NotEqMetaMethodGuarantee(scaledDecimal1, scaledDecimal2)
+	if scaledDecimal2.Type ~= 'ScaledDecimal' then
+		return 1
+	end
 	CheckType(scaledDecimal1, 'ScaledDecimal')
 	CheckType(scaledDecimal2, 'ScaledDecimal')
 
@@ -280,6 +295,8 @@ local function ScaledDecimalSplit(scaledDecimal)
 		return sign, left, right
 	end
 end
+
+local ScaledDecimalCompare = EqMetaMethodGuarantee and ScaledDecimalCompare_EqMetaMethodGuarantee or ScaledDecimalCompare_NotEqMetaMethodGuarantee
 
 local scaledDecimalMetatable =
 {

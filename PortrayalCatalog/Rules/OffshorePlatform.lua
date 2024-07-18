@@ -9,9 +9,9 @@ function OffshorePlatform(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 12210
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:OFSPLF01')
 		if feature.featureName[1] and feature.featureName[1].name then
@@ -32,9 +32,9 @@ function OffshorePlatform(feature, featurePortrayal, contextParameters)
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 12210
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		featurePortrayal:SimpleLineStyle('solid',1.28,'CSTLN')

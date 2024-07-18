@@ -25,9 +25,9 @@ function Building(feature, featurePortrayal, contextParameters)
 	featurePortrayal:AddInstructions('DrawingPriority:' .. drawingPriority)
 	
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.RadarOverlay then
-		featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+		featurePortrayal:AddInstructions('DisplayPlane:OverRadar')
 	else
-		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 	end
 
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then

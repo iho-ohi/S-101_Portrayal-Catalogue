@@ -3,6 +3,8 @@
 -- #162
 -- #276, [PSWG #117]
 
+require 'TOPMAR02'
+
 function EmergencyWreckMarkingBuoy(feature, featurePortrayal, contextParameters)
   local viewingGroup
   local symbol = 'BOYGEN03'
@@ -12,9 +14,9 @@ function EmergencyWreckMarkingBuoy(feature, featurePortrayal, contextParameters)
   if feature.PrimitiveType == PrimitiveType.Point then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		
 		if contextParameters.SimplifiedSymbols then

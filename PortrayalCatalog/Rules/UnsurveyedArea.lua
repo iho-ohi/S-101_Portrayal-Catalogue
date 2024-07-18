@@ -8,7 +8,7 @@ function UnsurveyedArea(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 11050
-		featurePortrayal:AddInstructions('ViewingGroup:11050;DrawingPriority:3;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:11050;DrawingPriority:3;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('ColorFill:NODTA')
 		featurePortrayal:AddInstructions('AreaFillReference:NODATA03')
 		featurePortrayal:SimpleLineStyle('solid',0.64,'CHGRD')

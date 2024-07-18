@@ -6,9 +6,9 @@ function StraightTerritorialSeaBaseline(feature, featurePortrayal, contextParame
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 36050
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:36050;DrawingPriority:9;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:36050;DrawingPriority:9;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:36050;DrawingPriority:9;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:36050;DrawingPriority:9;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('dash',0.32,'CHGRF')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

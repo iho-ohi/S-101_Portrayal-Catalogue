@@ -12,9 +12,9 @@ function LightFloat(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point and contextParameters.SimplifiedSymbols then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:LITFLT02')
 		if feature.featureName[1] and feature.featureName[1].name then
@@ -24,9 +24,9 @@ function LightFloat(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Point then
 		viewingGroup = 27010
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:27010;DrawingPriority:24;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:LITFLT01')
 		TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true)

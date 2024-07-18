@@ -16,7 +16,7 @@ function SlopingGround(feature, featurePortrayal, contextParameters)
 		end
 
 		viewingGroup = 32010
-		featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
@@ -32,7 +32,7 @@ function SlopingGround(feature, featurePortrayal, contextParameters)
 				lineColor = 'CHBLK'
 		end
 
-		featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:32010;DrawingPriority:9;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('ColorFill:' .. fillColor)
 		featurePortrayal:SimpleLineStyle('solid',0.32,lineColor)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

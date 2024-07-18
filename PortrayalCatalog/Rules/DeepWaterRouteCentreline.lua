@@ -7,9 +7,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		if feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -17,9 +17,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -27,9 +27,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL08')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -37,9 +37,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL06')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -47,9 +47,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -57,9 +57,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -67,9 +67,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -77,9 +77,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL05')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -87,9 +87,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 1 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -97,9 +97,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 2 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -107,9 +107,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 3 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL07')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -117,9 +117,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		elseif feature.trafficFlow == 4 then
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWRTCL05')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')
@@ -127,9 +127,9 @@ function DeepWaterRouteCentreline(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 25010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:DWLDEF01')
 			featurePortrayal:AddInstructions('LocalOffset:0,3.51;TextAlignHorizontal:Center;FontSize:10;FontColor:CHBLK')

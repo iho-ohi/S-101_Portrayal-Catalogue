@@ -8,9 +8,9 @@ function RadarStation(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:38010;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		
 		if contains(2, feature.categoryOfRadarStation) then

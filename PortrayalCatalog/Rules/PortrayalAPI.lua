@@ -338,7 +338,7 @@ end
 --
 --
 
-function CreateAttributeConstraints(stringLength, textPattern, rangeLower, rangeUpper, closure, precision)
+function CreateAttributeConstraints(stringLength, textPattern, rangeLower, rangeUpper, rangeClosure, precision)
 	CheckTypeOrNil(stringLength, 'number')
 	CheckTypeOrNil(textPattern, 'string')
 	CheckTypeOrNil(rangeLower, 'string')

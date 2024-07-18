@@ -8,9 +8,9 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 		if feature.categoryOfCable == 6 or feature.categoryOfCable == 7 then
 			viewingGroup = 24010
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			if feature.categoryOfCable == 6 then
 				-- mooring cable should generate alert since S-52 alerts on all MORFAC
@@ -21,9 +21,9 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34070
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06')
 		end

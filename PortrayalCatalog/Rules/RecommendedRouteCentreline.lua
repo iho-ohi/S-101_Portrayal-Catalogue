@@ -8,9 +8,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		if feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL14')
 			if feature.orientationValue then
@@ -20,9 +20,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL14')
 			if feature.orientationValue then
@@ -32,9 +32,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL14')
 			if feature.orientationValue then
@@ -44,9 +44,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL13')
 			if feature.orientationValue then
@@ -56,9 +56,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -68,9 +68,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -80,9 +80,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -92,9 +92,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif not feature.basedOnFixedMarks and feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL11')
 			if feature.orientationValue then
@@ -104,9 +104,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.trafficFlow == 1 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -116,9 +116,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.trafficFlow == 2 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -128,9 +128,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.trafficFlow == 3 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL12')
 			if feature.orientationValue then
@@ -140,9 +140,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		elseif feature.trafficFlow == 4 then
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRTCL11')
 			if feature.orientationValue then
@@ -152,9 +152,9 @@ function RecommendedRouteCentreline(feature, featurePortrayal, contextParameters
 		else
 			viewingGroup = 25020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRADAR')
+				featurePortrayal:AddInstructions('ViewingGroup:25020;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:RCRDEF11')
 			if feature.orientationValue then

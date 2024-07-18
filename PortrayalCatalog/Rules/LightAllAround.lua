@@ -9,9 +9,9 @@ require 'LITDSN02'
 -- Main entry point for feature type.
 function LightAllAround(feature, featurePortrayal, contextParameters)
 	if contextParameters.RadarOverlay then
-		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:OverRADAR;Hover:true')
+		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:OverRadar;Hover:true')
 	else
-		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:UnderRADAR;Hover:true')
+		featurePortrayal:AddInstructions('ViewingGroup:27070;DrawingPriority:24;DisplayPlane:UnderRadar;Hover:true')
 	end
 
 	local valueOfNominalRange = 9.0

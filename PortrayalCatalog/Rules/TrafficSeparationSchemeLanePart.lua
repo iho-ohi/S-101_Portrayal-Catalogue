@@ -5,25 +5,25 @@ require 'RESTRN01'
 function TrafficSeparationSchemeLanePart(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
 		if feature.orientationValue then
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:TSSLPT51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			RESTRN01(feature, featurePortrayal, contextParameters)
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('PointInstruction:CTNARE51')
 			RESTRN01(feature, featurePortrayal, contextParameters)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		if feature.orientationValue then
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:TSSLPT51')
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			RESTRN01(feature, featurePortrayal, contextParameters)
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25010;DrawingPriority:18;DisplayPlane:UnderRadar')
 			featurePortrayal:AddInstructions('AreaFillReference:TSSJCT02')
 			featurePortrayal:AddInstructions('PointInstruction:CTNARE51')
 			RESTRN01(feature, featurePortrayal, contextParameters)

@@ -7,9 +7,9 @@ function Dolphin(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and Paper chart use same symbolization
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		end
 		if feature.categoryOfDolphin and feature.categoryOfDolphin == 2 then
 			-- Deviation Dolphin
@@ -20,7 +20,7 @@ function Dolphin(feature, featurePortrayal, contextParameters)
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
-		featurePortrayal:AddInstructions('DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('ColorFill:CHBRN')
 		featurePortrayal:SimpleLineStyle('solid',0.32,'CHBLK')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

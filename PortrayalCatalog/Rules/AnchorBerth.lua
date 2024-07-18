@@ -15,9 +15,9 @@ function AnchorBerth(feature, featurePortrayal, contextParameters)
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 26220
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		if feature.featureName[1] and feature.featureName[1].name then
@@ -27,7 +27,7 @@ function AnchorBerth(feature, featurePortrayal, contextParameters)
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 26220
-		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:UnderRADAR')
+		featurePortrayal:AddInstructions('ViewingGroup:26220;DrawingPriority:15;DisplayPlane:UnderRadar')
 		featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 		if feature.featureName[1] and feature.featureName[1].name then
 			featurePortrayal:AddInstructions('LocalOffset:3.51,0;FontSize:10;FontColor:CHBLK')

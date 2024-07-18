@@ -6,9 +6,9 @@ function RadarLine(feature, featurePortrayal, contextParameters)
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		viewingGroup = 25040
 		if contextParameters.RadarOverlay then
-			featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:18;DisplayPlane:OverRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:18;DisplayPlane:OverRadar')
 		else
-			featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:18;DisplayPlane:UnderRADAR')
+			featurePortrayal:AddInstructions('ViewingGroup:25040;DrawingPriority:18;DisplayPlane:UnderRadar')
 		end
 		featurePortrayal:SimpleLineStyle('dash',0.64,'TRFCD')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
