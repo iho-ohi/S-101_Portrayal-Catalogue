@@ -498,16 +498,26 @@ function CreateDrawingInstructions()
 	return drawingInstructions;
 end
 
--- Updated per #61 - temporarily remove NationalLanguage context parameter
 function GetInformationText(information, contextParameters)
 	local defaultText
 
 	for _, text in ipairs(information.information) do
-		if text.text and text.text ~= '' and (text.language == nil or text.language == 'eng' or text.language == '') then
-			return text.text
+		if text.text and text.text ~= '' then
+			if text.language then
+				if text.language == contextParameters.NationalLanguage then
+					-- return the national language text
+					defaultText = text.text
+					break
+				end
+				if text.language == 'eng' or text.language == '' then
+					-- default to english text
+					defaultText = defaultText or text.text
+				end
+			else
+				-- no language specified, assume eng
+				defaultText = defaultText or text.text
+			end
 		end
-	
-		defaultText = defaultText or text.text
 	end
 
 	return defaultText
