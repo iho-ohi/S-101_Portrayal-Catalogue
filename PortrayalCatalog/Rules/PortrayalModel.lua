@@ -247,7 +247,7 @@ function CreateFeaturePortrayal(feature)
 				textPlacementFeature._processedFeatureName = true
 			end
 			
-			local isNameOverride = textAssociation[1].text and isName
+			local isNameOverride = isName
 			local isNamePlacement = contains(1, placementType) and isName
 			local isCharacterPlacement = contains(2, placementType) and not isLightDescription and not isName
 			local isLightPlacement = contains(2, placementType) and isLightDescription
@@ -450,11 +450,12 @@ function CreateFeaturePortrayal(feature)
 
 		self.GetFeatureNameCalled = true
 		
+		-- text attribute was removed as of the 1.4.1 FC
 		-- TextPlacement can override feature name
-		local textAssociation = feature:GetFeatureAssociations('TextAssociation')
-		if textAssociation and #textAssociation > 0 and textAssociation[1].text then
-			return textAssociation[1].text
-		end
+		--local textAssociation = feature:GetFeatureAssociations('TextAssociation')
+		--if textAssociation and #textAssociation > 0 and textAssociation[1].text then
+			--return textAssociation[1].text
+		--end
 		
 		if not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name then
 			return nil
