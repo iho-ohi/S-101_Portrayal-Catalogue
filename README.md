@@ -142,6 +142,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
 [i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
 [i420]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/420
+[i423]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/423
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -182,6 +183,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#417][i417] Depict horizontal clearance values
   	* [#389][i389] Added `Chart1Feature`
   	* [#406][i406] Enhanced error checks for `UpdateInformation`
+  	* [#423][i423] TrafficSeparationSchemeLanePart only displays english text
 
 ### 1.3.0 - use with FC 1.3.0
 * Misc changes
