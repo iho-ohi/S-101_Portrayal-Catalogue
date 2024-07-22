@@ -3,8 +3,8 @@
 	<S100FC:name>Electronic Navigational Chart</S100FC:name>
 	<S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters.</S100FC:scope>
 	<S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
-	<S100FC:versionNumber>1.4.0</S100FC:versionNumber>
-	<S100FC:versionDate>2024-07-03</S100FC:versionDate>
+	<S100FC:versionNumber>1.4.1</S100FC:versionNumber>
+	<S100FC:versionDate>2024-07-22</S100FC:versionDate>
 	<S100FC:productId>S-101</S100FC:productId>
 	<S100FC:producer>
 		<S100CI:role>pointOfContact</S100CI:role>
@@ -397,6 +397,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>150</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Category of Airport/Airfield</S100FC:name>
@@ -6507,7 +6510,7 @@
 			<S100FC:listedValues>
 				<S100FC:listedValue>
 					<S100FC:label>Zone of Confidence A1</S100FC:label>
-					<S100FC:definition>Positional Accuracy +/- 5 metres + 5% depth; Depth Accuracy 0.5 metre +1% depth; Full area search undertaken. Significant seafloor features detected and depths measured; Controlled, systematic survey, high position and depth accuracy achieved using DGPS or a minimum three high quality lines of position (LOP) and a multibeam, channel or mechanical sweep system.</S100FC:definition>
+					<S100FC:definition>Positional Accuracy +/- 5 metres + 5% depth; Depth Accuracy 0.5 metre + 1% depth; Full area search undertaken. Significant seafloor features detected and depths measured; Controlled, systematic survey, high position and depth accuracy achieved using DGPS or a minimum three high quality lines of position (LOP) and a multibeam, channel or mechanical sweep system.</S100FC:definition>
 					<S100FC:code>1</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>1308</S100FC:sourceIdentifier>
@@ -6619,7 +6622,7 @@
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Yellow</S100FC:label>
-					<S100FC:definition>A color whose hue resembles that of ripe lemons or sunflowers or is that of the portion of the spectrum lying between green and orange.</S100FC:definition>
+					<S100FC:definition></S100FC:definition>
 					<S100FC:code>6</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>790</S100FC:sourceIdentifier>
@@ -6836,6 +6839,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>300</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Data Assessment</S100FC:name>
@@ -6931,6 +6937,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>150</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Day of Week</S100FC:name>
@@ -7031,7 +7040,6 @@
 				<S100Base:symbol>m</S100Base:symbol>
 			</S100FC:uom>
 			<S100FC:constraints>
-				<S100CD:textPattern>sxxxxx.xx; s = sign, negative values only</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>-30.0</S100Base:lowerBound>
 					<S100Base:upperBound>12500.0</S100Base:upperBound>
@@ -7055,7 +7063,6 @@
 			</S100FC:uom>
 			<S100FC:quantitySpecification>otherQuantity</S100FC:quantitySpecification>
 			<S100FC:constraints>
-				<S100CD:textPattern>sxxxxx.xx; s = sign, negative values only</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>-30</S100Base:lowerBound>
 					<S100Base:upperBound>12500</S100Base:upperBound>
@@ -7079,7 +7086,6 @@
 			</S100FC:uom>
 			<S100FC:quantitySpecification>otherQuantity</S100FC:quantitySpecification>
 			<S100FC:constraints>
-				<S100CD:textPattern>sxxxxx.xx; s = sign, negative values only</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>-30</S100Base:lowerBound>
 					<S100Base:upperBound>12500</S100Base:upperBound>
@@ -7096,6 +7102,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>100</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Distance Mark Visible</S100FC:name>
@@ -7315,6 +7324,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>100</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>File Reference</S100FC:name>
@@ -7833,6 +7845,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>100</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Height</S100FC:name>
@@ -7982,9 +7997,6 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>URN</S100FC:valueType>
-			<S100FC:constraints>
-				<S100CD:textPattern>urn:mrn:[Organisational ID]:...:...</S100CD:textPattern>
-			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>In the Water</S100FC:name>
@@ -7998,7 +8010,7 @@
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Is MRCC</S100FC:name>
-			<S100FC:definition>A statement that expresses if a coastguard station performs the function of a Maritime Rescue and Coordination Centre.</S100FC:definition>
+			<S100FC:definition>A statement that expresses if a Coast Guard station performs the function of a Maritime Rescue and Coordination Centre.</S100FC:definition>
 			<S100FC:code>isMRCC</S100FC:code>
 			<S100FC:alias>Maritime Rescue and Coordination Centre</S100FC:alias>
 			<S100FC:definitionReference>
@@ -8441,7 +8453,6 @@
 				<S100Base:symbol>°</S100Base:symbol>
 			</S100FC:uom>
 			<S100FC:constraints>
-				<S100CD:textPattern>xx.x</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>0.1</S100Base:lowerBound>
 					<S100Base:upperBound>180.0</S100Base:upperBound>
@@ -8636,6 +8647,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>9</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Moire Effect</S100FC:name>
@@ -8668,6 +8682,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>75</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Name of Resource</S100FC:name>
@@ -8677,11 +8694,14 @@
 				<S100FC:sourceIdentifier>1177</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
-			<S100FC:valueType>URI</S100FC:valueType>
+			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>100</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Name Usage</S100FC:name>
-			<S100FC:definition>Classification of the type and display level of the name of a feature in an end-use system.</S100FC:definition>
+			<S100FC:definition>Classification of the type and display level of the name of a feature in an end-user system.</S100FC:definition>
 			<S100FC:code>nameUsage</S100FC:code>
 			<S100FC:valueType>enumeration</S100FC:valueType>
 			<S100FC:listedValues>
@@ -9097,9 +9117,8 @@
 				<S100CD:range>
 					<S100Base:lowerBound>0.0</S100Base:lowerBound>
 					<S100Base:upperBound>360.0</S100Base:upperBound>
-					<S100Base:closure>closedInterval</S100Base:closure>
+					<S100Base:closure>geLtInterval</S100Base:closure>
 				</S100CD:range>
-				<S100CD:precision>1</S100CD:precision>
 			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
@@ -9560,6 +9579,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>75</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Reference Tide</S100FC:name>
@@ -9650,6 +9672,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>50</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Reported Date</S100FC:name>
@@ -9882,7 +9907,7 @@
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Dragging Prohibited</S100FC:label>
-					<S100FC:definition>An area in which the dragging of anything along the bottom, for example bottom trawling, is prohibited.</S100FC:definition>
+					<S100FC:definition>An area in which the dragging of anything along the seabed, for example bottom trawling, is prohibited.</S100FC:definition>
 					<S100FC:code>24</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>1039</S100FC:sourceIdentifier>
@@ -9986,11 +10011,10 @@
 			</S100FC:uom>
 			<S100FC:quantitySpecification>planeAngle</S100FC:quantitySpecification>
 			<S100FC:constraints>
-				<S100CD:textPattern>xxx.xx</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>0.0</S100Base:lowerBound>
 					<S100Base:upperBound>360.0</S100Base:upperBound>
-					<S100Base:closure>closedInterval</S100Base:closure>
+					<S100Base:closure>geLtInterval</S100Base:closure>
 				</S100CD:range>
 			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
@@ -10125,7 +10149,7 @@
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
 			<S100FC:constraints>
-				<S100CD:textPattern>(c)(c)</S100CD:textPattern>
+				<S100CD:stringLength>15</S100CD:stringLength>
 			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
@@ -10208,7 +10232,6 @@
 			<S100FC:valueType>text</S100FC:valueType>
 			<S100FC:constraints>
 				<S100CD:stringLength>150</S100CD:stringLength>
-				<S100CD:textPattern>c…</S100CD:textPattern>
 			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
@@ -10224,10 +10247,6 @@
 				<S100Base:name>Knot</S100Base:name>
 				<S100Base:symbol>kt</S100Base:symbol>
 			</S100FC:uom>
-			<S100FC:constraints>
-				<S100CD:textPattern>xx.x</S100CD:textPattern>
-				<S100CD:precision>1</S100CD:precision>
-			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Speed Maximum</S100FC:name>
@@ -10307,6 +10326,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>50</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Station Number</S100FC:name>
@@ -10317,6 +10339,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>15</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Status</S100FC:name>
@@ -10531,6 +10556,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>100</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Survey Type</S100FC:name>
@@ -10734,7 +10762,7 @@
 			<S100FC:listedValues>
 				<S100FC:listedValue>
 					<S100FC:label>Found by Echo Sounder</S100FC:label>
-					<S100FC:definition>The depth was determined by using an instrument that determines depth of water by measuring the time interval between emission of a sonic or ultrasonic signal and return of its echo from the bottom.</S100FC:definition>
+					<S100FC:definition>The depth was measured by using an instrument that determines depth of water by measuring the time interval between emission of a sonic or ultrasonic signal and return of its echo from the bottom.</S100FC:definition>
 					<S100FC:code>1</S100FC:code>
 					<S100FC:definitionReference>
 						<S100FC:sourceIdentifier>1070</S100FC:sourceIdentifier>
@@ -10878,6 +10906,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>50</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Telecommunication Service</S100FC:name>
@@ -10974,6 +11005,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>300</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Text Offset Bearing</S100FC:name>
@@ -10989,11 +11023,10 @@
 				<S100Base:symbol>°</S100Base:symbol>
 			</S100FC:uom>
 			<S100FC:constraints>
-				<S100CD:textPattern>xxx</S100CD:textPattern>
 				<S100CD:range>
 					<S100Base:lowerBound>0.0</S100Base:lowerBound>
 					<S100Base:upperBound>360.0</S100Base:upperBound>
-					<S100Base:closure>closedInterval</S100Base:closure>
+					<S100Base:closure>geLtInterval</S100Base:closure>
 				</S100CD:range>
 			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
@@ -11006,9 +11039,6 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>integer</S100FC:valueType>
-			<S100FC:constraints>
-				<S100CD:textPattern>xx</S100CD:textPattern>
-			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Text Rotation</S100FC:name>
@@ -11456,9 +11486,6 @@
 				<S100Base:name>metre</S100Base:name>
 				<S100Base:symbol>m</S100Base:symbol>
 			</S100FC:uom>
-			<S100FC:constraints>
-				<S100CD:precision>1</S100CD:precision>
-			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Uncertainty Variable Factor</S100FC:name>
@@ -11919,6 +11946,9 @@
 				<S100FC:definitionSource ref="IHOREG" />
 			</S100FC:definitionReference>
 			<S100FC:valueType>text</S100FC:valueType>
+			<S100FC:constraints>
+				<S100CD:stringLength>50</S100CD:stringLength>
+			</S100FC:constraints>
 		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Virtual AIS Aid to Navigation Type</S100FC:name>
@@ -13843,7 +13873,7 @@
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>The Support</S100FC:name>
-			<S100FC:definition>A pointer to the equipment feature(s) supported by a structure feature</S100FC:definition>
+			<S100FC:definition>A pointer to the feature(s) that support a structure.</S100FC:definition>
 			<S100FC:code>theSupport</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
@@ -14367,7 +14397,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14472,7 +14502,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14535,7 +14565,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14648,7 +14678,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14716,7 +14746,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14776,7 +14806,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -14970,7 +15000,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -15046,7 +15076,7 @@
 			<S100FC:featureUseType>meta</S100FC:featureUseType>
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
-					<S100Base:lower>2</S100Base:lower>
+					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdateAggregation" />
@@ -15228,6 +15258,7 @@
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
 				<S100FC:featureType ref="Spring" />
 				<S100FC:featureType ref="StraightTerritorialSeaBaseline" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="SubmarinePipelineArea" />
 				<S100FC:featureType ref="SubmarineTransitLane" />
 				<S100FC:featureType ref="SweptArea" />
@@ -15259,7 +15290,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -15337,7 +15368,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -15415,16 +15446,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -15565,16 +15596,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -15671,16 +15702,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -15692,7 +15723,7 @@
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
 			<S100FC:name>Island Group</S100FC:name>
-			<S100FC:definition>A named group of islands, including archipelago's.</S100FC:definition>
+			<S100FC:definition>A named group of islands, including archipelagos.</S100FC:definition>
 			<S100FC:code>IslandGroup</S100FC:code>
 			<S100FC:alias>C_AGGR</S100FC:alias>
 			<S100FC:definitionReference>
@@ -15760,16 +15791,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -15848,16 +15879,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -15927,16 +15958,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16003,16 +16034,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16091,16 +16122,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16177,16 +16208,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16309,16 +16340,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16435,16 +16466,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16576,16 +16607,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16712,16 +16743,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16852,16 +16883,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -16920,16 +16951,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -17064,16 +17095,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -17395,16 +17426,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -17529,16 +17560,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -17549,7 +17580,7 @@
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
 			<S100FC:name>Runway</S100FC:name>
-			<S100FC:definition>A defined area, on a land aerodrome, prepared for the landing and take-off run of aircraft, including helicopters.</S100FC:definition>
+			<S100FC:definition>A defined area, on a land aerodrome, prepared for the landing and take-off run of aircraft.</S100FC:definition>
 			<S100FC:code>Runway</S100FC:code>
 			<S100FC:alias>RUNWAY</S100FC:alias>
 			<S100FC:definitionReference>
@@ -17661,16 +17692,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -17799,16 +17830,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -18085,16 +18116,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -18243,7 +18274,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="TextAssociation" />
+				<S100FC:role ref="theCartographicText" />
+				<S100FC:featureType ref="TextPlacement" />
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -18398,7 +18438,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="TextAssociation" />
+				<S100FC:role ref="theCartographicText" />
+				<S100FC:featureType ref="TextPlacement" />
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -18687,16 +18736,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -18889,16 +18938,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -18907,7 +18956,7 @@
 			<S100FC:permittedPrimitives>curve</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
-			<S100FC:name>Overhead Pipeline</S100FC:name>
+			<S100FC:name>Pipeline Overhead</S100FC:name>
 			<S100FC:definition>A string of interconnected pipes, supported by pylons and passing over or nearby navigable waters, used for the transport of matter, nowadays mainly oil or gas.</S100FC:definition>
 			<S100FC:code>PipelineOverhead</S100FC:code>
 			<S100FC:alias>PIPOHD</S100FC:alias>
@@ -19116,16 +19165,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -19396,10 +19445,10 @@
 				<S100FC:featureType ref="TrafficSeparationScheme" />
 				<S100FC:featureType ref="TwoWayRoute" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -19408,7 +19457,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -19604,16 +19653,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -19714,16 +19763,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -19844,16 +19893,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -19864,7 +19913,7 @@
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
 			<S100FC:name>Tunnel</S100FC:name>
-			<S100FC:definition>A passage that is open to the atmosphere at both ends, buried under the sea bed or laid over the sea floor or bored under the ground or through mountains.</S100FC:definition>
+			<S100FC:definition>A passage that is open to the atmosphere at both ends, buried under the seabed or laid over the seafloor or bored under the ground or through mountains.</S100FC:definition>
 			<S100FC:code>Tunnel</S100FC:code>
 			<S100FC:alias>TUNNEL</S100FC:alias>
 			<S100FC:definitionReference>
@@ -19993,16 +20042,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -20372,16 +20421,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -20679,16 +20728,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -20981,16 +21030,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -21203,16 +21252,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -21415,16 +21464,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -21512,16 +21561,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -21744,16 +21793,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -21999,16 +22048,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -22146,16 +22195,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -22447,16 +22496,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -22722,6 +22771,15 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="pictorialRepresentation" />
 			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="AdditionalInformation" />
+				<S100FC:role ref="theInformation" />
+				<S100FC:informationType ref="NauticalInformation" />
+			</S100FC:informationBinding>
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
 			<S100FC:featureBinding roleType="aggregation">
 				<S100FC:multiplicity>
@@ -22742,6 +22800,43 @@
 				<S100FC:association ref="RoofedStructureAggregation" />
 				<S100FC:role ref="theSupport" />
 				<S100FC:featureType ref="PylonBridgeSupport" />
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="StructureEquipment" />
+				<S100FC:role ref="theEquipment" />
+				<S100FC:featureType ref="Daymark" />
+				<S100FC:featureType ref="DistanceMark" />
+				<S100FC:featureType ref="FogSignal" />
+				<S100FC:featureType ref="LightAllAround" />
+				<S100FC:featureType ref="LightFogDetector" />
+				<S100FC:featureType ref="PhysicalAISAidToNavigation" />
+				<S100FC:featureType ref="RadarTransponderBeacon" />
+				<S100FC:featureType ref="Retroreflector" />
+				<S100FC:featureType ref="SignalStationTraffic" />
+				<S100FC:featureType ref="SignalStationWarning" />
+				<S100FC:featureType ref="LightSectored" />
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:association ref="TextAssociation" />
+				<S100FC:role ref="theCartographicText" />
+				<S100FC:featureType ref="TextPlacement" />
+			</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="UpdatedInformation" />
+				<S100FC:role ref="theUpdate" />
+				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
@@ -22861,16 +22956,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -22999,16 +23094,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -23127,6 +23222,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+                <S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="Daymark" />
@@ -23134,16 +23230,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -23324,16 +23420,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -23539,16 +23635,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -23819,16 +23915,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -23999,16 +24095,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -24273,16 +24369,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -24361,7 +24457,6 @@
 					<S100FC:value>8</S100FC:value>
 					<S100FC:value>12</S100FC:value>
 					<S100FC:value>14</S100FC:value>
-					<S100FC:value>17</S100FC:value>
 				</S100FC:permittedValues>
 				<S100FC:attribute ref="status" />
 			</S100FC:attributeBinding>
@@ -24415,16 +24510,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -24594,16 +24689,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -24847,16 +24942,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25031,16 +25126,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25183,16 +25278,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25314,16 +25409,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25437,16 +25532,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25525,16 +25620,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25658,16 +25753,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25760,16 +25855,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25868,16 +25963,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -25950,16 +26045,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26041,16 +26136,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26165,16 +26260,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26336,16 +26431,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26420,16 +26515,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26489,7 +26584,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -26548,7 +26643,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -26620,7 +26715,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -26665,7 +26760,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -26743,16 +26838,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26825,16 +26920,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26894,16 +26989,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -26914,7 +27009,7 @@
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="false">
 			<S100FC:name>Sandwave</S100FC:name>
-			<S100FC:definition>A large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.</S100FC:definition>
+			<S100FC:definition>Large mobile wave-like sediment feature in shallow water and composed of sand. The wavelength may reach 100 metres, the amplitude may be up to 20 metres.</S100FC:definition>
 			<S100FC:code>Sandwave</S100FC:code>
 			<S100FC:alias>SNDWAV</S100FC:alias>
 			<S100FC:alias>Sand Wave</S100FC:alias>
@@ -26966,7 +27061,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -27027,16 +27122,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -27209,16 +27304,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -27452,16 +27547,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -27744,16 +27839,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -27888,16 +27983,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -27957,7 +28052,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -28113,16 +28208,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -28363,16 +28458,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -28629,16 +28724,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -28761,16 +28856,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -28899,16 +28994,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -29109,16 +29204,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -29263,16 +29358,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -29496,16 +29591,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -29621,7 +29716,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -29798,16 +29893,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -29934,16 +30029,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -30159,16 +30254,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -30291,7 +30386,7 @@
 			</S100FC:featureBinding>
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
+					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="FairwayAggregation" />
@@ -30301,16 +30396,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -30488,16 +30583,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -30661,7 +30756,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -30796,16 +30891,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -30884,7 +30979,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -31064,16 +31159,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -31285,16 +31380,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -31419,16 +31514,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -31551,7 +31646,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -31658,7 +31753,7 @@
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
+					<S100Base:lower>1</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information" />
@@ -31685,16 +31780,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -31823,7 +31918,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -31903,7 +31998,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -31985,7 +32080,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -32105,7 +32200,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -32226,7 +32321,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -32390,16 +32485,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -32482,16 +32577,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -32573,16 +32668,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -32697,16 +32792,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -32829,16 +32924,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -32943,16 +33038,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33034,16 +33129,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33130,16 +33225,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33259,16 +33354,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33443,16 +33538,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33609,16 +33704,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33763,16 +33858,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -33903,16 +33998,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34046,16 +34141,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34210,16 +34305,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34313,16 +34408,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34452,16 +34547,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34584,7 +34679,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -34672,16 +34767,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34755,7 +34850,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -34822,16 +34917,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -34891,7 +34986,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -34957,7 +35052,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -35038,16 +35133,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35173,16 +35268,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35254,16 +35349,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35337,16 +35432,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35427,16 +35522,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35548,16 +35643,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35616,7 +35711,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -35714,7 +35809,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -35821,16 +35916,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35895,7 +35990,7 @@
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
+					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="PilotageDistrictAssociation" />
@@ -35905,16 +36000,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -35993,16 +36088,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -36067,16 +36162,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -36264,16 +36359,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -36356,6 +36451,13 @@
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="fixedDateRange" />
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="flareBearing" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -36509,14 +36611,6 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information" />
 			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
-				<S100FC:attribute ref="flareBearing" />
-			</S100FC:attributeBinding>
 			<S100FC:informationBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -36569,6 +36663,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -36602,16 +36697,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -36852,6 +36947,7 @@
 				<S100FC:featureType ref="SpanFixed" />
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -36870,16 +36966,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -36925,6 +37021,14 @@
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="fixedDateRange" />
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
+				<S100FC:attribute ref="flareBearing" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -37032,14 +37136,6 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information" />
 			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
-				<S100FC:attribute ref="flareBearing" />
-			</S100FC:attributeBinding>
 			<S100FC:informationBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -37091,6 +37187,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -37100,16 +37197,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -37169,6 +37266,14 @@
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="fixedDateRange" />
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
+				<S100FC:attribute ref="flareBearing" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -37290,14 +37395,6 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information" />
 			</S100FC:attributeBinding>
-			<S100FC:attributeBinding sequential="false">
-				<S100FC:multiplicity>
-					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
-				<S100FC:attribute ref="flareBearing" />
-			</S100FC:attributeBinding>
 			<S100FC:informationBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
@@ -37331,16 +37428,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -37590,16 +37687,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -37849,16 +37946,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -38095,16 +38192,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -38341,16 +38438,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -38654,16 +38751,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -38866,16 +38963,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -39098,16 +39195,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -39336,16 +39433,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -39652,16 +39749,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -39968,16 +40065,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -40271,16 +40368,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -40574,16 +40671,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -40944,16 +41041,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -41303,6 +41400,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 			</S100FC:featureBinding>
@@ -41340,16 +41438,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -41584,16 +41682,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -41821,16 +41919,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -41989,6 +42087,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -41998,7 +42097,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -42093,7 +42192,7 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
@@ -42290,6 +42389,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -42299,16 +42399,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -42444,6 +42544,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+                <S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="Daymark" />
@@ -42451,16 +42552,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -42580,16 +42681,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -42722,16 +42823,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -42906,6 +43007,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="LightAllAround" />
@@ -42915,16 +43017,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43082,16 +43184,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43153,16 +43255,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43266,16 +43368,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43439,6 +43541,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+                <S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="Daymark" />
@@ -43446,16 +43549,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43614,6 +43717,7 @@
 				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
+                <S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="WindTurbine" />
 				<S100FC:featureType ref="Wreck" />
 				<S100FC:featureType ref="Daymark" />
@@ -43621,16 +43725,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43747,16 +43851,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -43993,16 +44097,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -44140,16 +44244,16 @@
 			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
 				<S100FC:association ref="UpdatedInformation" />
 				<S100FC:role ref="theUpdate" />
 				<S100FC:featureType ref="UpdateInformation" />
 			</S100FC:featureBinding>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
@@ -44206,7 +44310,7 @@
 				<S100FC:attribute ref="scaleMinimum" />
 			</S100FC:attributeBinding>
 			<S100FC:featureUseType>cartographic</S100FC:featureUseType>
-			<S100FC:featureBinding roleType="association">
+			<S100FC:featureBinding roleType="composition">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
@@ -44233,6 +44337,7 @@
 				<S100FC:featureType ref="CardinalBeacon" />
 				<S100FC:featureType ref="CargoTranshipmentArea" />
 				<S100FC:featureType ref="Causeway" />
+				<S100FC:featureType ref="Chart1Feature" />
 				<S100FC:featureType ref="Checkpoint" />
 				<S100FC:featureType ref="CoastGuardStation" />
 				<S100FC:featureType ref="Coastline" />
@@ -44344,9 +44449,12 @@
 				<S100FC:featureType ref="SlopingGround" />
 				<S100FC:featureType ref="SmallCraftFacility" />
 				<S100FC:featureType ref="Sounding" />
+				<S100FC:featureType ref="SpanFixed" />
+				<S100FC:featureType ref="SpanOpening" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBeacon" />
 				<S100FC:featureType ref="SpecialPurposeGeneralBuoy" />
 				<S100FC:featureType ref="Spring" />
+				<S100FC:featureType ref="StructureOverNavigableWater" />
 				<S100FC:featureType ref="SubmarinePipelineArea" />
 				<S100FC:featureType ref="SubmarineTransitLane" />
 				<S100FC:featureType ref="SweptArea" />
@@ -44377,6 +44485,7 @@
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="true" infinite="true" />
 				</S100FC:multiplicity>
+				<S100FC:attributeVisibility>privateVisibility</S100FC:attributeVisibility>
 				<S100FC:attribute ref="drawingInstruction" />
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
@@ -44387,10 +44496,10 @@
 				<S100FC:attribute ref="featureName" />
 			</S100FC:attributeBinding>
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-			<S100FC:featureBinding roleType="composition">
+			<S100FC:featureBinding roleType="association">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+					<S100Base:upper xsi:nil="false" infinite="false">2</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:association ref="TextAssociation" />
 				<S100FC:role ref="theCartographicText" />
