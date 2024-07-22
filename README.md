@@ -149,7 +149,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 1.4.X - use with FC 1.4.X
+### 1.4.0 - use with FC 1.4.X
 * Misc changes
 	* [#391][i391] Update main version number to 1.4.0-DRAFT
  	* [#390][i390] Remove "dock (DOCARE)" from name of viewing group `12420`
