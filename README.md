@@ -146,9 +146,17 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i423]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/423
 [i426]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/426
 [i421]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/421
+[i422]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/422
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
+
+
+### 1.5.0 - use with FC 1.5.XX
+* Misc changes
+ 	* [#422][i422] Update PC version to "1.5.0-DRAFT"
+
+* Lua Rule File / Symbol Updates
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
