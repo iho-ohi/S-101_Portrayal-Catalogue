@@ -152,7 +152,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 Older changes are here: [Changelog.md](Changelog.md)
 
 
-### 1.5.0 - use with FC 1.5.XX
+### 1.5.X - use with FC 1.5.X
 * Misc changes
  	* [#422][i422] Update PC version to "1.5.0-DRAFT"
 
