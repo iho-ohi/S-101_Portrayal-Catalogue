@@ -9951,17 +9951,6 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="DEPVAL02">
-         <description>
-            <name>DEPVAL02</name>
-            <description>Custom rules DEPVAL02</description>
-            <language>eng</language>
-         </description>
-         <fileName>DEPVAL02.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
       <ruleFile id="LITDSN02">
          <description>
             <name>LITDSN02</name>

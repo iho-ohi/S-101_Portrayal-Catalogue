@@ -147,6 +147,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i426]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/426
 [i421]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/421
 [i422]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/422
+[i431]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/431
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -155,6 +156,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 ### 1.5.X - use with FC 1.5.X
 * Misc changes
  	* [#422][i422] Update PC version to "1.5.0-DRAFT"
+	* [#431][i431] Remove DEPVAL02, no longer used
 
 * Lua Rule File / Symbol Updates
 
