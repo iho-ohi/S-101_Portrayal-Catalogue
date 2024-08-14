@@ -9383,23 +9383,6 @@
          <viewingGroup>28010</viewingGroup>
          <viewingGroup>28020</viewingGroup>
       </viewingGroupLayer>
-	  <viewingGroupLayer id="10a">       
-         <description>
-            <name>Chart (Standard)</name>
-            <description>Miscellaneous chart Standard Display elements</description>
-            <language>eng</language>
-         </description>
-         <viewingGroup>21010</viewingGroup>
-         <viewingGroup>21060</viewingGroup>
-         <viewingGroup>24010</viewingGroup>
-         <viewingGroup>24020</viewingGroup>
-         <viewingGroup>24050</viewingGroup>
-         <viewingGroup>25001</viewingGroup>
-         <viewingGroup>26200</viewingGroup>
-         <viewingGroup>26210</viewingGroup>
-         <viewingGroup>28010</viewingGroup>
-         <viewingGroup>28020</viewingGroup>
-      </viewingGroupLayer>
 	  <!-- ********************************************************************************* -->
 	  <!-- END STANDARD LAYER GROUPS -->
 	  <!-- OTHER LAYER GROUPS -->
@@ -9671,7 +9654,6 @@
          <viewingGroupLayer>8</viewingGroupLayer>
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
-         <viewingGroupLayer>10a</viewingGroupLayer>
       </displayMode>
       <displayMode id="OtherInformation">
          <description>
@@ -9691,7 +9673,6 @@
          <viewingGroupLayer>8</viewingGroupLayer>
          <viewingGroupLayer>9</viewingGroupLayer>
          <viewingGroupLayer>10</viewingGroupLayer>
-         <viewingGroupLayer>10a</viewingGroupLayer>
          <viewingGroupLayer>11</viewingGroupLayer>
          <viewingGroupLayer>12</viewingGroupLayer>
          <viewingGroupLayer>13</viewingGroupLayer>
