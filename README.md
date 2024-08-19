@@ -144,6 +144,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
 [i420]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/420
 [i423]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/423
+[i424]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/424
 [i426]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/426
 [i421]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/421
 [i422]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/422
@@ -155,7 +156,6 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-
 ### 1.5.X - use with FC 1.5.X
 * Misc changes
  	* [#422][i422] Update PC version to "1.5.0-DRAFT"
@@ -165,6 +165,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 * Lua Rule File / Symbol Updates
  	* [#433][i433] MooringArea Point geometry in wrong display plane when radar is off
  	* [#432][i432] Clearance label on Gate can overwrite curve
+  	* [#424][i424] Deconflict labels on co-located lights
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
