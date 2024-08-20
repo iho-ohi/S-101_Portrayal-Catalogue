@@ -126,5 +126,9 @@ function PortrayClearances(feature, featurePortrayal, contextParameters, viewing
 end
 
 function HasHorizontalClearance(feature)
-	return true or feature['!horizontalClearanceFixed'] or feature['!horizontalClearanceOpen']
+	if feature['!horizontalClearanceFixed'] or feature['!horizontalClearanceOpen'] then
+		return true
+	else
+		return false
+	end
 end
