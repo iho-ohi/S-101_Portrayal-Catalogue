@@ -167,7 +167,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#433][i433] MooringArea Point geometry in wrong display plane when radar is off
  	* [#432][i432] Clearance label on Gate can overwrite curve
   	* [#424][i424] Deconflict labels on co-located lights
-	* [#428][i428] HasHorizontalClearance() always returns true
+	* [#428][i428] HasHorizontalClearance() always returns true, shorten return logic
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
