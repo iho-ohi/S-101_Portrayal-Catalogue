@@ -8936,8 +8936,8 @@
       <!-- 22 na -->
 	  <viewingGroup id="23">
         <description>
-          <name>Text: Light Description</name>
-          <description>Light description string</description>
+          <name>Text: Aids to Navigation information</name>
+          <description>Text describing the characteristics of navigation aids</description>
           <language>eng</language>
         </description>
       </viewingGroup>
