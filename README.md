@@ -143,17 +143,18 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i418]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/418
 [i419]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/419
 [i420]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/420
+[i421]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/421
+[i422]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/422
 [i423]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/423
 [i424]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/424
 [i426]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/426
-[i421]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/421
-[i422]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/422
+[i428]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/428
 [i429]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/429
 [i431]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/431
-[i433]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/433
 [i432]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/432
-[i428]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/428
+[i433]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/433
 [i437]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/437
+[i439]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/439
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -163,6 +164,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#422][i422] Update PC version to "1.5.0-DRAFT"
 	* [#431][i431] Remove DEPVAL02, no longer used
  	* [#429][i429] Remove viewing group layer 10a
+  	* [#439][i439] Rename (text) viewing group 23 to "Text: Aids to Navigation information"
 
 * Lua Rule File / Symbol Updates
  	* [#433][i433] MooringArea Point geometry in wrong display plane when radar is off
