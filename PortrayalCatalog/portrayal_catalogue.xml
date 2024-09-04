@@ -2408,26 +2408,6 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
-      <symbol id="EMLOWAC01">
-         <description>
-            <name>EMLOWAC01</name>
-            <description>embedded symbol for safety contour of low accuracy in position</description>
-            <language>eng</language>
-         </description>
-         <fileName>EMLOWAC01.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
-      <symbol id="EMLOWAC11">
-         <description>
-            <name>EMLOWAC11</name>
-            <description>embedded symbol for safety contour of low accuracy in position</description>
-            <language>eng</language>
-         </description>
-         <fileName>EMLOWAC11.svg</fileName>
-         <fileType>Symbol</fileType>
-         <fileFormat>SVG</fileFormat>
-      </symbol>
       <symbol id="EMLOWAC21">
          <description>
             <name>EMLOWAC21</name>
@@ -7569,26 +7549,6 @@
             <language>eng</language>
          </description>
          <fileName>INFARE51.xml</fileName>
-         <fileType>LineStyle</fileType>
-         <fileFormat>XML</fileFormat>
-      </lineStyle>
-      <lineStyle id="LOWACC01">
-         <description>
-            <name>LOWACC01</name>
-            <description>safety contour of low accuracy in position</description>
-            <language>eng</language>
-         </description>
-         <fileName>LOWACC01.xml</fileName>
-         <fileType>LineStyle</fileType>
-         <fileFormat>XML</fileFormat>
-      </lineStyle>
-      <lineStyle id="LOWACC11">
-         <description>
-            <name>LOWACC11</name>
-            <description>contour of low accuracy in position</description>
-            <language>eng</language>
-         </description>
-         <fileName>LOWACC11.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
