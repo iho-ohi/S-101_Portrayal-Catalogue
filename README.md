@@ -155,6 +155,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i433]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/433
 [i437]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/437
 [i439]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/439
+[i438]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/438
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -172,6 +173,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#424][i424] Deconflict labels on co-located lights
 	* [#428][i428] HasHorizontalClearance() always returns true, shorten return logic
 	* [#437][i437] Multiplicity of attribute category of dolphin
+	* [#438][i438] DredgedArea remove "dredged to" text
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
