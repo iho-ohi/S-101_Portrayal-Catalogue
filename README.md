@@ -156,6 +156,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i437]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/437
 [i438]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/438
 [i439]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/439
+[i440]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/440
 [i444]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/444
 
 ## Recent changes
@@ -177,6 +178,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#438][i438] DredgedArea remove "dredged to" text
 	* [#437][i437] re-opened, Deviation Dolphin has priority
  	* [#444][i444] Junction cable portrayed incorrectly
+  	* [#440][i440] Remove line styles LOWACC01, LOWACC11 and symbols EMLOWAC01, EMLOWAC11
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
