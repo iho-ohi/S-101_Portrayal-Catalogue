@@ -174,6 +174,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#428][i428] HasHorizontalClearance() always returns true, shorten return logic
 	* [#437][i437] Multiplicity of attribute category of dolphin
 	* [#438][i438] DredgedArea remove "dredged to" text
+	* [#437][i437] re-opened, Deviation Dolphin has priority
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes

@@ -15,17 +15,15 @@ function Dolphin(feature, featurePortrayal, contextParameters)
 		-- #437
 		local categoryOfDolphin = feature.categoryOfDolphin
 		
-		if categoryOfDolphin and #categoryOfDolphin then
-			for _, COD in ipairs(categoryOfDolphin) do
-				if COD == 2 then
-					-- Deviation Dolphin
-					featurePortrayal:AddInstructions('PointInstruction:MORFAC04')
-				else
-					-- Mooring Dolphin
-					featurePortrayal:AddInstructions('PointInstruction:MORFAC03')
-				end
-			end
+		if (contains(2,categoryOfDolphin)) then
+			-- Deviation Dolphin
+			featurePortrayal:AddInstructions('PointInstruction:MORFAC04')
+		else
+			-- Mooring Dolphin
+			featurePortrayal:AddInstructions('PointInstruction:MORFAC03')
 		end
+		
+
 	elseif feature.PrimitiveType == PrimitiveType.Surface then
 		-- Plain and symbolized boundaries use the same symbolization
 		featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
