@@ -8200,7 +8200,7 @@
 	  <!-- 14000's: Dangers under water -->
       <viewingGroup id="14010">
          <description>
-            <name>isolated underwater dangers in water deeper than the displayed safety contour  (rocks, wrecks, obstructions, mooring cables from conditional symbology procedure)</name>
+            <name>isolated underwater dangers in water deeper than the displayed safety contour  (rocks, wrecks, obstructions, mooring cables from conditional symbology procedure), junction cables (CableSubmarine:categoryOfCable=9)</name>
             <description>Base: J, K, L - Subsea Features</description>
             <language>eng</language>
          </description>
@@ -8317,7 +8317,7 @@
 	  <!-- 24000's: Seabed dangers -->
       <viewingGroup id="24010">
          <description>
-            <name>Mooring cables (MORFAC, CATMOR6), (CBLSUB, CATCBL6), tunnel on Seabed (TUNNEL, BURDEP=0), sandwaves (SNDWAV)</name>
+            <name>Mooring cables (CBLSUB, CATCBL6), tunnel on Seabed (TUNNEL, BURDEP=0), sandwaves (SNDWAV)</name>
             <description>Standard: J, K, L - Seabed, Obstructions, Pipelines</description>
             <language>eng</language>
          </description>
