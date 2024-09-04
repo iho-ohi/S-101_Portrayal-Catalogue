@@ -157,6 +157,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i438]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/438
 [i439]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/439
 [i440]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/440
+[i441]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/441
 [i442]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/442
 [i444]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/444
 
@@ -181,6 +182,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#444][i444] Junction cable portrayed incorrectly
   	* [#440][i440] Remove line styles LOWACC01, LOWACC11 and symbols EMLOWAC01, EMLOWAC11
   	* [#442][i442] Junction cables: update viewing group description for `14010` and `24010`
+  	* [#441][i441] `CableSubmarine` should alert on `categoryOfCable`=`9 - Junction Cable` rather than `6 - Mooring Cable`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
