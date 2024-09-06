@@ -13,7 +13,7 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 
 		if feature.categoryOfCable == 9 then
 			-- issue #444 junction cable symbolized incorrectly
-			viewingGroup = 14010
+			viewingGroup = 14020
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:14010;DrawingPriority:18')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')			
