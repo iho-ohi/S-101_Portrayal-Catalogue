@@ -11,13 +11,13 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('DisplayPlane:UnderRadar')
 		end
 
-		if feature.categoryOfCable and feature.categoryOfCable == 9 then
+		if feature.categoryOfCable == 9 then
 			-- issue #444 junction cable symbolized incorrectly
 			viewingGroup = 14010
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:14010;DrawingPriority:18')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')			
-		elseif feature.categoryOfCable and (feature.categoryOfCable == 6 or feature.categoryOfCable == 7) then
+		elseif feature.categoryOfCable == 6 or feature.categoryOfCable == 7 then
 			-- issue #59 categoryOfCable 7
 			viewingGroup = 24010
 			featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18')
