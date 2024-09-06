@@ -185,11 +185,11 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#437][i437] re-opened, Deviation Dolphin has priority
  	* [#444][i444] Junction cable portrayed incorrectly
   	* [#440][i440] Remove line styles LOWACC01, LOWACC11 and symbols EMLOWAC01, EMLOWAC11
-  	* [#442][i442] Junction cables: update viewing group description for `14010` and `24010`
   	* [#441][i441] `CableSubmarine` should alert on `categoryOfCable`=`9 - Junction Cable` rather than `6 - Mooring Cable`
   	* [#436][i436] Add NavHazard alert to `Obstruction` when `waterLevelEffect`=`7 - Floating`
   	* [#446][i446] Add NavHazard alert to `Obstruction` when `categoryOfObstruction`=`21 - Active Submarine Volcano`
   	* [#447][i447] Active submarine volcano uses new viewing group `14020` "Non-isolated dangers (active submarine volcanos)"
+  	* [#442][i442] Junction cables: update viewing group description for `14020` and `24010`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
