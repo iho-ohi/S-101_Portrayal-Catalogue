@@ -153,6 +153,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i431]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/431
 [i432]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/432
 [i433]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/433
+[i436]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/436
 [i437]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/437
 [i438]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/438
 [i439]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/439
@@ -184,6 +185,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#440][i440] Remove line styles LOWACC01, LOWACC11 and symbols EMLOWAC01, EMLOWAC11
   	* [#442][i442] Junction cables: update viewing group description for `14010` and `24010`
   	* [#441][i441] `CableSubmarine` should alert on `categoryOfCable`=`9 - Junction Cable` rather than `6 - Mooring Cable`
+  	* [#436][i436] Add NavHazard alert to `Obstruction` when `waterLevelEffect`=`7 - Floating`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
