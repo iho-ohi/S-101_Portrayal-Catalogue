@@ -184,7 +184,6 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#440][i440] Remove line styles LOWACC01, LOWACC11 and symbols EMLOWAC01, EMLOWAC11
   	* [#442][i442] Junction cables: update viewing group description for `14010` and `24010`
   	* [#441][i441] `CableSubmarine` should alert on `categoryOfCable`=`9 - Junction Cable` rather than `6 - Mooring Cable`
-  	* [#445][i445] `categoryOfCable` is not a mandatory attribute of `CableSubmarine`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
