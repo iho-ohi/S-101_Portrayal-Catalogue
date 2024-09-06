@@ -162,6 +162,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i442]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/442
 [i444]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/444
 [i445]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/445
+[i446]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/446
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -186,6 +187,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#442][i442] Junction cables: update viewing group description for `14010` and `24010`
   	* [#441][i441] `CableSubmarine` should alert on `categoryOfCable`=`9 - Junction Cable` rather than `6 - Mooring Cable`
   	* [#436][i436] Add NavHazard alert to `Obstruction` when `waterLevelEffect`=`7 - Floating`
+  	* [#446][i446] Add NavHazard alert to `Obstruction` when `categoryOfObstruction`=`21 - Active Submarine Volcano`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
