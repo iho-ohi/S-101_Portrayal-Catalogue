@@ -64,11 +64,11 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 		elseif feature.categoryOfObstruction == 21 then		-- active submarine volcano
-			viewingGroup = 34050
+			viewingGroup = 14020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:14020;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:14020;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:VOLCANO01')
 		elseif feature.categoryOfObstruction == 23 then		-- mangrove
@@ -146,11 +146,11 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('PointInstruction:FLTHAZ02')
 		elseif feature.categoryOfObstruction == 21 then			-- active submarine volcano
-			viewingGroup = 34050
+			viewingGroup = 14020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:14020;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:14020;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:VOLCANO01')
 		elseif feature.categoryOfObstruction == 23 then			-- mangrove

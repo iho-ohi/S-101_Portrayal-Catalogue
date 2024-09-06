@@ -8205,6 +8205,13 @@
             <language>eng</language>
          </description>
       </viewingGroup>
+      <viewingGroup id="14020">
+         <description>
+            <name>Non-isolated dangers (active submarine volcanos)</name>
+            <description>Base: J, K, L - Subsea Features</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
 	  <viewingGroup id="14050">
          <description>
             <name>Isolated above water danger in safe water</name>
@@ -9162,6 +9169,7 @@
          <viewingGroup>13030</viewingGroup>
          <!-- J, K, L - SUBSEA FEATURES -->
          <viewingGroup>14010</viewingGroup>
+         <viewingGroup>14020</viewingGroup>
 		 <viewingGroup>14050</viewingGroup>
          <!-- M - TRACKS AND ROUTES -->
          <!-- N - SPECIAL AREAS -->
@@ -9194,6 +9202,7 @@
          <viewingGroup>13030</viewingGroup>
          <!-- J, K, L - SUBSEA FEATURES -->
          <viewingGroup>14010</viewingGroup>
+         <viewingGroup>14020</viewingGroup>
 		 <viewingGroup>14050</viewingGroup>
          <!-- M - TRACKS AND ROUTES -->
          <!-- N - SPECIAL AREAS -->
