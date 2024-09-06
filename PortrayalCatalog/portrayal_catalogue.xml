@@ -8324,7 +8324,7 @@
 	  <!-- 24000's: Seabed dangers -->
       <viewingGroup id="24010">
          <description>
-            <name>Mooring cables (CBLSUB, CATCBL6), tunnel on Seabed (TUNNEL, BURDEP=0), sandwaves (SNDWAV)</name>
+            <name>Mooring cables (CBLSUB, CATCBL6), tunnel on Seabed (TUNNEL, BURDEP=0), sandwaves (SNDWAV), ferry cables (CableSubmarine categoryOfCable=7)</name>
             <description>Standard: J, K, L - Seabed, Obstructions, Pipelines</description>
             <language>eng</language>
          </description>
