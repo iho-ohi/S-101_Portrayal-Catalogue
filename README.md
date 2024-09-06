@@ -160,6 +160,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i440]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/440
 [i441]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/441
 [i442]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/442
+[i443]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/443
 [i444]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/444
 [i445]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/445
 [i446]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/446
@@ -190,6 +191,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#446][i446] Add NavHazard alert to `Obstruction` when `categoryOfObstruction`=`21 - Active Submarine Volcano`
   	* [#447][i447] Active submarine volcano uses new viewing group `14020` "Non-isolated dangers (active submarine volcanos)"
   	* [#442][i442] Junction cables: update viewing group description for `14020` and `24010`
+  	* [#443][i443] Ferry cables: update viewing group description for `24010`
 
 ### 1.4.0 - use with FC 1.4.1
 * Misc changes
