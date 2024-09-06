@@ -70,7 +70,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
+			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:VOLCANO01')
 		elseif feature.categoryOfObstruction == 23 then		-- mangrove
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
@@ -152,7 +152,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
-			featurePortrayal:AddInstructions('PointInstruction:VOLCANO01')
+			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:VOLCANO01')
 		elseif feature.categoryOfObstruction == 23 then			-- mangrove
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
