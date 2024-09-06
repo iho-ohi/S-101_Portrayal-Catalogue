@@ -8207,7 +8207,7 @@
       </viewingGroup>
       <viewingGroup id="14020">
          <description>
-            <name>Non-isolated dangers (active submarine volcanos, junction cables (CableSubmarine:categoryOfCable=9))</name>
+            <name>Non-isolated dangers (active submarine volcanos, junction cables (CableSubmarine categoryOfCable=9))</name>
             <description>Base: J, K, L - Subsea Features</description>
             <language>eng</language>
          </description>
