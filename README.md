@@ -169,13 +169,18 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i448]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/448
 [i449]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/449
 [i450]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/450
+[i451]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/451
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 1.5.X - use with FC 1.5.X
+### 1.X.X - use with FC 1.X.X
+
+
+### 1.5.1 - use with FC 1.5.1
 * Misc changes
  	* [#450][i450] Update PC version to "1.5.1-DRAFT"
+ 	* [#451][i451] Update PC version to "1.5.1" prior to release
 
 * Lua Rule File / Symbol Updates
 	* [#449][i449] Vertical clearance not displayed
