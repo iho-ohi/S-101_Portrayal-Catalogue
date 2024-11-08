@@ -646,7 +646,6 @@ function CreateFeature(featureID, featureCode)
 
 	-- Returns an iterator that returns all spatial associations to points, multi points and curves
 	-- associated to the feature.  Surface and composite curves return only their ultimate simple curves.
-	-- This only works for features with a single spatial association.
 	function feature:GetFlattenedSpatialAssociations()
 		local fsa = self['FlattenedSpatialAssociations']
 
@@ -665,24 +664,30 @@ function CreateFeature(featureID, featureCode)
 				end
 			end
 
-			local spatialType = self:GetSpatialAssociation().SpatialType
+			for _, spas in ipairs(self:GetSpatialAssociations()) do
+				local spatialType = spas.SpatialType
 
-			if contains(spatialType, { SpatialType.Point, SpatialType.MultiPoint, SpatialType.Curve }) then
-				fsa[#fsa + 1] = self:GetSpatialAssociation()
-			elseif spatialType == SpatialType.CompositeCurve then
-				FlattenCompositeCurve(self.CompositeCurve)
-			elseif spatialType == SpatialType.Surface then
-				if self.Surface.ExteriorRing.SpatialType == SpatialType.CompositeCurve then
-					FlattenCompositeCurve(self.Surface.ExteriorRing.Spatial)
-				else
-					fsa[#fsa + 1] = self.Surface.ExteriorRing
-				end
-
-				for _, ring in ipairs(self.Surface.InteriorRings) do
-					if ring.SpatialType == SpatialType.CompositeCurve then
-						FlattenCompositeCurve(ring.Spatial)
+				if spatialType == SpatialType.Point then
+					fsa[#fsa + 1] = spas
+				elseif spatialType == SpatialType.MultiPoint then
+					fsa[#fsa + 1] = spas
+				elseif spatialType == SpatialType.Curve then
+					fsa[#fsa + 1] = spas
+				elseif spatialType == SpatialType.CompositeCurve then
+					FlattenCompositeCurve(spas.Spatial)
+				elseif spatialType == SpatialType.Surface then
+					if spas.Spatial.ExteriorRing.SpatialType == SpatialType.CompositeCurve then
+						FlattenCompositeCurve(spas.Spatial.ExteriorRing.Spatial)
 					else
-						fsa[#fsa + 1] = ring
+						fsa[#fsa + 1] = spas.Spatial.ExteriorRing
+					end
+
+					for _, ring in ipairs(spas.Spatial.InteriorRings) do
+						if ring.SpatialType == SpatialType.CompositeCurve then
+							FlattenCompositeCurve(ring.Spatial)
+						else
+							fsa[#fsa + 1] = ring
+						end
 					end
 				end
 			end
