@@ -643,6 +643,48 @@ function CreateFeature(featureID, featureCode)
 			return self['Spatial']
 		end
 	end
+	
+	function feature:FlattenSpatialAssociation(spas)
+		local fsa = {}
+		
+		local function FlattenCompositeCurve(compositeCurve)
+			for _, curveElement in ipairs(compositeCurve.CurveAssociations) do
+				if curveElement.SpatialType == SpatialType.CompositeCurve then
+					FlattenCompositeCurve(curveElement.Spatial)
+				else
+					fsa[#fsa + 1] = curveElement
+				end
+			end
+		end
+
+		local spatialType = spas.SpatialType
+
+		if spatialType == SpatialType.Point then
+			fsa[#fsa + 1] = spas
+		elseif spatialType == SpatialType.MultiPoint then
+			fsa[#fsa + 1] = spas
+		elseif spatialType == SpatialType.Curve then
+			fsa[#fsa + 1] = spas
+		elseif spatialType == SpatialType.CompositeCurve then
+			FlattenCompositeCurve(spas.Spatial)
+		elseif spatialType == SpatialType.Surface then
+			if spas.Spatial.ExteriorRing.SpatialType == SpatialType.CompositeCurve then
+				FlattenCompositeCurve(spas.Spatial.ExteriorRing.Spatial)
+			else
+				fsa[#fsa + 1] = spas.Spatial.ExteriorRing
+			end
+
+			for _, ring in ipairs(spas.Spatial.InteriorRings) do
+				if ring.SpatialType == SpatialType.CompositeCurve then
+					FlattenCompositeCurve(ring.Spatial)
+				else
+					fsa[#fsa + 1] = ring
+				end
+			end
+		end
+		
+		return fsa
+	end
 
 	-- Returns an iterator that returns all spatial associations to points, multi points and curves
 	-- associated to the feature.  Surface and composite curves return only their ultimate simple curves.
@@ -654,41 +696,9 @@ function CreateFeature(featureID, featureCode)
 
 			fsa = self['FlattenedSpatialAssociations']
 
-			local function FlattenCompositeCurve(compositeCurve)
-				for _, curveElement in ipairs(compositeCurve.CurveAssociations) do
-					if curveElement.SpatialType == SpatialType.CompositeCurve then
-						FlattenCompositeCurve(curveElement.Spatial)
-					else
-						fsa[#fsa + 1] = curveElement
-					end
-				end
-			end
-
 			for _, spas in ipairs(self:GetSpatialAssociations()) do
-				local spatialType = spas.SpatialType
-
-				if spatialType == SpatialType.Point then
-					fsa[#fsa + 1] = spas
-				elseif spatialType == SpatialType.MultiPoint then
-					fsa[#fsa + 1] = spas
-				elseif spatialType == SpatialType.Curve then
-					fsa[#fsa + 1] = spas
-				elseif spatialType == SpatialType.CompositeCurve then
-					FlattenCompositeCurve(spas.Spatial)
-				elseif spatialType == SpatialType.Surface then
-					if spas.Spatial.ExteriorRing.SpatialType == SpatialType.CompositeCurve then
-						FlattenCompositeCurve(spas.Spatial.ExteriorRing.Spatial)
-					else
-						fsa[#fsa + 1] = spas.Spatial.ExteriorRing
-					end
-
-					for _, ring in ipairs(spas.Spatial.InteriorRings) do
-						if ring.SpatialType == SpatialType.CompositeCurve then
-							FlattenCompositeCurve(ring.Spatial)
-						else
-							fsa[#fsa + 1] = ring
-						end
-					end
+				for _, v in ipairs(self:FlattenSpatialAssociation(spas)) do
+					fsa[#fsa + 1] = v
 				end
 			end
 		end
