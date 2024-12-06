@@ -172,6 +172,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i451]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/451
 [i454]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/454
 [i456]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/456
+[i457]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/457
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -184,6 +185,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	
 * Lua Rule File / Symbol Updates
 	* [#456][i456] `DepthContour` not portrayed in some instances
+	* [#457][i457] Symbols still include inline styling
 
 ### 1.5.1 - use with FC 1.5.1
 * Misc changes
