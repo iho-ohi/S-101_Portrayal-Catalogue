@@ -171,6 +171,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i450]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/450
 [i451]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/451
 [i454]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/454
+[i455]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/455
 [i456]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/456
 [i457]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/457
 
@@ -184,6 +185,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#454][i454] Update PC version to "2.0.0" for release
  	
 * Lua Rule File / Symbol Updates
+	* [#455][i455] Portrayal Catalogue assumes single spatial association per feature
 	* [#456][i456] `DepthContour` not portrayed in some instances
 	* [#457][i457] Symbols still include inline styling
 
