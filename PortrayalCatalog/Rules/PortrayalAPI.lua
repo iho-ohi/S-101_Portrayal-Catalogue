@@ -16,10 +16,17 @@ function PortrayalInitializeContextParameters(contextParameters)
 	local pccp = portrayalContext.ContextParameters._underlyingTable
 
 	pccp._parameterTypes = {}
+	pccp._defaultValues = {}
 
 	for _, cp in ipairs(contextParameters) do
-		pccp[cp.Name] = cp.DefaultValue
-		pccp._parameterTypes[cp.Name] = cp.ParameterType
+		if (cp.Name == 'NationalLanguage') then
+			pccp._parameterTypes[cp.Name] = 'csv'
+			pccp[cp.Name] = ConvertEncodedValue(pccp._parameterTypes[cp.Name], cp.DefaultValue)
+		else
+			pccp._parameterTypes[cp.Name] = cp.ParameterType
+			pccp[cp.Name] = cp.DefaultValue
+		end
+		pccp._defaultValues[cp.Name] = cp.DefaultValue
 	end
 
 	Debug.StopPerformance('Lua Code - PortrayalInitializeContextParameters')
@@ -42,10 +49,16 @@ function PortrayalCreateContextParameter(contextParameterName, parameterType, de
 		cpt = 'text'
 	end
 	
+	-- Store National Language as a table of preferred languages
+	if cpt == 'text' and contextParameterId == 'NationalLanguage' then
+		cpt = 'csv'
+	end
+	
 	if cpt ~= 'boolean' and
 	   cpt ~= 'integer' and
 	   cpt ~= 'real' and
 	   cpt ~= 'text' and
+	   cpt ~= 'csv' and
 	   cpt ~= 'date' then
 		error('Invalid parameter type:' .. cpt)
 	end
@@ -63,8 +76,15 @@ function PortrayalSetContextParameter(contextParameterName, value)
 	end
 
 	local pccp = portrayalContext.ContextParameters._underlyingTable
-
+	
 	portrayalContext.ContextParameters[contextParameterName] = ConvertEncodedValue(pccp._parameterTypes[contextParameterName], value)
+
+	if contextParameterName == 'NationalLanguage' then
+		-- Use default value rather than emtpy string
+		if tostring(portrayalContext.ContextParameters[contextParameterName]) == '' then
+			portrayalContext.ContextParameters[contextParameterName] = ConvertEncodedValue(pccp._parameterTypes[contextParameterName], pccp._defaultValues[contextParameterName])
+		end
+	end
 
 	Debug.StopPerformance('Lua Code - Total')
 end

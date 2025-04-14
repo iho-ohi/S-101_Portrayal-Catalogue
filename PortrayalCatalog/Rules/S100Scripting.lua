@@ -168,7 +168,26 @@ end
 -- Encoded attribute value type support
 --
 
-local valueTypes = { 'boolean', 'enumeration', 'integer', 'real', 'text', 'date', 'time' , 'dateTime' , 'URI' , 'URL' , 'URN' , 'S100_CodeList' , 'S100_TruncatedDate' }
+local valueTypes =
+{
+	-- S-100 value types
+	'boolean',
+	'enumeration',
+	'integer',
+	'real',
+	'text',
+	'date',
+	'time',
+	'dateTime',
+	'URI',
+	'URL',
+	'URN',
+	'S100_CodeList',
+	'S100_TruncatedDate',
+	
+	-- Value types not defined by S-100
+	'csv'	-- comma separated values; one or more text values separated by whitespace and/or commas
+}
 
 function ConvertEncodedValue(valueType, value)
 	if value == unknownAttributeValueString then
@@ -187,9 +206,40 @@ function ConvertEncodedValue(valueType, value)
 		return tonumber(value)
 	elseif valueType == 'real' then
 		return StringToScaledDecimal(value)
+	elseif valueType == 'csv' then
+		return StringToTable(value, ",")
 	else
 		return value
 	end
+end
+
+-- converts a delmited string to a table of individual entries
+function StringToTable(text, delimeter)
+	local tmp = {}
+
+	-- remove leading and trailing whitespace
+	local trimmed = string.match(text, "^%s*(.-)%s*$")
+	if trimmed ~= nil and string.len(trimmed) ~= 0 then
+	
+		-- parse values and add to table
+		local pattern = "([^" .. delimeter .. "%s]+)"
+		local matches = string.gmatch(trimmed, pattern)
+		for match in matches do
+			table.insert(tmp, match)
+		end
+	end
+	
+	-- create type
+	local stringTable = { Type = 'StringTable', Value = tmp, Delimeter = delimeter }
+	local mt =
+	{
+		__tostring = function(t)
+			return table.concat(t.Value, t.Delimeter)
+		end
+	}
+	setmetatable(stringTable, mt)
+	
+	return stringTable
 end
 
 --

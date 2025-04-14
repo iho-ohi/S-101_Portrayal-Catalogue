@@ -67,6 +67,8 @@ function ObservedContextParametersAsString(featurePortrayalItem)
 				value = value and 'true' or 'false'
 			elseif type(value) == 'table' and value.Type == 'ScaledDecimal' then
 				value = value:ToNumber()
+			elseif type(value) == 'table' and value.Type == 'StringTable' then
+				value = tostring(value)
 			end
 
 			observedValues[#observedValues + 1] = observed .. ':' .. value;
@@ -495,24 +497,26 @@ function CreateFeaturePortrayal(feature)
 		if not feature['!featureName'] or #feature.featureName == 0 or not feature.featureName[1].name then
 			return nil
 		end
-		
+
 		local defaultName			-- an entry with nameUsage == 1
-		for cnt, featureName in ipairs(feature.featureName) do
+		for _, preferredLanguage in ipairs(contextParameters.NationalLanguage.Value) do
+			for cnt, featureName in ipairs(feature.featureName) do
 
-			-- ensure a name is present and it's intended for chart display
-			if featureName.name and featureName.nameUsage then
-				local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage)
+				-- ensure a name is present and it's intended for chart display
+				if featureName.name and featureName.nameUsage then
+					local languageMatches = (featureName.language and featureName.language == preferredLanguage)
 
-				-- check for default values which are used if we can't otherwise find a match...
-				if featureName.nameUsage == 1 then
-					if languageMatches then
+					-- check for default values which are used if we can't otherwise find a match...
+					if featureName.nameUsage == 1 then
+						if languageMatches then
+							return featureName.name
+						end
+						-- only one entry is permitted to have nameUsage set to one
+						defaultName = featureName.name
+					elseif featureName.nameUsage == 2 and languageMatches then
+						-- use the entry intended for chart display which matched the selected lanaguage
 						return featureName.name
 					end
-					-- only one entry is permitted to have nameUsage set to one
-					defaultName = featureName.name
-				elseif featureName.nameUsage == 2 and languageMatches then
-					-- use the entry intended for chart display which matched the selected lanaguage
-					return featureName.name
 				end
 			end
 		end
@@ -536,21 +540,22 @@ end
 function GetInformationText(information, contextParameters)
 	local defaultText
 
-	for _, text in ipairs(information.information) do
-		if text.text and text.text ~= '' then
-			if text.language then
-				if text.language == contextParameters.NationalLanguage then
-					-- return the national language text
-					defaultText = text.text
-					break
-				end
-				if text.language == 'eng' or text.language == '' then
-					-- default to english text
+	for _, preferredLanguage in ipairs(contextParameters.NationalLanguage.Value) do
+		for _, text in ipairs(information.information) do
+			if text.text and text.text ~= '' then
+				if text.language then
+					if text.language == preferredLanguage then
+						-- return the national language text
+						return text.text
+					end
+					if text.language == 'eng' or text.language == '' then
+						-- default to english text
+						defaultText = defaultText or text.text
+					end
+				else
+					-- no language specified, assume eng
 					defaultText = defaultText or text.text
 				end
-			else
-				-- no language specified, assume eng
-				defaultText = defaultText or text.text
 			end
 		end
 	end
