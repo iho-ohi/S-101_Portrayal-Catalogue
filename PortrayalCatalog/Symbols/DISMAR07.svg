@@ -10,7 +10,7 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-1" y="-1" height="2.0" width="2.0"/>
   <rect class="svgBox layout" fill="none" x="-1" y="-1" height="2.0" width="2.0"/>
-  <circle class="sl f0 sCHBLK" style="stroke-width: 0.32;" cx="0" cy="0" r="0.8"/>
+  <circle class="sl f0 sCHBLK" stroke-width="0.32" cx="0" cy="0" r="0.8"/>
   <circle class="fCHBLK" cx="0" cy="0" r="0.2"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.4"/>
 </svg>
