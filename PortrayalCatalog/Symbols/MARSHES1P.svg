@@ -8,12 +8,12 @@
       <iho:Description iho:publisher="IHB" iho:creationDate="2015-03-04" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>
     </iho:S100SVG>
   </metadata>
-  <rect class="symbolBox layout" fill="none" x="-2" y="-5.17" height="3.93" width="4"/>
-  <rect class="svgBox layout" fill="none" x="-2" y="-5.17" height="5.17" width="4"/>
-  <path d=" M 0.01,-2.51 L 0.01,-5.17" class="sl f0 sCHBRN" stroke-width="0.64" />
-  <path d=" M -1.24,-1.24 L 1.26,-1.24" class="sl f0 sCHBRN" stroke-width="0.64" />
-  <path d=" M -2,-2.06 L 2,-2.06" class="sl f0 sCHBRN" stroke-width="0.64" />
-  <path d=" M -0.86,-2.17 L -1.58,-3.82" class="sl f0 sCHBRN" stroke-width="0.64" />
-  <path d=" M 0.8,-2.17 L 1.51,-3.79" class="sl f0 sCHBRN" stroke-width="0.64" />
-  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
+  <rect class="symbolBox layout" fill="none" x="-2.5" y="-3.5" height="5" width="5" />
+  <rect class="svgBox layout" fill="none" x="-2.5" y="-3.5" height="5" width="5" />
+  <path d=" M 0.01,-0.45 L 0.01,-3.11" class="sl f0 sCHBRN" stroke-width="0.64"  />
+  <path d=" M -1.24,0.82 L 1.26,0.82" class="sl f0 sCHBRN" stroke-width="0.64"  />
+  <path d=" M -2,0 L 2,0" class="sl f0 sCHBRN" stroke-width="0.64"  />
+  <path d=" M -0.86,-0.11 L -1.58,-1.76" class="sl f0 sCHBRN" stroke-width="0.64"  />
+  <path d=" M 0.86,-0.12 L 1.57,-1.74" class="sl f0 sCHBRN" stroke-width="0.64"  />
+  <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0"1"/>
 </svg>
