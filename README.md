@@ -180,7 +180,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 Older changes are here: [Changelog.md](Changelog.md)
 
 ### 2.X.X - use with FC 2.X.X
-*Lua Rule File / Symbol Updates
+* Lua Rule File / Symbol Updates
 	* [#469][i469] Fixed misspelling in DISMAR07.svg
 
 ### 2.0.0 - use with FC 2.0.0
