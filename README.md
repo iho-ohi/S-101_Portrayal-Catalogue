@@ -176,6 +176,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i457]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/457
 [i469]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/469
 [i488]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/488
+[i452]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/452
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -185,6 +186,7 @@ Older changes are here: [Changelog.md](Changelog.md)
   
 	* [#469][i469] Fixed misspelling in DISMAR07.svg
 	* [#488][i488] Removed instances of "paper chart" in PC.xml and Symbols folder
+	* [#452][i452] Issue has been deprecated. Removal of categoryOfCable =7
 
 ### 2.0.0 - use with FC 2.0.0
 * Misc changes
