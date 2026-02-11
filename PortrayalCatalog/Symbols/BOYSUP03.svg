@@ -2,7 +2,7 @@
 <?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" shape-rendering="geometricPrecision" fill-rule="evenodd" width="9.21mm" height="6.95mm" viewBox="-4.64 -6.04 9.21 6.95">
   <title>BOYSUP03</title>
-  <desc>LANBY, super-buoy, paper-chart</desc>
+  <desc>LANBY, super-buoy</desc>
   <metadata>
     <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1"/>

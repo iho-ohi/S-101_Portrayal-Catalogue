@@ -2,7 +2,7 @@
 <?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" shape-rendering="geometricPrecision" fill-rule="evenodd" width="6.47mm" height="4.72mm" viewBox="-3.71 -4.06 6.47 4.72">
   <title>BOYBAR11</title>
-  <desc>barrel buoy green, paper-chart</desc>
+  <desc>barrel buoy green</desc>
   <metadata>
     <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2023-01-23" iho:source="7Cs" iho:format="S100SVG" iho:version="0.1"/>

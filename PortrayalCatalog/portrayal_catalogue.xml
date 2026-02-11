@@ -190,7 +190,7 @@
       <symbol id="BCNGEN01">
          <description>
             <name>BCNGEN01</name>
-            <description>beacon in general, paper-chart</description>
+            <description>beacon in general</description>
             <language>eng</language>
          </description>
          <fileName>BCNGEN01.svg</fileName>
@@ -200,7 +200,7 @@
       <symbol id="BCNGEN03">
          <description>
             <name>BCNGEN03</name>
-            <description>default symbol for beacon, paper-chart</description>
+            <description>default symbol for beacon</description>
             <language>eng</language>
          </description>
          <fileName>BCNGEN03.svg</fileName>
@@ -380,7 +380,7 @@
       <symbol id="BCNLTC01">
          <description>
             <name>BCNLTC01</name>
-            <description>lattice beacon, paper-chart</description>
+            <description>lattice beacon</description>
             <language>eng</language>
          </description>
          <fileName>BCNLTC01.svg</fileName>
@@ -430,7 +430,7 @@
       <symbol id="BCNSTK02">
          <description>
             <name>BCNSTK02</name>
-            <description>minor, stake or pole beacon, paper-chart</description>
+            <description>minor, stake or pole beacon</description>
             <language>eng</language>
          </description>
          <fileName>BCNSTK02.svg</fileName>
@@ -440,7 +440,7 @@
       <symbol id="BCNTOW01">
          <description>
             <name>BCNTOW01</name>
-            <description>beacon tower, paper-chart</description>
+            <description>beacon tower</description>
             <language>eng</language>
          </description>
          <fileName>BCNTOW01.svg</fileName>
@@ -450,7 +450,7 @@
 	   <symbol id="BCNTOW10">
 		   <description>
 			   <name>BCNTOW10</name>
-			   <description>beacon tower, lateral-r, paper-chart</description>
+			   <description>beacon tower, lateral-r</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW10.svg</fileName>
@@ -460,7 +460,7 @@
 	   <symbol id="BCNTOW11">
 		   <description>
 			   <name>BCNTOW11</name>
-			   <description>beacon tower, lateral-g, paper-chart</description>
+			   <description>beacon tower, lateral-g</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW11.svg</fileName>
@@ -470,7 +470,7 @@
 	   <symbol id="BCNTOW12">
 		   <description>
 			   <name>BCNTOW12</name>
-			   <description>beacon tower, special purpose-y, paper-chart</description>
+			   <description>beacon tower, special purpose-y</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW12.svg</fileName>
@@ -480,7 +480,7 @@
 	   <symbol id="BCNTOW13">
 		   <description>
 			   <name>BCNTOW13</name>
-			   <description>beacon tower, general-b, paper-chart</description>
+			   <description>beacon tower, general-b</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW13.svg</fileName>
@@ -490,7 +490,7 @@
 	   <symbol id="BCNTOW22">
 		   <description>
 			   <name>BCNTOW22</name>
-			   <description>beacon tower, cardinal-by, paper-chart</description>
+			   <description>beacon tower, cardinal-by</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW22.svg</fileName>
@@ -500,7 +500,7 @@
 	   <symbol id="BCNTOW23">
 		   <description>
 			   <name>BCNTOW23</name>
-			   <description>beacon tower, cardinal-byb, paper-chart</description>
+			   <description>beacon tower, cardinal-byb</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW23.svg</fileName>
@@ -510,7 +510,7 @@
 	   <symbol id="BCNTOW24">
 		   <description>
 			   <name>BCNTOW24</name>
-			   <description>beacon tower, cardinal-yb, paper-chart</description>
+			   <description>beacon tower, cardinal-yb</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW24.svg</fileName>
@@ -520,7 +520,7 @@
 	   <symbol id="BCNTOW25">
 		   <description>
 			   <name>BCNTOW25</name>
-			   <description>beacon tower, cardinal-yby, paper-chart</description>
+			   <description>beacon tower, cardinal-yby</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW25.svg</fileName>
@@ -530,7 +530,7 @@
 	   <symbol id="BCNTOW30">
 		   <description>
 			   <name>BCNTOW30</name>
-			   <description>beacon tower, lateral-rgr, paper-chart</description>
+			   <description>beacon tower, lateral-rgr</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW30.svg</fileName>
@@ -540,7 +540,7 @@
 	   <symbol id="BCNTOW31">
 		   <description>
 			   <name>BCNTOW31</name>
-			   <description>beacon tower, lateral-grg, paper-chart</description>
+			   <description>beacon tower, lateral-grg</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW31.svg</fileName>
@@ -550,7 +550,7 @@
 	   <symbol id="BCNTOW40">
 		   <description>
 			   <name>BCNTOW40</name>
-			   <description>beacon tower, isolated danger-brb, paper-chart</description>
+			   <description>beacon tower, isolated danger-brb</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW40.svg</fileName>
@@ -560,7 +560,7 @@
 	   <symbol id="BCNTOW50">
 		   <description>
 			   <name>BCNTOW50</name>
-			   <description>beacon tower, safe water-rw, paper-chart</description>
+			   <description>beacon tower, safe water-rw</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BCNTOW50.svg</fileName>
@@ -580,7 +580,7 @@
       <symbol id="BOYBAR01">
          <description>
             <name>BOYBAR01</name>
-            <description>barrel buoy, paper-chart</description>
+            <description>barrel buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYBAR01.svg</fileName>
@@ -590,7 +590,7 @@
 	   <symbol id="BOYBAR10">
 		   <description>
 			   <name>BOYBAR10</name>
-			   <description>barrel buoy - red, paper-chart</description>
+			   <description>barrel buoy - red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYBAR10.svg</fileName>
@@ -600,7 +600,7 @@
 	   <symbol id="BOYBAR11">
 		   <description>
 			   <name>BOYBAR11</name>
-			   <description>barrel buoy green, paper-chart</description>
+			   <description>barrel buoy green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYBAR11.svg</fileName>
@@ -610,7 +610,7 @@
 	   <symbol id="BOYBAR12">
 		   <description>
 			   <name>BOYBAR12</name>
-			   <description>barrel buoy yellow, paper-chart</description>
+			   <description>barrel buoy yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYBAR12.svg</fileName>
@@ -620,7 +620,7 @@
       <symbol id="BOYCAN01">
          <description>
             <name>BOYCAN01</name>
-            <description>can buoy, paper-chart</description>
+            <description>can buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYCAN01.svg</fileName>
@@ -630,7 +630,7 @@
 	   <symbol id="BOYCAN10">
 		   <description>
 			   <name>BOYCAN10</name>
-			   <description>can buoy, red, paper-chart</description>
+			   <description>can buoy, red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYCAN10.svg</fileName>
@@ -640,7 +640,7 @@
 	   <symbol id="BOYCAN11">
 		   <description>
 			   <name>BOYCAN11</name>
-			   <description>can buoy green, paper-chart</description>
+			   <description>can buoy green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYCAN11.svg</fileName>
@@ -650,7 +650,7 @@
 	   <symbol id="BOYCAN12">
 		   <description>
 			   <name>BOYCAN12</name>
-			   <description>can buoy yellow, paper-chart</description>
+			   <description>can buoy yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYCAN12.svg</fileName>
@@ -660,7 +660,7 @@
 	   <symbol id="BOYCAN30">
 		   <description>
 			   <name>BOYCAN30</name>
-			   <description>can buoy lateral rgr, paper-chart</description>
+			   <description>can buoy lateral rgr</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYCAN30.svg</fileName>
@@ -670,7 +670,7 @@
 	   <symbol id="BOYCAN31">
 		   <description>
 			   <name>BOYCAN31</name>
-			   <description>can buoy, lateral grg, paper-chart</description>
+			   <description>can buoy, lateral grg</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYCAN31.svg</fileName>
@@ -720,7 +720,7 @@
       <symbol id="BOYCON01">
          <description>
             <name>BOYCON01</name>
-            <description>conical buoy, paper-chart</description>
+            <description>conical buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYCON01.svg</fileName>
@@ -730,7 +730,7 @@
       <symbol id="BOYCON10">
          <description>
             <name>BOYCON10</name>
-            <description>conical buoy, red, paper-chart</description>
+            <description>conical buoy, red</description>
             <language>eng</language>
          </description>
          <fileName>BOYCON10.svg</fileName>
@@ -740,7 +740,7 @@
       <symbol id="BOYCON11">
          <description>
             <name>BOYCON11</name>
-            <description>conical buoy green, paper-chart</description>
+            <description>conical buoy green</description>
             <language>eng</language>
          </description>
          <fileName>BOYCON11.svg</fileName>
@@ -750,7 +750,7 @@
       <symbol id="BOYCON12">
          <description>
             <name>BOYCON12</name>
-            <description>conical buoy, yellow, paper-chart</description>
+            <description>conical buoy, yellow</description>
             <language>eng</language>
          </description>
          <fileName>BOYCON12.svg</fileName>
@@ -790,7 +790,7 @@
       <symbol id="BOYGEN03">
          <description>
             <name>BOYGEN03</name>
-            <description>default symbol for buoy, paper-chart</description>
+            <description>default symbol for buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYGEN03.svg</fileName>
@@ -800,7 +800,7 @@
       <symbol id="BOYINB01">
          <description>
             <name>BOYINB01</name>
-            <description>installation buoy, paper-chart</description>
+            <description>installation buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYINB01.svg</fileName>
@@ -860,7 +860,7 @@
       <symbol id="BOYMOR01">
          <description>
             <name>BOYMOR01</name>
-            <description>mooring buoy, barrel shape, paper-chart</description>
+            <description>mooring buoy, barrel shape</description>
             <language>eng</language>
          </description>
          <fileName>BOYMOR01.svg</fileName>
@@ -880,7 +880,7 @@
 	   <symbol id="BOYMOR03">
          <description>
             <name>BOYMOR03</name>
-            <description>mooring buoy, can shape, paper-chart</description>
+            <description>mooring buoy, can shape</description>
             <language>eng</language>
          </description>
          <fileName>BOYMOR03.svg</fileName>
@@ -920,7 +920,7 @@
       <symbol id="BOYPIL01">
          <description>
             <name>BOYPIL01</name>
-            <description>pillar buoy, paper-chart</description>
+            <description>pillar buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYPIL01.svg</fileName>
@@ -930,7 +930,7 @@
       <symbol id="BOYPIL10">
          <description>
             <name>BOYPIL10</name>
-            <description>pillar buoy, lateral red, paper-chart</description>
+            <description>pillar buoy, lateral red</description>
             <language>eng</language>
          </description>
          <fileName>BOYPIL10.svg</fileName>
@@ -940,7 +940,7 @@
 	   <symbol id="BOYPIL11">
 		   <description>
 			   <name>BOYPIL11</name>
-			   <description>pillar buoy, lateral green, paper-chart</description>
+			   <description>pillar buoy, lateral green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL11.svg</fileName>
@@ -950,7 +950,7 @@
 	   <symbol id="BOYPIL12">
 		   <description>
 			   <name>BOYPIL12</name>
-			   <description>pillar buoy, special purpose, yellow, paper-chart</description>
+			   <description>pillar buoy, special purpose, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL12.svg</fileName>
@@ -960,7 +960,7 @@
 	   <symbol id="BOYPIL22">
 		   <description>
 			   <name>BOYPIL22</name>
-			   <description>pillar buoy, cardinal, black, yellow, paper-chart</description>
+			   <description>pillar buoy, cardinal, black, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL22.svg</fileName>
@@ -970,7 +970,7 @@
 	   <symbol id="BOYPIL23">
 		   <description>
 			   <name>BOYPIL23</name>
-			   <description>pillar buoy, cardinal, black, yellow, black, paper-chart</description>
+			   <description>pillar buoy, cardinal, black, yellow, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL23.svg</fileName>
@@ -980,7 +980,7 @@
 	   <symbol id="BOYPIL24">
 		   <description>
 			   <name>BOYPIL24</name>
-			   <description>pillar buoy, cardinal, yellow, black, paper-chart</description>
+			   <description>pillar buoy, cardinal, yellow, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL24.svg</fileName>
@@ -990,7 +990,7 @@
 	   <symbol id="BOYPIL25">
 		   <description>
 			   <name>BOYPIL25</name>
-			   <description>pillar buoy, cardinal, yellow, black, yellow, paper-chart</description>
+			   <description>pillar buoy, cardinal, yellow, black, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL25.svg</fileName>
@@ -1000,7 +1000,7 @@
 	   <symbol id="BOYPIL30">
 		   <description>
 			   <name>BOYPIL30</name>
-			   <description>pillar buoy, lateral, red, green, red, paper-chart</description>
+			   <description>pillar buoy, lateral, red, green, red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL30.svg</fileName>
@@ -1010,7 +1010,7 @@
 	   <symbol id="BOYPIL31">
 		   <description>
 			   <name>BOYPIL31</name>
-			   <description>pillar buoy, lateral, green, red, green, paper-chart</description>
+			   <description>pillar buoy, lateral, green, red, green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL31.svg</fileName>
@@ -1020,7 +1020,7 @@
 	   <symbol id="BOYPIL40">
 		   <description>
 			   <name>BOYPIL40</name>
-			   <description>pillar buoy, isolated danger, black, red, black, paper-chart</description>
+			   <description>pillar buoy, isolated danger, black, red, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL40.svg</fileName>
@@ -1030,7 +1030,7 @@
 	   <symbol id="BOYPIL50">
 		   <description>
 			   <name>BOYPIL50</name>
-			   <description>pillar buoy, safe water, red, white, paper-chart</description>
+			   <description>pillar buoy, safe water, red, white</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYPIL50.svg</fileName>
@@ -1060,7 +1060,7 @@
       <symbol id="BOYSPH01">
          <description>
             <name>BOYSPH01</name>
-            <description>spherical buoy, paper-chart</description>
+            <description>spherical buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYSPH01.svg</fileName>
@@ -1070,7 +1070,7 @@
 	   <symbol id="BOYSPH10">
 		   <description>
 			   <name>BOYSPH10</name>
-			   <description>spherical buoy, lateral, red, paper-chart</description>
+			   <description>spherical buoy, lateral, red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPH10.svg</fileName>
@@ -1080,7 +1080,7 @@
 	   <symbol id="BOYSPH11">
 		   <description>
 			   <name>BOYSPH11</name>
-			   <description>spherical buoy, lateral, green, paper-chart</description>
+			   <description>spherical buoy, lateral, green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPH11.svg</fileName>
@@ -1090,7 +1090,7 @@
 	   <symbol id="BOYSPH12">
 		   <description>
 			   <name>BOYSPH12</name>
-			   <description>spherical buoy, special purpose, yellow, paper-chart</description>
+			   <description>spherical buoy, special purpose, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPH12.svg</fileName>
@@ -1100,7 +1100,7 @@
 	   <symbol id="BOYSPH50">
 		   <description>
 			   <name>BOYSPH50</name>
-			   <description>spherical buoy, safe water, red, white, paper-chart</description>
+			   <description>spherical buoy, safe water, red, white</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPH50.svg</fileName>
@@ -1110,7 +1110,7 @@
 	   <symbol id="BOYSPH60">
 		   <description>
 			   <name>BOYSPH60</name>
-			   <description>spherical buoy, emergency wreck mark, paper-chart</description>
+			   <description>spherical buoy, emergency wreck mark</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPH60.svg</fileName>
@@ -1160,7 +1160,7 @@
       <symbol id="BOYSPR01">
          <description>
             <name>BOYSPR01</name>
-            <description>spar buoy, paper-chart</description>
+            <description>spar buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYSPR01.svg</fileName>
@@ -1170,7 +1170,7 @@
 	   <symbol id="BOYSPR10">
 		   <description>
 			   <name>BOYSPR10</name>
-			   <description>spar buoy, lateral, red, paper-chart</description>
+			   <description>spar buoy, lateral, red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR10.svg</fileName>
@@ -1180,7 +1180,7 @@
 	   <symbol id="BOYSPR11">
 		   <description>
 			   <name>BOYSPR11</name>
-			   <description>spar buoy, lateral, green, paper-chart</description>
+			   <description>spar buoy, lateral, green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR11.svg</fileName>
@@ -1190,7 +1190,7 @@
 	   <symbol id="BOYSPR12">
 		   <description>
 			   <name>BOYSPR12</name>
-			   <description>spar buoy, special purpose, yellow, paper-chart</description>
+			   <description>spar buoy, special purpose, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR12.svg</fileName>
@@ -1200,7 +1200,7 @@
 	   <symbol id="BOYSPR22">
 		   <description>
 			   <name>BOYSPR22</name>
-			   <description>spar buoy, cardinal, black, yellow, paper-chart</description>
+			   <description>spar buoy, cardinal, black, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR22.svg</fileName>
@@ -1210,7 +1210,7 @@
 	   <symbol id="BOYSPR23">
 		   <description>
 			   <name>BOYSPR23</name>
-			   <description>spar buoy, cardinal, black, yellow, black, paper-chart</description>
+			   <description>spar buoy, cardinal, black, yellow, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR23.svg</fileName>
@@ -1220,7 +1220,7 @@
 	   <symbol id="BOYSPR24">
 		   <description>
 			   <name>BOYSPR24</name>
-			   <description>spar buoy, cardinal, yellow, black, paper-chart</description>
+			   <description>spar buoy, cardinal, yellow, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR24.svg</fileName>
@@ -1230,7 +1230,7 @@
 	   <symbol id="BOYSPR25">
 		   <description>
 			   <name>BOYSPR25</name>
-			   <description>spar buoy, cardinal, yellow, black, yellow, paper-chart</description>
+			   <description>spar buoy, cardinal, yellow, black, yellow</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR25.svg</fileName>
@@ -1240,7 +1240,7 @@
 	   <symbol id="BOYSPR30">
 		   <description>
 			   <name>BOYSPR30</name>
-			   <description>spar buoy, lateral, red, green, red, paper-chart</description>
+			   <description>spar buoy, lateral, red, green, red</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR30.svg</fileName>
@@ -1250,7 +1250,7 @@
 	   <symbol id="BOYSPR31">
 		   <description>
 			   <name>BOYSPR31</name>
-			   <description>spar buoy, lateral, green, red, green, paper-chart</description>
+			   <description>spar buoy, lateral, green, red, green</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR31.svg</fileName>
@@ -1260,7 +1260,7 @@
 	   <symbol id="BOYSPR40">
 		   <description>
 			   <name>BOYSPR40</name>
-			   <description>spar buoy, isolated danger, black, red, black, paper-chart</description>
+			   <description>spar buoy, isolated danger, black, red, black</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR40.svg</fileName>
@@ -1270,7 +1270,7 @@
 	   <symbol id="BOYSPR50">
 		   <description>
 			   <name>BOYSPR50</name>
-			   <description>spar buoy, safe water, red, white, paper-chart</description>
+			   <description>spar buoy, safe water, red, white</description>
 			   <language>eng</language>
 		   </description>
 		   <fileName>BOYSPR50.svg</fileName>
@@ -1290,7 +1290,7 @@
       <symbol id="BOYSUP01">
          <description>
             <name>BOYSUP01</name>
-            <description>super-buoy, paper-chart</description>
+            <description>super-buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYSUP01.svg</fileName>
@@ -1310,7 +1310,7 @@
       <symbol id="BOYSUP03">
          <description>
             <name>BOYSUP03</name>
-            <description>LANBY, super-buoy, paper-chart</description>
+            <description>LANBY, super-buoy</description>
             <language>eng</language>
          </description>
          <fileName>BOYSUP03.svg</fileName>
@@ -1781,7 +1781,7 @@
       <symbol id="DAYSQR21">
          <description>
             <name>DAYSQR21</name>
-            <description>square or rectangular daymark, paper chart</description>
+            <description>square or rectangular daymark</description>
             <language>eng</language>
          </description>
          <fileName>DAYSQR21.svg</fileName>
@@ -1811,7 +1811,7 @@
       <symbol id="DAYTRI21">
          <description>
             <name>DAYTRI21</name>
-            <description>triangular daymark, point up, paper chart</description>
+            <description>triangular daymark, point up</description>
             <language>eng</language>
          </description>
          <fileName>DAYTRI21.svg</fileName>
@@ -1821,7 +1821,7 @@
       <symbol id="DAYTRI25">
          <description>
             <name>DAYTRI25</name>
-            <description>triangular daymark, point down, paper chart</description>
+            <description>triangular daymark, point down</description>
             <language>eng</language>
          </description>
          <fileName>DAYTRI25.svg</fileName>
@@ -3161,7 +3161,7 @@
       <symbol id="LITFLT01">
          <description>
             <name>LITFLT01</name>
-            <description>light float, paper-chart</description>
+            <description>light float</description>
             <language>eng</language>
          </description>
          <fileName>LITFLT01.svg</fileName>
@@ -3181,7 +3181,7 @@
       <symbol id="LITVES01">
          <description>
             <name>LITVES01</name>
-            <description>light vessel, paper-chart</description>
+            <description>light vessel</description>
             <language>eng</language>
          </description>
          <fileName>LITVES01.svg</fileName>
@@ -3561,7 +3561,7 @@
       <symbol id="PRICKE03">
          <description>
             <name>PRICKE03</name>
-            <description>withy, port-hand, paper-chart</description>
+            <description>withy, port-hand</description>
             <language>eng</language>
          </description>
          <fileName>PRICKE03.svg</fileName>
@@ -3571,7 +3571,7 @@
       <symbol id="PRICKE04">
          <description>
             <name>PRICKE04</name>
-            <description>withy, starboard-hand, paper-chart</description>
+            <description>withy, starboard-hand</description>
             <language>eng</language>
          </description>
          <fileName>PRICKE04.svg</fileName>
@@ -3811,7 +3811,7 @@
 	   <symbol id="RETRFL01">
          <description>
             <name>RETRFL01</name>
-            <description>retro reflector, paper chart</description>
+            <description>retro reflector</description>
             <language>eng</language>
          </description>
          <fileName>RETRFL01.svg</fileName>
@@ -6331,7 +6331,7 @@
       <symbol id="TMARDEF1">
          <description>
             <name>TMARDEF1</name>
-            <description>topmark for beacons, flag or other shape, paper-chart</description>
+            <description>topmark for beacons, flag or other shape</description>
             <language>eng</language>
          </description>
          <fileName>TMARDEF1.svg</fileName>
@@ -6341,7 +6341,7 @@
       <symbol id="TMARDEF2">
          <description>
             <name>TMARDEF2</name>
-            <description>topmark for buoys, flag or other shape, paper-chart</description>
+            <description>topmark for buoys, flag or other shape</description>
             <language>eng</language>
          </description>
          <fileName>TMARDEF2.svg</fileName>
@@ -6411,7 +6411,7 @@
       <symbol id="TOPMAR02">
          <description>
             <name>TOPMAR02</name>
-            <description>topmark for buoys, cone point up, paper-chart</description>
+            <description>topmark for buoys, cone point up</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR02.svg</fileName>
@@ -6421,7 +6421,7 @@
       <symbol id="TOPMAR04">
          <description>
             <name>TOPMAR04</name>
-            <description>topmark for buoys, cone point down, paper-chart</description>
+            <description>topmark for buoys, cone point down</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR04.svg</fileName>
@@ -6431,7 +6431,7 @@
       <symbol id="TOPMAR05">
          <description>
             <name>TOPMAR05</name>
-            <description>topmark for buoys, 2 cones point upward, paper-chart</description>
+            <description>topmark for buoys, 2 cones point upward</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR05.svg</fileName>
@@ -6441,7 +6441,7 @@
       <symbol id="TOPMAR06">
          <description>
             <name>TOPMAR06</name>
-            <description>topmark for buoys, 2 cones point downward, paper-chart</description>
+            <description>topmark for buoys, 2 cones point downward</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR06.svg</fileName>
@@ -6451,7 +6451,7 @@
       <symbol id="TOPMAR07">
          <description>
             <name>TOPMAR07</name>
-            <description>topmark for buoys, 2 cones base to base, paper-chart</description>
+            <description>topmark for buoys, 2 cones base to base</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR07.svg</fileName>
@@ -6461,7 +6461,7 @@
       <symbol id="TOPMAR08">
          <description>
             <name>TOPMAR08</name>
-            <description>topmark for buoys, 2 cones point to point, paper-chart</description>
+            <description>topmark for buoys, 2 cones point to point</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR08.svg</fileName>
@@ -6471,7 +6471,7 @@
       <symbol id="TOPMAR10">
          <description>
             <name>TOPMAR10</name>
-            <description>topmark for buoys, sphere, paper-chart</description>
+            <description>topmark for buoys, sphere</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR10.svg</fileName>
@@ -6481,7 +6481,7 @@
       <symbol id="TOPMAR12">
          <description>
             <name>TOPMAR12</name>
-            <description>topmark for buoys, 2 spheres, paper-chart</description>
+            <description>topmark for buoys, 2 spheres</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR12.svg</fileName>
@@ -6491,7 +6491,7 @@
       <symbol id="TOPMAR13">
          <description>
             <name>TOPMAR13</name>
-            <description>topmark for buoys, cylinder, paper-chart</description>
+            <description>topmark for buoys, cylinder</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR13.svg</fileName>
@@ -6501,7 +6501,7 @@
       <symbol id="TOPMAR14">
          <description>
             <name>TOPMAR14</name>
-            <description>topmark for buoys, board, paper-chart</description>
+            <description>topmark for buoys, board</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR14.svg</fileName>
@@ -6511,7 +6511,7 @@
       <symbol id="TOPMAR16">
          <description>
             <name>TOPMAR16</name>
-            <description>topmark for buoys, cube point up, paper-chart</description>
+            <description>topmark for buoys, cube point up</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR16.svg</fileName>
@@ -6521,7 +6521,7 @@
       <symbol id="TOPMAR17">
          <description>
             <name>TOPMAR17</name>
-            <description>topmark for buoys, flag or other shape, paper-chart</description>
+            <description>topmark for buoys, flag or other shape</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR17.svg</fileName>
@@ -6531,7 +6531,7 @@
       <symbol id="TOPMAR18">
          <description>
             <name>TOPMAR18</name>
-            <description>topmark for buoys, T-Shape, paper-chart</description>
+            <description>topmark for buoys, T-Shape</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR18.svg</fileName>
@@ -6541,7 +6541,7 @@
       <symbol id="TOPMAR22">
          <description>
             <name>TOPMAR22</name>
-            <description>topmark for beacons, cone point up, paper-chart</description>
+            <description>topmark for beacons, cone point up</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR22.svg</fileName>
@@ -6551,7 +6551,7 @@
       <symbol id="TOPMAR24">
          <description>
             <name>TOPMAR24</name>
-            <description>topmark for beacons, cone point down, paper-chart</description>
+            <description>topmark for beacons, cone point down</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR24.svg</fileName>
@@ -6561,7 +6561,7 @@
       <symbol id="TOPMAR25">
          <description>
             <name>TOPMAR25</name>
-            <description>topmark for beacons, 2 cones point upward, paper-chart</description>
+            <description>topmark for beacons, 2 cones point upward</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR25.svg</fileName>
@@ -6571,7 +6571,7 @@
       <symbol id="TOPMAR26">
          <description>
             <name>TOPMAR26</name>
-            <description>topmark for beacons, 2 cones point downward, paper-chart</description>
+            <description>topmark for beacons, 2 cones point downward</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR26.svg</fileName>
@@ -6581,7 +6581,7 @@
       <symbol id="TOPMAR27">
          <description>
             <name>TOPMAR27</name>
-            <description>topmark for beacons, 2 cones base to base, paper-chart</description>
+            <description>topmark for beacons, 2 cones base to base</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR27.svg</fileName>
@@ -6591,7 +6591,7 @@
       <symbol id="TOPMAR28">
          <description>
             <name>TOPMAR28</name>
-            <description>topmark for beacons, 2 cones point to point, paper-chart</description>
+            <description>topmark for beacons, 2 cones point to point</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR28.svg</fileName>
@@ -6601,7 +6601,7 @@
       <symbol id="TOPMAR30">
          <description>
             <name>TOPMAR30</name>
-            <description>topmark for beacons, sphere, paper-chart</description>
+            <description>topmark for beacons, sphere</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR30.svg</fileName>
@@ -6611,7 +6611,7 @@
       <symbol id="TOPMAR32">
          <description>
             <name>TOPMAR32</name>
-            <description>topmark for beacons, 2 spheres, paper-chart</description>
+            <description>topmark for beacons, 2 spheres</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR32.svg</fileName>
@@ -6621,7 +6621,7 @@
       <symbol id="TOPMAR33">
          <description>
             <name>TOPMAR33</name>
-            <description>topmark for beacons, cylinder, paper-chart</description>
+            <description>topmark for beacons, cylinder</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR33.svg</fileName>
@@ -6631,7 +6631,7 @@
       <symbol id="TOPMAR34">
          <description>
             <name>TOPMAR34</name>
-            <description>topmark for beacons, board, paper-chart</description>
+            <description>topmark for beacons, board</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR34.svg</fileName>
@@ -6641,7 +6641,7 @@
       <symbol id="TOPMAR36">
          <description>
             <name>TOPMAR36</name>
-            <description>topmark for beacons, cube point up, paper-chart</description>
+            <description>topmark for beacons, cube point up</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR36.svg</fileName>
@@ -6651,7 +6651,7 @@
       <symbol id="TOPMAR65">
          <description>
             <name>TOPMAR65</name>
-            <description>topmark for buoys, x-shape, paper-chart</description>
+            <description>topmark for buoys, x-shape</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR65.svg</fileName>
@@ -6661,7 +6661,7 @@
       <symbol id="TOPMAR85">
          <description>
             <name>TOPMAR85</name>
-            <description>topmark for beacons, x-shape, paper-chart</description>
+            <description>topmark for beacons, x-shape</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR85.svg</fileName>
@@ -6671,7 +6671,7 @@
       <symbol id="TOPMAR86">
          <description>
             <name>TOPMAR86</name>
-            <description>topmark for beacons, upright cross, paper-chart</description>
+            <description>topmark for beacons, upright cross</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR86.svg</fileName>
@@ -6681,7 +6681,7 @@
       <symbol id="TOPMAR87">
          <description>
             <name>TOPMAR87</name>
-            <description>topmark for beacons, besom point down, paper-chart</description>
+            <description>topmark for beacons, besom point down</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR87.svg</fileName>
@@ -6691,7 +6691,7 @@
       <symbol id="TOPMAR88">
          <description>
             <name>TOPMAR88</name>
-            <description>topmark for beacons, besom point up, paper-chart</description>
+            <description>topmark for beacons, besom point up</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR88.svg</fileName>
@@ -6701,7 +6701,7 @@
       <symbol id="TOPMAR89">
          <description>
             <name>TOPMAR89</name>
-            <description>topmark for beacons, T-shape, paper-chart</description>
+            <description>topmark for beacons, T-shape</description>
             <language>eng</language>
          </description>
          <fileName>TOPMAR89.svg</fileName>

@@ -2,7 +2,7 @@
 <?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" shape-rendering="geometricPrecision" fill-rule="evenodd" width="3.52mm" height="5.42mm" viewBox="-1.66 -4.66 3.52 5.42">
   <title>BOYSPR40</title>
-  <desc>spar buoy, isolated danger, black, red, black, paper-chart</desc>
+  <desc>spar buoy, isolated danger, black, red, black</desc>
   <metadata>
     <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2023-01-23" iho:source="7Cs" iho:format="S100SVG" iho:version="0.1"/>

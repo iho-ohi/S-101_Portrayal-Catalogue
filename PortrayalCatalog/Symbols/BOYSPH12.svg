@@ -2,7 +2,7 @@
 <?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" shape-rendering="geometricPrecision" fill-rule="evenodd" width="5.97mm" height="5.23mm" viewBox="-2.94 -4.54 5.97 5.23">
   <title>BOYSPH12</title>
-  <desc>spherical buoy, special purpose, yellow, paper-chart</desc>
+  <desc>spherical buoy, special purpose, yellow</desc>
   <metadata>
     <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
       <iho:Description iho:publisher="IHB" iho:creationDate="2023-01-23" iho:source="7Cs" iho:format="S100SVG" iho:version="0.1"/>
