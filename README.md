@@ -1,4 +1,4 @@
-# S-101 Portrayal-Catalogue
+# S-101 Portrayal-Catalogue.
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
