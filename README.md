@@ -1,4 +1,4 @@
-# S-101 Portrayal-Catalogue.
+# S-101 Portrayal-Catalogue
 IHO S-101 Portrayal Catalogue development, discussion, and review
 
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
@@ -174,11 +174,14 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i455]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/455
 [i456]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/456
 [i457]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/457
+[i469]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/469
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
 ### 2.X.X - use with FC 2.X.X
+*Lua Rule File / Symbol Updates
+	* [#469][i469] Fixed misspelling in DISMAR07.svg
 
 ### 2.0.0 - use with FC 2.0.0
 * Misc changes
