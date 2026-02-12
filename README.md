@@ -178,6 +178,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i488]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/488
 [i452]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/452
 [i468]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/468
+[i458]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/458
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -189,6 +190,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#488][i488] Removed instances of "paper chart" in PC.xml and Symbols folder
 	* [#452][i452] Issue has been deprecated. Removal of categoryOfCable =7
 	* [#468][i468] Fixed inline style in DISMAR07.svg
+	* [#458][i458] Updates for change to symbol MARSHES1P
 
 ### 2.0.0 - use with FC 2.0.0
 * Misc changes

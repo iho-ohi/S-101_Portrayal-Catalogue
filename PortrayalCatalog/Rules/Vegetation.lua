@@ -17,7 +17,7 @@ function Vegetation(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfVegetation == 11 then
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRadar')
-			featurePortrayal:AddInstructions('PointInstruction:MARSHE01')
+			featurePortrayal:AddInstructions('PointInstruction:MARSHES1P')
 		else
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRadar')
@@ -35,7 +35,7 @@ function Vegetation(feature, featurePortrayal, contextParameters)
 		elseif feature.categoryOfVegetation == 11 then
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRadar')
-			featurePortrayal:AddInstructions('PointInstruction:MARSHE01')
+			featurePortrayal:AddInstructions('PointInstruction:MARSHES1P')
 		else
 			viewingGroup = 32030
 			featurePortrayal:AddInstructions('ViewingGroup:32030;DrawingPriority:9;DisplayPlane:UnderRadar')
