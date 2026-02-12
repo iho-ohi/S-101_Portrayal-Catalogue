@@ -183,7 +183,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 2.X.X - use with FC 2.0.0
+### 2.1.0 - use with FC 2.0.0 (DRAFT)
 * Lua Rule File / Symbol Updates
   
 	* [#469][i469] Fixed misspelling in DISMAR07.svg
