@@ -180,6 +180,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i468]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/468
 [i458]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/458
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
+[i490]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/490
+
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
@@ -192,6 +194,9 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#452][i452] Issue has been deprecated. Removal of categoryOfCable =7
 	* [#468][i468] Fixed inline style in DISMAR07.svg
 	* [#459][i459] Incorporate latest version of symbol BCNGEN01
+	* [#490][i490] DIRBOY01, DIRBOYA1, DIRBOYB1 SVG symbols exceed their bounding box
+
+
 	
 
 ### 2.0.0 - use with FC 2.0.0
