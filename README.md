@@ -181,6 +181,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i458]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/458
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
 [i490]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/490
+[i479]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/479
+
 
 
 ## Recent changes
@@ -195,6 +197,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#468][i468] Fixed inline style in DISMAR07.svg
 	* [#459][i459] Incorporate latest version of symbol BCNGEN01
 	* [#490][i490] DIRBOY01, DIRBOYA1, DIRBOYB1 SVG symbols exceed their bounding box
+    * [#479][i479] Fixed inconsistent CardinalBeacon text instruction when SimplifiedSymbols = false
 
 
 	
