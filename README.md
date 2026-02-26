@@ -182,6 +182,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
 [i490]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/490
 [i479]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/479
+[i466]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/466
 
 
 
@@ -198,6 +199,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#459][i459] Incorporate latest version of symbol BCNGEN01
 	* [#490][i490] DIRBOY01, DIRBOYA1, DIRBOYB1 SVG symbols exceed their bounding box
     * [#479][i479] Fixed inconsistent CardinalBeacon text instruction when SimplifiedSymbols = false
+	* [#466][i466] Modify viewing group for featureName on Bridge to align with S-52
+
 
 
 	

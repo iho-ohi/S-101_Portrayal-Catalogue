@@ -60,7 +60,7 @@ function Bridge(feature, featurePortrayal, contextParameters)
 		-- In S-101 the label is shown when available, and is offset further from the object.
 		-- May need additional refinement to prevent the label from overwriting the clearance value(s).
 		featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
-		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 21, 24, 12210, 24)
+		featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), '%s'), 26, 24, 12210, 24)
 	end
 
 	return viewingGroup
