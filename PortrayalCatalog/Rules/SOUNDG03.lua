@@ -11,7 +11,7 @@ function SOUNDG03(feature, featurePortrayal, contextParameters, viewingGroup)
 
 	for i, point in ipairs(points) do
 		Debug.StopPerformance('Lua Code - SOUNDG03')
-		local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, point, point.ScaledZ)
+		local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, point, point.ScaledZ)
 		Debug.StartPerformance('Lua Code - SOUNDG03')
 
 		if point.ScaledZ <= contextParameters.SafetyContour then
@@ -19,6 +19,7 @@ function SOUNDG03(feature, featurePortrayal, contextParameters, viewingGroup)
 		end
 
 		featurePortrayal:AddInstructions('AugmentedPoint:GeographicCRS,' .. point.X .. ',' .. point.Y)
+		featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
 
 		for j, symbol in ipairs(symbols) do
 			featurePortrayal:AddInstructions('PointInstruction:' .. symbol)

@@ -16,9 +16,10 @@ function DepthNoBottomFound(feature, featurePortrayal, contextParameters)
 		local points = feature.MultiPoint.Points
 
 		for i, point in ipairs(points) do
-			local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, point, point.ScaledZ)
+			local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, point, point.ScaledZ)
 
 			featurePortrayal:AddInstructions('AugmentedPoint:GeographicCRS,' .. point.X .. ',' .. point.Y)
+			featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
 
 			for j, symbol in ipairs(symbols) do
 				featurePortrayal:AddInstructions('PointInstruction:' .. symbol)

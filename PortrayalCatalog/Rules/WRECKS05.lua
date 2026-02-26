@@ -37,11 +37,15 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 					featurePortrayal:AddInstructions('PointInstruction:DANGER02')
 				end
 
-				local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, feature.Point, DEPTH_VALUE)
+				local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, feature.Point, DEPTH_VALUE)
 
-				for _, symbol in ipairs(symbols) do
+				featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
+
+				for j, symbol in ipairs(symbols) do
 					featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 				end
+
+				featurePortrayal:AddInstructions('LocalOffset:0.0,0.0')
 			else
 				if feature.categoryOfWreck then
 					if feature.categoryOfWreck == 1 and feature.waterLevelEffect == 3 then
@@ -103,11 +107,15 @@ function WRECKS05(feature, featurePortrayal, contextParameters, originalViewingG
 			if hazardSymbol then
 				featurePortrayal:AddInstructions('PointInstruction:' .. hazardSymbol)
 			else
-				local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, nil, DEPTH_VALUE)
+				local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, nil, DEPTH_VALUE)
 
-				for _, symbol in ipairs(symbols) do
+				featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
+
+				for j, symbol in ipairs(symbols) do
 					featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 				end
+
+				featurePortrayal:AddInstructions('LocalOffset:0.0,0.0')
 			end
 		else
 			if feature.waterLevelEffect == 1 or feature.waterLevelEffect == 2 then
