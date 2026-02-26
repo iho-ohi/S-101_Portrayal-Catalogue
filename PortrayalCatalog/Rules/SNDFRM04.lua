@@ -10,6 +10,7 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	CheckType(depthValue, 'ScaledDecimal')
 
 	local symbols = {}
+	local offset  = 0.0
 
 	local function addSymbol(symbol)
 		symbols[#symbols + 1] = symbol
@@ -69,6 +70,7 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 		addSymbol(symbolPrefix..'2'..string.sub(depth, 1, 1))
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 2, 2))
 		addSymbol(symbolPrefix..'5'..string.sub(fractional, 1, 1))
+		offset = 1.6
 	elseif idepth < 100 then
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 1, 1))
 		addSymbol(symbolPrefix..'0'..string.sub(depth, 2, 2))
@@ -76,6 +78,7 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 		addSymbol(symbolPrefix..'2'..string.sub(depth, 1, 1))
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 2, 2))
 		addSymbol(symbolPrefix..'0'..string.sub(depth, 3, 3))
+		offset = 1.6
 	elseif idepth < 10000 then
 		addSymbol(symbolPrefix..'2'..string.sub(depth, 1, 1))
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 2, 2))
@@ -87,9 +90,10 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 3, 3))
 		addSymbol(symbolPrefix..'0'..string.sub(depth, 4, 4))
 		addSymbol(symbolPrefix..'4'..string.sub(depth, 5, 5))
+		offset = 1.6
 	end
 
 	Debug.StopPerformance('Lua Code - SNDFRM04')
 
-	return symbols
+	return symbols, offset
 end

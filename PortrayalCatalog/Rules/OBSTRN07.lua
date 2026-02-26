@@ -84,11 +84,15 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 			end
 
 			if sounding then
-				local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, feature.Point, valueOfSounding)
-
-				for _, symbol in ipairs(symbols) do
+				local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, feature.Point, valueOfSounding)
+				
+				featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
+				
+				for j, symbol in ipairs(symbols) do
 					featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 				end
+				
+				featurePortrayal:AddInstructions('LocalOffset:0.0,0.0')
 			end
 
 			if qualitySymbol then
@@ -126,7 +130,7 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 		if hazardSymbol then
 			featurePortrayal:AddInstructions('LinePlacement:Relative,0.5;PointInstruction:' .. hazardSymbol)
 		elseif valueOfSounding then
-			local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, nil, valueOfSounding)
+			local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, nil, valueOfSounding)
 
 			for _, symbol in ipairs(symbols) do
 				featurePortrayal:AddInstructions('LinePlacement:Relative,0.5;PointInstruction:' .. symbol)
@@ -149,11 +153,15 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 				featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			end
 
-			local symbols = SNDFRM04(feature, featurePortrayal, contextParameters, nil, valueOfSounding)
+			local symbols, offset = SNDFRM04(feature, featurePortrayal, contextParameters, nil, valueOfSounding)
 
-			for _, symbol in ipairs(symbols) do
+			featurePortrayal:AddInstructions('LocalOffset:' .. offset .. ',0.0')
+
+			for j, symbol in ipairs(symbols) do
 				featurePortrayal:AddInstructions('PointInstruction:' .. symbol)
 			end
+			
+			featurePortrayal:AddInstructions('LocalOffset:0.0,0.0')
 		else
 			if feature.Code == 'Obstruction' and feature.categoryOfObstruction and feature.categoryOfObstruction == 6 then
 				featurePortrayal:AddInstructions('AreaFillReference:FOULAR01')
