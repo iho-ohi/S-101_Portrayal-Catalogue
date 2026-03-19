@@ -186,6 +186,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i483]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/483
 [i493]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/493
 [i460]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/460
+[i472]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/472
+
 
 
 
@@ -212,6 +214,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#466][i466] Modify viewing group for featureName on Bridge to align with S-52
     * [#483][i483] Add a LocalOffset to sounding symbols
 	* [#493][i493] Radar Conspicuous Coastline not showing pink (CHMGF) highlight
+	* [#472][i472] The restriction check in RESARE04 is always true
+
 
 
 

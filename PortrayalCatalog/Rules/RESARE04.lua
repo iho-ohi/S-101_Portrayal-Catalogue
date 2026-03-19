@@ -8,7 +8,7 @@ function RESARE04(feature, featurePortrayal, contextParameters, viewingGroup)
 	local restriction = feature.restriction
 	local categoryOfRestrictedArea = feature.categoryOfRestrictedArea
 
-	if restriction then
+	if #restriction ~=0 then
 		if contains(restriction, { 7, 8, 14 }) then
 			-- Continuation A.  Entry restricted or prohibited
 
