@@ -185,6 +185,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i466]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/466
 [i483]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/483
 [i493]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/493
+[i460]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/460
 
 
 
@@ -194,6 +195,11 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 Older changes are here: [Changelog.md](Changelog.md)
 
 ### 2.1.0 - use with FC 2.0.0 (DRAFT)
+* Misc changes
+	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
+
+
+
 * Lua Rule File / Symbol Updates
   
 	* [#469][i469] Fixed misspelling in DISMAR07.svg
@@ -206,6 +212,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#466][i466] Modify viewing group for featureName on Bridge to align with S-52
     * [#483][i483] Add a LocalOffset to sounding symbols
 	* [#493][i493] Radar Conspicuous Coastline not showing pink (CHMGF) highlight
+
 
 
 	
