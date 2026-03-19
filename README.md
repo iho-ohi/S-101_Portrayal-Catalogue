@@ -184,6 +184,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i479]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/479
 [i466]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/466
 [i483]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/483
+[i493]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/493
 
 
 
@@ -204,6 +205,10 @@ Older changes are here: [Changelog.md](Changelog.md)
     * [#479][i479] Fixed inconsistent CardinalBeacon text instruction when SimplifiedSymbols = false
 	* [#466][i466] Modify viewing group for featureName on Bridge to align with S-52
     * [#483][i483] Add a LocalOffset to sounding symbols
+	* [#493][i493] Radar Conspicuous Coastline not showing pink (CHMGF) highlight
+
+
+	
 
 
 
