@@ -3,8 +3,15 @@
 -- Airport/airfield main entry point.
 function AirportAirfield(feature, featurePortrayal, contextParameters)
 	local viewingGroup
-	local categoryOfAirportAirfield = feature.categoryOfAirportAirfield
-
+	local categoriesOfAirportAirfield = feature.categoryOfAirportAirfield
+  local categoryOfAirportAirfieldIsHeli = false
+  for i = 1, #categoriesOfAirportAirfield do
+    local category = categoriesOfAirportAirfield[i]
+    if category  == 3 or category == 4 then
+      categoryOfAirportAirfieldIsHeli = true
+      break
+    end
+  end
 	if feature.PrimitiveType == PrimitiveType.Point then
 		-- Simplified and paper chart points use the same symbolization
 		viewingGroup = 32240
@@ -13,7 +20,7 @@ function AirportAirfield(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:12;DisplayPlane:UnderRadar')
 		end
-		if categoryOfAirportAirfield == 3 or categoryOfAirportAirfield == 4 then
+		if categoryOfAirportAirfieldIsHeli then
 		    featurePortrayal:AddInstructions('PointInstruction:HELIPD02')
 		else
 		    featurePortrayal:AddInstructions('PointInstruction:AIRARE02')
@@ -22,7 +29,7 @@ function AirportAirfield(feature, featurePortrayal, contextParameters)
 		-- Plain and symbolized boundaries use the same symbolization
 		viewingGroup = 32240
 		featurePortrayal:AddInstructions('ViewingGroup:32240;DrawingPriority:6;DisplayPlane:UnderRadar')
-		if categoryOfAirportAirfield == 3 or categoryOfAirportAirfield == 4 then
+		if categoryOfAirportAirfieldIsHeli then
 			featurePortrayal:AddInstructions('PointInstruction:HELIPD02')
 		else
 			featurePortrayal:AddInstructions('AreaFillReference:AIRARE02')
@@ -32,6 +39,5 @@ function AirportAirfield(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-
 	return viewingGroup
 end
