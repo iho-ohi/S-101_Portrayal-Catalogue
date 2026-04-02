@@ -63,9 +63,11 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 		addSymbol(symbolPrefix..'A1')
 	end
 
-	if idepth < 10 then
+    if idepth < 10 and ifractional ~= 0 then    
 		addSymbol(symbolPrefix..'1'..depth)
 		addSymbol(symbolPrefix..'5'..string.sub(fractional, 1, 1))
+	elseif idepth < 10 and ifractional == 0 then
+		addSymbol(symbolPrefix..'1'..depth)
 	elseif idepth < 31 and ifractional ~= 0 then
 		addSymbol(symbolPrefix..'2'..string.sub(depth, 1, 1))
 		addSymbol(symbolPrefix..'1'..string.sub(depth, 2, 2))
