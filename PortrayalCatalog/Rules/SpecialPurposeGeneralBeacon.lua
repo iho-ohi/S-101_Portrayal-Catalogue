@@ -61,11 +61,11 @@ function SpecialPurposeGeneralBeacon(feature, featurePortrayal, contextParameter
 			elseif feature.beaconShape == 3 and feature.colour[1] == 6 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNTOW12')
 			elseif feature.beaconShape == 5 and feature.colour[1] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BCNGEN13')
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
 			elseif feature.beaconShape == 5 and feature.colour[1] == 6 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNGEN12')
 			elseif feature.beaconShape == 7 and feature.colour[1] == 2 then
-				featurePortrayal:AddInstructions('PointInstruction:BCNGEN13')
+				featurePortrayal:AddInstructions('PointInstruction:BCNGEN01')
 			elseif feature.beaconShape == 7 and feature.colour[1] == 6 then
 				featurePortrayal:AddInstructions('PointInstruction:BCNGEN12')
 			elseif feature.beaconShape == 1 then

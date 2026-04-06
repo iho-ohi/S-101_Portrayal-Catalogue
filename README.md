@@ -190,6 +190,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i473]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/473
 [i494]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/494
 [i480]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/480
+[i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
+
 
 
 
@@ -224,6 +226,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#472][i473] IHO S-101 PC v.2.0.0 - error in RECTRC09.xml
 	* [#494][i494] Incorrect Sounding Portrayal - Whole Metre Depths < 10m
 	* [#480][i480] categoryOfAirportAirfield will only ever draw AIRARE02 and not HELIPD02
+	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol to have black-filled body
+
 
 
 
