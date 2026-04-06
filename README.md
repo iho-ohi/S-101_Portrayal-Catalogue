@@ -226,7 +226,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#472][i473] IHO S-101 PC v.2.0.0 - error in RECTRC09.xml
 	* [#494][i494] Incorrect Sounding Portrayal - Whole Metre Depths < 10m
 	* [#480][i480] categoryOfAirportAirfield will only ever draw AIRARE02 and not HELIPD02
-	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol to have black-filled body
+	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol, retire BCNGEN13 and BCNGEN01 xmlID=1522
 
 
 
