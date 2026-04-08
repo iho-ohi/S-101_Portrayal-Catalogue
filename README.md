@@ -192,6 +192,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i480]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/480
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
 [i496]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/496
+[i489]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/489
+
 
 
 
@@ -230,6 +232,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#480][i480] categoryOfAirportAirfield will only ever draw AIRARE02 and not HELIPD02
 	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol, retire BCNGEN13 and BCNGEN01 xmlID=1522
 	* [#496][i496] Intertidal soundings < -9.9m Missing Underline symbology
+	* [#489][i489] Usage of HostSpatialGetAssociatedFeatureIDs not compliant with S-100 5.2.0
+
 
 
 

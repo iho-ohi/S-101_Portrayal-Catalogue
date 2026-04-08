@@ -514,7 +514,7 @@ function CreateFeature(featureID, featureCode)
 
 		if not ias then
 			Debug.StopPerformance('Lua Code - Total')
-			local informationIDs = HostFeatureGetAssociatedInformationIDs(self.ID, associationCode, roleCode)
+			local informationIDs = HostFeatureGetAssociatedInformationIDs(self.ID, associationCode, roleCode) or {}
 			Debug.StartPerformance('Lua Code - Total')
 
 			ias = {}
@@ -565,7 +565,7 @@ function CreateFeature(featureID, featureCode)
 
 		if not fas then
 			Debug.StopPerformance('Lua Code - Total')
-			local featureIDs = HostFeatureGetAssociatedFeatureIDs(self.ID, associationCode, roleCode)
+			local featureIDs = HostFeatureGetAssociatedFeatureIDs(self.ID, associationCode, roleCode) or {}
 			Debug.StartPerformance('Lua Code - Total')
 
 			fas = {}
@@ -812,7 +812,7 @@ function CreateSpatialAssociation(spatialType, spatialID, orientation, scaleMini
 
 	function spatialAssociation:GetAssociatedFeatures()
 		Debug.StopPerformance('Lua Code - Total')
-		local featureIDs = HostSpatialGetAssociatedFeatureIDs(self.SpatialID)
+		local featureIDs = HostSpatialGetAssociatedFeatureIDs(self.SpatialID) or {}
 		Debug.StartPerformance('Lua Code - Total')
 
 		self.AssociatedFeatures = {}
@@ -837,7 +837,7 @@ function CreateSpatialAssociation(spatialType, spatialID, orientation, scaleMini
 
 		if not ias then
 			Debug.StopPerformance('Lua Code - Total')
-			local informationIDs = HostSpatialGetAssociatedInformationIDs(self.SpatialID, associationCode, roleCode)
+			local informationIDs = HostSpatialGetAssociatedInformationIDs(self.SpatialID, associationCode, roleCode) or {}
 			Debug.StartPerformance('Lua Code - Total')
 
 			ias = {}
@@ -899,7 +899,7 @@ local function CreateSpatial(spatialType, spatial)
 
 		if not ias then
 			Debug.StopPerformance('Lua Code - Total')
-			local informationIDs = HostSpatialGetAssociatedInformationIDs(self.SpatialID, associationCode, roleCode)
+			local informationIDs = HostSpatialGetAssociatedInformationIDs(self.SpatialID, associationCode, roleCode) or {}
 			Debug.StartPerformance('Lua Code - Total')
 
 			ias = {}
