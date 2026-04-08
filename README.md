@@ -191,6 +191,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i494]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/494
 [i480]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/480
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
+[i496]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/496
+
 
 
 
@@ -227,6 +229,10 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#494][i494] Incorrect Sounding Portrayal - Whole Metre Depths < 10m
 	* [#480][i480] categoryOfAirportAirfield will only ever draw AIRARE02 and not HELIPD02
 	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol, retire BCNGEN13 and BCNGEN01 xmlID=1522
+	* [#496][i496] Intertidal soundings < -9.9m Missing Underline symbology
+
+
+
 
 
 

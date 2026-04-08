@@ -6218,6 +6218,26 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+       <symbol id="SOUNDSA2">
+         <description>
+            <name>SOUNDSA2</name>
+            <description>symbol for drying height, used for shallow soundings, less than or equal to safety depth</description>
+            <language>eng</language>
+         </description>
+         <fileName>SOUNDSA2.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
+       <symbol id="SOUNDSA3">
+         <description>
+            <name>SOUNDSA3</name>
+            <description>symbol for drying height, used for shallow soundings, less than or equal to safety depth</description>
+            <language>eng</language>
+         </description>
+         <fileName>SOUNDSA3.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="SOUNDSB1">
          <description>
             <name>SOUNDSB1</name>

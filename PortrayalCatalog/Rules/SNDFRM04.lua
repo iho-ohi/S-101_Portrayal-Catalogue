@@ -61,9 +61,13 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 
 	if sign == '-' then
 		addSymbol(symbolPrefix..'A1')
+	elseif sign == '-' and idepth > 9.9 and ifractional ~=0 then
+		addSymbol(symbolPrefix..'A3')
+	elseif sign == '-' and idepth > 9.9 and ifractional == 0 then
+		addSymbol(symbolPrefix..'A2')
 	end
 
-    if idepth < 10 and ifractional ~= 0 then    
+    if idepth < 10 and ifractional ~= 0 then
 		addSymbol(symbolPrefix..'1'..depth)
 		addSymbol(symbolPrefix..'5'..string.sub(fractional, 1, 1))
 	elseif idepth < 10 and ifractional == 0 then
