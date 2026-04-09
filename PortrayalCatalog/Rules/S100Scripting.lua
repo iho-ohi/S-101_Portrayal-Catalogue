@@ -691,6 +691,10 @@ unknownAttributeValueString = '13BD40516CF742E886D5B4125DBB89742A043D0050E44B568
 --
 
 function contains(value, array)
+	if type(array) ~= "table" then
+        return false
+    end
+	
 	for i = 1, #array do
 		if array[i] == value then
 			return true

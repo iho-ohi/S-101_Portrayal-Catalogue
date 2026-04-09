@@ -194,6 +194,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i496]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/496
 [i489]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/489
 [i476]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/476
+[i464]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/464
+
 
 
 
@@ -236,6 +238,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#496][i496] Intertidal soundings < -9.9m Missing Underline symbology
 	* [#489][i489] Usage of HostSpatialGetAssociatedFeatureIDs not compliant with S-100 5.2.0
 	* [#476][i476] IHO S-101 PC v.2.0.0 - issue with Light label duplication in LightSectored.lua
+	* [#464][i464] function contains(value, array) should check for type 'table' in S100Scripting.lua 
+
 
 
 
