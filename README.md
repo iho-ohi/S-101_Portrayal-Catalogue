@@ -193,6 +193,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i459]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/459
 [i496]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/496
 [i489]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/489
+[i476]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/476
+
 
 
 
@@ -227,12 +229,13 @@ Older changes are here: [Changelog.md](Changelog.md)
     * [#483][i483] Add a LocalOffset to sounding symbols
 	* [#493][i493] Radar Conspicuous Coastline not showing pink (CHMGF) highlight
 	* [#472][i472] The restriction check in RESARE04 is always true
-	* [#472][i473] IHO S-101 PC v.2.0.0 - error in RECTRC09.xml
+	* [#473][i473] IHO S-101 PC v.2.0.0 - error in RECTRC09.xml
 	* [#494][i494] Incorrect Sounding Portrayal - Whole Metre Depths < 10m
 	* [#480][i480] categoryOfAirportAirfield will only ever draw AIRARE02 and not HELIPD02
 	* [#459][i459] Switch all cases of BCNGEN13 to BCNGEN01, modify BCNGEN01 symbol, retire BCNGEN13 and BCNGEN01 xmlID=1522
 	* [#496][i496] Intertidal soundings < -9.9m Missing Underline symbology
 	* [#489][i489] Usage of HostSpatialGetAssociatedFeatureIDs not compliant with S-100 5.2.0
+	* [#476][i476] IHO S-101 PC v.2.0.0 - issue with Light label duplication in LightSectored.lua
 
 
 

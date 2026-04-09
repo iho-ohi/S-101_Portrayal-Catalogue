@@ -192,7 +192,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
 				
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
-				featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24, true)
+				--featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24, true)
 				
 				-- PC #113
 				if lightSector.directionalCharacter.moireEffect then
