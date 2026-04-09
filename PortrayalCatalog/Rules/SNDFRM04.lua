@@ -59,12 +59,12 @@ function SNDFRM04(feature, featurePortrayal, contextParameters, soundingPoint, d
 	local idepth = tonumber(depth)
 	local ifractional = tonumber(fractional)
 
-	if sign == '-' then
-		addSymbol(symbolPrefix..'A1')
-	elseif sign == '-' and idepth > 9.9 and ifractional ~=0 then
-		addSymbol(symbolPrefix..'A3')
+	if sign == '-' and idepth > 9.9 and ifractional ~=0 then
+		addSymbol(symbolPrefix..'A3') 
 	elseif sign == '-' and idepth > 9.9 and ifractional == 0 then
 		addSymbol(symbolPrefix..'A2')
+	elseif sign == '-' then
+		addSymbol(symbolPrefix..'A1')
 	end
 
     if idepth < 10 and ifractional ~= 0 then
