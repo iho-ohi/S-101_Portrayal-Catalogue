@@ -30,7 +30,7 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 				labels[#labels + 1] = "Tankers"
 			end
 			
-			featurePortrayal:AddInstructions('LocalOffset:' .. localOffset .. ';TextAlignHorizontal:Center;TextAlignVertical:Top;FontSlant:Italics;FontColor:CHGRF')
+			featurePortrayal:AddInstructions('LocalOffset:' .. localOffset .. ';TextAlignHorizontal:Center;TextAlignVertical:Top;FontSlant:Italics;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(safeConcat(labels, ","), 24, 24, viewingGroup, 18)
 		end
 	end	
