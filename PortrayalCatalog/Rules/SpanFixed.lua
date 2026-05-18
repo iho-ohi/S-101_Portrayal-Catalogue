@@ -2,7 +2,9 @@ require 'S101AttributeSupport'
 
 -- from S-57 BRIDGE, CATBRG=1 (fixed bridge)
 function SpanFixed(feature, featurePortrayal, contextParameters)
-	featurePortrayal:AddInstructions('AlertReference:NavHazard')
+	if feature.verticalClearanceFixed.verticalClearanceValue <= contextParameters.SafetyHeight then
+		featurePortrayal:AddInstructions('AlertReference:NavHazard')
+	end
 
 	if feature.PrimitiveType == PrimitiveType.Curve then
 		if contextParameters.RadarOverlay then
@@ -25,7 +27,7 @@ function SpanFixed(feature, featurePortrayal, contextParameters)
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
-	
+
 	-- Note: SpanFixed binds horizontalClearanceFixed and verticalClearanceFixed. It doesn't bind featureName.
 	if HasClearance(feature) then
 		local yOffset = 0
