@@ -54,10 +54,10 @@ function LightFlareAndDescription(feature, featurePortrayal, contextParameters, 
 			symbol = 'LIGHTS13'
 		end
 	elseif (colour[1] == 5) then
-		-- Blue and yellow
+		-- Blue
 		symbol = 'LIGHTS14'
 	elseif (colour[1] == 6) then
-		-- Blue and yellow
+		-- yellow
 		symbol = 'LIGHTS13'
 	elseif colour[1] == 3 then
 		-- Red
