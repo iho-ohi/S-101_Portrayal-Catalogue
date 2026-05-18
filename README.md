@@ -197,6 +197,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i464]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/464
 [i462]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/462
 [i497]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/497
+[i499]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/499
+
 
 
 
@@ -242,7 +244,9 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#476][i476] IHO S-101 PC v.2.0.0 - issue with Light label duplication in LightSectored.lua
 	* [#464][i464] function contains(value, array) should check for type 'table' in S100Scripting.lua 
 	* [#462][i462] Symbol BCNGEN03 discrepancy 
-	* [#497][i462] Stop S-101 Bridge features from triggering Alerts when SpanFix and/or SpanOpen exist 
+	* [#497][i497] Stop S-101 Bridge features from triggering Alerts when SpanFix and/or SpanOpen exist
+	* [#499][i499] Re-Introduce Portrayal for natureOfConstruction = 9 (painted) for Daymark 
+ 
 
 
 

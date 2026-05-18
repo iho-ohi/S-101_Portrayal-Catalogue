@@ -81,6 +81,13 @@ function Daymark(feature, featurePortrayal, contextParameters)
 			end
 		end
 	elseif feature.PrimitiveType == PrimitiveType.Point then
+		if feature.natureOfConstruction == 9 then
+			if contextParameters.RadarOverlay then
+				featurePortrayal:AddInstructions('ViewingGroup:27025;DrawingPriority:21;DisplayPlane:OverRadar')
+			else
+				featurePortrayal:AddInstructions('ViewingGroup:27025;DrawingPriority:21;DisplayPlane:UnderRadar')
+			end
+			featurePortrayal:AddInstructions('PointInstruction:POSGEN01')
 		if feature.topmarkDaymarkShape == 19 then
 			viewingGroup = 27025
 			if contextParameters.RadarOverlay then
