@@ -3128,6 +3128,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="LIGHTS14">
+         <description>
+            <name>LIGHTS14</name>
+            <description>light flare, blue</description>
+            <language>eng</language>
+         </description>
+         <fileName>LIGHTS14.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="LIGHTS81">
          <description>
             <name>LIGHTS81</name>
