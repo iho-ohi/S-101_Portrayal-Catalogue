@@ -3,7 +3,7 @@
 
 local categoryOfLights =
 {
-	[1] = 'Dir ',
+	--[1] = 'Dir ',
 	[5] = 'Aero ',
 	[7] = 'Fog Det Lt '
 }
@@ -68,6 +68,16 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 	Debug.StartPerformance('Lua Code - LITDSN02')
 
 	local description = categoryOfLights[categoryOfLight] or ''
+
+	-- detect directional light from REAL model
+	if rhythmOfLight and rhythmOfLight.lightSector then
+		for _, ls in ipairs(rhythmOfLight.lightSector) do
+			if ls.directionalCharacter then
+				description = 'Dir ' .. description
+				break
+			end
+		end
+	end
 	local statusString = statuses[status] or ''
 
 	if rhythmOfLight then

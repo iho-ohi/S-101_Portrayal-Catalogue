@@ -189,6 +189,16 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddTextInstruction(string.format('%03.0f deg', orientationValue:ToNumber()), 23, 24, 27070, 24)
 				end
 
+
+				local isDirectional = false
+
+				for _, ls in ipairs(sectorCharacteristic.lightSector) do
+					if ls.directionalCharacter then
+						isDirectional = true
+						break
+					end
+				end
+
 				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
 				
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
@@ -233,6 +243,16 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 			-- Add light description
 			local vnr = descriptionInfo[1][3]
 			local vnr2 = descriptionInfo[#descriptionInfo][3]
+
+			local isDirectional = false
+
+			for _, ls in ipairs(sectorCharacteristic.lightSector) do
+				if ls.directionalCharacter then
+					isDirectional = true
+					break
+				end
+			end
+
 			local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, sectorColors, feature.height, vnr, feature.status, vnr2, numRanges)	
 			featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
 			featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignHorizontal:Start;TextAlignVertical:Center')
