@@ -200,7 +200,6 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i499]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/499
 [i500]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/500
 [i467]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/467
-[i481]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/481
 
 
 
@@ -220,7 +219,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 2.1.0 - use with FC 2.0.0 (DRAFT)
+### 2.1.0 - use with FC 2.1.0 (DRAFT)
 * Misc changes
 	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
 
@@ -252,7 +251,6 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#499][i499] Re-Introduce Portrayal for natureOfConstruction = 9 (painted) for Daymark
 	* [#500][i500] Improvements to Text for Small Craft Mooring Area
 	* [#467][i467] NationalLanguage context parameter validation regex expression includes anchors
-	* [#481][i481] category of light
 
 
  
