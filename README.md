@@ -201,6 +201,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i500]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/500
 [i467]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/467
 [i503]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/503
+[i505]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/505
+
 
 
 
@@ -224,6 +226,9 @@ Older changes are here: [Changelog.md](Changelog.md)
 * Misc changes
 	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
 	* [#503][i503] 	Update PC version to "2.1.0-DRAFT"
+	* [#505][i505] 	SAFCONxx - Bulk update to their 'Definition' and 'Remarks' fields (transferred from sub-wg repo), no changes to PC, GI Registry update
+
+
 
 
 
