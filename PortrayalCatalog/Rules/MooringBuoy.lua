@@ -1,3 +1,6 @@
+-- Referenced portrayal rules.
+require 'TOPMAR02'
+
 function MooringBuoy(feature, featurePortrayal, contextParameters)
 	local viewingGroup = 27010
 
@@ -18,7 +21,8 @@ function MooringBuoy(feature, featurePortrayal, contextParameters)
 		else
 			featurePortrayal:AddInstructions('PointInstruction:BOYMOR11')
 		end
-		
+		TOPMAR02(feature, featurePortrayal, contextParameters, viewingGroup, true) --true for buoys
+
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
