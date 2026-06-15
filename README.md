@@ -202,7 +202,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i467]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/467
 [i503]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/503
 [i505]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/505
-
+[i506]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/506
 
 
 
@@ -258,6 +258,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#499][i499] Re-Introduce Portrayal for natureOfConstruction = 9 (painted) for Daymark
 	* [#500][i500] Improvements to Text for Small Craft Mooring Area
 	* [#467][i467] NationalLanguage context parameter validation regex expression includes anchors
+	* [#506][i506] MooringBuoy Now has topmark Added as an Allowable Complex Attribute (transferred from sub-wg repo #196)
+
 
 
  
