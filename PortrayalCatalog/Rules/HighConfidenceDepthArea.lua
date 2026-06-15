@@ -1,6 +1,6 @@
 
--- Swept Area main entry point.
-function SweptArea(feature, featurePortrayal, contextParameters)
+-- High Confidence Depth Area main entry point.
+function HighConfidenceDepthArea(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
 	if feature.PrimitiveType == PrimitiveType.Surface and contextParameters.PlainBoundaries then
