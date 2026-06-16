@@ -68,36 +68,7 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 	Debug.StartPerformance('Lua Code - LITDSN02')
 
 	local description = categoryOfLights[categoryOfLight] or ''
-
-	-- detect directional light from REAL model
-	if rhythmOfLight and rhythmOfLight.lightSector then
-		for _, ls in ipairs(rhythmOfLight.lightSector) do
-			if ls.directionalCharacter then
-				description = 'Dir ' .. description
-				break
-			end
-		end
-	end
-	local statusString = statuses[status] or ''
-
-	if rhythmOfLight then
-		-- Light Characteristic / Signal Group
-		local lightCharacteristic = lightCharacteristics[rhythmOfLight.lightCharacteristic] or {}
-		local signalGroup = rhythmOfLight.signalGroup
-
-		for i = 1, #lightCharacteristic do
-			if i > 1 then
-				description = description .. '+'
-			end
-
-			description = description .. lightCharacteristic[i]
-
-			if signalGroup[i] ~= nil and signalGroup[i] ~= '()' and signalGroup[i] ~= '(1)' then
-				description = description .. signalGroup[i]
-			end
-		end
-	end
-
+	
 	-- Colour
 	local colourFound = false
 	local prevColour

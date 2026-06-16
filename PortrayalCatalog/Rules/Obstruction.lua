@@ -87,15 +87,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:FLTHAZ02')
-		elseif feature.categoryOfObstruction == 24 then --decommissioned platform jacket
-			viewingGroup = 34050
-			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRadar')
-			else
-				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:UnderRadar')
-			end
-			OBSTRN07(feature, featurePortrayal, contextParameters, viewingGroup)
-		else
+		else  -- categoryOfObstruction ==24 decommissioned platform jacket 
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRadar')
@@ -177,7 +169,7 @@ function Obstruction(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12410;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;PointInstruction:FLTHAZ02')
-		else
+		else -- categoryOfObstruction ==24 decommissioned platform jacket 
 			viewingGroup = 34050
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:34050;DrawingPriority:12;DisplayPlane:OverRadar')
