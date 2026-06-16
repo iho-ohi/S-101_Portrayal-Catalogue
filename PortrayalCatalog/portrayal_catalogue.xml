@@ -10655,6 +10655,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+      <ruleFile id="DepthDiscontinuity">
+         <description>
+            <name>DepthDiscontinuity</name>
+            <description>Rules for feature type DepthDiscontinuity</description>
+            <language>eng</language>
+         </description>
+         <fileName>DepthDiscontinuity.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="DepthNoBottomFound">
          <description>
             <name>DepthNoBottomFound</name>
