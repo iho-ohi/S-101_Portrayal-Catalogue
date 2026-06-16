@@ -8334,7 +8334,7 @@
 	  <!-- note: 23010 (DIAMON01 pattern on areas of depth less than the safety contour) is now an Independent Mariner Selector (90000). Viewing group 23010 is unused by S-101 -->
       <viewingGroup id="23030">
          <description>
-            <name>Swept area (SWPARE)</name>
+            <name>High Confidence Depth Area (SWPARE)</name>
             <description>Standard: H, I - Depths, Currents, etc.</description>
             <language>eng</language>
          </description>
@@ -10952,6 +10952,17 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
+       <ruleFile id="HighConfidenceDepthArea">
+         <description>
+            <name>HighConfidenceDepthArea</name>
+            <description>Rules for feature type HighConfidenceDepthArea</description>
+            <language>eng</language>
+         </description>
+         <fileName>HighConfidenceDepthArea.lua</fileName>
+         <fileType>Rule</fileType>
+         <fileFormat>LUA</fileFormat>
+         <ruleType>SubTemplate</ruleType>
+      </ruleFile>
       <ruleFile id="Hulk">
          <description>
             <name>Hulk</name>
@@ -11905,17 +11916,6 @@
             <language>eng</language>
          </description>
          <fileName>SubmarineTransitLane.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
-      <ruleFile id="SweptArea">
-         <description>
-            <name>SweptArea</name>
-            <description>Rules for feature type SweptArea</description>
-            <language>eng</language>
-         </description>
-         <fileName>SweptArea.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
