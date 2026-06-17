@@ -12,10 +12,10 @@
   <rect class="svgBox layout" fill="none" x="-2.5" y="-4.5" height="5.2" width="5"/>
   <path d=" M -2,0 L -1,-4.5 L 1,-4.5 L 2,0 L -2,0 Z" class="fCHGRN"/>
   <path d=" M -2,0 M -1.66,-1.6 L -1.33,-3 L 1.33,-3 L 1.66,-1.6 L -1.66,-1.6 Z" class="fCHRED"/>
-  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="0" r="0.65"/>
-  <path d=" M -2.5,0 L -0.7,0" class="sl f0 sOUTLW" stroke-width="0.32" />
-  <path d=" M 0.65,0 L 2.5,0" class="sl f0 sOUTLW" stroke-width="0.32" />
-  <path d=" M -2,0 L -1,-4.5 L 1,-4.5 L 2,0" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="0" cy="0" r="0.65"/>
+  <path d=" M -2.5,0 L -0.7,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M 0.65,0 L 2.5,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M -2,0 L -1,-4.5 L 1,-4.5 L 2,0" class="sl f0 sCHBLK" stroke-width="0.32" />
   <circle class="fDEPDW" cx="0" cy="0" r="0.52"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2"/>
 </svg>

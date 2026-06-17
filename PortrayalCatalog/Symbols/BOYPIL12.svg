@@ -11,10 +11,10 @@
   <rect class="symbolBox layout" fill="none" x="-3.07" y="-4.32" height="4.91" width="5.97"/>
   <rect class="svgBox layout" fill="none" x="-3.07" y="-4.32" height="4.91" width="5.97"/>
   <path d=" M -2.41,0 L -0.22,-2.35 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.34,0 Z" class="fCHYLW"/>
-  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="0" r="0.59"/>
-  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sOUTLW" stroke-width="0.32" />
-  <path d=" M 0.53,0 L 2.9,0" class="sl f0 sOUTLW" stroke-width="0.32" />
-  <path d=" M -2.41,0 L -0.22,-2.35 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.34,0" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="0" cy="0" r="0.59"/>
+  <path d=" M -3.07,0 L -0.57,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M 0.53,0 L 2.9,0" class="sl f0 sCHBLK" stroke-width="0.32" />
+  <path d=" M -2.41,0 L -0.22,-2.35 L 0.43,-4.32 L 1.4,-4.32 L 1.4,-1.94 L 2.34,0" class="sl f0 sCHBLK" stroke-width="0.32" />
   <circle class="fDEPDW" cx="0" cy="0" r="0.45"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="0.2"/>
 </svg>
