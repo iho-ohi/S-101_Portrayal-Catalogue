@@ -206,6 +206,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i507]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/507
 [i508]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/508
 [i495]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/495
+[i453]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/453
 
 
 
@@ -231,6 +232,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
 	* [#503][i503] 	Update PC version to "2.1.0-DRAFT"
 	* [#505][i505] 	SAFCONxx - Bulk update to their 'Definition' and 'Remarks' fields (transferred from sub-wg repo), no changes to PC, GI Registry update
+	* [#453][i453] 	Cable Overhead - New symbol for 'Power lines' (duplicate issue from sub-wg)
+
 
 
 
