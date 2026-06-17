@@ -17,12 +17,17 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('AlertReference:NavHazard;ViewingGroup:14010;DrawingPriority:18')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGF')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')			
-		elseif feature.categoryOfCable == 6 or feature.categoryOfCable == 7 then
-			-- issue #59 categoryOfCable 7
+		elseif feature.categoryOfCable == 6 then
 			viewingGroup = 24010
 			featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
+		elseif feature.categoryOfCable == 4 or feature.categoryOfCable == 5 then
+			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06') --needs to change
+		elseif feature.status == 4 then
+			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06') --needs to change
 		else
 			viewingGroup = 34070
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
