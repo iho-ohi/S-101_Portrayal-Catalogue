@@ -417,8 +417,8 @@ function CreateFeaturePortrayal(feature)
 				-- Done copying drawing instructions
 
 				-- Add observed context parameters
-				-- Force addition of NationalLanguage
-				local nationalLanguage = portrayalContext.ContextParameters.NationalLanguage
+				-- Force addition of PreferredLanguage
+				local preferredLanguage = portrayalContext.ContextParameters.PreferredLanguage
 				-- TODO: merge the observed parameters with any existing
 				placementFeature._featurePortrayalItem.ObservedContextParameters = portrayalContext.ContextParameters._observed
 				placementFeature._featurePortrayalItem.InUseContextParameters = portrayalContext.ContextParameters._asTable
@@ -476,7 +476,7 @@ function CreateFeaturePortrayal(feature)
 	end
 
 	--
-	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected national language. If no match is found,
+	-- Evaluates TextPlacement and featureName; returns the first name which matches the selected preferred language. If no match is found,
 	-- returns the first entry marked as the default (nameUsage == 1). Otherwise returns nil.
 	function featurePortrayal:GetFeatureName(feature, contextParameters)
 		CheckSelf(self, featurePortrayal.Type)
@@ -501,7 +501,7 @@ function CreateFeaturePortrayal(feature)
 
 			-- ensure a name is present and it's intended for chart display
 			if featureName.name and featureName.nameUsage then
-				local languageMatches = (featureName.language and featureName.language == contextParameters.NationalLanguage)
+				local languageMatches = (featureName.language and featureName.language == contextParameters.PreferredLanguage)
 
 				-- check for default values which are used if we can't otherwise find a match...
 				if featureName.nameUsage == 1 then
@@ -539,8 +539,8 @@ function GetInformationText(information, contextParameters)
 	for _, text in ipairs(information.information) do
 		if text.text and text.text ~= '' then
 			if text.language then
-				if text.language == contextParameters.NationalLanguage then
-					-- return the national language text
+				if text.language == contextParameters.PreferredLanguage then
+					-- return the preferred language text
 					defaultText = text.text
 					break
 				end
