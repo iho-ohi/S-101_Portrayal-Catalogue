@@ -8368,7 +8368,7 @@
 	 <!-- 25000's: Routes and Tracks -->
       <viewingGroup id="25001">
          <description>
-            <name>Collision Regulations Limit, demarcation line between inland and international navigation rules</name>
+            <name>Collision Regulations, demarcation line between inland and international navigation rules</name>
             <description>Standard: M - Traffic routes</description>
             <language>eng</language>
          </description>
@@ -10490,13 +10490,13 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="CollisionRegulationsLimit">
+      <ruleFile id="CollisionRegulations">
          <description>
-            <name>CollisionRegulationsLimit</name>
-            <description>Rules for feature type CollisionRegulationsLimit</description>
+            <name>CollisionRegulations</name>
+            <description>Rules for feature type CollisionRegulations</description>
             <language>eng</language>
          </description>
-         <fileName>CollisionRegulationsLimit.lua</fileName>
+         <fileName>CollisionRegulations.lua</fileName>
          <fileType>Rule</fileType>
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>

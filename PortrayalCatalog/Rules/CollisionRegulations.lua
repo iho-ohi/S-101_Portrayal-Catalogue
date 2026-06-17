@@ -1,13 +1,12 @@
--- CollisionRegulationsLimit portrayal rules file.
+-- CollisionRegulations portrayal rules file.
 --
 -- ISSUES: PSWG #41, PC #109
 --
 -- Main entry point for feature type.
-function CollisionRegulationsLimit(feature, featurePortrayal, contextParameters)
+function CollisionRegulations(feature, featurePortrayal, contextParameters)
 	local viewingGroup
 
-	if feature.PrimitiveType == PrimitiveType.Curve then
-		-- TODO: needs proper viewing group assignment etc
+	if (feature.PrimitiveType == PrimitiveType.Surface or feature.PrimitiveType == PrimitiveType.Curve) then
 		viewingGroup = 25001
 
 		featurePortrayal:AddInstructions('ViewingGroup:25001;DrawingPriority:4;DisplayPlane:UnderRadar')
