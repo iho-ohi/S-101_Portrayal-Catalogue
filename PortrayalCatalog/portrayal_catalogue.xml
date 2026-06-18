@@ -2198,6 +2198,16 @@
          <fileType>Symbol</fileType>
          <fileFormat>SVG</fileFormat>
       </symbol>
+      <symbol id="EMCBLOH1">
+         <description>
+            <name>EMCBLOH1</name>
+            <description>Embedded symbol</description>
+            <language>eng</language>
+         </description>
+         <fileName>EMCBLOH1.svg</fileName>
+         <fileType>Symbol</fileType>
+         <fileFormat>SVG</fileFormat>
+      </symbol>
       <symbol id="EMCBLSU1">
          <description>
             <name>EMCBLSU1</name>
@@ -7309,6 +7319,16 @@
             <language>eng</language>
          </description>
          <fileName>CBLARE51.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="CBLOHD01">
+         <description>
+            <name>CBLOHD01</name>
+            <description>cable overhead</description>
+            <language>eng</language>
+         </description>
+         <fileName>CBLOHD01.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
