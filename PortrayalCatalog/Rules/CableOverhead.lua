@@ -16,10 +16,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:CBLOHD01')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
-			--[[ if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
+			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end
 
 		--2 Cables 1&3, Radar, Fixed 
 		elseif (feature.categoryOfCable == 1 or feature.categoryOfCable == 3) and feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -31,10 +31,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('LineInstruction:CBLOHD01')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
-			--[[ if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
+			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end
 
 		--3 Cables 1&3, Radar, No Value
 		elseif (feature.categoryOfCable == 1 or feature.categoryOfCable == 3) and feature.radarConspicuous then
@@ -56,10 +56,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:CBLOHD01')
-			--[[ if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
+			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end 
 
  
 		--5 Cables 1&3, NO radar, Fixed
@@ -71,10 +71,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 				featurePortrayal:AddInstructions('ViewingGroup:12210;DrawingPriority:24;DisplayPlane:UnderRadar')
 			end
 			featurePortrayal:AddInstructions('LineInstruction:CBLOHD01')
-			--[[ if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
+			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 12210, 24)
-			end ]]
+			end 
 
 		--6 NO Cables, Radar, Safe
 		elseif feature.radarConspicuous and feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
@@ -87,10 +87,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
-			--[[ if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
+			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end 
 
 		--7 NO Cables, Radar, Fixed
 		elseif feature.radarConspicuous and feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -104,10 +104,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('PointInstruction:RACNSP01')
-			--[[ if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
+			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end
 
 		--8 NO Cables, Radar, NO Value
 		elseif feature.radarConspicuous then
@@ -132,10 +132,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-			--[[ if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
+			if feature.verticalClearanceSafe and feature.verticalClearanceSafe.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceSafe.verticalClearanceValue, 'sf clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end
 
 		--10 No Cables, No Radar, Fixed	
 		elseif feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
@@ -147,10 +147,10 @@ function CableOverhead(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',1.28,'CHGRD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-			--[[ if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
+			if feature.verticalClearanceFixed and feature.verticalClearanceFixed.verticalClearanceValue then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(feature.verticalClearanceFixed.verticalClearanceValue, 'clr %4.1f'), 11, 24, 15110, 24)
-			end ]]
+			end
 		
 		--default
 		else
