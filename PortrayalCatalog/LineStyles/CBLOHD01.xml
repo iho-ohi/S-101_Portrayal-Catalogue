@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015 - 03 - 13"?>
+<?S100Meta name="RESARE51" exposition="boundary of a restricted area"?>
+<lineStyle offset="0">
+  <pen width="1.28">
+    <color>CHGRD</color>
+  </pen>
+  <intervalLength>21.6</intervalLength>
+  <dash>
+    <start>0</start>
+    <length>3.6</length>
+  </dash>
+  <dash>
+    <start>10.8</start>
+    <length>3.6</length>
+  </dash>
+  <dash>
+    <start>16.2</start>
+    <length>3.6</length>
+  </dash>
+  <symbol reference="EMCBLOH1">
+    <position>7.45</position>
+  </symbol>
+</lineStyle>
