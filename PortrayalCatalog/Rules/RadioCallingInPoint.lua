@@ -24,14 +24,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -48,14 +41,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -72,14 +58,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -94,11 +73,15 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
-			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
-			featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
-			
-			if feature.orientationValue[2] then				
+			if feature.orientationValue[2] then
+				-- two-way with 2 unique directions
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
 				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
+			else
+				-- two-way with a single / reciprocal direction
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 				featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
 			end
 
@@ -133,14 +116,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -157,14 +133,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -181,12 +150,6 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -201,11 +164,15 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			else
 				featurePortrayal:AddInstructions('ViewingGroup:25060;DrawingPriority:18;DisplayPlane:UnderRadar')
 			end
-			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
-			featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
-			
-			if feature.orientationValue[2] then				
+			if feature.orientationValue[2] then
+				-- two-way with 2 unique directions
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
 				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
+			else
+				-- two-way with a single / reciprocal direction
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 				featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
 			end
 
@@ -242,14 +209,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -268,14 +228,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -294,14 +247,7 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 			featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			
-			if feature.orientationValue[2] then				
-				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
-				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
-			end
-
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
-
 			if feature.featureName[1] and feature.featureName[1].name then
 				featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 				featurePortrayal:AddTextInstruction(EncodeString(GetFeatureName(feature, contextParameters), 'Nr %s'), 21, 24, 25060, 18)
@@ -318,11 +264,15 @@ function RadioCallingInPoint(feature, featurePortrayal, contextParameters)
 			end
 			featurePortrayal:SimpleLineStyle('dash',0.32,'TRFCD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-			featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
-			featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
-			
-			if feature.orientationValue[2] then				
+			if feature.orientationValue[2] then
+				-- two-way with 2 unique directions
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
 				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[2]) .. '')
+				featurePortrayal:AddInstructions('PointInstruction:RDOCAL02')
+			else
+				-- two-way with a single / reciprocal direction
+				featurePortrayal:AddInstructions('Rotation:GeographicCRS,' .. tostring(feature.orientationValue[1]) .. '')
 				featurePortrayal:AddInstructions('PointInstruction:RDOCAL03')
 			end
 
