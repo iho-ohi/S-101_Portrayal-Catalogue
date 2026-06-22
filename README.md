@@ -279,7 +279,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#507][i507] Remodelling of Complex multiplicityOfFeatures to Simple numberOfFeatures for S-101 Ed 2.1.0 (transferred from sub-wg #193)
 	* [#508][i508] New Line Style Required for New Feature Depth Discontinuity (transferred from subwg 191)
 	* [#495][i495] New categoryOfObstruction - Decommissioned Platform Jacket
-	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed
+	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed.
 
 
 
