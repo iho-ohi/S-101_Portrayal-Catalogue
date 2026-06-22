@@ -236,6 +236,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#453][i453] 	Cable Overhead - New symbol for 'Power lines' (duplicate issue from sub-wg)
 	* [#474][i474] 	IHO S-101 PC v.2.0.0 - error in FERYRT*.xml symbols, no change to the PC
 	* [#510][i510] 	Restricted Area symbol Display, what's this strange new symbol ? (transferred from subwg 199), no changes to PC
+	* [#511][i511] 	Proposal for new group of sounding symbols (transferred from subwg 185), resolved with #483
+
 
 
 
