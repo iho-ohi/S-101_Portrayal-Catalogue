@@ -208,6 +208,9 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i495]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/495
 [i453]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/453
 [i474]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/474
+[i510]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/510
+[i511]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/511
+[i502]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/502
 
 
 
@@ -276,6 +279,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#507][i507] Remodelling of Complex multiplicityOfFeatures to Simple numberOfFeatures for S-101 Ed 2.1.0 (transferred from sub-wg #193)
 	* [#508][i508] New Line Style Required for New Feature Depth Discontinuity (transferred from subwg 191)
 	* [#495][i495] New categoryOfObstruction - Decommissioned Platform Jacket
+	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed
+
 
 
 
