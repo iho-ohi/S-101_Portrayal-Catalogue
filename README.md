@@ -235,6 +235,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#505][i505] 	SAFCONxx - Bulk update to their 'Definition' and 'Remarks' fields (transferred from sub-wg repo), no changes to PC, GI Registry update
 	* [#453][i453] 	Cable Overhead - New symbol for 'Power lines' (duplicate issue from sub-wg)
 	* [#474][i474] 	IHO S-101 PC v.2.0.0 - error in FERYRT*.xml symbols, no change to the PC
+	* [#510][i510] 	Restricted Area symbol Display, what's this strange new symbol ? (transferred from subwg 199), no changes to PC
+
 
 
 
