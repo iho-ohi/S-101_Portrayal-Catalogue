@@ -5,7 +5,7 @@ local categoryOfLights =
 {
 	--[1] = 'Dir ',
 	[5] = 'Aero ',
-	[7] = 'Fog Det Lt '
+	--[7] = 'Fog Det Lt '
 }
 
 local lightCharacteristics = 
@@ -68,7 +68,26 @@ function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNo
 	Debug.StartPerformance('Lua Code - LITDSN02')
 
 	local description = categoryOfLights[categoryOfLight] or ''
-	
+	local statusString = statuses[status] or ''
+
+	if rhythmOfLight then
+		-- Light Characteristic / Signal Group
+		local lightCharacteristic = lightCharacteristics[rhythmOfLight.lightCharacteristic] or {}
+		local signalGroup = rhythmOfLight.signalGroup
+
+		for i = 1, #lightCharacteristic do
+			if i > 1 then
+				description = description .. '+'
+			end
+
+			description = description .. lightCharacteristic[i]
+
+			if signalGroup[i] ~= nil and signalGroup[i] ~= '()' and signalGroup[i] ~= '(1)' then
+				description = description .. signalGroup[i]
+			end
+		end
+	end
+
 	-- Colour
 	local colourFound = false
 	local prevColour

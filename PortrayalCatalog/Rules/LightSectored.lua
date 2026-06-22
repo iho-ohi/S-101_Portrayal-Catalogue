@@ -190,14 +190,14 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 
 
-				local isDirectional = false
+				--[[ local isDirectional = false
 
 				for _, ls in ipairs(sectorCharacteristic.lightSector) do
 					if ls.directionalCharacter then
 						isDirectional = true
 						break
 					end
-				end
+				end ]]
 
 				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
 				
@@ -244,14 +244,14 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 			local vnr = descriptionInfo[1][3]
 			local vnr2 = descriptionInfo[#descriptionInfo][3]
 
-			local isDirectional = false
+			--[[ local isDirectional = false
 
 			for _, ls in ipairs(sectorCharacteristic.lightSector) do
 				if ls.directionalCharacter then
 					isDirectional = true
 					break
 				end
-			end
+			end ]]
 
 			local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, sectorColors, feature.height, vnr, feature.status, vnr2, numRanges)	
 			featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
