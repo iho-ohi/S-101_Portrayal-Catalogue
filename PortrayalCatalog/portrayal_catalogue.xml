@@ -7322,6 +7322,16 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
+      <lineStyle id="CBLARE52">
+         <description>
+            <name>CBLARE52</name>
+            <description>boundary of a submarine cable area</description>
+            <language>eng</language>
+         </description>
+         <fileName>CBLARE52.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
       <lineStyle id="CBLOHD01">
          <description>
             <name>CBLOHD01</name>
@@ -7339,6 +7349,26 @@
             <language>eng</language>
          </description>
          <fileName>CBLSUB06.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="CBLSUB07">
+         <description>
+            <name>CBLSUB07</name>
+            <description>submarine cable</description>
+            <language>eng</language>
+         </description>
+         <fileName>CBLSUB07.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="CBLSUB08">
+         <description>
+            <name>CBLSUB07</name>
+            <description>submarine cable</description>
+            <language>eng</language>
+         </description>
+         <fileName>CBLSUB08.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>

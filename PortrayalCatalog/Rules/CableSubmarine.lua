@@ -18,14 +18,14 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		elseif feature.categoryOfCable == 4 or feature.categoryOfCable == 5 then
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
-			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06') --needs to change
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB07') -- changed to CBLSUB07
 		elseif feature.status == 4 then
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
-			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06') --needs to change
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB08') --changed to CBLSUB08
 		else
 			viewingGroup = 34070
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
-			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06')
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB08')
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

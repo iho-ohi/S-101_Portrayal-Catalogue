@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015-03-13"?>
+<?S100Meta name="CBLSUB07" exposition="submarine cable"?>
+<ls:lineStyle xmlns:ls="http://www.iho.int/S100LineStyle/5.2" offset="0">
+    <intervalLength>30.3</intervalLength>
+    <pen width="0.32">
+        <color>CHMGD</color>
+    </pen>
+    <dash>
+        <start>0</start>
+        <length>2</length>
+    </dash>
+    <dash>
+        <start>12.05</start>
+        <length>2</length>
+    </dash>
+    <dash>
+        <start>24.1</start>
+        <length>2</length>
+    </dash>
+    <symbol reference="EMCBLSU1">
+        <position>7.12</position>
+    </symbol>
+    <symbol reference="EMCBLSU1">
+        <position>18.98</position>
+    </symbol>
+</ls:lineStyle>

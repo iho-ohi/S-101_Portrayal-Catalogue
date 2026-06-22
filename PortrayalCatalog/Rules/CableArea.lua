@@ -45,8 +45,8 @@ function CableArea(feature, featurePortrayal, contextParameters)
             
         -- Default (Other Cables)
         else
-            featurePortrayal:AddInstructions('PointInstruction:CBLARE51')
-            featurePortrayal:AddInstructions('LineInstruction:CBLARE51')
+            featurePortrayal:AddInstructions('PointInstruction:CBLARE51') -- testing
+            featurePortrayal:AddInstructions('LineInstruction:CBLARE52')
             RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
         end
 

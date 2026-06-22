@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?S100lineage source="S52Preslib4.0" format="S100Ed2" version="0.1" creationDate="2015-03-13"?>
+<?S100Meta name="CBLARE52" exposition="boundary of a submarine cable area"?>
+
+<ls:lineStyle xmlns:ls="http://www.iho.int/S100LineStyle/5.2" offset="0">
+  <pen width="0.32">
+    <color>CHMGD</color>
+  </pen>
+  <intervalLength>30.3</intervalLength>
+  <dash>
+    <start>0</start>
+    <length>6</length>
+  </dash>
+  <dash>
+    <start>24</start>
+    <length>6</length>
+  </dash>
+  <symbol reference="EMAREMG1">
+    <position>3</position>
+  </symbol>
+  <symbol reference="EMCBLSU1">
+    <position>15</position>
+  </symbol>
+  <symbol reference="EMAREMG1">
+    <position>27</position>
+  </symbol>
+</ls:lineStyle>
+
