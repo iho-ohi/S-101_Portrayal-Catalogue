@@ -25,7 +25,7 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 		else
 			viewingGroup = 34070
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
-			featurePortrayal:AddInstructions('LineInstruction:CBLSUB08')
+			featurePortrayal:AddInstructions('LineInstruction:CBLSUB06')
 		end
 	else
 		error('Invalid primitive type or mariner settings passed to portrayal')

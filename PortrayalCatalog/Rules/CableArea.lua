@@ -16,7 +16,7 @@ function CableArea(feature, featurePortrayal, contextParameters)
 
         -- Cables 4 & 5 (Telephone / Telegraph)
         if feature.categoryOfCable == 4 or feature.categoryOfCable == 5 then 
-            featurePortrayal:AddInstructions('PointInstruction:CBLARE51') --need to change to CBLARE52 
+            featurePortrayal:AddInstructions('PointInstruction:CBLARE52') --need to change to CBLARE52 
             featurePortrayal:SimpleLineStyle('dash', 0.64, 'CHMGD')
             featurePortrayal:AddInstructions('LineInstruction:_simple_')
             RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
@@ -39,14 +39,14 @@ function CableArea(feature, featurePortrayal, contextParameters)
 
         -- Cables 4 & 5 (Telephone / Telegraph)
         if feature.categoryOfCable == 4 or feature.categoryOfCable == 5 then
-            featurePortrayal:AddInstructions('PointInstruction:CBLARE51') --need to change to CBLARE52
-            featurePortrayal:AddInstructions('LineInstruction:CBLARE51') --need to change to CBLARE52
+            featurePortrayal:AddInstructions('PointInstruction:CBLARE52') --need to change to CBLARE52
+            featurePortrayal:AddInstructions('LineInstruction:CBLARE52') --need to change to CBLARE52
             RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
             
         -- Default (Other Cables)
         else
-            featurePortrayal:AddInstructions('PointInstruction:CBLARE51') -- testing
-            featurePortrayal:AddInstructions('LineInstruction:CBLARE52')
+            featurePortrayal:AddInstructions('PointInstruction:CBLARE51') 
+            featurePortrayal:AddInstructions('LineInstruction:CBLARE51')
             RESTRN01(feature, featurePortrayal, contextParameters, viewingGroup)
         end
 

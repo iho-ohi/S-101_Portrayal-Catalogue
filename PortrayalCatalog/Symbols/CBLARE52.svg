@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet href="daySvgStyle.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" xml:space="preserve" shape-rendering="geometricPrecision" fill-rule="evenodd" width="11.12mm" height="3.74mm" viewBox="-5.56 -1.87 11.12 3.74">
+  <title>CBLARE52</title>
+  <desc>cable area, telephone or telegraph.</desc>
+  <metadata>
+    <iho:S100SVG xmlns:iho="http://www.iho.int/SVGMetadata/5.2">
+      <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1" />
+    </iho:S100SVG>
+  </metadata>
+  <path d="M -5.56,-1.87 L -1.79,1.87 L 1.83,-1.85 L 5.56,1.87" fill="none" class="fNone sCHMGF" stroke="#C045D1" stroke-opacity="1" stroke-width="0.6000001" />
+  <g display="none" stroke-width="1" fill="none" class="layout">
+    <rect x="-3.495" y="-3.495" height="6.99" width="6.99" stroke="blue" class="svgBox" />
+    <g stroke="red" class="pivotPoint">
+      <circle cx="0" cy="0" r="0.2" />
+      <line x1="0" y1="-0.50" x2="0" y2="0.50" />
+      <line x1="-0.50" y1="0" x2="0.50" y2="0" />
+    </g>
+  </g>
+</svg>
