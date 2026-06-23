@@ -7422,6 +7422,16 @@
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
+      <lineStyle id="CLIFF1">
+         <description>
+            <name>CLIFF1</name>
+            <description>linestyle for inTheWater as part of feature SlopeTopline</description>
+            <language>eng</language>
+         </description>
+         <fileName>CLIFF1.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
       <lineStyle id="COLREG01">
          <description>
             <name>COLREG01</name>
