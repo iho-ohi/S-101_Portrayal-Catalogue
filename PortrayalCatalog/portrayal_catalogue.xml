@@ -4988,6 +4988,26 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
+      <symbol id="SLOTOP1">
+		   <description>
+			   <name>SLOTOP1</name>
+			   <description>embedded symbol</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>SLOTOP1.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
+      <symbol id="SLOTOP2">
+		   <description>
+			   <name>SLOTOP2</name>
+			   <description>embedded symbol</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>SLOTOP2.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
 	   <symbol id="SMCFAC02">
          <description>
             <name>SMCFAC02</name>
