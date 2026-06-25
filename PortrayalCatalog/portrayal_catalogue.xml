@@ -4988,6 +4988,16 @@
 		   <fileType>Symbol</fileType>
 		   <fileFormat>SVG</fileFormat>
 	   </symbol>
+      <symbol id="SLOSUB1">
+		   <description>
+			   <name>SLOSUB1</name>
+			   <description>embedded symbol</description>
+			   <language>eng</language>
+		   </description>
+		   <fileName>SLOSUB1.svg</fileName>
+		   <fileType>Symbol</fileType>
+		   <fileFormat>SVG</fileFormat>
+	   </symbol>
       <symbol id="SLOTOP1">
 		   <description>
 			   <name>SLOTOP1</name>
@@ -7449,6 +7459,16 @@
             <language>eng</language>
          </description>
          <fileName>CLIFF1.xml</fileName>
+         <fileType>LineStyle</fileType>
+         <fileFormat>XML</fileFormat>
+      </lineStyle>
+      <lineStyle id="CLIFFSUB2">
+         <description>
+            <name>CLIFFSUB2</name>
+            <description>linestyle for inTheWater as part of feature SlopeTopline</description>
+            <language>eng</language>
+         </description>
+         <fileName>CLIFFSUB2.xml</fileName>
          <fileType>LineStyle</fileType>
          <fileFormat>XML</fileFormat>
       </lineStyle>
