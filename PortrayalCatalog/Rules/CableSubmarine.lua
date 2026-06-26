@@ -16,7 +16,7 @@ function CableSubmarine(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('ViewingGroup:24010;DrawingPriority:18')
 			featurePortrayal:SimpleLineStyle('dash',0.32,'CHMGD')
 			featurePortrayal:AddInstructions('LineInstruction:_simple_')
-		elseif feature.categoryOfCable == 4 or feature.categoryOfCable == 5 then
+		elseif feature.categoryOfCable == 10 then  --value of 10 is general telecommunication lines (incorporates 4 and 5)
 			featurePortrayal:AddInstructions('ViewingGroup:34070;DrawingPriority:9')
 			featurePortrayal:AddInstructions('LineInstruction:CBLSUB07') -- changed to CBLSUB07
 		elseif feature.status == 4 then
