@@ -8349,6 +8349,13 @@
             <language>eng</language>
          </description>
 	  </viewingGroup>
+     <viewingGroup id="15110">
+         <description>
+            <name>bridge (BRIDGE), pylon (PYLONS), overhead cable (CBLOHD), conveyor (CONVYR), overhead pipeline (PIPOHD), offshore platform (OFSPLF)</name>
+            <description>Base: C, D, E, F - Topography and Infrastructure</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
 	  <!-- M - TRACKS AND ROUTES -->
 	  <!-- 15000-15999 na (not assigned) -->
 	  <!-- N - SPECIAL AREAS -->
@@ -9304,6 +9311,7 @@
          <!-- M - TRACKS AND ROUTES -->
          <!-- N - SPECIAL AREAS -->
          <!-- P, Q, R, S - AIDS TO NAVIGATION -->
+         <viewingGroup>15110</viewingGroup>
          <!-- T, U - SERVICES -->
    </foundationMode>
    <viewingGroupLayers>
@@ -9337,6 +9345,7 @@
          <!-- M - TRACKS AND ROUTES -->
          <!-- N - SPECIAL AREAS -->
          <!-- P, Q, R, S - AIDS TO NAVIGATION -->
+         <viewingGroup>15110</viewingGroup>
          <!-- T, U - SERVICES -->
       </viewingGroupLayer>
 	  <!-- END BASE LAYER GROUPS -->
