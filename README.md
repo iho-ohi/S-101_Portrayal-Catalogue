@@ -284,7 +284,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#495][i495] New categoryOfObstruction - Decommissioned Platform Jacket
 	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed.
 	* [#515][i515] Changes to Submarine Cable symbology (S-52 5.0.0) (transferred from subwg 184)
-	* [#515][i515] category of light
+	* [#481][i481] category of light
 
 
 
