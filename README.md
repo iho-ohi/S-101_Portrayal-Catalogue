@@ -212,6 +212,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i511]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/511
 [i502]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/502
 [i515]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/515
+[i481]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/481
 
 
 
@@ -283,6 +284,9 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#495][i495] New categoryOfObstruction - Decommissioned Platform Jacket
 	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed.
 	* [#515][i515] Changes to Submarine Cable symbology (S-52 5.0.0) (transferred from subwg 184)
+	* [#515][i515] category of light
+
+
 
 
 

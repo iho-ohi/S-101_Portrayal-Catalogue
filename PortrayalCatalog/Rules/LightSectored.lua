@@ -199,7 +199,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					end
 				end ]]
 
-				local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
+				local description = LITDSN02(feature.categoryOfLight, sectorCharacteristic, colour, feature.height, lightSector.valueOfNominalRange, feature.status)
 				
 				featurePortrayal:AddInstructions('TextAlignVertical:Bottom')
 				--featurePortrayal:AddTextInstruction(EncodeString(description), 23, 24, 27070, 24, true)
@@ -253,7 +253,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				end
 			end ]]
 
-			local description = LITDSN02(feature.categoryOfLight[1], sectorCharacteristic, sectorColors, feature.height, vnr, feature.status, vnr2, numRanges)	
+			local description = LITDSN02(feature.categoryOfLight, sectorCharacteristic, sectorColors, feature.height, vnr, feature.status, vnr2, numRanges)	
 			featurePortrayal:AddInstructions('ClearGeometry;FontColor:CHBLK')
 			featurePortrayal:AddInstructions('LocalOffset:7.02,0;TextAlignHorizontal:Start;TextAlignVertical:Center')
 			local textVerticalOffset = (textOffsetLines + isc - 1) * -3.51

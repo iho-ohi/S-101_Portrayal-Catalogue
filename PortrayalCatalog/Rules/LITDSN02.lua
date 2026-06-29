@@ -3,9 +3,9 @@
 
 local categoryOfLights =
 {
-	--[1] = 'Dir ',
+	[1] = 'Dir ',
 	[5] = 'Aero ',
-	--[7] = 'Fog Det Lt '
+	[7] = 'Fog Det Lt '
 }
 
 local lightCharacteristics = 
@@ -67,7 +67,16 @@ local statuses =
 function LITDSN02(categoryOfLight, rhythmOfLight, lightColour, height, valueOfNominalRange, status, valueOfNominalRange2, numRanges)
 	Debug.StartPerformance('Lua Code - LITDSN02')
 
-	local description = categoryOfLights[categoryOfLight] or ''
+	local description = ''
+    if categoryOfLight then
+        pcall(function()
+            for _, catNum in ipairs(categoryOfLight) do
+                if categoryOfLights[catNum] then
+                    description = description .. categoryOfLights[catNum]
+                end
+            end
+        end)
+    end
 	local statusString = statuses[status] or ''
 
 	if rhythmOfLight then

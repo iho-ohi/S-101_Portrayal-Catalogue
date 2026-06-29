@@ -76,7 +76,7 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 		end
 		featurePortrayal:AddTextInstruction(description, 23, 24, 27070, 21, true)
 	else
-		LightFlareAndDescription(feature, featurePortrayal, contextParameters, feature.categoryOfLight[1], 27070, 21)
+		LightFlareAndDescription(feature, featurePortrayal, contextParameters, feature.categoryOfLight, 27070, 21)
 	end
 
 	return 27070
