@@ -211,6 +211,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i510]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/510
 [i511]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/511
 [i502]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/502
+[i515]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/515
 
 
 
@@ -240,6 +241,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#474][i474] 	IHO S-101 PC v.2.0.0 - error in FERYRT*.xml symbols, no change to the PC
 	* [#510][i510] 	Restricted Area symbol Display, what's this strange new symbol ? (transferred from subwg 199), no changes to PC
 	* [#511][i511] 	Proposal for new group of sounding symbols (transferred from subwg 185), resolved with #483
+
 
 
 
@@ -280,6 +282,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#508][i508] New Line Style Required for New Feature Depth Discontinuity (transferred from subwg 191)
 	* [#495][i495] New categoryOfObstruction - Decommissioned Platform Jacket
 	* [#502][i502] RadioCallingInPoint: only first orientationValue is portrayed.
+	* [#515][i515] Changes to Submarine Cable symbology (S-52 5.0.0) (transferred from subwg 184)
+
 
 
 
