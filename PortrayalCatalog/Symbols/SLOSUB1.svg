@@ -8,7 +8,7 @@
       <iho:Description iho:publisher="IHB" iho:creationDate="2014-06-09" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="0.1" />
     </iho:S100SVG>
   </metadata>
-  <path d="M 0.43,-2.1 L -0.45,-2.09 L -0.04,2.56 L 0.43,-2.1 Z" fill="#61B8FF" fill-opacity="1" class="fDEPVS sDEPVS" stroke="#61B8FF" stroke-opacity="1" stroke-width="0.32" />
+  <path d="M 0.43,-2.09 L -0.45,-2.08 L -0.04,2.56 L 0.43,-2.09 Z" fill="#768C97" fill-opacity="1" class="fDEPCN sDEPCN" stroke="#768C97" stroke-opacity="1" stroke-width="0.32" />
   <g display="none" stroke-width="1" fill="none" class="layout">
     <rect x="-3.495" y="-3.495" height="6.99" width="6.99" stroke="blue" class="svgBox" />
     <g stroke="red" class="pivotPoint">

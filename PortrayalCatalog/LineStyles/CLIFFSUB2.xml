@@ -4,7 +4,7 @@
 <?S100Meta name="CLIFF1" exposition=""?>
 <ls:lineStyle xmlns:ls="http://www.iho.int/S100LineStyle/5.2" offset="0">
     <pen width="0.32">
-    <color>DEPVS</color>
+    <color>DEPCN</color>
     </pen>
     <intervalLength>30.2</intervalLength>
     <symbol reference="SLOSUB1">
