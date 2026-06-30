@@ -10,9 +10,9 @@ function SlopeTopline(feature, featurePortrayal, contextParameters)
 		if feature.inTheWater then
 			viewingGroup = 33020
 			if contextParameters.RadarOverlay then
-				featurePortrayal:AddInstructions('ViewingGroup:22210;DrawingPriority:12;DisplayPlane:OverRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:33020;DrawingPriority:12;DisplayPlane:OverRadar')
 			else
-				featurePortrayal:AddInstructions('ViewingGroup:22210;DrawingPriority:12;DisplayPlane:UnderRadar')
+				featurePortrayal:AddInstructions('ViewingGroup:33020;DrawingPriority:12;DisplayPlane:UnderRadar')
 			end
             featurePortrayal:AddInstructions('LineInstruction:CLIFFSUB2')
 		elseif feature.categoryOfSlope == 2 and feature.radarConspicuous then

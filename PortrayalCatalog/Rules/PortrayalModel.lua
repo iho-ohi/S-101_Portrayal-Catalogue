@@ -496,26 +496,27 @@ function CreateFeaturePortrayal(feature)
 			return nil
 		end
 		
-		local defaultName			-- an entry with nameUsage == 1
-		for cnt, featureName in ipairs(feature.featureName) do
+		 local defaultName
+		local pattern = "([^,%s]+)"
 
-			-- ensure a name is present and it's intended for chart display
-			if featureName.name and featureName.nameUsage then
-				local languageMatches = (featureName.language and featureName.language == contextParameters.PreferredLanguage)
-
-				-- check for default values which are used if we can't otherwise find a match...
-				if featureName.nameUsage == 1 then
-					if languageMatches then
-						return featureName.name
+		-- Loop through each preferred language provided by the user.
+		for prefLanguage in string.gmatch(contextParameters.PreferredLanguage, pattern) do
+			-- Then, loop through all available names for the feature.
+			for _, featureName in ipairs(feature.featureName) do
+				if featureName.name and featureName.nameUsage then
+					-- Check if the feature's name language matches the user's current preference.
+					if featureName.language and featureName.language == prefLanguage then
+						if featureName.nameUsage == 1 or featureName.nameUsage == 2 then
+							return featureName.name
+						end
 					end
-					-- only one entry is permitted to have nameUsage set to one
-					defaultName = featureName.name
-				elseif featureName.nameUsage == 2 and languageMatches then
-					-- use the entry intended for chart display which matched the selected lanaguage
-					return featureName.name
+					if featureName.nameUsage == 1 then
+						defaultName = defaultName or featureName.name
+					end
 				end
 			end
 		end
+    
 		
 		return defaultName
 	end
@@ -534,29 +535,40 @@ function CreateDrawingInstructions()
 end
 
 function GetInformationText(information, contextParameters)
-	local defaultText
+    local defaultText
+    local pattern = "([^,%s]+)"
 
-	for _, text in ipairs(information.information) do
-		if text.text and text.text ~= '' then
-			if text.language then
-				if text.language == contextParameters.PreferredLanguage then
-					-- return the preferred language text
-					defaultText = text.text
-					break
-				end
-				if text.language == 'eng' or text.language == '' then
-					-- default to english text
-					defaultText = defaultText or text.text
-				end
-			else
-				-- no language specified, assume eng
-				defaultText = defaultText or text.text
-			end
-		end
-	end
+    local prefString = contextParameters.PreferredLanguage or ""
 
-	return defaultText
+    for prefLanguage in string.gmatch(prefString, pattern) do
+        for _, text in ipairs(information.information) do
+            if text.text and text.text ~= '' then
+                if text.language then
+                    if text.language == prefLanguage then
+                        return text.text
+                    end
+                    if text.language == 'eng' or text.language == '' then
+                        defaultText = defaultText or text.text
+                    end
+                else
+                    defaultText = defaultText or text.text
+                end
+            end
+        end
+    end
+    
+   
+    if not defaultText and information and information.information then
+         for _, text in ipairs(information.information) do
+             if text.text and text.text ~= '' and (not text.language or text.language == '' or text.language == 'eng') then
+                 return text.text 
+             end
+         end
+    end
+
+    return defaultText
 end
+
 
 function GetFeatureName(feature, contextParameters)
 	return feature._featurePortrayal:GetFeatureName(feature, contextParameters)

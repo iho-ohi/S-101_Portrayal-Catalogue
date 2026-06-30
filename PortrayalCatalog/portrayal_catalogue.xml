@@ -9932,7 +9932,7 @@
        <type>String</type>
        <default>eng</default>
 	   <validate>
-		<regex>[a-z]{3}</regex>
+      <regex>^[a-z]{3}(?:\s*,\s*[a-z]{3})*$</regex>
 		<errorMessage>
 			<text>Must be three lower-case characters</text>
 		</errorMessage>
