@@ -217,6 +217,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i516]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/516
 [i517]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/517
 [i518]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/518
+[i519]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/519
 
 
 
@@ -293,6 +294,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#516][i516] cableSubmarine categoryOfCable == 10 not working
 	* [#517][i517] Changes to Cable Area symbology (S-52 5.0.0) (transferred from subwg 183)
 	* [#518][i518] Changes to Cable overhead symbology (S-52 5.0.0) (transferred from subwg 182)
+	* [#519][i519] New Line Style for Subsurface Cliffs Required (transferred from subwg 190)
 
 
 
