@@ -13,8 +13,8 @@
   <circle cx="0" cy="0" r="4.5" class="sl f0 sCHMGD" stroke-width="0.32"  />
   <circle class="fCHRED" cx="0" cy="-1.59" r="1.1"/>
   <circle class="fCHRED" cx="-0.02" cy="1.65" r="1.1"/>
-  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="0" cy="-1.59" r="1.1"/>
-  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="-0.02" cy="1.65" r="1.1"/>
+  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="-1.59" r="1.1"/>
+  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="-0.02" cy="1.65" r="1.1"/>
   <path d=" M 5.4,-1.5 L 6.4,1.5 L 7.4,-1.5" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- 'V' -->
   <path d=" M 7.8,0.0 L 8.6,0.0" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- '-' -->
   <path d=" M 9.0,1.5 L 10.0,-1.5 L 11.0,1.5" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- 'A' -->

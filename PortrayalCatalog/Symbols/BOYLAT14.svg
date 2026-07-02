@@ -11,7 +11,7 @@
   <rect class="symbolBox layout" fill="none" x="-3.09" y="-2.97" height="4.39" width="4.33"/>
   <rect class="svgBox layout" fill="none" x="-3.09" y="-2.97" height="4.39" width="4.33"/>
   <path d=" M 1.24,1.42 L 1.24,-2.97 L -3.09,1.42 L 1.24,1.42 Z" class="fCHRED"/>
-  <path d=" M 1.24,1.42 L 1.24,-2.97 L -3.09,1.42 L 1.24,1.42" class="sl f0 sCHBLK" stroke-width="0.32" />
-  <circle class="fCHBLK" cx="0" cy="0" r="0.15"/>
+  <path d=" M 1.24,1.42 L 1.24,-2.97 L -3.09,1.42 L 1.24,1.42" class="sl f0 sOUTLW" stroke-width="0.32" />
+  <circle class="fOUTLW" cx="0" cy="0" r="0.15"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>

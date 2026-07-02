@@ -137,7 +137,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 				if contains(lightSector.lightVisibility, { 7, 8, 3 }) then
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 				else
-					featurePortrayal:SimpleLineStyle('solid',1.28,'CHBLK')
+					featurePortrayal:SimpleLineStyle('solid',1.28,'OUTLW')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 					featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
@@ -168,7 +168,7 @@ function LightSectored(feature, featurePortrayal, contextParameters)
 					featurePortrayal:AddInstructions('ArcByRadius:0,0,25,0,360')
 					featurePortrayal:AddInstructions('AugmentedPath:LocalCRS,LocalCRS,LocalCRS')
 
-					featurePortrayal:SimpleLineStyle('solid',1.28,'CHBLK')
+					featurePortrayal:SimpleLineStyle('solid',1.28,'OUTLW')
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')
 					featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 					featurePortrayal:AddInstructions('LineInstruction:_simple_')

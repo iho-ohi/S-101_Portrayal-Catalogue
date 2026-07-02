@@ -57,7 +57,7 @@ function LightAllAround(feature, featurePortrayal, contextParameters)
 		featurePortrayal:AddInstructions('ArcByRadius:0,0,26,0,360')
 		featurePortrayal:AddInstructions('AugmentedPath:LocalCRS,LocalCRS,LocalCRS')
 
-		featurePortrayal:SimpleLineStyle('solid',1.28,'CHBLK')
+		featurePortrayal:SimpleLineStyle('solid',1.28,'OUTLW')
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')
 		featurePortrayal:SimpleLineStyle('solid',0.64,sectorColourToken)
 		featurePortrayal:AddInstructions('LineInstruction:_simple_')

@@ -11,7 +11,7 @@
   <rect class="symbolBox layout" fill="none" x="-2.03" y="-2.03" height="4.06" width="4.06"/>
   <rect class="svgBox layout" fill="none" x="-2.03" y="-2.03" height="4.06" width="4.06"/>
   <circle class="fCHRED" cx="0" cy="0" r="2"/>
-  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="0" cy="0" r="2.03"/>
-  <circle class="fCHBLK" cx="0" cy="0" r="0.15"/>
+  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="0" r="2.03"/>
+  <circle class="fOUTLW" cx="0" cy="0" r="0.15"/>
   <circle class="pivotPoint layout" fill="none" cx="0" cy="0" r="1"/>
 </svg>
