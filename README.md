@@ -214,6 +214,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review
 [i515]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/515
 [i481]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/481
 [i470]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/470
+[i516]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/516
 
 
 
@@ -287,6 +288,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#515][i515] Changes to Submarine Cable symbology (S-52 5.0.0) (transferred from subwg 184)
 	* [#481][i481] category of light
 	* [#470][i470] Allow National Language context parameter to specify prioritized list of languages
+	* [#470][i470] cableSubmarine categoryOfCable == 10 not working
+
 
 
 
