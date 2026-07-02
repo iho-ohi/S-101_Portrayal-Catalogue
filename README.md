@@ -288,7 +288,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#515][i515] Changes to Submarine Cable symbology (S-52 5.0.0) (transferred from subwg 184)
 	* [#481][i481] category of light
 	* [#470][i470] Allow National Language context parameter to specify prioritized list of languages
-	* [#470][i470] cableSubmarine categoryOfCable == 10 not working
+	* [#516][i516] cableSubmarine categoryOfCable == 10 not working
 
 
 
