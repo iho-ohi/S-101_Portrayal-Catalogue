@@ -13,8 +13,8 @@
   <circle cx="0" cy="0" r="4.5" class="sl f0 sCHMGD" stroke-width="0.32"  />
   <circle class="fCHYLW" cx="0" cy="0" r="2"/>
   <path d="M 0.0,2.0 L -0.35,1.97 L -0.68,1.88 L -1.0,1.73 L -1.29,1.53 L -1.53,1.29 L -1.73,1.0 L -1.88,0.68 L -1.97,0.35 L -2.0,0.0 L -1.97,-0.35 L -1.88,-0.68 L -1.73,-1.0 L -1.53,-1.29 L -1.29,-1.53 L -1.0,-1.73 L -0.68,-1.88 L -0.35,-1.97 L 0.0,-2.0 Z" class="fRESBL"/>
-  <circle class="f0 sOUTLW" stroke-width="0.32"  cx="0" cy="0" r="2.03"/>
-  <circle class="fOUTLW" cx="0" cy="0" r="0.15"/>
+  <circle class="f0 sCHBLK" stroke-width="0.32"  cx="0" cy="0" r="2.03"/>
+  <circle class="fCHBLK" cx="0" cy="0" r="0.15"/>
   <path d=" M 5.4,-1.5 L 6.4,1.5 L 7.4,-1.5" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- 'V' -->
   <path d=" M 7.8,0.0 L 8.6,0.0" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- '-' -->
   <path d=" M 9.0,1.5 L 10.0,-1.5 L 11.0,1.5" class="sl f0 sCHMGD" stroke-width="0.32" /> <!-- 'A' -->
