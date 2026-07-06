@@ -17,7 +17,7 @@ function TidalStreamFloodEbb(feature, featurePortrayal, contextParameters)
 			featurePortrayal:AddInstructions('Rotation:PortrayalCRS,0')
 			featurePortrayal:AddInstructions('LocalOffset:3.51,3.51;FontSize:10;FontColor:CHBLK')
 			featurePortrayal:AddTextInstruction(EncodeString(feature.speed.speedMaximum, '%4.1f kn'), 30, 24, 33060, 12)
-		elseif feature.categoryOfTidalStream == 2 and feature..orientationValue then
+		elseif feature.categoryOfTidalStream == 2 and feature.orientationValue then
 			viewingGroup = 33060
 			if contextParameters.RadarOverlay then
 				featurePortrayal:AddInstructions('ViewingGroup:33060;DrawingPriority:12;DisplayPlane:OverRadar')
