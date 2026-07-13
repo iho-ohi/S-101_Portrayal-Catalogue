@@ -8,7 +8,7 @@ function UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, ori
 	Debug.StartPerformance('Lua Code - UDWHAZ05')
 
 	local viewingGroup = originalViewingGroup
-	if DEPTH_VALUE <= contextParameters.SafetyContour then
+	if DEPTH_VALUE and DEPTH_VALUE <= contextParameters.SafetyContour then
 		featurePortrayal:AddInstructions('AlertReference:NavHazard')
 		if not feature.surroundingDepth or feature.surroundingDepth >= contextParameters.SafetyContour then
 			-- DANGER = true

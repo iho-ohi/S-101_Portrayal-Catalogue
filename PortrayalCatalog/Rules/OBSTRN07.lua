@@ -5,6 +5,7 @@
 -- #119
 
 -- Referenced CSPs.
+require 'DEPVAL02'
 require 'QUAPNT02'
 require 'UDWHAZ05'
 require 'SNDFRM04'
@@ -14,9 +15,21 @@ function OBSTRN07(feature, featurePortrayal, contextParameters, originalViewingG
 	Debug.StartPerformance('Lua Code - OBSTRN07')
 
 	local DEPTH_VALUE = feature.valueOfSounding or feature.defaultClearanceDepth
-	if DEPTH_VALUE == nil then
-		Debug.StopPerformance('Lua Code - OBSTRN07')
-		error('Neither valueOfSounding or defaultClearanceDepth have a value')
+	if DEPTH_VALUE == nil and (feature.waterLevelEffect == 3 or 
+							   feature.waterLevelEffect == 4 or 
+							   feature.waterLevelEffect == 5 or 
+							   feature.waterLevelEffect == nil) then
+		-- Neither valueOfSounding or defaultClearanceDepth have a value
+		local LEAST_DEPTH, SEABED_DEPTH = DEPVAL02(feature)
+		if LEAST_DEPTH then
+			DEPTH_VALUE = LEAST_DEPTH
+		elseif feature['!categoryOfObstruction'] == 6 or feature.waterLevelEffect == 3 then
+			DEPTH_VALUE = CreateScaledDecimal(1, 2)
+		elseif feature.waterLevelEffect == 5 then
+			DEPTH_VALUE = scaledDecimalZero
+		else
+			DEPTH_VALUE = CreateScaledDecimal(-150, 1)
+		end
 	end
 
 	local hazardSymbol, viewingGroup = UDWHAZ05(feature, featurePortrayal, contextParameters, DEPTH_VALUE, originalViewingGroup)
