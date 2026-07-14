@@ -220,7 +220,8 @@ IHO S-101 Portrayal Catalogue development, discussion, and review.
 [i519]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/519
 [i521]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/521
 [i520]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/520
-[i523]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/523
+[i524]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/524
+
 
 
 
@@ -241,7 +242,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review.
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 2.1.0 - use with FC 2.1.0 (DRAFT)
+### 2.1.0 - use with FC 2.1.0
 * Misc changes
 	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
 	* [#503][i503] 	Update PC version to "2.1.0-DRAFT"
@@ -251,6 +252,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#510][i510] 	Restricted Area symbol Display, what's this strange new symbol ? (transferred from subwg 199), no changes to PC
 	* [#511][i511] 	Proposal for new group of sounding symbols (transferred from subwg 185), resolved with #483
 	* [#520][i520] 	All symbols must be updated (transferred from subwg 124)
+	* [#524][i524] 	Finalize PC 2.1.0
+
 
 
 
