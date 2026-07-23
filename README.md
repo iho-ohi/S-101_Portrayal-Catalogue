@@ -226,6 +226,7 @@ https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%202.1%20PC%
 [i519]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/519
 [i521]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/521
 [i520]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/520
+[i523]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/523
 [i524]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/524
 
 
