@@ -5,7 +5,7 @@ S-101 Portrayal Sub-WG Repo:
 https://github.com/S-101-Portrayal-subWG/Working-Documents/issues 
 
 Excel Sheet of Open Issues in both repos:
-https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%202.1%20PC%20Assessment.xlsx_Original.xlsx 
+https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Assessment.xlsx_Original.xlsx
 
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
 [i8]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/8
