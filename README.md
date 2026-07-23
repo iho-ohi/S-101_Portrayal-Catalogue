@@ -228,6 +228,7 @@ https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Asse
 [i520]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/520
 [i523]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/523
 [i524]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/524
+[i465]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/465
 
 
 
@@ -248,6 +249,12 @@ https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Asse
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
+
+### 2.1.1 - use with FC 2.1.1 - DRAFT
+* Lua Rule File / Symbol Updates
+  
+	* [#465][i465] RadioCallingInPoint with association to ContactDetails doesn't show communication channel
+
 
 ### 2.1.0 - use with FC 2.1.0 (July 2026)
 * Misc changes
