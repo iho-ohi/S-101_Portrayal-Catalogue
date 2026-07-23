@@ -1,6 +1,13 @@
 # S-101 Portrayal-Catalogue
 IHO S-101 Portrayal Catalogue development, discussion, and review.
 
+S-101 Portrayal Sub-WG Repo:
+https://github.com/S-101-Portrayal-subWG/Working-Documents/issues 
+
+Excel Sheet of Open Issues in both repos:
+S-101 2.1 PC Assessment.xlsx_Original.xlsx
+
+
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
 [i8]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/8
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
@@ -242,7 +249,7 @@ IHO S-101 Portrayal Catalogue development, discussion, and review.
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 2.1.0 - use with FC 2.1.0
+### 2.1.0 - use with FC 2.1.0 (July 2026)
 * Misc changes
 	* [#460][i460] 	Update navaid symbols to better support dusk and night palettes, closed issue with no changes in PC
 	* [#503][i503] 	Update PC version to "2.1.0-DRAFT"
