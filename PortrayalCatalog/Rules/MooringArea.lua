@@ -31,7 +31,8 @@ function MooringArea(feature, featurePortrayal, contextParameters)
 			end
 			
 			featurePortrayal:AddInstructions('LocalOffset:' .. localOffset .. ';TextAlignHorizontal:Center;TextAlignVertical:Top;FontSlant:Italics;FontColor:CHBLK')
-			featurePortrayal:AddTextInstruction(safeConcat(labels, ","), 24, 24, viewingGroup, 18)
+			featurePortrayal:AddTextInstruction(EncodeString(safeConcat(labels, ",")), 24, 24, viewingGroup, 18)
+
 		end
 	end	
 
