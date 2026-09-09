@@ -229,6 +229,8 @@ https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Asse
 [i523]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/523
 [i524]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/524
 [i532]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/532
+[i465]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/465
+[i531]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/531
 
 
 
@@ -255,6 +257,9 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#532][i532] 	SVG Errors
 
 * Lua Rule File / Symbol Updates
+	* [#465][i465] Text Instruction Bug in MooringArea
+	* [#465][i465] RadioCallingInPoint with association to ContactDetails doesn't show communication channel
+
 
 
 ### 2.1.0 - use with FC 2.1.0 (July 2026)
