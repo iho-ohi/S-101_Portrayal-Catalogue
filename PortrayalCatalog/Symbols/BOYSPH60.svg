@@ -8,7 +8,7 @@
       <iho:Description iho:publisher="IHO" iho:creationDate="2024-03-28" iho:source="S52Preslib4.0" iho:format="S100SVG" iho:version="1.0" />
     </iho:S100SVG>
   </metadata>
-  <rect class="symbolBox layout" fill="none" x="-3.78" y="1.52" height="6.9" width="7.65" />
+  <rect class="symbolBox layout" fill="none" x="-3.78" y="-5.38" height="6.9" width="7.65" />
   <rect class="svgBox layout" fill="none" x="-3.78" y="-5.38" height="6.9" width="7.65" />
   <path d=" M 0.01,0.01 L 2.33,-0.01 L 2.57,-0.39 L 2.79,-0.86 L 2.84,-1.59 L 2.81,-2.17 L 2.62,-2.71 L 2.02,-3.63 L 1.89,-3.76 L 1.62,-3.94 L 1.33,-4.09 L 0.9,-4.26 L 0,-0.01" class="fCHYLW" />
   <path d=" M 0.01,0 L -2.18,0 L -2.44,-0.67 L -2.6,-1.82 L -2.51,-2.35 L -2.32,-2.97 L -1.59,-3.78 L -1.12,-4.09 L -0.68,-4.26 L -0.13,-4.38 L 0.44,-4.37 L 0.92,-4.27 L 0.01,0" class="fRESBL" />

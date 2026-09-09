@@ -8,8 +8,8 @@
       <iho:Description iho:publisher="IHB" iho:creationDate="2022-05-16" iho:source="dKartOffice" iho:format="S100SVG" iho:version="0.1"/>
     </iho:S100SVG>
   </metadata>
-  <rect class="symbolBox layout" fill="none" x="-2.5" y="-6" height="6.0" width="5.5"/>
-  <rect class="svgBox layout" fill="none" x="-2.5" y="-6" height="6.0" width="5.0"/>
+  <rect class="symbolBox layout" fill="none" x="-2.5" y="-6.5" height="6.5" width="5.0"/>
+  <rect class="svgBox layout" fill="none" x="-2.5" y="-6.5" height="6.5" width="5.0"/>
   <path class="fCHGRD" d="M -1.35,0 L -1.38,-0.63 L -1.52,-1.42 L -1.79,-2.15 L -2.11,-2.72 L -2.5,-3.24 L -1.99,-2.97 L -1.64,-2.62 L -1.12,-1.9 L -0.81,-1.18 L -0.68,-0.65 L -0.62,0 Z"/>
   <path class="fCHGRD" d="M -0.37,0 L -0.43,-1.29 L -0.59,-2.38 L -0.93,-3.54 L -1.33,-4.32 L -1.88,-5 L -1.27,-4.63 L -0.71,-3.99 L -0.19,-3.01 L 0.17,-1.86 L 0.3,-0.96 L 0.36,0 Z"/>
   <path class="fCHGRD" d="M 0.38,-2.66 L 0.67,-3.27 L 1.06,-3.78 L 1.38,-4.04 L 1.74,-4.17 L 1.38,-3.79 L 0.95,-3.06 L 0.69,-2.3 L 0.58,-1.73 Z"/>

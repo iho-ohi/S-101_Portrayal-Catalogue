@@ -10,7 +10,7 @@
   </metadata>
   <rect class="symbolBox layout" fill="none" x="-2" y="-2" height="4" width="4"/>
   <rect class="svgBox layout" fill="none" x="-2" y="-2" height="4" width="4"/>
-  <path d=" M -1.1,-2.3 L 1,-2.3 L 0,-1 L -1.1,-2.3 Z" class="fCHBLK"/>
+  <path d=" M -1,-2 L 1,-2 L 0,-1 L -1,-2 Z" class="fCHBLK"/>
   <path d=" M 2,-1 L 2,1 L 1,0 L 2,-1 Z" class="fCHBLK"/>
   <path d=" M -1,2 L 1,2 L 0,1 L -1,2 Z" class="fCHBLK"/>
   <path d=" M -2,-1 L -2,1 L -1,0 L -2,-1 Z" class="fCHBLK"/>
