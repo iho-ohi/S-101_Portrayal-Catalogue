@@ -259,6 +259,11 @@ Older changes are here: [Changelog.md](Changelog.md)
 * Lua Rule File / Symbol Updates
 	* [#465][i465] Text Instruction Bug in MooringArea
 	* [#465][i465] RadioCallingInPoint with association to ContactDetails doesn't show communication channel
+	* [#512][i512] RECTRC10 has dash line that's longer than the intervalLength
+	* [#513][i513] RECDEF02 has dash that starts after the interval length
+
+
+
 
 
 
