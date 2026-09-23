@@ -7,6 +7,8 @@ https://github.com/S-101-Portrayal-subWG/Working-Documents/issues
 Excel Sheet of Open Issues in both repos:
 https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Assessment.xlsx_Original.xlsx
 
+Excel Sheet of Alerts Mapping Table (needs updating)
+
 [i3]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/3
 [i8]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/8
 [i17]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/17
@@ -231,6 +233,8 @@ https://github.com/iho-ohi/S-101_Portrayal-Catalogue/blob/main/S-101%20PC%20Asse
 [i532]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/532
 [i465]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/465
 [i531]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/531
+[i512]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/512
+[i513]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/513
 
 
 
