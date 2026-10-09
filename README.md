@@ -235,6 +235,7 @@ Excel Sheet of Alerts Mapping Table (needs updating)
 [i531]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/531
 [i512]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/512
 [i513]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/513
+[i535]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/535
 
 
 
@@ -271,6 +272,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#520][i520] 	All symbols must be updated (transferred from subwg 124)
 	* [#524][i524] 	Finalize PC 2.1.0
 	* [#532][i532] 	SVG Errors
+	* [#535][i535] 	Dash should not be shown on DredgedArea text
+
 
 
 
