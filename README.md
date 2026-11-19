@@ -237,6 +237,8 @@ Excel Sheet of Alerts Mapping Table (needs updating)
 [i513]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/513
 [i535]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/535
 [i522]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/522
+[i538]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/538
+[i270]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/270
 
 
 
@@ -265,6 +267,8 @@ Older changes are here: [Changelog.md](Changelog.md)
 * Lua Rule File / Symbol Updates
 	* [#522][i522] [PC 2.0.0] Fix incorrect type check (CheckType) in PortrayalAPI.lua (lines 315, 324)
 	* [#538][i538] Fix incorrect type check (CheckType) in PortrayalAPI.lua (lines 315, 324)
+	* [#270][i270] VirtualAISAidToNavigation is using viewing group 21010
+
 
 
 
