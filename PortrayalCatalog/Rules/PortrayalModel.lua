@@ -323,9 +323,9 @@ function CreateFeaturePortrayal(feature)
 							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Top')
 						elseif direction >= 185 and direction < 265 then
 							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Top')
-						elseif direction >= 175 and direction < 275 then
+						elseif direction >= 265 and direction < 275 then
 							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Center')
-						elseif direction >= 175 and direction < 355 then
+						elseif direction >= 275 and direction < 355 then
 							newPortrayal:AddInstructions('TextAlignHorizontal:End;TextAlignVertical:Bottom')
 						else
 							newPortrayal:AddInstructions('TextAlignHorizontal:Center;TextAlignVertical:Bottom')

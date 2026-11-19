@@ -259,11 +259,13 @@ Excel Sheet of Alerts Mapping Table (needs updating)
 Older changes are here: [Changelog.md](Changelog.md)
 
 
-### 2.2.0 - use with FC 2.1.0
+### Post 2.1.0 - use with FC 2.1.0
 * Misc changes
 
 * Lua Rule File / Symbol Updates
 	* [#522][i522] [PC 2.0.0] Fix incorrect type check (CheckType) in PortrayalAPI.lua (lines 315, 324)
+	* [#538][i538] Fix incorrect type check (CheckType) in PortrayalAPI.lua (lines 315, 324)
+
 
 
 ### 2.1.0 - use with FC 2.1.0 (July 2026)
