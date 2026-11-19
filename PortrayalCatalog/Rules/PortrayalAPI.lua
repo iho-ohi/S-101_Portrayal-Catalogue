@@ -312,7 +312,7 @@ end
 
 function CreateInformationAssociation(namedType, roles, superType, subType)
 	CheckType(namedType, 'NamedType')
-	CheckType(roles, 'array:string')
+	CheckType(roles, 'array:Role')
 	CheckTypeOrNil(superType, 'string')
 	CheckTypeOrNil(subType, 'array:string')
 
@@ -321,7 +321,7 @@ end
 
 function CreateFeatureAssociation(namedType, roles, superType, subType)
 	CheckType(namedType, 'NamedType')
-	CheckType(roles, 'array:string')
+	CheckType(roles, 'array:Role')
 	CheckTypeOrNil(superType, 'string')
 	CheckTypeOrNil(subType, 'array:string')
 
@@ -416,7 +416,7 @@ function CreateInformationBinding(informationTypeCodes, lowerMultiplicity, upper
 	CheckType(lowerMultiplicity, 'number')
 	CheckTypeOrNil(upperMultiplicity, 'number')
 	CheckType(roleType, 'string')
-	CheckTypeOrNil(role, 'string')
+	CheckTypeOrNil(role, 'Role')
 	CheckType(association, 'string')
 
 	return { Type = 'InformationBinding', InformationTypeCodes = informationTypeCodes, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
@@ -431,7 +431,7 @@ function CreateFeatureBinding(featureTypeCodes, lowerMultiplicity, upperMultipli
 	CheckType(lowerMultiplicity, 'number')
 	CheckTypeOrNil(upperMultiplicity, 'number')
 	CheckType(roleType, 'string')
-	CheckType(role, 'string')
+	CheckType(role, 'Role')
 	CheckType(association, 'string')
 
 	return { Type = 'FeatureBinding', FeatureTypeCodes = featureTypeCodes, LowerMultiplicity = lowerMultiplicity, UpperMultiplicity = upperMultiplicity, RoleType = roleType, Role = role, Association = association }
