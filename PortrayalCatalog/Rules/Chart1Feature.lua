@@ -1,7 +1,7 @@
 -- Chart1Feature main entry point.
 function Chart1Feature(feature, featurePortrayal, contextParameters)
 
-	if feature.PrimitiveType ~= PrimitiveType.Point and feature.PrimitiveType ~= PrimitiveType.pointSet and feature.PrimitiveType ~= PrimitiveType.Curve and feature.PrimitiveType ~= PrimitiveType.Surface then
+	if feature.PrimitiveType ~= PrimitiveType.Point and feature.PrimitiveType ~= PrimitiveType.MultiPoint and feature.PrimitiveType ~= PrimitiveType.Curve and feature.PrimitiveType ~= PrimitiveType.Surface then
 		error('Invalid primitive type or mariner settings passed to portrayal')
 	end
 
