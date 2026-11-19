@@ -236,6 +236,7 @@ Excel Sheet of Alerts Mapping Table (needs updating)
 [i512]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/512
 [i513]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/513
 [i535]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/535
+[i522]: https://github.com/iho-ohi/S-101_Portrayal-Catalogue/issues/522
 
 
 
@@ -258,6 +259,11 @@ Excel Sheet of Alerts Mapping Table (needs updating)
 Older changes are here: [Changelog.md](Changelog.md)
 
 
+### 2.2.0 - use with FC 2.1.0
+* Misc changes
+
+* Lua Rule File / Symbol Updates
+	* [#522][i522] [PC 2.0.0] Fix incorrect type check (CheckType) in PortrayalAPI.lua (lines 315, 324)
 
 
 ### 2.1.0 - use with FC 2.1.0 (July 2026)
